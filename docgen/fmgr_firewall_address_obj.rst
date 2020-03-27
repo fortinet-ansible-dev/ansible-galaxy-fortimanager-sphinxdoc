@@ -149,6 +149,8 @@ Examples
 .. code-block:: yaml+jinja
 
  - hosts: fortimanager-inventory
+   collections:
+     - fortinet.fortimanager
    connection: httpapi
    vars:
       ansible_httpapi_use_ssl: True
