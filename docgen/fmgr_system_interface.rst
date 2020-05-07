@@ -37,6 +37,7 @@ Parameters
 .. raw:: html
 
  <ul>
+ <li><span class="li-head">loose_validation</span> - Do parameter validation in a loose way <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal">default: false</span>  </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom dom</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">parameters for method: [add, set, update]</span> - Interface configuration.</li>
@@ -111,6 +112,7 @@ Examples
 
     - name: REQUESTING /CLI/SYSTEM/INTERFACE
       fmgr_system_interface:
+         loose_validation: False
          workspace_locking_adom: <value in [global, custom adom]>
          workspace_locking_timeout: 300
          method: <value in [add, set, update]>
@@ -137,6 +139,7 @@ Examples
 
     - name: REQUESTING /CLI/SYSTEM/INTERFACE
       fmgr_system_interface:
+         loose_validation: False
          workspace_locking_adom: <value in [global, custom adom]>
          workspace_locking_timeout: 300
          method: <value in [get]>
