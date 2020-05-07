@@ -38,6 +38,8 @@ Parameters
 .. raw:: html
 
  <ul>
+ <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom dom</span> </li>
+ <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">parameters for method: [exec]</span> - Probe a remote device and retrieve its device information and system status.</li>
  <ul class="ul-self">
  <li><span class="li-head">data</span> - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
@@ -63,6 +65,8 @@ Notes
 
    - The module may include domain dependent urls, the domain can be specified in url_params as adom
 
+   - To run in workspace mode, the paremeter workspace_locking_adom must be included in the task
+
 Examples
 --------
 
@@ -80,6 +84,8 @@ Examples
 
     - name: REQUESTING /DVM/CMD/DISCOVER/DEVICE
       fmgr_dvm_cmd_discover_device:
+         workspace_locking_adom: <value in [global, custom adom]>
+         workspace_locking_timeout: 300
          method: <value in [exec]>
          params:
             -
