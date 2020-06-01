@@ -119,18 +119,18 @@ Examples
                   allowaccess:
                     - <value in [ping, https, ssh, ...]>
                   description: <value of string>
-                  ip: <value of string default: '0.0.0.0 0.0.0.0'>
+                  ip: <value of string>
                   ipv6:
-                     ip6-address: <value of string default: '::/0'>
+                     ip6-address: <value of string>
                      ip6-allowaccess:
                        - <value in [ping, https, ssh, ...]>
-                     ip6-autoconf: <value in [disable, enable] default: 'enable'>
-                  mtu: <value of integer default: 1500>
+                     ip6-autoconf: <value in [disable, enable]>
+                  mtu: <value of integer>
                   name: <value of string>
                   serviceaccess:
                     - <value in [fgtupdates, fclupdates, webfilter-antispam]>
-                  speed: <value in [auto, 10full, 10half, ...] default: 'auto'>
-                  status: <value in [down, up] default: 'up'>
+                  speed: <value in [auto, 10full, 10half, ...]>
+                  status: <value in [down, up]>
 
 
 

@@ -204,12 +204,12 @@ Examples
                   branch_pt: <value of integer>
                   build: <value of integer>
                   checksum: <value of string>
-                  conf_status: <value in [unknown, insync, outofsync] default: 'unknown'>
-                  conn_mode: <value in [active, passive] default: 'passive'>
-                  conn_status: <value in [UNKNOWN, up, down] default: 'UNKNOWN'>
-                  db_status: <value in [unknown, nomod, mod] default: 'unknown'>
+                  conf_status: <value in [unknown, insync, outofsync]>
+                  conn_mode: <value in [active, passive]>
+                  conn_status: <value in [UNKNOWN, up, down]>
+                  db_status: <value in [unknown, nomod, mod]>
                   desc: <value of string>
-                  dev_status: <value in [none, unknown, checkedin, ...] default: 'unknown'>
+                  dev_status: <value in [none, unknown, checkedin, ...]>
                   fap_cnt: <value of integer>
                   faz.full_act: <value of integer>
                   faz.perm: <value of integer>
@@ -219,17 +219,17 @@ Examples
                   flags:
                     - <value in [has_hdd, vdom_enabled, discover, ...]>
                   foslic_cpu: <value of integer>
-                  foslic_dr_site: <value in [disable, enable] default: 'disable'>
+                  foslic_dr_site: <value in [disable, enable]>
                   foslic_inst_time: <value of integer>
                   foslic_last_sync: <value of integer>
                   foslic_ram: <value of integer>
-                  foslic_type: <value in [temporary, trial, regular, ...] default: 'temporary'>
+                  foslic_type: <value in [temporary, trial, regular, ...]>
                   foslic_utm:
                     - <value in [fw, av, ips, ...]>
                   fsw_cnt: <value of integer>
                   ha_group_id: <value of integer>
                   ha_group_name: <value of string>
-                  ha_mode: <value in [standalone, AP, AA, ...] default: 'standalone'>
+                  ha_mode: <value in [standalone, AP, AA, ...]>
                   hdisk_size: <value of integer>
                   hostname: <value of string>
                   hw_rev_major: <value of integer>
@@ -245,16 +245,16 @@ Examples
                   location_from: <value of string>
                   logdisk_size: <value of integer>
                   longitude: <value of string>
-                  maxvdom: <value of integer default: 10>
+                  maxvdom: <value of integer>
                   meta fields: <value of string>
                   mgmt_id: <value of integer>
                   mgmt_if: <value of string>
-                  mgmt_mode: <value in [unreg, fmg, faz, ...] default: 'unreg'>
+                  mgmt_mode: <value in [unreg, fmg, faz, ...]>
                   mgt_vdom: <value of string>
-                  mr: <value of integer default: -1>
+                  mr: <value of integer>
                   name: <value of string>
-                  os_type: <value in [unknown, fos, fsw, ...] default: 'unknown'>
-                  os_ver: <value in [unknown, 0.0, 1.0, ...] default: 'unknown'>
+                  os_type: <value in [unknown, fos, fsw, ...]>
+                  os_ver: <value in [unknown, 0.0, 1.0, ...]>
                   patch: <value of integer>
                   platform_str: <value of string>
                   psk: <value of string>
@@ -263,7 +263,7 @@ Examples
                     -
                         comments: <value of string>
                         name: <value of string>
-                        opmode: <value in [nat, transparent] default: 'nat'>
+                        opmode: <value in [nat, transparent]>
                         rtm_prof_id: <value of integer>
                         status: <value of string>
                   version: <value of integer>

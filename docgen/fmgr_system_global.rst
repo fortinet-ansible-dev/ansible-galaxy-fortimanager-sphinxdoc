@@ -158,70 +158,70 @@ Examples
          params:
             -
                data:
-                  admin-lockout-duration: <value of integer default: 60>
-                  admin-lockout-threshold: <value of integer default: 3>
-                  adom-mode: <value in [normal, advanced] default: 'normal'>
-                  adom-rev-auto-delete: <value in [disable, by-revisions, by-days] default: 'by-revisions'>
-                  adom-rev-max-backup-revisions: <value of integer default: 5>
-                  adom-rev-max-days: <value of integer default: 30>
-                  adom-rev-max-revisions: <value of integer default: 120>
-                  adom-select: <value in [disable, enable] default: 'enable'>
-                  adom-status: <value in [disable, enable] default: 'disable'>
-                  clt-cert-req: <value in [disable, enable, optional] default: 'disable'>
-                  console-output: <value in [standard, more] default: 'standard'>
-                  country-flag: <value in [disable, enable] default: 'enable'>
-                  create-revision: <value in [disable, enable] default: 'disable'>
-                  daylightsavetime: <value in [disable, enable] default: 'enable'>
-                  default-disk-quota: <value of integer default: 1000>
-                  detect-unregistered-log-device: <value in [disable, enable] default: 'enable'>
-                  device-view-mode: <value in [regular, tree] default: 'regular'>
-                  dh-params: <value in [1024, 1536, 2048, ...] default: '2048'>
+                  admin-lockout-duration: <value of integer>
+                  admin-lockout-threshold: <value of integer>
+                  adom-mode: <value in [normal, advanced]>
+                  adom-rev-auto-delete: <value in [disable, by-revisions, by-days]>
+                  adom-rev-max-backup-revisions: <value of integer>
+                  adom-rev-max-days: <value of integer>
+                  adom-rev-max-revisions: <value of integer>
+                  adom-select: <value in [disable, enable]>
+                  adom-status: <value in [disable, enable]>
+                  clt-cert-req: <value in [disable, enable, optional]>
+                  console-output: <value in [standard, more]>
+                  country-flag: <value in [disable, enable]>
+                  create-revision: <value in [disable, enable]>
+                  daylightsavetime: <value in [disable, enable]>
+                  default-disk-quota: <value of integer>
+                  detect-unregistered-log-device: <value in [disable, enable]>
+                  device-view-mode: <value in [regular, tree]>
+                  dh-params: <value in [1024, 1536, 2048, ...]>
                   disable-module:
                     - <value in [fortiview-noc]>
-                  enc-algorithm: <value in [low, medium, high] default: 'high'>
-                  faz-status: <value in [disable, enable] default: 'disable'>
+                  enc-algorithm: <value in [low, medium, high]>
+                  faz-status: <value in [disable, enable]>
                   fgfm-local-cert: <value of string>
-                  fgfm-ssl-protocol: <value in [sslv3, tlsv1.0, tlsv1.1, ...] default: 'tlsv1.2'>
-                  ha-member-auto-grouping: <value in [disable, enable] default: 'enable'>
-                  hitcount_concurrent: <value of integer default: 100>
-                  hitcount_interval: <value of integer default: 300>
-                  hostname: <value of string default: 'FMG-VM64'>
-                  import-ignore-addr-cmt: <value in [disable, enable] default: 'disable'>
-                  language: <value in [english, simch, japanese, ...] default: 'english'>
+                  fgfm-ssl-protocol: <value in [sslv3, tlsv1.0, tlsv1.1, ...]>
+                  ha-member-auto-grouping: <value in [disable, enable]>
+                  hitcount_concurrent: <value of integer>
+                  hitcount_interval: <value of integer>
+                  hostname: <value of string>
+                  import-ignore-addr-cmt: <value in [disable, enable]>
+                  language: <value in [english, simch, japanese, ...]>
                   latitude: <value of string>
-                  ldap-cache-timeout: <value of integer default: 86400>
-                  ldapconntimeout: <value of integer default: 60000>
-                  lock-preempt: <value in [disable, enable] default: 'disable'>
-                  log-checksum: <value in [none, md5, md5-auth] default: 'none'>
-                  log-forward-cache-size: <value of integer default: 0>
+                  ldap-cache-timeout: <value of integer>
+                  ldapconntimeout: <value of integer>
+                  lock-preempt: <value in [disable, enable]>
+                  log-checksum: <value in [none, md5, md5-auth]>
+                  log-forward-cache-size: <value of integer>
                   longitude: <value of string>
-                  max-log-forward: <value of integer default: 5>
-                  max-running-reports: <value of integer default: 1>
-                  oftp-ssl-protocol: <value in [sslv3, tlsv1.0, tlsv1.1, ...] default: 'tlsv1.2'>
-                  partial-install: <value in [disable, enable] default: 'disable'>
-                  partial-install-force: <value in [disable, enable] default: 'disable'>
-                  partial-install-rev: <value in [disable, enable] default: 'disable'>
-                  perform-improve-by-ha: <value in [disable, enable] default: 'disable'>
-                  policy-hit-count: <value in [disable, enable] default: 'disable'>
-                  policy-object-in-dual-pane: <value in [disable, enable] default: 'disable'>
-                  pre-login-banner: <value in [disable, enable] default: 'disable'>
+                  max-log-forward: <value of integer>
+                  max-running-reports: <value of integer>
+                  oftp-ssl-protocol: <value in [sslv3, tlsv1.0, tlsv1.1, ...]>
+                  partial-install: <value in [disable, enable]>
+                  partial-install-force: <value in [disable, enable]>
+                  partial-install-rev: <value in [disable, enable]>
+                  perform-improve-by-ha: <value in [disable, enable]>
+                  policy-hit-count: <value in [disable, enable]>
+                  policy-object-in-dual-pane: <value in [disable, enable]>
+                  pre-login-banner: <value in [disable, enable]>
                   pre-login-banner-message: <value of string>
-                  remoteauthtimeout: <value of integer default: 10>
-                  search-all-adoms: <value in [disable, enable] default: 'disable'>
-                  ssl-low-encryption: <value in [disable, enable] default: 'disable'>
+                  remoteauthtimeout: <value of integer>
+                  search-all-adoms: <value in [disable, enable]>
+                  ssl-low-encryption: <value in [disable, enable]>
                   ssl-protocol:
                     - <value in [tlsv1.2, tlsv1.1, tlsv1.0, ...]>
-                  ssl-static-key-ciphers: <value in [disable, enable] default: 'enable'>
-                  task-list-size: <value of integer default: 2000>
-                  tftp: <value in [disable, enable] default: 'disable'>
-                  timezone: <value in [00, 01, 02, ...] default: '04'>
-                  tunnel-mtu: <value of integer default: 1500>
-                  usg: <value in [disable, enable] default: 'disable'>
-                  vdom-mirror: <value in [disable, enable] default: 'disable'>
+                  ssl-static-key-ciphers: <value in [disable, enable]>
+                  task-list-size: <value of integer>
+                  tftp: <value in [disable, enable]>
+                  timezone: <value in [00, 01, 02, ...]>
+                  tunnel-mtu: <value of integer>
+                  usg: <value in [disable, enable]>
+                  vdom-mirror: <value in [disable, enable]>
                   webservice-proto:
                     - <value in [tlsv1.2, tlsv1.1, tlsv1.0, ...]>
-                  workflow-max-sessions: <value of integer default: 500>
-                  workspace-mode: <value in [disabled, normal, workflow] default: 'disabled'>
+                  workflow-max-sessions: <value of integer>
+                  workspace-mode: <value in [disabled, normal, workflow]>
 
 
 

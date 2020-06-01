@@ -143,8 +143,8 @@ Examples
                      filter_build: <value of integer>
                      filter_device: <value of integer>
                      filter_hostname: <value of string>
-                     filter_ostype: <value in [unknown, fos] default: 'unknown'>
-                     filter_osver: <value in [unknown, 4.00, 5.00] default: 'unknown'>
+                     filter_ostype: <value in [unknown, fos]>
+                     filter_osver: <value in [unknown, 4.00, 5.00]>
                      filter_platform: <value of string>
                      filter_serial: <value of string>
                      modification_time: <value of string>
@@ -152,12 +152,12 @@ Examples
                      script_schedule:
                        -
                            datetime: <value of string>
-                           day_of_week: <value in [unknown, sun, mon, ...] default: 'sun'>
+                           day_of_week: <value in [unknown, sun, mon, ...]>
                            device: <value of integer>
                            name: <value of string>
-                           run_on_db: <value in [disable, enable] default: 'disable'>
+                           run_on_db: <value in [disable, enable]>
                            type: <value in [auto, onetime, daily, ...]>
-                     target: <value in [device_database, remote_device, adom_database] default: 'device_database'>
+                     target: <value in [device_database, remote_device, adom_database]>
                      type: <value in [cli, tcl, cligrp]>
 
     - name: REQUESTING /DVMDB/SCRIPT

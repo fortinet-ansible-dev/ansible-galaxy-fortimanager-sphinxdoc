@@ -176,8 +176,8 @@ Examples
                   desc: <value of string>
                   meta fields: <value of string>
                   name: <value of string>
-                  os_type: <value in [unknown, fos, fsw, ...] default: 'unknown'>
-                  type: <value in [normal, default, auto] default: 'normal'>
+                  os_type: <value in [unknown, fos, fsw, ...]>
+                  type: <value in [normal, default, auto]>
 
     - name: REQUESTING /DVMDB/GROUP/{GROUP}
       fmgr_dvmdb_group_obj:

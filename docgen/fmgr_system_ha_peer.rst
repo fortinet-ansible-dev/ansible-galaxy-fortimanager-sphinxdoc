@@ -107,11 +107,11 @@ Examples
             -
                data:
                  -
-                     id: <value of integer default: 0>
-                     ip: <value of string default: '0.0.0.0'>
-                     ip6: <value of string default: '::'>
+                     id: <value of integer>
+                     ip: <value of string>
+                     ip6: <value of string>
                      serial-number: <value of string>
-                     status: <value in [disable, enable] default: 'enable'>
+                     status: <value in [disable, enable]>
 
     - name: REQUESTING /CLI/SYSTEM/HA/PEER
       fmgr_system_ha_peer:
