@@ -17,18 +17,16 @@ fmgr_spamfilter_profile -- Configure AntiSpam profiles.
 Synopsis
 --------
 
-- This module is able to configure a FortiManager device by allowing the user to **[add, get, set, update]** the following FortiManager json-rpc urls.
-- `/pm/config/adom/{adom}/obj/spamfilter/profile`
-- `/pm/config/global/obj/spamfilter/profile`
+- This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.0.0
+- Tested with FortiManager v6.0.0.
 
 
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.10.0
+- ansible>=2.9.0
 
 
 
@@ -38,55 +36,31 @@ Parameters
 .. raw:: html
 
  <ul>
- <li><span class="li-head">loose_validation</span> - Do parameter validation in a loose way <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal">default: false</span>  </li>
- <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom dom</span> </li>
+ <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">url_params</span> - parameters in url path <span class="li-normal">type: dict</span> <span class="li-required">required: true</span></li>
+ <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">spamfilter_profile</span> - Configure AntiSpam profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - the domain prefix <span class="li-normal">type: str</span> <span class="li-normal"> choices: none, global, custom dom</span></li>
- </ul>
- <li><span class="li-head">parameters for method: [add, set, update]</span> - Configure AntiSpam profiles.</li>
- <ul class="ul-self">
- <li><span class="li-head">data</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">external</span> - Enable/disable external Email inspection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">flow-based</span> - Enable/disable flow-based spam filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">external</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">flow-based</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bannedword, spamemailbwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamipbwl, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambwl]</span> </li>
  </ul>
- <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-bwl-table</span> - Anti-spam black/white list table ID. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-bword-table</span> - Anti-spam banned word table ID. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-bword-threshold</span> - Spam banned word threshold. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">spam-filtering</span> - Enable/disable spam filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spam-iptrust-table</span> - Anti-spam IP trust table ID. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-log</span> - Enable/disable spam logging for email filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spam-log-fortiguard-response</span> - Enable/disable logging FortiGuard spam response. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spam-mheader-table</span> - Anti-spam MIME header table ID. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-rbl-table</span> - Anti-spam DNSBL table ID. <span class="li-normal">type: str</span> </li>
- </ul>
- </ul>
- <li><span class="li-head">parameters for method: [get]</span> - Configure AntiSpam profiles.</li>
- <ul class="ul-self">
- <li><span class="li-head">attr</span> - The name of the attribute to retrieve its datasource. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fields</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [comment, external, flow-based, name, options, replacemsg-group, spam-bwl-table, spam-bword-table, spam-bword-threshold, spam-filtering, spam-iptrust-table, spam-log, spam-log-fortiguard-response, spam-mheader-table, spam-rbl-table]</span> </li>
- </ul>
- </ul>
- <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">get used</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">loadsub</span> - Enable or disable the return of any sub-objects. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">option</span> - Set fetch option for the request. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [count, object member, datasrc, get reserved, syntax]</span> </li>
- <li><span class="li-head">range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">sortings</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{attr_name}</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">choices: [1, -1]</span> </li>
- </ul>
+ <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-bwl-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-bword-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-bword-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">spam-filtering</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spam-iptrust-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spam-log-fortiguard-response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spam-mheader-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-rbl-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -99,13 +73,13 @@ Notes
 -----
 .. note::
 
-   - The module may supports multiple method, every method has different parameters definition
+   - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
 
-   - One method may also have more than one parameter definition collection, each collection is dedicated to one API endpoint
+   - To create or update an object, use state: present directive.
 
-   - The module may include domain dependent urls, the domain can be specified in url_params as adom
+   - To delete an object, use state: absent directive
 
-   - To run in workspace mode, the paremeter workspace_locking_adom must be included in the task
+   - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
 --------
@@ -121,60 +95,31 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-
-    - name: REQUESTING /PM/CONFIG/OBJ/SPAMFILTER/PROFILE
+    - name: Configure AntiSpam profiles.
       fmgr_spamfilter_profile:
-         loose_validation: False
-         workspace_locking_adom: <value in [global, custom adom]>
+         workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
-         method: <value in [add, set, update]>
-         url_params:
-            adom: <value in [none, global, custom dom]>
-         params:
-            -
-               data:
-                 -
-                     comment: <value of string>
-                     external: <value in [disable, enable]>
-                     flow-based: <value in [disable, enable]>
-                     name: <value of string>
-                     options:
-                       - <value in [bannedword, spamemailbwl, spamfsip, ...]>
-                     replacemsg-group: <value of string>
-                     spam-bwl-table: <value of string>
-                     spam-bword-table: <value of string>
-                     spam-bword-threshold: <value of integer>
-                     spam-filtering: <value in [disable, enable]>
-                     spam-iptrust-table: <value of string>
-                     spam-log: <value in [disable, enable]>
-                     spam-log-fortiguard-response: <value in [disable, enable]>
-                     spam-mheader-table: <value of string>
-                     spam-rbl-table: <value of string>
-
-    - name: REQUESTING /PM/CONFIG/OBJ/SPAMFILTER/PROFILE
-      fmgr_spamfilter_profile:
-         loose_validation: False
-         workspace_locking_adom: <value in [global, custom adom]>
-         workspace_locking_timeout: 300
-         method: <value in [get]>
-         url_params:
-            adom: <value in [none, global, custom dom]>
-         params:
-            -
-               attr: <value of string>
-               fields:
-                 -
-                    - <value in [comment, external, flow-based, ...]>
-               filter:
-                 - <value of string>
-               get used: <value of integer>
-               loadsub: <value of integer>
-               option: <value in [count, object member, datasrc, ...]>
-               range:
-                 - <value of integer>
-               sortings:
-                 -
-                     varidic.attr_name: <value in [1, -1]>
+         rc_succeeded: [0, -2, -3, ...]
+         rc_failed: [-2, -3, ...]
+         adom: <your own value>
+         state: <value in [present, absent]>
+         spamfilter_profile:
+            comment: <value of string>
+            external: <value in [disable, enable]>
+            flow-based: <value in [disable, enable]>
+            name: <value of string>
+            options:
+              - <value in [bannedword, spamemailbwl, spamfsip, ...]>
+            replacemsg-group: <value of string>
+            spam-bwl-table: <value of string>
+            spam-bword-table: <value of string>
+            spam-bword-threshold: <value of integer>
+            spam-filtering: <value in [disable, enable]>
+            spam-iptrust-table: <value of string>
+            spam-log: <value in [disable, enable]>
+            spam-log-fortiguard-response: <value in [disable, enable]>
+            spam-mheader-table: <value of string>
+            spam-rbl-table: <value of string>
 
 
 
@@ -188,46 +133,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
 .. raw:: html
 
  <ul>
- <li><span class="li-return"> return values for method: [add, set, update]</span> </li>
- <ul class="ul-self">
- <li><span class="li-return">status</span>
- - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li> <span class="li-return"> code </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> message </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">url</span>
- - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">example: /pm/config/adom/{adom}/obj/spamfilter/profile</span>  </li>
- </ul>
- <li><span class="li-return"> return values for method: [get]</span> </li>
- <ul class="ul-self">
- <li><span class="li-return">data</span>
- - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> comment </span> - Comment. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> external </span> - Enable/disable external Email inspection. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> flow-based </span> - Enable/disable flow-based spam filtering. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> name </span> - Profile name. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> options </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-return">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> replacemsg-group </span> - Replacement message group. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-bwl-table </span> - Anti-spam black/white list table ID. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-bword-table </span> - Anti-spam banned word table ID. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-bword-threshold </span> - Spam banned word threshold. <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> spam-filtering </span> - Enable/disable spam filtering. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-iptrust-table </span> - Anti-spam IP trust table ID. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-log </span> - Enable/disable spam logging for email filtering. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-log-fortiguard-response </span> - Enable/disable logging FortiGuard spam response. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-mheader-table </span> - Anti-spam MIME header table ID. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> spam-rbl-table </span> - Anti-spam DNSBL table ID. <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">status</span>
- - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li> <span class="li-return"> code </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> message </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">url</span>
- - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">example: /pm/config/adom/{adom}/obj/spamfilter/profile</span>  </li>
- </ul>
+ <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
+ <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
  </ul>
 
 
@@ -243,8 +151,10 @@ Status
 Authors
 -------
 
+- Link Zheng (@chillancezen)
+- Jie Xue (@JieX19)
 - Frank Shen (@fshen01)
-- Link Zheng (@zhengl)
+- Hongbin Lu (@fgtdev-hblu)
 
 
 .. hint::

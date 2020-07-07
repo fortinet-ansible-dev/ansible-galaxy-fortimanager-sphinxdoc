@@ -17,17 +17,16 @@ fmgr_system_interface -- Interface configuration.
 Synopsis
 --------
 
-- This module is able to configure a FortiManager device by allowing the user to **[add, get, set, update]** the following FortiManager json-rpc urls.
-- `/cli/global/system/interface`
+- This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.0.0
+- Tested with FortiManager v6.0.0.
 
 
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.10.0
+- ansible>=2.9.0
 
 
 
@@ -37,44 +36,31 @@ Parameters
 .. raw:: html
 
  <ul>
- <li><span class="li-head">loose_validation</span> - Do parameter validation in a loose way <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal">default: false</span>  </li>
- <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom dom</span> </li>
+ <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">parameters for method: [add, set, update]</span> - Interface configuration.</li>
+ <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">system_interface</span> - Interface configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">data</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">alias</span> - Alias. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">alias</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
  </ul>
- <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - IP address of interface. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
- <li><span class="li-head">ipv6</span> <li><span class="li-head">ip6-address</span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
+ <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ipv6</span> <li><span class="li-head">ip6-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
  </ul>
- <li><span class="li-head">ip6-autoconf</span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">mtu</span> - Maximum transportation unit(68 - 9000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 1500</span> </li>
- <li><span class="li-head">name</span> - Interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6-autoconf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mtu</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1500</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">serviceaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgtupdates, fclupdates, webfilter-antispam]</span> </li>
  </ul>
- <li><span class="li-head">speed</span> - Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span>  <span class="li-normal">default: auto</span> </li>
- <li><span class="li-head">status</span> - Interface status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span>  <span class="li-normal">default: up</span> </li>
- </ul>
- </ul>
- <li><span class="li-head">parameters for method: [get]</span> - Interface configuration.</li>
- <ul class="ul-self">
- <li><span class="li-head">fields</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [alias, allowaccess, description, ip, mtu, name, serviceaccess, speed, status]</span> </li>
- </ul>
- </ul>
- <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">loadsub</span> - Enable or disable the return of any sub-objects. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">option</span> - Set fetch option for the request. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [count, syntax]</span> </li>
+ <li><span class="li-head">speed</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span> </li>
+ <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span> </li>
  </ul>
  </ul>
 
@@ -87,13 +73,13 @@ Notes
 -----
 .. note::
 
-   - The module may supports multiple method, every method has different parameters definition
+   - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
 
-   - One method may also have more than one parameter definition collection, each collection is dedicated to one API endpoint
+   - To create or update an object, use state: present directive.
 
-   - The module may include domain dependent urls, the domain can be specified in url_params as adom
+   - To delete an object, use state: absent directive
 
-   - To run in workspace mode, the paremeter workspace_locking_adom must be included in the task
+   - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
 --------
@@ -109,49 +95,30 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-
-    - name: REQUESTING /CLI/SYSTEM/INTERFACE
+    - name: Interface configuration.
       fmgr_system_interface:
-         loose_validation: False
-         workspace_locking_adom: <value in [global, custom adom]>
+         workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
-         method: <value in [add, set, update]>
-         params:
-            -
-               data:
-                 -
-                     alias: <value of string>
-                     allowaccess:
-                       - <value in [ping, https, ssh, ...]>
-                     description: <value of string>
-                     ip: <value of string>
-                     ipv6:
-                        ip6-address: <value of string>
-                        ip6-allowaccess:
-                          - <value in [ping, https, ssh, ...]>
-                        ip6-autoconf: <value in [disable, enable]>
-                     mtu: <value of integer>
-                     name: <value of string>
-                     serviceaccess:
-                       - <value in [fgtupdates, fclupdates, webfilter-antispam]>
-                     speed: <value in [auto, 10full, 10half, ...]>
-                     status: <value in [down, up]>
-
-    - name: REQUESTING /CLI/SYSTEM/INTERFACE
-      fmgr_system_interface:
-         loose_validation: False
-         workspace_locking_adom: <value in [global, custom adom]>
-         workspace_locking_timeout: 300
-         method: <value in [get]>
-         params:
-            -
-               fields:
-                 -
-                    - <value in [alias, allowaccess, description, ...]>
-               filter:
-                 - <value of string>
-               loadsub: <value of integer>
-               option: <value in [count, syntax]>
+         rc_succeeded: [0, -2, -3, ...]
+         rc_failed: [-2, -3, ...]
+         state: <value in [present, absent]>
+         system_interface:
+            alias: <value of string>
+            allowaccess:
+              - <value in [ping, https, ssh, ...]>
+            description: <value of string>
+            ip: <value of string>
+            ipv6:
+               ip6-address: <value of string>
+               ip6-allowaccess:
+                 - <value in [ping, https, ssh, ...]>
+               ip6-autoconf: <value in [disable, enable]>
+            mtu: <value of integer>
+            name: <value of string>
+            serviceaccess:
+              - <value in [fgtupdates, fclupdates, webfilter-antispam]>
+            speed: <value in [auto, 10full, 10half, ...]>
+            status: <value in [down, up]>
 
 
 
@@ -165,47 +132,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
 .. raw:: html
 
  <ul>
- <li><span class="li-return"> return values for method: [add, set, update]</span> </li>
- <ul class="ul-self">
- <li><span class="li-return">status</span>
- - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li> <span class="li-return"> code </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> message </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">url</span>
- - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">example: /cli/global/system/interface</span>  </li>
- </ul>
- <li><span class="li-return"> return values for method: [get]</span> </li>
- <ul class="ul-self">
- <li><span class="li-return">data</span>
- - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> alias </span> - Alias. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> allowaccess </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-return">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> description </span> - Description. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> ip </span> - IP address of interface. <span class="li-normal">type: str</span>  <span class="li-normal">example: 0.0.0.0 0.0.0.0</span>  </li>
- <li> <span class="li-return"> ipv6 </span> <li> <span class="li-return"> ip6-address </span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span>  <span class="li-normal">example: ::/0</span>  </li>
- <li> <span class="li-return"> ip6-allowaccess </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-return">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> ip6-autoconf </span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">example: enable</span>  </li>
- <li> <span class="li-return"> mtu </span> - Maximum transportation unit(68 - 9000). <span class="li-normal">type: int</span>  <span class="li-normal">example: 1500</span>  </li>
- <li> <span class="li-return"> name </span> - Interface name. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> serviceaccess </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-return">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> speed </span> - Speed. <span class="li-normal">type: str</span>  <span class="li-normal">example: auto</span>  </li>
- <li> <span class="li-return"> status </span> - Interface status. <span class="li-normal">type: str</span>  <span class="li-normal">example: up</span>  </li>
- </ul>
- <li><span class="li-return">status</span>
- - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li> <span class="li-return"> code </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> message </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">url</span>
- - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">example: /cli/global/system/interface</span>  </li>
- </ul>
+ <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
+ <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
  </ul>
 
 
@@ -221,8 +150,10 @@ Status
 Authors
 -------
 
+- Link Zheng (@chillancezen)
+- Jie Xue (@JieX19)
 - Frank Shen (@fshen01)
-- Link Zheng (@zhengl)
+- Hongbin Lu (@fgtdev-hblu)
 
 
 .. hint::

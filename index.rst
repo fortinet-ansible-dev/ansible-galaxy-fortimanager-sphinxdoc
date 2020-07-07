@@ -6,15 +6,21 @@
 Welcome to Fortinet FortiManager Ansible Collection documentation!
 ==================================================================
 
+The FortiManager Ansible Collection provides Ansible modules for configuring FortiManager devices.
+
 .. toctree::
    :glob:
+   :caption: User's Guide
+   :maxdepth: 1
 
-   docgen/*
+   install.rst
+   playbook.rst
+   errors.rst
+   help.rst
 
+.. toctree::
+   :glob:
+   :caption: Modules Index
+   :maxdepth: 1
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   modules.rst

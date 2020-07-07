@@ -1,0 +1,197 @@
+:source: fmgr_firewall_proxyaddress.py
+
+:orphan:
+
+.. _fmgr_firewall_proxyaddress:
+
+fmgr_firewall_proxyaddress -- Web proxy address configuration.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. versionadded:: 2.10
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+Synopsis
+--------
+
+- This module is able to configure a FortiManager device.
+- Examples include all parameters and values need to be adjusted to data sources before usage.
+- Tested with FortiManager v6.0.0.
+
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- ansible>=2.9.0
+
+
+
+Parameters
+----------
+
+.. raw:: html
+
+ <ul>
+ <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
+ <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">firewall_proxyaddress</span> - Web proxy address configuration. <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self">
+ <li><span class="li-head">case-sensitivity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">header-group</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">case-sensitivity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">header-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">header-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host-regex</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">method</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span> </li>
+ </ul>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">path</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">query</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">referrer</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ </ul>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced]</span> </li>
+ <li><span class="li-head">ua</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [chrome, ms, firefox, safari, other]</span> </li>
+ </ul>
+ <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ </ul>
+
+
+
+
+
+
+Notes
+-----
+.. note::
+
+   - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
+
+   - To create or update an object, use state: present directive.
+
+   - To delete an object, use state: absent directive
+
+   - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
+
+Examples
+--------
+
+.. code-block:: yaml+jinja
+
+ - hosts: fortimanager-inventory
+   collections:
+     - fortinet.fortimanager
+   connection: httpapi
+   vars:
+      ansible_httpapi_use_ssl: True
+      ansible_httpapi_validate_certs: False
+      ansible_httpapi_port: 443
+   tasks:
+    - name: Web proxy address configuration.
+      fmgr_firewall_proxyaddress:
+         workspace_locking_adom: <value in [global, custom adom including root]>
+         workspace_locking_timeout: 300
+         rc_succeeded: [0, -2, -3, ...]
+         rc_failed: [-2, -3, ...]
+         adom: <your own value>
+         state: <value in [present, absent]>
+         firewall_proxyaddress:
+            case-sensitivity: <value in [disable, enable]>
+            category: <value of string>
+            color: <value of integer>
+            comment: <value of string>
+            header: <value of string>
+            header-group:
+              -
+                  case-sensitivity: <value in [disable, enable]>
+                  header: <value of string>
+                  header-name: <value of string>
+                  id: <value of integer>
+            header-name: <value of string>
+            host: <value of string>
+            host-regex: <value of string>
+            method:
+              - <value in [delete, get, head, ...]>
+            name: <value of string>
+            path: <value of string>
+            query: <value of string>
+            referrer: <value in [disable, enable]>
+            tagging:
+              -
+                  category: <value of string>
+                  name: <value of string>
+                  tags:
+                    - <value of string>
+            type: <value in [host-regex, url, category, ...]>
+            ua:
+              - <value in [chrome, ms, firefox, ...]>
+            uuid: <value of string>
+            visibility: <value in [disable, enable]>
+
+
+
+Return Values
+-------------
+
+
+Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
+
+
+.. raw:: html
+
+ <ul>
+ <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
+ <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ </ul>
+
+
+
+
+
+Status
+------
+
+- This module is not guaranteed to have a backwards compatible interface.
+
+
+Authors
+-------
+
+- Link Zheng (@chillancezen)
+- Jie Xue (@JieX19)
+- Frank Shen (@fshen01)
+- Hongbin Lu (@fgtdev-hblu)
+
+
+.. hint::
+
+    If you notice any issues in this documentation, you can create a pull request to improve it.
+
+
+

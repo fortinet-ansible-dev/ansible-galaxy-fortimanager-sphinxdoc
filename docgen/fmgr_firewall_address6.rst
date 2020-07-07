@@ -17,18 +17,16 @@ fmgr_firewall_address6 -- Configure IPv6 firewall addresses.
 Synopsis
 --------
 
-- This module is able to configure a FortiManager device by allowing the user to **[add, get, set, update]** the following FortiManager json-rpc urls.
-- `/pm/config/adom/{adom}/obj/firewall/address6`
-- `/pm/config/global/obj/firewall/address6`
+- This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.0.0
+- Tested with FortiManager v6.0.0.
 
 
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.10.0
+- ansible>=2.9.0
 
 
 
@@ -38,19 +36,17 @@ Parameters
 .. raw:: html
 
  <ul>
- <li><span class="li-head">loose_validation</span> - Do parameter validation in a loose way <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal">default: false</span>  </li>
- <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom dom</span> </li>
+ <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">url_params</span> - parameters in url path <span class="li-normal">type: dict</span> <span class="li-required">required: true</span></li>
+ <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">firewall_address6</span> - Configure IPv6 firewall addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - the domain prefix <span class="li-normal">type: str</span> <span class="li-normal"> choices: none, global, custom dom</span></li>
- </ul>
- <li><span class="li-head">parameters for method: [add, set, update]</span> - Configure IPv6 firewall addresses.</li>
- <ul class="ul-self">
- <li><span class="li-head">data</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">cache-ttl</span> - Minimal TTL of individual IPv6 addresses in FQDN cache. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">color</span> - Integer value to determine the color of the icon in the GUI (range 1 to 32, default = 0, which sets the value to 1). <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cache-ttl</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -73,56 +69,34 @@ Parameters
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">end-ip</span> - Final IP address (inclusive) in the range for the address (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fqdn</span> - Fully qualified domain name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">host</span> - Host Address. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">host-type</span> - Host type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, specific]</span> </li>
- <li><span class="li-head">ip6</span> - IPv6 address prefix (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx/xxx). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">end-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, specific]</span> </li>
+ <li><span class="li-head">ip6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">ip</span> - IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">name</span> - Address name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">obj-id</span> - Object ID for NSX. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sdn</span> - SDN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nsx]</span> </li>
- <li><span class="li-head">start-ip</span> - First IP address (inclusive) in the range for the address (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">obj-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sdn</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nsx]</span> </li>
+ <li><span class="li-head">start-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">subnet-segment</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Subnet segment type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, specific]</span> </li>
- <li><span class="li-head">value</span> - Subnet segment value. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, specific]</span> </li>
+ <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - Tagging entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
- <li><span class="li-head">template</span> - IPv6 address template. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Type of IPv6 address object (default = ipprefix). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, nsx, dynamic, fqdn, template]</span> </li>
- <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">visibility</span> - Enable/disable the visibility of the object in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- </ul>
- </ul>
- <li><span class="li-head">parameters for method: [get]</span> - Configure IPv6 firewall addresses.</li>
- <ul class="ul-self">
- <li><span class="li-head">attr</span> - The name of the attribute to retrieve its datasource. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fields</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [cache-ttl, color, comment, end-ip, fqdn, host, host-type, ip6, name, obj-id, sdn, start-ip, template, type, uuid, visibility]</span> </li>
- </ul>
- </ul>
- <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">get used</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">loadsub</span> - Enable or disable the return of any sub-objects. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">option</span> - Set fetch option for the request. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [count, object member, datasrc, get reserved, syntax]</span> </li>
- <li><span class="li-head">range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">sortings</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{attr_name}</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">choices: [1, -1]</span> </li>
- </ul>
+ <li><span class="li-head">template</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, nsx, dynamic, fqdn, template]</span> </li>
+ <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -135,13 +109,13 @@ Notes
 -----
 .. note::
 
-   - The module may supports multiple method, every method has different parameters definition
+   - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
 
-   - One method may also have more than one parameter definition collection, each collection is dedicated to one API endpoint
+   - To create or update an object, use state: present directive.
 
-   - The module may include domain dependent urls, the domain can be specified in url_params as adom
+   - To delete an object, use state: absent directive
 
-   - To run in workspace mode, the paremeter workspace_locking_adom must be included in the task
+   - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
 --------
@@ -157,96 +131,67 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-
-    - name: REQUESTING /PM/CONFIG/OBJ/FIREWALL/ADDRESS6
+    - name: Configure IPv6 firewall addresses.
       fmgr_firewall_address6:
-         loose_validation: False
-         workspace_locking_adom: <value in [global, custom adom]>
+         workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
-         method: <value in [add, set, update]>
-         url_params:
-            adom: <value in [none, global, custom dom]>
-         params:
-            -
-               data:
-                 -
-                     cache-ttl: <value of integer>
-                     color: <value of integer>
-                     comment: <value of string>
-                     dynamic_mapping:
-                       -
-                           _scope:
-                             -
-                                 name: <value of string>
-                                 vdom: <value of string>
-                           cache-ttl: <value of integer>
-                           color: <value of integer>
-                           comment: <value of string>
-                           end-ip: <value of string>
-                           fqdn: <value of string>
-                           host: <value of string>
-                           host-type: <value in [any, specific]>
-                           ip6: <value of string>
-                           obj-id: <value of string>
-                           sdn: <value in [nsx]>
-                           start-ip: <value of string>
-                           tags: <value of string>
-                           template: <value of string>
-                           type: <value in [ipprefix, iprange, nsx, ...]>
-                           uuid: <value of string>
-                           visibility: <value in [disable, enable]>
-                     end-ip: <value of string>
-                     fqdn: <value of string>
-                     host: <value of string>
-                     host-type: <value in [any, specific]>
-                     ip6: <value of string>
-                     list:
-                       -
-                           ip: <value of string>
-                     name: <value of string>
-                     obj-id: <value of string>
-                     sdn: <value in [nsx]>
-                     start-ip: <value of string>
-                     subnet-segment:
-                       -
-                           name: <value of string>
-                           type: <value in [any, specific]>
-                           value: <value of string>
-                     tagging:
-                       -
-                           category: <value of string>
-                           name: <value of string>
-                           tags:
-                             - <value of string>
-                     template: <value of string>
-                     type: <value in [ipprefix, iprange, nsx, ...]>
-                     uuid: <value of string>
-                     visibility: <value in [disable, enable]>
-
-    - name: REQUESTING /PM/CONFIG/OBJ/FIREWALL/ADDRESS6
-      fmgr_firewall_address6:
-         loose_validation: False
-         workspace_locking_adom: <value in [global, custom adom]>
-         workspace_locking_timeout: 300
-         method: <value in [get]>
-         url_params:
-            adom: <value in [none, global, custom dom]>
-         params:
-            -
-               attr: <value of string>
-               fields:
-                 -
-                    - <value in [cache-ttl, color, comment, ...]>
-               filter:
-                 - <value of string>
-               get used: <value of integer>
-               loadsub: <value of integer>
-               option: <value in [count, object member, datasrc, ...]>
-               range:
-                 - <value of integer>
-               sortings:
-                 -
-                     varidic.attr_name: <value in [1, -1]>
+         rc_succeeded: [0, -2, -3, ...]
+         rc_failed: [-2, -3, ...]
+         adom: <your own value>
+         state: <value in [present, absent]>
+         firewall_address6:
+            cache-ttl: <value of integer>
+            color: <value of integer>
+            comment: <value of string>
+            dynamic_mapping:
+              -
+                  _scope:
+                    -
+                        name: <value of string>
+                        vdom: <value of string>
+                  cache-ttl: <value of integer>
+                  color: <value of integer>
+                  comment: <value of string>
+                  end-ip: <value of string>
+                  fqdn: <value of string>
+                  host: <value of string>
+                  host-type: <value in [any, specific]>
+                  ip6: <value of string>
+                  obj-id: <value of string>
+                  sdn: <value in [nsx]>
+                  start-ip: <value of string>
+                  tags: <value of string>
+                  template: <value of string>
+                  type: <value in [ipprefix, iprange, nsx, ...]>
+                  uuid: <value of string>
+                  visibility: <value in [disable, enable]>
+            end-ip: <value of string>
+            fqdn: <value of string>
+            host: <value of string>
+            host-type: <value in [any, specific]>
+            ip6: <value of string>
+            list:
+              -
+                  ip: <value of string>
+            name: <value of string>
+            obj-id: <value of string>
+            sdn: <value in [nsx]>
+            start-ip: <value of string>
+            subnet-segment:
+              -
+                  name: <value of string>
+                  type: <value in [any, specific]>
+                  value: <value of string>
+            tagging:
+              -
+                  category: <value of string>
+                  name: <value of string>
+                  tags:
+                    - <value of string>
+            template: <value of string>
+            type: <value in [ipprefix, iprange, nsx, ...]>
+            uuid: <value of string>
+            visibility: <value in [disable, enable]>
 
 
 
@@ -260,82 +205,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
 .. raw:: html
 
  <ul>
- <li><span class="li-return"> return values for method: [add, set, update]</span> </li>
- <ul class="ul-self">
- <li><span class="li-return">status</span>
- - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li> <span class="li-return"> code </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> message </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">url</span>
- - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">example: /pm/config/adom/{adom}/obj/firewall/address6</span>  </li>
- </ul>
- <li><span class="li-return"> return values for method: [get]</span> </li>
- <ul class="ul-self">
- <li><span class="li-return">data</span>
- - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> cache-ttl </span> - Minimal TTL of individual IPv6 addresses in FQDN cache. <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> color </span> - Integer value to determine the color of the icon in the GUI (range 1 to 32, default = 0, which sets the value to 1). <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> comment </span> - Comment. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> dynamic_mapping </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> _scope </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> name </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> vdom </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> cache-ttl </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> color </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> comment </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> end-ip </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> fqdn </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> host </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> host-type </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> ip6 </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> obj-id </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> sdn </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> start-ip </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> tags </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> template </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> type </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> uuid </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> visibility </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> end-ip </span> - Final IP address (inclusive) in the range for the address (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> fqdn </span> - Fully qualified domain name. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> host </span> - Host Address. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> host-type </span> - Host type. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> ip6 </span> - IPv6 address prefix (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx/xxx). <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> list </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> ip </span> - IP. <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> name </span> - Address name. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> obj-id </span> - Object ID for NSX. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> sdn </span> - SDN. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> start-ip </span> - First IP address (inclusive) in the range for the address (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> subnet-segment </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> name </span> - Name. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> type </span> - Subnet segment type. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> value </span> - Subnet segment value. <span class="li-normal">type: str</span>  </li>
- </ul>
- <li> <span class="li-return"> tagging </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li> <span class="li-return"> category </span> - Tag category. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> name </span> - Tagging entry name. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> tags </span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-return">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- </ul>
- <li> <span class="li-return"> template </span> - IPv6 address template. <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> type </span> - Type of IPv6 address object (default = ipprefix). <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> uuid </span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>  </li>
- <li> <span class="li-return"> visibility </span> - Enable/disable the visibility of the object in the GUI. <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">status</span>
- - No description for the parameter <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li> <span class="li-return"> code </span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
- <li> <span class="li-return"> message </span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- </ul>
- <li><span class="li-return">url</span>
- - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">example: /pm/config/adom/{adom}/obj/firewall/address6</span>  </li>
- </ul>
+ <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
+ <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
  </ul>
 
 
@@ -351,8 +223,10 @@ Status
 Authors
 -------
 
+- Link Zheng (@chillancezen)
+- Jie Xue (@JieX19)
 - Frank Shen (@fshen01)
-- Link Zheng (@zhengl)
+- Hongbin Lu (@fgtdev-hblu)
 
 
 .. hint::
