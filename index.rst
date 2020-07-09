@@ -24,4 +24,5 @@ The FortiManager Ansible Collection provides Ansible modules for configuring For
    :maxdepth: 1
 
    modules.rst
-   fmgr_fact.rst
+   fact.rst
+   daemon_modules.rst
