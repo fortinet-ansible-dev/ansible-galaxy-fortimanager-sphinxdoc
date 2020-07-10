@@ -44,12 +44,10 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_admin_profile_datamaskcustomfields</span> - Customized datamask fields. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">field-category</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [log, fortiview, alert, ueba, all]</span> </li>
- </ul>
- <li><span class="li-head">field-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">field-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">field-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [string, ip, mac, email, unknown]</span> </li>
+ <li><span class="li-head">field-category</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [log, fortiview, alert, ueba, all]</span> </li>
+ <li><span class="li-head">field-name</span> - Field name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">field-status</span> - Field status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">field-type</span> - Field type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [string, ip, mac, email, unknown]</span> </li>
  </ul>
  </ul>
 
@@ -94,7 +92,11 @@ Examples
          state: <value in [present, absent]>
          system_admin_profile_datamaskcustomfields:
             field-category:
-              - <value in [log, fortiview, alert, ...]>
+              - log
+              - fortiview
+              - alert
+              - ueba
+              - all
             field-name: <value of string>
             field-status: <value in [disable, enable]>
             field-type: <value in [string, ip, mac, ...]>
@@ -114,6 +116,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

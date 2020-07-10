@@ -45,18 +45,18 @@ Parameters
  <li><span class="li-head">replacemsg-group</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_replacemsggroup_mm3</span> - Replacement message table entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">add-html</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">charset</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">from-sender</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">html-part</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">image</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">message</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
- <li><span class="li-head">subject</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">add-html</span> - add message encapsulation <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charset</span> - character encoding used for replacement message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">from</span> - from address <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">from-sender</span> - notification message sent from recipient <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">html-part</span> - message encapsulation text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">image</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message</span> - message text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - message priority <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
+ <li><span class="li-head">subject</span> - subject text string <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -129,6 +129,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

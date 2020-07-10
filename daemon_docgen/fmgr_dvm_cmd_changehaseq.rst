@@ -42,12 +42,10 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">dvm_cmd_changehaseq</span> - Modify HA sequence to promote a slave to become the master of the cluster. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">device</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
- </ul>
- <li><span class="li-head">new_master</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Name or ID of the ADOM where the command is to be executed on. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">device</span> - Name or ID of the target HA cluster (original master device). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
+ <li><span class="li-head">new_master</span> - Name or ID of the new HA master. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -92,7 +90,10 @@ Examples
             adom: <value of string>
             device: <value of string>
             flags:
-              - <value in [none, create_task, nonblocking, ...]>
+              - none
+              - create_task
+              - nonblocking
+              - log_dev
             new_master: <value of string>
 
 
@@ -110,6 +111,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

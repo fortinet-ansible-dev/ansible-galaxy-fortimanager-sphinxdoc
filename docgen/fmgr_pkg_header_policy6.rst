@@ -48,12 +48,8 @@ Parameters
  <li><span class="li-head">anti-replay</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">app-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">application-charts</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [top10-app, top10-p2p-user, top10-media-user]</span> </li>
- </ul>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">application-charts</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [top10-app, top10-p2p-user, top10-media-user]</span> </li>
  <li><span class="li-head">application-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">auto-asic-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">av-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -78,9 +74,7 @@ Parameters
  <li><span class="li-head">dstaddr-negate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic-profile</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dynamic-profile-access</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, im, nntp, imaps, smtps, pop3s, https, ftps]</span> </li>
- </ul>
+ <li><span class="li-head">dynamic-profile-access</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, im, nntp, imaps, smtps, pop3s, https, ftps]</span> </li>
  <li><span class="li-head">dynamic-profile-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">email-collection-portal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">emailfilter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -235,10 +229,11 @@ Examples
             anti-replay: <value in [disable, enable]>
             app-category: <value of string>
             app-group: <value of string>
-            application:
-              - <value of integer>
+            application: <value of integer>
             application-charts:
-              - <value in [top10-app, top10-p2p-user, top10-media-user]>
+              - top10-app
+              - top10-p2p-user
+              - top10-media-user
             application-list: <value of string>
             auto-asic-offload: <value in [disable, enable]>
             av-profile: <value of string>
@@ -264,7 +259,18 @@ Examples
             dstintf: <value of string>
             dynamic-profile: <value in [disable, enable]>
             dynamic-profile-access:
-              - <value in [imap, smtp, pop3, ...]>
+              - imap
+              - smtp
+              - pop3
+              - http
+              - ftp
+              - im
+              - nntp
+              - imaps
+              - smtps
+              - pop3s
+              - https
+              - ftps
             dynamic-profile-group: <value of string>
             email-collection-portal: <value in [disable, enable]>
             emailfilter-profile: <value of string>
@@ -388,6 +394,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

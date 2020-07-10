@@ -44,20 +44,18 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_proxyaddrgrp</span> - Web proxy address group configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">color</span> - Integer value to determine the color of the icon in the GUI (1 - 32, default = 0, which sets value to 1). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Optional comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - Members of address group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Address group name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Tagging entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
- </ul>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [src, dst]</span> </li>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">type</span> - Source or destination address group type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [src, dst]</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">visibility</span> - Enable/disable visibility of the object in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -109,8 +107,7 @@ Examples
               -
                   category: <value of string>
                   name: <value of string>
-                  tags:
-                    - <value of string>
+                  tags: <value of string>
             type: <value in [src, dst]>
             uuid: <value of string>
             visibility: <value in [disable, enable]>
@@ -130,6 +127,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

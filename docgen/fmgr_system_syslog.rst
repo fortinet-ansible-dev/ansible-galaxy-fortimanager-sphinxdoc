@@ -43,9 +43,9 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_syslog</span> - Syslog servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 514</span> </li>
+ <li><span class="li-head">ip</span> - Syslog server IP address or hostname. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Syslog server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Syslog server port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 514</span> </li>
  </ul>
  </ul>
 
@@ -107,6 +107,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

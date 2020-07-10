@@ -46,19 +46,19 @@ Parameters
  <li><span class="li-head">wanprof_system_virtualwanlink_members</span> - Physical FortiGate interfaces added to the virtual-wan-link. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_dynamic-member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">gateway</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">gateway6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ingress-spillover-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">seq-num</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">source</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spillover-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">volume-ratio</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">weight</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">gateway</span> - The default gateway for this interface. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">gateway6</span> - IPv6 gateway. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ingress-spillover-threshold</span> - Ingress spillover threshold for this interface (0 - 16776000 kbit/s). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - Priority of the interface (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">seq-num</span> - Sequence number(1-255). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">source</span> - Source IP address used in the health-check packet to the server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source6</span> - Source IPv6 address used in the health-check packet to the server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spillover-threshold</span> - Egress spillover threshold for this interface (0 - 16776000 kbit/s). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this interface in the SD-WAN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">volume-ratio</span> - Measured volume ratio (this value / sum of all values = percentage of link volume, 0 - 255). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">weight</span> - Weight of this interface for weighted load balancing. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -133,6 +133,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

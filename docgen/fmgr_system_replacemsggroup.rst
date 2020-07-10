@@ -45,190 +45,190 @@ Parameters
  <li><span class="li-head">system_replacemsggroup</span> - Configure replacement message groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">admin</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">alertmail</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">auth</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">custom-message</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">device-detection-portal</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">ec</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">fortiguard-wf</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">ftp</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">group-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, utm, auth, ec, captive-portal]</span> </li>
+ <li><span class="li-head">group-type</span> - Group type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, utm, auth, ec, captive-portal]</span> </li>
  <li><span class="li-head">http</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">icap</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">mail</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">mm1</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">add-smil</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">charset</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
- <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [personal, advertisement, information, automatic, not-included]</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">from-sender</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">image</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">message</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
- <li><span class="li-head">rsp-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-msg-not-found, err-net-prob, err-content-not-accept, err-unsupp-msg]</span> </li>
- <li><span class="li-head">rsp-text</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sender-visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hide, show, not-specified]</span> </li>
- <li><span class="li-head">smil-part</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">subject</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">add-smil</span> - add message encapsulation <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charset</span> - character encoding used for replacement message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
+ <li><span class="li-head">class</span> - message class <span class="li-normal">type: str</span>  <span class="li-normal">choices: [personal, advertisement, information, automatic, not-included]</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">from</span> - from address <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">from-sender</span> - notification message sent from recipient <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">image</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message</span> - message text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - message priority <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
+ <li><span class="li-head">rsp-status</span> - response status code <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-msg-not-found, err-net-prob, err-content-not-accept, err-unsupp-msg]</span> </li>
+ <li><span class="li-head">rsp-text</span> - response text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sender-visibility</span> - sender visibility <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hide, show, not-specified]</span> </li>
+ <li><span class="li-head">smil-part</span> - message encapsulation text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subject</span> - subject text string <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">mm3</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">add-html</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">charset</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">from-sender</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">html-part</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">image</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">message</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
- <li><span class="li-head">subject</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">add-html</span> - add message encapsulation <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charset</span> - character encoding used for replacement message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">from</span> - from address <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">from-sender</span> - notification message sent from recipient <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">html-part</span> - message encapsulation text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">image</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message</span> - message text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - message priority <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
+ <li><span class="li-head">subject</span> - subject text string <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">mm4</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">add-smil</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">charset</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
- <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span> </li>
- <li><span class="li-head">domain</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">from-sender</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">image</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">message</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
- <li><span class="li-head">rsp-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-net-prob, err-content-not-accept, err-unsupp-msg]</span> </li>
- <li><span class="li-head">smil-part</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">subject</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">add-smil</span> - add message encapsulation <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charset</span> - character encoding used for replacement message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
+ <li><span class="li-head">class</span> - message class <span class="li-normal">type: str</span>  <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span> </li>
+ <li><span class="li-head">domain</span> - from address domain <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">from</span> - from address <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">from-sender</span> - notification message sent from recipient <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">image</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message</span> - message text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - message priority <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
+ <li><span class="li-head">rsp-status</span> - response status <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-net-prob, err-content-not-accept, err-unsupp-msg]</span> </li>
+ <li><span class="li-head">smil-part</span> - message encapsulation text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subject</span> - subject text string <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">mm7</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">add-smil</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">addr-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rfc2822-addr, number, short-code]</span> </li>
- <li><span class="li-head">allow-content-adaptation</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">charset</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
- <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">from-sender</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">image</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">message</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
- <li><span class="li-head">rsp-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [success, partial-success, client-err, oper-restrict, addr-err, addr-not-found, content-refused, msg-id-not-found, link-id-not-found, msg-fmt-corrupt, app-id-not-found, repl-app-id-not-found, srv-err, not-possible, msg-rejected, multiple-addr-not-supp, app-addr-not-supp, gen-service-err, improper-ident, unsupp-ver, unsupp-oper, validation-err, service-err, service-unavail, service-denied, app-denied]</span> </li>
- <li><span class="li-head">smil-part</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">subject</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">add-smil</span> - add message encapsulation <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">addr-type</span> - from address type <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rfc2822-addr, number, short-code]</span> </li>
+ <li><span class="li-head">allow-content-adaptation</span> - allow content adaptations <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charset</span> - character encoding used for replacement message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
+ <li><span class="li-head">class</span> - message class <span class="li-normal">type: str</span>  <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">from</span> - from address <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">from-sender</span> - notification message sent from recipient <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">image</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message</span> - message text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - message priority <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, normal, high, not-included]</span> </li>
+ <li><span class="li-head">rsp-status</span> - response status <span class="li-normal">type: str</span>  <span class="li-normal">choices: [success, partial-success, client-err, oper-restrict, addr-err, addr-not-found, content-refused, msg-id-not-found, link-id-not-found, msg-fmt-corrupt, app-id-not-found, repl-app-id-not-found, srv-err, not-possible, msg-rejected, multiple-addr-not-supp, app-addr-not-supp, gen-service-err, improper-ident, unsupp-ver, unsupp-oper, validation-err, service-err, service-unavail, service-denied, app-denied]</span> </li>
+ <li><span class="li-head">smil-part</span> - message encapsulation text <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subject</span> - subject text string <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">mms</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">charset</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">image</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">charset</span> - character encoding used for replacement message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [us-ascii, utf-8]</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">image</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">nac-quar</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Group name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">nntp</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">spam</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">sslvpn</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">traffic-quota</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">utm</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">webproxy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">buffer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
- <li><span class="li-head">msg-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
  </ul>
@@ -475,6 +475,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -45,11 +45,11 @@ Parameters
  <li><span class="li-head">domain-filter</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dnsfilter_domainfilter_entries</span> - DNS domain filter entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow, monitor]</span> </li>
- <li><span class="li-head">domain</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, regex, wildcard]</span> </li>
+ <li><span class="li-head">action</span> - Action to take for domain filter matches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow, monitor]</span> </li>
+ <li><span class="li-head">domain</span> - Domain entries to be filtered. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Id. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this domain filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">type</span> - DNS domain filter type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, regex, wildcard]</span> </li>
  </ul>
  </ul>
 
@@ -115,6 +115,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

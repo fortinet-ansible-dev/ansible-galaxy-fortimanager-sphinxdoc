@@ -45,19 +45,17 @@ Parameters
  <li><span class="li-head">vip</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_vip_realservers</span> - Select the real servers that this server load balancing VIP will distribute traffic to. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">client-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">healthcheck</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vip]</span> </li>
- <li><span class="li-head">holddown-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">http-host</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-connections</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">monitor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">client-ip</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">healthcheck</span> - Enable to check the responsiveness of the real server before forwarding traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vip]</span> </li>
+ <li><span class="li-head">holddown-interval</span> - Time in seconds that the health check monitor continues to monitor and unresponsive server that should be active. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">http-host</span> - HTTP server domain name in HTTP header. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IP address of the real server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-connections</span> - Max number of active connections that can be directed to the real server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">monitor</span> - Name of the health check monitor to use when polling to determine a virtual servers connectivity status. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Port for communicating with the real server. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">seq</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, standby, disable]</span> </li>
- <li><span class="li-head">weight</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Set the status of the real server to active so that it can accept traffic, or on standby or disabled so no traffic is sent. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, standby, disable]</span> </li>
+ <li><span class="li-head">weight</span> - Weight of the real server. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -102,8 +100,7 @@ Examples
          vip: <your own value>
          state: <value in [present, absent]>
          firewall_vip_realservers:
-            client-ip:
-              - <value of string>
+            client-ip: <value of string>
             healthcheck: <value in [disable, enable, vip]>
             holddown-interval: <value of integer>
             http-host: <value of string>
@@ -130,6 +127,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

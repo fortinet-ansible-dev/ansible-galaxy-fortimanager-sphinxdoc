@@ -45,28 +45,28 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_policy64</span> - Configure IPv6 to IPv4 policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fixedport</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ippool</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">logtraffic</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">per-ip-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">permit-any-host</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">policyid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">poolname</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tcp-mss-receiver</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">tcp-mss-sender</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">traffic-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">traffic-shaper-reverse</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Policy action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
+ <li><span class="li-head">comments</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr</span> - Destination address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstintf</span> - Destination interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fixedport</span> - Enable/disable policy fixed port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ippool</span> - Enable/disable policy64 IP pool. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">logtraffic</span> - Enable/disable policy log traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">per-ip-shaper</span> - Per-IP traffic shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">permit-any-host</span> - Enable/disable permit any host in. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">policyid</span> - Policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">poolname</span> - Policy IP pool names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">schedule</span> - Schedule name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service</span> - Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr</span> - Source address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcintf</span> - Source interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable policy status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tags</span> - Applied object tags. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tcp-mss-receiver</span> - TCP MSS value of receiver. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-mss-sender</span> - TCP MSS value of sender. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">traffic-shaper</span> - Traffic shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">traffic-shaper-reverse</span> - Reverse traffic shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -149,6 +149,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

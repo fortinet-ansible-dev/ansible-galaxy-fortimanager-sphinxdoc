@@ -45,24 +45,18 @@ Parameters
  <li><span class="li-head">gtp</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_gtp_policy</span> - Policy. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">apn-sel-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ms, net, vrf]</span> </li>
- </ul>
- <li><span class="li-head">apnmember</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">imei</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">imsi</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-apn-restriction</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [all, public-1, public-2, private-1, private-2]</span> </li>
- <li><span class="li-head">messages</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [create-req, create-res, update-req, update-res]</span> </li>
- </ul>
- <li><span class="li-head">msisdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rai</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot]</span> </li>
- </ul>
- <li><span class="li-head">uli</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">apn-sel-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ms, net, vrf]</span> </li>
+ <li><span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">imei</span> - IMEI(SV) pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">imsi</span> - IMSI prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-apn-restriction</span> - Maximum APN restriction value. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [all, public-1, public-2, private-1, private-2]</span> </li>
+ <li><span class="li-head">messages</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [create-req, create-res, update-req, update-res]</span> </li>
+ <li><span class="li-head">msisdn</span> - MSISDN prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rai</span> - RAI pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot]</span> </li>
+ <li><span class="li-head">uli</span> - ULI pattern. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -109,18 +103,31 @@ Examples
          firewall_gtp_policy:
             action: <value in [allow, deny]>
             apn-sel-mode:
-              - <value in [ms, net, vrf]>
+              - ms
+              - net
+              - vrf
             apnmember: <value of string>
             id: <value of integer>
             imei: <value of string>
             imsi: <value of string>
             max-apn-restriction: <value in [all, public-1, public-2, ...]>
             messages:
-              - <value in [create-req, create-res, update-req, ...]>
+              - create-req
+              - create-res
+              - update-req
+              - update-res
             msisdn: <value of string>
             rai: <value of string>
             rat-type:
-              - <value in [any, utran, geran, ...]>
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
             uli: <value of string>
 
 
@@ -138,6 +145,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

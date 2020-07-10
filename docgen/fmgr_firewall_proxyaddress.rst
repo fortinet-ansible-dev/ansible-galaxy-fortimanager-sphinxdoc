@@ -44,40 +44,34 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_proxyaddress</span> - Web proxy address configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">case-sensitivity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">case-sensitivity</span> - Enable to make the pattern case sensitive. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">category</span> - FortiGuard category ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">color</span> - Integer value to determine the color of the icon in the GUI (1 - 32, default = 0, which sets value to 1). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Optional comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">header</span> - HTTP header name as a regular expression. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">header-group</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">case-sensitivity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">header</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">header-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">case-sensitivity</span> - Case sensitivity in pattern. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - HTTP header regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">header-name</span> - HTTP header. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">header-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">host</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">host-regex</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">method</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">path</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">query</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">referrer</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header-name</span> - Name of HTTP header. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host</span> - Address object for the host. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host-regex</span> - Host name as a regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">method</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span> </li>
+ <li><span class="li-head">name</span> - Address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">path</span> - URL path as a regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">query</span> - Match the query part of the URL as a regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">referrer</span> - Enable/disable use of referrer field in the HTTP header to match the address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Tagging entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
- </ul>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced]</span> </li>
- <li><span class="li-head">ua</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [chrome, ms, firefox, safari, other]</span> </li>
- </ul>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">type</span> - Proxy address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced]</span> </li>
+ <li><span class="li-head">ua</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [chrome, ms, firefox, safari, other]</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">visibility</span> - Enable/disable visibility of the object in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -136,7 +130,14 @@ Examples
             host: <value of string>
             host-regex: <value of string>
             method:
-              - <value in [delete, get, head, ...]>
+              - delete
+              - get
+              - head
+              - options
+              - post
+              - put
+              - trace
+              - connect
             name: <value of string>
             path: <value of string>
             query: <value of string>
@@ -145,11 +146,14 @@ Examples
               -
                   category: <value of string>
                   name: <value of string>
-                  tags:
-                    - <value of string>
+                  tags: <value of string>
             type: <value in [host-regex, url, category, ...]>
             ua:
-              - <value in [chrome, ms, firefox, ...]>
+              - chrome
+              - ms
+              - firefox
+              - safari
+              - other
             uuid: <value of string>
             visibility: <value in [disable, enable]>
 
@@ -168,6 +172,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

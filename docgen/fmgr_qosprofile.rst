@@ -44,32 +44,24 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">qosprofile</span> - Configure WiFi quality of service (QoS) profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bandwidth-admission-control</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">bandwidth-capacity</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">burst</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">call-admission-control</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">call-capacity</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">downlink</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">downlink-sta</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">dscp-wmm-be</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">dscp-wmm-bk</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">dscp-wmm-mapping</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dscp-wmm-vi</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">dscp-wmm-vo</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">uplink</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">uplink-sta</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">wmm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">wmm-uapsd</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bandwidth-admission-control</span> - Enable/disable WMM bandwidth admission control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bandwidth-capacity</span> - Maximum bandwidth capacity allowed (1 - 600000 Kbps, default = 2000). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">burst</span> - Enable/disable client rate burst. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">call-admission-control</span> - Enable/disable WMM call admission control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">call-capacity</span> - Maximum number of Voice over WLAN (VoWLAN) phones allowed (0 - 60, default = 10). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">downlink</span> - Maximum downlink bandwidth for Virtual Access Points (VAPs) (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">downlink-sta</span> - Maximum downlink bandwidth for clients (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dscp-wmm-be</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">dscp-wmm-bk</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">dscp-wmm-mapping</span> - Enable/disable Differentiated Services Code Point (DSCP) mapping. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dscp-wmm-vi</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">dscp-wmm-vo</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">name</span> - WiFi QoS profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">uplink</span> - Maximum uplink bandwidth for Virtual Access Points (VAPs) (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">uplink-sta</span> - Maximum uplink bandwidth for clients (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">wmm</span> - Enable/disable WiFi multi-media (WMM) control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wmm-uapsd</span> - Enable/disable WMM Unscheduled Automatic Power Save Delivery (U-APSD) power save mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -121,15 +113,11 @@ Examples
             comment: <value of string>
             downlink: <value of integer>
             downlink-sta: <value of integer>
-            dscp-wmm-be:
-              - <value of integer>
-            dscp-wmm-bk:
-              - <value of integer>
+            dscp-wmm-be: <value of integer>
+            dscp-wmm-bk: <value of integer>
             dscp-wmm-mapping: <value in [disable, enable]>
-            dscp-wmm-vi:
-              - <value of integer>
-            dscp-wmm-vo:
-              - <value of integer>
+            dscp-wmm-vi: <value of integer>
+            dscp-wmm-vo: <value of integer>
             name: <value of string>
             uplink: <value of integer>
             uplink-sta: <value of integer>
@@ -151,6 +139,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

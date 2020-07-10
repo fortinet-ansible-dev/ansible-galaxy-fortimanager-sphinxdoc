@@ -75,9 +75,7 @@ Parameters
  <li><span class="li-head">portforward</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tcp, udp, sctp]</span> </li>
  <li><span class="li-head">server-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http, https, ssl, tcp, udp, ip, imaps, pop3s, smtps]</span> </li>
- <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">ssl-algorithm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, medium, custom]</span> </li>
  <li><span class="li-head">ssl-certificate</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl-client-fallback</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -186,8 +184,7 @@ Examples
             portforward: <value in [disable, enable]>
             protocol: <value in [tcp, udp, sctp]>
             server-type: <value in [http, https, ssl, ...]>
-            src-filter:
-              - <value of string>
+            src-filter: <value of string>
             ssl-algorithm: <value in [high, low, medium, ...]>
             ssl-certificate: <value of string>
             ssl-client-fallback: <value in [disable, enable]>
@@ -238,6 +235,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

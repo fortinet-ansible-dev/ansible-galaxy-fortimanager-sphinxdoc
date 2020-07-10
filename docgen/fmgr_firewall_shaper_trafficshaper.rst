@@ -44,14 +44,14 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_shaper_trafficshaper</span> - Configure shared traffic shaper. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bandwidth-unit</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [kbps, mbps, gbps]</span> </li>
- <li><span class="li-head">diffserv</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">diffservcode</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">guaranteed-bandwidth</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">maximum-bandwidth</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">per-policy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium, low]</span> </li>
+ <li><span class="li-head">bandwidth-unit</span> - Unit of measurement for guaranteed and maximum bandwidth for this shaper (Kbps, Mbps or Gbps). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [kbps, mbps, gbps]</span> </li>
+ <li><span class="li-head">diffserv</span> - Enable/disable changing the DiffServ setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">diffservcode</span> - DiffServ setting to be applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">guaranteed-bandwidth</span> - Amount of bandwidth guaranteed for this shaper (0 - 16776000). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">maximum-bandwidth</span> - Upper bandwidth limit enforced by this shaper (0 - 16776000). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Traffic shaper name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">per-policy</span> - Enable/disable applying a separate shaper for each policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">priority</span> - Higher priority traffic is more likely to be forwarded without delays and without compromising the guaranteed bandwidth. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium, low]</span> </li>
  </ul>
  </ul>
 
@@ -119,6 +119,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

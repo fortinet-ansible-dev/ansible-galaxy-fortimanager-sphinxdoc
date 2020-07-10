@@ -45,55 +45,53 @@ Parameters
  <li><span class="li-head">switchcontroller_managedswitch</span> - Configure FortiSwitch devices that are managed by this FortiGate. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_platform</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Managed-switch name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ports</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">allowed-vlans</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">allowed-vlans-all</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">arp-inspection-trust</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [untrusted, trusted]</span> </li>
- <li><span class="li-head">bundle</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dhcp-snoop-option82-trust</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dhcp-snooping</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [trusted, untrusted]</span> </li>
- <li><span class="li-head">discard-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, all-untagged, all-tagged]</span> </li>
- <li><span class="li-head">edge-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">igmp-snooping</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">igmps-flood-reports</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">igmps-flood-traffic</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">lacp-speed</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [slow, fast]</span> </li>
- <li><span class="li-head">learning-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">lldp-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">lldp-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, rx-only, tx-only, tx-rx]</span> </li>
- <li><span class="li-head">loop-guard</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
- <li><span class="li-head">loop-guard-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">max-bundle</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mclag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">member-withdrawal-behavior</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [forward, block]</span> </li>
- <li><span class="li-head">members</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">allowed-vlans</span> - Configure switch port tagged vlans <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">allowed-vlans-all</span> - Enable/disable all defined vlans on this port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">arp-inspection-trust</span> - Trusted or untrusted dynamic ARP inspection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [untrusted, trusted]</span> </li>
+ <li><span class="li-head">bundle</span> - Enable/disable Link Aggregation Group (LAG) bundling for non-FortiLink interfaces. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">description</span> - Description for port. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dhcp-snoop-option82-trust</span> - Enable/disable allowance of DHCP with option-82 on untrusted interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dhcp-snooping</span> - Trusted or untrusted DHCP-snooping interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [trusted, untrusted]</span> </li>
+ <li><span class="li-head">discard-mode</span> - Configure discard mode for port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, all-untagged, all-tagged]</span> </li>
+ <li><span class="li-head">edge-port</span> - Enable/disable this interface as an edge port, bridging connections between workstations and/or computers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">igmp-snooping</span> - Set IGMP snooping mode for the physical port interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">igmps-flood-reports</span> - Enable/disable flooding of IGMP reports to this interface when igmp-snooping enabled. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">igmps-flood-traffic</span> - Enable/disable flooding of IGMP snooping traffic to this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">lacp-speed</span> - end Link Aggregation Control Protocol (LACP) messages every 30 seconds (slow) or every second (fast). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [slow, fast]</span> </li>
+ <li><span class="li-head">learning-limit</span> - Limit the number of dynamic MAC addresses on this Port (1 - 128, 0 = no limit, default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">lldp-profile</span> - LLDP port TLV profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">lldp-status</span> - LLDP transmit and receive status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, rx-only, tx-only, tx-rx]</span> </li>
+ <li><span class="li-head">loop-guard</span> - Enable/disable loop-guard on this interface, an STP optimization used to prevent network loops. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">loop-guard-timeout</span> - Loop-guard timeout (0 - 120 min, default = 45). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">max-bundle</span> - Maximum size of LAG bundle (1 - 24, default = 24) <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mclag</span> - Enable/disable multi-chassis link aggregation (MCLAG). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">member-withdrawal-behavior</span> - Port behavior after it withdraws because of loss of control packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [forward, block]</span> </li>
+ <li><span class="li-head">members</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">min-bundle</span> - Minimum size of LAG bundle (1 - 24, default = 1) <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mode</span> - LACP mode: ignore and do not send control messages, or negotiate 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static, lacp-passive, lacp-active]</span> </li>
+ <li><span class="li-head">poe-pre-standard-detection</span> - Enable/disable PoE pre-standard detection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">poe-status</span> - Enable/disable PoE status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">port-name</span> - Switch port name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port-owner</span> - Switch port name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port-security-policy</span> - Switch controller authentication policy to apply to this managed switch from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port-selection-criteria</span> - Algorithm for aggregate port selection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [src-mac, dst-mac, src-dst-mac, src-ip, dst-ip, src-dst-ip]</span> </li>
+ <li><span class="li-head">qos-policy</span> - Switch controller QoS policy from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sample-direction</span> - sFlow sample direction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rx, tx, both]</span> </li>
+ <li><span class="li-head">sflow-counter-interval</span> - sFlow sampler counter polling interval (1 - 255 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sflow-sample-rate</span> - sFlow sampler sample rate (0 - 99999 p/sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sflow-sampler</span> - Enable/disable sFlow protocol on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">stp-bpdu-guard</span> - Enable/disable STP BPDU guard on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">stp-bpdu-guard-timeout</span> - BPDU Guard disabling protection (0 - 120 min). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">stp-root-guard</span> - Enable/disable STP root guard on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">stp-state</span> - Enable/disable Spanning Tree Protocol (STP) on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">type</span> - Interface type: physical or trunk port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical, trunk]</span> </li>
+ <li><span class="li-head">untagged-vlans</span> - Configure switch port untagged vlans <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vlan</span> - Assign switch ports to a VLAN. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">min-bundle</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static, lacp-passive, lacp-active]</span> </li>
- <li><span class="li-head">poe-pre-standard-detection</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">poe-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">port-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port-owner</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port-security-policy</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port-selection-criteria</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [src-mac, dst-mac, src-dst-mac, src-ip, dst-ip, src-dst-ip]</span> </li>
- <li><span class="li-head">qos-policy</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sample-direction</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rx, tx, both]</span> </li>
- <li><span class="li-head">sflow-counter-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">sflow-sample-rate</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">sflow-sampler</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
- <li><span class="li-head">stp-bpdu-guard</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
- <li><span class="li-head">stp-bpdu-guard-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">stp-root-guard</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
- <li><span class="li-head">stp-state</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical, trunk]</span> </li>
- <li><span class="li-head">untagged-vlans</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">vlan</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">switch-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">switch-id</span> - Managed-switch id. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -163,8 +161,7 @@ Examples
                   max-bundle: <value of integer>
                   mclag: <value in [disable, enable]>
                   member-withdrawal-behavior: <value in [forward, block]>
-                  members:
-                    - <value of string>
+                  members: <value of string>
                   min-bundle: <value of integer>
                   mode: <value in [static, lacp-passive, lacp-active]>
                   poe-pre-standard-detection: <value in [disable, enable]>
@@ -202,6 +199,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

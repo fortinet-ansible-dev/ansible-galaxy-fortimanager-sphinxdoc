@@ -45,17 +45,15 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">waf_profile_signature_customsignature</span> - Custom signature. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, erase]</span> </li>
- <li><span class="li-head">case-sensitivity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">direction</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [request, response]</span> </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">pattern</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [arg, arg-name, req-body, req-cookie, req-cookie-name, req-filename, req-header, req-header-name, req-raw-uri, req-uri, resp-body, resp-hdr, resp-status]</span> </li>
- </ul>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, erase]</span> </li>
+ <li><span class="li-head">case-sensitivity</span> - Case sensitivity in pattern. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">direction</span> - Traffic direction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [request, response]</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Signature name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pattern</span> - Match pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">severity</span> - Severity. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
+ <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [arg, arg-name, req-body, req-cookie, req-cookie-name, req-filename, req-header, req-header-name, req-raw-uri, req-uri, resp-body, resp-hdr, resp-status]</span> </li>
  </ul>
  </ul>
 
@@ -109,7 +107,19 @@ Examples
             severity: <value in [low, medium, high]>
             status: <value in [disable, enable]>
             target:
-              - <value in [arg, arg-name, req-body, ...]>
+              - arg
+              - arg-name
+              - req-body
+              - req-cookie
+              - req-cookie-name
+              - req-filename
+              - req-header
+              - req-header-name
+              - req-raw-uri
+              - req-uri
+              - resp-body
+              - resp-hdr
+              - resp-status
 
 
 
@@ -126,6 +136,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

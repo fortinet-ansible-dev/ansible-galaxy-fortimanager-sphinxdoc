@@ -44,22 +44,18 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">sshfilter_profile</span> - SSH filter profile. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">block</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown]</span> </li>
- </ul>
- <li><span class="li-head">default-command-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown]</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown]</span> </li>
+ <li><span class="li-head">default-command-log</span> - Enable/disable logging unmatched shell commands. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown]</span> </li>
+ <li><span class="li-head">name</span> - SSH filter profile name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">shell-commands</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow]</span> </li>
- <li><span class="li-head">alert</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">pattern</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high, critical]</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regex, simple]</span> </li>
+ <li><span class="li-head">action</span> - Action to take for URL filter matches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow]</span> </li>
+ <li><span class="li-head">alert</span> - Enable/disable alert. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">id</span> - Id. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pattern</span> - SSH shell command pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">severity</span> - Log severity. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high, critical]</span> </li>
+ <li><span class="li-head">type</span> - Matching type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regex, simple]</span> </li>
  </ul>
  </ul>
  </ul>
@@ -105,10 +101,22 @@ Examples
          state: <value in [present, absent]>
          sshfilter_profile:
             block:
-              - <value in [x11, shell, exec, ...]>
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
             default-command-log: <value in [disable, enable]>
             log:
-              - <value in [x11, shell, exec, ...]>
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
             name: <value of string>
             shell-commands:
               -
@@ -135,6 +143,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

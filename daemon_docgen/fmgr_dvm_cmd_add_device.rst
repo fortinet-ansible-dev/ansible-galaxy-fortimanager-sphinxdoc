@@ -42,27 +42,26 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">dvm_cmd_add_device</span> - Add a device to the Device Manager database. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">device</span> <li><span class="li-head">adm_pass</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Name or ID of the ADOM where the command is to be executed on. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">device</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">adm_pass</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">adm_usr</span> - <i>add real and promote device</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">desc</span> - <i>available for all operations</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">device action</span> - Specify add device operations, or leave blank to add real device: <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">faz.quota</span> - <i>available for all operations</i>. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip</span> - <i>add real device only</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">meta fields</span> - <i>add real and model device</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mgmt_mode</span> - <i>add real and model device</i>. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span> </li>
+ <li><span class="li-head">mr</span> - <i>add model device only</i>. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - <i>required for all operations</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">os_type</span> - <i>add model device only</i>. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac]</span> </li>
+ <li><span class="li-head">os_ver</span> - <i>add model device only</i>. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0]</span> </li>
+ <li><span class="li-head">patch</span> - <i>add model device only</i>. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">platform_str</span> - <i>add model device only</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sn</span> - <i>add model device only</i>. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">adm_usr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">device action</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">faz.quota</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mgmt_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span> </li>
- <li><span class="li-head">mr</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac]</span> </li>
- <li><span class="li-head">os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0]</span> </li>
- <li><span class="li-head">patch</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">platform_str</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
- </ul>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
  <li><span class="li-head">groups</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -110,8 +109,7 @@ Examples
          dvm_cmd_add_device:
             adom: <value of string>
             device:
-               adm_pass:
-                 - <value of string>
+               adm_pass: <value of string>
                adm_usr: <value of string>
                desc: <value of string>
                device action: <value of string>
@@ -127,7 +125,10 @@ Examples
                platform_str: <value of string>
                sn: <value of string>
             flags:
-              - <value in [none, create_task, nonblocking, ...]>
+              - none
+              - create_task
+              - nonblocking
+              - log_dev
             groups:
               -
                   name: <value of string>
@@ -148,6 +149,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

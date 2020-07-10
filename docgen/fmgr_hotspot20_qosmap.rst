@@ -45,17 +45,17 @@ Parameters
  <li><span class="li-head">hotspot20_qosmap</span> - Configure QoS map set. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">dscp-except</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dscp</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">index</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">up</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dscp</span> - DSCP value. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">index</span> - DSCP exception index. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">dscp-range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">high</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">index</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">low</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">up</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">high</span> - DSCP high value. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">index</span> - DSCP range index. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">low</span> - DSCP low value. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - QOS-MAP name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -127,6 +127,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

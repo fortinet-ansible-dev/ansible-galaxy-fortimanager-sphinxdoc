@@ -44,26 +44,20 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ips_custom</span> - Configure IPS custom signature. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">location</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">log-packet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Default action (pass or block) for this signature. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">location</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-packet</span> - Enable/disable packet logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">protocol</span> - Protocol(s) that the signature scans. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">rule-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">severity</span> - Relative severity of the signature, from info to critical. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">sig-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">signature</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tag</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">signature</span> - Custom signature enclosed in single quotes. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this signature. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tag</span> - Signature tag. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -108,15 +102,12 @@ Examples
          state: <value in [present, absent]>
          ips_custom:
             action: <value in [block, pass]>
-            application:
-              - <value of string>
+            application: <value of string>
             comment: <value of string>
-            location:
-              - <value of string>
+            location: <value of string>
             log: <value in [disable, enable]>
             log-packet: <value in [disable, enable]>
-            os:
-              - <value of string>
+            os: <value of string>
             protocol: <value of string>
             rule-id: <value of integer>
             severity: <value of string>
@@ -140,6 +131,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

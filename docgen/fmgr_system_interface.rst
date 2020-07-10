@@ -43,24 +43,21 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_interface</span> - Interface configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">alias</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
+ <li><span class="li-head">alias</span> - Alias. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
+ <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IP address of interface. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ipv6</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">ip6-address</span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
+ <li><span class="li-head">ip6-autoconf</span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6</span> <li><span class="li-head">ip6-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
- </ul>
- <li><span class="li-head">ip6-autoconf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mtu</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1500</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">serviceaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgtupdates, fclupdates, webfilter-antispam]</span> </li>
- </ul>
- <li><span class="li-head">speed</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span> </li>
+ <li><span class="li-head">mtu</span> - Maximum transportation unit(68 - 9000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 1500</span> </li>
+ <li><span class="li-head">name</span> - Interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">serviceaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fgtupdates, fclupdates, webfilter-antispam]</span> </li>
+ <li><span class="li-head">speed</span> - Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span> </li>
+ <li><span class="li-head">status</span> - Interface status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span> </li>
  </ul>
  </ul>
 
@@ -105,18 +102,32 @@ Examples
          system_interface:
             alias: <value of string>
             allowaccess:
-              - <value in [ping, https, ssh, ...]>
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
             description: <value of string>
             ip: <value of string>
             ipv6:
                ip6-address: <value of string>
                ip6-allowaccess:
-                 - <value in [ping, https, ssh, ...]>
+                 - ping
+                 - https
+                 - ssh
+                 - snmp
+                 - http
+                 - webservice
+                 - https-logging
                ip6-autoconf: <value in [disable, enable]>
             mtu: <value of integer>
             name: <value of string>
             serviceaccess:
-              - <value in [fgtupdates, fclupdates, webfilter-antispam]>
+              - fgtupdates
+              - fclupdates
+              - webfilter-antispam
             speed: <value in [auto, 10full, 10half, ...]>
             status: <value in [down, up]>
 
@@ -135,6 +146,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,23 +44,23 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">waf_profile</span> - Web application firewall configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">extended-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">external</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">extended-log</span> - Enable/disable extended logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external</span> - Disable/Enable external HTTP Inspection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - WAF Profile name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">url-access</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">access-pattern</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">negate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">pattern</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">regex</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - URL access pattern ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">negate</span> - Enable/disable match negation. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pattern</span> - URL pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">regex</span> - Enable/disable regular expression based pattern match. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">srcaddr</span> - Source address. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, permit, block]</span> </li>
- <li><span class="li-head">address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, permit, block]</span> </li>
+ <li><span class="li-head">address</span> - Host address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - URL access ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">severity</span> - Severity. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
  </ul>
  </ul>
  </ul>
@@ -139,6 +139,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -45,14 +45,12 @@ Parameters
  <li><span class="li-head">host-check-software</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vpnsslweb_hostchecksoftware_checkitemlist</span> - Check item list. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, require]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">md5s</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [file, registry, process]</span> </li>
- <li><span class="li-head">version</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, require]</span> </li>
+ <li><span class="li-head">id</span> - ID (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">md5s</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">target</span> - Target. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [file, registry, process]</span> </li>
+ <li><span class="li-head">version</span> - Version. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -99,8 +97,7 @@ Examples
          vpnsslweb_hostchecksoftware_checkitemlist:
             action: <value in [deny, require]>
             id: <value of integer>
-            md5s:
-              - <value of string>
+            md5s: <value of string>
             target: <value of string>
             type: <value in [file, registry, process]>
             version: <value of string>
@@ -120,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

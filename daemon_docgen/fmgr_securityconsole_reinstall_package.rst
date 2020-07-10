@@ -42,12 +42,10 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">securityconsole_reinstall_package</span> - Re-install a policy package that had been previously installed. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only]</span> </li>
- </ul>
+ <li><span class="li-head">adom</span> - Source ADOM name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only]</span> </li>
  <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">pkg</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pkg</span> - Source package path and name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -96,7 +94,18 @@ Examples
          securityconsole_reinstall_package:
             adom: <value of string>
             flags:
-              - <value in [none, cp_all_objs, preview, ...]>
+              - none
+              - cp_all_objs
+              - preview
+              - generate_rev
+              - copy_assigned_pkg
+              - unassign
+              - ifpolicy_only
+              - no_ifpolicy
+              - objs_only
+              - auto_lock_ws
+              - check_pkg_st
+              - copy_only
             target:
               -
                   pkg: <value of string>
@@ -120,6 +129,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

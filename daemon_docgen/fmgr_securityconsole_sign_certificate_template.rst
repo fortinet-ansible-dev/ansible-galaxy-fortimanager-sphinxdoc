@@ -42,7 +42,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">securityconsole_sign_certificate_template</span> - Generate and sign certificate on the target device. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Source ADOM name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -111,6 +111,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

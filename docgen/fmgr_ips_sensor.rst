@@ -44,87 +44,67 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ips_sensor</span> - Configure IPS sensor. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">block-malicious-url</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">block-malicious-url</span> - Enable/disable malicious URL blocking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">entries</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, reset, default]</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">action</span> - Action taken with traffic in which signatures are detected. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, reset, default]</span> </li>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">exempt-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dst-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">src-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dst-ip</span> - Destination IP address and netmask. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Exempt IP ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">src-ip</span> - Source IP address and netmask. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">location</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Rule ID in IPS database (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">location</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">log</span> - Enable/disable logging of signatures included in filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-attack-context</span> - Enable/disable logging of attack context: URL buffer, header buffer, body buffer, packet buffer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-packet</span> - Enable/disable packet logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">quarantine</span> - Quarantine method. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
+ <li><span class="li-head">quarantine-expiry</span> - Duration of quarantine. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">quarantine-log</span> - Enable/disable quarantine logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rate-count</span> - Count of the rate. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rate-duration</span> - Duration (sec) of the rate. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rate-mode</span> - Rate limit mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [periodical, continuous]</span> </li>
+ <li><span class="li-head">rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip, dhcp-client-mac, dns-domain]</span> </li>
+ <li><span class="li-head">rule</span> - Identifies the predefined or custom IPS signatures to add to the sensor. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">status</span> - Status of the signatures included in filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
  </ul>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">log-attack-context</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">log-packet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">quarantine</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
- <li><span class="li-head">quarantine-expiry</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">quarantine-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rate-count</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rate-duration</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rate-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [periodical, continuous]</span> </li>
- <li><span class="li-head">rate-track</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip, dhcp-client-mac, dns-domain]</span> </li>
- <li><span class="li-head">rule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
- </ul>
- <li><span class="li-head">extended-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">extended-log</span> - Enable/disable extended logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, default, reset]</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Action of selected rules. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, default, reset]</span> </li>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">location</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">log</span> - Enable/disable logging of selected rules. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
+ <li><span class="li-head">log-packet</span> - Enable/disable packet logging of selected rules. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
+ <li><span class="li-head">name</span> - Filter name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">quarantine</span> - Quarantine IP or interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
+ <li><span class="li-head">quarantine-expiry</span> - Duration of quarantine in minute. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">quarantine-log</span> - Enable/disable logging of selected quarantine. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">status</span> - Selected rules status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
  </ul>
- <li><span class="li-head">location</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
- <li><span class="li-head">log-packet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">quarantine</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
- <li><span class="li-head">quarantine-expiry</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">quarantine-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Sensor name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">override</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, reset]</span> </li>
+ <li><span class="li-head">action</span> - Action of override rule. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, reset]</span> </li>
  <li><span class="li-head">exempt-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dst-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">src-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dst-ip</span> - Destination IP address and netmask. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Exempt IP ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">src-ip</span> - Source IP address and netmask. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">log-packet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">quarantine</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
- <li><span class="li-head">quarantine-expiry</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">quarantine-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rule-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-packet</span> - Enable/disable packet logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">quarantine</span> - Quarantine IP or interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
+ <li><span class="li-head">quarantine-expiry</span> - Duration of quarantine in minute. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">quarantine-log</span> - Enable/disable logging of selected quarantine. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rule-id</span> - Override rule ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable status of override rule. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -173,23 +153,19 @@ Examples
             entries:
               -
                   action: <value in [pass, block, reset, ...]>
-                  application:
-                    - <value of string>
+                  application: <value of string>
                   exempt-ip:
                     -
                         dst-ip: <value of string>
                         id: <value of integer>
                         src-ip: <value of string>
                   id: <value of integer>
-                  location:
-                    - <value of string>
+                  location: <value of string>
                   log: <value in [disable, enable]>
                   log-attack-context: <value in [disable, enable]>
                   log-packet: <value in [disable, enable]>
-                  os:
-                    - <value of string>
-                  protocol:
-                    - <value of string>
+                  os: <value of string>
+                  protocol: <value of string>
                   quarantine: <value in [none, attacker, both, ...]>
                   quarantine-expiry: <value of string>
                   quarantine-log: <value in [disable, enable]>
@@ -198,29 +174,23 @@ Examples
                   rate-mode: <value in [periodical, continuous]>
                   rate-track: <value in [none, src-ip, dest-ip, ...]>
                   rule: <value of string>
-                  severity:
-                    - <value of string>
+                  severity: <value of string>
                   status: <value in [disable, enable, default]>
             extended-log: <value in [disable, enable]>
             filter:
               -
                   action: <value in [pass, block, default, ...]>
-                  application:
-                    - <value of string>
-                  location:
-                    - <value of string>
+                  application: <value of string>
+                  location: <value of string>
                   log: <value in [disable, enable, default]>
                   log-packet: <value in [disable, enable, default]>
                   name: <value of string>
-                  os:
-                    - <value of string>
-                  protocol:
-                    - <value of string>
+                  os: <value of string>
+                  protocol: <value of string>
                   quarantine: <value in [none, attacker, both, ...]>
                   quarantine-expiry: <value of integer>
                   quarantine-log: <value in [disable, enable]>
-                  severity:
-                    - <value of string>
+                  severity: <value of string>
                   status: <value in [disable, enable, default]>
             name: <value of string>
             override:
@@ -255,6 +225,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

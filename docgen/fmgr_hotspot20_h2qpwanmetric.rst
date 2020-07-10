@@ -44,15 +44,15 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_h2qpwanmetric</span> - Configure WAN metrics. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">downlink-load</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">downlink-speed</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">link-at-capacity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">link-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up, in-test]</span> </li>
- <li><span class="li-head">load-measurement-duration</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">symmetric-wan-link</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [asymmetric, symmetric]</span> </li>
- <li><span class="li-head">uplink-load</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">uplink-speed</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">downlink-load</span> - Downlink load. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">downlink-speed</span> - Downlink speed (in kilobits/s). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">link-at-capacity</span> - Link at capacity. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">link-status</span> - Link status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up, in-test]</span> </li>
+ <li><span class="li-head">load-measurement-duration</span> - Load measurement duration (in tenths of a second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - WAN metric name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">symmetric-wan-link</span> - WAN link symmetry. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [asymmetric, symmetric]</span> </li>
+ <li><span class="li-head">uplink-load</span> - Uplink load. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">uplink-speed</span> - Uplink speed (in kilobits/s). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +121,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

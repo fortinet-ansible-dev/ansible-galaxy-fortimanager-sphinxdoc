@@ -44,45 +44,41 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_profile</span> - Configure Web filter profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">extended-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">https-replacemsg</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">inspection-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow-based, dns]</span> </li>
- <li><span class="li-head">log-all-url</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check]</span> </li>
- </ul>
- <li><span class="li-head">ovrd-perm</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bannedword-override, urlfilter-override, fortiguard-wf-override, contenttype-check-override]</span> </li>
- </ul>
- <li><span class="li-head">post-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, comfort, block]</span> </li>
- <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">web-content-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-extended-all-action-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-activex-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-applet-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-command-block-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-cookie-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-cookie-removal-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-js-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-jscript-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-referer-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-unknown-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-filter-vbs-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-ftgd-err-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-ftgd-quota-usage</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-invalid-domain-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">web-url-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">wisp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">wisp-algorithm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto-learning, primary-secondary, round-robin]</span> </li>
- <li><span class="li-head">wisp-servers</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Optional comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">extended-log</span> - Enable/disable extended logging for web filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">https-replacemsg</span> - Enable replacement messages for HTTPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">inspection-mode</span> - Web filtering inspection mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow-based, dns]</span> </li>
+ <li><span class="li-head">log-all-url</span> - Enable/disable logging all URLs visited. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check]</span> </li>
+ <li><span class="li-head">ovrd-perm</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [bannedword-override, urlfilter-override, fortiguard-wf-override, contenttype-check-override]</span> </li>
+ <li><span class="li-head">post-action</span> - Action taken for HTTP POST traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, comfort, block]</span> </li>
+ <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">web-content-log</span> - Enable/disable logging logging blocked web content. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-extended-all-action-log</span> - Enable/disable extended any filter action logging for web filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-activex-log</span> - Enable/disable logging ActiveX. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-applet-log</span> - Enable/disable logging Java applets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-command-block-log</span> - Enable/disable logging blocked commands. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-cookie-log</span> - Enable/disable logging cookie filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-cookie-removal-log</span> - Enable/disable logging blocked cookies. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-js-log</span> - Enable/disable logging Java scripts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-jscript-log</span> - Enable/disable logging JScripts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-referer-log</span> - Enable/disable logging referrers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-unknown-log</span> - Enable/disable logging unknown scripts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-filter-vbs-log</span> - Enable/disable logging VBS scripts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-ftgd-err-log</span> - Enable/disable logging rating errors. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-ftgd-quota-usage</span> - Enable/disable logging daily quota usage. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-invalid-domain-log</span> - Enable/disable logging invalid domain names. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-url-log</span> - Enable/disable logging URL filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wisp</span> - Enable/disable web proxy WISP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wisp-algorithm</span> - WISP server selection algorithm. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto-learning, primary-secondary, round-robin]</span> </li>
+ <li><span class="li-head">wisp-servers</span> - WISP servers. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">youtube-channel-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">channel-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">channel-id</span> - YouTube channel ID to be filtered. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">youtube-channel-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, blacklist, whitelist]</span> </li>
+ <li><span class="li-head">youtube-channel-status</span> - YouTube channel filter status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, blacklist, whitelist]</span> </li>
  </ul>
  </ul>
 
@@ -133,9 +129,27 @@ Examples
             log-all-url: <value in [disable, enable]>
             name: <value of string>
             options:
-              - <value in [block-invalid-url, jscript, js, ...]>
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
             ovrd-perm:
-              - <value in [bannedword-override, urlfilter-override, fortiguard-wf-override, ...]>
+              - bannedword-override
+              - urlfilter-override
+              - fortiguard-wf-override
+              - contenttype-check-override
             post-action: <value in [normal, comfort, block]>
             replacemsg-group: <value of string>
             web-content-log: <value in [disable, enable]>
@@ -179,6 +193,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

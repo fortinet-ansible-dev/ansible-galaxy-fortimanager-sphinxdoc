@@ -44,8 +44,8 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_tacacs</span> - Configure TACACS+ server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">authen-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, ascii, pap, chap, mschap]</span> </li>
- <li><span class="li-head">authorization</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authen-type</span> - Allowed authentication protocols/methods. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, ascii, pap, chap, mschap]</span> </li>
+ <li><span class="li-head">authorization</span> - Enable/disable TACACS+ authorization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -53,36 +53,24 @@ Parameters
  </ul>
  <li><span class="li-head">authen-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, ascii, pap, chap, mschap]</span> </li>
  <li><span class="li-head">authorization</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">secondary-key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">secondary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">secondary-key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">name</span> - TACACS+ server entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Port number of the TACACS+ server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">secondary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">secondary-server</span> - Secondary TACACS+ server CN domain name or IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server</span> - Primary TACACS+ server CN domain name or IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-ip</span> - source IP for communications to TACACS+ server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">tertiary-server</span> - Tertiary TACACS+ server CN domain name or IP address. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -136,28 +124,22 @@ Examples
                         vdom: <value of string>
                   authen-type: <value in [auto, ascii, pap, ...]>
                   authorization: <value in [disable, enable]>
-                  key:
-                    - <value of string>
+                  key: <value of string>
                   port: <value of integer>
-                  secondary-key:
-                    - <value of string>
+                  secondary-key: <value of string>
                   secondary-server: <value of string>
                   server: <value of string>
                   source-ip: <value of string>
-                  tertiary-key:
-                    - <value of string>
+                  tertiary-key: <value of string>
                   tertiary-server: <value of string>
-            key:
-              - <value of string>
+            key: <value of string>
             name: <value of string>
             port: <value of integer>
-            secondary-key:
-              - <value of string>
+            secondary-key: <value of string>
             secondary-server: <value of string>
             server: <value of string>
             source-ip: <value of string>
-            tertiary-key:
-              - <value of string>
+            tertiary-key: <value of string>
             tertiary-server: <value of string>
 
 
@@ -175,6 +157,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

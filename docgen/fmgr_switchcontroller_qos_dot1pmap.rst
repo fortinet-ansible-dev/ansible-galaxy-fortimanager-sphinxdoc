@@ -44,16 +44,16 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_qos_dot1pmap</span> - Configure FortiSwitch QoS 802.1p. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority-0</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-1</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-2</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-3</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-4</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-5</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-6</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
- <li><span class="li-head">priority-7</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">description</span> - Description of the 802. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Dot1p map name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority-0</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-1</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-2</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-3</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-4</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-5</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-6</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">priority-7</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
  </ul>
  </ul>
 
@@ -123,6 +123,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,9 +44,7 @@ Parameters
  <li><span class="li-head">dvmdb_adom</span> - ADOM table, most attributes are read-only and can only be changed internally. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [migration, db_export, no_vpn_console, backup, other_devices, central_sdwan, is_autosync, per_device_wtp, policy_check_on_install, install_on_policy_check_fail, auto_push_cfg]</span> </li>
- </ul>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [migration, db_export, no_vpn_console, backup, other_devices, central_sdwan, is_autosync, per_device_wtp, policy_check_on_install, install_on_policy_check_fail, auto_push_cfg]</span> </li>
  <li><span class="li-head">log_db_retention_hours</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1440</span> </li>
  <li><span class="li-head">log_disk_quota</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">log_disk_quota_alert_thres</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 90</span> </li>
@@ -55,13 +53,11 @@ Parameters
  <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mig_mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 2</span> </li>
  <li><span class="li-head">mig_os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
- <li><span class="li-head">mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ems, gms, provider]</span> </li>
+ <li><span class="li-head">mode</span> - ems - (Value no longer used as of 4. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ems, gms, provider]</span> </li>
  <li><span class="li-head">mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 2</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
- <li><span class="li-head">restricted_prds</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx]</span> </li>
- </ul>
+ <li><span class="li-head">restricted_prds</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx]</span> </li>
  <li><span class="li-head">state</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
@@ -108,7 +104,17 @@ Examples
          dvmdb_adom:
             desc: <value of string>
             flags:
-              - <value in [migration, db_export, no_vpn_console, ...]>
+              - migration
+              - db_export
+              - no_vpn_console
+              - backup
+              - other_devices
+              - central_sdwan
+              - is_autosync
+              - per_device_wtp
+              - policy_check_on_install
+              - install_on_policy_check_fail
+              - auto_push_cfg
             log_db_retention_hours: <value of integer>
             log_disk_quota: <value of integer>
             log_disk_quota_alert_thres: <value of integer>
@@ -122,7 +128,20 @@ Examples
             name: <value of string>
             os_ver: <value in [unknown, 0.0, 1.0, ...]>
             restricted_prds:
-              - <value in [fos, foc, fml, ...]>
+              - fos
+              - foc
+              - fml
+              - fch
+              - fwb
+              - log
+              - fct
+              - faz
+              - fsa
+              - fsw
+              - fmg
+              - fdd
+              - fac
+              - fpx
             state: <value of integer>
             uuid: <value of string>
 
@@ -141,6 +160,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

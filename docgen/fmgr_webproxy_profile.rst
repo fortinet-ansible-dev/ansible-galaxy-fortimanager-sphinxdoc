@@ -44,22 +44,22 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webproxy_profile</span> - Configure web proxy profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">header-client-ip</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
- <li><span class="li-head">header-front-end-https</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
- <li><span class="li-head">header-via-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
- <li><span class="li-head">header-via-response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
- <li><span class="li-head">header-x-authenticated-groups</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
- <li><span class="li-head">header-x-authenticated-user</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
- <li><span class="li-head">header-x-forwarded-for</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-client-ip</span> - Action to take on the HTTP client-IP header in forwarded requests: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-front-end-https</span> - Action to take on the HTTP front-end-HTTPS header in forwarded requests: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-via-request</span> - Action to take on the HTTP via header in forwarded requests: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-via-response</span> - Action to take on the HTTP via header in forwarded responses: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-x-authenticated-groups</span> - Action to take on the HTTP x-authenticated-groups header in forwarded requests: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-x-authenticated-user</span> - Action to take on the HTTP x-authenticated-user header in forwarded requests: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
+ <li><span class="li-head">header-x-forwarded-for</span> - Action to take on the HTTP x-forwarded-for header in forwarded requests: forwards (pass), adds, or removes the HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, add, remove]</span> </li>
  <li><span class="li-head">headers</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [add-to-request, add-to-response, remove-from-request, remove-from-response]</span> </li>
- <li><span class="li-head">content</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Action when HTTP the header forwarded. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [add-to-request, add-to-response, remove-from-request, remove-from-response]</span> </li>
+ <li><span class="li-head">content</span> - HTTP headers content. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - HTTP forwarded header id. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - HTTP forwarded header name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">log-header-change</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">strip-encoding</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-header-change</span> - Enable/disable logging HTTP header changes. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">strip-encoding</span> - Enable/disable stripping unsupported encoding from the request header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -135,6 +135,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

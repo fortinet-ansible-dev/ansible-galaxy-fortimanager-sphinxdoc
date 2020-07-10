@@ -44,66 +44,56 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_mmsprofile</span> - Configure MMS profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">avnotificationtable</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">bwordtable</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">carrier-endpoint-prefix</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">carrier-endpoint-prefix-range-max</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">carrier-endpoint-prefix-range-min</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">carrier-endpoint-prefix-string</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">carrierendpointbwltable</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">extended-utm-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mm1</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, chunkedbypass, clientcomfort, servercomfort, strict-file, mms-checksum]</span> </li>
- </ul>
- <li><span class="li-head">mm1-addr-hdr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mm1-addr-source</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http-header, cookie]</span> </li>
- <li><span class="li-head">mm1-convert-hex</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mm1-outbreak-prevention</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
- <li><span class="li-head">mm1-retr-dupe</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mm1-retrieve-scan</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mm1comfortamount</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm1comfortinterval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm1oversizelimit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm3</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, fragmail, splice, mms-checksum]</span> </li>
- </ul>
- <li><span class="li-head">mm3-outbreak-prevention</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
- <li><span class="li-head">mm3oversizelimit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm4</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, fragmail, splice, mms-checksum]</span> </li>
- </ul>
- <li><span class="li-head">mm4-outbreak-prevention</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
- <li><span class="li-head">mm4oversizelimit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm7</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, chunkedbypass, clientcomfort, servercomfort, strict-file, mms-checksum]</span> </li>
- </ul>
- <li><span class="li-head">mm7-addr-hdr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mm7-addr-source</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http-header, cookie]</span> </li>
- <li><span class="li-head">mm7-convert-hex</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mm7-outbreak-prevention</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
- <li><span class="li-head">mm7comfortamount</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm7comfortinterval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mm7oversizelimit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mms-antispam-mass-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-av-block-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-av-oversize-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-av-virus-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-carrier-endpoint-filter-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-checksum-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-checksum-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mms-notification-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-web-content-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mmsbwordthreshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">avnotificationtable</span> - AntiVirus notification table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">bwordtable</span> - MMS banned word table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">carrier-endpoint-prefix</span> - Enable/disable prefixing of end point values. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">carrier-endpoint-prefix-range-max</span> - Maximum length of end point value that can be prefixed (1 - 48). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">carrier-endpoint-prefix-range-min</span> - Minimum end point length to be prefixed (1 - 48). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">carrier-endpoint-prefix-string</span> - String with which to prefix End point values. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">carrierendpointbwltable</span> - Carrier end point filter table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">extended-utm-log</span> - Enable/disable detailed UTM log messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mm1</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, chunkedbypass, clientcomfort, servercomfort, strict-file, mms-checksum]</span> </li>
+ <li><span class="li-head">mm1-addr-hdr</span> - HTTP header field (for MM1) containing user address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mm1-addr-source</span> - Source for MM1 user address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http-header, cookie]</span> </li>
+ <li><span class="li-head">mm1-convert-hex</span> - Enable/disable converting user address from HEX string for MM1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mm1-outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
+ <li><span class="li-head">mm1-retr-dupe</span> - Enable/disable duplicate scanning of MM1 retr. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mm1-retrieve-scan</span> - Enable/disable scanning on MM1 retrieve configuration messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mm1comfortamount</span> - MM1 comfort amount (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm1comfortinterval</span> - MM1 comfort interval (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm1oversizelimit</span> - Maximum file size to scan (1 - 819200 kB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm3</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, fragmail, splice, mms-checksum]</span> </li>
+ <li><span class="li-head">mm3-outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
+ <li><span class="li-head">mm3oversizelimit</span> - Maximum file size to scan (1 - 819200 kB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm4</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, fragmail, splice, mms-checksum]</span> </li>
+ <li><span class="li-head">mm4-outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
+ <li><span class="li-head">mm4oversizelimit</span> - Maximum file size to scan (1 - 819200 kB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm7</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, chunkedbypass, clientcomfort, servercomfort, strict-file, mms-checksum]</span> </li>
+ <li><span class="li-head">mm7-addr-hdr</span> - HTTP header field (for MM7) containing user address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mm7-addr-source</span> - Source for MM7 user address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http-header, cookie]</span> </li>
+ <li><span class="li-head">mm7-convert-hex</span> - Enable/disable conversion of user address from HEX string for MM7. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mm7-outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
+ <li><span class="li-head">mm7comfortamount</span> - MM7 comfort amount (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm7comfortinterval</span> - MM7 comfort interval (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mm7oversizelimit</span> - Maximum file size to scan (1 - 819200 kB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mms-antispam-mass-log</span> - Enable/disable logging for MMS antispam mass. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-av-block-log</span> - Enable/disable logging for MMS antivirus file blocking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-av-oversize-log</span> - Enable/disable logging for MMS antivirus oversize file blocking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-av-virus-log</span> - Enable/disable logging for MMS antivirus scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-carrier-endpoint-filter-log</span> - Enable/disable logging for MMS end point filter blocking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-checksum-log</span> - Enable/disable MMS content checksum logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-checksum-table</span> - MMS content checksum table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mms-notification-log</span> - Enable/disable logging for MMS notification messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-web-content-log</span> - Enable/disable logging for MMS web content blocking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mmsbwordthreshold</span> - MMS banned word threshold. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">notif-msisdn</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">msisdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">threshold</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [flood-thresh-1, flood-thresh-2, flood-thresh-3, dupe-thresh-1, dupe-thresh-2, dupe-thresh-3]</span> </li>
+ <li><span class="li-head">msisdn</span> - Recipient MSISDN. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">threshold</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [flood-thresh-1, flood-thresh-2, flood-thresh-3, dupe-thresh-1, dupe-thresh-2, dupe-thresh-3]</span> </li>
  </ul>
- </ul>
- <li><span class="li-head">remove-blocked-const-length</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">remove-blocked-const-length</span> - Enable/disable MMS replacement of blocked file constant length. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -157,7 +147,23 @@ Examples
             comment: <value of string>
             extended-utm-log: <value in [disable, enable]>
             mm1:
-              - <value in [avmonitor, block, oversize, ...]>
+              - avmonitor
+              - block
+              - oversize
+              - quarantine
+              - scan
+              - avquery
+              - bannedword
+              - no-content-summary
+              - archive-summary
+              - archive-full
+              - carrier-endpoint-bwl
+              - remove-blocked
+              - chunkedbypass
+              - clientcomfort
+              - servercomfort
+              - strict-file
+              - mms-checksum
             mm1-addr-hdr: <value of string>
             mm1-addr-source: <value in [http-header, cookie]>
             mm1-convert-hex: <value in [disable, enable]>
@@ -168,15 +174,59 @@ Examples
             mm1comfortinterval: <value of integer>
             mm1oversizelimit: <value of integer>
             mm3:
-              - <value in [avmonitor, block, oversize, ...]>
+              - avmonitor
+              - block
+              - oversize
+              - quarantine
+              - scan
+              - avquery
+              - bannedword
+              - no-content-summary
+              - archive-summary
+              - archive-full
+              - carrier-endpoint-bwl
+              - remove-blocked
+              - fragmail
+              - splice
+              - mms-checksum
             mm3-outbreak-prevention: <value in [disabled, files, full-archive]>
             mm3oversizelimit: <value of integer>
             mm4:
-              - <value in [avmonitor, block, oversize, ...]>
+              - avmonitor
+              - block
+              - oversize
+              - quarantine
+              - scan
+              - avquery
+              - bannedword
+              - no-content-summary
+              - archive-summary
+              - archive-full
+              - carrier-endpoint-bwl
+              - remove-blocked
+              - fragmail
+              - splice
+              - mms-checksum
             mm4-outbreak-prevention: <value in [disabled, files, full-archive]>
             mm4oversizelimit: <value of integer>
             mm7:
-              - <value in [avmonitor, block, oversize, ...]>
+              - avmonitor
+              - block
+              - oversize
+              - quarantine
+              - scan
+              - avquery
+              - bannedword
+              - no-content-summary
+              - archive-summary
+              - archive-full
+              - carrier-endpoint-bwl
+              - remove-blocked
+              - chunkedbypass
+              - clientcomfort
+              - servercomfort
+              - strict-file
+              - mms-checksum
             mm7-addr-hdr: <value of string>
             mm7-addr-source: <value in [http-header, cookie]>
             mm7-convert-hex: <value in [disable, enable]>
@@ -199,7 +249,12 @@ Examples
               -
                   msisdn: <value of string>
                   threshold:
-                    - <value in [flood-thresh-1, flood-thresh-2, flood-thresh-3, ...]>
+                    - flood-thresh-1
+                    - flood-thresh-2
+                    - flood-thresh-3
+                    - dupe-thresh-1
+                    - dupe-thresh-2
+                    - dupe-thresh-3
             remove-blocked-const-length: <value in [disable, enable]>
             replacemsg-group: <value of string>
 
@@ -218,6 +273,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

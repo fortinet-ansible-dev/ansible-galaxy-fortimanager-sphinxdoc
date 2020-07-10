@@ -50,15 +50,11 @@ Parameters
  <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dpd</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, on-idle, on-demand]</span> </li>
  <li><span class="li-head">dpd-retrycount</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">dpd-retryinterval</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
+ <li><span class="li-head">dpd-retryinterval</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">fcc-enforcement</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">hub2spoke-zone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ike-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2]</span> </li>
- <li><span class="li-head">ike1dhgroup</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31, 32]</span> </li>
- </ul>
+ <li><span class="li-head">ike1dhgroup</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31, 32]</span> </li>
  <li><span class="li-head">ike1dpd</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ike1keylifesec</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ike1localid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -67,9 +63,7 @@ Parameters
  <li><span class="li-head">ike1nattraversal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, forced]</span> </li>
  <li><span class="li-head">ike1proposal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [des-md5, des-sha1, 3des-md5, 3des-sha1, aes128-md5, aes128-sha1, aes192-md5, aes192-sha1, aes256-md5, aes256-sha1, des-sha256, 3des-sha256, aes128-sha256, aes192-sha256, aes256-sha256, des-sha384, des-sha512, 3des-sha384, 3des-sha512, aes128-sha384, aes128-sha512, aes192-sha384, aes192-sha512, aes256-sha384, aes256-sha512, aria128-md5, aria128-sha1, aria128-sha256, aria128-sha384, aria128-sha512, aria192-md5, aria192-sha1, aria192-sha256, aria192-sha384, aria192-sha512, aria256-md5, aria256-sha1, aria256-sha256, aria256-sha384, aria256-sha512, seed-md5, seed-sha1, seed-sha256, seed-sha384, seed-sha512, aes128gcm-prfsha1, aes128gcm-prfsha256, aes128gcm-prfsha384, aes128gcm-prfsha512, aes256gcm-prfsha1, aes256gcm-prfsha256, aes256gcm-prfsha384, aes256gcm-prfsha512, chacha20poly1305-prfsha1, chacha20poly1305-prfsha256, chacha20poly1305-prfsha384, chacha20poly1305-prfsha512]</span> </li>
  <li><span class="li-head">ike2autonego</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ike2dhgroup</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31, 32]</span> </li>
- </ul>
+ <li><span class="li-head">ike2dhgroup</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31, 32]</span> </li>
  <li><span class="li-head">ike2keepalive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ike2keylifekbs</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ike2keylifesec</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -83,9 +77,7 @@ Parameters
  <li><span class="li-head">npu-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">pfs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">psk-auto-generate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">psksecret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">psksecret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">replay</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">rsa-certificate</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">spoke2hub-zone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -140,13 +132,28 @@ Examples
             description: <value of string>
             dpd: <value in [disable, enable, on-idle, ...]>
             dpd-retrycount: <value of integer>
-            dpd-retryinterval:
-              - <value of integer>
+            dpd-retryinterval: <value of integer>
             fcc-enforcement: <value in [disable, enable]>
             hub2spoke-zone: <value of string>
             ike-version: <value in [1, 2]>
             ike1dhgroup:
-              - <value in [1, 2, 5, ...]>
+              - 1
+              - 2
+              - 5
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+              - 20
+              - 21
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+              - 32
             ike1dpd: <value in [disable, enable]>
             ike1keylifesec: <value of integer>
             ike1localid: <value of string>
@@ -156,7 +163,23 @@ Examples
             ike1proposal: <value in [des-md5, des-sha1, 3des-md5, ...]>
             ike2autonego: <value in [disable, enable]>
             ike2dhgroup:
-              - <value in [1, 2, 5, ...]>
+              - 1
+              - 2
+              - 5
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+              - 20
+              - 21
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+              - 32
             ike2keepalive: <value in [disable, enable]>
             ike2keylifekbs: <value of integer>
             ike2keylifesec: <value of integer>
@@ -170,8 +193,7 @@ Examples
             npu-offload: <value in [disable, enable]>
             pfs: <value in [disable, enable]>
             psk-auto-generate: <value in [disable, enable]>
-            psksecret:
-              - <value of string>
+            psksecret: <value of string>
             replay: <value in [disable, enable]>
             rsa-certificate: <value of string>
             spoke2hub-zone: <value of string>
@@ -193,6 +215,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

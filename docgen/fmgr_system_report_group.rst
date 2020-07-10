@@ -43,19 +43,19 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_report_group</span> - Report group. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">case-insensitive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">adom</span> - Admin domain name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">case-insensitive</span> - Case insensitive. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">chart-alternative</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">chart-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">chart-replace</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">chart-name</span> - Chart name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">chart-replace</span> - Chart replacement. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">group-by</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">var-expression</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">var-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">var-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span> </li>
+ <li><span class="li-head">var-expression</span> - Variable expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">var-name</span> - Variable name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">var-type</span> - Variable type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span> </li>
  </ul>
- <li><span class="li-head">group-id</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">report-like</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group-id</span> - Group ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">report-like</span> - Report pattern. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -127,6 +127,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

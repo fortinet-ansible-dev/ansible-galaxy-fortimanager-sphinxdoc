@@ -43,18 +43,14 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_admin_radius</span> - Configure radius. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, pap, chap, mschap2]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">nas-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1812</span> </li>
- <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-type</span> - Authentication protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, pap, chap, mschap2]</span> </li>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">nas-ip</span> - NAS IP address and called station ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Server port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 1812</span> </li>
+ <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">secondary-server</span> - Secondary server name/IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - Server name/IP. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -101,11 +97,9 @@ Examples
             name: <value of string>
             nas-ip: <value of string>
             port: <value of integer>
-            secondary-secret:
-              - <value of string>
+            secondary-secret: <value of string>
             secondary-server: <value of string>
-            secret:
-              - <value of string>
+            secret: <value of string>
             server: <value of string>
 
 
@@ -123,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

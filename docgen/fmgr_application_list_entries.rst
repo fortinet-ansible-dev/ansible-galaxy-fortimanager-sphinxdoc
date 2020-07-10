@@ -45,50 +45,34 @@ Parameters
  <li><span class="li-head">list</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">application_list_entries</span> - Application list entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, reset]</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">behavior</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">log-packet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">action</span> - Pass or block traffic, or reset connection for traffic from this application. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, reset]</span> </li>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">behavior</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">category</span> - Category ID list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Entry ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging for this application list. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-packet</span> - Enable/disable packet logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">parameters</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Parameter ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">value</span> - Parameter value. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">per-ip-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">popularity</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
- </ul>
- <li><span class="li-head">protocols</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">quarantine</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker]</span> </li>
- <li><span class="li-head">quarantine-expiry</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">quarantine-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rate-count</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rate-duration</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rate-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [periodical, continuous]</span> </li>
- <li><span class="li-head">rate-track</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip, dhcp-client-mac, dns-domain]</span> </li>
- <li><span class="li-head">risk</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">session-ttl</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">shaper-reverse</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sub-category</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">technology</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">vendor</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">per-ip-shaper</span> - Per-IP traffic shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">popularity</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
+ <li><span class="li-head">protocols</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">quarantine</span> - Quarantine method. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker]</span> </li>
+ <li><span class="li-head">quarantine-expiry</span> - Duration of quarantine. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">quarantine-log</span> - Enable/disable quarantine logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rate-count</span> - Count of the rate. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rate-duration</span> - Duration (sec) of the rate. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rate-mode</span> - Rate limit mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [periodical, continuous]</span> </li>
+ <li><span class="li-head">rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip, dhcp-client-mac, dns-domain]</span> </li>
+ <li><span class="li-head">risk</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">session-ttl</span> - Session TTL (0 = default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">shaper</span> - Traffic shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">shaper-reverse</span> - Reverse traffic shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sub-category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">technology</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">vendor</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  </ul>
 
@@ -134,10 +118,8 @@ Examples
          state: <value in [present, absent]>
          application_list_entries:
             action: <value in [pass, block, reset]>
-            application:
-              - <value of integer>
-            behavior:
-              - <value of string>
+            application: <value of integer>
+            behavior: <value of string>
             category: <value of string>
             id: <value of integer>
             log: <value in [disable, enable]>
@@ -148,9 +130,12 @@ Examples
                   value: <value of string>
             per-ip-shaper: <value of string>
             popularity:
-              - <value in [1, 2, 3, ...]>
-            protocols:
-              - <value of string>
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+            protocols: <value of string>
             quarantine: <value in [none, attacker]>
             quarantine-expiry: <value of string>
             quarantine-log: <value in [disable, enable]>
@@ -158,17 +143,13 @@ Examples
             rate-duration: <value of integer>
             rate-mode: <value in [periodical, continuous]>
             rate-track: <value in [none, src-ip, dest-ip, ...]>
-            risk:
-              - <value of integer>
+            risk: <value of integer>
             session-ttl: <value of integer>
             shaper: <value of string>
             shaper-reverse: <value of string>
-            sub-category:
-              - <value of integer>
-            technology:
-              - <value of string>
-            vendor:
-              - <value of string>
+            sub-category: <value of integer>
+            technology: <value of string>
+            vendor: <value of string>
 
 
 
@@ -185,6 +166,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

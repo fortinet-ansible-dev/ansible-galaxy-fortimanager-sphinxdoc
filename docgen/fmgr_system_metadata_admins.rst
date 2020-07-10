@@ -43,10 +43,10 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_metadata_admins</span> - Configure admins. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">fieldlength</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [20, 50, 255]</span> </li>
- <li><span class="li-head">fieldname</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">importance</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">fieldlength</span> - Field length. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [20, 50, 255]</span> </li>
+ <li><span class="li-head">fieldname</span> - Field name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">importance</span> - Field importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span> </li>
+ <li><span class="li-head">status</span> - Field status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
  </ul>
  </ul>
 
@@ -109,6 +109,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

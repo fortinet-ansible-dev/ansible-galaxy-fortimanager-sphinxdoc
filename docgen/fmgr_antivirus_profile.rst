@@ -44,20 +44,20 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">antivirus_profile</span> - Configure AntiVirus profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">analytics-bl-filetype</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">analytics-db</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">analytics-max-upload</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">analytics-wl-filetype</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">av-block-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">av-virus-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">extended-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ftgd-analytics</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, suspicious, everything]</span> </li>
- <li><span class="li-head">inspection-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow-based]</span> </li>
- <li><span class="li-head">mobile-malware-db</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">scan-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [quick, full]</span> </li>
+ <li><span class="li-head">analytics-bl-filetype</span> - Only submit files matching this DLP file-pattern to FortiSandbox. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">analytics-db</span> - Enable/disable using the FortiSandbox signature database to supplement the AV signature databases. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">analytics-max-upload</span> - Maximum size of files that can be uploaded to FortiSandbox (1 - 395 MBytes, default = 10). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">analytics-wl-filetype</span> - Do not submit files matching this DLP file-pattern to FortiSandbox. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">av-block-log</span> - Enable/disable logging for AntiVirus file blocking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">av-virus-log</span> - Enable/disable AntiVirus logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">extended-log</span> - Enable/disable extended logging for antivirus. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ftgd-analytics</span> - Settings to control which files are uploaded to FortiSandbox. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, suspicious, everything]</span> </li>
+ <li><span class="li-head">inspection-mode</span> - Inspection mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow-based]</span> </li>
+ <li><span class="li-head">mobile-malware-db</span> - Enable/disable using the mobile malware signature database. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">replacemsg-group</span> - Replacement message group customized for this profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">scan-mode</span> - Choose between full scan mode and quick scan mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [quick, full]</span> </li>
  </ul>
  </ul>
 
@@ -131,6 +131,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,47 +44,45 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_group</span> - Configure user groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-concurrent-override</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">auth-concurrent-value</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">authtimeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">company</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disabled]</span> </li>
- <li><span class="li-head">email</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">expire</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">expire-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [immediately, first-successful-login]</span> </li>
- <li><span class="li-head">group-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [firewall, directory-service, fsso-service, guest, rsso]</span> </li>
+ <li><span class="li-head">auth-concurrent-override</span> - Enable/disable overriding the global number of concurrent authentication sessions for this user group. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auth-concurrent-value</span> - Maximum number of concurrent authenticated connections per user (0 - 100). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">authtimeout</span> - Authentication timeout in minutes for this user group. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">company</span> - Set the action for the company guest user field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disabled]</span> </li>
+ <li><span class="li-head">email</span> - Enable/disable the guest user email address field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">expire</span> - Time in seconds before guest user accounts expire. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">expire-type</span> - Determine when the expiration countdown begins. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [immediately, first-successful-login]</span> </li>
+ <li><span class="li-head">group-type</span> - Set the group to be for firewall authentication, FSSO, RSSO, or guest users. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [firewall, directory-service, fsso-service, guest, rsso]</span> </li>
  <li><span class="li-head">guest</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">company</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">email</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">expiration</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mobile-phone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">company</span> - Set the action for the company guest user field. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">email</span> - Email. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">expiration</span> - Expire time. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mobile-phone</span> - Mobile phone. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Guest name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">sponsor</span> - Set the action for the sponsor guest user field. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">user-id</span> - Guest ID. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">sponsor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">user-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">http-digest-realm</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">http-digest-realm</span> - Realm attribute for MD5-digest authentication. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Group ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">match</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_gui_meta</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">group-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">server-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group-name</span> - Name of matching group on remote authentication server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">server-name</span> - Name of remote auth server. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">max-accounts</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mobile-phone</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">multiple-guest-add</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto-generate, specify, disable]</span> </li>
- <li><span class="li-head">sms-custom-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sms-server</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard, custom]</span> </li>
- <li><span class="li-head">sponsor</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disabled]</span> </li>
- <li><span class="li-head">sso-attribute-value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">user-id</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [email, auto-generate, specify]</span> </li>
- <li><span class="li-head">user-name</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">max-accounts</span> - Maximum number of guest accounts that can be created for this group (0 means unlimited). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">member</span> - Names of users, peers, LDAP severs, or RADIUS servers to add to the user group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mobile-phone</span> - Enable/disable the guest user mobile phone number field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">multiple-guest-add</span> - Enable/disable addition of multiple guests. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">password</span> - Guest user password type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto-generate, specify, disable]</span> </li>
+ <li><span class="li-head">sms-custom-server</span> - SMS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sms-server</span> - Send SMS through FortiGuard or other external server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard, custom]</span> </li>
+ <li><span class="li-head">sponsor</span> - Set the action for the sponsor guest user field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disabled]</span> </li>
+ <li><span class="li-head">sso-attribute-value</span> - Name of the RADIUS user group that this local user group represents. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">user-id</span> - Guest user ID type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [email, auto-generate, specify]</span> </li>
+ <li><span class="li-head">user-name</span> - Enable/disable the guest user name entry. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -144,8 +142,7 @@ Examples
                   expiration: <value of string>
                   mobile-phone: <value of string>
                   name: <value of string>
-                  password:
-                    - <value of string>
+                  password: <value of string>
                   sponsor: <value of string>
                   user-id: <value of string>
             http-digest-realm: <value of string>
@@ -184,6 +181,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,14 +44,14 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_shaper_peripshaper</span> - Configure per-IP traffic shaper. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bandwidth-unit</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [kbps, mbps, gbps]</span> </li>
- <li><span class="li-head">diffserv-forward</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">diffserv-reverse</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">diffservcode-forward</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">diffservcode-rev</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-bandwidth</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">max-concurrent-session</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">bandwidth-unit</span> - Unit of measurement for maximum bandwidth for this shaper (Kbps, Mbps or Gbps). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [kbps, mbps, gbps]</span> </li>
+ <li><span class="li-head">diffserv-forward</span> - Enable/disable changing the Forward (original) DiffServ setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">diffserv-reverse</span> - Enable/disable changing the Reverse (reply) DiffServ setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">diffservcode-forward</span> - Forward (original) DiffServ setting to be applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">diffservcode-rev</span> - Reverse (reply) DiffServ setting to be applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-bandwidth</span> - Upper bandwidth limit enforced by this shaper (0 - 16776000). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">max-concurrent-session</span> - Maximum number of concurrent sessions allowed by this shaper (0 - 2097000). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Traffic shaper name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -119,6 +119,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

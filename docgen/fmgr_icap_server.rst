@@ -44,12 +44,12 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">icap_server</span> - Configure ICAP servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [4, 6]</span> </li>
- <li><span class="li-head">ip6-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-connections</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip-address</span> - IPv4 address of the ICAP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip-version</span> - IP version. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [4, 6]</span> </li>
+ <li><span class="li-head">ip6-address</span> - IPv6 address of the ICAP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-connections</span> - Maximum number of concurrent connections to ICAP server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - ICAP server port. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -115,6 +115,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

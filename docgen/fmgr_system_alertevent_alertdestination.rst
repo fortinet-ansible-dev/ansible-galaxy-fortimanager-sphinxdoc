@@ -44,12 +44,12 @@ Parameters
  <li><span class="li-head">alert-event</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_alertevent_alertdestination</span> - Alert destination. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">smtp-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">snmp-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">syslog-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">to</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mail, snmp, syslog]</span> </li>
+ <li><span class="li-head">from</span> - Sender email address to use in alert emails. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">smtp-name</span> - SMTP server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">snmp-name</span> - SNMP trap name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">syslog-name</span> - Syslog server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">to</span> - Recipient email address to use in alert emails. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Destination type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mail, snmp, syslog]</span> </li>
  </ul>
  </ul>
 
@@ -115,6 +115,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

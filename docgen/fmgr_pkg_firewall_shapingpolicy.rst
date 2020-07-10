@@ -45,26 +45,24 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_shapingpolicy</span> - Configure shaping policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">groups</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ip-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [4, 6]</span> </li>
- <li><span class="li-head">per-ip-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">traffic-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">traffic-shaper-reverse</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">url-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">users</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">app-category</span> - IDs of one or more application categories that this shaper applies application control traffic shaping to. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">dstaddr</span> - IPv4 destination address and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr6</span> - IPv6 destination address and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstintf</span> - One or more outgoing (egress) interfaces. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">groups</span> - Apply this traffic shaping policy to user groups that have authenticated with the FortiGate. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Shaping policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip-version</span> - Apply this traffic shaping policy to IPv4 or IPv6 traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [4, 6]</span> </li>
+ <li><span class="li-head">per-ip-shaper</span> - Per-IP traffic shaper to apply with this policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">schedule</span> - Schedule name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service</span> - Service and service group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr</span> - IPv4 source address and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr6</span> - IPv6 source address and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this traffic shaping policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">traffic-shaper</span> - Traffic shaper to apply to traffic forwarded by the firewall policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">traffic-shaper-reverse</span> - Traffic shaper to apply to response traffic received by the firewall policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">url-category</span> - IDs of one or more FortiGuard Web Filtering categories that this shaper applies traffic shaping to. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">users</span> - Apply this traffic shaping policy to individual users that have authenticated with the FortiGate. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -110,8 +108,7 @@ Examples
          state: <value in [present, absent]>
          pkg_firewall_shapingpolicy:
             app-category: <value of string>
-            application:
-              - <value of integer>
+            application: <value of integer>
             dstaddr: <value of string>
             dstaddr6: <value of string>
             dstintf: <value of string>
@@ -144,6 +141,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

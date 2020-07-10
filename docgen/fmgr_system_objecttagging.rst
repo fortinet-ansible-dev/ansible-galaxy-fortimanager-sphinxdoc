@@ -44,15 +44,13 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_objecttagging</span> - Configure object tagging. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">address</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disable]</span> </li>
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">device</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disable]</span> </li>
- <li><span class="li-head">interface</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disable]</span> </li>
- <li><span class="li-head">multiple</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">address</span> - Address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disable]</span> </li>
+ <li><span class="li-head">category</span> - Tag Category. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">device</span> - Device. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disable]</span> </li>
+ <li><span class="li-head">interface</span> - Interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, mandatory, disable]</span> </li>
+ <li><span class="li-head">multiple</span> - Allow multiple tag selection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  </ul>
 
@@ -102,8 +100,7 @@ Examples
             device: <value in [optional, mandatory, disable]>
             interface: <value in [optional, mandatory, disable]>
             multiple: <value in [disable, enable]>
-            tags:
-              - <value of string>
+            tags: <value of string>
 
 
 
@@ -120,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

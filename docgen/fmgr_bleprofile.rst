@@ -44,21 +44,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">bleprofile</span> - Configure Bluetooth Low Energy profile. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">advertising</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ibeacon, eddystone-uid, eddystone-url]</span> </li>
- </ul>
- <li><span class="li-head">beacon-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ble-scanning</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">eddystone-instance</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">eddystone-namespace</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">eddystone-url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">eddystone-url-encode-hex</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ibeacon-uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">major-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">minor-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">txpower</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]</span> </li>
+ <li><span class="li-head">advertising</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ibeacon, eddystone-uid, eddystone-url]</span> </li>
+ <li><span class="li-head">beacon-interval</span> - Beacon interval (default = 100 msec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ble-scanning</span> - Enable/disable Bluetooth Low Energy (BLE) scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">eddystone-instance</span> - Eddystone instance ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">eddystone-namespace</span> - Eddystone namespace ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">eddystone-url</span> - Eddystone URL. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">eddystone-url-encode-hex</span> - Eddystone encoded URL hexadecimal string <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ibeacon-uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">major-id</span> - Major ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">minor-id</span> - Minor ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Bluetooth Low Energy profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">txpower</span> - Transmit power level (default = 0). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]</span> </li>
  </ul>
  </ul>
 
@@ -103,7 +101,9 @@ Examples
          state: <value in [present, absent]>
          bleprofile:
             advertising:
-              - <value in [ibeacon, eddystone-uid, eddystone-url]>
+              - ibeacon
+              - eddystone-uid
+              - eddystone-url
             beacon-interval: <value of integer>
             ble-scanning: <value in [disable, enable]>
             comment: <value of string>
@@ -132,6 +132,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

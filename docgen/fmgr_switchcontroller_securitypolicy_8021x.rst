@@ -44,21 +44,21 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_securitypolicy_8021x</span> - Configure 802.1x MAC Authentication Bypass (MAB) policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-fail-vlan</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">auth-fail-vlan-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">auth-fail-vlanid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eap-passthru</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">guest-auth-delay</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">guest-vlan</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">guest-vlan-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">guest-vlanid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mac-auth-bypass</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">open-auth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">policy-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.1X]</span> </li>
- <li><span class="li-head">radius-timeout-overwrite</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">security-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.1X, 802.1X-mac-based]</span> </li>
- <li><span class="li-head">user-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-fail-vlan</span> - Enable to allow limited access to clients that cannot authenticate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auth-fail-vlan-id</span> - VLAN ID on which authentication failed. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-fail-vlanid</span> - VLAN ID on which authentication failed. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eap-passthru</span> - Enable/disable EAP pass-through mode, allowing protocols (such as LLDP) to pass through ports for more flexible authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">guest-auth-delay</span> - Guest authentication delay (1 - 900  sec, default = 30). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">guest-vlan</span> - Enable the guest VLAN feature to allow limited access to non-802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">guest-vlan-id</span> - Guest VLAN name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">guest-vlanid</span> - Guest VLAN ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mac-auth-bypass</span> - Enable/disable MAB for this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Policy name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">open-auth</span> - Enable/disable open authentication for this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">policy-type</span> - Policy type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.1X]</span> </li>
+ <li><span class="li-head">radius-timeout-overwrite</span> - Enable to override the global RADIUS session timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">security-mode</span> - Port or MAC based 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.1X, 802.1X-mac-based]</span> </li>
+ <li><span class="li-head">user-group</span> - Name of user-group to assign to this MAC Authentication Bypass (MAB) policy. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -133,6 +133,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -45,13 +45,9 @@ Parameters
  <li><span class="li-head">pkg_header_consolidated_policy</span> - no description <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept, ipsec]</span> </li>
- <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
+ <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">app-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">application-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">auto-asic-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">av-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -104,9 +100,7 @@ Parameters
  <li><span class="li-head">tcp-mss-sender</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">traffic-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">traffic-shaper-reverse</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">url-category</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
+ <li><span class="li-head">url-category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">users</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">utm-inspection-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow]</span> </li>
  <li><span class="li-head">utm-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -159,11 +153,9 @@ Examples
          state: <value in [present, absent]>
          pkg_header_consolidated_policy:
             action: <value in [deny, accept, ipsec]>
-            app-category:
-              - <value of integer>
+            app-category: <value of integer>
             app-group: <value of string>
-            application:
-              - <value of integer>
+            application: <value of integer>
             application-list: <value of string>
             auto-asic-offload: <value in [disable, enable]>
             av-profile: <value of string>
@@ -216,8 +208,7 @@ Examples
             tcp-mss-sender: <value of integer>
             traffic-shaper: <value of string>
             traffic-shaper-reverse: <value of string>
-            url-category:
-              - <value of integer>
+            url-category: <value of integer>
             users: <value of string>
             utm-inspection-mode: <value in [proxy, flow]>
             utm-status: <value in [disable, enable]>
@@ -242,6 +233,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

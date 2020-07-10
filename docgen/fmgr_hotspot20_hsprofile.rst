@@ -44,38 +44,38 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_hsprofile</span> - Configure hotspot profile. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">3gpp-plmn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">access-network-asra</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">access-network-esr</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">access-network-internet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">access-network-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private-network, private-network-with-guest-access, chargeable-public-network, free-public-network, personal-device-network, emergency-services-only-network, test-or-experimental, wildcard]</span> </li>
- <li><span class="li-head">access-network-uesa</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">anqp-domain-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">bss-transition</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">conn-cap</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">deauth-request-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">dgaf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">domain-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">gas-comeback-delay</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">gas-fragmentation-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">hessid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip-addr-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">l2tif</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">nai-realm</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">network-auth</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">oper-friendly-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">osu-provider</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">osu-ssid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">pame-bi</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">proxy-arp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">qos-map</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">roaming-consortium</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">venue-group</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, assembly, business, educational, factory, institutional, mercantile, residential, storage, utility, vehicular, outdoor]</span> </li>
- <li><span class="li-head">venue-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">venue-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, arena, stadium, passenger-terminal, amphitheater, amusement-park, place-of-worship, convention-center, library, museum, restaurant, theater, bar, coffee-shop, zoo-or-aquarium, emergency-center, doctor-office, bank, fire-station, police-station, post-office, professional-office, research-facility, attorney-office, primary-school, secondary-school, university-or-college, factory, hospital, long-term-care-facility, rehab-center, group-home, prison-or-jail, retail-store, grocery-market, auto-service-station, shopping-mall, gas-station, private, hotel-or-motel, dormitory, boarding-house, automobile, airplane, bus, ferry, ship-or-boat, train, motor-bike, muni-mesh-network, city-park, rest-area, traffic-control, bus-stop, kiosk]</span> </li>
- <li><span class="li-head">wan-metrics</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">wnm-sleep-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">3gpp-plmn</span> - 3GPP PLMN name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-network-asra</span> - Enable/disable additional step required for access (ASRA). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">access-network-esr</span> - Enable/disable emergency services reachable (ESR). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">access-network-internet</span> - Enable/disable connectivity to the Internet. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">access-network-type</span> - Access network type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private-network, private-network-with-guest-access, chargeable-public-network, free-public-network, personal-device-network, emergency-services-only-network, test-or-experimental, wildcard]</span> </li>
+ <li><span class="li-head">access-network-uesa</span> - Enable/disable unauthenticated emergency service accessible (UESA). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">anqp-domain-id</span> - ANQP Domain ID (0-65535). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">bss-transition</span> - Enable/disable basic service set (BSS) transition Support. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">conn-cap</span> - Connection capability name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">deauth-request-timeout</span> - Deauthentication request timeout (in seconds). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dgaf</span> - Enable/disable downstream group-addressed forwarding (DGAF). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">domain-name</span> - Domain name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">gas-comeback-delay</span> - GAS comeback delay (0 or 100 - 4000 milliseconds, default = 500). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">gas-fragmentation-limit</span> - GAS fragmentation limit (512 - 4096, default = 1024). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">hessid</span> - Homogeneous extended service set identifier (HESSID). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip-addr-type</span> - IP address type name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">l2tif</span> - Enable/disable Layer 2 traffic inspection and filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">nai-realm</span> - NAI realm list name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Hotspot profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">network-auth</span> - Network authentication name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">oper-friendly-name</span> - Operator friendly name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">osu-provider</span> - Manually selected list of OSU provider(s). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">osu-ssid</span> - Online sign up (OSU) SSID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pame-bi</span> - Enable/disable Pre-Association Message Exchange BSSID Independent (PAME-BI). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">proxy-arp</span> - Enable/disable Proxy ARP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">qos-map</span> - QoS MAP set ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">roaming-consortium</span> - Roaming consortium list name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">venue-group</span> - Venue group. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, assembly, business, educational, factory, institutional, mercantile, residential, storage, utility, vehicular, outdoor]</span> </li>
+ <li><span class="li-head">venue-name</span> - Venue name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">venue-type</span> - Venue type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, arena, stadium, passenger-terminal, amphitheater, amusement-park, place-of-worship, convention-center, library, museum, restaurant, theater, bar, coffee-shop, zoo-or-aquarium, emergency-center, doctor-office, bank, fire-station, police-station, post-office, professional-office, research-facility, attorney-office, primary-school, secondary-school, university-or-college, factory, hospital, long-term-care-facility, rehab-center, group-home, prison-or-jail, retail-store, grocery-market, auto-service-station, shopping-mall, gas-station, private, hotel-or-motel, dormitory, boarding-house, automobile, airplane, bus, ferry, ship-or-boat, train, motor-bike, muni-mesh-network, city-park, rest-area, traffic-control, bus-stop, kiosk]</span> </li>
+ <li><span class="li-head">wan-metrics</span> - WAN metric name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">wnm-sleep-mode</span> - Enable/disable wireless network management (WNM) sleep mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -167,6 +167,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

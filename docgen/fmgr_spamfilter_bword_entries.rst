@@ -45,14 +45,14 @@ Parameters
  <li><span class="li-head">bword</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">spamfilter_bword_entries</span> - Spam filter banned word. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [spam, clear]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">language</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [western, simch, trach, japanese, korean, french, thai, spanish]</span> </li>
- <li><span class="li-head">pattern</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">pattern-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wildcard, regexp]</span> </li>
- <li><span class="li-head">score</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">where</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [subject, body, all]</span> </li>
+ <li><span class="li-head">action</span> - Mark spam or good. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [spam, clear]</span> </li>
+ <li><span class="li-head">id</span> - Banned word entry ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">language</span> - Language for the banned word. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [western, simch, trach, japanese, korean, french, thai, spanish]</span> </li>
+ <li><span class="li-head">pattern</span> - Pattern for the banned word. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pattern-type</span> - Wildcard pattern or regular expression. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wildcard, regexp]</span> </li>
+ <li><span class="li-head">score</span> - Score value. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">where</span> - Component of the email to be scanned. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [subject, body, all]</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +121,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

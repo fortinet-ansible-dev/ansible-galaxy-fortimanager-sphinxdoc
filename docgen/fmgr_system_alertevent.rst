@@ -44,30 +44,22 @@ Parameters
  <li><span class="li-head">system_alertevent</span> - Alert events. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">alert-destination</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">smtp-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">snmp-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">syslog-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">to</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mail, snmp, syslog]</span> </li>
+ <li><span class="li-head">from</span> - Sender email address to use in alert emails. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">smtp-name</span> - SMTP server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">snmp-name</span> - SNMP trap name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">syslog-name</span> - Syslog server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">to</span> - Recipient email address to use in alert emails. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Destination type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mail, snmp, syslog]</span> </li>
  </ul>
- <li><span class="li-head">enable-generic-text</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span> </li>
- </ul>
- <li><span class="li-head">enable-severity-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span> </li>
- </ul>
- <li><span class="li-head">event-time-period</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span> </li>
- <li><span class="li-head">generic-text</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">num-events</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 5, 10, 50, 100]</span> </li>
- <li><span class="li-head">severity-filter</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span> </li>
- <li><span class="li-head">severity-level-comp</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [>=, =, <=]</span> </li>
- </ul>
- <li><span class="li-head">severity-level-logs</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no-check, information, notify, warning, error, critical, alert, emergency]</span> </li>
- </ul>
+ <li><span class="li-head">enable-generic-text</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span> </li>
+ <li><span class="li-head">enable-severity-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span> </li>
+ <li><span class="li-head">event-time-period</span> - Time period (hours). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span> </li>
+ <li><span class="li-head">generic-text</span> - Text that must be contained in a log to trigger alert. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Alert name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">num-events</span> - Minimum number of events required within time period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 5, 10, 50, 100]</span> </li>
+ <li><span class="li-head">severity-filter</span> - Required log severity to trigger alert. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span> </li>
+ <li><span class="li-head">severity-level-comp</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [>=, =, <=]</span> </li>
+ <li><span class="li-head">severity-level-logs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [no-check, information, notify, warning, error, critical, alert, emergency]</span> </li>
  </ul>
  </ul>
 
@@ -119,18 +111,29 @@ Examples
                   to: <value of string>
                   type: <value in [mail, snmp, syslog]>
             enable-generic-text:
-              - <value in [enable, disable]>
+              - enable
+              - disable
             enable-severity-filter:
-              - <value in [enable, disable]>
+              - enable
+              - disable
             event-time-period: <value in [0.5, 1, 3, ...]>
             generic-text: <value of string>
             name: <value of string>
             num-events: <value in [1, 5, 10, ...]>
             severity-filter: <value in [high, medium-high, medium, ...]>
             severity-level-comp:
-              - <value in [>=, =, <=]>
+              - >=
+              - =
+              - <=
             severity-level-logs:
-              - <value in [no-check, information, notify, ...]>
+              - no-check
+              - information
+              - notify
+              - warning
+              - error
+              - critical
+              - alert
+              - emergency
 
 
 
@@ -147,6 +150,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

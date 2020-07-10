@@ -44,18 +44,18 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_h2qpconncapability</span> - Configure connection capability. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">esp-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">ftp-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">http-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">icmp-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">ikev2-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">ikev2-xx-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">pptp-vpn-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">ssh-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">tls-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">voip-tcp-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
- <li><span class="li-head">voip-udp-port</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">esp-port</span> - Set ESP port service (used by IPsec VPNs) status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">ftp-port</span> - Set FTP port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">http-port</span> - Set HTTP port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">icmp-port</span> - Set ICMP port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">ikev2-port</span> - Set IKEv2 port service for IPsec VPN status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">ikev2-xx-port</span> - Set UDP port 4500 (which may be used by IKEv2 for IPsec VPN) service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">name</span> - Connection capability name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pptp-vpn-port</span> - Set Point to Point Tunneling Protocol (PPTP) VPN port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">ssh-port</span> - Set SSH port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">tls-port</span> - Set TLS VPN (HTTPS) port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">voip-tcp-port</span> - Set VoIP TCP port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
+ <li><span class="li-head">voip-udp-port</span> - Set VoIP UDP port service status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [closed, open, unknown]</span> </li>
  </ul>
  </ul>
 
@@ -127,6 +127,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,15 +44,15 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webproxy_forwardserver</span> - Configure forward-server addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">addr-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fqdn, ip]</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">healthcheck</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">monitor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">server-down-option</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
+ <li><span class="li-head">addr-type</span> - Address type of the forwarding proxy server: IP or FQDN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fqdn, ip]</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fqdn</span> - Forward server Fully Qualified Domain Name (FQDN). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">healthcheck</span> - Enable/disable forward server health checking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ip</span> - Forward proxy server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">monitor</span> - URL for forward server health check monitoring (default = http://www. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Port number that the forwarding server expects to receive HTTP sessions on (1 - 65535, default = 3128). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">server-down-option</span> - Action to take when the forward server is found to be down: block sessions until the server is back up or pass sessions to their destination. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +121,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,13 +44,13 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webproxy_wisp</span> - Configure Wireless Internet service provider (WISP) servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-connections</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">outgoing-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-connections</span> - Maximum number of web proxy WISP connections (4 - 4096, default = 64). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">outgoing-ip</span> - WISP outgoing IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-ip</span> - WISP server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-port</span> - WISP server port (1 - 65535, default = 15868). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">timeout</span> - Period of time before WISP requests time out (1 - 15 sec, default = 5). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

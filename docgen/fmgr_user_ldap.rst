@@ -44,11 +44,11 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_ldap</span> - Configure LDAP server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">account-key-filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">account-key-processing</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [same, strip]</span> </li>
- <li><span class="li-head">ca-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">cnid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">account-key-filter</span> - Account key filter, using the UPN as the search filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">account-key-processing</span> - Account key processing operation, either keep or strip domain string of UPN in the token. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [same, strip]</span> </li>
+ <li><span class="li-head">ca-cert</span> - CA certificate name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cnid</span> - Common name identifier for the LDAP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dn</span> - Distinguished name used to look up entries on the LDAP server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -69,16 +69,12 @@ Parameters
  <li><span class="li-head">group-search-base</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">member-attr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">obtain-user-info</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password-expiry-warning</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">password-renewal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">retrieve-protection-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">search-type</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nested, recursive]</span> </li>
- </ul>
+ <li><span class="li-head">search-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [nested, recursive]</span> </li>
  <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">secure</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
  <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -90,27 +86,25 @@ Parameters
  <li><span class="li-head">user-info-exchange-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">group-filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">group-member-check</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [user-attr, group-object, posix-group-object]</span> </li>
- <li><span class="li-head">group-object-filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">group-search-base</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">member-attr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">password-expiry-warning</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">password-renewal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secure</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-identity-check</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ssl-min-proto-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3]</span> </li>
- <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
- <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group-filter</span> - Filter used for group matching. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group-member-check</span> - Group member checking methods. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [user-attr, group-object, posix-group-object]</span> </li>
+ <li><span class="li-head">group-object-filter</span> - Filter used for group searching. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group-search-base</span> - Search base used for group searching. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member-attr</span> - Name of attribute from which to get group membership. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - LDAP server entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">password-expiry-warning</span> - Enable/disable password expiry warnings. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">password-renewal</span> - Enable/disable online password renewal. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">port</span> - Port to be used for communication with the LDAP server (default = 389). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">secondary-server</span> - Secondary LDAP server CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secure</span> - Port to be used for authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
+ <li><span class="li-head">server</span> - LDAP server CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-identity-check</span> - Enable/disable LDAP server identity check (verify server domain name/IP address against the server certificate). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP for communications to LDAP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ssl-min-proto-version</span> - Minimum supported protocol version for SSL/TLS connections (default is to follow system global setting). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3]</span> </li>
+ <li><span class="li-head">tertiary-server</span> - Tertiary LDAP server CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Authentication type for LDAP searches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
+ <li><span class="li-head">username</span> - Username (full DN) for initial binding. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -180,14 +174,14 @@ Examples
                   group-search-base: <value of string>
                   member-attr: <value of string>
                   obtain-user-info: <value in [disable, enable]>
-                  password:
-                    - <value of string>
+                  password: <value of string>
                   password-expiry-warning: <value in [disable, enable]>
                   password-renewal: <value in [disable, enable]>
                   port: <value of integer>
                   retrieve-protection-profile: <value of string>
                   search-type:
-                    - <value in [nested, recursive]>
+                    - nested
+                    - recursive
                   secondary-server: <value of string>
                   secure: <value in [disable, starttls, ldaps]>
                   server: <value of string>
@@ -204,8 +198,7 @@ Examples
             group-search-base: <value of string>
             member-attr: <value of string>
             name: <value of string>
-            password:
-              - <value of string>
+            password: <value of string>
             password-expiry-warning: <value in [disable, enable]>
             password-renewal: <value in [disable, enable]>
             port: <value of integer>
@@ -234,6 +227,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

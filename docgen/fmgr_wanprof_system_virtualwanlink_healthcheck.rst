@@ -46,42 +46,36 @@ Parameters
  <li><span class="li-head">wanprof_system_virtualwanlink_healthcheck</span> - SD-WAN status checking or health checking. Identify a server on the Internet and determine how SD-WAN verifies that the FortiGate can co... <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_dynamic-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">addr-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6]</span> </li>
- <li><span class="li-head">failtime</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">http-agent</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">http-get</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">http-match</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">members</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">packet-size</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, ping6]</span> </li>
- <li><span class="li-head">recoverytime</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">security-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, authentication]</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">addr-mode</span> - Address mode (IPv4 or IPv6). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6]</span> </li>
+ <li><span class="li-head">failtime</span> - Number of failures before server is considered lost (1 - 3600, default = 5). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">http-agent</span> - String in the http-agent field in the HTTP header. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">http-get</span> - URL used to communicate with the server if the protocol if the protocol is HTTP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">http-match</span> - Response string expected from the server if the protocol is HTTP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interval</span> - Status check interval, or the time between attempting to connect to the server (1 - 3600 sec, default = 5). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">members</span> - Member sequence number list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Status check or health check name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">packet-size</span> - Packet size of a twamp test session, <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">port</span> - Port number used to communicate with the server over the selected protocol. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">protocol</span> - Protocol used to determine if the FortiGate can communicate with the server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, ping6]</span> </li>
+ <li><span class="li-head">recoverytime</span> - Number of successful responses received before server is considered recovered (1 - 3600, default = 5). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">security-mode</span> - Twamp controller security mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, authentication]</span> </li>
+ <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">sla</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">jitter-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">latency-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">link-cost-factor</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [latency, jitter, packet-loss]</span> </li>
+ <li><span class="li-head">id</span> - SLA ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">jitter-threshold</span> - Jitter for SLA to make decision in milliseconds. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">latency-threshold</span> - Latency for SLA to make decision in milliseconds. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">link-cost-factor</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [latency, jitter, packet-loss]</span> </li>
+ <li><span class="li-head">packetloss-threshold</span> - Packet loss for SLA to make decision in percentage. <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">packetloss-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">threshold-alert-jitter</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">threshold-alert-latency</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">threshold-alert-packetloss</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">threshold-warning-jitter</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">threshold-warning-latency</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">threshold-warning-packetloss</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">update-cascade-interface</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">update-static-route</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">threshold-alert-jitter</span> - Alert threshold for jitter (ms, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">threshold-alert-latency</span> - Alert threshold for latency (ms, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">threshold-alert-packetloss</span> - Alert threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">threshold-warning-jitter</span> - Warning threshold for jitter (ms, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">threshold-warning-latency</span> - Warning threshold for latency (ms, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">threshold-warning-packetloss</span> - Warning threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">update-cascade-interface</span> - Enable/disable update cascade interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">update-static-route</span> - Enable/disable updating the static route. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -136,21 +130,21 @@ Examples
             members: <value of string>
             name: <value of string>
             packet-size: <value of integer>
-            password:
-              - <value of string>
+            password: <value of string>
             port: <value of integer>
             protocol: <value in [ping, tcp-echo, udp-echo, ...]>
             recoverytime: <value of integer>
             security-mode: <value in [none, authentication]>
-            server:
-              - <value of string>
+            server: <value of string>
             sla:
               -
                   id: <value of integer>
                   jitter-threshold: <value of integer>
                   latency-threshold: <value of integer>
                   link-cost-factor:
-                    - <value in [latency, jitter, packet-loss]>
+                    - latency
+                    - jitter
+                    - packet-loss
                   packetloss-threshold: <value of integer>
             threshold-alert-jitter: <value of integer>
             threshold-alert-latency: <value of integer>
@@ -176,6 +170,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

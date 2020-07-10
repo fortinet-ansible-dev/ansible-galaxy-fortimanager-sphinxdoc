@@ -42,20 +42,16 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">dvm_cmd_import_devlist</span> - Import a list of ADOMs and devices. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
- </ul>
+ <li><span class="li-head">adom</span> - Name or ID of the ADOM where the command is to be executed on. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
  <li><span class="li-head">import-adom-members</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Target ADOM to associate device VDOM with. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dev</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">import-adoms</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [migration, db_export, no_vpn_console, backup, other_devices, central_sdwan, is_autosync, per_device_wtp, policy_check_on_install, install_on_policy_check_fail, auto_push_cfg]</span> </li>
- </ul>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [migration, db_export, no_vpn_console, backup, other_devices, central_sdwan, is_autosync, per_device_wtp, policy_check_on_install, install_on_policy_check_fail, auto_push_cfg]</span> </li>
  <li><span class="li-head">log_db_retention_hours</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1440</span> </li>
  <li><span class="li-head">log_disk_quota</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">log_disk_quota_alert_thres</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 90</span> </li>
@@ -64,20 +60,16 @@ Parameters
  <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mig_mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 2</span> </li>
  <li><span class="li-head">mig_os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
- <li><span class="li-head">mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ems, gms, provider]</span> </li>
+ <li><span class="li-head">mode</span> - ems - (Value no longer used as of 4. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ems, gms, provider]</span> </li>
  <li><span class="li-head">mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 2</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
- <li><span class="li-head">restricted_prds</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx]</span> </li>
- </ul>
+ <li><span class="li-head">restricted_prds</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx]</span> </li>
  <li><span class="li-head">state</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 1</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">import-devices</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adm_pass</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">adm_pass</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">adm_usr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">app_ver</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">av_ver</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -97,22 +89,18 @@ Parameters
  <li><span class="li-head">faz.quota</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">faz.used</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">fex_cnt</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync]</span> </li>
- </ul>
- <li><span class="li-head">foslic_cpu</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">foslic_dr_site</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">foslic_inst_time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">foslic_last_sync</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">foslic_ram</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">foslic_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [temporary, trial, regular, trial_expired]</span> </li>
- <li><span class="li-head">foslic_utm</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fw, av, ips, app, url, utm, fwb]</span> </li>
- </ul>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync]</span> </li>
+ <li><span class="li-head">foslic_cpu</span> - VM Meter vCPU count. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">foslic_dr_site</span> - VM Meter DR Site status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">foslic_inst_time</span> - VM Meter first deployment time (in UNIX timestamp). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">foslic_last_sync</span> - VM Meter last synchronized time (in UNIX timestamp). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">foslic_ram</span> - VM Meter device RAM size (in MB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">foslic_type</span> - VM Meter license type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [temporary, trial, regular, trial_expired]</span> </li>
+ <li><span class="li-head">foslic_utm</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fw, av, ips, app, url, utm, fwb]</span> </li>
  <li><span class="li-head">fsw_cnt</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ha_group_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ha_group_name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ha_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, AP, AA, ELBC, DUAL, enabled, unknown]</span> </li>
+ <li><span class="li-head">ha_mode</span> - enabled - Value reserved for non-FOS HA devices. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, AP, AA, ELBC, DUAL, enabled, unknown]</span> </li>
  <li><span class="li-head">ha_slave</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">idx</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -143,13 +131,13 @@ Parameters
  <li><span class="li-head">mgmt_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span> </li>
  <li><span class="li-head">mgt_vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: -1</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Unique name for the device. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span> </li>
  <li><span class="li-head">os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
  <li><span class="li-head">patch</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">platform_str</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">psk</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sn</span> - Unique value for each device. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -166,9 +154,9 @@ Parameters
  <li><span class="li-head">vm_status</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">import-group-members</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - ADOM where the device group is located. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dev</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">grp</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">grp</span> - Target device group to associate device VDOM with. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
@@ -214,7 +202,10 @@ Examples
          dvm_cmd_import_devlist:
             adom: <value of string>
             flags:
-              - <value in [none, create_task, nonblocking, ...]>
+              - none
+              - create_task
+              - nonblocking
+              - log_dev
             import-adom-members:
               -
                   adom: <value of string>
@@ -224,7 +215,17 @@ Examples
               -
                   desc: <value of string>
                   flags:
-                    - <value in [migration, db_export, no_vpn_console, ...]>
+                    - migration
+                    - db_export
+                    - no_vpn_console
+                    - backup
+                    - other_devices
+                    - central_sdwan
+                    - is_autosync
+                    - per_device_wtp
+                    - policy_check_on_install
+                    - install_on_policy_check_fail
+                    - auto_push_cfg
                   log_db_retention_hours: <value of integer>
                   log_disk_quota: <value of integer>
                   log_disk_quota_alert_thres: <value of integer>
@@ -238,13 +239,25 @@ Examples
                   name: <value of string>
                   os_ver: <value in [unknown, 0.0, 1.0, ...]>
                   restricted_prds:
-                    - <value in [fos, foc, fml, ...]>
+                    - fos
+                    - foc
+                    - fml
+                    - fch
+                    - fwb
+                    - log
+                    - fct
+                    - faz
+                    - fsa
+                    - fsw
+                    - fmg
+                    - fdd
+                    - fac
+                    - fpx
                   state: <value of integer>
                   uuid: <value of string>
             import-devices:
               -
-                  adm_pass:
-                    - <value of string>
+                  adm_pass: <value of string>
                   adm_usr: <value of string>
                   app_ver: <value of string>
                   av_ver: <value of string>
@@ -265,7 +278,17 @@ Examples
                   faz.used: <value of integer>
                   fex_cnt: <value of integer>
                   flags:
-                    - <value in [has_hdd, vdom_enabled, discover, ...]>
+                    - has_hdd
+                    - vdom_enabled
+                    - discover
+                    - reload
+                    - interim_build
+                    - offline_mode
+                    - is_model
+                    - fips_mode
+                    - linked_to_model
+                    - ip-conflict
+                    - faz-autosync
                   foslic_cpu: <value of integer>
                   foslic_dr_site: <value in [disable, enable]>
                   foslic_inst_time: <value of integer>
@@ -273,7 +296,13 @@ Examples
                   foslic_ram: <value of integer>
                   foslic_type: <value in [temporary, trial, regular, ...]>
                   foslic_utm:
-                    - <value in [fw, av, ips, ...]>
+                    - fw
+                    - av
+                    - ips
+                    - app
+                    - url
+                    - utm
+                    - fwb
                   fsw_cnt: <value of integer>
                   ha_group_id: <value of integer>
                   ha_group_name: <value of string>
@@ -351,6 +380,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

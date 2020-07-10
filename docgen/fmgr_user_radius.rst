@@ -45,22 +45,18 @@ Parameters
  <li><span class="li-head">user_radius</span> - Configure RADIUS server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">accounting-server</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port</span> - RADIUS accounting port number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - {&lt;name_str|ip_str&gt;} Server CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP address for communications to the RADIUS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- </ul>
- <li><span class="li-head">acct-all-servers</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">acct-interim-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">all-usergroup</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">auth-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pap, chap, ms_chap, ms_chap_v2, auto]</span> </li>
- <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">acct-all-servers</span> - Enable/disable sending of accounting messages to all configured servers (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">acct-interim-interval</span> - Time in seconds between each accounting interim update message. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">all-usergroup</span> - Enable/disable automatically including this RADIUS server in all user groups. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auth-type</span> - Authentication methods/protocols permitted for this RADIUS server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pap, chap, ms_chap, ms_chap_v2, auto]</span> </li>
+ <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -70,9 +66,7 @@ Parameters
  <li><span class="li-head">acct-interim-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">all-usergroup</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">auth-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pap, chap, ms_chap, ms_chap_v2, auto]</span> </li>
- <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">class</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">dp-carrier-endpoint-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
  <li><span class="li-head">dp-carrier-endpoint-block-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
  <li><span class="li-head">dp-context-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -82,18 +76,14 @@ Parameters
  <li><span class="li-head">dp-http-header-fallback</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ip-header-address, default-profile]</span> </li>
  <li><span class="li-head">dp-http-header-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dp-http-header-suppress</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dp-log-dyn_flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> </li>
- </ul>
+ <li><span class="li-head">dp-log-dyn_flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> </li>
  <li><span class="li-head">dp-log-period</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">dp-mem-percent</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">dp-profile-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
  <li><span class="li-head">dp-profile-attribute-key</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dp-radius-response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dp-radius-server-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">dp-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">dp-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">dp-validate-request-secret</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dynamic-profile</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">endpoint-translation</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -121,79 +111,59 @@ Parameters
  <li><span class="li-head">rsso-endpoint-block-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
  <li><span class="li-head">rsso-ep-one-ip-only</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">rsso-flush-ip-session</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rsso-log-flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> </li>
- </ul>
+ <li><span class="li-head">rsso-log-flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> </li>
  <li><span class="li-head">rsso-log-period</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">rsso-radius-response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">rsso-radius-server-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rsso-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">rsso-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">rsso-validate-request-secret</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">sso-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
  <li><span class="li-head">sso-attribute-key</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">sso-attribute-value-override</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tertiary-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">tertiary-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">use-group-for-profile</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">use-management-vdom</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">username-case-sensitive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">h3c-compatibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">nas-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password-encoding</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ISO-8859-1, auto]</span> </li>
- <li><span class="li-head">password-renewal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">radius-coa</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">radius-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rsso</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rsso-context-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rsso-endpoint-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
- <li><span class="li-head">rsso-endpoint-block-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
- <li><span class="li-head">rsso-ep-one-ip-only</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rsso-flush-ip-session</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rsso-log-flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> </li>
- </ul>
- <li><span class="li-head">rsso-log-period</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rsso-radius-response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rsso-radius-server-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rsso-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">rsso-validate-request-secret</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sso-attribute</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
- <li><span class="li-head">sso-attribute-key</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sso-attribute-value-override</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tertiary-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">use-management-vdom</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">username-case-sensitive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">h3c-compatibility</span> - Enable/disable compatibility with the H3C, a mechanism that performs security checking for authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - RADIUS server entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">nas-ip</span> - IP address used to communicate with the RADIUS server and used as NAS-IP-Address and Called-Station-ID attributes. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">password-encoding</span> - Password encoding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ISO-8859-1, auto]</span> </li>
+ <li><span class="li-head">password-renewal</span> - Enable/disable password renewal. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">radius-coa</span> - Enable to allow a mechanism to change the attributes of an authentication, authorization, and accounting session after it is authenticated. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">radius-port</span> - RADIUS service port number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rsso</span> - Enable/disable RADIUS based single sign on feature. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rsso-context-timeout</span> - Time in seconds before the logged out user is removed from the "user context list" of logged on users. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rsso-endpoint-attribute</span> - RADIUS attributes used to extract the user end point identifer from the RADIUS Start record. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
+ <li><span class="li-head">rsso-endpoint-block-attribute</span> - RADIUS attributes used to block a user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
+ <li><span class="li-head">rsso-ep-one-ip-only</span> - Enable/disable the replacement of old IP addresses with new ones for the same endpoint on RADIUS accounting Start messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rsso-flush-ip-session</span> - Enable/disable flushing user IP sessions on RADIUS accounting Stop messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rsso-log-flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> </li>
+ <li><span class="li-head">rsso-log-period</span> - Time interval in seconds that group event log messages will be generated for dynamic profile events. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rsso-radius-response</span> - Enable/disable sending RADIUS response packets after receiving Start and Stop records. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rsso-radius-server-port</span> - UDP port to listen on for RADIUS Start and Stop records. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rsso-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">rsso-validate-request-secret</span> - Enable/disable validating the RADIUS request shared secret in the Start or End record. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">secondary-server</span> - {&lt;name_str|ip_str&gt;} secondary RADIUS CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - Primary RADIUS server CN domain name or IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP address for communications to the RADIUS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sso-attribute</span> - RADIUS attribute that contains the profile group name to be extracted from the RADIUS Start record. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
+ <li><span class="li-head">sso-attribute-key</span> - Key prefix for SSO group value in the SSO attribute. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sso-attribute-value-override</span> - Enable/disable override old attribute value with new value for the same endpoint. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tertiary-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">tertiary-server</span> - {&lt;name_str|ip_str&gt;} tertiary RADIUS CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">timeout</span> - Time in seconds between re-sending authentication requests. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">use-management-vdom</span> - Enable/disable using management VDOM to send requests. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">username-case-sensitive</span> - Enable/disable case sensitive user names. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -241,8 +211,7 @@ Examples
               -
                   id: <value of integer>
                   port: <value of integer>
-                  secret:
-                    - <value of string>
+                  secret: <value of string>
                   server: <value of string>
                   source-ip: <value of string>
                   status: <value in [disable, enable]>
@@ -250,8 +219,7 @@ Examples
             acct-interim-interval: <value of integer>
             all-usergroup: <value in [disable, enable]>
             auth-type: <value in [pap, chap, ms_chap, ...]>
-            class:
-              - <value of string>
+            class: <value of string>
             dynamic_mapping:
               -
                   _scope:
@@ -262,8 +230,7 @@ Examples
                   acct-interim-interval: <value of integer>
                   all-usergroup: <value in [disable, enable]>
                   auth-type: <value in [pap, chap, ms_chap, ...]>
-                  class:
-                    - <value of string>
+                  class: <value of string>
                   dp-carrier-endpoint-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
                   dp-carrier-endpoint-block-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
                   dp-context-timeout: <value of integer>
@@ -274,15 +241,21 @@ Examples
                   dp-http-header-status: <value in [disable, enable]>
                   dp-http-header-suppress: <value in [disable, enable]>
                   dp-log-dyn_flags:
-                    - <value in [none, protocol-error, profile-missing, ...]>
+                    - none
+                    - protocol-error
+                    - profile-missing
+                    - context-missing
+                    - accounting-stop-missed
+                    - accounting-event
+                    - radiusd-other
+                    - endpoint-block
                   dp-log-period: <value of integer>
                   dp-mem-percent: <value of integer>
                   dp-profile-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
                   dp-profile-attribute-key: <value of string>
                   dp-radius-response: <value in [disable, enable]>
                   dp-radius-server-port: <value of integer>
-                  dp-secret:
-                    - <value of string>
+                  dp-secret: <value of string>
                   dp-validate-request-secret: <value in [disable, enable]>
                   dynamic-profile: <value in [disable, enable]>
                   endpoint-translation: <value in [disable, enable]>
@@ -311,25 +284,28 @@ Examples
                   rsso-ep-one-ip-only: <value in [disable, enable]>
                   rsso-flush-ip-session: <value in [disable, enable]>
                   rsso-log-flags:
-                    - <value in [none, protocol-error, profile-missing, ...]>
+                    - none
+                    - protocol-error
+                    - profile-missing
+                    - context-missing
+                    - accounting-stop-missed
+                    - accounting-event
+                    - radiusd-other
+                    - endpoint-block
                   rsso-log-period: <value of integer>
                   rsso-radius-response: <value in [disable, enable]>
                   rsso-radius-server-port: <value of integer>
-                  rsso-secret:
-                    - <value of string>
+                  rsso-secret: <value of string>
                   rsso-validate-request-secret: <value in [disable, enable]>
-                  secondary-secret:
-                    - <value of string>
+                  secondary-secret: <value of string>
                   secondary-server: <value of string>
-                  secret:
-                    - <value of string>
+                  secret: <value of string>
                   server: <value of string>
                   source-ip: <value of string>
                   sso-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
                   sso-attribute-key: <value of string>
                   sso-attribute-value-override: <value in [disable, enable]>
-                  tertiary-secret:
-                    - <value of string>
+                  tertiary-secret: <value of string>
                   tertiary-server: <value of string>
                   timeout: <value of integer>
                   use-group-for-profile: <value in [disable, enable]>
@@ -349,25 +325,28 @@ Examples
             rsso-ep-one-ip-only: <value in [disable, enable]>
             rsso-flush-ip-session: <value in [disable, enable]>
             rsso-log-flags:
-              - <value in [none, protocol-error, profile-missing, ...]>
+              - none
+              - protocol-error
+              - profile-missing
+              - context-missing
+              - accounting-stop-missed
+              - accounting-event
+              - radiusd-other
+              - endpoint-block
             rsso-log-period: <value of integer>
             rsso-radius-response: <value in [disable, enable]>
             rsso-radius-server-port: <value of integer>
-            rsso-secret:
-              - <value of string>
+            rsso-secret: <value of string>
             rsso-validate-request-secret: <value in [disable, enable]>
-            secondary-secret:
-              - <value of string>
+            secondary-secret: <value of string>
             secondary-server: <value of string>
-            secret:
-              - <value of string>
+            secret: <value of string>
             server: <value of string>
             source-ip: <value of string>
             sso-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
             sso-attribute-key: <value of string>
             sso-attribute-value-override: <value in [disable, enable]>
-            tertiary-secret:
-              - <value of string>
+            tertiary-secret: <value of string>
             tertiary-server: <value of string>
             timeout: <value of integer>
             use-management-vdom: <value in [disable, enable]>
@@ -388,6 +367,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

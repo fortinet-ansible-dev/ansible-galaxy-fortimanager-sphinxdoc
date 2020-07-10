@@ -48,9 +48,7 @@ Parameters
  <li><span class="li-head">default-mapping</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">defmap-intf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">defmap-intrazone-deny</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">defmap-zonemember</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">defmap-zonemember</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
@@ -59,9 +57,7 @@ Parameters
  </ul>
  <li><span class="li-head">egress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">intrazone-deny</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">local-intf</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">local-intf</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  <li><span class="li-head">egress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -113,8 +109,7 @@ Examples
             default-mapping: <value in [disable, enable]>
             defmap-intf: <value of string>
             defmap-intrazone-deny: <value in [disable, enable]>
-            defmap-zonemember:
-              - <value of string>
+            defmap-zonemember: <value of string>
             description: <value of string>
             dynamic_mapping:
               -
@@ -124,8 +119,7 @@ Examples
                         vdom: <value of string>
                   egress-shaping-profile: <value of string>
                   intrazone-deny: <value in [disable, enable]>
-                  local-intf:
-                    - <value of string>
+                  local-intf: <value of string>
             egress-shaping-profile: <value of string>
             name: <value of string>
             single-intf: <value in [disable, enable]>
@@ -145,6 +139,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

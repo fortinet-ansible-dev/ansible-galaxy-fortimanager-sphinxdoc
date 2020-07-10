@@ -44,9 +44,6 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_managedswitch_mirror</span> - Configuration method to edit FortiSwitch packet mirror. <span class="li-normal">type: dict</span></li>
- <ul class="ul-self">
- </ul>
  </ul>
 
 
@@ -90,7 +87,7 @@ Examples
          vdom: <your own value>
          managed-switch: <your own value>
          state: <value in [present, absent]>
-         switchcontroller_managedswitch_mirror:
+
 
 
 Return Values
@@ -106,6 +103,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

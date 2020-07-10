@@ -45,18 +45,18 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_multicastpolicy6</span> - Configure IPv6 multicast NAT policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
- <li><span class="li-head">auto-asic-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">end-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">logtraffic</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">start-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">action</span> - Accept or deny traffic matching the policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
+ <li><span class="li-head">auto-asic-offload</span> - Enable/disable offloading policy traffic for hardware acceleration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dstaddr</span> - IPv6 destination address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstintf</span> - IPv6 destination interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">end-port</span> - Integer value for ending TCP/UDP/SCTP destination port in range (1 - 65535, default = 65535). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - Policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">logtraffic</span> - Enable/disable logging traffic accepted by this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">protocol</span> - Integer value for the protocol type as defined by IANA (0 - 255, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">srcaddr</span> - IPv6 source address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcintf</span> - IPv6 source interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">start-port</span> - Integer value for starting TCP/UDP/SCTP destination port in range (1 - 65535, default = 1). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -129,6 +129,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

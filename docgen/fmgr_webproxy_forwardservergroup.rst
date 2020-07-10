@@ -44,13 +44,13 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webproxy_forwardservergroup</span> - Configure a forward server group consisting or multiple forward servers. Supports failover and load balancing. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">affinity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">group-down-option</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
- <li><span class="li-head">ldb-method</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [weighted, least-session]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">affinity</span> - Enable/disable affinity, attaching a source-ips traffic to the assigned forwarding server until the forward-server-affinity-timeout is reached (under web-proxy global). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">group-down-option</span> - Action to take when all of the servers in the forward server group are down: block sessions until at least one server is back up or pass sessions to their destination. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
+ <li><span class="li-head">ldb-method</span> - Load balance method: weighted or least-session. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [weighted, least-session]</span> </li>
+ <li><span class="li-head">name</span> - Configure a forward server group consisting one or multiple forward servers. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">server-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">weight</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Forward server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">weight</span> - Optionally assign a weight of the forwarding server for weighted load balancing (1 - 100, default = 10) <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
  </ul>
@@ -119,6 +119,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

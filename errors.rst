@@ -83,8 +83,8 @@ One example of ``rc_succeeded`` is as below:
         "rc": -9001
     }
 
-**In normal case, an reponse code ``-9001`` definitely causes a failure,
-``rc_succeeded`` allows us to skip the error**
+**In normal case, an reponse code -9001 definitely causes a failure,
+rc_succeeded allows us to skip the error**
 
 rc\_failed
 ~~~~~~~~~~

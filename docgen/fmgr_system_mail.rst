@@ -43,15 +43,13 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_mail</span> - Alert emails. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 25</span> </li>
- <li><span class="li-head">secure-option</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, none, smtps, starttls]</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth</span> - Enable authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">id</span> - Mail Service ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">port</span> - SMTP server port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 25</span> </li>
+ <li><span class="li-head">secure-option</span> - Communication secure option. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, none, smtps, starttls]</span> </li>
+ <li><span class="li-head">server</span> - SMTP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">user</span> - SMTP account username. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -96,8 +94,7 @@ Examples
          system_mail:
             auth: <value in [disable, enable]>
             id: <value of string>
-            passwd:
-              - <value of string>
+            passwd: <value of string>
             port: <value of integer>
             secure-option: <value in [default, none, smtps, ...]>
             server: <value of string>
@@ -118,6 +115,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

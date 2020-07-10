@@ -44,29 +44,27 @@ Parameters
  <li><span class="li-head">system_admin_ldap</span> - LDAP server entry configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adom-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom-name</span> - Admin domain names. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">adom-attr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">attributes</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ca-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">cnid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">connect-timeout</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 500</span> </li>
- <li><span class="li-head">dn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">memberof-attr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 389</span> </li>
- <li><span class="li-head">profile-attr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secure</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
- <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom-attr</span> - Attribute used to retrieve adom <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">attributes</span> - Attributes used for group searching. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ca-cert</span> - CA certificate name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cnid</span> - Common Name Identifier (default = CN). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">connect-timeout</span> - LDAP connection timeout (msec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 500</span> </li>
+ <li><span class="li-head">dn</span> - Distinguished Name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">filter</span> - Filter used for group searching. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group</span> - Full base DN used for group searching. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">memberof-attr</span> - Attribute used to retrieve memeberof. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - LDAP server entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">port</span> - Port number of LDAP server (default = 389). <span class="li-normal">type: int</span>  <span class="li-normal">default: 389</span> </li>
+ <li><span class="li-head">profile-attr</span> - Attribute used to retrieve admin profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secondary-server</span> - {<name_str|ip_str>} secondary LDAP server domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secure</span> - SSL connection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
+ <li><span class="li-head">server</span> - {<name_str|ip_str>} LDAP server domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tertiary-server</span> - {<name_str|ip_str>} tertiary LDAP server domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Type of LDAP binding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
+ <li><span class="li-head">username</span> - Username (full DN) for initial binding. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -122,8 +120,7 @@ Examples
             group: <value of string>
             memberof-attr: <value of string>
             name: <value of string>
-            password:
-              - <value of string>
+            password: <value of string>
             port: <value of integer>
             profile-attr: <value of string>
             secondary-server: <value of string>
@@ -148,6 +145,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

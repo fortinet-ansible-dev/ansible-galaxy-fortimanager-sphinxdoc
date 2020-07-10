@@ -43,13 +43,11 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - Override server. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span> </li>
- <li><span class="li-head">service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgd, fgc, fsa]</span> </li>
- </ul>
+ <li><span class="li-head">id</span> - Override server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the override server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6</span> - IPv6 address of the override server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Port number to use when contacting FortiGuard (1 - 65535, default = 443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span> </li>
+ <li><span class="li-head">service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fgd, fgc, fsa]</span> </li>
  </ul>
  </ul>
 
@@ -97,7 +95,9 @@ Examples
             ip6: <value of string>
             port: <value of integer>
             service-type:
-              - <value in [fgd, fgc, fsa]>
+              - fgd
+              - fgc
+              - fsa
 
 
 
@@ -114,6 +114,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

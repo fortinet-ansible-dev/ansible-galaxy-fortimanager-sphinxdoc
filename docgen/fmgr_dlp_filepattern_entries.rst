@@ -45,9 +45,9 @@ Parameters
  <li><span class="li-head">filepattern</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dlp_filepattern_entries</span> - Configure file patterns used by DLP blocking. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">file-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, ignored, exe, elf, bat, javascript, html, hta, msoffice, gzip, rar, tar, lzh, upx, zip, cab, bzip2, bzip, activemime, mime, hlp, arj, base64, binhex, uue, fsg, aspack, msc, petite, jpeg, gif, tiff, png, bmp, msi, mpeg, mov, mp3, wma, wav, pdf, avi, rm, torrent, hibun, 7z, xz, msofficex, mach-o, dmg, .net, xar, chm, iso, crx, sis, prc, class, jad, cod]</span> </li>
- <li><span class="li-head">filter-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pattern, type]</span> </li>
- <li><span class="li-head">pattern</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">file-type</span> - Select a file type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, ignored, exe, elf, bat, javascript, html, hta, msoffice, gzip, rar, tar, lzh, upx, zip, cab, bzip2, bzip, activemime, mime, hlp, arj, base64, binhex, uue, fsg, aspack, msc, petite, jpeg, gif, tiff, png, bmp, msi, mpeg, mov, mp3, wma, wav, pdf, avi, rm, torrent, hibun, 7z, xz, msofficex, mach-o, dmg, .net, xar, chm, iso, crx, sis, prc, class, jad, cod]</span> </li>
+ <li><span class="li-head">filter-type</span> - Filter by file name pattern or by file type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pattern, type]</span> </li>
+ <li><span class="li-head">pattern</span> - Add a file name pattern. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -111,6 +111,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

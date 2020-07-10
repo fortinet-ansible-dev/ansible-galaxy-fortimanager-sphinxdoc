@@ -44,50 +44,40 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wtpprofile</span> - Configure WTP profiles or FortiAP profiles that define radio settings for manageable FortiAP platforms. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [https, ssh, snmp, http, telnet]</span> </li>
- </ul>
- <li><span class="li-head">ap-country</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [AL, DZ, AR, AM, AU, AT, AZ, BH, BD, BY, BE, BZ, BO, BA, BR, BN, BG, CA, CL, CN, CO, CR, HR, CY, CZ, DK, DO, EC, EG, SV, EE, FI, FR, GE, DE, GR, GT, HN, HK, HU, IS, IN, ID, IR, IE, IL, IT, JM, JP, JO, KZ, KE, KP, KR, KW, LV, LB, LI, LT, LU, MO, MK, MY, MT, MX, MC, MA, NP, NL, AN, NZ, NO, OM, PK, PA, PG, PE, PH, PL, PT, PR, QA, RO, RU, SA, SG, SK, SI, ZA, ES, LK, SE, CH, SY, TW, TH, TT, TN, TR, AE, UA, GB, US, PS, UY, UZ, VE, VN, YE, ZW, NA, KH, TZ, SD, AO, RW, MZ, RS, ME, BB, GD, GL, GU, PY, HT, AW, MM, ZB]</span> </li>
- <li><span class="li-head">ble-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">control-message-offload</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ebp-frame, aeroscout-tag, ap-list, sta-list, sta-cap-list, stats, aeroscout-mu, sta-health]</span> </li>
- </ul>
+ <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ssh, snmp, http, telnet]</span> </li>
+ <li><span class="li-head">ap-country</span> - Country in which this WTP, FortiAP or AP will operate (default = NA, automatically use the country configured for the current VDOM). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [AL, DZ, AR, AM, AU, AT, AZ, BH, BD, BY, BE, BZ, BO, BA, BR, BN, BG, CA, CL, CN, CO, CR, HR, CY, CZ, DK, DO, EC, EG, SV, EE, FI, FR, GE, DE, GR, GT, HN, HK, HU, IS, IN, ID, IR, IE, IL, IT, JM, JP, JO, KZ, KE, KP, KR, KW, LV, LB, LI, LT, LU, MO, MK, MY, MT, MX, MC, MA, NP, NL, AN, NZ, NO, OM, PK, PA, PG, PE, PH, PL, PT, PR, QA, RO, RU, SA, SG, SK, SI, ZA, ES, LK, SE, CH, SY, TW, TH, TT, TN, TR, AE, UA, GB, US, PS, UY, UZ, VE, VN, YE, ZW, NA, KH, TZ, SD, AO, RW, MZ, RS, ME, BB, GD, GL, GU, PY, HT, AW, MM, ZB]</span> </li>
+ <li><span class="li-head">ble-profile</span> - Bluetooth Low Energy profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">control-message-offload</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ebp-frame, aeroscout-tag, ap-list, sta-list, sta-cap-list, stats, aeroscout-mu, sta-health]</span> </li>
  <li><span class="li-head">deny-mac-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mac</span> - A WiFi device with this MAC address is denied access to this WTP, FortiAP or AP. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">dtls-in-kernel</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dtls-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [clear-text, dtls-enabled, ipsec-vpn]</span> </li>
- </ul>
- <li><span class="li-head">energy-efficient-ethernet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ext-info-enable</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">handoff-roaming</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">handoff-rssi</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">handoff-sta-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ip-fragment-preventing</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tcp-mss-adjust, icmp-unreachable]</span> </li>
- </ul>
- <li><span class="li-head">led-schedules</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">led-state</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">lldp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">login-passwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">login-passwd-change</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no, yes, default]</span> </li>
- <li><span class="li-head">max-clients</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">poe-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 8023af, 8023at, power-adapter]</span> </li>
+ <li><span class="li-head">dtls-in-kernel</span> - Enable/disable data channel DTLS in kernel. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dtls-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [clear-text, dtls-enabled, ipsec-vpn]</span> </li>
+ <li><span class="li-head">energy-efficient-ethernet</span> - Enable/disable use of energy efficient Ethernet on WTP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ext-info-enable</span> - Enable/disable station/VAP/radio extension information. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">handoff-roaming</span> - Enable/disable client load balancing during roaming to avoid roaming delay (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">handoff-rssi</span> - Minimum received signal strength indicator (RSSI) value for handoff (20 - 30, default = 25). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">handoff-sta-thresh</span> - Threshold value for AP handoff. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip-fragment-preventing</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tcp-mss-adjust, icmp-unreachable]</span> </li>
+ <li><span class="li-head">led-schedules</span> - Recurring firewall schedules for illuminating LEDs on the FortiAP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">led-state</span> - Enable/disable use of LEDs on WTP (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">lldp</span> - Enable/disable Link Layer Discovery Protocol (LLDP) for the WTP, FortiAP, or AP (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">login-passwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">login-passwd-change</span> - Change or reset the administrator password of a managed WTP, FortiAP or AP (yes, default, or no, default = no). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no, yes, default]</span> </li>
+ <li><span class="li-head">max-clients</span> - Maximum number of stations (STAs) supported by the WTP (default = 0, meaning no client limitation). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - WTP (or FortiAP or AP) profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">poe-mode</span> - Set the WTP, FortiAP, or APs PoE mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 8023af, 8023at, power-adapter]</span> </li>
  <li><span class="li-head">split-tunneling-acl</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dest-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dest-ip</span> - Destination IP and mask for the split-tunneling subnet. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">split-tunneling-acl-local-ap-subnet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">split-tunneling-acl-path</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tunnel, local]</span> </li>
- <li><span class="li-head">tun-mtu-downlink</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">tun-mtu-uplink</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">wan-port-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wan-lan, wan-only]</span> </li>
+ <li><span class="li-head">split-tunneling-acl-local-ap-subnet</span> - Enable/disable automatically adding local subnetwork of FortiAP to split-tunneling ACL (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">split-tunneling-acl-path</span> - Split tunneling ACL path is local/tunnel. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tunnel, local]</span> </li>
+ <li><span class="li-head">tun-mtu-downlink</span> - Downlink CAPWAP tunnel MTU (0, 576, or 1500 bytes, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tun-mtu-uplink</span> - Uplink CAPWAP tunnel MTU (0, 576, or 1500 bytes, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">wan-port-mode</span> - Enable/disable using a WAN port as a LAN port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wan-lan, wan-only]</span> </li>
  </ul>
  </ul>
 
@@ -132,31 +122,44 @@ Examples
          state: <value in [present, absent]>
          wtpprofile:
             allowaccess:
-              - <value in [https, ssh, snmp, ...]>
+              - https
+              - ssh
+              - snmp
+              - http
+              - telnet
             ap-country: <value in [AL, DZ, AR, ...]>
             ble-profile: <value of string>
             comment: <value of string>
             control-message-offload:
-              - <value in [ebp-frame, aeroscout-tag, ap-list, ...]>
+              - ebp-frame
+              - aeroscout-tag
+              - ap-list
+              - sta-list
+              - sta-cap-list
+              - stats
+              - aeroscout-mu
+              - sta-health
             deny-mac-list:
               -
                   id: <value of integer>
                   mac: <value of string>
             dtls-in-kernel: <value in [disable, enable]>
             dtls-policy:
-              - <value in [clear-text, dtls-enabled, ipsec-vpn]>
+              - clear-text
+              - dtls-enabled
+              - ipsec-vpn
             energy-efficient-ethernet: <value in [disable, enable]>
             ext-info-enable: <value in [disable, enable]>
             handoff-roaming: <value in [disable, enable]>
             handoff-rssi: <value of integer>
             handoff-sta-thresh: <value of integer>
             ip-fragment-preventing:
-              - <value in [tcp-mss-adjust, icmp-unreachable]>
+              - tcp-mss-adjust
+              - icmp-unreachable
             led-schedules: <value of string>
             led-state: <value in [disable, enable]>
             lldp: <value in [disable, enable]>
-            login-passwd:
-              - <value of string>
+            login-passwd: <value of string>
             login-passwd-change: <value in [no, yes, default]>
             max-clients: <value of integer>
             name: <value of string>
@@ -186,6 +189,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

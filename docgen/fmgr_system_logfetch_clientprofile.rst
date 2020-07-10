@@ -43,40 +43,34 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_logfetch_clientprofile</span> - Log-fetch client profile settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">client-adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">data-range</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [custom]</span> </li>
- <li><span class="li-head">data-range-value</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
+ <li><span class="li-head">client-adom</span> - Log-fetch client sides adom name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">data-range</span> - Data-range for fetched logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [custom]</span> </li>
+ <li><span class="li-head">data-range-value</span> - Last n days or hours. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">device-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">device</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Adom name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">device</span> - Device name or Serial number. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Add or edit a device filter. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">vdom</span> - Vdom filters. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">end-time</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">index-fetch-logs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">end-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">id</span> - Log-fetch client profile ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">index-fetch-logs</span> - Enable/Disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">log-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">field</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">oper</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span> </li>
- <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">field</span> - Field name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Log filter ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">oper</span> - Field filter operator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span> </li>
+ <li><span class="li-head">value</span> - Field filter operand or free-text matching expression. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">log-filter-logic</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [and, or]</span> </li>
- <li><span class="li-head">log-filter-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">secure-connection</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">server-adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">start-time</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">sync-adom-config</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-filter-logic</span> - And/Or logic for log-filters. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [and, or]</span> </li>
+ <li><span class="li-head">log-filter-status</span> - Enable/Disable log-filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Name of log-fetch client profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">secure-connection</span> - Enable/Disable protecting log-fetch connection with TLS/SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">server-adom</span> - Log-fetch server sides adom name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-ip</span> - Log-fetch server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">start-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">sync-adom-config</span> - Enable/Disable sync adom related config. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">user</span> - Log-fetch server login username. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -128,8 +122,7 @@ Examples
                   device: <value of string>
                   id: <value of integer>
                   vdom: <value of string>
-            end-time:
-              - <value of string>
+            end-time: <value of string>
             id: <value of integer>
             index-fetch-logs: <value in [disable, enable]>
             log-filter:
@@ -141,13 +134,11 @@ Examples
             log-filter-logic: <value in [and, or]>
             log-filter-status: <value in [disable, enable]>
             name: <value of string>
-            password:
-              - <value of string>
+            password: <value of string>
             secure-connection: <value in [disable, enable]>
             server-adom: <value of string>
             server-ip: <value of string>
-            start-time:
-              - <value of string>
+            start-time: <value of string>
             sync-adom-config: <value in [disable, enable]>
             user: <value of string>
 
@@ -166,6 +157,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

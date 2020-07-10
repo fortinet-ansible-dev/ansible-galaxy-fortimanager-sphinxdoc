@@ -45,73 +45,63 @@ Parameters
  <li><span class="li-head">system_sdnconnector</span> - Configure connection to SDN Connector. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_local_cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">access-key</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">azure-region</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [global, china, germany, usgov, local]</span> </li>
- <li><span class="li-head">client-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">client-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">compartment-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-key</span> - AWS access key ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">azure-region</span> - Azure server region. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [global, china, germany, usgov, local]</span> </li>
+ <li><span class="li-head">client-id</span> - Azure client ID (application ID). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">client-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">compartment-id</span> - Compartment ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">external-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - External IP name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">gcp-project</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">key-passwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">login-endpoint</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">gcp-project</span> - GCP project name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">key-passwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">login-endpoint</span> - Azure Stack login enpoint. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - SDN connector name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">nic</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">public-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - IP configuration name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">public-ip</span> - Public IP name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Network interface name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">nsx-cert-fingerprint</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">oci-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">nsx-cert-fingerprint</span> - NSX certificate fingerprint. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">oci-cert</span> - OCI certificate. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">oci-fingerprint</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">oci-region</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [phoenix, ashburn, frankfurt, london, toronto]</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">private-key</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">region</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">resource-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">resource-url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rest-interface</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mgmt, sync]</span> </li>
- <li><span class="li-head">rest-password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">rest-sport</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">oci-region</span> - OCI server region. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [phoenix, ashburn, frankfurt, london, toronto]</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">private-key</span> - Private key of GCP service account. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">region</span> - AWS region name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">resource-group</span> - Azure resource group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">resource-url</span> - Azure Stack resource URL. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rest-interface</span> - Interface name for REST service to listen on. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mgmt, sync]</span> </li>
+ <li><span class="li-head">rest-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">rest-sport</span> - REST service access port (1 - 65535). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">rest-ssl</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">route</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Route name. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">route-table</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Route table name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">route</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">next-hop</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Route name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">next-hop</span> - Next hop address. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
- <li><span class="li-head">secret-key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">service-account</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">subscription-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tenant-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack, kubernetes, vmware, acs, alicloud]</span> </li>
- <li><span class="li-head">update-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">use-metadata-iam</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">user-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">vmx-image-url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">vmx-service-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">vpc-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secret-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - Server address of the remote SDN connector. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-port</span> - Port number of the remote SDN connector. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">service-account</span> - GCP service account email. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable connection to the remote SDN connector. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">subscription-id</span> - Azure subscription ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tenant-id</span> - Tenant ID (directory ID). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Type of SDN connector. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack, kubernetes, vmware, acs, alicloud]</span> </li>
+ <li><span class="li-head">update-interval</span> - Dynamic object update interval (0 - 3600 sec, 0 means disabled, default = 60). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">use-metadata-iam</span> - Enable/disable using IAM role from metadata to call API. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">user-id</span> - User ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">username</span> - Username of the remote SDN connector as login credentials. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vmx-image-url</span> - URL of web-hosted VMX image. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vmx-service-name</span> - VMX Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vpc-id</span> - AWS VPC ID. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -159,15 +149,13 @@ Examples
             access-key: <value of string>
             azure-region: <value in [global, china, germany, ...]>
             client-id: <value of string>
-            client-secret:
-              - <value of string>
+            client-secret: <value of string>
             compartment-id: <value of string>
             external-ip:
               -
                   name: <value of string>
             gcp-project: <value of string>
-            key-passwd:
-              - <value of string>
+            key-passwd: <value of string>
             login-endpoint: <value of string>
             name: <value of string>
             nic:
@@ -181,15 +169,13 @@ Examples
             oci-cert: <value of string>
             oci-fingerprint: <value of string>
             oci-region: <value in [phoenix, ashburn, frankfurt, ...]>
-            password:
-              - <value of string>
+            password: <value of string>
             private-key: <value of string>
             region: <value of string>
             resource-group: <value of string>
             resource-url: <value of string>
             rest-interface: <value in [mgmt, sync]>
-            rest-password:
-              - <value of string>
+            rest-password: <value of string>
             rest-sport: <value of integer>
             rest-ssl: <value in [disable, enable]>
             route:
@@ -202,8 +188,7 @@ Examples
                     -
                         name: <value of string>
                         next-hop: <value of string>
-            secret-key:
-              - <value of string>
+            secret-key: <value of string>
             server: <value of string>
             server-port: <value of integer>
             service-account: <value of string>
@@ -234,6 +219,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

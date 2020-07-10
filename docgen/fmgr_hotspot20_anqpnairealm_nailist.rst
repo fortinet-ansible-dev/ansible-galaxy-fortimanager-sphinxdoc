@@ -47,16 +47,16 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">eap-method</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">auth-param</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [non-eap-inner-auth, inner-auth-eap, credential, tunneled-credential]</span> </li>
- <li><span class="li-head">index</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">val</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [eap-identity, eap-md5, eap-tls, eap-ttls, eap-peap, eap-sim, eap-aka, eap-aka-prime, non-eap-pap, non-eap-chap, non-eap-mschap, non-eap-mschapv2, cred-sim, cred-usim, cred-nfc, cred-hardware-token, cred-softoken, cred-certificate, cred-user-pwd, cred-none, cred-vendor-specific, tun-cred-sim, tun-cred-usim, tun-cred-nfc, tun-cred-hardware-token, tun-cred-softoken, tun-cred-certificate, tun-cred-user-pwd, tun-cred-anonymous, tun-cred-vendor-specific]</span> </li>
+ <li><span class="li-head">id</span> - ID of authentication parameter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [non-eap-inner-auth, inner-auth-eap, credential, tunneled-credential]</span> </li>
+ <li><span class="li-head">index</span> - Param index. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">val</span> - Value of authentication parameter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [eap-identity, eap-md5, eap-tls, eap-ttls, eap-peap, eap-sim, eap-aka, eap-aka-prime, non-eap-pap, non-eap-chap, non-eap-mschap, non-eap-mschapv2, cred-sim, cred-usim, cred-nfc, cred-hardware-token, cred-softoken, cred-certificate, cred-user-pwd, cred-none, cred-vendor-specific, tun-cred-sim, tun-cred-usim, tun-cred-nfc, tun-cred-hardware-token, tun-cred-softoken, tun-cred-certificate, tun-cred-user-pwd, tun-cred-anonymous, tun-cred-vendor-specific]</span> </li>
  </ul>
- <li><span class="li-head">index</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">method</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [eap-identity, eap-md5, eap-tls, eap-ttls, eap-peap, eap-sim, eap-aka, eap-aka-prime]</span> </li>
+ <li><span class="li-head">index</span> - EAP method index. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">method</span> - EAP method type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [eap-identity, eap-md5, eap-tls, eap-ttls, eap-peap, eap-sim, eap-aka, eap-aka-prime]</span> </li>
  </ul>
- <li><span class="li-head">encoding</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">nai-realm</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">encoding</span> - Enable/disable format in accordance with IETF RFC 4282. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">nai-realm</span> - Configure NAI realms (delimited by a semi-colon character). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - NAI realm name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -129,6 +129,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

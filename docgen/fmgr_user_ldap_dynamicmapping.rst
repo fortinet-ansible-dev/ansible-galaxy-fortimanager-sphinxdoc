@@ -64,16 +64,12 @@ Parameters
  <li><span class="li-head">group-search-base</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">member-attr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">obtain-user-info</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password-expiry-warning</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">password-renewal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">retrieve-protection-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">search-type</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nested, recursive]</span> </li>
- </ul>
+ <li><span class="li-head">search-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [nested, recursive]</span> </li>
  <li><span class="li-head">secondary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">secure</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
  <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -147,14 +143,14 @@ Examples
             group-search-base: <value of string>
             member-attr: <value of string>
             obtain-user-info: <value in [disable, enable]>
-            password:
-              - <value of string>
+            password: <value of string>
             password-expiry-warning: <value in [disable, enable]>
             password-renewal: <value in [disable, enable]>
             port: <value of integer>
             retrieve-protection-profile: <value of string>
             search-type:
-              - <value in [nested, recursive]>
+              - nested
+              - recursive
             secondary-server: <value of string>
             secure: <value in [disable, starttls, ldaps]>
             server: <value of string>
@@ -181,6 +177,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

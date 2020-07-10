@@ -47,14 +47,10 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">_centmgmt</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">_dhcp_svr_id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">_intf_allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap]</span> </li>
- </ul>
+ <li><span class="li-head">_intf_allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap]</span> </li>
  <li><span class="li-head">_intf_device-identification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">_intf_device-netscan</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">_intf_dhcp-relay-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">_intf_dhcp-relay-ip</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">_intf_dhcp-relay-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">_intf_dhcp-relay-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regular, ipsec]</span> </li>
  <li><span class="li-head">_intf_dhcp6-relay-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -62,9 +58,7 @@ Parameters
  <li><span class="li-head">_intf_dhcp6-relay-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regular]</span> </li>
  <li><span class="li-head">_intf_ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">_intf_ip6-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">_intf_ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, any, fgfm, capwap]</span> </li>
- </ul>
+ <li><span class="li-head">_intf_ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, any, fgfm, capwap]</span> </li>
  <li><span class="li-head">_intf_listen-forticlient-connection</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -76,17 +70,11 @@ Parameters
  <li><span class="li-head">atf-weight</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">auth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [PSK, psk, RADIUS, radius, usergroup]</span> </li>
  <li><span class="li-head">broadcast-ssid</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">broadcast-suppression</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dhcp, arp, dhcp2, arp2, netbios-ns, netbios-ds, arp3, dhcp-up, dhcp-down, arp-known, arp-unknown, arp-reply, ipv6, dhcp-starvation, arp-poison, all-other-mc, all-other-bc, arp-proxy, dhcp-ucast]</span> </li>
- </ul>
+ <li><span class="li-head">broadcast-suppression</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [dhcp, arp, dhcp2, arp2, netbios-ns, netbios-ds, arp3, dhcp-up, dhcp-down, arp-known, arp-unknown, arp-reply, ipv6, dhcp-starvation, arp-poison, all-other-mc, all-other-bc, arp-proxy, dhcp-ucast]</span> </li>
  <li><span class="li-head">captive-portal-ac-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">captive-portal-macauth-radius-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">captive-portal-macauth-radius-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">captive-portal-macauth-radius-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">captive-portal-radius-secret</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">captive-portal-radius-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">captive-portal-radius-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">captive-portal-session-timeout-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">client-count</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -112,9 +100,7 @@ Parameters
  <li><span class="li-head">hotspot20-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">intra-vap-privacy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">keyindex</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ldpc</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, tx, rx, rxtx]</span> </li>
  <li><span class="li-head">local-authentication</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -135,14 +121,10 @@ Parameters
  <li><span class="li-head">multicast-enhance</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">multicast-rate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0, 6000, 12000, 24000]</span> </li>
  <li><span class="li-head">okc</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">owe-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [19, 20, 21]</span> </li>
- </ul>
+ <li><span class="li-head">owe-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [19, 20, 21]</span> </li>
  <li><span class="li-head">owe-transition</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">owe-transition-ssid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">passphrase</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">passphrase</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">pmf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, optional]</span> </li>
  <li><span class="li-head">pmf-assoc-comeback-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">pmf-sa-query-retry-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -159,34 +141,16 @@ Parameters
  <li><span class="li-head">radio-sensitivity</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">radius-mac-auth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">radius-mac-auth-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">radius-mac-auth-usergroups</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">radius-mac-auth-usergroups</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">radius-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rates-11a</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 1-basic, 2, 2-basic, 5.5, 5.5-basic, 6, 6-basic, 9, 9-basic, 12, 12-basic, 18, 18-basic, 24, 24-basic, 36, 36-basic, 48, 48-basic, 54, 54-basic, 11, 11-basic]</span> </li>
- </ul>
- <li><span class="li-head">rates-11ac-ss12</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mcs0/1, mcs1/1, mcs2/1, mcs3/1, mcs4/1, mcs5/1, mcs6/1, mcs7/1, mcs8/1, mcs9/1, mcs0/2, mcs1/2, mcs2/2, mcs3/2, mcs4/2, mcs5/2, mcs6/2, mcs7/2, mcs8/2, mcs9/2, mcs10/1, mcs11/1, mcs10/2, mcs11/2]</span> </li>
- </ul>
- <li><span class="li-head">rates-11ac-ss34</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mcs0/3, mcs1/3, mcs2/3, mcs3/3, mcs4/3, mcs5/3, mcs6/3, mcs7/3, mcs8/3, mcs9/3, mcs0/4, mcs1/4, mcs2/4, mcs3/4, mcs4/4, mcs5/4, mcs6/4, mcs7/4, mcs8/4, mcs9/4, mcs10/3, mcs11/3, mcs10/4, mcs11/4]</span> </li>
- </ul>
- <li><span class="li-head">rates-11bg</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 1-basic, 2, 2-basic, 5.5, 5.5-basic, 6, 6-basic, 9, 9-basic, 12, 12-basic, 18, 18-basic, 24, 24-basic, 36, 36-basic, 48, 48-basic, 54, 54-basic, 11, 11-basic]</span> </li>
- </ul>
- <li><span class="li-head">rates-11n-ss12</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mcs0/1, mcs1/1, mcs2/1, mcs3/1, mcs4/1, mcs5/1, mcs6/1, mcs7/1, mcs8/2, mcs9/2, mcs10/2, mcs11/2, mcs12/2, mcs13/2, mcs14/2, mcs15/2]</span> </li>
- </ul>
- <li><span class="li-head">rates-11n-ss34</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mcs16/3, mcs17/3, mcs18/3, mcs19/3, mcs20/3, mcs21/3, mcs22/3, mcs23/3, mcs24/4, mcs25/4, mcs26/4, mcs27/4, mcs28/4, mcs29/4, mcs30/4, mcs31/4]</span> </li>
- </ul>
- <li><span class="li-head">sae-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31]</span> </li>
- </ul>
- <li><span class="li-head">sae-password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">rates-11a</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 1-basic, 2, 2-basic, 5.5, 5.5-basic, 6, 6-basic, 9, 9-basic, 12, 12-basic, 18, 18-basic, 24, 24-basic, 36, 36-basic, 48, 48-basic, 54, 54-basic, 11, 11-basic]</span> </li>
+ <li><span class="li-head">rates-11ac-ss12</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [mcs0/1, mcs1/1, mcs2/1, mcs3/1, mcs4/1, mcs5/1, mcs6/1, mcs7/1, mcs8/1, mcs9/1, mcs0/2, mcs1/2, mcs2/2, mcs3/2, mcs4/2, mcs5/2, mcs6/2, mcs7/2, mcs8/2, mcs9/2, mcs10/1, mcs11/1, mcs10/2, mcs11/2]</span> </li>
+ <li><span class="li-head">rates-11ac-ss34</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [mcs0/3, mcs1/3, mcs2/3, mcs3/3, mcs4/3, mcs5/3, mcs6/3, mcs7/3, mcs8/3, mcs9/3, mcs0/4, mcs1/4, mcs2/4, mcs3/4, mcs4/4, mcs5/4, mcs6/4, mcs7/4, mcs8/4, mcs9/4, mcs10/3, mcs11/3, mcs10/4, mcs11/4]</span> </li>
+ <li><span class="li-head">rates-11bg</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 1-basic, 2, 2-basic, 5.5, 5.5-basic, 6, 6-basic, 9, 9-basic, 12, 12-basic, 18, 18-basic, 24, 24-basic, 36, 36-basic, 48, 48-basic, 54, 54-basic, 11, 11-basic]</span> </li>
+ <li><span class="li-head">rates-11n-ss12</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [mcs0/1, mcs1/1, mcs2/1, mcs3/1, mcs4/1, mcs5/1, mcs6/1, mcs7/1, mcs8/2, mcs9/2, mcs10/2, mcs11/2, mcs12/2, mcs13/2, mcs14/2, mcs15/2]</span> </li>
+ <li><span class="li-head">rates-11n-ss34</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [mcs16/3, mcs17/3, mcs18/3, mcs19/3, mcs20/3, mcs21/3, mcs22/3, mcs23/3, mcs24/4, mcs25/4, mcs26/4, mcs27/4, mcs28/4, mcs29/4, mcs30/4, mcs31/4]</span> </li>
+ <li><span class="li-head">sae-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31]</span> </li>
+ <li><span class="li-head">sae-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">security</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [None, WEP64, wep64, WEP128, wep128, WPA_PSK, WPA_RADIUS, WPA, WPA2, WPA2_AUTO, open, wpa-personal, wpa-enterprise, captive-portal, wpa-only-personal, wpa-only-enterprise, wpa2-only-personal, wpa2-only-enterprise, wpa-personal+captive-portal, wpa-only-personal+captive-portal, wpa2-only-personal+captive-portal, osen, wpa3-enterprise, sae, sae-transition, owe, wpa3-sae, wpa3-sae-transition]</span> </li>
  <li><span class="li-head">security-exempt-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -250,11 +214,20 @@ Examples
             _centmgmt: <value in [disable, enable]>
             _dhcp_svr_id: <value of string>
             _intf_allowaccess:
-              - <value in [https, ping, ssh, ...]>
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
             _intf_device-identification: <value in [disable, enable]>
             _intf_device-netscan: <value in [disable, enable]>
-            _intf_dhcp-relay-ip:
-              - <value of string>
+            _intf_dhcp-relay-ip: <value of string>
             _intf_dhcp-relay-service: <value in [disable, enable]>
             _intf_dhcp-relay-type: <value in [regular, ipsec]>
             _intf_dhcp6-relay-ip: <value of string>
@@ -263,7 +236,15 @@ Examples
             _intf_ip: <value of string>
             _intf_ip6-address: <value of string>
             _intf_ip6-allowaccess:
-              - <value in [https, ping, ssh, ...]>
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - any
+              - fgfm
+              - capwap
             _intf_listen-forticlient-connection: <value in [disable, enable]>
             _scope:
               -
@@ -276,13 +257,29 @@ Examples
             auth: <value in [PSK, psk, RADIUS, ...]>
             broadcast-ssid: <value in [disable, enable]>
             broadcast-suppression:
-              - <value in [dhcp, arp, dhcp2, ...]>
+              - dhcp
+              - arp
+              - dhcp2
+              - arp2
+              - netbios-ns
+              - netbios-ds
+              - arp3
+              - dhcp-up
+              - dhcp-down
+              - arp-known
+              - arp-unknown
+              - arp-reply
+              - ipv6
+              - dhcp-starvation
+              - arp-poison
+              - all-other-mc
+              - all-other-bc
+              - arp-proxy
+              - dhcp-ucast
             captive-portal-ac-name: <value of string>
-            captive-portal-macauth-radius-secret:
-              - <value of string>
+            captive-portal-macauth-radius-secret: <value of string>
             captive-portal-macauth-radius-server: <value of string>
-            captive-portal-radius-secret:
-              - <value of string>
+            captive-portal-radius-secret: <value of string>
             captive-portal-radius-server: <value of string>
             captive-portal-session-timeout-interval: <value of integer>
             client-count: <value of integer>
@@ -308,8 +305,7 @@ Examples
             hotspot20-profile: <value of string>
             intra-vap-privacy: <value in [disable, enable]>
             ip: <value of string>
-            key:
-              - <value of string>
+            key: <value of string>
             keyindex: <value of integer>
             ldpc: <value in [disable, tx, rx, ...]>
             local-authentication: <value in [disable, enable]>
@@ -331,11 +327,12 @@ Examples
             multicast-rate: <value in [0, 6000, 12000, ...]>
             okc: <value in [disable, enable]>
             owe-groups:
-              - <value in [19, 20, 21]>
+              - 19
+              - 20
+              - 21
             owe-transition: <value in [disable, enable]>
             owe-transition-ssid: <value of string>
-            passphrase:
-              - <value of string>
+            passphrase: <value of string>
             pmf: <value in [disable, enable, optional]>
             pmf-assoc-comeback-timeout: <value of integer>
             pmf-sa-query-retry-timeout: <value of integer>
@@ -352,25 +349,160 @@ Examples
             radio-sensitivity: <value in [disable, enable]>
             radius-mac-auth: <value in [disable, enable]>
             radius-mac-auth-server: <value of string>
-            radius-mac-auth-usergroups:
-              - <value of string>
+            radius-mac-auth-usergroups: <value of string>
             radius-server: <value of string>
             rates-11a:
-              - <value in [1, 1-basic, 2, ...]>
+              - 1
+              - 1-basic
+              - 2
+              - 2-basic
+              - 5.5
+              - 5.5-basic
+              - 6
+              - 6-basic
+              - 9
+              - 9-basic
+              - 12
+              - 12-basic
+              - 18
+              - 18-basic
+              - 24
+              - 24-basic
+              - 36
+              - 36-basic
+              - 48
+              - 48-basic
+              - 54
+              - 54-basic
+              - 11
+              - 11-basic
             rates-11ac-ss12:
-              - <value in [mcs0/1, mcs1/1, mcs2/1, ...]>
+              - mcs0/1
+              - mcs1/1
+              - mcs2/1
+              - mcs3/1
+              - mcs4/1
+              - mcs5/1
+              - mcs6/1
+              - mcs7/1
+              - mcs8/1
+              - mcs9/1
+              - mcs0/2
+              - mcs1/2
+              - mcs2/2
+              - mcs3/2
+              - mcs4/2
+              - mcs5/2
+              - mcs6/2
+              - mcs7/2
+              - mcs8/2
+              - mcs9/2
+              - mcs10/1
+              - mcs11/1
+              - mcs10/2
+              - mcs11/2
             rates-11ac-ss34:
-              - <value in [mcs0/3, mcs1/3, mcs2/3, ...]>
+              - mcs0/3
+              - mcs1/3
+              - mcs2/3
+              - mcs3/3
+              - mcs4/3
+              - mcs5/3
+              - mcs6/3
+              - mcs7/3
+              - mcs8/3
+              - mcs9/3
+              - mcs0/4
+              - mcs1/4
+              - mcs2/4
+              - mcs3/4
+              - mcs4/4
+              - mcs5/4
+              - mcs6/4
+              - mcs7/4
+              - mcs8/4
+              - mcs9/4
+              - mcs10/3
+              - mcs11/3
+              - mcs10/4
+              - mcs11/4
             rates-11bg:
-              - <value in [1, 1-basic, 2, ...]>
+              - 1
+              - 1-basic
+              - 2
+              - 2-basic
+              - 5.5
+              - 5.5-basic
+              - 6
+              - 6-basic
+              - 9
+              - 9-basic
+              - 12
+              - 12-basic
+              - 18
+              - 18-basic
+              - 24
+              - 24-basic
+              - 36
+              - 36-basic
+              - 48
+              - 48-basic
+              - 54
+              - 54-basic
+              - 11
+              - 11-basic
             rates-11n-ss12:
-              - <value in [mcs0/1, mcs1/1, mcs2/1, ...]>
+              - mcs0/1
+              - mcs1/1
+              - mcs2/1
+              - mcs3/1
+              - mcs4/1
+              - mcs5/1
+              - mcs6/1
+              - mcs7/1
+              - mcs8/2
+              - mcs9/2
+              - mcs10/2
+              - mcs11/2
+              - mcs12/2
+              - mcs13/2
+              - mcs14/2
+              - mcs15/2
             rates-11n-ss34:
-              - <value in [mcs16/3, mcs17/3, mcs18/3, ...]>
+              - mcs16/3
+              - mcs17/3
+              - mcs18/3
+              - mcs19/3
+              - mcs20/3
+              - mcs21/3
+              - mcs22/3
+              - mcs23/3
+              - mcs24/4
+              - mcs25/4
+              - mcs26/4
+              - mcs27/4
+              - mcs28/4
+              - mcs29/4
+              - mcs30/4
+              - mcs31/4
             sae-groups:
-              - <value in [1, 2, 5, ...]>
-            sae-password:
-              - <value of string>
+              - 1
+              - 2
+              - 5
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+              - 20
+              - 21
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+            sae-password: <value of string>
             schedule: <value of string>
             security: <value in [None, WEP64, wep64, ...]>
             security-exempt-list: <value of string>
@@ -403,6 +535,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

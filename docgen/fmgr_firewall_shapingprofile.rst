@@ -44,15 +44,15 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_shapingprofile</span> - Configure shaping profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">default-class-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">profile-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">default-class-id</span> - Default class ID to handle unclassified packets (including all local traffic). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">profile-name</span> - Shaping profile name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">shaping-entries</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">class-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">guaranteed-bandwidth-percentage</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">maximum-bandwidth-percentage</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
+ <li><span class="li-head">class-id</span> - Class ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">guaranteed-bandwidth-percentage</span> - Guaranteed bandwith in percentage. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">maximum-bandwidth-percentage</span> - Maximum bandwith in percentage. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">priority</span> - Priority. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
  </ul>
  </ul>
  </ul>
@@ -123,6 +123,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

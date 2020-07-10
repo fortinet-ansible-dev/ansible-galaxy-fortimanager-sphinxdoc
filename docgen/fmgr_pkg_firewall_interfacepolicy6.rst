@@ -46,29 +46,29 @@ Parameters
  <li><span class="li-head">pkg_firewall_interfacepolicy6</span> - Configure IPv6 interface policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">address-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6]</span> </li>
- <li><span class="li-head">application-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">application-list-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">av-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">av-profile-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dlp-sensor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dlp-sensor-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dsri</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dstaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ips-sensor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ips-sensor-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">label</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">logtraffic</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, all, utm]</span> </li>
- <li><span class="li-head">policyid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">scan-botnet-connections</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
- <li><span class="li-head">service6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spamfilter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spamfilter-profile-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">srcaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">webfilter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">webfilter-profile-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">application-list</span> - Application list name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">application-list-status</span> - Enable/disable application control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">av-profile</span> - Antivirus profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">av-profile-status</span> - Enable/disable antivirus. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comments</span> - Comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dlp-sensor</span> - DLP sensor name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dlp-sensor-status</span> - Enable/disable DLP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dsri</span> - Enable/disable DSRI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dstaddr6</span> - IPv6 address object to limit traffic monitoring to network traffic sent to the specified address or range. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Monitored interface name from available interfaces. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ips-sensor</span> - IPS sensor name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ips-sensor-status</span> - Enable/disable IPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">label</span> - Label. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">logtraffic</span> - Logging type to be used in this policy (Options: all | utm | disable, Default: utm). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, all, utm]</span> </li>
+ <li><span class="li-head">policyid</span> - Policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">scan-botnet-connections</span> - Enable/disable scanning for connections to Botnet servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
+ <li><span class="li-head">service6</span> - Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spamfilter-profile</span> - Antispam profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spamfilter-profile-status</span> - Enable/disable antispam. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">srcaddr6</span> - IPv6 address object to limit traffic monitoring to network traffic sent from the specified address or range. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webfilter-profile</span> - Web filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webfilter-profile-status</span> - Enable/disable web filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -153,6 +153,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

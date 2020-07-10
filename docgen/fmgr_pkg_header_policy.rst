@@ -49,12 +49,8 @@ Parameters
  <li><span class="li-head">anti-replay</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">app-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">application-charts</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [top10-app, top10-p2p-user, top10-media-user]</span> </li>
- </ul>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">application-charts</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [top10-app, top10-p2p-user, top10-media-user]</span> </li>
  <li><span class="li-head">application-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">auth-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">auth-method</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [basic, digest, ntlm, fsae, form, fsso, rsso]</span> </li>
@@ -96,9 +92,7 @@ Parameters
  <li><span class="li-head">dstaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic-profile</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dynamic-profile-access</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, im, nntp, imaps, smtps, pop3s, https, ftps, ssh]</span> </li>
- </ul>
+ <li><span class="li-head">dynamic-profile-access</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, im, nntp, imaps, smtps, pop3s, https, ftps, ssh]</span> </li>
  <li><span class="li-head">dynamic-profile-fallthrough</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dynamic-profile-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">email-collect</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -112,9 +106,7 @@ Parameters
  <li><span class="li-head">fall-through-unauthenticated</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">firewall-session-dirty</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [check-all, check-new]</span> </li>
  <li><span class="li-head">fixedport</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">forticlient-compliance-devices</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [windows-pc, mac, iphone-ipad, android]</span> </li>
- </ul>
+ <li><span class="li-head">forticlient-compliance-devices</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [windows-pc, mac, iphone-ipad, android]</span> </li>
  <li><span class="li-head">forticlient-compliance-enforcement-portal</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">fsae</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">fsae-server-for-ntlm</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -130,9 +122,7 @@ Parameters
  <li><span class="li-head">identity-based</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">identity-based-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
- <li><span class="li-head">application-charts</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [top10-app, top10-p2p-user, top10-media-user]</span> </li>
- </ul>
+ <li><span class="li-head">application-charts</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [top10-app, top10-p2p-user, top10-media-user]</span> </li>
  <li><span class="li-head">application-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">av-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">capture-packet</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -203,9 +193,7 @@ Parameters
  <li><span class="li-head">natoutbound</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">np-acceleration</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ntlm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ntlm-enabled-browsers</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">ntlm-enabled-browsers</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">ntlm-guest</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">outbound</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">per-ip-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -333,10 +321,11 @@ Examples
             anti-replay: <value in [disable, enable]>
             app-category: <value of string>
             app-group: <value of string>
-            application:
-              - <value of integer>
+            application: <value of integer>
             application-charts:
-              - <value in [top10-app, top10-p2p-user, top10-media-user]>
+              - top10-app
+              - top10-p2p-user
+              - top10-media-user
             application-list: <value of string>
             auth-cert: <value of string>
             auth-method: <value in [basic, digest, ntlm, ...]>
@@ -379,7 +368,19 @@ Examples
             dstintf: <value of string>
             dynamic-profile: <value in [disable, enable]>
             dynamic-profile-access:
-              - <value in [imap, smtp, pop3, ...]>
+              - imap
+              - smtp
+              - pop3
+              - http
+              - ftp
+              - im
+              - nntp
+              - imaps
+              - smtps
+              - pop3s
+              - https
+              - ftps
+              - ssh
             dynamic-profile-fallthrough: <value in [disable, enable]>
             dynamic-profile-group: <value of string>
             email-collect: <value in [disable, enable]>
@@ -394,7 +395,10 @@ Examples
             firewall-session-dirty: <value in [check-all, check-new]>
             fixedport: <value in [disable, enable]>
             forticlient-compliance-devices:
-              - <value in [windows-pc, mac, iphone-ipad, ...]>
+              - windows-pc
+              - mac
+              - iphone-ipad
+              - android
             forticlient-compliance-enforcement-portal: <value in [disable, enable]>
             fsae: <value in [disable, enable]>
             fsae-server-for-ntlm: <value of string>
@@ -412,7 +416,9 @@ Examples
               -
                   action: <value in [deny, accept]>
                   application-charts:
-                    - <value in [top10-app, top10-p2p-user, top10-media-user]>
+                    - top10-app
+                    - top10-p2p-user
+                    - top10-media-user
                   application-list: <value of string>
                   av-profile: <value of string>
                   capture-packet: <value in [disable, enable]>
@@ -482,8 +488,7 @@ Examples
             natoutbound: <value in [disable, enable]>
             np-acceleration: <value in [disable, enable]>
             ntlm: <value in [disable, enable]>
-            ntlm-enabled-browsers:
-              - <value of string>
+            ntlm-enabled-browsers: <value of string>
             ntlm-guest: <value in [disable, enable]>
             outbound: <value in [disable, enable]>
             per-ip-shaper: <value of string>
@@ -579,6 +584,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

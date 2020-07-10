@@ -51,21 +51,11 @@ Parameters
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">ldap-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">password2</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">password3</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">password4</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">password5</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">password2</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">password3</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">password4</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">password5</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">port2</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">port3</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -132,16 +122,11 @@ Examples
                   name: <value of string>
                   vdom: <value of string>
             ldap-server: <value of string>
-            password:
-              - <value of string>
-            password2:
-              - <value of string>
-            password3:
-              - <value of string>
-            password4:
-              - <value of string>
-            password5:
-              - <value of string>
+            password: <value of string>
+            password2: <value of string>
+            password3: <value of string>
+            password4: <value of string>
+            password5: <value of string>
             port: <value of integer>
             port2: <value of integer>
             port3: <value of integer>
@@ -174,6 +159,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

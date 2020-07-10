@@ -46,23 +46,23 @@ Parameters
  <li><span class="li-head">pkg_firewall_dospolicy6</span> - Configure IPv6 DoS policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">anomaly</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, proxy]</span> </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">quarantine</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
- <li><span class="li-head">quarantine-expiry</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">quarantine-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">action</span> - Action taken when the threshold is reached. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block, proxy]</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging for this anomaly. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Anomaly name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">quarantine</span> - Quarantine method. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, attacker, both, interface]</span> </li>
+ <li><span class="li-head">quarantine-expiry</span> - Duration of quarantine, from 1 minute to 364 days, 23 hours, and 59 minutes from now. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">quarantine-log</span> - Enable/disable quarantine logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable the active status of this anomaly sensor. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">threshold</span> - Number of detected instances per minute which triggers action (1 - 2147483647, default = 1000). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">threshold(default)</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">policyid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comments</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr</span> - Destination address name from available addresses. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Incoming interface name from available interfaces. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">policyid</span> - Policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">service</span> - Service object from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr</span> - Source address name from available addresses. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -141,6 +141,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

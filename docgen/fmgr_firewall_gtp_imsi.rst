@@ -45,14 +45,12 @@ Parameters
  <li><span class="li-head">gtp</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_gtp_imsi</span> - IMSI. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">apnmember</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mcc-mnc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msisdn-prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">selection-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ms, net, vrf]</span> </li>
- </ul>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mcc-mnc</span> - MCC MNC. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msisdn-prefix</span> - MSISDN prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">selection-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ms, net, vrf]</span> </li>
  </ul>
  </ul>
 
@@ -103,7 +101,9 @@ Examples
             mcc-mnc: <value of string>
             msisdn-prefix: <value of string>
             selection-mode:
-              - <value in [ms, net, vrf]>
+              - ms
+              - net
+              - vrf
 
 
 
@@ -120,6 +120,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

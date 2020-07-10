@@ -46,39 +46,35 @@ Parameters
  <li><span class="li-head">vpnsslweb_portal_bookmarkgroup</span> - Portal bookmark group. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">bookmarks</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">additional-params</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">apptype</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [web, telnet, ssh, ftp, smb, vnc, rdp, citrix, rdpnative, portforward, sftp]</span> </li>
- <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">folder</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">additional-params</span> - Additional parameters. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">apptype</span> - Application type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [web, telnet, ssh, ftp, smb, vnc, rdp, citrix, rdpnative, portforward, sftp]</span> </li>
+ <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">folder</span> - Network shared file folder parameter. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">form-data</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">value</span> - Value. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">host</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">listening-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">load-balancing-info</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">logon-password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">host</span> - Host name/IP parameter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">listening-port</span> - Listening port (0 - 65535). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">load-balancing-info</span> - The load balancing information or cookie which should be provided to the connection broker. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">logon-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">logon-user</span> - Logon user. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Bookmark name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Remote port. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">preconnection-blob</span> - An arbitrary string which identifies the RDP source. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">preconnection-id</span> - The numeric ID of the RDP source (0-2147483648). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">remote-port</span> - Remote port (0 - 65535). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">security</span> - Security mode for RDP connection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rdp, nla, tls, any]</span> </li>
+ <li><span class="li-head">server-layout</span> - Server side keyboard layout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [en-us-qwerty, de-de-qwertz, fr-fr-azerty, it-it-qwerty, sv-se-qwerty, failsafe, en-gb-qwerty, es-es-qwerty, fr-ch-qwertz, ja-jp-qwerty, pt-br-qwerty, tr-tr-qwerty]</span> </li>
+ <li><span class="li-head">show-status-window</span> - Enable/disable showing of status window. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sso</span> - Single Sign-On. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, static, auto]</span> </li>
+ <li><span class="li-head">sso-credential</span> - Single sign-on credentials. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslvpn-login, alternative]</span> </li>
+ <li><span class="li-head">sso-credential-sent-once</span> - Single sign-on credentials are only sent once to remote server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sso-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">sso-username</span> - SSO user name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">url</span> - URL parameter. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">logon-user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">preconnection-blob</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">preconnection-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">remote-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">security</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rdp, nla, tls, any]</span> </li>
- <li><span class="li-head">server-layout</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [en-us-qwerty, de-de-qwertz, fr-fr-azerty, it-it-qwerty, sv-se-qwerty, failsafe, en-gb-qwerty, es-es-qwerty, fr-ch-qwertz, ja-jp-qwerty, pt-br-qwerty, tr-tr-qwerty]</span> </li>
- <li><span class="li-head">show-status-window</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">sso</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, static, auto]</span> </li>
- <li><span class="li-head">sso-credential</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslvpn-login, alternative]</span> </li>
- <li><span class="li-head">sso-credential-sent-once</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">sso-password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">sso-username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Bookmark group name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -136,8 +132,7 @@ Examples
                   host: <value of string>
                   listening-port: <value of integer>
                   load-balancing-info: <value of string>
-                  logon-password:
-                    - <value of string>
+                  logon-password: <value of string>
                   logon-user: <value of string>
                   name: <value of string>
                   port: <value of integer>
@@ -150,8 +145,7 @@ Examples
                   sso: <value in [disable, static, auto]>
                   sso-credential: <value in [sslvpn-login, alternative]>
                   sso-credential-sent-once: <value in [disable, enable]>
-                  sso-password:
-                    - <value of string>
+                  sso-password: <value of string>
                   sso-username: <value of string>
                   url: <value of string>
             name: <value of string>
@@ -171,6 +165,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

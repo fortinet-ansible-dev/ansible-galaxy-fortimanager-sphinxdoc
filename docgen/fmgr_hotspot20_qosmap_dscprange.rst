@@ -45,10 +45,10 @@ Parameters
  <li><span class="li-head">qos-map</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_qosmap_dscprange</span> - Differentiated Services Code Point (DSCP) ranges. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">high</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">index</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">low</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">up</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">high</span> - DSCP high value. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">index</span> - DSCP range index. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">low</span> - DSCP low value. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -113,6 +113,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

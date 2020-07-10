@@ -45,21 +45,19 @@ Parameters
  <li><span class="li-head">hotspot20_h2qposuprovider</span> - Configure online sign up (OSU) provider list. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">friendly-name</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">friendly-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">index</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">lang</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">friendly-name</span> - OSU provider friendly name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">index</span> - OSU provider friendly name index. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">lang</span> - Language code. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">icon</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">osu-method</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [oma-dm, soap-xml-spp, reserved]</span> </li>
- </ul>
- <li><span class="li-head">osu-nai</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-uri</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">icon</span> - OSU provider icon. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - OSU provider ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">osu-method</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [oma-dm, soap-xml-spp, reserved]</span> </li>
+ <li><span class="li-head">osu-nai</span> - OSU NAI. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-uri</span> - Server URI. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">service-description</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">lang</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service-description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">lang</span> - Language code. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service-description</span> - Service description. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service-id</span> - OSU service ID. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
  </ul>
@@ -112,7 +110,9 @@ Examples
             icon: <value of string>
             name: <value of string>
             osu-method:
-              - <value in [oma-dm, soap-xml-spp, reserved]>
+              - oma-dm
+              - soap-xml-spp
+              - reserved
             osu-nai: <value of string>
             server-uri: <value of string>
             service-description:
@@ -136,6 +136,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

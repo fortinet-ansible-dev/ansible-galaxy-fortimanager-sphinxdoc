@@ -44,9 +44,9 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_vip64</span> - Configure IPv6 to IPv4 virtual IPs. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">arp-reply</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">arp-reply</span> - Enable ARP reply. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -65,40 +65,36 @@ Parameters
  <li><span class="li-head">portforward</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tcp, udp]</span> </li>
  <li><span class="li-head">server-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http, tcp, udp, ip]</span> </li>
- <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static-nat, server-load-balance]</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">extip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">extport</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ldb-method</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static, round-robin, weighted, least-session, least-rtt, first-alive]</span> </li>
- <li><span class="li-head">mappedip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mappedport</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">monitor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">portforward</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tcp, udp]</span> </li>
+ <li><span class="li-head">extip</span> - Start-external-IP [-end-external-IP]. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">extport</span> - External service port. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Custom defined id. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ldb-method</span> - Load balance method. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static, round-robin, weighted, least-session, least-rtt, first-alive]</span> </li>
+ <li><span class="li-head">mappedip</span> - Start-mapped-IP [-end-mapped-IP]. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mappedport</span> - Mapped service port. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">monitor</span> - Health monitors. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - VIP64 name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">portforward</span> - Enable port forwarding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">protocol</span> - Mapped port protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [tcp, udp]</span> </li>
  <li><span class="li-head">realservers</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">client-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">healthcheck</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vip]</span> </li>
- <li><span class="li-head">holddown-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-connections</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">monitor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, standby, disable]</span> </li>
+ <li><span class="li-head">client-ip</span> - Restrict server to a client IP in this range. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">healthcheck</span> - Per server health check. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vip]</span> </li>
+ <li><span class="li-head">holddown-interval</span> - Hold down interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - Real server ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip</span> - Mapped server IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-connections</span> - Maximum number of connections allowed to server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">monitor</span> - Health monitors. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Mapped server port. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Server administrative status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, standby, disable]</span> </li>
  <li><span class="li-head">weight</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">server-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http, tcp, udp, ip]</span> </li>
- <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static-nat, server-load-balance]</span> </li>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-type</span> - Server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http, tcp, udp, ip]</span> </li>
+ <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">type</span> - VIP type: static NAT. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static-nat, server-load-balance]</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -164,8 +160,7 @@ Examples
                   portforward: <value in [disable, enable]>
                   protocol: <value in [tcp, udp]>
                   server-type: <value in [http, tcp, udp, ...]>
-                  src-filter:
-                    - <value of string>
+                  src-filter: <value of string>
                   type: <value in [static-nat, server-load-balance]>
                   uuid: <value of string>
             extip: <value of string>
@@ -191,8 +186,7 @@ Examples
                   status: <value in [active, standby, disable]>
                   weight: <value of integer>
             server-type: <value in [http, tcp, udp, ...]>
-            src-filter:
-              - <value of string>
+            src-filter: <value of string>
             type: <value in [static-nat, server-load-balance]>
             uuid: <value of string>
 
@@ -211,6 +205,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

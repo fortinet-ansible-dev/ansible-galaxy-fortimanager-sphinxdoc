@@ -44,57 +44,55 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">widsprofile</span> - Configure wireless intrusion detection system (WIDS) profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ap-auto-suppress</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ap-bgscan-disable-day</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> </li>
- </ul>
- <li><span class="li-head">ap-bgscan-disable-end</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ap-bgscan-disable-start</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ap-bgscan-duration</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ap-bgscan-idle</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ap-bgscan-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ap-bgscan-period</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ap-bgscan-report-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ap-fgscan-report-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ap-scan</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ap-scan-passive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">asleap-attack</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">assoc-flood-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">assoc-flood-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">assoc-frame-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">auth-flood-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">auth-flood-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">auth-frame-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">deauth-broadcast</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">deauth-unknown-src-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-fail-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">eapol-fail-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-fail-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-logoff-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">eapol-logoff-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-logoff-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-pre-fail-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">eapol-pre-fail-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-pre-fail-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-pre-succ-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">eapol-pre-succ-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-pre-succ-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-start-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">eapol-start-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-start-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-succ-flood</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">eapol-succ-intv</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">eapol-succ-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">invalid-mac-oui</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">long-duration-attack</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">long-duration-thresh</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">null-ssid-probe-resp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">sensor-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, foreign, both]</span> </li>
- <li><span class="li-head">spoofed-deauth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">weak-wep-iv</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">wireless-bridge</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ap-auto-suppress</span> - Enable/disable on-wire rogue AP auto-suppression (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ap-bgscan-disable-day</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> </li>
+ <li><span class="li-head">ap-bgscan-disable-end</span> - End time, using a 24-hour clock in the format of hh:mm, for disabling background scanning (default = 00:00). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ap-bgscan-disable-start</span> - Start time, using a 24-hour clock in the format of hh:mm, for disabling background scanning (default = 00:00). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ap-bgscan-duration</span> - Listening time on a scanning channel (10 - 1000 msec, default = 20). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ap-bgscan-idle</span> - Waiting time for channel inactivity before scanning this channel (0 - 1000 msec, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ap-bgscan-intv</span> - Period of time between scanning two channels (1 - 600 sec, default = 1). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ap-bgscan-period</span> - Period of time between background scans (60 - 3600 sec, default = 600). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ap-bgscan-report-intv</span> - Period of time between background scan reports (15 - 600 sec, default = 30). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ap-fgscan-report-intv</span> - Period of time between foreground scan reports (15 - 600 sec, default = 15). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ap-scan</span> - Enable/disable rogue AP detection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ap-scan-passive</span> - Enable/disable passive scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">asleap-attack</span> - Enable/disable asleap attack detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">assoc-flood-thresh</span> - The threshold value for association frame flooding. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">assoc-flood-time</span> - Number of seconds after which a station is considered not connected. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">assoc-frame-flood</span> - Enable/disable association frame flooding detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auth-flood-thresh</span> - The threshold value for authentication frame flooding. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">auth-flood-time</span> - Number of seconds after which a station is considered not connected. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">auth-frame-flood</span> - Enable/disable authentication frame flooding detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">deauth-broadcast</span> - Enable/disable broadcasting de-authentication detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">deauth-unknown-src-thresh</span> - Threshold value per second to deauth unknown src for DoS attack (0: no limit). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-fail-flood</span> - Enable/disable EAPOL-Failure flooding (to AP) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eapol-fail-intv</span> - The detection interval for EAPOL-Failure flooding (1 - 3600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-fail-thresh</span> - The threshold value for EAPOL-Failure flooding in specified interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-logoff-flood</span> - Enable/disable EAPOL-Logoff flooding (to AP) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eapol-logoff-intv</span> - The detection interval for EAPOL-Logoff flooding (1 - 3600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-logoff-thresh</span> - The threshold value for EAPOL-Logoff flooding in specified interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-pre-fail-flood</span> - Enable/disable premature EAPOL-Failure flooding (to STA) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eapol-pre-fail-intv</span> - The detection interval for premature EAPOL-Failure flooding (1 - 3600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-pre-fail-thresh</span> - The threshold value for premature EAPOL-Failure flooding in specified interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-pre-succ-flood</span> - Enable/disable premature EAPOL-Success flooding (to STA) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eapol-pre-succ-intv</span> - The detection interval for premature EAPOL-Success flooding (1 - 3600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-pre-succ-thresh</span> - The threshold value for premature EAPOL-Success flooding in specified interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-start-flood</span> - Enable/disable EAPOL-Start flooding (to AP) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eapol-start-intv</span> - The detection interval for EAPOL-Start flooding (1 - 3600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-start-thresh</span> - The threshold value for EAPOL-Start flooding in specified interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-succ-flood</span> - Enable/disable EAPOL-Success flooding (to AP) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eapol-succ-intv</span> - The detection interval for EAPOL-Success flooding (1 - 3600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">eapol-succ-thresh</span> - The threshold value for EAPOL-Success flooding in specified interval. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">invalid-mac-oui</span> - Enable/disable invalid MAC OUI detection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">long-duration-attack</span> - Enable/disable long duration attack detection based on user configured threshold (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">long-duration-thresh</span> - Threshold value for long duration attack detection (1000 - 32767 usec, default = 8200). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - WIDS profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">null-ssid-probe-resp</span> - Enable/disable null SSID probe response detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sensor-mode</span> - Scan WiFi nearby stations (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, foreign, both]</span> </li>
+ <li><span class="li-head">spoofed-deauth</span> - Enable/disable spoofed de-authentication attack detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">weak-wep-iv</span> - Enable/disable weak WEP IV (Initialization Vector) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wireless-bridge</span> - Enable/disable wireless bridge detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -140,7 +138,13 @@ Examples
          widsprofile:
             ap-auto-suppress: <value in [disable, enable]>
             ap-bgscan-disable-day:
-              - <value in [sunday, monday, tuesday, ...]>
+              - sunday
+              - monday
+              - tuesday
+              - wednesday
+              - thursday
+              - friday
+              - saturday
             ap-bgscan-disable-end: <value of string>
             ap-bgscan-disable-start: <value of string>
             ap-bgscan-duration: <value of integer>
@@ -204,6 +208,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

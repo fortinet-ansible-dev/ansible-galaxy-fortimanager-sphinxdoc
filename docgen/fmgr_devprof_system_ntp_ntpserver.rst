@@ -45,14 +45,12 @@ Parameters
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof_system_ntp_ntpserver</span> - Configure the FortiGate to connect to any available third-party NTP server. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">authentication</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">key-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ntpv3</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">authentication</span> - Enable/disable MD5 authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">id</span> - NTP server ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">key-id</span> - Key ID for authentication. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ntpv3</span> - Enable to use NTPv3 instead of NTPv4. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">server</span> - IP address or hostname of the NTP Server. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -99,8 +97,7 @@ Examples
          devprof_system_ntp_ntpserver:
             authentication: <value in [disable, enable]>
             id: <value of integer>
-            key:
-              - <value of string>
+            key: <value of string>
             key-id: <value of integer>
             ntpv3: <value in [disable, enable]>
             server: <value of string>
@@ -120,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

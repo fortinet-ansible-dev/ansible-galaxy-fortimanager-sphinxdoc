@@ -45,16 +45,16 @@ Parameters
  <li><span class="li-head">vpn_certificate_ca</span> - CA certificate. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_private_key</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">auto-update-days</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">auto-update-days-warning</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ca</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">last-updated</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">range</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [global, vdom]</span> </li>
- <li><span class="li-head">scep-url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [factory, user, bundle, fortiguard]</span> </li>
- <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusted</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auto-update-days</span> - Number of days to wait before requesting an updated CA certificate (0 - 4294967295, 0 = disabled). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">auto-update-days-warning</span> - Number of days before an expiry-warning message is generated (0 - 4294967295, 0 = disabled). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ca</span> - CA certificate as a PEM file. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">last-updated</span> - Time at which CA was last updated. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">range</span> - Either global or VDOM IP address range for the CA certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [global, vdom]</span> </li>
+ <li><span class="li-head">scep-url</span> - URL of the SCEP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source</span> - CA certificate source type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [factory, user, bundle, fortiguard]</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP address for communications to the SCEP server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">trusted</span> - Enable/disable as a trusted CA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -125,6 +125,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

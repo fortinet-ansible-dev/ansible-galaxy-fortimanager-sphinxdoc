@@ -45,32 +45,24 @@ Parameters
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof_system_snmp_user</span> - SNMP user configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-proto</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [md5, sha]</span> </li>
- <li><span class="li-head">auth-pwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">events</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, fm-conf-change, ips-signature, ips-anomaly, temperature-high, voltage-alert, av-virus, av-oversize, av-pattern, av-fragmented, ha-hb-failure, fan-failure, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, fm-if-change, power-supply-failure, amc-bypass, faz-disconnect, bgp-established, bgp-backward-transition, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, ips-fail-open, load-balance-real-server-down, device-new, enter-intf-bypass, exit-intf-bypass, per-cpu-high, power-blade-down, confsync_failure]</span> </li>
- </ul>
- <li><span class="li-head">ha-direct</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">notify-hosts</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">notify-hosts6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priv-proto</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aes, des, aes256, aes256cisco]</span> </li>
- <li><span class="li-head">priv-pwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">queries</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">query-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">security-level</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span> </li>
- <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source-ipv6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">trap-lport</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">trap-rport</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">trap-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auth-proto</span> - Authentication protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [md5, sha]</span> </li>
+ <li><span class="li-head">auth-pwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">events</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, fm-conf-change, ips-signature, ips-anomaly, temperature-high, voltage-alert, av-virus, av-oversize, av-pattern, av-fragmented, ha-hb-failure, fan-failure, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, fm-if-change, power-supply-failure, amc-bypass, faz-disconnect, bgp-established, bgp-backward-transition, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, ips-fail-open, load-balance-real-server-down, device-new, enter-intf-bypass, exit-intf-bypass, per-cpu-high, power-blade-down, confsync_failure]</span> </li>
+ <li><span class="li-head">ha-direct</span> - Enable/disable direct management of HA cluster members. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - SNMP user name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">notify-hosts</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">notify-hosts6</span> - IPv6 SNMP managers to send notifications (traps) to. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priv-proto</span> - Privacy (encryption) protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aes, des, aes256, aes256cisco]</span> </li>
+ <li><span class="li-head">priv-pwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">queries</span> - Enable/disable SNMP queries for this user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">query-port</span> - SNMPv3 query port (default = 161). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">security-level</span> - Security level for message authentication and encryption. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP for SNMP trap. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-ipv6</span> - Source IPv6 for SNMP trap. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this SNMP user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">trap-lport</span> - SNMPv3 local trap port (default = 162). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">trap-rport</span> - SNMPv3 trap remote port (default = 162). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">trap-status</span> - Enable/disable traps for this SNMP user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -116,18 +108,58 @@ Examples
          state: <value in [present, absent]>
          devprof_system_snmp_user:
             auth-proto: <value in [md5, sha]>
-            auth-pwd:
-              - <value of string>
+            auth-pwd: <value of string>
             events:
-              - <value in [cpu-high, mem-low, log-full, ...]>
+              - cpu-high
+              - mem-low
+              - log-full
+              - intf-ip
+              - vpn-tun-up
+              - vpn-tun-down
+              - ha-switch
+              - fm-conf-change
+              - ips-signature
+              - ips-anomaly
+              - temperature-high
+              - voltage-alert
+              - av-virus
+              - av-oversize
+              - av-pattern
+              - av-fragmented
+              - ha-hb-failure
+              - fan-failure
+              - ha-member-up
+              - ha-member-down
+              - ent-conf-change
+              - av-conserve
+              - av-bypass
+              - av-oversize-passed
+              - av-oversize-blocked
+              - ips-pkg-update
+              - fm-if-change
+              - power-supply-failure
+              - amc-bypass
+              - faz-disconnect
+              - bgp-established
+              - bgp-backward-transition
+              - wc-ap-up
+              - wc-ap-down
+              - fswctl-session-up
+              - fswctl-session-down
+              - ips-fail-open
+              - load-balance-real-server-down
+              - device-new
+              - enter-intf-bypass
+              - exit-intf-bypass
+              - per-cpu-high
+              - power-blade-down
+              - confsync_failure
             ha-direct: <value in [disable, enable]>
             name: <value of string>
-            notify-hosts:
-              - <value of string>
+            notify-hosts: <value of string>
             notify-hosts6: <value of string>
             priv-proto: <value in [aes, des, aes256, ...]>
-            priv-pwd:
-              - <value of string>
+            priv-pwd: <value of string>
             queries: <value in [disable, enable]>
             query-port: <value of integer>
             security-level: <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
@@ -153,6 +185,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

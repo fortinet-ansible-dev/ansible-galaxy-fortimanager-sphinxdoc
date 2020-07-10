@@ -44,20 +44,18 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">icap_profile</span> - Configure ICAP profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">methods</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [delete, get, head, options, post, put, trace, other]</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">request-failure</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [error, bypass]</span> </li>
- <li><span class="li-head">request-path</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">request-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">response-failure</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [error, bypass]</span> </li>
- <li><span class="li-head">response-path</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">response-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">streaming-content-bypass</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">methods</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, other]</span> </li>
+ <li><span class="li-head">name</span> - ICAP profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">request</span> - Enable/disable whether an HTTP request is passed to an ICAP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">request-failure</span> - Action to take if the ICAP server cannot be contacted when processing an HTTP request. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [error, bypass]</span> </li>
+ <li><span class="li-head">request-path</span> - Path component of the ICAP URI that identifies the HTTP request processing service. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">request-server</span> - ICAP server to use for an HTTP request. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">response</span> - Enable/disable whether an HTTP response is passed to an ICAP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">response-failure</span> - Action to take if the ICAP server cannot be contacted when processing an HTTP response. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [error, bypass]</span> </li>
+ <li><span class="li-head">response-path</span> - Path component of the ICAP URI that identifies the HTTP response processing service. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">response-server</span> - ICAP server to use for an HTTP response. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">streaming-content-bypass</span> - Enable/disable bypassing of ICAP server for streaming content. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -102,7 +100,14 @@ Examples
          state: <value in [present, absent]>
          icap_profile:
             methods:
-              - <value in [delete, get, head, ...]>
+              - delete
+              - get
+              - head
+              - options
+              - post
+              - put
+              - trace
+              - other
             name: <value of string>
             replacemsg-group: <value of string>
             request: <value in [disable, enable]>
@@ -130,6 +135,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

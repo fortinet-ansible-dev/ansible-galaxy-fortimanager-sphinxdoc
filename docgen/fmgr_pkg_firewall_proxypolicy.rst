@@ -45,59 +45,59 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_proxypolicy</span> - Configure proxy policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [accept, deny, redirect]</span> </li>
- <li><span class="li-head">application-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">av-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">disclaimer</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, domain, policy, user]</span> </li>
- <li><span class="li-head">dlp-sensor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstaddr-negate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">dstaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">global-label</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">groups</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">http-tunnel-auth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">icap-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">internet-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">internet-service-custom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">internet-service-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">internet-service-negate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ips-sensor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">label</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">logtraffic</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, all, utm]</span> </li>
- <li><span class="li-head">logtraffic-start</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">mms-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">policyid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">poolname</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">profile-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">profile-protocol-options</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">profile-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [single, group]</span> </li>
- <li><span class="li-head">proxy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [explicit-web, transparent-web, ftp, wanopt, ssh, ssh-tunnel]</span> </li>
- <li><span class="li-head">redirect-url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">replacemsg-override-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">scan-botnet-connections</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
- <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service-negate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spamfilter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr-negate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">srcaddr6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcintf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ssl-ssh-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">transparent</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">users</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">utm-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">waf-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">webcache</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">webcache-https</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">webfilter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">webproxy-forward-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">webproxy-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Accept or deny traffic matching the policy parameters. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [accept, deny, redirect]</span> </li>
+ <li><span class="li-head">application-list</span> - Name of an existing Application list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">av-profile</span> - Name of an existing Antivirus profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comments</span> - Optional comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">disclaimer</span> - Web proxy disclaimer setting: by domain, policy, or user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, domain, policy, user]</span> </li>
+ <li><span class="li-head">dlp-sensor</span> - Name of an existing DLP sensor. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr</span> - Destination address objects. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr-negate</span> - When enabled, destination addresses match against any address EXCEPT the specified destination addresses. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dstaddr6</span> - IPv6 destination address objects. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstintf</span> - Destination interface names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-label</span> - Global web-based manager visible label. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">groups</span> - Names of group objects. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">http-tunnel-auth</span> - Enable/disable HTTP tunnel authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">icap-profile</span> - Name of an existing ICAP profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service</span> - Enable/disable use of Internet Services for this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-custom</span> - Custom Internet Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-id</span> - Internet Service ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-negate</span> - When enabled, Internet Services match against any internet service EXCEPT the selected Internet Service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ips-sensor</span> - Name of an existing IPS sensor. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">label</span> - VDOM-specific GUI visible label. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">logtraffic</span> - Enable/disable logging traffic through the policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, all, utm]</span> </li>
+ <li><span class="li-head">logtraffic-start</span> - Enable/disable policy log traffic start. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mms-profile</span> - Name of an existing MMS profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">policyid</span> - Policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">poolname</span> - Name of IP pool object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">profile-group</span> - Name of profile group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">profile-protocol-options</span> - Name of an existing Protocol options profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">profile-type</span> - Determine whether the firewall policy allows security profile groups or single profiles only. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [single, group]</span> </li>
+ <li><span class="li-head">proxy</span> - Type of explicit proxy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [explicit-web, transparent-web, ftp, wanopt, ssh, ssh-tunnel]</span> </li>
+ <li><span class="li-head">redirect-url</span> - Redirect URL for further explicit web proxy processing. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">replacemsg-override-group</span> - Authentication replacement message override group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">scan-botnet-connections</span> - Enable/disable scanning of connections to Botnet servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
+ <li><span class="li-head">schedule</span> - Name of schedule object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service</span> - Name of service objects. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service-negate</span> - When enabled, services match against any service EXCEPT the specified destination services. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spamfilter-profile</span> - Name of an existing Spam filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr</span> - Source address objects (must be set when using Web proxy). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr-negate</span> - When enabled, source addresses match against any address EXCEPT the specified source addresses. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">srcaddr6</span> - IPv6 source address objects. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcintf</span> - Source interface names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ssl-ssh-profile</span> - Name of an existing SSL SSH profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable the active status of the policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tags</span> - Names of object-tags applied to address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">transparent</span> - Enable to use the IP address of the client to connect to the server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">users</span> - Names of user objects. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">utm-status</span> - Enable the use of UTM profiles/sensors/lists. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">waf-profile</span> - Name of an existing Web application firewall profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webcache</span> - Enable/disable web caching. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webcache-https</span> - Enable/disable web caching for HTTPS (Requires deep-inspection enabled in ssl-ssh-profile). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webfilter-profile</span> - Name of an existing Web filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webproxy-forward-server</span> - Name of web proxy forward server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webproxy-profile</span> - Name of web proxy profile. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -211,6 +211,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -45,14 +45,14 @@ Parameters
  <li><span class="li-head">ssl-ssh-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_sslsshprofile_sslserver</span> - SSL servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ftps-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">https-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">imaps-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">pop3s-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">smtps-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">ssl-other-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ftps-client-cert-request</span> - Action based on client certificate request during the FTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">https-client-cert-request</span> - Action based on client certificate request during the HTTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">id</span> - SSL server ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">imaps-client-cert-request</span> - Action based on client certificate request during the IMAPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the SSL server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pop3s-client-cert-request</span> - Action based on client certificate request during the POP3S handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">smtps-client-cert-request</span> - Action based on client certificate request during the SMTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ssl-other-client-cert-request</span> - Action based on client certificate request during an SSL protocol handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +121,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,14 +44,12 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wanopt_authgroup</span> - Configure WAN optimization authentication groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-method</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [cert, psk]</span> </li>
- <li><span class="li-head">cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">peer</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">peer-accept</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, defined, one]</span> </li>
- <li><span class="li-head">psk</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">auth-method</span> - Select certificate or pre-shared key authentication for this authentication group. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [cert, psk]</span> </li>
+ <li><span class="li-head">cert</span> - Name of certificate to identify this peer. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Auth-group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">peer</span> - If peer-accept is set to one, select the name of one peer to add to this authentication group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">peer-accept</span> - Determine if this auth group accepts, any peer, a list of defined peers, or just one peer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, defined, one]</span> </li>
+ <li><span class="li-head">psk</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  </ul>
 
@@ -100,8 +98,7 @@ Examples
             name: <value of string>
             peer: <value of string>
             peer-accept: <value in [any, defined, one]>
-            psk:
-              - <value of string>
+            psk: <value of string>
 
 
 
@@ -118,6 +115,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

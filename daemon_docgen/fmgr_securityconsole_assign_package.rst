@@ -42,14 +42,12 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">securityconsole_assign_package</span> - Assign or unassign global policy package to ADOM packages. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, cp_all_objs, copy_assigned_pkg, unassign]</span> </li>
- </ul>
- <li><span class="li-head">pkg</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, cp_all_objs, copy_assigned_pkg, unassign]</span> </li>
+ <li><span class="li-head">pkg</span> - Source package path and name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">excluded</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">pkg</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Destination ADOM. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">excluded</span> - disable - Only include the packages listed in the <i>pkg</i> list. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pkg</span> - Destination ADOM policy package path and name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
  </ul>
@@ -93,7 +91,10 @@ Examples
          rc_failed: [-2, -3, ...]
          securityconsole_assign_package:
             flags:
-              - <value in [none, cp_all_objs, copy_assigned_pkg, ...]>
+              - none
+              - cp_all_objs
+              - copy_assigned_pkg
+              - unassign
             pkg: <value of string>
             target:
               -
@@ -116,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

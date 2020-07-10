@@ -44,23 +44,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_peer</span> - Configure peer users. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ca</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">cn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">cn-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [string, email, FQDN, ipv4, ipv6]</span> </li>
- <li><span class="li-head">ldap-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [password, principal-name]</span> </li>
- <li><span class="li-head">ldap-password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">ldap-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ldap-username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mandatory-ca-verify</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ocsp-override-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">subject</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">two-factor</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ca</span> - Name of the CA certificate as returned by the execute vpn certificate ca list command. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cn</span> - Peer certificate common name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cn-type</span> - Peer certificate common name type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [string, email, FQDN, ipv4, ipv6]</span> </li>
+ <li><span class="li-head">ldap-mode</span> - Mode for LDAP peer authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [password, principal-name]</span> </li>
+ <li><span class="li-head">ldap-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">ldap-server</span> - Name of an LDAP server defined under the user ldap command. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-username</span> - Username for LDAP server bind. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mandatory-ca-verify</span> - Determine what happens to the peer if the CA certificate is not installed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Peer name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ocsp-override-server</span> - Online Certificate Status Protocol (OCSP) server for certificate retrieval. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">subject</span> - Peer certificate name constraints. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">two-factor</span> - Enable/disable two-factor authentication, applying certificate and password-based authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -108,15 +104,13 @@ Examples
             cn: <value of string>
             cn-type: <value in [string, email, FQDN, ...]>
             ldap-mode: <value in [password, principal-name]>
-            ldap-password:
-              - <value of string>
+            ldap-password: <value of string>
             ldap-server: <value of string>
             ldap-username: <value of string>
             mandatory-ca-verify: <value in [disable, enable]>
             name: <value of string>
             ocsp-override-server: <value of string>
-            passwd:
-              - <value of string>
+            passwd: <value of string>
             subject: <value of string>
             two-factor: <value in [disable, enable]>
 
@@ -135,6 +129,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

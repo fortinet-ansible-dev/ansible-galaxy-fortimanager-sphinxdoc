@@ -44,11 +44,11 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_ippool</span> - Configure IPv4 IP pools. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">arp-intf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">arp-reply</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">associated-interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">block-size</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">arp-intf</span> - Select an interface from available options that will reply to ARP requests. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">arp-reply</span> - Enable/disable replying to ARP requests when an IP Pool is added to a policy (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">associated-interface</span> - Associated interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">block-size</span> - Number of addresses in a block (64 to 4096, default = 128). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comments</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -68,15 +68,15 @@ Parameters
  <li><span class="li-head">startip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation]</span> </li>
  </ul>
- <li><span class="li-head">endip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">num-blocks-per-user</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">pba-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">permit-any-host</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">source-endip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">source-startip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">startip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation]</span> </li>
+ <li><span class="li-head">endip</span> - Final IPv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - IP pool name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">num-blocks-per-user</span> - Number of addresses blocks that can be used by a user (1 to 128, default = 8). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pba-timeout</span> - Port block allocation timeout (seconds). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">permit-any-host</span> - Enable/disable full cone NAT. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">source-endip</span> - Final IPv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-startip</span> - First IPv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">startip</span> - First IPv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - IP pool type (overload, one-to-one, fixed port range, or port block allocation). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation]</span> </li>
  </ul>
  </ul>
 
@@ -169,6 +169,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

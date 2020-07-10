@@ -44,45 +44,43 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">gtp_messagefilterv0v1</span> - Message filter for GTPv0/v1 messages. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">create-mbms</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">create-pdp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">data-record</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-aa-pdp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-mbms</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-pdp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">echo</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">end-marker</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">error-indication</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">failure-report</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">fwd-relocation</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">fwd-srns-context</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">gtp-pdu</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">identification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">mbms-de-registration</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">mbms-notification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">mbms-registration</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">mbms-session-start</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">mbms-session-stop</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">mbms-session-update</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">ms-info-change-notif</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">node-alive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">note-ms-present</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">pdu-notification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">ran-info</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">redirection</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">relocation-cancel</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">send-route</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">sgsn-context</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">support-extension</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">unknown-message</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">unknown-message-white-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">update-mbms</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">update-pdp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">v0-create-aa-pdp--v1-init-pdp-ctx</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, allow]</span> </li>
- <li><span class="li-head">version-not-support</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">create-mbms</span> - GTPv1 create MBMS context (req 100, resp 101). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">create-pdp</span> - Create PDP context (req 16, resp 17). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">data-record</span> - Data record transfer (req 240, resp 241). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-aa-pdp</span> - GTPv0 delete AA PDP context (req 24, resp 25). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-mbms</span> - GTPv1 delete MBMS context (req 104, resp 105). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-pdp</span> - Delete PDP context (req 20, resp 21). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">echo</span> - Echo (req 1, resp 2). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">end-marker</span> - GTPv1 End marker (254). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">error-indication</span> - Error indication (26). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">failure-report</span> - Failure report (req 34, resp 35). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">fwd-relocation</span> - GTPv1 forward relocation (req 53, resp 54, complete 55, complete ack 59). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">fwd-srns-context</span> - GTPv1 forward SRNS (context 58, context ack 60). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">gtp-pdu</span> - PDU (255). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">identification</span> - Identification (req 48, resp 49). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">mbms-de-registration</span> - GTPv1 MBMS de-registration (req 114, resp 115). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">mbms-notification</span> - GTPv1 MBMS notification (req 96, resp 97, reject req 98. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">mbms-registration</span> - GTPv1 MBMS registration (req 112, resp 113). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">mbms-session-start</span> - GTPv1 MBMS session start (req 116, resp 117). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">mbms-session-stop</span> - GTPv1 MBMS session stop (req 118, resp 119). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">mbms-session-update</span> - GTPv1 MBMS session update (req 120, resp 121). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">ms-info-change-notif</span> - GTPv1 MS info change notification (req 128, resp 129). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">name</span> - Message filter name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">node-alive</span> - Node alive (req 4, resp 5). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">note-ms-present</span> - Note MS GPRS present (req 36, resp 37). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">pdu-notification</span> - PDU notification (req 27, resp 28, reject req 29, reject resp 30). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">ran-info</span> - GTPv1 RAN information relay (70). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">redirection</span> - Redirection (req 6, resp 7). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">relocation-cancel</span> - GTPv1 relocation cancel (req 56, resp 57). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">send-route</span> - Send routing information for GPRS (req 32, resp 33). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">sgsn-context</span> - SGSN context (req 50, resp 51, ack 52). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">support-extension</span> - GTPv1 supported extension headers notify (31). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">unknown-message</span> - Allow or Deny unknown messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">unknown-message-white-list</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">update-mbms</span> - GTPv1 update MBMS context (req 102, resp 103). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">update-pdp</span> - Update PDP context (req 18, resp 19). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">v0-create-aa-pdp--v1-init-pdp-ctx</span> - GTPv0 create AA PDP context (req 22, resp 23); Or GTPv1 initiate PDP context (req 22, resp 23). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, allow]</span> </li>
+ <li><span class="li-head">version-not-support</span> - Version not supported (3). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
  </ul>
  </ul>
 
@@ -158,8 +156,7 @@ Examples
             sgsn-context: <value in [allow, deny]>
             support-extension: <value in [allow, deny]>
             unknown-message: <value in [allow, deny]>
-            unknown-message-white-list:
-              - <value of integer>
+            unknown-message-white-list: <value of integer>
             update-mbms: <value in [allow, deny]>
             update-pdp: <value in [allow, deny]>
             v0-create-aa-pdp--v1-init-pdp-ctx: <value in [deny, allow]>
@@ -180,6 +177,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

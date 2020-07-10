@@ -44,20 +44,16 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_carrierendpointbwl</span> - Carrier end point black/white list tables. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Optional comments. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">entries</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, exempt, exempt-mass-mms]</span> </li>
+ <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [block, exempt, exempt-mass-mms]</span> </li>
+ <li><span class="li-head">carrier-endpoint</span> - End point to act on. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-action</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [archive, intercept]</span> </li>
+ <li><span class="li-head">pattern-type</span> - Wildcard pattern or regular expression. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wildcard, regexp, simple]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable specified action(s) for this end point. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">carrier-endpoint</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">log-action</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [archive, intercept]</span> </li>
- </ul>
- <li><span class="li-head">pattern-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wildcard, regexp, simple]</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- </ul>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Name of table. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -105,10 +101,13 @@ Examples
             entries:
               -
                   action:
-                    - <value in [block, exempt, exempt-mass-mms]>
+                    - block
+                    - exempt
+                    - exempt-mass-mms
                   carrier-endpoint: <value of string>
                   log-action:
-                    - <value in [archive, intercept]>
+                    - archive
+                    - intercept
                   pattern-type: <value in [wildcard, regexp, simple]>
                   status: <value in [disable, enable]>
             id: <value of integer>
@@ -129,6 +128,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,10 +44,10 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_device</span> - Configure devices. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">alias</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">avatar</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, android-device, blackberry-device, fortinet-device, ios-device, windows-device, amazon-device]</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">alias</span> - Device alias. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">avatar</span> - Image file for avatar (maximum 4K base64 encoded). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - Device category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, android-device, blackberry-device, fortinet-device, ios-device, windows-device, amazon-device]</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -62,17 +62,15 @@ Parameters
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipad, iphone, gaming-console, blackberry-phone, blackberry-playbook, linux-pc, mac, windows-pc, android-phone, android-tablet, media-streaming, windows-phone, fortinet-device, ip-phone, router-nat-device, other-network-device, windows-tablet, printer, forticam, fortifone, unknown]</span> </li>
  <li><span class="li-head">user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">master-device</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mac</span> - Device MAC address(es). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">master-device</span> - Master device (optional). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Tagging entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
- </ul>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipad, iphone, gaming-console, blackberry-phone, blackberry-playbook, linux-pc, mac, windows-pc, android-phone, android-tablet, media-streaming, windows-phone, fortinet-device, ip-phone, router-nat-device, other-network-device, windows-tablet, printer, forticam, fortifone, unknown]</span> </li>
- <li><span class="li-head">user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipad, iphone, gaming-console, blackberry-phone, blackberry-playbook, linux-pc, mac, windows-pc, android-phone, android-tablet, media-streaming, windows-phone, fortinet-device, ip-phone, router-nat-device, other-network-device, windows-tablet, printer, forticam, fortifone, unknown]</span> </li>
+ <li><span class="li-head">user</span> - User name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -140,8 +138,7 @@ Examples
               -
                   category: <value of string>
                   name: <value of string>
-                  tags:
-                    - <value of string>
+                  tags: <value of string>
             type: <value in [ipad, iphone, gaming-console, ...]>
             user: <value of string>
 
@@ -160,6 +157,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

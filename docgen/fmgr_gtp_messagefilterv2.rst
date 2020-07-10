@@ -44,28 +44,26 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">gtp_messagefilterv2</span> - Message filter for GTPv2 messages. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bearer-resource-cmd-fail</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">change-notification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">create-bearer</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">create-session</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-bearer-cmd-fail</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-bearer-req-resp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-pdn-connection-set</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">delete-session</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">echo</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">modify-bearer-cmd-fail</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">modify-bearer-req-resp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">resume</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">suspend</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">trace-session</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">unknown-message</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">unknown-message-white-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">update-bearer</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">update-pdn-connection-set</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">version-not-support</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">bearer-resource-cmd-fail</span> - Bearer resource (command 68, failure indication 69). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">change-notification</span> - Change notification (req 38, resp 39). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">create-bearer</span> - Create bearer (req 95, resp 96). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">create-session</span> - Create session (req 32, resp 33). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-bearer-cmd-fail</span> - Delete bearer (command 66, failure indication 67). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-bearer-req-resp</span> - Delete bearer (req 99, resp 100). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-pdn-connection-set</span> - Delete PDN connection set (req 101, resp 102). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">delete-session</span> - Delete session (req 36, resp 37). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">echo</span> - Echo (req 1, resp 2). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">modify-bearer-cmd-fail</span> - Modify bearer (command 64 , failure indication 65). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">modify-bearer-req-resp</span> - Modify bearer (req 34, resp 35). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">name</span> - Message filter name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">resume</span> - Resume (notify 164 , ack 165). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">suspend</span> - Suspend (notify 162, ack 163). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">trace-session</span> - Trace session (activation 71, deactivation 72). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">unknown-message</span> - Allow or Deny unknown messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">unknown-message-white-list</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">update-bearer</span> - Update bearer (req 97, resp 98). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">update-pdn-connection-set</span> - Update PDN connection set (req 200, resp 201). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">version-not-support</span> - Version not supported (3). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
  </ul>
  </ul>
 
@@ -125,8 +123,7 @@ Examples
             suspend: <value in [allow, deny]>
             trace-session: <value in [allow, deny]>
             unknown-message: <value in [allow, deny]>
-            unknown-message-white-list:
-              - <value of integer>
+            unknown-message-white-list: <value of integer>
             update-bearer: <value in [allow, deny]>
             update-pdn-connection-set: <value in [allow, deny]>
             version-not-support: <value in [allow, deny]>
@@ -146,6 +143,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

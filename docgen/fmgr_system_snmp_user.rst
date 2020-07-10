@@ -43,23 +43,17 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_snmp_user</span> - SNMP user configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-proto</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [md5, sha]</span> </li>
- <li><span class="li-head">auth-pwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">events</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disk_low, ha_switch, intf_ip_chg, sys_reboot, cpu_high, mem_low, log-alert, log-rate, log-data-rate, lic-gbday, lic-dev-quota, cpu-high-exclude-nice]</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">notify-hosts</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">notify-hosts6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priv-proto</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aes, des]</span> </li>
- <li><span class="li-head">priv-pwd</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">queries</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">query-port</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 161</span> </li>
- <li><span class="li-head">security-level</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span> </li>
+ <li><span class="li-head">auth-proto</span> - Authentication protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [md5, sha]</span> </li>
+ <li><span class="li-head">auth-pwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">events</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [disk_low, ha_switch, intf_ip_chg, sys_reboot, cpu_high, mem_low, log-alert, log-rate, log-data-rate, lic-gbday, lic-dev-quota, cpu-high-exclude-nice]</span> </li>
+ <li><span class="li-head">name</span> - SNMP user name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">notify-hosts</span> - Hosts to send notifications (traps) to. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">notify-hosts6</span> - IPv6 hosts to send notifications (traps) to. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priv-proto</span> - Privacy (encryption) protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aes, des]</span> </li>
+ <li><span class="li-head">priv-pwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">queries</span> - Enable/disable queries for this user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">query-port</span> - SNMPv3 query port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 161</span> </li>
+ <li><span class="li-head">security-level</span> - Security level for message authentication and encryption. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span> </li>
  </ul>
  </ul>
 
@@ -103,16 +97,25 @@ Examples
          state: <value in [present, absent]>
          system_snmp_user:
             auth-proto: <value in [md5, sha]>
-            auth-pwd:
-              - <value of string>
+            auth-pwd: <value of string>
             events:
-              - <value in [disk_low, ha_switch, intf_ip_chg, ...]>
+              - disk_low
+              - ha_switch
+              - intf_ip_chg
+              - sys_reboot
+              - cpu_high
+              - mem_low
+              - log-alert
+              - log-rate
+              - log-data-rate
+              - lic-gbday
+              - lic-dev-quota
+              - cpu-high-exclude-nice
             name: <value of string>
             notify-hosts: <value of string>
             notify-hosts6: <value of string>
             priv-proto: <value in [aes, des]>
-            priv-pwd:
-              - <value of string>
+            priv-pwd: <value of string>
             queries: <value in [disable, enable]>
             query-port: <value of integer>
             security-level: <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
@@ -132,6 +135,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

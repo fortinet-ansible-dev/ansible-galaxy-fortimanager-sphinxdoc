@@ -43,10 +43,8 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_certificate_crl</span> - Certificate Revocation List. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">crl</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
+ <li><span class="li-head">comment</span> - Comment of this Certificate Revocation List. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">crl</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
@@ -91,8 +89,7 @@ Examples
          state: <value in [present, absent]>
          system_certificate_crl:
             comment: <value of string>
-            crl:
-              - <value of string>
+            crl: <value of string>
             name: <value of string>
 
 
@@ -110,6 +107,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

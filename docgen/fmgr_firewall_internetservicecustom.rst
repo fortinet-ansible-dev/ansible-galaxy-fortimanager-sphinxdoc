@@ -44,31 +44,29 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_internetservicecustom</span> - Configure custom Internet Services. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">disable-entry</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - Disable entry ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip-range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">end-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">start-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">end-ip</span> - End IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Disable entry range ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">start-ip</span> - Start IP address. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">protocol</span> - Integer value for the protocol type as defined by IANA (0 - 255). <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">entry</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dst</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dst</span> - Destination address or address group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Entry ID(1-255). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">port-range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">end-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">start-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">end-port</span> - Integer value for ending TCP/UDP/SCTP destination port in range (1 to 65535). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - Custom entry port range ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">start-port</span> - Integer value for starting TCP/UDP/SCTP destination port in range (1 to 65535). <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">protocol</span> - Integer value for the protocol type as defined by IANA (0 - 255). <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">master-service-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">master-service-id</span> - Internet Service ID in the Internet Service database. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Internet Service name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -121,8 +119,7 @@ Examples
                         end-ip: <value of string>
                         id: <value of integer>
                         start-ip: <value of string>
-                  port:
-                    - <value of integer>
+                  port: <value of integer>
                   protocol: <value of integer>
             entry:
               -
@@ -152,6 +149,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

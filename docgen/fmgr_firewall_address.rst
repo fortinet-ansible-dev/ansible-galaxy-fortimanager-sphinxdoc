@@ -44,12 +44,12 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_address</span> - Configure IPv4 addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">allow-routing</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">associated-interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">cache-ttl</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">allow-routing</span> - Enable/disable use of this address in the static route configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">associated-interface</span> - Network interface associated with address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cache-ttl</span> - Defines the minimal TTL of individual IP addresses in FQDN cache measured in seconds. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">country</span> - IP addresses associated to a specific country. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -86,35 +86,33 @@ Parameters
  <li><span class="li-head">wildcard</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wildcard-fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">end-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">epg-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">end-ip</span> - Final IP address (inclusive) in the range for the address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">epg-name</span> - Endpoint group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">filter</span> - Match criteria filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fqdn</span> - Fully Qualified Domain Name address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IP. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">obj-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">organization</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">policy-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">sdn</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack]</span> </li>
- <li><span class="li-head">sdn-tag</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">start-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">subnet</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">subnet-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">obj-id</span> - Object ID for NSX. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">organization</span> - Organization domain name (Syntax: organization/domain). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">policy-group</span> - Policy group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sdn</span> - SDN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack]</span> </li>
+ <li><span class="li-head">sdn-tag</span> - SDN Tag. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">start-ip</span> - First IP address (inclusive) in the range for the address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subnet</span> - IP address and subnet mask of address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subnet-name</span> - Subnet name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Tagging entry name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
- </ul>
- <li><span class="li-head">tenant</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, url, wildcard-fqdn, nsx, aws, dynamic, interface-subnet, mac]</span> </li>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">wildcard</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">wildcard-fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tenant</span> - Tenant. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Type of address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, url, wildcard-fqdn, nsx, aws, dynamic, interface-subnet, mac]</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">visibility</span> - Enable/disable address visibility in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wildcard</span> - IP address and wildcard netmask. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">wildcard-fqdn</span> - Fully Qualified Domain Name with wildcard characters. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -220,8 +218,7 @@ Examples
               -
                   category: <value of string>
                   name: <value of string>
-                  tags:
-                    - <value of string>
+                  tags: <value of string>
             tenant: <value of string>
             type: <value in [ipmask, iprange, fqdn, ...]>
             uuid: <value of string>
@@ -244,6 +241,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

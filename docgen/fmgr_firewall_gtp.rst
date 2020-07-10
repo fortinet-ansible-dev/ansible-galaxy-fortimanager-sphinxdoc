@@ -44,135 +44,123 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_gtp</span> - Configure GTP. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">addr-notify</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">addr-notify</span> - overbilling notify address <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">apn</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">apnmember</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">selection-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ms, net, vrf]</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">selection-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ms, net, vrf]</span> </li>
  </ul>
- </ul>
- <li><span class="li-head">apn-filter</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">authorized-ggsns</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">authorized-sgsns</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">context-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">control-plane-message-rate-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">default-apn-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">default-imsi-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">default-ip-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">default-noip-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">default-policy-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">denied-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">echo-request-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">extension-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">forwarded-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">global-tunnel-limit</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">gtp-in-gtp</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">gtpu-denied-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">gtpu-forwarded-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">gtpu-log-freq</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">half-close-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">half-open-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">handover-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">apn-filter</span> - apn filter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authorized-ggsns</span> - Authorized GGSN group <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">authorized-sgsns</span> - Authorized SGSN group <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">context-id</span> - Overbilling context. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">control-plane-message-rate-limit</span> - control plane message rate limit <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">default-apn-action</span> - default apn action <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">default-imsi-action</span> - default imsi action <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">default-ip-action</span> - default action for encapsulated IP traffic <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">default-noip-action</span> - default action for encapsulated non-IP traffic <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">default-policy-action</span> - default advanced policy action <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">denied-log</span> - log denied <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">echo-request-interval</span> - echo request interval (in seconds) <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">extension-log</span> - log in extension format <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">forwarded-log</span> - log forwarded <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">global-tunnel-limit</span> - Global tunnel limit. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">gtp-in-gtp</span> - gtp in gtp <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">gtpu-denied-log</span> - Enable/disable logging of denied GTP-U packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">gtpu-forwarded-log</span> - Enable/disable logging of forwarded GTP-U packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">gtpu-log-freq</span> - Logging of frequency of GTP-U packets. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">half-close-timeout</span> - Half-close tunnel timeout (in seconds). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">half-open-timeout</span> - Half-open tunnel timeout (in seconds). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">handover-group</span> - Handover SGSN group <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ie-remove-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">remove-ies</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [apn-restriction, rat-type, rai, uli, imei]</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">remove-ies</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [apn-restriction, rat-type, rai, uli, imei]</span> </li>
+ <li><span class="li-head">sgsn-addr</span> - SGSN address name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">sgsn-addr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">ie-remover</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ie-white-list-v0v1</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ie-white-list-v2</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ie-remover</span> - IE removal policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ie-white-list-v0v1</span> - IE white list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ie-white-list-v2</span> - IE white list. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">imsi</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">apnmember</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mcc-mnc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">msisdn-prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">selection-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ms, net, vrf]</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mcc-mnc</span> - MCC MNC. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msisdn-prefix</span> - MSISDN prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">selection-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ms, net, vrf]</span> </li>
  </ul>
- </ul>
- <li><span class="li-head">imsi-filter</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">interface-notify</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">invalid-reserved-field</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">invalid-sgsns-to-log</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip-filter</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">imsi-filter</span> - imsi filter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface-notify</span> - overbilling interface <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">invalid-reserved-field</span> - Invalid reserved field in GTP header <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">invalid-sgsns-to-log</span> - Invalid SGSN group to be logged <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip-filter</span> - IP filter for encapsulted traffic <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ip-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">dstaddr</span> - Destination address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">srcaddr</span> - Source address name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">log-freq</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">log-gtpu-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">log-imsi-prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">log-msisdn-prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-message-length</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">message-filter-v0v1</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">message-filter-v2</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">min-message-length</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">miss-must-ie</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">monitor-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vdom]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">noip-filter</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-freq</span> - Logging of frequency of GTP-C packets. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log-gtpu-limit</span> - the user data log limit (0-512 bytes) <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log-imsi-prefix</span> - IMSI prefix for selective logging. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-msisdn-prefix</span> - the msisdn prefix for selective logging <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-message-length</span> - max message length <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">message-filter-v0v1</span> - Message filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message-filter-v2</span> - Message filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">min-message-length</span> - min message length <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">miss-must-ie</span> - Missing mandatory information element <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">monitor-mode</span> - GTP monitor mode <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vdom]</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">noip-filter</span> - non-IP filter for encapsulted traffic <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">noip-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">end</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">start</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [etsi, ietf]</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">end</span> - End of protocol range (0 - 255). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">start</span> - Start of protocol range (0 - 255). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">type</span> - Protocol field type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [etsi, ietf]</span> </li>
  </ul>
- <li><span class="li-head">out-of-state-ie</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">out-of-state-message</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">out-of-state-ie</span> - Out of state information element. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">out-of-state-message</span> - Out of state GTP message <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
  <li><span class="li-head">per-apn-shaper</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">apn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rate-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">version</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">apn</span> - APN name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rate-limit</span> - Rate limit (packets/s) for create PDP context request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">version</span> - GTP version number: 0 or 1. <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">apn-sel-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ms, net, vrf]</span> </li>
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">apn-sel-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ms, net, vrf]</span> </li>
+ <li><span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">imei</span> - IMEI(SV) pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">imsi</span> - IMSI prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-apn-restriction</span> - Maximum APN restriction value. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [all, public-1, public-2, private-1, private-2]</span> </li>
+ <li><span class="li-head">messages</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [create-req, create-res, update-req, update-res]</span> </li>
+ <li><span class="li-head">msisdn</span> - MSISDN prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rai</span> - RAI pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot]</span> </li>
+ <li><span class="li-head">uli</span> - ULI pattern. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">apnmember</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">imei</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">imsi</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-apn-restriction</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [all, public-1, public-2, private-1, private-2]</span> </li>
- <li><span class="li-head">messages</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [create-req, create-res, update-req, update-res]</span> </li>
- </ul>
- <li><span class="li-head">msisdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rai</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot]</span> </li>
- </ul>
- <li><span class="li-head">uli</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">policy-filter</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">port-notify</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">rate-limit-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [per-profile, per-stream, per-apn]</span> </li>
- <li><span class="li-head">rate-limited-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">rate-sampling-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">remove-if-echo-expires</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">remove-if-recovery-differ</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">reserved-ie</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">send-delete-when-timeout</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">send-delete-when-timeout-v2</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spoof-src-addr</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">state-invalid-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">traffic-count-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tunnel-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">tunnel-limit-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">tunnel-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">unknown-version-action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
- <li><span class="li-head">user-plane-message-rate-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">warning-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">policy-filter</span> - Advanced policy filter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">port-notify</span> - overbilling notify port <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rate-limit-mode</span> - GTP rate limit mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [per-profile, per-stream, per-apn]</span> </li>
+ <li><span class="li-head">rate-limited-log</span> - log rate limited <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rate-sampling-interval</span> - rate sampling interval (1-3600 seconds) <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">remove-if-echo-expires</span> - remove if echo response expires <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">remove-if-recovery-differ</span> - remove upon different Recovery IE <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">reserved-ie</span> - reserved information element <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">send-delete-when-timeout</span> - send DELETE request to path endpoints when GTPv0/v1 tunnel timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">send-delete-when-timeout-v2</span> - send DELETE request to path endpoints when GTPv2 tunnel timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spoof-src-addr</span> - Spoofed source address for Mobile Station. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">state-invalid-log</span> - log state invalid <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">traffic-count-log</span> - log tunnel traffic counter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-limit</span> - tunnel limit <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tunnel-limit-log</span> - tunnel limit <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-timeout</span> - Established tunnel timeout (in seconds). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">unknown-version-action</span> - action for unknown gtp version <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
+ <li><span class="li-head">user-plane-message-rate-limit</span> - user plane message rate limit <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">warning-threshold</span> - Warning threshold for rate limiting (0 - 99 percent). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -223,7 +211,9 @@ Examples
                   apnmember: <value of string>
                   id: <value of integer>
                   selection-mode:
-                    - <value in [ms, net, vrf]>
+                    - ms
+                    - net
+                    - vrf
             apn-filter: <value in [disable, enable]>
             authorized-ggsns: <value of string>
             authorized-sgsns: <value of string>
@@ -251,7 +241,11 @@ Examples
               -
                   id: <value of integer>
                   remove-ies:
-                    - <value in [apn-restriction, rat-type, rai, ...]>
+                    - apn-restriction
+                    - rat-type
+                    - rai
+                    - uli
+                    - imei
                   sgsn-addr: <value of string>
             ie-remover: <value in [disable, enable]>
             ie-white-list-v0v1: <value of string>
@@ -264,7 +258,9 @@ Examples
                   mcc-mnc: <value of string>
                   msisdn-prefix: <value of string>
                   selection-mode:
-                    - <value in [ms, net, vrf]>
+                    - ms
+                    - net
+                    - vrf
             imsi-filter: <value in [disable, enable]>
             interface-notify: <value of string>
             invalid-reserved-field: <value in [allow, deny]>
@@ -307,18 +303,31 @@ Examples
               -
                   action: <value in [allow, deny]>
                   apn-sel-mode:
-                    - <value in [ms, net, vrf]>
+                    - ms
+                    - net
+                    - vrf
                   apnmember: <value of string>
                   id: <value of integer>
                   imei: <value of string>
                   imsi: <value of string>
                   max-apn-restriction: <value in [all, public-1, public-2, ...]>
                   messages:
-                    - <value in [create-req, create-res, update-req, ...]>
+                    - create-req
+                    - create-res
+                    - update-req
+                    - update-res
                   msisdn: <value of string>
                   rai: <value of string>
                   rat-type:
-                    - <value in [any, utran, geran, ...]>
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
                   uli: <value of string>
             policy-filter: <value in [disable, enable]>
             port-notify: <value of integer>
@@ -355,6 +364,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

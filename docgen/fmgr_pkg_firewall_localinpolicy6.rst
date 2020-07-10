@@ -45,14 +45,14 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_localinpolicy6</span> - Configure user defined IPv6 local-in policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">intf</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">policyid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">action</span> - Action performed on traffic matching the policy (default = deny). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept]</span> </li>
+ <li><span class="li-head">dstaddr</span> - Destination address object from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">intf</span> - Incoming interface name from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">policyid</span> - User defined local in policy ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">schedule</span> - Schedule object from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">service</span> - Service object from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr</span> - Source address object from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this local-in policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +121,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

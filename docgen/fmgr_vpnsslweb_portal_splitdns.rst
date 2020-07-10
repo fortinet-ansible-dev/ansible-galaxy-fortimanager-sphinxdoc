@@ -45,12 +45,12 @@ Parameters
  <li><span class="li-head">portal</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vpnsslweb_portal_splitdns</span> - Split DNS for SSL VPN. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">dns-server1</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dns-server2</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">domains</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ipv6-dns-server1</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6-dns-server2</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-server1</span> - DNS server 1. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-server2</span> - DNS server 2. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">domains</span> - Split DNS domains used for SSL-VPN clients separated by comma(,). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ipv6-dns-server1</span> - IPv6 DNS server 1. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ipv6-dns-server2</span> - IPv6 DNS server 2. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +117,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

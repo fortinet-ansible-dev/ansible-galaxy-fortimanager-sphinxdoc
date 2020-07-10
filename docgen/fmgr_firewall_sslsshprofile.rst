@@ -44,37 +44,37 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_sslsshprofile</span> - Configure SSL/SSH protocol options. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">caname</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mapi-over-https</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">rpc-over-https</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">server-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-cert-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [re-sign, replace]</span> </li>
- <li><span class="li-head">ssl-anomalies-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">caname</span> - CA certificate used by SSL Inspection. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Optional comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mapi-over-https</span> - Enable/disable inspection of MAPI over HTTPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rpc-over-https</span> - Enable/disable inspection of RPC over HTTPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">server-cert</span> - Certificate used by SSL Inspection to replace server certificate. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-cert-mode</span> - Re-sign or replace the servers certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [re-sign, replace]</span> </li>
+ <li><span class="li-head">ssl-anomalies-log</span> - Enable/disable logging SSL anomalies. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-exempt</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">address6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fortiguard-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">regex</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard-category, address, address6, wildcard-fqdn, regex]</span> </li>
- <li><span class="li-head">wildcard-fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">address</span> - IPv4 address object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">address6</span> - IPv6 address object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fortiguard-category</span> - FortiGuard category ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">regex</span> - Exempt servers by regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Type of address object (IPv4 or IPv6) or FortiGuard category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard-category, address, address6, wildcard-fqdn, regex]</span> </li>
+ <li><span class="li-head">wildcard-fqdn</span> - Exempt servers by wildcard FQDN. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">ssl-exemptions-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-exemptions-log</span> - Enable/disable logging SSL exemptions. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-server</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">ftps-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">https-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">imaps-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">pop3s-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">smtps-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">ssl-other-client-cert-request</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ftps-client-cert-request</span> - Action based on client certificate request during the FTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">https-client-cert-request</span> - Action based on client certificate request during the HTTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">id</span> - SSL server ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">imaps-client-cert-request</span> - Action based on client certificate request during the IMAPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the SSL server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pop3s-client-cert-request</span> - Action based on client certificate request during the POP3S handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">smtps-client-cert-request</span> - Action based on client certificate request during the SMTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ssl-other-client-cert-request</span> - Action based on client certificate request during an SSL protocol handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
  </ul>
- <li><span class="li-head">untrusted-caname</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">use-ssl-server</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">whitelist</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">untrusted-caname</span> - Untrusted CA certificate used by SSL Inspection. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">use-ssl-server</span> - Enable/disable the use of SSL server table for SSL offloading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">whitelist</span> - Enable/disable exempting servers by FortiGuard whitelist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -165,6 +165,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

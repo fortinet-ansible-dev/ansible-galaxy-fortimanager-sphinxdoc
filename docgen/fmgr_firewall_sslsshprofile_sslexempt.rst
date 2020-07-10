@@ -45,13 +45,13 @@ Parameters
  <li><span class="li-head">ssl-ssh-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_sslsshprofile_sslexempt</span> - Servers to exempt from SSL inspection. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">address6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fortiguard-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">regex</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard-category, address, address6, wildcard-fqdn, regex]</span> </li>
- <li><span class="li-head">wildcard-fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">address</span> - IPv4 address object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">address6</span> - IPv6 address object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fortiguard-category</span> - FortiGuard category ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">regex</span> - Exempt servers by regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Type of address object (IPv4 or IPv6) or FortiGuard category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard-category, address, address6, wildcard-fqdn, regex]</span> </li>
+ <li><span class="li-head">wildcard-fqdn</span> - Exempt servers by wildcard FQDN. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -119,6 +119,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

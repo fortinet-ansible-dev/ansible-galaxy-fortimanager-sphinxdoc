@@ -44,23 +44,21 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">spamfilter_profile</span> - Configure AntiSpam profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">external</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">flow-based</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bannedword, spamemailbwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamipbwl, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambwl]</span> </li>
- </ul>
- <li><span class="li-head">replacemsg-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-bwl-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-bword-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-bword-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">spam-filtering</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spam-iptrust-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spam-log-fortiguard-response</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spam-mheader-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">spam-rbl-table</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">external</span> - Enable/disable external Email inspection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">flow-based</span> - Enable/disable flow-based spam filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [bannedword, spamemailbwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamipbwl, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambwl]</span> </li>
+ <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-bwl-table</span> - Anti-spam black/white list table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-bword-table</span> - Anti-spam banned word table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-bword-threshold</span> - Spam banned word threshold. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">spam-filtering</span> - Enable/disable spam filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spam-iptrust-table</span> - Anti-spam IP trust table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-log</span> - Enable/disable spam logging for email filtering. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spam-log-fortiguard-response</span> - Enable/disable logging FortiGuard spam response. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spam-mheader-table</span> - Anti-spam MIME header table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">spam-rbl-table</span> - Anti-spam DNSBL table ID. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -109,7 +107,19 @@ Examples
             flow-based: <value in [disable, enable]>
             name: <value of string>
             options:
-              - <value in [bannedword, spamemailbwl, spamfsip, ...]>
+              - bannedword
+              - spamemailbwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamipbwl
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - spambwl
             replacemsg-group: <value of string>
             spam-bwl-table: <value of string>
             spam-bword-table: <value of string>
@@ -136,6 +146,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

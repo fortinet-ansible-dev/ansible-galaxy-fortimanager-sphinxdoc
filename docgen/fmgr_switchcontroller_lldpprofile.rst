@@ -44,33 +44,27 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_lldpprofile</span> - Configure FortiSwitch LLDP profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">802.1-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [port-vlan-id]</span> </li>
- </ul>
- <li><span class="li-head">802.3-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [max-frame-size]</span> </li>
- </ul>
- <li><span class="li-head">auto-isl</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">auto-isl-hello-timer</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">auto-isl-port-group</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">auto-isl-receive-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">802.1-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [port-vlan-id]</span> </li>
+ <li><span class="li-head">802.3-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [max-frame-size]</span> </li>
+ <li><span class="li-head">auto-isl</span> - Enable/disable auto inter-switch LAG. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auto-isl-hello-timer</span> - Auto inter-switch LAG hello timer duration (1 - 30 sec, default = 3). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">auto-isl-port-group</span> - Auto inter-switch LAG port group ID (0 - 9). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">auto-isl-receive-timeout</span> - Auto inter-switch LAG timeout if no response is received (3 - 90 sec, default = 9). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">custom-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">information-string</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">oui</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">subtype</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">information-string</span> - Organizationally defined information string (0 - 507 hexadecimal bytes). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - TLV name (not sent). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">oui</span> - Organizationally unique identifier (OUI), a 3-byte hexadecimal number, for this TLV. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subtype</span> - Organizationally defined subtype (0 - 255). <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">med-network-policy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dscp</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">vlan</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dscp</span> - Advertised Differentiated Services Code Point (DSCP) value, a packet header value indicating the level of service requested for traffic, such as high priority or best effort delivery. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Policy type name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priority</span> - Advertised Layer 2 priority (0 - 7; from lowest to highest priority). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Enable or disable this TLV. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vlan</span> - ID of VLAN to advertise, if configured on port (0 - 4094, 0 = priority tag). <span class="li-normal">type: int</span> </li>
  </ul>
- <li><span class="li-head">med-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [inventory-management, network-policy, power-management, location-identification]</span> </li>
- </ul>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">med-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [inventory-management, network-policy, power-management, location-identification]</span> </li>
+ <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -115,9 +109,9 @@ Examples
          state: <value in [present, absent]>
          switchcontroller_lldpprofile:
             802.1-tlvs:
-              - <value in [port-vlan-id]>
+              - port-vlan-id
             802.3-tlvs:
-              - <value in [max-frame-size]>
+              - max-frame-size
             auto-isl: <value in [disable, enable]>
             auto-isl-hello-timer: <value of integer>
             auto-isl-port-group: <value of integer>
@@ -136,7 +130,10 @@ Examples
                   status: <value in [disable, enable]>
                   vlan: <value of integer>
             med-tlvs:
-              - <value in [inventory-management, network-policy, power-management, ...]>
+              - inventory-management
+              - network-policy
+              - power-management
+              - location-identification
             name: <value of string>
 
 
@@ -154,6 +151,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

@@ -44,35 +44,31 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_service_custom</span> - Configure custom services. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">app-service-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, app-id, app-category]</span> </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- </ul>
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">check-reset-range</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, default, strict]</span> </li>
- <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">app-service-type</span> - Application service type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, app-id, app-category]</span> </li>
+ <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">category</span> - Service category. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">check-reset-range</span> - Configure the type of ICMP error message verification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, default, strict]</span> </li>
+ <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">helper</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, auto, ftp, tftp, ras, h323, tns, mms, sip, pptp, rtsp, dns-udp, dns-tcp, pmap, rsh, dcerpc, mgcp, gtp-c, gtp-u, gtp-b]</span> </li>
- <li><span class="li-head">icmpcode</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">icmptype</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">iprange</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ICMP, IP, TCP/UDP/SCTP, ICMP6, HTTP, FTP, CONNECT, SOCKS, ALL, SOCKS-TCP, SOCKS-UDP]</span> </li>
- <li><span class="li-head">protocol-number</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">proxy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">sctp-portrange</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">session-ttl</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">tcp-halfclose-timer</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">tcp-halfopen-timer</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">tcp-portrange</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">tcp-timewait-timer</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">udp-idle-timer</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">udp-portrange</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">fqdn</span> - Fully qualified domain name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">helper</span> - Helper name. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, auto, ftp, tftp, ras, h323, tns, mms, sip, pptp, rtsp, dns-udp, dns-tcp, pmap, rsh, dcerpc, mgcp, gtp-c, gtp-u, gtp-b]</span> </li>
+ <li><span class="li-head">icmpcode</span> - ICMP code. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">icmptype</span> - ICMP type. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">iprange</span> - Start and end of the IP range associated with service. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Custom service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">protocol</span> - Protocol type based on IANA numbers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ICMP, IP, TCP/UDP/SCTP, ICMP6, HTTP, FTP, CONNECT, SOCKS, ALL, SOCKS-TCP, SOCKS-UDP]</span> </li>
+ <li><span class="li-head">protocol-number</span> - IP protocol number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">proxy</span> - Enable/disable web proxy service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sctp-portrange</span> - Multiple SCTP port ranges. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">session-ttl</span> - Session TTL (300 - 604800, 0 = default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-halfclose-timer</span> - Wait time to close a TCP session waiting for an unanswered FIN packet (1 - 86400 sec, 0 = default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-halfopen-timer</span> - Wait time to close a TCP session waiting for an unanswered open session packet (1 - 86400 sec, 0 = default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-portrange</span> - Multiple TCP port ranges. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tcp-timewait-timer</span> - Set the length of the TCP TIME-WAIT state in seconds (1 - 300 sec, 0 = default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">udp-idle-timer</span> - UDP half close timeout (0 - 86400 sec, 0 = default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">udp-portrange</span> - Multiple UDP port ranges. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">visibility</span> - Enable/disable the visibility of the service on the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -116,11 +112,9 @@ Examples
          adom: <your own value>
          state: <value in [present, absent]>
          firewall_service_custom:
-            app-category:
-              - <value of integer>
+            app-category: <value of integer>
             app-service-type: <value in [disable, app-id, app-category]>
-            application:
-              - <value of integer>
+            application: <value of integer>
             category: <value of string>
             check-reset-range: <value in [disable, default, strict]>
             color: <value of integer>
@@ -159,6 +153,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 

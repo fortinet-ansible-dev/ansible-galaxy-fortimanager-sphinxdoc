@@ -46,20 +46,18 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">_gui_meta</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">adgrp</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">default-domain</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">ldap-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">logon-history</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">{no-name}</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- </ul>
- <li><span class="li-head">polling-frequency</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">default-domain</span> - Default domain managed by this Active Directory server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Active Directory server ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ldap-server</span> - LDAP server name used in LDAP connection strings. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">logon-history</span> - Number of hours of logon history to keep, 0 means keep all history. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">polling-frequency</span> - Polling frequency (every 1 to 30 seconds). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port</span> - Port to communicate with this Active Directory server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">server</span> - Host name or IP address of the Active Directory server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable polling for the status of this Active Directory server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">user</span> - User name required to log into this Active Directory server. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -111,8 +109,7 @@ Examples
             id: <value of integer>
             ldap-server: <value of string>
             logon-history: <value of integer>
-            password:
-              - <value of string>
+            password: <value of string>
             polling-frequency: <value of integer>
             port: <value of integer>
             server: <value of string>
@@ -134,6 +131,7 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
  <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
  </ul>
 
 
