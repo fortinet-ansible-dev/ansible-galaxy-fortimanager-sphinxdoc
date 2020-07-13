@@ -26,3 +26,4 @@ The FortiManager Ansible Collection provides Ansible modules for configuring For
    modules.rst
    fact.rst
    daemon_modules.rst
+   generic.rst
