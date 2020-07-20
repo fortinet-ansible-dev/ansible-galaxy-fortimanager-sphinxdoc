@@ -41,6 +41,16 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">dvmdb_script_execute</span> - Run script. <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self">
+ <li><span class="li-head">adom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">package</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">script</span> - Script name. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
 
 
@@ -81,6 +91,14 @@ Examples
          rc_succeeded: [0, -2, -3, ...]
          rc_failed: [-2, -3, ...]
          adom: <your own value>
+         dvmdb_script_execute:
+            adom: <value of string>
+            package: <value of string>
+            scope:
+              -
+                  name: <value of string>
+                  vdom: <value of string>
+            script: <value of string>
 
 
 

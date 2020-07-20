@@ -42,6 +42,10 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">device_name</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">dvmdb_device_replace_sn</span> - Replace devices serial number with new value. <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self">
+ <li><span class="li-head">sn</span> - New serial number. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
 
 
@@ -83,6 +87,8 @@ Examples
          rc_failed: [-2, -3, ...]
          adom: <your own value>
          device_name: <your own value>
+         dvmdb_device_replace_sn:
+            sn: <value of string>
 
 
 
