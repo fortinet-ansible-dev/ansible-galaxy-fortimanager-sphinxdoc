@@ -20,6 +20,13 @@ The FortiManager Ansible Collection provides Ansible modules for configuring For
 
 .. toctree::
    :glob:
+   :caption: Modules Digest
+   :maxdepth: 1
+
+   digest.rst
+
+.. toctree::
+   :glob:
    :caption: Modules Index
    :maxdepth: 1
 

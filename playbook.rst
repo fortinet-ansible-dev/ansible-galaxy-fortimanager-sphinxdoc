@@ -6,8 +6,8 @@ This document explains how to run your first FortiManager Ansible playbook.
 
 --------------
 
-With FortiOS Galaxy collection, you are always recommended to run
-FortiOS module in ``httpapi`` manner. The first step is to prepare your
+With FortiManager Galaxy collection, you are always recommended to run
+FortiManager module in ``httpapi`` manner. The first step is to prepare your
 host inventory with which you can use ``ansible-vault`` to encrypt or
 decrypt your secrets for the sake of confidentiality.
 
@@ -31,8 +31,7 @@ Write the playbook
 An Example
 ----------
 
-in the example: ``test.yml`` we are going to modify the fortigate
-device’s hostname:
+in the example: ``test.yml`` we are going to create a script on FortiManager:
 
 ::
 
