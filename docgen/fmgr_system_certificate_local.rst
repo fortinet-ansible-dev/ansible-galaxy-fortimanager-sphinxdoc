@@ -36,6 +36,7 @@ Parameters
 .. raw:: html
 
  <ul>
+ <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiManager API structure, module continues to execute without validating parameters <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
@@ -85,6 +86,7 @@ Examples
    tasks:
     - name: Local keys and certificates.
       fmgr_system_certificate_local:
+         bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
          rc_succeeded: [0, -2, -3, ...]

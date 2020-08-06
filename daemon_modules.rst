@@ -3,7 +3,7 @@ Daemon Modules
 
 |
 
-The modules in this category are invoking ``exec/move/clone`` methods to call FortiManager managed procedures.
+The modules in this category are invoking ``exec`` methods to call FortiManager managed procedures.
 
 .. toctree::
    :glob: 
