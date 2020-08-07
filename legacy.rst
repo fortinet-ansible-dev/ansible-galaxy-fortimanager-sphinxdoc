@@ -20,11 +20,11 @@ module will fail and an error message will remind you:
         "rc": 1
     }
 
-As suggested, there are two ways to resolve this issue. One is to
-install a legacy FortiManager collection:
-``ansible-galaxy collection install -f fortinet.fortimanager:1.0.4``,
-another is to align the playbook with fortmat of newer FortiManager
-collections.
+There are two ways to resolve this issue:
+
+ - Continue to use “legacy” playbook format, with a FortiManager Collection <= 1.0.4
+ - Convert playbooks to FortiManager Collection 1.0.4+ schema with the newest version of the collection.
+
 
 Tweak The Playbook
 ^^^^^^^^^^^^^^^^^^
