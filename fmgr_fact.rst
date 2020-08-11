@@ -43,6 +43,9 @@ Parameters
 
  <li><span class="li-head">facts</span> - Gathering fortimanager facts. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
+ <li><span class="li-head">filters</span> - Item filtering expression list: only items matching all the filters are returned <span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
+ <li><span class="li-head">fields</span> - Field filtering expression list: only fields matching all the filters are returned for an item  <span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
+ <li><span class="li-head">sortings</span> - Sorting rules list: items are returned in ascending(1) or descending(-1) order of fields in the list<span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">selector</span> - selector of the retrieved fortimanager facts <span class="li-normal">type: str</span> <span class="li-required">choices:</span></li>
     <ul class="ul-self">
         <li><span class="li-normal">dvmdb_adom</span> </li>
@@ -3279,7 +3282,25 @@ Examples
             selector: 'system_interface'
             params:
                 interface: 'port1'
-
+    - name: fetch urlfilter with name urlfilter4
+      fmgr_fact:
+        facts:
+          selector: 'webfilter_urlfilter'
+          params:
+            adom: 'root'
+            urlfilter: ''
+          filters:
+            -
+              - 'name'
+              - '=='
+              - 'urlfilter4'
+          fields:
+            - 'id'
+            - 'name'
+            - 'comment'
+          sortings:
+            - 'id': 1
+              'name': -1
 
 Return Values
 -------------
