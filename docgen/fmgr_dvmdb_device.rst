@@ -93,7 +93,7 @@ Parameters
  <li><span class="li-head">logdisk_size</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">longitude</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">maxvdom</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
- <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">mgmt_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">mgmt_if</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mgmt_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span> </li>
@@ -230,7 +230,7 @@ Examples
             logdisk_size: <value of integer>
             longitude: <value of string>
             maxvdom: <value of integer>
-            meta fields: <value of string>
+            meta fields: <value of dict>
             mgmt_id: <value of integer>
             mgmt_if: <value of string>
             mgmt_mode: <value in [unreg, fmg, faz, ...]>

@@ -51,7 +51,7 @@ Parameters
  <li><span class="li-head">log_disk_quota_alert_thres</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 90</span> </li>
  <li><span class="li-head">log_disk_quota_split_ratio</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 70</span> </li>
  <li><span class="li-head">log_file_retention_hours</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 8760</span> </li>
- <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">mig_mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 2</span> </li>
  <li><span class="li-head">mig_os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
  <li><span class="li-head">mode</span> - ems - (Value no longer used as of 4. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ems, gms, provider]</span> </li>
@@ -122,7 +122,7 @@ Examples
             log_disk_quota_alert_thres: <value of integer>
             log_disk_quota_split_ratio: <value of integer>
             log_file_retention_hours: <value of integer>
-            meta fields: <value of string>
+            meta fields: <value of dict>
             mig_mr: <value of integer>
             mig_os_ver: <value in [unknown, 0.0, 1.0, ...]>
             mode: <value in [ems, gms, provider]>

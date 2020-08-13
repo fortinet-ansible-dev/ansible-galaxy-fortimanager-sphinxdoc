@@ -46,7 +46,7 @@ Parameters
  <li><span class="li-head">dvmdb_group</span> - Device group table. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span> </li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, default, auto]</span> </li>
@@ -95,7 +95,7 @@ Examples
          state: <value in [present, absent]>
          dvmdb_group:
             desc: <value of string>
-            meta fields: <value of string>
+            meta fields: <value of dict>
             name: <value of string>
             os_type: <value in [unknown, fos, fsw, ...]>
             type: <value in [normal, default, auto]>

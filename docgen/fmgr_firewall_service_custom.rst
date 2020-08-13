@@ -51,7 +51,7 @@ Parameters
  <li><span class="li-head">category</span> - Service category. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">check-reset-range</span> - Configure the type of ICMP error message verification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, default, strict]</span> </li>
  <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">fqdn</span> - Fully qualified domain name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">helper</span> - Helper name. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, auto, ftp, tftp, ras, h323, tns, mms, sip, pptp, rtsp, dns-udp, dns-tcp, pmap, rsh, dcerpc, mgcp, gtp-c, gtp-u, gtp-b]</span> </li>
  <li><span class="li-head">icmpcode</span> - ICMP code. <span class="li-normal">type: int</span> </li>
@@ -120,7 +120,7 @@ Examples
             category: <value of string>
             check-reset-range: <value in [disable, default, strict]>
             color: <value of integer>
-            comment: <value of string>
+            comment: <value of dict>
             fqdn: <value of string>
             helper: <value in [disable, auto, ftp, ...]>
             icmpcode: <value of integer>

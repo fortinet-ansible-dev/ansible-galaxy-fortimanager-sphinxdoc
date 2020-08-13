@@ -47,7 +47,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">allow-routing</span> - Enable/disable use of this group in the static route configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -55,7 +55,7 @@ Parameters
  </ul>
  <li><span class="li-head">allow-routing</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">exclude</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">exclude-member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -118,7 +118,7 @@ Examples
          firewall_addrgrp:
             allow-routing: <value in [disable, enable]>
             color: <value of integer>
-            comment: <value of string>
+            comment: <value of dict>
             dynamic_mapping:
               -
                   _scope:
@@ -127,7 +127,7 @@ Examples
                         vdom: <value of string>
                   allow-routing: <value in [disable, enable]>
                   color: <value of integer>
-                  comment: <value of string>
+                  comment: <value of dict>
                   exclude: <value in [disable, enable]>
                   exclude-member: <value of string>
                   member: <value of string>

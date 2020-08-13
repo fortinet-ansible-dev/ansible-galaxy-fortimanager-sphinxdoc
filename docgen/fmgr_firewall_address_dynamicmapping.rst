@@ -54,7 +54,7 @@ Parameters
  <li><span class="li-head">associated-interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">cache-ttl</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">end-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">end-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -133,7 +133,7 @@ Examples
             associated-interface: <value of string>
             cache-ttl: <value of integer>
             color: <value of integer>
-            comment: <value of string>
+            comment: <value of dict>
             country: <value of string>
             end-ip: <value of string>
             end-mac: <value of string>
