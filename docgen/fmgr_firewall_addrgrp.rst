@@ -58,12 +58,12 @@ Parameters
  <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">exclude</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">exclude-member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">member</span> - Address objects contained within the group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  <li><span class="li-head">name</span> - Address group name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
@@ -130,11 +130,11 @@ Examples
                   comment: <value of dict>
                   exclude: <value in [disable, enable]>
                   exclude-member: <value of string>
-                  member: <value of string>
+                  member: <value of list>
                   tags: <value of string>
                   uuid: <value of string>
                   visibility: <value in [disable, enable]>
-            member: <value of string>
+            member: <value of list>
             name: <value of string>
             tagging:
               -

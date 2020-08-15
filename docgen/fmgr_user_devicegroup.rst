@@ -54,9 +54,9 @@ Parameters
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  </ul>
- <li><span class="li-head">member</span> - Device group member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  <li><span class="li-head">name</span> - Device group name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tagging</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">category</span> - Tag category. <span class="li-normal">type: str</span> </li>
@@ -117,8 +117,8 @@ Examples
                         name: <value of string>
                         vdom: <value of string>
                   comment: <value of string>
-                  member: <value of string>
-            member: <value of string>
+                  member: <value of list>
+            member: <value of list>
             name: <value of string>
             tagging:
               -
