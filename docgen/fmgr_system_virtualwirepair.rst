@@ -45,7 +45,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_virtualwirepair</span> - Configure virtual wire pairs. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">member</span> - Interfaces belong to the virtual-wire-pair. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  <li><span class="li-head">name</span> - Virtual-wire-pair name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vlan-filter</span> - Set VLAN filters. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wildcard-vlan</span> - Enable/disable wildcard VLAN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -93,7 +93,7 @@ Examples
          adom: <your own value>
          state: <value in [present, absent]>
          system_virtualwirepair:
-            member: <value of string>
+            member: <value of list>
             name: <value of string>
             vlan-filter: <value of string>
             wildcard-vlan: <value in [disable, enable]>
