@@ -1,11 +1,11 @@
-:source: fmgr_dvmdb_adom_objmember.py
+:source: fmgr_pkg_firewall_policy_sectionvalue.py
 
 :orphan:
 
-.. _fmgr_dvmdb_adom_objmember:
+.. _fmgr_pkg_firewall_policy_sectionvalue:
 
-fmgr_dvmdb_adom_objmember -- ADOM table, most attributes are read-only and can only be changed internally.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_pkg_firewall_policy_sectionvalue -- Configure IPv4 policies.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -42,11 +42,10 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">dvmdb_adom_objmember</span> - ADOM table, most attributes are read-only and can only be changed internally. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">pkg_firewall_policy_sectionvalue</span> - Configure IPv4 policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
+ <li><span class="li-head">attr</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [label, global-label]</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -81,18 +80,17 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: ADOM table, most attributes are read-only and can only be changed internally.
-      fmgr_dvmdb_adom_objmember:
+    - name: Configure IPv4 policies.
+      fmgr_pkg_firewall_policy_sectionvalue:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
          rc_succeeded: [0, -2, -3, ...]
          rc_failed: [-2, -3, ...]
-         adom: <your own value>
          state: <value in [present, absent]>
-         dvmdb_adom_objmember:
+         pkg_firewall_policy_sectionvalue:
+            attr: <value in [label, global-label]>
             name: <value of string>
-            vdom: <value of string>
 
 
 

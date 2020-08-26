@@ -1,11 +1,11 @@
-:source: fmgr_dvmdb_group_objmember.py
+:source: fmgr_dvmdb_group_objectmember.py
 
 :orphan:
 
-.. _fmgr_dvmdb_group_objmember:
+.. _fmgr_dvmdb_group_objectmember:
 
-fmgr_dvmdb_group_objmember -- Device group table.
-+++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_dvmdb_group_objectmember -- Device group table.
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -44,7 +44,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">group</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">dvmdb_group_objmember</span> - Device group table. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">dvmdb_group_objectmember</span> - Device group table. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -83,7 +83,7 @@ Examples
       ansible_httpapi_port: 443
    tasks:
     - name: Device group table.
-      fmgr_dvmdb_group_objmember:
+      fmgr_dvmdb_group_objectmember:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
@@ -92,7 +92,7 @@ Examples
          adom: <your own value>
          group: <your own value>
          state: <value in [present, absent]>
-         dvmdb_group_objmember:
+         dvmdb_group_objectmember:
             name: <value of string>
             vdom: <value of string>
 

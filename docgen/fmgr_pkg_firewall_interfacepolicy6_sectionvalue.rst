@@ -1,11 +1,11 @@
-:source: fmgr_dvmdb_script_objmember.py
+:source: fmgr_pkg_firewall_interfacepolicy6_sectionvalue.py
 
 :orphan:
 
-.. _fmgr_dvmdb_script_objmember:
+.. _fmgr_pkg_firewall_interfacepolicy6_sectionvalue:
 
-fmgr_dvmdb_script_objmember -- Script table.
-++++++++++++++++++++++++++++++++++++++++++++
+fmgr_pkg_firewall_interfacepolicy6_sectionvalue -- Configure IPv6 interface policies.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -42,12 +42,10 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">script</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">dvmdb_script_objmember</span> - Script table. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">pkg_firewall_interfacepolicy6_sectionvalue</span> - Configure IPv6 interface policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
+ <li><span class="li-head">attr</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [label, global-label]</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -82,19 +80,17 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Script table.
-      fmgr_dvmdb_script_objmember:
+    - name: Configure IPv6 interface policies.
+      fmgr_pkg_firewall_interfacepolicy6_sectionvalue:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
          workspace_locking_timeout: 300
          rc_succeeded: [0, -2, -3, ...]
          rc_failed: [-2, -3, ...]
-         adom: <your own value>
-         script: <your own value>
          state: <value in [present, absent]>
-         dvmdb_script_objmember:
+         pkg_firewall_interfacepolicy6_sectionvalue:
+            attr: <value in [label, global-label]>
             name: <value of string>
-            vdom: <value of string>
 
 
 
