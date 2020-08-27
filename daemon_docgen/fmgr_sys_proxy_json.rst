@@ -48,7 +48,7 @@ Parameters
  <ul class="ul-self">
  </ul>
  <li><span class="li-head">resource</span> - URL on the remote device to be accessed. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  </ul>
  </ul>
 
@@ -93,7 +93,7 @@ Examples
          sys_proxy_json:
             action: <value in [get, post, put, ...]>
             payload:            resource: <value of string>
-            target: <value of string>
+            target: <value of list>
 
 
 
