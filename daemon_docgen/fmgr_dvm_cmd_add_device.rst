@@ -52,7 +52,7 @@ Parameters
  <li><span class="li-head">device action</span> - Specify add device operations, or leave blank to add real device: <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">faz.quota</span> - <i>available for all operations</i>. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip</span> - <i>add real device only</i>. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">meta fields</span> - <i>add real and model device</i>. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">mgmt_mode</span> - <i>add real and model device</i>. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span> </li>
  <li><span class="li-head">mr</span> - <i>add model device only</i>. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - <i>required for all operations</i>. <span class="li-normal">type: str</span> </li>
@@ -117,7 +117,7 @@ Examples
                device action: <value of string>
                faz.quota: <value of integer>
                ip: <value of string>
-               meta fields: <value of string>
+               meta fields: <value of dict>
                mgmt_mode: <value in [unreg, fmg, faz, ...]>
                mr: <value of integer>
                name: <value of string>
