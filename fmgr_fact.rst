@@ -48,6 +48,12 @@ Parameters
  <li><span class="li-head">sortings</span> - Sorting rules list: items are returned in ascending(1) or descending(-1) order of fields in the list<span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">option</span> - Option list: see more details in FNDN API documents.<span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">selector</span> - selector of the retrieved fortimanager facts <span class="li-normal">type: str</span> <span class="li-required">choices:</span></li>
+    <li style="list-style: none;"><section class="accordion">
+    <input type="checkbox" name="collapse" id="handle2">
+    <h2 class="handle">
+        <label for="handle2"><u>Show full selector list...</u></label>
+    </h2>
+    <div class="content">
     <ul class="ul-self">
         <li><span class="li-normal">dvmdb_adom</span> </li>
         <li><span class="li-normal">vpnmgr_node</span> </li>
@@ -542,7 +548,17 @@ Parameters
         <li><span class="li-normal">system_workflow_approvalmatrix</span> </li>
         <li><span class="li-normal">system_workflow_approvalmatrix_approver</span> </li>
     </ul>
+    </div>
+    </section>
+
     <li><span class="li-head">params</span> - the parameter for each selector <span class="li-normal">type: dict</span> <span class="li-required">choices:</span></li>
+   <li style="list-style: none;"><section class="accordion">
+   <input type="checkbox" name="collapse" id="handle3">
+   <h2 class="handle">
+    <label for="handle3"><u>More details about parameter: <b>params</b>...</u></label>
+    </h2>
+    <div class="content">
+     
     <ul class="ul-self">
         <li><span class="li-normal">params for dvmdb_adom:</span></li>
         <ul class="ul-self">
@@ -3228,6 +3244,8 @@ Parameters
             <li><span class="li-normal">approver</span></li>
         </ul>
     </ul>
+    </div>
+    </section>
  </ul>
  </ul>
  </ul>

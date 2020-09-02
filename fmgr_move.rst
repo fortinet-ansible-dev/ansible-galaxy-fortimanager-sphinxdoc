@@ -46,6 +46,12 @@ Parameters
  <li><span class="li-head">target</span> - Key to the target entry. <span class="li-normal">type: str</span> <span class="li-required">required: true</span></li>
  <li><span class="li-head">action</span> - Direction to indicate where to move an object entry. <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: before, after</span></li>
  <li><span class="li-head">selector</span> - selector of the moved object <span class="li-normal">type: str</span> <span class="li-required">choices:</span></li>
+    <li style="list-style: none;"><section class="accordion">
+    <input type="checkbox" name="collapse" id="handle1">
+    <h2 class="handle">
+        <label for="handle1"><u>Show full selector list...</u></label>
+    </h2>
+    <div class="content"> 
     <ul class="ul-self">
         <li><span class="li-normal">dnsfilter_domainfilter_entries</span> </li>
         <li><span class="li-normal">dlp_filepattern_entries</span> </li>
@@ -94,7 +100,16 @@ Parameters
         <li><span class="li-normal">system_sdnconnector_routetable_route</span> </li>
         <li><span class="li-normal">system_sdnconnector_route</span> </li>
     </ul>
+    </div>
+    </section>
+
     <li><span class="li-head">self</span> - the parameter for each selector <span class="li-normal">type: dict</span> <span class="li-required">choices:</span></li>
+    <li style="list-style: none;"><section class="accordion">
+    <input type="checkbox" name="collapse" id="handle3">
+    <h2 class="handle">
+        <label for="handle3"><u>More details about parameter: <b>self</b>...</u></label>
+    </h2>
+    <div class="content">
     <ul class="ul-self">
         <li><span class="li-normal">params for dnsfilter_domainfilter_entries:</span></li>
         <ul class="ul-self">
@@ -373,6 +388,8 @@ Parameters
             <li><span class="li-normal">route</span></li>
         </ul>
     </ul>
+    </div>
+    </section>
  </ul>
  </ul>
  </ul>
