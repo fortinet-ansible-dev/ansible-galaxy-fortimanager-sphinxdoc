@@ -58,7 +58,7 @@ Parameters
  <li><span class="li-head">block-notification</span> - Enable/disable block notification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">captive-portal-exempt</span> - Enable to exempt some users from the captive portal. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">capture-packet</span> - Enable/disable capture packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
+ <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">custom-log-fields</span> - Custom fields to append to log messages for this policy. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">delay-tcp-npu-session</span> - Enable TCP NPU session delay to guarantee packet order of 3-way handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">devices</span> - Names of devices or device groups that can be matched by the policy. <span class="li-normal">type: str</span> </li>
@@ -229,7 +229,7 @@ Examples
             block-notification: <value in [disable, enable]>
             captive-portal-exempt: <value in [disable, enable]>
             capture-packet: <value in [disable, enable]>
-            comments: <value of dict>
+            comments: <value of string>
             custom-log-fields: <value of string>
             delay-tcp-npu-session: <value in [disable, enable]>
             devices: <value of string>

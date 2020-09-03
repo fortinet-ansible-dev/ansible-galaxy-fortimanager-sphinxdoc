@@ -46,7 +46,7 @@ Parameters
  <li><span class="li-head">firewall_service_group</span> - Configure service groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">member</span> - Service objects contained within the group. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Address group name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">proxy</span> - Enable/disable web proxy service group. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -95,7 +95,7 @@ Examples
          state: <value in [present, absent]>
          firewall_service_group:
             color: <value of integer>
-            comment: <value of dict>
+            comment: <value of string>
             member: <value of string>
             name: <value of string>
             proxy: <value in [disable, enable]>

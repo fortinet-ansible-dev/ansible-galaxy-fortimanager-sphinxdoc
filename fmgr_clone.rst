@@ -1286,6 +1286,7 @@ Parameters
         <li><span class="li-normal">params for user_device:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>alias</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_device.html#parameters">fmgr_user_device</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_device_dynamicmapping:</span></li>
@@ -1303,7 +1304,7 @@ Parameters
         <li><span class="li-normal">params for user_fortitoken:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>reg-id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>serial-number</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_fortitoken.html#parameters">fmgr_user_fortitoken</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_fssopolling:</span></li>
@@ -1327,12 +1328,13 @@ Parameters
         <li><span class="li-normal">params for user_fsso_dynamicmapping:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>_scope</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_fsso_dynamicmapping.html#parameters">fmgr_user_fsso_dynamicmapping</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_group:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_group.html#parameters">fmgr_user_group</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_group_guest:</span></li>
@@ -1362,7 +1364,7 @@ Parameters
         <li><span class="li-normal">params for user_local:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_local.html#parameters">fmgr_user_local</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_passwordpolicy:</span></li>
@@ -1776,6 +1778,7 @@ Parameters
         <li><span class="li-normal">params for vap_dynamicmapping:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>_scope</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_vap_dynamicmapping.html#parameters">fmgr_vap_dynamicmapping</a> </span></li>
         </ul>
         <li><span class="li-normal">params for vap_macfilterlist:</span></li>
@@ -2145,116 +2148,139 @@ Parameters
         <li><span class="li-normal">params for system_replacemsggroup_admin:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_admin.html#parameters">fmgr_system_replacemsggroup_admin</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_alertmail:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_alertmail.html#parameters">fmgr_system_replacemsggroup_alertmail</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_auth:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_auth.html#parameters">fmgr_system_replacemsggroup_auth</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_custommessage:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_custommessage.html#parameters">fmgr_system_replacemsggroup_custommessage</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_devicedetectionportal:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_devicedetectionportal.html#parameters">fmgr_system_replacemsggroup_devicedetectionportal</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_ec:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_ec.html#parameters">fmgr_system_replacemsggroup_ec</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_fortiguardwf:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_fortiguardwf.html#parameters">fmgr_system_replacemsggroup_fortiguardwf</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_ftp:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_ftp.html#parameters">fmgr_system_replacemsggroup_ftp</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_http:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_http.html#parameters">fmgr_system_replacemsggroup_http</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_icap:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_icap.html#parameters">fmgr_system_replacemsggroup_icap</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_mail:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_mail.html#parameters">fmgr_system_replacemsggroup_mail</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_mm1:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_mm1.html#parameters">fmgr_system_replacemsggroup_mm1</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_mm3:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_mm3.html#parameters">fmgr_system_replacemsggroup_mm3</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_mm4:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_mm4.html#parameters">fmgr_system_replacemsggroup_mm4</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_mm7:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_mm7.html#parameters">fmgr_system_replacemsggroup_mm7</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_mms:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_mms.html#parameters">fmgr_system_replacemsggroup_mms</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_nacquar:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_nacquar.html#parameters">fmgr_system_replacemsggroup_nacquar</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_nntp:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_nntp.html#parameters">fmgr_system_replacemsggroup_nntp</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_spam:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_spam.html#parameters">fmgr_system_replacemsggroup_spam</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_sslvpn:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_sslvpn.html#parameters">fmgr_system_replacemsggroup_sslvpn</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_trafficquota:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_trafficquota.html#parameters">fmgr_system_replacemsggroup_trafficquota</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_utm:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_utm.html#parameters">fmgr_system_replacemsggroup_utm</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsggroup_webproxy:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>msg-type</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_replacemsggroup_webproxy.html#parameters">fmgr_system_replacemsggroup_webproxy</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_replacemsgimage:</span></li>

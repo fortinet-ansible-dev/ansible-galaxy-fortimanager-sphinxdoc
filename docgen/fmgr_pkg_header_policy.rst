@@ -69,7 +69,7 @@ Parameters
  <li><span class="li-head">cifs-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">client-reputation</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">client-reputation-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [learning, monitoring]</span> </li>
- <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
+ <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">custom-log-fields</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">deep-inspection-options</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">delay-tcp-npu-session</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -345,7 +345,7 @@ Examples
             cifs-profile: <value of string>
             client-reputation: <value in [disable, enable]>
             client-reputation-mode: <value in [learning, monitoring]>
-            comments: <value of dict>
+            comments: <value of string>
             custom-log-fields: <value of string>
             deep-inspection-options: <value of string>
             delay-tcp-npu-session: <value in [disable, enable]>
