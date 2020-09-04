@@ -48,16 +48,16 @@ Parameters
  <li><span class="li-head">column</span> - Widgets column ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">diskio-content-type</span> - Disk I/O Monitor widgets chart type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [util, iops, blks]</span> </li>
  <li><span class="li-head">diskio-period</span> - Disk I/O Monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1hour, 8hour, 24hour]</span> </li>
- <li><span class="li-head">log-rate-period</span> - Log receive monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [2min , 1hour, 6hours]</span> </li>
+ <li><span class="li-head">log-rate-period</span> - Log receive monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [2min, 1hour, 6hours]</span> </li>
  <li><span class="li-head">log-rate-topn</span> - Log receive monitor widgets number of top items to display. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
  <li><span class="li-head">log-rate-type</span> - Log receive monitor widgets statistics breakdown options. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [log, device]</span> </li>
  <li><span class="li-head">moduleid</span> - Widget ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">name</span> - Widget name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">num-entries</span> - Number of entries. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">refresh-interval</span> - Widgets refresh interval. <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">res-cpu-display</span> - Widgets CPU display type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [average , each]</span> </li>
- <li><span class="li-head">res-period</span> - Widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [10min , hour, day]</span> </li>
- <li><span class="li-head">res-view-type</span> - Widgets data view type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [real-time , history]</span> </li>
+ <li><span class="li-head">res-cpu-display</span> - Widgets CPU display type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [average, each]</span>  <span class="li-normal">default: average</span> </li>
+ <li><span class="li-head">res-period</span> - Widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [10min, hour, day]</span> </li>
+ <li><span class="li-head">res-view-type</span> - Widgets data view type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [real-time, history]</span> </li>
  <li><span class="li-head">status</span> - Widgets opened/closed state. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [close, open]</span> </li>
  <li><span class="li-head">tabid</span> - ID of tab where widget is displayed. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">time-period</span> - Log Database Monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1hour, 8hour, 24hour]</span> </li>
@@ -109,16 +109,16 @@ Examples
             column: <value of integer>
             diskio-content-type: <value in [util, iops, blks]>
             diskio-period: <value in [1hour, 8hour, 24hour]>
-            log-rate-period: <value in [2min , 1hour, 6hours]>
+            log-rate-period: <value in [2min, 1hour, 6hours]>
             log-rate-topn: <value in [1, 2, 3, ...]>
             log-rate-type: <value in [log, device]>
             moduleid: <value of integer>
             name: <value of string>
             num-entries: <value of integer>
             refresh-interval: <value of integer>
-            res-cpu-display: <value in [average , each]>
-            res-period: <value in [10min , hour, day]>
-            res-view-type: <value in [real-time , history]>
+            res-cpu-display: <value in [average, each]>
+            res-period: <value in [10min, hour, day]>
+            res-view-type: <value in [real-time, history]>
             status: <value in [close, open]>
             tabid: <value of integer>
             time-period: <value in [1hour, 8hour, 24hour]>
