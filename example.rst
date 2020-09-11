@@ -2,8 +2,8 @@
 Search Playbooks
 ==============================
 
-This document explains how to run your first FortiManager Ansible playbook.
-
+This document contains some handy example playbooks.
+PRs are welcome ``https://github.com/fortinet-ansible-dev/fortimanager-playbook-example``
 
 .. raw:: html
 
