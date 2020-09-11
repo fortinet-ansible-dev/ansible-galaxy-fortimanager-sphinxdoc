@@ -25,13 +25,19 @@ PRs are welcome ``https://github.com/fortinet-ansible-dev/fortimanager-playbook-
  </thead>
  <tbody id="myTable" valign="top">
  <!-- DON'T EDIT ANYTHING ABOVE THIS LINE -->
-  <tr class="row-even"><td><a target="_blank" href="https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/discover_and_add_device.yml">discover_and_add_device.yml</a></td>
+
+ <tr class="row-even"><td><a target="_blank" href="https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/discover_and_add_device.yml">discover_and_add_device.yml</a></td>
  <td><code ><span>Add a FGT device to FMG</span></code></td>
  <td><code ><span class="pre">Link Zheng<b>(Fortinet)</b></span></code></td>
  <td><code ><span class="pre">2020.09.11</span></code></td>
  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">cmd</span></code></td>
  </tr>
-
+ <tr class="row-odd"><td><a target="_blank" href="https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/clone_objects.yml">clone_objects.yml</a></td>
+ <td><code ><span>Clone an Object in FortiManager</span></code></td>
+ <td><code ><span class="pre">Link Zheng<b>(Fortinet)</b></span></code></td>
+ <td><code ><span class="pre">2020.09.11</span></code></td>
+ <td><code class="docutils literal notranslate"><span class="pre">clone</span></code></td>
+ </tr>
  <!-- DON'T EDIT ANYTHING BELOW THIS LINE --> 
  </tbody>
  </table>
