@@ -70,7 +70,6 @@ Parameters
  <li><span class="li-head">internet-service-src-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">internet-service-src-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ip-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [4, 6]</span> </li>
- <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">per-ip-shaper</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -154,7 +153,6 @@ Examples
             internet-service-src-group: <value of string>
             internet-service-src-id: <value of string>
             ip-version: <value in [4, 6]>
-            name: <value of string>
             per-ip-shaper: <value of string>
             schedule: <value of string>
             service: <value of string>
