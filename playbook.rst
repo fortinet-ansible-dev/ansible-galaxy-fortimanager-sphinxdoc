@@ -35,7 +35,7 @@ in the example: ``test.yml`` we are going to create a script on FortiManager:
 
 ::
 
-   - hosts: fortigates
+   - hosts: fortimanagers
      connection: httpapi
      collections:
      - fortinet.fortimanager
