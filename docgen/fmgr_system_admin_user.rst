@@ -55,24 +55,24 @@ Parameters
  </ul>
  <li><span class="li-head">avatar</span> - Image file for avatar (maximum 4K base64 encoded). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ca</span> - PKI user certificate CA (CA name in local). <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">change-password</span> - Enable/disable restricted user to change self password. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">change-password</span> - Enable/disable restricted user to change self password. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">dashboard</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">column</span> - Widgets column ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">diskio-content-type</span> - Disk I/O Monitor widgets chart type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [util, iops, blks]</span> </li>
- <li><span class="li-head">diskio-period</span> - Disk I/O Monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1hour, 8hour, 24hour]</span> </li>
+ <li><span class="li-head">diskio-content-type</span> - Disk I/O Monitor widgets chart type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [util, iops, blks]</span>  <span class="li-normal">default: util</span> </li>
+ <li><span class="li-head">diskio-period</span> - Disk I/O Monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1hour, 8hour, 24hour]</span>  <span class="li-normal">default: 1hour</span> </li>
  <li><span class="li-head">log-rate-period</span> - Log receive monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [2min , 1hour, 6hours]</span> </li>
- <li><span class="li-head">log-rate-topn</span> - Log receive monitor widgets number of top items to display. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
- <li><span class="li-head">log-rate-type</span> - Log receive monitor widgets statistics breakdown options. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [log, device]</span> </li>
+ <li><span class="li-head">log-rate-topn</span> - Log receive monitor widgets number of top items to display. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 3, 4, 5]</span>  <span class="li-normal">default: 5</span> </li>
+ <li><span class="li-head">log-rate-type</span> - Log receive monitor widgets statistics breakdown options. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [log, device]</span>  <span class="li-normal">default: device</span> </li>
  <li><span class="li-head">moduleid</span> - Widget ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">name</span> - Widget name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">num-entries</span> - Number of entries. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">refresh-interval</span> - Widgets refresh interval. <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">res-cpu-display</span> - Widgets CPU display type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [average , each]</span> </li>
- <li><span class="li-head">res-period</span> - Widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [10min , hour, day]</span> </li>
- <li><span class="li-head">res-view-type</span> - Widgets data view type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [real-time , history]</span> </li>
- <li><span class="li-head">status</span> - Widgets opened/closed state. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [close, open]</span> </li>
+ <li><span class="li-head">res-cpu-display</span> - Widgets CPU display type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [average , each]</span>  <span class="li-normal">default: average </span> </li>
+ <li><span class="li-head">res-period</span> - Widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [10min , hour, day]</span>  <span class="li-normal">default: 10min </span> </li>
+ <li><span class="li-head">res-view-type</span> - Widgets data view type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [real-time , history]</span>  <span class="li-normal">default: history</span> </li>
+ <li><span class="li-head">status</span> - Widgets opened/closed state. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [close, open]</span>  <span class="li-normal">default: open</span> </li>
  <li><span class="li-head">tabid</span> - ID of tab where widget is displayed. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">time-period</span> - Log Database Monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1hour, 8hour, 24hour]</span> </li>
+ <li><span class="li-head">time-period</span> - Log Database Monitor widgets data period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1hour, 8hour, 24hour]</span>  <span class="li-normal">default: 1hour</span> </li>
  <li><span class="li-head">widget-type</span> - Widget type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [top-lograte, sysres, sysinfo, licinfo, jsconsole, sysop, alert, statistics, rpteng, raid, logrecv, devsummary, logdb-perf, logdb-lag, disk-io, log-rcvd-fwd]</span> </li>
  </ul>
  <li><span class="li-head">dashboard-tabs</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
@@ -82,34 +82,34 @@ Parameters
  <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dev-group</span> - device group. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">email-address</span> - Email address. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ext-auth-accprofile-override</span> - Allow to use the access profile provided by the remote authentication server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ext-auth-adom-override</span> - Allow to use the ADOM provided by the remote authentication server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ext-auth-accprofile-override</span> - Allow to use the access profile provided by the remote authentication server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">ext-auth-adom-override</span> - Allow to use the ADOM provided by the remote authentication server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">ext-auth-group-match</span> - Only administrators belonging to this group can login. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">first-name</span> - First name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">force-password-change</span> - Enable/disable force password change on next login. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">force-password-change</span> - Enable/disable force password change on next login. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">group</span> - Group name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">hidden</span> - Hidden administrator. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">ips-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">ips-filter-name</span> - IPS filter name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">ipv6_trusthost1</span> - Admin user trusted host IPv6, default ::/0 for all. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost10</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost2</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost3</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost4</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost5</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost6</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost7</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost8</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ipv6_trusthost9</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ipv6_trusthost1</span> - Admin user trusted host IPv6, default ::/0 for all. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
+ <li><span class="li-head">ipv6_trusthost10</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost2</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost3</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost4</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost5</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost6</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost7</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost8</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
+ <li><span class="li-head">ipv6_trusthost9</span> - Admin user trusted host IPv6, default ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128 for none. <span class="li-normal">type: str</span>  <span class="li-normal">default: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128</span> </li>
  <li><span class="li-head">last-name</span> - Last name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ldap-server</span> - LDAP server name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">meta-data</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">fieldlength</span> - Field length. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">fieldname</span> - Field name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">fieldvalue</span> - Field value. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">importance</span> - Importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span> </li>
- <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">importance</span> - Importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span>  <span class="li-normal">default: optional</span> </li>
+ <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span>  <span class="li-normal">default: enabled</span> </li>
  </ul>
  <li><span class="li-head">mobile-number</span> - Mobile number. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">pager-number</span> - Pager number. <span class="li-normal">type: str</span> </li>
@@ -119,35 +119,35 @@ Parameters
  <li><span class="li-head">policy-package</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">policy-package-name</span> - Policy package names. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">profileid</span> - Profile ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">profileid</span> - Profile ID. <span class="li-normal">type: str</span>  <span class="li-normal">default: Restricted_User</span> </li>
  <li><span class="li-head">radius_server</span> - RADIUS server name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">restrict-access</span> - Enable/disable restricted access to development VDOM. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">restrict-access</span> - Enable/disable restricted access to development VDOM. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">restrict-dev-vdom</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">dev-vdom</span> - Device or device VDOM. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">rpc-permit</span> - set none/read/read-write rpc-permission. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [read-write, none, read]</span> </li>
+ <li><span class="li-head">rpc-permit</span> - set none/read/read-write rpc-permission. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [read-write, none, read]</span>  <span class="li-normal">default: none</span> </li>
  <li><span class="li-head">ssh-public-key1</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">ssh-public-key2</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">ssh-public-key3</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">subject</span> - PKI user certificate name constraints. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tacacs-plus-server</span> - TACACS+ server name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost1</span> - Admin user trusted host IP, default 0. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost10</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost2</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost3</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost4</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost5</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost6</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost7</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost8</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">trusthost9</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">two-factor-auth</span> - Enable 2-factor authentication (certificate + password). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">user_type</span> - User type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [local, radius, ldap, tacacs-plus, pki-auth, group]</span> </li>
+ <li><span class="li-head">trusthost1</span> - Admin user trusted host IP, default 0. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
+ <li><span class="li-head">trusthost10</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost2</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost3</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost4</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost5</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost6</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost7</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost8</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">trusthost9</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
+ <li><span class="li-head">two-factor-auth</span> - Enable 2-factor authentication (certificate + password). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">user_type</span> - User type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [local, radius, ldap, tacacs-plus, pki-auth, group]</span>  <span class="li-normal">default: local</span> </li>
  <li><span class="li-head">userid</span> - User name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">web-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">web-filter-name</span> - Web filter name. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">wildcard</span> - Enable/disable wildcard remote authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wildcard</span> - Enable/disable wildcard remote authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 

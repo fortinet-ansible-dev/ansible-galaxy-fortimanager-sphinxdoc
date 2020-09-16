@@ -43,9 +43,9 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_report_autocache</span> - Report auto-cache settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aggressive-schedule</span> - Enable/disable auto-cache on schedule reports aggressively. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">order</span> - The order of which SQL log table is processed first. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [oldest-first]</span> </li>
- <li><span class="li-head">status</span> - Enable/disable sql report auto cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">aggressive-schedule</span> - Enable/disable auto-cache on schedule reports aggressively. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">order</span> - The order of which SQL log table is processed first. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [oldest-first]</span>  <span class="li-normal">default: oldest-first</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable sql report auto cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 

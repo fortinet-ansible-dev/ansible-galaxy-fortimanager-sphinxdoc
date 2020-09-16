@@ -45,32 +45,32 @@ Parameters
  <li><span class="li-head">system_logfetch_clientprofile</span> - Log-fetch client profile settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">client-adom</span> - Log-fetch client sides adom name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">data-range</span> - Data-range for fetched logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [custom]</span> </li>
+ <li><span class="li-head">data-range</span> - Data-range for fetched logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [custom]</span>  <span class="li-normal">default: custom</span> </li>
  <li><span class="li-head">data-range-value</span> - Last n days or hours. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">device-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">adom</span> - Adom name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">device</span> - Device name or Serial number. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Adom name. <span class="li-normal">type: str</span>  <span class="li-normal">default: *</span> </li>
+ <li><span class="li-head">device</span> - Device name or Serial number. <span class="li-normal">type: str</span>  <span class="li-normal">default: *</span> </li>
  <li><span class="li-head">id</span> - Add or edit a device filter. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">vdom</span> - Vdom filters. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vdom</span> - Vdom filters. <span class="li-normal">type: str</span>  <span class="li-normal">default: *</span> </li>
  </ul>
  <li><span class="li-head">end-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">id</span> - Log-fetch client profile ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">index-fetch-logs</span> - Enable/Disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">index-fetch-logs</span> - Enable/Disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">log-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">field</span> - Field name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id</span> - Log filter ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">oper</span> - Field filter operator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span> </li>
+ <li><span class="li-head">oper</span> - Field filter operator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span>  <span class="li-normal">default: =</span> </li>
  <li><span class="li-head">value</span> - Field filter operand or free-text matching expression. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">log-filter-logic</span> - And/Or logic for log-filters. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [and, or]</span> </li>
- <li><span class="li-head">log-filter-status</span> - Enable/Disable log-filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-filter-logic</span> - And/Or logic for log-filters. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [and, or]</span>  <span class="li-normal">default: or</span> </li>
+ <li><span class="li-head">log-filter-status</span> - Enable/Disable log-filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">name</span> - Name of log-fetch client profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">secure-connection</span> - Enable/Disable protecting log-fetch connection with TLS/SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">secure-connection</span> - Enable/Disable protecting log-fetch connection with TLS/SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">server-adom</span> - Log-fetch server sides adom name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">server-ip</span> - Log-fetch server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-ip</span> - Log-fetch server IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
  <li><span class="li-head">start-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">sync-adom-config</span> - Enable/Disable sync adom related config. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sync-adom-config</span> - Enable/Disable sync adom related config. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">user</span> - Log-fetch server login username. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>

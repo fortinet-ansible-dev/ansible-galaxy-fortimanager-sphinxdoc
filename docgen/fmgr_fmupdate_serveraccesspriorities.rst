@@ -43,15 +43,15 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_serveraccesspriorities</span> - Configure priorities for FortiGate units accessing antivirus updates and web filtering services. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">access-public</span> - Enable/disable FortiGates to Access Public FortiGuard Servers when Private Servers are Unavailable (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">av-ips</span> - Enable/disable Antivirus and IPS Update Service for Private Server(default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">access-public</span> - Enable/disable FortiGates to Access Public FortiGuard Servers when Private Servers are Unavailable (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">av-ips</span> - Enable/disable Antivirus and IPS Update Service for Private Server(default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">private-server</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Private server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - IPv4 address of the FortiManager unit or private server. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6</span> - IPv6 address of the FortiManager unit or private server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the FortiManager unit or private server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">ip6</span> - IPv6 address of the FortiManager unit or private server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
  <li><span class="li-head">time_zone</span> - Time zone of the private server (-24 = local time zone, default = -24). <span class="li-normal">type: int</span>  <span class="li-normal">default: -24</span> </li>
  </ul>
- <li><span class="li-head">web-spam</span> - Enable/disable Web Filter and Email Filter Update Service for Private Server (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">web-spam</span> - Enable/disable Web Filter and Email Filter Update Service for Private Server (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 

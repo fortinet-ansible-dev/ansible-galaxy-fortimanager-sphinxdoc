@@ -53,12 +53,12 @@ Parameters
  <li><span class="li-head">branch_pt</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">build</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">checksum</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">conf_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, insync, outofsync]</span> </li>
- <li><span class="li-head">conn_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, passive]</span> </li>
- <li><span class="li-head">conn_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [UNKNOWN, up, down]</span> </li>
- <li><span class="li-head">db_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, nomod, mod]</span> </li>
+ <li><span class="li-head">conf_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, insync, outofsync]</span>  <span class="li-normal">default: unknown</span> </li>
+ <li><span class="li-head">conn_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, passive]</span>  <span class="li-normal">default: passive</span> </li>
+ <li><span class="li-head">conn_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [UNKNOWN, up, down]</span>  <span class="li-normal">default: UNKNOWN</span> </li>
+ <li><span class="li-head">db_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, nomod, mod]</span>  <span class="li-normal">default: unknown</span> </li>
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dev_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, unknown, checkedin, inprogress, installed, aborted, sched, retry, canceled, pending, retrieved, changed_conf, sync_fail, timeout, rev_revert, auto_updated]</span> </li>
+ <li><span class="li-head">dev_status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, unknown, checkedin, inprogress, installed, aborted, sched, retry, canceled, pending, retrieved, changed_conf, sync_fail, timeout, rev_revert, auto_updated]</span>  <span class="li-normal">default: unknown</span> </li>
  <li><span class="li-head">fap_cnt</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">faz.full_act</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">faz.perm</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -67,16 +67,16 @@ Parameters
  <li><span class="li-head">fex_cnt</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync]</span> </li>
  <li><span class="li-head">foslic_cpu</span> - VM Meter vCPU count. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">foslic_dr_site</span> - VM Meter DR Site status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">foslic_dr_site</span> - VM Meter DR Site status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">foslic_inst_time</span> - VM Meter first deployment time (in UNIX timestamp). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">foslic_last_sync</span> - VM Meter last synchronized time (in UNIX timestamp). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">foslic_ram</span> - VM Meter device RAM size (in MB). <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">foslic_type</span> - VM Meter license type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [temporary, trial, regular, trial_expired]</span> </li>
+ <li><span class="li-head">foslic_type</span> - VM Meter license type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [temporary, trial, regular, trial_expired]</span>  <span class="li-normal">default: temporary</span> </li>
  <li><span class="li-head">foslic_utm</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fw, av, ips, app, url, utm, fwb]</span> </li>
  <li><span class="li-head">fsw_cnt</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ha_group_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ha_group_name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ha_mode</span> - enabled - Value reserved for non-FOS HA devices. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, AP, AA, ELBC, DUAL, enabled, unknown]</span> </li>
+ <li><span class="li-head">ha_mode</span> - enabled - Value reserved for non-FOS HA devices. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, AP, AA, ELBC, DUAL, enabled, unknown]</span>  <span class="li-normal">default: standalone</span> </li>
  <li><span class="li-head">hdisk_size</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">hostname</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">hw_rev_major</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -96,12 +96,12 @@ Parameters
  <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">mgmt_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">mgmt_if</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mgmt_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span> </li>
+ <li><span class="li-head">mgmt_mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unreg, fmg, faz, fmgfaz]</span>  <span class="li-normal">default: unreg</span> </li>
  <li><span class="li-head">mgt_vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mr</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: -1</span> </li>
  <li><span class="li-head">name</span> - Unique name for the device. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span> </li>
- <li><span class="li-head">os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
+ <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span>  <span class="li-normal">default: unknown</span> </li>
+ <li><span class="li-head">os_ver</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span>  <span class="li-normal">default: unknown</span> </li>
  <li><span class="li-head">patch</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">platform_str</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">psk</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -109,7 +109,7 @@ Parameters
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">comments</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">opmode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nat, transparent]</span> </li>
+ <li><span class="li-head">opmode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nat, transparent]</span>  <span class="li-normal">default: nat</span> </li>
  <li><span class="li-head">rtm_prof_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>

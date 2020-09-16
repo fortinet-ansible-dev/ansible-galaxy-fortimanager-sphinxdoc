@@ -45,8 +45,8 @@ Parameters
  <li><span class="li-head">fmupdate_serveraccesspriorities_privateserver</span> - Configure multiple FortiManager units and private servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">id</span> - Private server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - IPv4 address of the FortiManager unit or private server. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6</span> - IPv6 address of the FortiManager unit or private server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the FortiManager unit or private server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">ip6</span> - IPv6 address of the FortiManager unit or private server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
  <li><span class="li-head">time_zone</span> - Time zone of the private server (-24 = local time zone, default = -24). <span class="li-normal">type: int</span>  <span class="li-normal">default: -24</span> </li>
  </ul>
  </ul>

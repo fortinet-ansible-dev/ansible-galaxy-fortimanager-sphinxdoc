@@ -44,7 +44,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_log_maildomain</span> - FortiMail domain setting. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">devices</span> - Devices for domain to vdom mapping <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">devices</span> - Devices for domain to vdom mapping <span class="li-normal">type: str</span>  <span class="li-normal">default: All_FortiMail</span> </li>
  <li><span class="li-head">domain</span> - FortiMail domain <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id</span> - ID of FortiMail domain. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">vdom</span> - Virtual Domain name mapping to FortiMail domain <span class="li-normal">type: str</span> </li>

@@ -46,7 +46,7 @@ Parameters
  <li><span class="li-head">vpnmgr_vpntable</span> - no description <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">authmethod</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [psk, rsa-signature, signature]</span> </li>
- <li><span class="li-head">auto-zone-policy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auto-zone-policy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">certificate</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dpd</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, on-idle, on-demand]</span> </li>
@@ -75,7 +75,7 @@ Parameters
  <li><span class="li-head">localid-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, fqdn, user-fqdn, keyid, address, asn1dn]</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">negotiate-timeout</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 30</span> </li>
- <li><span class="li-head">npu-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">npu-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">pfs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">psk-auto-generate</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">psksecret</span> - No description for the parameter <span class="li-normal">type: str</span></li>

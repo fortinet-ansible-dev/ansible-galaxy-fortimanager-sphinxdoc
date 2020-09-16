@@ -43,9 +43,9 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_fdssetting_updateschedule</span> - Configure the schedule when built-in FortiGuard retrieves antivirus and IPS updates. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">day</span> - Configure the day the update will occur, if the freqnecy is weekly (Sunday - Saturday, default = Monday). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]</span> </li>
- <li><span class="li-head">frequency</span> - Configure update frequency: every - time interval, daily - once a day, weekly - once a week (default = every). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [every, daily, weekly]</span> </li>
- <li><span class="li-head">status</span> - Enable/disable scheduled updates. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">day</span> - Configure the day the update will occur, if the freqnecy is weekly (Sunday - Saturday, default = Monday). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]</span>  <span class="li-normal">default: Monday</span> </li>
+ <li><span class="li-head">frequency</span> - Configure update frequency: every - time interval, daily - once a day, weekly - once a week (default = every). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [every, daily, weekly]</span>  <span class="li-normal">default: every</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable scheduled updates. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  </ul>

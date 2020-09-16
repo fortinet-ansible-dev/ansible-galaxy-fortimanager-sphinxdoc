@@ -45,10 +45,10 @@ Parameters
  <li><span class="li-head">client-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_logfetch_clientprofile_devicefilter</span> - List of device filter. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - Adom name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">device</span> - Device name or Serial number. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">adom</span> - Adom name. <span class="li-normal">type: str</span>  <span class="li-normal">default: *</span> </li>
+ <li><span class="li-head">device</span> - Device name or Serial number. <span class="li-normal">type: str</span>  <span class="li-normal">default: *</span> </li>
  <li><span class="li-head">id</span> - Add or edit a device filter. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">vdom</span> - Vdom filters. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vdom</span> - Vdom filters. <span class="li-normal">type: str</span>  <span class="li-normal">default: *</span> </li>
  </ul>
  </ul>
 

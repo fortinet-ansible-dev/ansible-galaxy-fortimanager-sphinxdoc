@@ -48,8 +48,8 @@ Parameters
  <li><span class="li-head">fieldlength</span> - Field length. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">fieldname</span> - Field name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">fieldvalue</span> - Field value. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">importance</span> - Importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span> </li>
- <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">importance</span> - Importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span>  <span class="li-normal">default: optional</span> </li>
+ <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span>  <span class="li-normal">default: enabled</span> </li>
  </ul>
  </ul>
 

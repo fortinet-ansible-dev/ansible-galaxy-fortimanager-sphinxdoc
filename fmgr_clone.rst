@@ -1340,7 +1340,7 @@ Parameters
         <li><span class="li-normal">params for user_group_guest:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>user-id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_group_guest.html#parameters">fmgr_user_group_guest</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_group_match:</span></li>

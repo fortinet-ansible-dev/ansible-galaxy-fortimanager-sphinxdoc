@@ -43,11 +43,11 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_locallog_fortianalyzer3_setting</span> - Settings for locallog to fortianalyzer. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">reliable</span> - Enable/disable reliable realtime logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">secure-connection</span> - Enable/disable connection secured by TLS/SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">server-ip</span> - Remote FortiAnalyzer server IP address. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> </li>
- <li><span class="li-head">status</span> - Log to FortiAnalyzer status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, realtime, upload]</span> </li>
+ <li><span class="li-head">reliable</span> - Enable/disable reliable realtime logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">secure-connection</span> - Enable/disable connection secured by TLS/SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">server-ip</span> - Remote FortiAnalyzer server IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span>  <span class="li-normal">default: notification</span> </li>
+ <li><span class="li-head">status</span> - Log to FortiAnalyzer status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, realtime, upload]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">upload-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  </ul>

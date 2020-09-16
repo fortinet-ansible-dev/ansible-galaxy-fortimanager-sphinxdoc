@@ -2,7 +2,7 @@ Migrate Legacy Playbooks
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This document targets incompatible playbooks written for FortiManager
-Galaxy collections earlier than ``1.0.4``.
+Galaxy collections earlier than ``1.0.5``.
 
 Detect Compatiblity Issue
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -14,7 +14,7 @@ module will fail and an error message will remind you:
 
     failed: [fortimanager01] => {
         "changed": false,
-        "module_stderr": "Legacy playbook detected, please revise the playbook or install latest legacy fortimanager galaxy collection: #ansible-galaxy collection install -f fortinet.fortimanager:1.0.4",
+        "module_stderr": "Legacy playbook detected, please revise the playbook or install latest legacy fortimanager galaxy collection: #ansible-galaxy collection install -f fortinet.fortimanager:1.0.5",
         "module_stdout": "",
         "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error",
         "rc": 1
@@ -22,7 +22,7 @@ module will fail and an error message will remind you:
 
 There are two ways to resolve this issue:
 
- - Continue to use “legacy” playbook format, with a FortiManager Collection <= 1.0.4
+ - Continue to use “legacy” playbook format, with a FortiManager Collection <= 1.0.5
  - Convert playbooks to FortiManager Collection 1.0.4+ schema with the newest version of the collection.
 
 

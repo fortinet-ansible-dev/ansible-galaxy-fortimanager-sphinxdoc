@@ -43,7 +43,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_alertemail</span> - Configure alertemail. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">authentication</span> - Enable/disable authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authentication</span> - Enable/disable authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">fromaddress</span> - SMTP from address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">fromname</span> - SMTP from user. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">smtppassword</span> - No description for the parameter <span class="li-normal">type: str</span></li>

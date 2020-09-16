@@ -45,10 +45,10 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">announce-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - ID of the announce IP address (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - Announce IPv4 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - Announce IPv4 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
  <li><span class="li-head">port</span> - Announce IP port (1 - 65535, default = 8890). <span class="li-normal">type: int</span>  <span class="li-normal">default: 8890</span> </li>
  </ul>
- <li><span class="li-head">status</span> - Enable/disable push updates (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable push updates (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 

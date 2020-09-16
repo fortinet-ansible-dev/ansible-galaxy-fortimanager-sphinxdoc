@@ -47,9 +47,9 @@ Parameters
  <li><span class="li-head">crptpasswd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">directory</span> - Directory in which file will be stored on backup server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">protocol</span> - Protocol used to backup. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sftp, ftp, scp]</span> </li>
+ <li><span class="li-head">protocol</span> - Protocol used to backup. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sftp, ftp, scp]</span>  <span class="li-normal">default: sftp</span> </li>
  <li><span class="li-head">server</span> - Backup server name/IP. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - Enable/disable schedule backup. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable schedule backup. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">time</span> - Time to backup. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">user</span> - Backup server login user. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">week_days</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [monday, tuesday, wednesday, thursday, friday, saturday, sunday]</span> </li>

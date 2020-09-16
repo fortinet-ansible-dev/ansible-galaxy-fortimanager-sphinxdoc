@@ -47,8 +47,8 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">field-category</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [log, fortiview, alert, ueba, all]</span> </li>
  <li><span class="li-head">field-name</span> - Field name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">field-status</span> - Field status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">field-type</span> - Field type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [string, ip, mac, email, unknown]</span> </li>
+ <li><span class="li-head">field-status</span> - Field status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">field-type</span> - Field type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [string, ip, mac, email, unknown]</span>  <span class="li-normal">default: string</span> </li>
  </ul>
  </ul>
 

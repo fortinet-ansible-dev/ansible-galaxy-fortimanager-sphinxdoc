@@ -43,26 +43,26 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_locallog_disk_setting</span> - Settings for local disk logging. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">diskfull</span> - Policy to apply when disk is full. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overwrite, nolog]</span> </li>
+ <li><span class="li-head">diskfull</span> - Policy to apply when disk is full. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overwrite, nolog]</span>  <span class="li-normal">default: overwrite</span> </li>
  <li><span class="li-head">log-disk-full-percentage</span> - Consider log disk as full at this usage percentage. <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
  <li><span class="li-head">max-log-file-size</span> - Maximum log file size before rolling. <span class="li-normal">type: int</span>  <span class="li-normal">default: 100</span> </li>
  <li><span class="li-head">roll-day</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> </li>
- <li><span class="li-head">roll-schedule</span> - Frequency to check log file for rolling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span> </li>
+ <li><span class="li-head">roll-schedule</span> - Frequency to check log file for rolling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span> </li>
  <li><span class="li-head">roll-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">server-type</span> - Server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FTP, SFTP, SCP]</span> </li>
- <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> </li>
- <li><span class="li-head">status</span> - Enable/disable local disk log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">upload</span> - Upload log file when rolling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">upload-delete-files</span> - Delete log files after uploading (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">server-type</span> - Server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FTP, SFTP, SCP]</span>  <span class="li-normal">default: FTP</span> </li>
+ <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span>  <span class="li-normal">default: information</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable local disk log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">upload</span> - Upload log file when rolling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">upload-delete-files</span> - Delete log files after uploading (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">upload-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">uploaddir</span> - Log file upload remote directory. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">uploadip</span> - IP address of log uploading server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">uploadip</span> - IP address of log uploading server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
  <li><span class="li-head">uploadpass</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">uploadport</span> - Server port (0 = default protocol port). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">uploadsched</span> - Scheduled upload (disable = upload when rolling). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">uploadsched</span> - Scheduled upload (disable = upload when rolling). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">uploadtype</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [event]</span> </li>
  <li><span class="li-head">uploaduser</span> - User account in upload server. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">uploadzip</span> - Compress upload logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">uploadzip</span> - Compress upload logs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 

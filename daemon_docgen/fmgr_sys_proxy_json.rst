@@ -44,9 +44,7 @@ Parameters
  <li><span class="li-head">sys_proxy_json</span> - Send and receive JSON request to/from managed devices. The response will be an array of data, one for each queried device. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">action</span> - Specify HTTP action for the request. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [get, post, put, delete]</span> </li>
- <li><span class="li-head">payload</span> <span class="li-normal">type: dict</span> </li>
- <ul class="ul-self">
- </ul>
+ <li><span class="li-head">payload</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">resource</span> - URL on the remote device to be accessed. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  </ul>
@@ -92,7 +90,8 @@ Examples
          rc_failed: [-2, -3, ...]
          sys_proxy_json:
             action: <value in [get, post, put, ...]>
-            payload:            resource: <value of string>
+            payload: <value of dict>
+            resource: <value of string>
             target: <value of list>
 
 

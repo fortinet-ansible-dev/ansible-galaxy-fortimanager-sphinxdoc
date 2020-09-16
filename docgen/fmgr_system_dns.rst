@@ -43,10 +43,10 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_dns</span> - DNS configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip6-primary</span> - IPv6 primary DNS IP. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6-secondary</span> - IPv6 secondary DNS IP. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">primary</span> - Primary DNS IP. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secondary</span> - Secondary DNS IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6-primary</span> - IPv6 primary DNS IP. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
+ <li><span class="li-head">ip6-secondary</span> - IPv6 secondary DNS IP. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
+ <li><span class="li-head">primary</span> - Primary DNS IP. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">secondary</span> - Secondary DNS IP. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
  </ul>
  </ul>
 
