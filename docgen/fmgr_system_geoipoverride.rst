@@ -45,7 +45,6 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_geoipoverride</span> - Configure geographical location mapping for IP address(es) to override mappings from FortiGuard. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">country-id</span> - Two character Country ID code. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ip-range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">end-ip</span> - Final IP address, inclusive, of the address range (format: xxx. <span class="li-normal">type: str</span> </li>
@@ -97,7 +96,6 @@ Examples
          adom: <your own value>
          state: <value in [present, absent]>
          system_geoipoverride:
-            country-id: <value of string>
             description: <value of string>
             ip-range:
               -

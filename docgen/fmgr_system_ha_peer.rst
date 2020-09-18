@@ -48,7 +48,6 @@ Parameters
  <li><span class="li-head">ip</span> - IP address of peer. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
  <li><span class="li-head">ip6</span> - IP address (V6) of peer. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
  <li><span class="li-head">serial-number</span> - Serial number of peer. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - Peer admin status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 
@@ -96,7 +95,6 @@ Examples
             ip: <value of string>
             ip6: <value of string>
             serial-number: <value of string>
-            status: <value in [disable, enable]>
 
 
 

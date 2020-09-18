@@ -53,7 +53,6 @@ Parameters
  <li><span class="li-head">carrier-endpoint-prefix-string</span> - String with which to prefix End point values. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">carrierendpointbwltable</span> - Carrier end point filter table ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">extended-utm-log</span> - Enable/disable detailed UTM log messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">mm1</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [avmonitor, block, oversize, quarantine, scan, avquery, bannedword, no-content-summary, archive-summary, archive-full, carrier-endpoint-bwl, remove-blocked, chunkedbypass, clientcomfort, servercomfort, strict-file, mms-checksum]</span> </li>
  <li><span class="li-head">mm1-addr-hdr</span> - HTTP header field (for MM1) containing user address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mm1-addr-source</span> - Source for MM1 user address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [http-header, cookie]</span> </li>
@@ -147,7 +146,6 @@ Examples
             carrier-endpoint-prefix-string: <value of string>
             carrierendpointbwltable: <value of string>
             comment: <value of string>
-            extended-utm-log: <value in [disable, enable]>
             mm1:
               - avmonitor
               - block

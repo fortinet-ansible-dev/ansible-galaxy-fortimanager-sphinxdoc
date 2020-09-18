@@ -1520,7 +1520,7 @@ Parameters
         <li><span class="li-normal">params for ips_custom:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>rule-id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>tag</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_ips_custom.html#parameters">fmgr_ips_custom</a> </span></li>
         </ul>
         <li><span class="li-normal">params for ips_sensor:</span></li>
