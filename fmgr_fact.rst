@@ -3263,7 +3263,11 @@ Notes
 
    - Selector is a mandatory parameter for the module, and the params is varying depending on the selector.
 
-   - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
+   - Parameter ``adom`` can be ``null`` or ``''`` for all administrative domains,  ``global`` for global domain and any other custom domain strings. and a particular fact may not support all kinds of domains.
+
+   - In parameters section, ``null`` and ``''`` are identical if you are fetching all objects under that selector category.
+
+   - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters ``rc_failed`` and ``rc_succeeded``
 
 Examples
 --------
@@ -3286,15 +3290,15 @@ Examples
         facts:
             selector: 'dvmdb_script'
             params:
-                adom: 'root'
-                script: ''
+                adom: 'root' # global or null or ''
+                script: ''   # or null
 
     - name: retrive all the interfaces
       fmgr_fact:
         facts:
             selector: 'system_interface'
             params:
-                interface: ''
+                interface: '' # or null 
     - name: retrieve the interface port1
       fmgr_fact:
         facts:
@@ -3307,7 +3311,7 @@ Examples
           selector: 'webfilter_urlfilter'
           params:
             adom: 'root'
-            urlfilter: ''
+            urlfilter: '' # or null
           filter:
             -
               - 'name'
@@ -3326,7 +3330,7 @@ Examples
           selector: 'dvmdb_device'
           params:
             adom: 'root'
-            device: ''
+            device: '' # or null
           option:
             - 'get meta'
 
