@@ -20,7 +20,7 @@ in our case we create a file named ``hosts``:
 
    [fortimanagers]
    fortimanager01 ansible_host=192.168.190.130 ansible_user="admin" ansible_password="password"
-   fortimanager01 ansible_host=192.168.190.131 ansible_user="admin" ansible_password="password"
+   fortimanager02 ansible_host=192.168.190.131 ansible_user="admin" ansible_password="password"
 
    [fortimanagers:vars]
    ansible_network_os=fortinet.fortimanager.fortimanager
