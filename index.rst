@@ -44,3 +44,10 @@ The FortiManager Ansible Collection provides Ansible modules for configuring For
    objman.rst
    daemon_modules.rst
    generic.rst
+
+.. toctree::
+   :glob:
+   :caption: APPENDICES
+   :maxdepth: 1
+
+   release.rst
