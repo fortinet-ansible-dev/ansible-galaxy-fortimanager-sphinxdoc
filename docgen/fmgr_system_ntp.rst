@@ -44,14 +44,14 @@ Parameters
  <li><span class="li-head">system_ntp</span> - NTP settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">ntpserver</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">authentication</span> - Enable/disable MD5 authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">authentication</span> - Enable/disable MD5 authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">id</span> - Time server ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">key-id</span> - Key ID for authentication. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ntpv3</span> - Enable/disable NTPv3. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">ntpv3</span> - Enable/disable NTPv3. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">server</span> - IP address/hostname of NTP Server. <span class="li-normal">type: str</span> </li>
  </ul>
- <li><span class="li-head">status</span> - Enable/disable NTP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable NTP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">sync_interval</span> - NTP sync interval (min). <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span> </li>
  </ul>
  </ul>

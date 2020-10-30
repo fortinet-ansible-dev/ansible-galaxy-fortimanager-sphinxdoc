@@ -45,7 +45,7 @@ Parameters
  <li><span class="li-head">system_report_group</span> - Report group. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">adom</span> - Admin domain name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">case-insensitive</span> - Case insensitive. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">case-insensitive</span> - Case insensitive. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">chart-alternative</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">chart-name</span> - Chart name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">chart-replace</span> - Chart replacement. <span class="li-normal">type: str</span> </li>
@@ -53,7 +53,7 @@ Parameters
  <li><span class="li-head">group-by</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">var-expression</span> - Variable expression. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">var-name</span> - Variable name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">var-type</span> - Variable type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span>  <span class="li-normal">default: string</span> </li>
+ <li><span class="li-head">var-type</span> - Variable type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span> </li>
  </ul>
  <li><span class="li-head">group-id</span> - Group ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">report-like</span> - Report pattern. <span class="li-normal">type: str</span> </li>

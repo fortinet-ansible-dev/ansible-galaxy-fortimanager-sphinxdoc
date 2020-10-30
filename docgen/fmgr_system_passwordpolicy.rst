@@ -43,11 +43,11 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_passwordpolicy</span> - Password policy. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">change-4-characters</span> - Enable/disable changing at least 4 characters for new password. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">change-4-characters</span> - Enable/disable changing at least 4 characters for new password. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">expire</span> - Number of days after which admin users password will expire (0 - 3650, 0 = never expire). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">minimum-length</span> - Minimum password length. <span class="li-normal">type: int</span>  <span class="li-normal">default: 8</span> </li>
  <li><span class="li-head">must-contain</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [upper-case-letter, lower-case-letter, number, non-alphanumeric]</span> </li>
- <li><span class="li-head">status</span> - Enable/disable password policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable password policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

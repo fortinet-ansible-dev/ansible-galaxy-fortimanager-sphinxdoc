@@ -62,7 +62,7 @@ Parameters
  </ul>
  <li><span class="li-head">egress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">single-intf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">single-intf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

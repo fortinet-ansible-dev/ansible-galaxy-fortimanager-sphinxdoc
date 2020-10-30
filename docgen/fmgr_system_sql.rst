@@ -43,28 +43,28 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_sql</span> - SQL settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">background-rebuild</span> - Disable/Enable rebuild SQL database in the background. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">background-rebuild</span> - Disable/Enable rebuild SQL database in the background. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">custom-index</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">case-sensitive</span> - Disable/Enable case sensitive index. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">device-type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span> </li>
+ <li><span class="li-head">case-sensitive</span> - Disable/Enable case sensitive index. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">device-type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span> </li>
  <li><span class="li-head">id</span> - Add or Edit log index fields. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">index-field</span> - Log field name to be indexed. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span>  <span class="li-normal">default: traffic</span> </li>
+ <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span> </li>
  </ul>
  <li><span class="li-head">database-name</span> - Database name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">database-type</span> - Database type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mysql, postgres]</span>  <span class="li-normal">default: postgres</span> </li>
- <li><span class="li-head">device-count-high</span> - Must set to enable if the count of registered devices is greater than 8000. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">database-type</span> - Database type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mysql, postgres]</span> </li>
+ <li><span class="li-head">device-count-high</span> - Must set to enable if the count of registered devices is greater than 8000. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">event-table-partition-time</span> - Maximum SQL database table partitioning time range in minute (0 for unlimited) for event logs. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">fct-table-partition-time</span> - Maximum SQL database table partitioning time range in minute (0 for unlimited) for FortiClient logs. <span class="li-normal">type: int</span>  <span class="li-normal">default: 240</span> </li>
  <li><span class="li-head">logtype</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">prompt-sql-upgrade</span> - Prompt to convert log database into SQL database at start time on GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">rebuild-event</span> - Disable/Enable rebuild event during SQL database rebuilding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">prompt-sql-upgrade</span> - Prompt to convert log database into SQL database at start time on GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rebuild-event</span> - Disable/Enable rebuild event during SQL database rebuilding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">rebuild-event-start-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">server</span> - Database IP or hostname. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">start-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">status</span> - SQL database status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, local]</span>  <span class="li-normal">default: local</span> </li>
- <li><span class="li-head">text-search-index</span> - Disable/Enable text search index. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - SQL database status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, local]</span> </li>
+ <li><span class="li-head">text-search-index</span> - Disable/Enable text search index. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">traffic-table-partition-time</span> - Maximum SQL database table partitioning time range in minute (0 for unlimited) for traffic logs. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">ts-index-field</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">category</span> - Category of text search index fields. <span class="li-normal">type: str</span> </li>

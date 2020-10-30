@@ -45,7 +45,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">certificate</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">comment</span> - OFTP certificate comment. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">custom</span> - Enable/disable custom certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">custom</span> - Enable/disable custom certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">private-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>

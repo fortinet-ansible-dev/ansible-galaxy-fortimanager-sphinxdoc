@@ -48,12 +48,12 @@ Parameters
  <li><span class="li-head">adom-name</span> - Admin domain names. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">adom-attr</span> - Attribute used to retrieve adom <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">attributes</span> - Attributes used for group searching. <span class="li-normal">type: str</span>  <span class="li-normal">default: member,uniquemember,memberuid</span> </li>
+ <li><span class="li-head">attributes</span> - Attributes used for group searching. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ca-cert</span> - CA certificate name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">cnid</span> - Common Name Identifier (default = CN). <span class="li-normal">type: str</span>  <span class="li-normal">default: cn</span> </li>
+ <li><span class="li-head">cnid</span> - Common Name Identifier (default = CN). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">connect-timeout</span> - LDAP connection timeout (msec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 500</span> </li>
  <li><span class="li-head">dn</span> - Distinguished Name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">filter</span> - Filter used for group searching. <span class="li-normal">type: str</span>  <span class="li-normal">default: (objectclass=*)</span> </li>
+ <li><span class="li-head">filter</span> - Filter used for group searching. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">group</span> - Full base DN used for group searching. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">memberof-attr</span> - Attribute used to retrieve memeberof. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - LDAP server entry name. <span class="li-normal">type: str</span> </li>
@@ -61,10 +61,10 @@ Parameters
  <li><span class="li-head">port</span> - Port number of LDAP server (default = 389). <span class="li-normal">type: int</span>  <span class="li-normal">default: 389</span> </li>
  <li><span class="li-head">profile-attr</span> - Attribute used to retrieve admin profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">secondary-server</span> - {<name_str|ip_str>} secondary LDAP server domain name or IP. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">secure</span> - SSL connection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">secure</span> - SSL connection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, starttls, ldaps]</span> </li>
  <li><span class="li-head">server</span> - {<name_str|ip_str>} LDAP server domain name or IP. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tertiary-server</span> - {<name_str|ip_str>} tertiary LDAP server domain name or IP. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Type of LDAP binding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span>  <span class="li-normal">default: simple</span> </li>
+ <li><span class="li-head">type</span> - Type of LDAP binding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
  <li><span class="li-head">username</span> - Username (full DN) for initial binding. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>

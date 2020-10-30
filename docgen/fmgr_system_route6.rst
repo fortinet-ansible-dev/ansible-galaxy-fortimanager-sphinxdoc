@@ -45,8 +45,8 @@ Parameters
  <li><span class="li-head">system_route6</span> - Routing table configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">device</span> - Gateway out interface. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">dst</span> - Destination IP and mask for this route. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
- <li><span class="li-head">gateway</span> - Gateway IP for this route. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
+ <li><span class="li-head">dst</span> - Destination IP and mask for this route. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">gateway</span> - Gateway IP for this route. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">prio</span> - Entry number. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  </ul>
  </ul>

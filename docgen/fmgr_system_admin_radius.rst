@@ -44,9 +44,9 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_admin_radius</span> - Configure radius. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth-type</span> - Authentication protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, pap, chap, mschap2]</span>  <span class="li-normal">default: any</span> </li>
+ <li><span class="li-head">auth-type</span> - Authentication protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, pap, chap, mschap2]</span> </li>
  <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">nas-ip</span> - NAS IP address and called station ID. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">nas-ip</span> - NAS IP address and called station ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Server port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 1812</span> </li>
  <li><span class="li-head">secondary-secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">secondary-server</span> - Secondary server name/IP. <span class="li-normal">type: str</span> </li>

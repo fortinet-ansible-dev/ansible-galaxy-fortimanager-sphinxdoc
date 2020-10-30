@@ -43,9 +43,9 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_fortiview_autocache</span> - FortiView auto-cache settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aggressive-fortiview</span> - Enable/disable auto-cache on fortiview aggressively. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">aggressive-fortiview</span> - Enable/disable auto-cache on fortiview aggressively. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">interval</span> - The time interval in hours for fortiview auto-cache. <span class="li-normal">type: int</span>  <span class="li-normal">default: 168</span> </li>
- <li><span class="li-head">status</span> - Enable/disable fortiview auto-cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable fortiview auto-cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

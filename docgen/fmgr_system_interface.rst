@@ -47,18 +47,18 @@ Parameters
  <li><span class="li-head">alias</span> - Alias. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
  <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - IP address of interface. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
+ <li><span class="li-head">ip</span> - IP address of interface. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ipv6</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">ip6-address</span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
+ <li><span class="li-head">ip6-address</span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
- <li><span class="li-head">ip6-autoconf</span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">ip6-autoconf</span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">mtu</span> - Maximum transportation unit(68 - 9000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 1500</span> </li>
  <li><span class="li-head">name</span> - Interface name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">serviceaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fgtupdates, fclupdates, webfilter-antispam]</span> </li>
- <li><span class="li-head">speed</span> - Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span>  <span class="li-normal">default: auto</span> </li>
- <li><span class="li-head">status</span> - Interface status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span>  <span class="li-normal">default: up</span> </li>
+ <li><span class="li-head">speed</span> - Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span> </li>
+ <li><span class="li-head">status</span> - Interface status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span> </li>
  </ul>
  </ul>
 

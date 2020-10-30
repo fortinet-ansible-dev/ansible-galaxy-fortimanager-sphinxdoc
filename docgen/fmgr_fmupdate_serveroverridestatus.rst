@@ -43,7 +43,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_serveroverridestatus</span> - Configure strict/loose server override. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">mode</span> - Server override mode (default = loose). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [strict, loose]</span>  <span class="li-normal">default: loose</span> </li>
+ <li><span class="li-head">mode</span> - Server override mode (default = loose). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [strict, loose]</span> </li>
  </ul>
  </ul>
 

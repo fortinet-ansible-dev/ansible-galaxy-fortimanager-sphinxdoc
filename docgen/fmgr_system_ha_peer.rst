@@ -45,8 +45,8 @@ Parameters
  <li><span class="li-head">system_ha_peer</span> - Peer. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">id</span> - Id. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - IP address of peer. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip6</span> - IP address (V6) of peer. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
+ <li><span class="li-head">ip</span> - IP address of peer. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6</span> - IP address (V6) of peer. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">serial-number</span> - Serial number of peer. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>

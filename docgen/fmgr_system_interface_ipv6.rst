@@ -44,9 +44,9 @@ Parameters
  <li><span class="li-head">interface</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_interface_ipv6</span> - IPv6 of interface. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip6-address</span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
+ <li><span class="li-head">ip6-address</span> - IPv6 address/prefix of interface. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
- <li><span class="li-head">ip6-autoconf</span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">ip6-autoconf</span> - Enable/disable address auto config (SLAAC). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

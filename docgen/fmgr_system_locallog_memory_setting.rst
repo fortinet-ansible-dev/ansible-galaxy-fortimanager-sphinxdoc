@@ -43,9 +43,9 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_locallog_memory_setting</span> - Settings for memory buffer. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">diskfull</span> - Action upon disk full. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overwrite, nolog]</span>  <span class="li-normal">default: overwrite</span> </li>
- <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span>  <span class="li-normal">default: notification</span> </li>
- <li><span class="li-head">status</span> - Enable/disable memory buffer log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">diskfull</span> - Action upon disk full. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overwrite, nolog]</span> </li>
+ <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable memory buffer log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

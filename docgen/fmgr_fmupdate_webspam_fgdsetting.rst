@@ -44,20 +44,20 @@ Parameters
  <li><span class="li-head">fmupdate_webspam_fgdsetting</span> - Configure the FortiGuard run parameters. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">as-cache</span> - Antispam service maximum memory usage in megabytes (Maximum = Physical memory-1024, 0: no limit, default = 300). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">as-log</span> - Antispam log setting (default = nospam). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, nospam, all]</span>  <span class="li-normal">default: nospam</span> </li>
- <li><span class="li-head">as-preload</span> - Enable/disable preloading antispam database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">as-log</span> - Antispam log setting (default = nospam). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, nospam, all]</span> </li>
+ <li><span class="li-head">as-preload</span> - Enable/disable preloading antispam database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">av-cache</span> - Antivirus service maximum memory usage, in megabytes (100 - 500, default = 300). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">av-log</span> - Antivirus log setting (default = novirus). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, novirus, all]</span>  <span class="li-normal">default: novirus</span> </li>
- <li><span class="li-head">av-preload</span> - Enable/disable preloading antivirus database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">av-log</span> - Antivirus log setting (default = novirus). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, novirus, all]</span> </li>
+ <li><span class="li-head">av-preload</span> - Enable/disable preloading antivirus database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">av2-cache</span> - Antispam service maximum memory usage in megabytes (Maximum = Physical memory-1024, 0: no limit, default = 800). <span class="li-normal">type: int</span>  <span class="li-normal">default: 800</span> </li>
- <li><span class="li-head">av2-log</span> - Outbreak prevention log setting (default = noav2). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, noav2, all]</span>  <span class="li-normal">default: noav2</span> </li>
- <li><span class="li-head">av2-preload</span> - Enable/disable preloading outbreak prevention database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">eventlog-query</span> - Enable/disable record query to event-log besides fgd-log (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">av2-log</span> - Outbreak prevention log setting (default = noav2). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, noav2, all]</span> </li>
+ <li><span class="li-head">av2-preload</span> - Enable/disable preloading outbreak prevention database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eventlog-query</span> - Enable/disable record query to event-log besides fgd-log (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">fgd-pull-interval</span> - Fgd pull interval setting, in minutes (1 - 1440, default = 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">fq-cache</span> - File query service maximum memory usage, in megabytes (100 - 500, default = 300). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">fq-log</span> - File query log setting (default = nofilequery). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, nofilequery, all]</span>  <span class="li-normal">default: nofilequery</span> </li>
- <li><span class="li-head">fq-preload</span> - Enable/disable preloading file query database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">linkd-log</span> - Linkd log setting (default = debug). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: debug</span> </li>
+ <li><span class="li-head">fq-log</span> - File query log setting (default = nofilequery). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, nofilequery, all]</span> </li>
+ <li><span class="li-head">fq-preload</span> - Enable/disable preloading file query database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">linkd-log</span> - Linkd log setting (default = debug). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> </li>
  <li><span class="li-head">max-client-worker</span> - max worker for tcp client connection (0~16: 0 means use cpu number up to 4). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">max-log-quota</span> - Maximum log quota setting, in megabytes (100 - 20480, default = 6144). <span class="li-normal">type: int</span>  <span class="li-normal">default: 6144</span> </li>
  <li><span class="li-head">max-unrated-site</span> - Maximum number of unrated site in memory, in kilobytes(10 - 5120, default = 500). <span class="li-normal">type: int</span>  <span class="li-normal">default: 500</span> </li>
@@ -72,22 +72,22 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">servlist</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Override server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - IPv4 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip6</span> - IPv6 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the override server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6</span> - IPv6 address of the override server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Port number to use when contacting FortiGuard (1 - 65535, default = 443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span> </li>
  <li><span class="li-head">service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fgd, fgc, fsa]</span> </li>
  </ul>
- <li><span class="li-head">status</span> - Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">stat-log-interval</span> - Statistic log interval setting, in minutes (1 - 1440, default = 60). <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span> </li>
  <li><span class="li-head">stat-sync-interval</span> - Synchronization interval for statistic of unrated site in minutes (1 - 60, default = 60). <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span> </li>
  <li><span class="li-head">update-interval</span> - FortiGuard database update wait time if not enough delta files, in hours (2 - 24, default = 6). <span class="li-normal">type: int</span>  <span class="li-normal">default: 6</span> </li>
- <li><span class="li-head">update-log</span> - Enable/disable update log setting (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">update-log</span> - Enable/disable update log setting (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">wf-cache</span> - Web filter service maximum memory usage, in megabytes (maximum = Physical memory-1024, 0 = no limit, default = 600). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">wf-dn-cache-expire-time</span> - Web filter DN cache expire time, in minutes (1 - 1440, 0 = never, default = 30). <span class="li-normal">type: int</span>  <span class="li-normal">default: 30</span> </li>
  <li><span class="li-head">wf-dn-cache-max-number</span> - Maximum number of Web filter DN cache (0 = disable, default = 10000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span> </li>
- <li><span class="li-head">wf-log</span> - Web filter log setting (default = nour1) <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, nourl, all]</span>  <span class="li-normal">default: nourl</span> </li>
- <li><span class="li-head">wf-preload</span> - Enable/disable preloading the web filter database into memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">wf-log</span> - Web filter log setting (default = nour1) <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, nourl, all]</span> </li>
+ <li><span class="li-head">wf-preload</span> - Enable/disable preloading the web filter database into memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

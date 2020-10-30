@@ -43,15 +43,15 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">securityconsole_import_dev_objs</span> - Import objects from device to ADOM, or from ADOM to Global. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">add_mappings</span> - Automatically add required dynamic mappings for the device during the search stages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">add_mappings</span> - Automatically add required dynamic mappings for the device during the search stages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">adom</span> - Source ADOM name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dst_name</span> - Name of the policy package where the objects are to be imported. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dst_parent</span> - Path to the folder for the target package. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">if_all_objs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, all, filter]</span>  <span class="li-normal">default: none</span> </li>
- <li><span class="li-head">if_all_policy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">import_action</span> - do - Perform the policy and object import. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [do, policy_search, obj_search]</span>  <span class="li-normal">default: do</span> </li>
+ <li><span class="li-head">if_all_objs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, all, filter]</span> </li>
+ <li><span class="li-head">if_all_policy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">import_action</span> - do - Perform the policy and object import. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [do, policy_search, obj_search]</span> </li>
  <li><span class="li-head">name</span> - Source device name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">position</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bottom, top]</span>  <span class="li-normal">default: top</span> </li>
+ <li><span class="li-head">position</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bottom, top]</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>

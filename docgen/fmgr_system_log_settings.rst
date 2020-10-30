@@ -55,88 +55,88 @@ Parameters
  <li><span class="li-head">FSA-custom-field1</span> - Name of custom log field to index. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">FWB-custom-field1</span> - Name of custom log field to index. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">browse-max-logfiles</span> - Maximum number of log files for each log browse attempt for each Adom. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span> </li>
- <li><span class="li-head">dns-resolve-dstip</span> - Enable/Disable resolving destination IP by DNS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">dns-resolve-dstip</span> - Enable/Disable resolving destination IP by DNS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">download-max-logs</span> - Maximum number of logs for each log download attempt. <span class="li-normal">type: int</span>  <span class="li-normal">default: 500000</span> </li>
- <li><span class="li-head">ha-auto-migrate</span> - Enabled/Disable automatically merging HA members logs to HA cluster. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">ha-auto-migrate</span> - Enabled/Disable automatically merging HA members logs to HA cluster. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">import-max-logfiles</span> - Maximum number of log files for each log import attempt. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span> </li>
- <li><span class="li-head">log-file-archive-name</span> - Log file name format for archiving, such as backup, upload or download. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [basic, extended]</span>  <span class="li-normal">default: basic</span> </li>
+ <li><span class="li-head">log-file-archive-name</span> - Log file name format for archiving, such as backup, upload or download. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [basic, extended]</span> </li>
  <li><span class="li-head">rolling-analyzer</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
  <li><span class="li-head">days</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [sun, mon, tue, wed, thu, fri, sat]</span> </li>
- <li><span class="li-head">del-files</span> - Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">del-files</span> - Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">directory</span> - Upload server directory, for Unix server, use absolute <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">file-size</span> - Roll log files when they reach this size (MB). <span class="li-normal">type: int</span>  <span class="li-normal">default: 200</span> </li>
- <li><span class="li-head">gzip-format</span> - Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">gzip-format</span> - Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">hour</span> - Log files rolling schedule (hour). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - Upload server IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip2</span> - Upload server IP2 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip3</span> - Upload server IP3 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">log-format</span> - Format of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> </li>
+ <li><span class="li-head">ip</span> - Upload server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip2</span> - Upload server IP2 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip3</span> - Upload server IP3 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-format</span> - Format of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [native, text, csv]</span> </li>
  <li><span class="li-head">min</span> - Log files rolling schedule (minutes). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password2</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password3</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">server-type</span> - Upload server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ftp, sftp, scp]</span>  <span class="li-normal">default: ftp</span> </li>
- <li><span class="li-head">upload</span> - Enable/disable log file uploads. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">server-type</span> - Upload server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ftp, sftp, scp]</span> </li>
+ <li><span class="li-head">upload</span> - Enable/disable log file uploads. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">upload-hour</span> - Log files upload schedule (hour). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">upload-mode</span> - Upload mode with multiple servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [backup, mirror]</span>  <span class="li-normal">default: backup</span> </li>
- <li><span class="li-head">upload-trigger</span> - Event triggering log files upload. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [on-roll, on-schedule]</span>  <span class="li-normal">default: on-roll</span> </li>
+ <li><span class="li-head">upload-mode</span> - Upload mode with multiple servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [backup, mirror]</span> </li>
+ <li><span class="li-head">upload-trigger</span> - Event triggering log files upload. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [on-roll, on-schedule]</span> </li>
  <li><span class="li-head">username</span> - Upload server login username. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username2</span> - Upload server login username2. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username3</span> - Upload server login username3. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span> </li>
  </ul>
  <li><span class="li-head">rolling-local</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
  <li><span class="li-head">days</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [sun, mon, tue, wed, thu, fri, sat]</span> </li>
- <li><span class="li-head">del-files</span> - Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">del-files</span> - Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">directory</span> - Upload server directory, for Unix server, use absolute <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">file-size</span> - Roll log files when they reach this size (MB). <span class="li-normal">type: int</span>  <span class="li-normal">default: 200</span> </li>
- <li><span class="li-head">gzip-format</span> - Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">gzip-format</span> - Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">hour</span> - Log files rolling schedule (hour). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - Upload server IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip2</span> - Upload server IP2 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip3</span> - Upload server IP3 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">log-format</span> - Format of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> </li>
+ <li><span class="li-head">ip</span> - Upload server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip2</span> - Upload server IP2 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip3</span> - Upload server IP3 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-format</span> - Format of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [native, text, csv]</span> </li>
  <li><span class="li-head">min</span> - Log files rolling schedule (minutes). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password2</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password3</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">server-type</span> - Upload server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ftp, sftp, scp]</span>  <span class="li-normal">default: ftp</span> </li>
- <li><span class="li-head">upload</span> - Enable/disable log file uploads. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">server-type</span> - Upload server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ftp, sftp, scp]</span> </li>
+ <li><span class="li-head">upload</span> - Enable/disable log file uploads. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">upload-hour</span> - Log files upload schedule (hour). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">upload-mode</span> - Upload mode with multiple servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [backup, mirror]</span>  <span class="li-normal">default: backup</span> </li>
- <li><span class="li-head">upload-trigger</span> - Event triggering log files upload. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [on-roll, on-schedule]</span>  <span class="li-normal">default: on-roll</span> </li>
+ <li><span class="li-head">upload-mode</span> - Upload mode with multiple servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [backup, mirror]</span> </li>
+ <li><span class="li-head">upload-trigger</span> - Event triggering log files upload. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [on-roll, on-schedule]</span> </li>
  <li><span class="li-head">username</span> - Upload server login username. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username2</span> - Upload server login username2. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username3</span> - Upload server login username3. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span> </li>
  </ul>
  <li><span class="li-head">rolling-regular</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
  <li><span class="li-head">days</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [sun, mon, tue, wed, thu, fri, sat]</span> </li>
- <li><span class="li-head">del-files</span> - Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">del-files</span> - Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">directory</span> - Upload server directory, for Unix server, use absolute <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">file-size</span> - Roll log files when they reach this size (MB). <span class="li-normal">type: int</span>  <span class="li-normal">default: 200</span> </li>
- <li><span class="li-head">gzip-format</span> - Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">gzip-format</span> - Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">hour</span> - Log files rolling schedule (hour). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - Upload server IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip2</span> - Upload server IP2 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip3</span> - Upload server IP3 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">log-format</span> - Format of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> </li>
+ <li><span class="li-head">ip</span> - Upload server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip2</span> - Upload server IP2 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip3</span> - Upload server IP3 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-format</span> - Format of uploaded log files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [native, text, csv]</span> </li>
  <li><span class="li-head">min</span> - Log files rolling schedule (minutes). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password2</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password3</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">server-type</span> - Upload server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ftp, sftp, scp]</span>  <span class="li-normal">default: ftp</span> </li>
- <li><span class="li-head">upload</span> - Enable/disable log file uploads. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">server-type</span> - Upload server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ftp, sftp, scp]</span> </li>
+ <li><span class="li-head">upload</span> - Enable/disable log file uploads. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">upload-hour</span> - Log files upload schedule (hour). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">upload-mode</span> - Upload mode with multiple servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [backup, mirror]</span>  <span class="li-normal">default: backup</span> </li>
- <li><span class="li-head">upload-trigger</span> - Event triggering log files upload. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [on-roll, on-schedule]</span>  <span class="li-normal">default: on-roll</span> </li>
+ <li><span class="li-head">upload-mode</span> - Upload mode with multiple servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [backup, mirror]</span> </li>
+ <li><span class="li-head">upload-trigger</span> - Event triggering log files upload. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [on-roll, on-schedule]</span> </li>
  <li><span class="li-head">username</span> - Upload server login username. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username2</span> - Upload server login username2. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username3</span> - Upload server login username3. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span> </li>
  </ul>
  <li><span class="li-head">sync-search-timeout</span> - Maximum number of seconds for running a log search session in synchronous mode. <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span> </li>
  </ul>

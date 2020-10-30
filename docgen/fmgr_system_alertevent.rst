@@ -50,15 +50,15 @@ Parameters
  <li><span class="li-head">snmp-name</span> - SNMP trap name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">syslog-name</span> - Syslog server name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">to</span> - Recipient email address to use in alert emails. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Destination type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mail, snmp, syslog]</span>  <span class="li-normal">default: mail</span> </li>
+ <li><span class="li-head">type</span> - Destination type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mail, snmp, syslog]</span> </li>
  </ul>
  <li><span class="li-head">enable-generic-text</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span> </li>
  <li><span class="li-head">enable-severity-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span> </li>
- <li><span class="li-head">event-time-period</span> - Time period (hours). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span>  <span class="li-normal">default: 0.5</span> </li>
+ <li><span class="li-head">event-time-period</span> - Time period (hours). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span> </li>
  <li><span class="li-head">generic-text</span> - Text that must be contained in a log to trigger alert. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Alert name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">num-events</span> - Minimum number of events required within time period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 5, 10, 50, 100]</span>  <span class="li-normal">default: 1</span> </li>
- <li><span class="li-head">severity-filter</span> - Required log severity to trigger alert. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span>  <span class="li-normal">default: high</span> </li>
+ <li><span class="li-head">num-events</span> - Minimum number of events required within time period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 5, 10, 50, 100]</span> </li>
+ <li><span class="li-head">severity-filter</span> - Required log severity to trigger alert. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span> </li>
  <li><span class="li-head">severity-level-comp</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [string of >=, string of =, string of <=]</span> </li>
  <li><span class="li-head">severity-level-logs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [no-check, information, notify, warning, error, critical, alert, emergency]</span> </li>
  </ul>

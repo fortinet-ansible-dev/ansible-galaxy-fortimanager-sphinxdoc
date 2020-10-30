@@ -44,7 +44,7 @@ Parameters
  <li><span class="li-head">system_report_estbrowsetime</span> - Report estimated browse time settings <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">max-read-time</span> - Read time threshold for each page view. <span class="li-normal">type: int</span>  <span class="li-normal">default: 180</span> </li>
- <li><span class="li-head">status</span> - Estimate browse time status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">status</span> - Estimate browse time status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

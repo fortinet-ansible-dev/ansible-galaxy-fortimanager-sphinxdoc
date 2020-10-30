@@ -47,7 +47,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">id</span> - Host entry ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">interface</span> - Allow interface name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - Allow host IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
+ <li><span class="li-head">ip</span> - Allow host IP address. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 

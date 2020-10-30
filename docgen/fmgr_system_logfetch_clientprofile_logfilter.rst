@@ -47,7 +47,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">field</span> - Field name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id</span> - Log filter ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">oper</span> - Field filter operator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span>  <span class="li-normal">default: =</span> </li>
+ <li><span class="li-head">oper</span> - Field filter operator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span> </li>
  <li><span class="li-head">value</span> - Field filter operand or free-text matching expression. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>

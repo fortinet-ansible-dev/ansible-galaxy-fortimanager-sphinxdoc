@@ -115,6 +115,10 @@ Parameters
  <li><span class="li-head">vpn-zone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vpntable</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">xauthtype</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, client, pap, chap, auto]</span> </li>
+ <li><span class="li-head">scope member</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">name</span> - name of scope member <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vdom</span> - vdom of scope member <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -229,6 +233,10 @@ Examples
             vpn-zone: <value of string>
             vpntable: <value of string>
             xauthtype: <value in [disable, client, pap, ...]>
+            scope member:
+              -
+                  name: <value of string>
+                  vdom: <value of string>
 
 
 

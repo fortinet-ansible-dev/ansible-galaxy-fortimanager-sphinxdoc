@@ -48,24 +48,24 @@ Parameters
  <li><span class="li-head">hosts</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Host entry ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">interface</span> - Allow interface name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - Allow host IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
+ <li><span class="li-head">ip</span> - Allow host IP address. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">hosts6</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Host entry ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">interface</span> - Allow interface name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - Allow host IP address. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span> </li>
+ <li><span class="li-head">ip</span> - Allow host IP address. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">id</span> - Community ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">name</span> - Community name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">query_v1_port</span> - SNMP v1 query port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 161</span> </li>
- <li><span class="li-head">query_v1_status</span> - Enable/disable SNMP v1 query. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">query_v1_status</span> - Enable/disable SNMP v1 query. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">query_v2c_port</span> - SNMP v2c query port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 161</span> </li>
- <li><span class="li-head">query_v2c_status</span> - Enable/disable SNMP v2c query. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">status</span> - Enable/disable community. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">query_v2c_status</span> - Enable/disable SNMP v2c query. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable community. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">trap_v1_rport</span> - SNMP v1 trap remote port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 162</span> </li>
- <li><span class="li-head">trap_v1_status</span> - Enable/disable SNMP v1 trap. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">trap_v1_status</span> - Enable/disable SNMP v1 trap. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">trap_v2c_rport</span> - SNMP v2c trap remote port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 162</span> </li>
- <li><span class="li-head">trap_v2c_status</span> - Enable/disable SNMP v2c trap. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">trap_v2c_status</span> - Enable/disable SNMP v2c trap. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

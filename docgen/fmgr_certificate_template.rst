@@ -47,11 +47,11 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">city</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">digest-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sha1, sha256]</span>  <span class="li-normal">default: sha1</span> </li>
+ <li><span class="li-head">digest-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sha1, sha256]</span> </li>
  <li><span class="li-head">email</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">id-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [host-ip, domain-name, email]</span>  <span class="li-normal">default: host-ip</span> </li>
- <li><span class="li-head">key-size</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [512, 1024, 1536, 2048]</span>  <span class="li-normal">default: 2048</span> </li>
- <li><span class="li-head">key-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rsa]</span>  <span class="li-normal">default: rsa</span> </li>
+ <li><span class="li-head">id-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [host-ip, domain-name, email]</span> </li>
+ <li><span class="li-head">key-size</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [512, 1024, 1536, 2048]</span> </li>
+ <li><span class="li-head">key-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rsa]</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">organization</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">organization-unit</span> - No description for the parameter <span class="li-normal">type: str</span></li>
@@ -59,7 +59,7 @@ Parameters
  <li><span class="li-head">scep-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">state</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">subject-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [external, local]</span>  <span class="li-normal">default: external</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [external, local]</span> </li>
  </ul>
  </ul>
 

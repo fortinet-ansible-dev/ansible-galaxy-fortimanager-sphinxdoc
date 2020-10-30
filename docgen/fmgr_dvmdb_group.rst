@@ -48,8 +48,8 @@ Parameters
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span>  <span class="li-normal">default: unknown</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, default, auto]</span>  <span class="li-normal">default: normal</span> </li>
+ <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, default, auto]</span> </li>
  </ul>
  </ul>
 

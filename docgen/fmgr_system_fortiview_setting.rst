@@ -43,8 +43,8 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_fortiview_setting</span> - FortiView settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">not-scanned-apps</span> - Include/Exclude Not. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [exclude, include]</span>  <span class="li-normal">default: include</span> </li>
- <li><span class="li-head">resolve-ip</span> - Enable or disable resolving IP address to hostname in FortiView. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">not-scanned-apps</span> - Include/Exclude Not. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [exclude, include]</span> </li>
+ <li><span class="li-head">resolve-ip</span> - Enable or disable resolving IP address to hostname in FortiView. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 

@@ -45,7 +45,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">adom</span> - Name or ID of the ADOM where the command is to be executed on. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> </li>
- <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [um, fgfm, apache, dvm, fwm, xml, json]</span>  <span class="li-normal">default: json</span> </li>
+ <li><span class="li-head">from</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [um, fgfm, apache, dvm, fwm, xml, json]</span> </li>
  <li><span class="li-head">reload-dev-member-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span> </li>

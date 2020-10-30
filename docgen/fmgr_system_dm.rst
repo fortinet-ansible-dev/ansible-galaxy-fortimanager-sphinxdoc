@@ -50,7 +50,7 @@ Parameters
  <li><span class="li-head">dpm-logsize</span> - Maximum dpm log size per device (1 - 10000K). <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span> </li>
  <li><span class="li-head">fgfm-sock-timeout</span> - Maximum FGFM socket idle time (90 - 1800 sec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 360</span> </li>
  <li><span class="li-head">fgfm_keepalive_itvl</span> - FGFM protocol keep alive interval (30 - 600 sec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 120</span> </li>
- <li><span class="li-head">force-remote-diff</span> - Always use remote diff when installing. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">force-remote-diff</span> - Always use remote diff when installing. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">fortiap-refresh-cnt</span> - Max auto refresh FortiAP number each time (1 - 10000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 500</span> </li>
  <li><span class="li-head">fortiap-refresh-itvl</span> - Auto refresh FortiAP status interval (0 - 1440) minutes, set to 0 will disable auto refresh. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">fortiext-refresh-cnt</span> - Max device number for FortiExtender auto refresh (1 - 10000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 50</span> </li>
@@ -58,13 +58,13 @@ Parameters
  <li><span class="li-head">install-tunnel-retry-itvl</span> - Time to re-establish tunnel during install (10 - 60 sec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span> </li>
  <li><span class="li-head">max-revs</span> - Maximum number of revisions saved (1 - 250). <span class="li-normal">type: int</span>  <span class="li-normal">default: 100</span> </li>
  <li><span class="li-head">nr-retry</span> - Number of retries. <span class="li-normal">type: int</span>  <span class="li-normal">default: 1</span> </li>
- <li><span class="li-head">retry</span> - Enable/disable configuration install retry. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">retry</span> - Enable/disable configuration install retry. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">retry-intvl</span> - Retry interval. <span class="li-normal">type: int</span>  <span class="li-normal">default: 15</span> </li>
- <li><span class="li-head">rollback-allow-reboot</span> - Enable/disable FortiGate reboot to rollback when installing script/config. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">rollback-allow-reboot</span> - Enable/disable FortiGate reboot to rollback when installing script/config. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">script-logsize</span> - Maximum script log size per device (1 - 10000K). <span class="li-normal">type: int</span>  <span class="li-normal">default: 100</span> </li>
- <li><span class="li-head">skip-scep-check</span> - Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">skip-tunnel-fcp-req</span> - Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">verify-install</span> - Verify install against remote configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, optimal, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">skip-scep-check</span> - Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">skip-tunnel-fcp-req</span> - Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">verify-install</span> - Verify install against remote configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, optimal, enable]</span> </li>
  </ul>
  </ul>
 

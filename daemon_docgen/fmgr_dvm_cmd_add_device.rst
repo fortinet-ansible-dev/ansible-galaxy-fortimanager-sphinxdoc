@@ -57,7 +57,7 @@ Parameters
  <li><span class="li-head">mr</span> - <i>add model device only</i>. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - <i>required for all operations</i>. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">os_type</span> - <i>add model device only</i>. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac]</span> </li>
- <li><span class="li-head">os_ver</span> - <i>add model device only</i>. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0]</span> </li>
+ <li><span class="li-head">os_ver</span> - os version <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]</span> </li>
  <li><span class="li-head">patch</span> - <i>add model device only</i>. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">platform_str</span> - <i>add model device only</i>. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">sn</span> - <i>add model device only</i>. <span class="li-normal">type: str</span> </li>

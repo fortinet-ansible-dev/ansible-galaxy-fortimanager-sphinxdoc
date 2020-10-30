@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">start-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">template</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, nsx, dynamic, fqdn, template]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, dynamic, fqdn, template]</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
@@ -93,7 +93,7 @@ Parameters
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  <li><span class="li-head">template</span> - IPv6 address template. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Type of IPv6 address object (default = ipprefix). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, nsx, dynamic, fqdn, template]</span> </li>
+ <li><span class="li-head">type</span> - Type of IPv6 address object (default = ipprefix). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, dynamic, fqdn, template]</span> </li>
  <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - Enable/disable the visibility of the object in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
@@ -162,7 +162,7 @@ Examples
                   start-ip: <value of string>
                   tags: <value of string>
                   template: <value of string>
-                  type: <value in [ipprefix, iprange, nsx, ...]>
+                  type: <value in [ipprefix, iprange, dynamic, ...]>
                   uuid: <value of string>
                   visibility: <value in [disable, enable]>
             end-ip: <value of string>
@@ -188,7 +188,7 @@ Examples
                   name: <value of string>
                   tags: <value of string>
             template: <value of string>
-            type: <value in [ipprefix, iprange, nsx, ...]>
+            type: <value in [ipprefix, iprange, dynamic, ...]>
             uuid: <value of string>
             visibility: <value in [disable, enable]>
 

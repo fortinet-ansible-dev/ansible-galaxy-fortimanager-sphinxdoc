@@ -43,56 +43,56 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_fdssetting</span> - Configure FortiGuard settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">User-Agent</span> - Configure the user agent string. <span class="li-normal">type: str</span>  <span class="li-normal">default: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)</span> </li>
- <li><span class="li-head">fds-clt-ssl-protocol</span> - The SSL protocols version for connecting fds server (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
- <li><span class="li-head">fds-ssl-protocol</span> - The SSL protocols version for receiving fgt connection (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
- <li><span class="li-head">fmtr-log</span> - fmtr log level <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span> </li>
- <li><span class="li-head">linkd-log</span> - The linkd log level (default = info). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span> </li>
+ <li><span class="li-head">User-Agent</span> - Configure the user agent string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fds-clt-ssl-protocol</span> - The SSL protocols version for connecting fds server (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span> </li>
+ <li><span class="li-head">fds-ssl-protocol</span> - The SSL protocols version for receiving fgt connection (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span> </li>
+ <li><span class="li-head">fmtr-log</span> - fmtr log level <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> </li>
+ <li><span class="li-head">linkd-log</span> - The linkd log level (default = info). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> </li>
  <li><span class="li-head">max-av-ips-version</span> - The maximum number of downloadable, full version AV/IPS packages (1 - 1000, default = 20). <span class="li-normal">type: int</span>  <span class="li-normal">default: 20</span> </li>
  <li><span class="li-head">max-work</span> - The maximum number of worker processing download requests (1 - 32, default = 1). <span class="li-normal">type: int</span>  <span class="li-normal">default: 1</span> </li>
  <li><span class="li-head">push-override</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">ip</span> - External or virtual IP address of the NAT device that will forward push messages to the FortiManager unit. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">ip</span> - External or virtual IP address of the NAT device that will forward push messages to the FortiManager unit. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Receiving port number on the NAT device (1 - 65535, default = 9443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 9443</span> </li>
- <li><span class="li-head">status</span> - Enable/disable push updates for clients (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable push updates for clients (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">push-override-to-client</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
  <li><span class="li-head">announce-ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - ID of the announce IP address (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - Announce IPv4 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">ip</span> - Announce IPv4 address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Announce IP port (1 - 65535, default = 8890). <span class="li-normal">type: int</span>  <span class="li-normal">default: 8890</span> </li>
  </ul>
- <li><span class="li-head">status</span> - Enable/disable push updates (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable push updates (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
- <li><span class="li-head">send_report</span> - send report/fssi to fds server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">send_setup</span> - forward setup to fds server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">send_report</span> - send report/fssi to fds server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">send_setup</span> - forward setup to fds server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">server-override</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
  <li><span class="li-head">servlist</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Override server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - IPv4 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
- <li><span class="li-head">ip6</span> - IPv6 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the override server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6</span> - IPv6 address of the override server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Port number to use when contacting FortiGuard (1 - 65535, default = 443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span> </li>
  <li><span class="li-head">service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fds, fct]</span> </li>
  </ul>
- <li><span class="li-head">status</span> - Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">status</span> - Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">system-support-fct</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0]</span> </li>
  <li><span class="li-head">system-support-fgt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2]</span> </li>
  <li><span class="li-head">system-support-fml</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [4.x, 5.x, 6.x]</span> </li>
  <li><span class="li-head">system-support-fsa</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1.x, 2.x, 3.x]</span> </li>
  <li><span class="li-head">system-support-fsw</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2]</span> </li>
- <li><span class="li-head">umsvc-log</span> - The um_service log level (default = info). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span> </li>
- <li><span class="li-head">unreg-dev-option</span> - set the option for unregister devices <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ignore, svc-only, add-service]</span>  <span class="li-normal">default: add-service</span> </li>
+ <li><span class="li-head">umsvc-log</span> - The um_service log level (default = info). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> </li>
+ <li><span class="li-head">unreg-dev-option</span> - set the option for unregister devices <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ignore, svc-only, add-service]</span> </li>
  <li><span class="li-head">update-schedule</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">day</span> - Configure the day the update will occur, if the freqnecy is weekly (Sunday - Saturday, default = Monday). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]</span>  <span class="li-normal">default: Monday</span> </li>
- <li><span class="li-head">frequency</span> - Configure update frequency: every - time interval, daily - once a day, weekly - once a week (default = every). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [every, daily, weekly]</span>  <span class="li-normal">default: every</span> </li>
- <li><span class="li-head">status</span> - Enable/disable scheduled updates. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">day</span> - Configure the day the update will occur, if the freqnecy is weekly (Sunday - Saturday, default = Monday). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]</span> </li>
+ <li><span class="li-head">frequency</span> - Configure update frequency: every - time interval, daily - once a day, weekly - once a week (default = every). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [every, daily, weekly]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable scheduled updates. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
- <li><span class="li-head">wanip-query-mode</span> - public ip query mode <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, ipify]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">wanip-query-mode</span> - public ip query mode <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, ipify]</span> </li>
  </ul>
  </ul>
 

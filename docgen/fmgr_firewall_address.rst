@@ -49,7 +49,7 @@ Parameters
  <li><span class="li-head">associated-interface</span> - Network interface associated with address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">cache-ttl</span> - Defines the minimal TTL of individual IP addresses in FQDN cache measured in seconds. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">color</span> - Color of icon on the GUI. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">country</span> - IP addresses associated to a specific country. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
@@ -60,7 +60,7 @@ Parameters
  <li><span class="li-head">associated-interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">cache-ttl</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">color</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
+ <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">end-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">end-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -80,7 +80,7 @@ Parameters
  <li><span class="li-head">subnet-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tenant</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, url, wildcard-fqdn, nsx, aws, dynamic, interface-subnet, mac]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, wildcard-fqdn, dynamic]</span> </li>
  <li><span class="li-head">url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -109,7 +109,7 @@ Parameters
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  <li><span class="li-head">tenant</span> - Tenant. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Type of address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, url, wildcard-fqdn, nsx, aws, dynamic, interface-subnet, mac]</span> </li>
+ <li><span class="li-head">type</span> - Type of address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, wildcard-fqdn, dynamic]</span> </li>
  <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - Enable/disable address visibility in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">wildcard</span> - IP address and wildcard netmask. <span class="li-normal">type: str</span> </li>
@@ -162,7 +162,7 @@ Examples
             associated-interface: <value of string>
             cache-ttl: <value of integer>
             color: <value of integer>
-            comment: <value of dict>
+            comment: <value of string>
             country: <value of string>
             dynamic_mapping:
               -
@@ -174,7 +174,7 @@ Examples
                   associated-interface: <value of string>
                   cache-ttl: <value of integer>
                   color: <value of integer>
-                  comment: <value of dict>
+                  comment: <value of string>
                   country: <value of string>
                   end-ip: <value of string>
                   end-mac: <value of string>

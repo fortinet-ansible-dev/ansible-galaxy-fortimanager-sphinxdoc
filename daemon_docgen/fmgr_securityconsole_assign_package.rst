@@ -47,7 +47,7 @@ Parameters
  <li><span class="li-head">pkg</span> - Source package path and name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">adom</span> - Destination ADOM. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">excluded</span> - disable - Only include the packages listed in the <i>pkg</i> list. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">excluded</span> - disable - Only include the packages listed in the <i>pkg</i> list. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">pkg</span> - Destination ADOM policy package path and name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>

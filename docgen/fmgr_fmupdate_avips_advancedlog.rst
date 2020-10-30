@@ -43,8 +43,8 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_avips_advancedlog</span> - Enable/disable logging of FortiGuard antivirus and IPS update packages received by FortiManagers built-in FortiGuard. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">log-fortigate</span> - Enable/disable logging of FortiGuard antivirus and IPS service updates of FortiGate devices (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">log-server</span> - Enable/disable logging of update packages received by the build-in FortiGuard server (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">log-fortigate</span> - Enable/disable logging of FortiGuard antivirus and IPS service updates of FortiGate devices (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-server</span> - Enable/disable logging of update packages received by the build-in FortiGuard server (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
