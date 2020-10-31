@@ -44,11 +44,11 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_mail</span> - Alert emails. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth</span> - Enable authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auth</span> - Enable authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">id</span> - Mail Service ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">port</span> - SMTP server port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 25</span> </li>
- <li><span class="li-head">secure-option</span> - Communication secure option. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, none, smtps, starttls]</span> </li>
+ <li><span class="li-head">secure-option</span> - Communication secure option. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, none, smtps, starttls]</span>  <span class="li-normal">default: default</span> </li>
  <li><span class="li-head">server</span> - SMTP server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">user</span> - SMTP account username. <span class="li-normal">type: str</span> </li>
  </ul>

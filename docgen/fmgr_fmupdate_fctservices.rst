@@ -44,7 +44,7 @@ Parameters
  <li><span class="li-head">fmupdate_fctservices</span> - Configure FortiGuard to provide services to FortiClient installations. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">port</span> - Configure the port number on which the built-in FortiGuard should provide updates to FortiClient installations (1 - 65535, default = 80). <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
- <li><span class="li-head">status</span> - Enable/disable built-in FortiGuard service to FortiClient installations (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable built-in FortiGuard service to FortiClient installations (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 

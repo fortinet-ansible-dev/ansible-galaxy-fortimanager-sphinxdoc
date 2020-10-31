@@ -47,7 +47,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">var-expression</span> - Variable expression. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">var-name</span> - Variable name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">var-type</span> - Variable type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span> </li>
+ <li><span class="li-head">var-type</span> - Variable type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span>  <span class="li-normal">default: string</span> </li>
  </ul>
  </ul>
 

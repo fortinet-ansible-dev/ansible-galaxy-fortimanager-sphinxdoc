@@ -45,7 +45,7 @@ Parameters
  <li><span class="li-head">fmupdate_fdssetting_pushoverridetoclient_announceip</span> - Announce IP addresses for the device. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">id</span> - ID of the announce IP address (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - Announce IPv4 address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - Announce IPv4 address. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
  <li><span class="li-head">port</span> - Announce IP port (1 - 65535, default = 8890). <span class="li-normal">type: int</span>  <span class="li-normal">default: 8890</span> </li>
  </ul>
  </ul>

@@ -47,7 +47,7 @@ Parameters
  <li><span class="li-head">description</span> - System description. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">engine-id</span> - Local SNMP engineID string (maximum 24 characters). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">location</span> - System location. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - Enable/disable SNMP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable SNMP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">trap-cpu-high-exclude-nice-threshold</span> - SNMP trap for CPU usage threshold (exclude NICE processes). <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
  <li><span class="li-head">trap-high-cpu-threshold</span> - SNMP trap for CPU usage threshold. <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
  <li><span class="li-head">trap-low-memory-threshold</span> - SNMP trap for memory usage threshold. <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>

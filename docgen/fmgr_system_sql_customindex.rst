@@ -44,11 +44,11 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_sql_customindex</span> - List of SQL index fields. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">case-sensitive</span> - Disable/Enable case sensitive index. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">device-type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span> </li>
+ <li><span class="li-head">case-sensitive</span> - Disable/Enable case sensitive index. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">device-type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span> </li>
  <li><span class="li-head">id</span> - Add or Edit log index fields. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">index-field</span> - Log field name to be indexed. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span> </li>
+ <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span>  <span class="li-normal">default: traffic</span> </li>
  </ul>
  </ul>
 

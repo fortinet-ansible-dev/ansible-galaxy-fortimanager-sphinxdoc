@@ -43,7 +43,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_alertconsole</span> - Alert console. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">period</span> - Alert console keeps alerts for this period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 3, 4, 5, 6, 7]</span> </li>
+ <li><span class="li-head">period</span> - Alert console keeps alerts for this period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 2, 3, 4, 5, 6, 7]</span>  <span class="li-normal">default: 7</span> </li>
  <li><span class="li-head">severity-level</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [debug, information, notify, warning, error, critical, alert, emergency]</span> </li>
  </ul>
  </ul>

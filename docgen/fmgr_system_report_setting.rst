@@ -43,13 +43,13 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_report_setting</span> - Report settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aggregate-report</span> - Enable/disable including a group report along with the per-device reports. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">hcache-lossless</span> - Usableness of ready-with-loss hcaches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">aggregate-report</span> - Enable/disable including a group report along with the per-device reports. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">hcache-lossless</span> - Usableness of ready-with-loss hcaches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">ldap-cache-timeout</span> - LDAP cache timeout in minutes, default 60, 0 means not use cache. <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span> </li>
  <li><span class="li-head">max-table-rows</span> - Maximum number of rows can be generated in a single table. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span> </li>
- <li><span class="li-head">report-priority</span> - Priority of sql report. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, auto]</span> </li>
- <li><span class="li-head">template-auto-install</span> - The language used for new ADOMs (default = default). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, english]</span> </li>
- <li><span class="li-head">week-start</span> - Day of the week on which the week starts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sun, mon]</span> </li>
+ <li><span class="li-head">report-priority</span> - Priority of sql report. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, auto]</span>  <span class="li-normal">default: auto</span> </li>
+ <li><span class="li-head">template-auto-install</span> - The language used for new ADOMs (default = default). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, english]</span>  <span class="li-normal">default: default</span> </li>
+ <li><span class="li-head">week-start</span> - Day of the week on which the week starts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sun, mon]</span>  <span class="li-normal">default: sun</span> </li>
  </ul>
  </ul>
 

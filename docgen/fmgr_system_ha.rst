@@ -47,14 +47,14 @@ Parameters
  <li><span class="li-head">file-quota</span> - File quota in MB (2048 - 20480). <span class="li-normal">type: int</span>  <span class="li-normal">default: 4096</span> </li>
  <li><span class="li-head">hb-interval</span> - Heartbeat interval (1 - 255). <span class="li-normal">type: int</span>  <span class="li-normal">default: 5</span> </li>
  <li><span class="li-head">hb-lost-threshold</span> - Heartbeat lost threshold (1 - 255). <span class="li-normal">type: int</span>  <span class="li-normal">default: 3</span> </li>
- <li><span class="li-head">mode</span> - Mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, master, slave]</span> </li>
+ <li><span class="li-head">mode</span> - Mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, master, slave]</span>  <span class="li-normal">default: standalone</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">peer</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Id. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ip</span> - IP address of peer. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6</span> - IP address (V6) of peer. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IP address of peer. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span> </li>
+ <li><span class="li-head">ip6</span> - IP address (V6) of peer. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span> </li>
  <li><span class="li-head">serial-number</span> - Serial number of peer. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - Peer admin status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Peer admin status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
  </ul>

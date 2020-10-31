@@ -43,7 +43,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_analyzer_virusreport</span> - Send virus detection notification to FortiGuard. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">status</span> - Enable/disable sending virus detection notification to FortiGuard (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable sending virus detection notification to FortiGuard (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 

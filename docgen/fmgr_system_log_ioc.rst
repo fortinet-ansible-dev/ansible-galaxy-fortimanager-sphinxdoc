@@ -43,12 +43,12 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_log_ioc</span> - IoC settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">notification</span> - Disable/Enable IoC notification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">notification</span> - Disable/Enable IoC notification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">notification-throttle</span> - Minute value for throttling the rate of IoC notifications. <span class="li-normal">type: int</span>  <span class="li-normal">default: 1440</span> </li>
  <li><span class="li-head">rescan-max-runner</span> - Max count of cocurrent runner of IoC rescan. <span class="li-normal">type: int</span>  <span class="li-normal">default: 8</span> </li>
  <li><span class="li-head">rescan-run-at</span> - When to run IoC rescan. <span class="li-normal">type: int</span>  <span class="li-normal">default: 24</span> </li>
- <li><span class="li-head">rescan-status</span> - Disable/Enable IoC rescan. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">status</span> - Disable/Enable IoC feature. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rescan-status</span> - Disable/Enable IoC rescan. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">status</span> - Disable/Enable IoC feature. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 

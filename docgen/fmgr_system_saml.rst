@@ -50,8 +50,8 @@ Parameters
  <li><span class="li-head">idp-entity-id</span> - IDP entity ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">idp-single-logout-url</span> - IDP single logout url. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">idp-single-sign-on-url</span> - IDP single sign-on URL. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">login-auto-redirect</span> - Enable/Disable auto redirect to IDP login page. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">role</span> - SAML role. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [IDP, SP]</span> </li>
+ <li><span class="li-head">login-auto-redirect</span> - Enable/Disable auto redirect to IDP login page. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">role</span> - SAML role. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [IDP, SP]</span>  <span class="li-normal">default: SP</span> </li>
  <li><span class="li-head">server-address</span> - server address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">service-providers</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">idp-entity-id</span> - IDP Entity ID. <span class="li-normal">type: str</span> </li>
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">sp-single-sign-on-url</span> - SP single sign-on URL. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">sls-url</span> - SP SLS(logout) URL. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">status</span> - Enable/disable SAML authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable SAML authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 

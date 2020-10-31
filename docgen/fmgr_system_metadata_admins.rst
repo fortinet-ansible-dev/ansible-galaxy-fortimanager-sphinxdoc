@@ -44,10 +44,10 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_metadata_admins</span> - Configure admins. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">fieldlength</span> - Field length. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [20, 50, 255]</span> </li>
+ <li><span class="li-head">fieldlength</span> - Field length. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [20, 50, 255]</span>  <span class="li-normal">default: 50</span> </li>
  <li><span class="li-head">fieldname</span> - Field name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">importance</span> - Field importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span> </li>
- <li><span class="li-head">status</span> - Field status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">importance</span> - Field importance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, required]</span>  <span class="li-normal">default: required</span> </li>
+ <li><span class="li-head">status</span> - Field status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span>  <span class="li-normal">default: enabled</span> </li>
  </ul>
  </ul>
 

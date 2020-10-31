@@ -44,8 +44,8 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">system_admin_tacacs</span> - TACACS+ server entry configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">authen-type</span> - Authentication type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, ascii, pap, chap, mschap]</span> </li>
- <li><span class="li-head">authorization</span> - Enable/disable TACACS+ authorization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authen-type</span> - Authentication type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, ascii, pap, chap, mschap]</span>  <span class="li-normal">default: auto</span> </li>
+ <li><span class="li-head">authorization</span> - Enable/disable TACACS+ authorization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">name</span> - TACACS+ server entry name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Port number of TACACS+ server. <span class="li-normal">type: int</span>  <span class="li-normal">default: 49</span> </li>

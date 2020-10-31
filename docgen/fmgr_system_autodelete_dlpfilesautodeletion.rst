@@ -43,9 +43,9 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_autodelete_dlpfilesautodeletion</span> - Automatic deletion policy for DLP archives. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">retention</span> - Automatic deletion in days, weeks, or months. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [days, weeks, months]</span> </li>
+ <li><span class="li-head">retention</span> - Automatic deletion in days, weeks, or months. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [days, weeks, months]</span>  <span class="li-normal">default: days</span> </li>
  <li><span class="li-head">runat</span> - Automatic deletion run at (0 - 23) oclock. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">status</span> - Enable/disable automatic deletion. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable automatic deletion. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">value</span> - Automatic deletion in x days, weeks, or months. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  </ul>
  </ul>
