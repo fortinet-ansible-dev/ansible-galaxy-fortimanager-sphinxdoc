@@ -46,7 +46,7 @@ Parameters
  <li><span class="li-head">templategroup</span> - no description <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">description</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  <li><span class="li-head">modification-time</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
@@ -94,7 +94,7 @@ Examples
          state: <value in [present, absent]>
          templategroup:
             description: <value of string>
-            member: <value of string>
+            member: <value of list>
             modification-time: <value of string>
             name: <value of string>
 
