@@ -46,4 +46,24 @@ Features
 -  Runnable examples `repository <example.html>`__.
 
 
+Release Galaxy 2.0.1
+~~~~~~~~~~~~~~~~~~~~~
 
+|
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``
+
+Features & Bugfix
+------------------
+
+- Fix attribute:type for module: ``fmgr_firewall_addresss`` and ``fmgr_firewall_addresss6``.
+- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/9
+- Fix mantis #0672125
+- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/11
+- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/12
+- ``fmgr_fact`` module supports full selectors.
+- Remove all default value in module argument specification to avoid confusion
+- Fix module ``fmgr_templategroup`` attribute: member
