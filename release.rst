@@ -67,3 +67,19 @@ Features & Bugfix
 - ``fmgr_fact`` module supports full selectors.
 - Remove all default value in module argument specification to avoid confusion
 - Fix module ``fmgr_templategroup`` attribute: member
+
+
+Release Galaxy 2.0.2
+~~~~~~~~~~~~~~~~~~~~~
+
+|
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``
+
+Features & Bugfix
+------------------
+
+- Fix ``pylint`` sanity test error.

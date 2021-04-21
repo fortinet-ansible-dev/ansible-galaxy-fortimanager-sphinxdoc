@@ -1,3 +1,3 @@
 # ansible-galaxy-fortimanager-sphinxdoc
 
-Read the docs online: https://ansible-galaxy-fortimanager-docs.readthedocs.io/en/galaxy-2.0.1/
+Read the docs online: https://ansible-galaxy-fortimanager-docs.readthedocs.io/en/galaxy-2.0.2/
