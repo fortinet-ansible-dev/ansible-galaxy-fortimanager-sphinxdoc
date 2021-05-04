@@ -172,6 +172,7 @@ Parameters
  <li><span class="li-head">webcache-https</span> - Enable/disable web cache for HTTPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, ssl-server, any, enable]</span> </li>
  <li><span class="li-head">webfilter-profile</span> - Name of an existing Web filter profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wsso</span> - Enable/disable WiFi Single Sign On (WSSO). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">object position</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  </ul>
  </ul>
 
@@ -343,6 +344,7 @@ Examples
             webcache-https: <value in [disable, ssl-server, any, ...]>
             webfilter-profile: <value of string>
             wsso: <value in [disable, enable]>
+            object position: <value of list>
 
 
 
