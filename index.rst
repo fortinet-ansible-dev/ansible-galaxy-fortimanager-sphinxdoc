@@ -17,6 +17,7 @@ The FortiManager Ansible Collection provides Ansible modules for configuring For
    playbook.rst
    legacy.rst
    errors.rst
+   faq.rst
    help.rst
 
 .. toctree::
