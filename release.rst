@@ -83,3 +83,25 @@ Features & Bugfix
 ------------------
 
 - Fix ``pylint`` sanity test error.
+
+Release Galaxy 2.0.3
+~~~~~~~~~~~~~~~~~~~~~
+
+|
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``
+
+Features & Bugfix
+------------------
+
+ - Fix mantis issue #712100
+ - Fix mantis issue #712116
+ - Fix issues like https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/18
+ - Fix issues like https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/23
+ - Add `object position` of module:``fmgr_pkg_firewall_policy``
+ - Add ``enable_log`` option to support explicit logging
+ - Add ``proposed_method`` option to support overriding underlying request method
+
