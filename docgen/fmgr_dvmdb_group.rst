@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dvmdb_group</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -50,7 +75,7 @@ Parameters
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx]</span>  <span class="li-normal">default: unknown</span> </li>
+ <li><span class="li-head">os_type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt]</span>  <span class="li-normal">default: unknown</span> </li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, default, auto]</span>  <span class="li-normal">default: normal</span> </li>
  </ul>
  </ul>

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_log_settings_rollinganalyzer</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -68,6 +93,9 @@ Parameters
  <li><span class="li-head">username2</span> - Upload server login username2. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username3</span> - Upload server login username3. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">when</span> - Roll log files periodically. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">port</span> - Upload server IP1 port number. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">port2</span> - Upload server IP2 port number. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">port3</span> - Upload server IP3 port number. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  </ul>
  </ul>
 
@@ -140,6 +168,9 @@ Examples
             username2: <value of string>
             username3: <value of string>
             when: <value in [none, daily, weekly]>
+            port: <value of integer>
+            port2: <value of integer>
+            port3: <value of integer>
 
 
 

@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_ippool_dynamicmapping:
 
-fmgr_firewall_ippool_dynamicmapping
-+++++++++++++++++++++++++++++++++++
+fmgr_firewall_ippool_dynamicmapping -- Configure IPv4 IP pools.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_ippool_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ippool</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_ippool_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_ippool_dynamicmapping</span> - Configure IPv4 IP pools. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -64,7 +89,20 @@ Parameters
  <li><span class="li-head">source-endip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">source-startip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">startip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation, cgn-resource-allocation]</span> </li>
+ <li><span class="li-head">cgn-block-size</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cgn-client-endip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cgn-client-startip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cgn-fixedalloc</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">cgn-overload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">cgn-port-end</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cgn-port-start</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cgn-spa</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">endport</span> - Final port number (inclusive) in the range for the address pool (Default: 65533). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port-per-user</span> - Number of port for each user (32 to 60416, default = 0, auto). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">startport</span> - First port number (inclusive) in the range for the address pool (Default: 5117). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">utilization-alarm-clear</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">utilization-alarm-raise</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -99,7 +137,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure IPv4 IP pools.
       fmgr_firewall_ippool_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -127,6 +165,19 @@ Examples
             source-startip: <value of string>
             startip: <value of string>
             type: <value in [overload, one-to-one, fixed-port-range, ...]>
+            cgn-block-size: <value of integer>
+            cgn-client-endip: <value of string>
+            cgn-client-startip: <value of string>
+            cgn-fixedalloc: <value in [disable, enable]>
+            cgn-overload: <value in [disable, enable]>
+            cgn-port-end: <value of integer>
+            cgn-port-start: <value of integer>
+            cgn-spa: <value in [disable, enable]>
+            endport: <value of integer>
+            port-per-user: <value of integer>
+            startport: <value of integer>
+            utilization-alarm-clear: <value of integer>
+            utilization-alarm-raise: <value of integer>
 
 
 

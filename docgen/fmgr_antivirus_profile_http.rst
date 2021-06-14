@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>antivirus_profile_http</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,7 +77,11 @@ Parameters
  <li><span class="li-head">content-disarm</span> - Enable Content Disarm and Reconstruction for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor, strict-file]</span> </li>
- <li><span class="li-head">outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">av-optimize</span> - Enable/disable AV optimization for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -126,7 +155,11 @@ Examples
               - avquery
               - avmonitor
               - strict-file
-            outbreak-prevention: <value in [disabled, files, full-archive]>
+            outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+            av-optimize: <value in [disable, enable]>
+            av-scan: <value in [disable, monitor, block]>
+            external-blocklist: <value in [disable, monitor, block]>
+            quarantine: <value in [disable, enable]>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_shapingprofile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,8 +80,15 @@ Parameters
  <li><span class="li-head">guaranteed-bandwidth-percentage</span> - Guaranteed bandwith in percentage. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">maximum-bandwidth-percentage</span> - Maximum bandwith in percentage. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">priority</span> - Priority. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
+ <li><span class="li-head">priority</span> - Priority. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high, critical, top]</span> </li>
+ <li><span class="li-head">burst-in-msec</span> - Number of bytes that can be burst at maximum-bandwidth speed. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cburst-in-msec</span> - Number of bytes that can be burst as fast as the interface can transmit. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">limit</span> - Hard limit on the real queue size in packets. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">max</span> - Average queue size in packets at which RED drop probability is maximal. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">min</span> - Average queue size in packets at which RED drop becomes a possibility. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">red-probability</span> - Maximum probability (in percentage) for RED marking. <span class="li-normal">type: int</span> </li>
  </ul>
+ <li><span class="li-head">type</span> - Select shaping profile type: policing / queuing. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [policing, queuing]</span> </li>
  </ul>
  </ul>
 
@@ -110,7 +142,14 @@ Examples
                   guaranteed-bandwidth-percentage: <value of integer>
                   id: <value of integer>
                   maximum-bandwidth-percentage: <value of integer>
-                  priority: <value in [low, medium, high]>
+                  priority: <value in [low, medium, high, ...]>
+                  burst-in-msec: <value of integer>
+                  cburst-in-msec: <value of integer>
+                  limit: <value of integer>
+                  max: <value of integer>
+                  min: <value of integer>
+                  red-probability: <value of integer>
+            type: <value in [policing, queuing]>
 
 
 

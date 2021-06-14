@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_certificate_oftp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -50,6 +75,8 @@ Parameters
  <li><span class="li-head">custom</span> - Enable/disable custom certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">private-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">local</span> - Choose from a local certificates. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mode</span> - Mode of certificates used by oftpd. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, custom, local]</span>  <span class="li-normal">default: default</span> </li>
  </ul>
  </ul>
 
@@ -97,6 +124,8 @@ Examples
             custom: <value in [disable, enable]>
             password: <value of string>
             private-key: <value of string>
+            local: <value of string>
+            mode: <value in [default, custom, local]>
 
 
 

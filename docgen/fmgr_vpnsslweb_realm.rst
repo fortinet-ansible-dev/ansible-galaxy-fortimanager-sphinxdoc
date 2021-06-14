@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>vpnsslweb_realm</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,6 +76,10 @@ Parameters
  <li><span class="li-head">max-concurrent-user</span> - Maximum concurrent users (0 - 65535, 0 means unlimited). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">url-path</span> - URL path to access SSL-VPN login page. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">virtual-host</span> - Virtual host name for realm. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">nas-ip</span> - IP address used as a NAS-IP to communicate with the RADIUS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">radius-server</span> - RADIUS server associated with realm. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">radius-port</span> - RADIUS service port number (0 - 65535, 0 means user. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">virtual-host-only</span> - Enable/disable enforcement of virtual host method for SSL-VPN client access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -99,6 +128,10 @@ Examples
             max-concurrent-user: <value of integer>
             url-path: <value of string>
             virtual-host: <value of string>
+            nas-ip: <value of string>
+            radius-server: <value of string>
+            radius-port: <value of integer>
+            virtual-host-only: <value in [disable, enable]>
 
 
 

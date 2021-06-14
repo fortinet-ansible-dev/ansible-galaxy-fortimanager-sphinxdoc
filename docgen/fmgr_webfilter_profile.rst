@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webfilter_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,7 +78,7 @@ Parameters
  <li><span class="li-head">inspection-mode</span> - Web filtering inspection mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow-based, dns]</span> </li>
  <li><span class="li-head">log-all-url</span> - Enable/disable logging all URLs visited. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, block-invalid-url, jscript, js, vbs, unknown, wf-referer, https-scan, intrinsic, wf-cookie, per-user-bwl, activexfilter, cookiefilter, https-url-scan, javafilter, rangeblock, contenttype-check, per-user-bal]</span> </li>
  <li><span class="li-head">ovrd-perm</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [bannedword-override, urlfilter-override, fortiguard-wf-override, contenttype-check-override]</span> </li>
  <li><span class="li-head">post-action</span> - Action taken for HTTP POST traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, comfort, block]</span> </li>
  <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
@@ -82,6 +107,91 @@ Parameters
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">youtube-channel-status</span> - YouTube channel filter status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, blacklist, whitelist]</span> </li>
+ <li><span class="li-head">feature-set</span> - Flow/proxy feature set. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow]</span> </li>
+ <li><span class="li-head">web-antiphishing-log</span> - Enable/disable logging of AntiPhishing checks. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">antiphish</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">authentication</span> - Authentication methods. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [domain-controller, ldap]</span> </li>
+ <li><span class="li-head">check-basic-auth</span> - Enable/disable checking of HTTP Basic Auth field for known credentials. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">check-uri</span> - Enable/disable checking of GET URI parameters for known credentials. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">check-username-only</span> - Enable/disable username only matching of credentials. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">custom-patterns</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">category</span> - Category that the pattern matches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [username, password]</span> </li>
+ <li><span class="li-head">pattern</span> - Target pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Pattern will be treated either as a regex pattern or literal string. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regex, literal]</span> </li>
+ </ul>
+ <li><span class="li-head">default-action</span> - Action to be taken when there is no matching rule. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [log, block, exempt]</span> </li>
+ <li><span class="li-head">domain-controller</span> - Domain for which to verify received credentials against. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">inspection-entries</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">action</span> - Action to be taken upon an AntiPhishing match. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [log, block, exempt]</span> </li>
+ <li><span class="li-head">fortiguard-category</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">name</span> - Inspection target name. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">ldap</span> - LDAP server for which to verify received credentials against. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-body-len</span> - Maximum size of a POST body to check for credentials. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - Toggle AntiPhishing functionality. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">ftgd-wf</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">exempt-quota</span> - Do not stop quota for these categories. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">filters</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">action</span> - Action to take for matches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, monitor, warning, authenticate]</span> </li>
+ <li><span class="li-head">auth-usr-grp</span> - Groups with permission to authenticate. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">category</span> - Categories and groups the filter examines. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">override-replacemsg</span> - Override replacement message. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">warn-duration</span> - Duration of warnings. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">warning-duration-type</span> - Re-display warning after closing browser or after a timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [session, timeout]</span> </li>
+ <li><span class="li-head">warning-prompt</span> - Warning prompts in each category or each domain. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [per-domain, per-category]</span> </li>
+ </ul>
+ <li><span class="li-head">max-quota-timeout</span> - Maximum FortiGuard quota used by single page view in seconds (excludes streams). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [error-allow, http-err-detail, rate-image-urls, strict-blocking, rate-server-ip, redir-block, connect-request-bypass, log-all-url, ftgd-disable]</span> </li>
+ <li><span class="li-head">ovrd</span> - Allow web filter profile overrides. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">quota</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">category</span> - FortiGuard categories to apply quota to (category action must be set to monitor). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">duration</span> - Duration of quota. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">override-replacemsg</span> - Override replacement message. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Quota type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [time, traffic]</span> </li>
+ <li><span class="li-head">unit</span> - Traffic quota unit of measurement. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [B, KB, MB, GB]</span> </li>
+ <li><span class="li-head">value</span> - Traffic quota value. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">rate-crl-urls</span> - Enable/disable rating CRL by URL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rate-css-urls</span> - Enable/disable rating CSS by URL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rate-javascript-urls</span> - Enable/disable rating JavaScript by URL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">override</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">ovrd-cookie</span> - Allow/deny browser-based (cookie) overrides. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, allow]</span> </li>
+ <li><span class="li-head">ovrd-dur</span> - Override duration. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ovrd-dur-mode</span> - Override duration mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [constant, ask]</span> </li>
+ <li><span class="li-head">ovrd-scope</span> - Override scope. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [user, user-group, ip, ask, browser]</span> </li>
+ <li><span class="li-head">ovrd-user-group</span> - User groups with permission to use the override. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">profile</span> - Web filter profile with permission to create overrides. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">profile-attribute</span> - Profile attribute to retrieve from the RADIUS server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> </li>
+ <li><span class="li-head">profile-type</span> - Override profile type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [list, radius]</span> </li>
+ </ul>
+ <li><span class="li-head">url-extraction</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">redirect-header</span> - HTTP header name to use for client redirect on blocked requests <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">redirect-no-content</span> - Enable / Disable empty message-body entity in HTTP response <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">redirect-url</span> - HTTP header value to use for client redirect on blocked requests <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">server-fqdn</span> - URL extraction server FQDN (fully qualified domain name) <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable URL Extraction <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">web</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">allowlist</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> </li>
+ <li><span class="li-head">blocklist</span> - Enable/disable automatic addition of URLs detected by FortiSandbox to blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bword-table</span> - Banned word table ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">bword-threshold</span> - Banned word score threshold. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">content-header-list</span> - Content header list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">keyword-match</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">log-search</span> - Enable/disable logging all search phrases. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">safe-search</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [google, yahoo, bing, url, header]</span> </li>
+ <li><span class="li-head">urlfilter-table</span> - URL filter table ID. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -149,6 +259,366 @@ Examples
               - javafilter
               - rangeblock
               - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - block-invalid-url
+              - jscript
+              - js
+              - vbs
+              - unknown
+              - wf-referer
+              - https-scan
+              - intrinsic
+              - wf-cookie
+              - per-user-bwl
+              - activexfilter
+              - cookiefilter
+              - https-url-scan
+              - javafilter
+              - rangeblock
+              - contenttype-check
+              - per-user-bal
             ovrd-perm:
               - bannedword-override
               - urlfilter-override
@@ -181,6 +651,101 @@ Examples
                   comment: <value of string>
                   id: <value of integer>
             youtube-channel-status: <value in [disable, blacklist, whitelist]>
+            feature-set: <value in [proxy, flow]>
+            web-antiphishing-log: <value in [disable, enable]>
+            antiphish:
+               authentication: <value in [domain-controller, ldap]>
+               check-basic-auth: <value in [disable, enable]>
+               check-uri: <value in [disable, enable]>
+               check-username-only: <value in [disable, enable]>
+               custom-patterns:
+                 -
+                     category: <value in [username, password]>
+                     pattern: <value of string>
+                     type: <value in [regex, literal]>
+               default-action: <value in [log, block, exempt]>
+               domain-controller: <value of string>
+               inspection-entries:
+                 -
+                     action: <value in [log, block, exempt]>
+                     fortiguard-category: <value of string>
+                     name: <value of string>
+               ldap: <value of string>
+               max-body-len: <value of integer>
+               status: <value in [disable, enable]>
+            ftgd-wf:
+               exempt-quota: <value of string>
+               filters:
+                 -
+                     action: <value in [block, monitor, warning, ...]>
+                     auth-usr-grp: <value of string>
+                     category: <value of string>
+                     id: <value of integer>
+                     log: <value in [disable, enable]>
+                     override-replacemsg: <value of string>
+                     warn-duration: <value of string>
+                     warning-duration-type: <value in [session, timeout]>
+                     warning-prompt: <value in [per-domain, per-category]>
+               max-quota-timeout: <value of integer>
+               options:
+                 - error-allow
+                 - http-err-detail
+                 - rate-image-urls
+                 - strict-blocking
+                 - rate-server-ip
+                 - redir-block
+                 - connect-request-bypass
+                 - log-all-url
+                 - ftgd-disable
+               ovrd: <value of string>
+               quota:
+                 -
+                     category: <value of string>
+                     duration: <value of string>
+                     id: <value of integer>
+                     override-replacemsg: <value of string>
+                     type: <value in [time, traffic]>
+                     unit: <value in [B, KB, MB, ...]>
+                     value: <value of integer>
+               rate-crl-urls: <value in [disable, enable]>
+               rate-css-urls: <value in [disable, enable]>
+               rate-javascript-urls: <value in [disable, enable]>
+            override:
+               ovrd-cookie: <value in [deny, allow]>
+               ovrd-dur: <value of string>
+               ovrd-dur-mode: <value in [constant, ask]>
+               ovrd-scope: <value in [user, user-group, ip, ...]>
+               ovrd-user-group: <value of string>
+               profile: <value of string>
+               profile-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
+               profile-type: <value in [list, radius]>
+            url-extraction:
+               redirect-header: <value of string>
+               redirect-no-content: <value in [disable, enable]>
+               redirect-url: <value of string>
+               server-fqdn: <value of string>
+               status: <value in [disable, enable]>
+            web:
+               allowlist:
+                 - exempt-av
+                 - exempt-webcontent
+                 - exempt-activex-java-cookie
+                 - exempt-dlp
+                 - exempt-rangeblock
+                 - extended-log-others
+               blocklist: <value in [disable, enable]>
+               bword-table: <value of string>
+               bword-threshold: <value of integer>
+               content-header-list: <value of string>
+               keyword-match: <value of string>
+               log-search: <value in [disable, enable]>
+               safe-search:
+                 - google
+                 - yahoo
+                 - bing
+                 - url
+                 - header
+               urlfilter-table: <value of string>
 
 
 

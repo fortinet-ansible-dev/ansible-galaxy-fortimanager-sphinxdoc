@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_sslsshprofile_sslserver</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -56,6 +81,12 @@ Parameters
  <li><span class="li-head">pop3s-client-cert-request</span> - Action based on client certificate request during the POP3S handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
  <li><span class="li-head">smtps-client-cert-request</span> - Action based on client certificate request during the SMTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
  <li><span class="li-head">ssl-other-client-cert-request</span> - Action based on client certificate request during an SSL protocol handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ftps-client-certificate</span> - Action based on received client certificate during the FTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">https-client-certificate</span> - Action based on received client certificate during the HTTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">imaps-client-certificate</span> - Action based on received client certificate during the IMAPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">pop3s-client-certificate</span> - Action based on received client certificate during the POP3S handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">smtps-client-certificate</span> - Action based on received client certificate during the SMTPS handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">ssl-other-client-certificate</span> - Action based on received client certificate during an SSL protocol handshake. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
  </ul>
  </ul>
 
@@ -109,6 +140,12 @@ Examples
             pop3s-client-cert-request: <value in [bypass, inspect, block]>
             smtps-client-cert-request: <value in [bypass, inspect, block]>
             ssl-other-client-cert-request: <value in [bypass, inspect, block]>
+            ftps-client-certificate: <value in [bypass, inspect, block]>
+            https-client-certificate: <value in [bypass, inspect, block]>
+            imaps-client-certificate: <value in [bypass, inspect, block]>
+            pop3s-client-certificate: <value in [bypass, inspect, block]>
+            smtps-client-certificate: <value in [bypass, inspect, block]>
+            ssl-other-client-certificate: <value in [bypass, inspect, block]>
 
 
 

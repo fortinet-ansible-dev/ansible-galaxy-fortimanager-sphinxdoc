@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webproxy_forwardserver</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -56,6 +81,8 @@ Parameters
  <li><span class="li-head">name</span> - Server name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - Port number that the forwarding server expects to receive HTTP sessions on (1 - 65535, default = 3128). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">server-down-option</span> - Action to take when the forward server is found to be down: block sessions until the server is back up or pass sessions to their destination. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">username</span> - HTTP authentication user name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -109,6 +136,8 @@ Examples
             name: <value of string>
             port: <value of integer>
             server-down-option: <value in [block, pass]>
+            password: <value of string>
+            username: <value of string>
 
 
 

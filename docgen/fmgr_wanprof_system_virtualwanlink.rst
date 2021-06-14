@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanprof_system_virtualwanlink</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -61,7 +84,7 @@ Parameters
  <li><span class="li-head">packet-size</span> - Packet size of a twamp test session, <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">port</span> - Port number used to communicate with the server over the selected protocol. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">protocol</span> - Protocol used to determine if the FortiGate can communicate with the server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, ping6]</span> </li>
+ <li><span class="li-head">protocol</span> - Protocol used to determine if the FortiGate can communicate with the server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, ping6, dns]</span> </li>
  <li><span class="li-head">recoverytime</span> - Number of successful responses received before server is considered recovered (1 - 3600, default = 5). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">security-mode</span> - Twamp controller security mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, authentication]</span> </li>
  <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span></li>
@@ -80,6 +103,16 @@ Parameters
  <li><span class="li-head">threshold-warning-packetloss</span> - Warning threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">update-cascade-interface</span> - Enable/disable update cascade interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">update-static-route</span> - Enable/disable updating the static route. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-id</span> - Internet service ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">probe-packets</span> - Enable/disable transmission of probe packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sla-fail-log-period</span> - Time interval in seconds that SLA fail log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sla-pass-log-period</span> - Time interval in seconds that SLA pass log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">diffservcode</span> - Differentiated services code point (DSCP) in the IP header of the probe packet. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-request-domain</span> - Fully qualified domain name to resolve for the DNS probe. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ha-priority</span> - HA election priority (1 - 50). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">probe-count</span> - Number of most recent probes that should be used to calculate latency and jitter (5 - 30, default = 30). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">probe-timeout</span> - Time to wait before a probe packet is considered lost (500 - 5000 msec, default = 500). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">system-dns</span> - Enable/disable system DNS as the probe server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">load-balance-mode</span> - Algorithm or mode to use for load balancing Internet traffic to SD-WAN members. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [source-ip-based, weight-based, usage-based, source-dest-ip-based, measured-volume-based]</span> </li>
  <li><span class="li-head">members</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
@@ -97,6 +130,7 @@ Parameters
  <li><span class="li-head">status</span> - Enable/disable this interface in the SD-WAN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">volume-ratio</span> - Measured volume ratio (this value / sum of all values = percentage of link volume, 0 - 255). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">weight</span> - Weight of this interface for weighted load balancing. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cost</span> - Cost of this interface for services in SLA mode (0 - 4294967295, default = 0). <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">addr-mode</span> - Address mode (IPv4 or IPv6). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6]</span> </li>
@@ -146,8 +180,25 @@ Parameters
  <li><span class="li-head">tos</span> - Type of service bit pattern. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tos-mask</span> - Type of service evaluated bits. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">users</span> - User name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-app-ctrl</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">internet-service-app-ctrl-group</span> - Application control based Internet Service group list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">role</span> - Service role to work with neighbor. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [primary, secondary, standalone]</span> </li>
+ <li><span class="li-head">sla-compare-method</span> - Method to compare SLA value for sla and load balance mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [order, number]</span> </li>
+ <li><span class="li-head">standalone-action</span> - Enable/disable service when selected neighbor role is standalone while service role is not standalone. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">input-device</span> - Source interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-name</span> - Internet service name list. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">status</span> - Enable/disable SD-WAN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">neighbor</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">health-check</span> - SD-WAN health-check name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - IP address of neighbor. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">member</span> - Member sequence number. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">role</span> - Role of neighbor. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [primary, secondary, standalone]</span> </li>
+ <li><span class="li-head">sla-id</span> - SLA ID. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">neighbor-hold-boot-time</span> - Waiting period in seconds when switching from the primary neighbor to the secondary neighbor from the neighbor start. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">neighbor-hold-down</span> - Enable/disable hold switching from the secondary neighbor to the primary neighbor. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">neighbor-hold-down-time</span> - Waiting period in seconds when switching from the secondary neighbor to the primary neighbor when hold-down is disabled. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -229,6 +280,16 @@ Examples
                   threshold-warning-packetloss: <value of integer>
                   update-cascade-interface: <value in [disable, enable]>
                   update-static-route: <value in [disable, enable]>
+                  internet-service-id: <value of string>
+                  probe-packets: <value in [disable, enable]>
+                  sla-fail-log-period: <value of integer>
+                  sla-pass-log-period: <value of integer>
+                  diffservcode: <value of string>
+                  dns-request-domain: <value of string>
+                  ha-priority: <value of integer>
+                  probe-count: <value of integer>
+                  probe-timeout: <value of integer>
+                  system-dns: <value in [disable, enable]>
             load-balance-mode: <value in [source-ip-based, weight-based, usage-based, ...]>
             members:
               -
@@ -246,6 +307,7 @@ Examples
                   status: <value in [disable, enable]>
                   volume-ratio: <value of integer>
                   weight: <value of integer>
+                  cost: <value of integer>
             service:
               -
                   addr-mode: <value in [ipv4, ipv6]>
@@ -295,7 +357,24 @@ Examples
                   tos: <value of string>
                   tos-mask: <value of string>
                   users: <value of string>
+                  internet-service-app-ctrl: <value of integer>
+                  internet-service-app-ctrl-group: <value of string>
+                  role: <value in [primary, secondary, standalone]>
+                  sla-compare-method: <value in [order, number]>
+                  standalone-action: <value in [disable, enable]>
+                  input-device: <value of string>
+                  internet-service-name: <value of string>
             status: <value in [disable, enable]>
+            neighbor:
+              -
+                  health-check: <value of string>
+                  ip: <value of string>
+                  member: <value of string>
+                  role: <value in [primary, secondary, standalone]>
+                  sla-id: <value of integer>
+            neighbor-hold-boot-time: <value of integer>
+            neighbor-hold-down: <value in [disable, enable]>
+            neighbor-hold-down-time: <value of integer>
 
 
 

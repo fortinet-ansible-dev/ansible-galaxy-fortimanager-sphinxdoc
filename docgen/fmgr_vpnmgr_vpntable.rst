@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>vpnmgr_vpntable</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -86,6 +111,8 @@ Parameters
  <li><span class="li-head">spoke2hub-zone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">topology</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [meshed, star, dialup]</span> </li>
  <li><span class="li-head">vpn-zone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">network-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">network-overlay</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -203,6 +230,8 @@ Examples
             spoke2hub-zone: <value of string>
             topology: <value in [meshed, star, dialup]>
             vpn-zone: <value of string>
+            network-id: <value of integer>
+            network-overlay: <value in [disable, enable]>
 
 
 

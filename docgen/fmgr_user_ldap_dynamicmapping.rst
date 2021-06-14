@@ -4,8 +4,8 @@
 
 .. _fmgr_user_ldap_dynamicmapping:
 
-fmgr_user_ldap_dynamicmapping
-+++++++++++++++++++++++++++++
+fmgr_user_ldap_dynamicmapping -- Configure LDAP server entries.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_ldap_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ldap</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user_ldap_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user_ldap_dynamicmapping</span> - Configure LDAP server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -83,6 +108,14 @@ Parameters
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
  <li><span class="li-head">user-info-exchange-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">two-factor</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, fortitoken-cloud]</span> </li>
+ <li><span class="li-head">two-factor-authentication</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortitoken, email, sms]</span> </li>
+ <li><span class="li-head">two-factor-notification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [email, sms]</span> </li>
+ <li><span class="li-head">antiphish</span> - Enable/disable AntiPhishing credential backend. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">password-attr</span> - Name of attribute to get password hash. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-port</span> - Source port to be used for communication with the LDAP server. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -117,7 +150,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure LDAP server entries.
       fmgr_user_ldap_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -165,6 +198,14 @@ Examples
             type: <value in [simple, anonymous, regular]>
             user-info-exchange-server: <value of string>
             username: <value of string>
+            two-factor: <value in [disable, fortitoken-cloud]>
+            two-factor-authentication: <value in [fortitoken, email, sms]>
+            two-factor-notification: <value in [email, sms]>
+            antiphish: <value in [disable, enable]>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            password-attr: <value of string>
+            source-port: <value of integer>
 
 
 

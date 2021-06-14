@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>devprof_system_emailserver</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -59,6 +84,8 @@ Parameters
  <li><span class="li-head">type</span> - Use FortiGuard Message service or custom email server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [custom]</span> </li>
  <li><span class="li-head">username</span> - SMTP server user name for authentication. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">validate-server</span> - Enable/disable validation of server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  </ul>
 
@@ -115,6 +142,8 @@ Examples
             type: <value in [custom]>
             username: <value of string>
             validate-server: <value in [disable, enable]>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
 
 
 

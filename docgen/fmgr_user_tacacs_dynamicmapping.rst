@@ -4,8 +4,8 @@
 
 .. _fmgr_user_tacacs_dynamicmapping:
 
-fmgr_user_tacacs_dynamicmapping
-+++++++++++++++++++++++++++++++
+fmgr_user_tacacs_dynamicmapping -- Configure TACACS+ server entries.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_tacacs_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">tacacs+</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user_tacacs_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user_tacacs_dynamicmapping</span> - Configure TACACS+ server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -62,6 +87,8 @@ Parameters
  <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  </ul>
 
@@ -96,7 +123,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure TACACS+ server entries.
       fmgr_user_tacacs_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -121,6 +148,8 @@ Examples
             source-ip: <value of string>
             tertiary-key: <value of string>
             tertiary-server: <value of string>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_managedswitch</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -93,8 +118,96 @@ Parameters
  <li><span class="li-head">type</span> - Interface type: physical or trunk port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical, trunk]</span> </li>
  <li><span class="li-head">untagged-vlans</span> - Configure switch port untagged vlans <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vlan</span> - Assign switch ports to a VLAN. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">export-to-pool-flag</span> - Switch controller export port to pool-list. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mac-addr</span> - Port/Trunk MAC. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">packet-sample-rate</span> - Packet sampling rate (0 - 99999 p/sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">packet-sampler</span> - Enable/disable packet sampling on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">sticky-mac</span> - Enable or disable sticky-mac on the interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">storm-control-policy</span> - Switch controller storm control policy from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-mode</span> - Access mode of the port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, nac, dynamic, static]</span> </li>
+ <li><span class="li-head">ip-source-guard</span> - Enable/disable IP source guard. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mclag-icl-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">p2p-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">aggregator-mode</span> - LACP member select mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bandwidth, count]</span> </li>
+ <li><span class="li-head">fec-capable</span> - FEC capable. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fec-state</span> - State of forward error correction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, cl74, cl91]</span> </li>
+ <li><span class="li-head">flow-control</span> - Flow control direction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, tx, rx, both]</span> </li>
+ <li><span class="li-head">matched-dpp-intf-tags</span> - Matched interface tags in the dynamic port policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">matched-dpp-policy</span> - Matched child policy in the dynamic port policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">media-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pause-meter</span> - Configure ingress pause metering rate, in kbps (default = 0, disabled). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pause-meter-resume</span> - Resume threshold for resuming traffic on ingress port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [25%, 50%, 75%]</span> </li>
+ <li><span class="li-head">port-policy</span> - Switch controller dynamic port policy from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rpvst-port</span> - Enable/disable inter-operability with rapid PVST on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">status</span> - Switch port admin status: up or down. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span> </li>
+ <li><span class="li-head">trunk-member</span> - Trunk member. <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">switch-id</span> - Managed-switch id. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">override-snmp-community</span> - Enable/disable overriding the global SNMP communities. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">override-snmp-sysinfo</span> - Enable/disable overriding the global SNMP system information. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">override-snmp-trap-threshold</span> - Enable/disable overriding the global SNMP trap threshold values. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">override-snmp-user</span> - Enable/disable overriding the global SNMP users. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">poe-detection-type</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">remote-log</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">csv</span> - Enable/disable comma-separated value (CSV) strings. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">facility</span> - Facility to log to remote syslog server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [kernel, user, mail, daemon, auth, syslog, lpr, news, uucp, cron, authpriv, ftp, ntp, audit, alert, clock, local0, local1, local2, local3, local4, local5, local6, local7]</span> </li>
+ <li><span class="li-head">name</span> - Remote log name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Remote syslog server listening port. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">server</span> - IPv4 address of the remote syslog server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">severity</span> - Severity of logs to be transferred to remote log server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable logging by FortiSwitch device to a remote syslog server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">snmp-community</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">events</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, ent-conf-change]</span> </li>
+ <li><span class="li-head">hosts</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">id</span> - Host entry ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip</span> - IPv4 address of the SNMP manager (host). <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">id</span> - SNMP community ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - SNMP community name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">query-v1-port</span> - SNMP v1 query port (default = 161). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">query-v1-status</span> - Enable/disable SNMP v1 queries. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">query-v2c-port</span> - SNMP v2c query port (default = 161). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">query-v2c-status</span> - Enable/disable SNMP v2c queries. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this SNMP community. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">trap-v1-lport</span> - SNMP v2c trap local port (default = 162). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">trap-v1-rport</span> - SNMP v2c trap remote port (default = 162). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">trap-v1-status</span> - Enable/disable SNMP v1 traps. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">trap-v2c-lport</span> - SNMP v2c trap local port (default = 162). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">trap-v2c-rport</span> - SNMP v2c trap remote port (default = 162). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">trap-v2c-status</span> - Enable/disable SNMP v2c traps. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">snmp-user</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">auth-proto</span> - Authentication protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [md5, sha]</span> </li>
+ <li><span class="li-head">auth-pwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">name</span> - SNMP user name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">priv-proto</span> - Privacy (encryption) protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [des, aes]</span> </li>
+ <li><span class="li-head">priv-pwd</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">queries</span> - Enable/disable SNMP queries for this user. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">query-port</span> - SNMPv3 query port (default = 161). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">security-level</span> - Security level for message authentication and encryption. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span> </li>
+ </ul>
+ <li><span class="li-head">ip-source-guard</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">binding-entry</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">entry-name</span> - Configure binding pair. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip</span> - Source IP for this rule. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mac</span> - MAC address for this rule. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port</span> - Ingress interface to which source guard is bound. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">l3-discovered</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mclag-igmp-snooping-aware</span> - Enable/disable MCLAG IGMP-snooping awareness. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">qos-drop-policy</span> - Set QoS drop-policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [taildrop, random-early-detection]</span> </li>
+ <li><span class="li-head">qos-red-probability</span> - Set QoS RED/WRED drop probability. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">switch-dhcp_opt43_key</span> - DHCP option43 key. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">custom-command</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">command-entry</span> - List of FortiSwitch commands. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">command-name</span> - Names of commands to be pushed to this FortiSwitch device, as configured under config switch-controller custom-command. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">firmware-provision</span> - Enable/disable provisioning of firmware to FortiSwitches on join connection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">firmware-provision-version</span> - Firmware version to provision to this FortiSwitch on bootup (major. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tdr-supported</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -186,7 +299,100 @@ Examples
                   type: <value in [physical, trunk]>
                   untagged-vlans: <value of string>
                   vlan: <value of string>
+                  export-to-pool-flag: <value of integer>
+                  mac-addr: <value of string>
+                  packet-sample-rate: <value of integer>
+                  packet-sampler: <value in [disabled, enabled]>
+                  sticky-mac: <value in [disable, enable]>
+                  storm-control-policy: <value of string>
+                  access-mode: <value in [normal, nac, dynamic, ...]>
+                  ip-source-guard: <value in [disable, enable]>
+                  mclag-icl-port: <value of integer>
+                  p2p-port: <value of integer>
+                  aggregator-mode: <value in [bandwidth, count]>
+                  fec-capable: <value of integer>
+                  fec-state: <value in [disabled, cl74, cl91]>
+                  flow-control: <value in [disable, tx, rx, ...]>
+                  matched-dpp-intf-tags: <value of string>
+                  matched-dpp-policy: <value of string>
+                  media-type: <value of string>
+                  pause-meter: <value of integer>
+                  pause-meter-resume: <value in [25%, 50%, 75%]>
+                  port-policy: <value of string>
+                  rpvst-port: <value in [disabled, enabled]>
+                  status: <value in [down, up]>
+                  trunk-member: <value of integer>
             switch-id: <value of string>
+            override-snmp-community: <value in [disable, enable]>
+            override-snmp-sysinfo: <value in [disable, enable]>
+            override-snmp-trap-threshold: <value in [disable, enable]>
+            override-snmp-user: <value in [disable, enable]>
+            poe-detection-type: <value of integer>
+            remote-log:
+              -
+                  csv: <value in [disable, enable]>
+                  facility: <value in [kernel, user, mail, ...]>
+                  name: <value of string>
+                  port: <value of integer>
+                  server: <value of string>
+                  severity: <value in [emergency, alert, critical, ...]>
+                  status: <value in [disable, enable]>
+            snmp-community:
+              -
+                  events:
+                    - cpu-high
+                    - mem-low
+                    - log-full
+                    - intf-ip
+                    - ent-conf-change
+                  hosts:
+                    -
+                        id: <value of integer>
+                        ip: <value of string>
+                  id: <value of integer>
+                  name: <value of string>
+                  query-v1-port: <value of integer>
+                  query-v1-status: <value in [disable, enable]>
+                  query-v2c-port: <value of integer>
+                  query-v2c-status: <value in [disable, enable]>
+                  status: <value in [disable, enable]>
+                  trap-v1-lport: <value of integer>
+                  trap-v1-rport: <value of integer>
+                  trap-v1-status: <value in [disable, enable]>
+                  trap-v2c-lport: <value of integer>
+                  trap-v2c-rport: <value of integer>
+                  trap-v2c-status: <value in [disable, enable]>
+            snmp-user:
+              -
+                  auth-proto: <value in [md5, sha]>
+                  auth-pwd: <value of string>
+                  name: <value of string>
+                  priv-proto: <value in [des, aes]>
+                  priv-pwd: <value of string>
+                  queries: <value in [disable, enable]>
+                  query-port: <value of integer>
+                  security-level: <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
+            ip-source-guard:
+              -
+                  binding-entry:
+                    -
+                        entry-name: <value of string>
+                        ip: <value of string>
+                        mac: <value of string>
+                  description: <value of string>
+                  port: <value of string>
+            l3-discovered: <value of integer>
+            mclag-igmp-snooping-aware: <value in [disable, enable]>
+            qos-drop-policy: <value in [taildrop, random-early-detection]>
+            qos-red-probability: <value of integer>
+            switch-dhcp_opt43_key: <value of string>
+            custom-command:
+              -
+                  command-entry: <value of string>
+                  command-name: <value of string>
+            firmware-provision: <value in [disable, enable]>
+            firmware-provision-version: <value of string>
+            tdr-supported: <value of string>
 
 
 

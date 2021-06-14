@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_vip6_dynamicmapping:
 
-fmgr_firewall_vip6_dynamicmapping
-+++++++++++++++++++++++++++++++++
+fmgr_firewall_vip6_dynamicmapping -- Configure virtual IP for IPv6.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_vip6_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vip6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_vip6_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_vip6_dynamicmapping</span> - Configure virtual IP for IPv6. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -98,14 +123,14 @@ Parameters
  <li><span class="li-head">ssl-hsts-include-subdomains</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-http-location-conversion</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-http-match-host</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ssl-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
- <li><span class="li-head">ssl-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
+ <li><span class="li-head">ssl-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [half, full]</span> </li>
  <li><span class="li-head">ssl-pfs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [require, deny, allow]</span> </li>
  <li><span class="li-head">ssl-send-empty-frags</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-server-algorithm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, medium, custom, client]</span> </li>
- <li><span class="li-head">ssl-server-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client]</span> </li>
- <li><span class="li-head">ssl-server-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client]</span> </li>
+ <li><span class="li-head">ssl-server-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-server-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-server-session-state-max</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ssl-server-session-state-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ssl-server-session-state-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, time, count, both]</span> </li>
@@ -113,6 +138,9 @@ Parameters
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">weblogic-server</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">websphere-server</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">http-redirect</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-client-rekey-count</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">nat-source-vip</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -147,7 +175,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure virtual IP for IPv6.
       fmgr_firewall_vip6_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -223,6 +251,9 @@ Examples
             uuid: <value of string>
             weblogic-server: <value in [disable, enable]>
             websphere-server: <value in [disable, enable]>
+            http-redirect: <value in [disable, enable]>
+            ssl-client-rekey-count: <value of integer>
+            nat-source-vip: <value in [disable, enable]>
 
 
 

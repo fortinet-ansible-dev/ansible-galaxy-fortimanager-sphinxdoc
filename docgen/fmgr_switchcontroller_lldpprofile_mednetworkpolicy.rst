@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_lldpprofile_mednetworkpolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,6 +78,8 @@ Parameters
  <li><span class="li-head">priority</span> - Advertised Layer 2 priority (0 - 7; from lowest to highest priority). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - Enable or disable this TLV. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">vlan</span> - ID of VLAN to advertise, if configured on port (0 - 4094, 0 = priority tag). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">vlan-intf</span> - VLAN interface to advertise; if configured on port. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">assign-vlan</span> - Enable/disable VLAN assignment when this profile is applied on managed FortiSwitch port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -103,6 +130,8 @@ Examples
             priority: <value of integer>
             status: <value in [disable, enable]>
             vlan: <value of integer>
+            vlan-intf: <value of string>
+            assign-vlan: <value in [disable, enable]>
 
 
 

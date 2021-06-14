@@ -4,8 +4,8 @@
 
 .. _fmgr_fsp_vlan_dynamicmapping_dhcpserver_reservedaddress:
 
-fmgr_fsp_vlan_dynamicmapping_dhcpserver_reservedaddress
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_fsp_vlan_dynamicmapping_dhcpserver_reservedaddress -- Options for the DHCP server to assign IP settings to specific MAC addresses.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fsp_vlan_dynamicmapping_dhcpserver_reservedaddress</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -47,7 +72,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vlan</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">fsp_vlan_dynamicmapping_dhcpserver_reservedaddress</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">fsp_vlan_dynamicmapping_dhcpserver_reservedaddress</span> - Options for the DHCP server to assign IP settings to specific MAC addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [assign, block, reserved]</span> </li>
  <li><span class="li-head">circuit-id</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -93,7 +118,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Options for the DHCP server to assign IP settings to specific MAC addresses.
       fmgr_fsp_vlan_dynamicmapping_dhcpserver_reservedaddress:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

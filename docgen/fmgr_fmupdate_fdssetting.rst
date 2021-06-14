@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fmupdate_fdssetting</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,8 +71,8 @@ Parameters
  <li><span class="li-head">fmupdate_fdssetting</span> - Configure FortiGuard settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">User-Agent</span> - Configure the user agent string. <span class="li-normal">type: str</span>  <span class="li-normal">default: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)</span> </li>
- <li><span class="li-head">fds-clt-ssl-protocol</span> - The SSL protocols version for connecting fds server (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
- <li><span class="li-head">fds-ssl-protocol</span> - The SSL protocols version for receiving fgt connection (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
+ <li><span class="li-head">fds-clt-ssl-protocol</span> - The SSL protocols version for connecting fds server (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
+ <li><span class="li-head">fds-ssl-protocol</span> - The SSL protocols version for receiving fgt connection (default = tlsv1. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
  <li><span class="li-head">fmtr-log</span> - fmtr log level <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span> </li>
  <li><span class="li-head">linkd-log</span> - The linkd log level (default = info). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span> </li>
  <li><span class="li-head">max-av-ips-version</span> - The maximum number of downloadable, full version AV/IPS packages (1 - 1000, default = 20). <span class="li-normal">type: int</span>  <span class="li-normal">default: 20</span> </li>
@@ -80,11 +105,11 @@ Parameters
  </ul>
  <li><span class="li-head">status</span> - Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
- <li><span class="li-head">system-support-fct</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0]</span> </li>
- <li><span class="li-head">system-support-fgt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2]</span> </li>
+ <li><span class="li-head">system-support-fct</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4]</span> </li>
+ <li><span class="li-head">system-support-fgt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2, 5.4, 5.6, 6.0, 6.2, 6.4, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 5.4, 5.6, 6.0, 6.2, 5.4, 5.6, 6.0, 6.2, 6.4, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 5.4, 5.6, 6.0, 6.2, 5.4, 5.6, 6.0, 6.2, 6.4, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0]</span> </li>
  <li><span class="li-head">system-support-fml</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [4.x, 5.x, 6.x]</span> </li>
- <li><span class="li-head">system-support-fsa</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1.x, 2.x, 3.x]</span> </li>
- <li><span class="li-head">system-support-fsw</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2]</span> </li>
+ <li><span class="li-head">system-support-fsa</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1.x, 2.x, 3.x, 1.x, 2.x, 3.x, 4.x, 1.x, 2.x, 3.x, 1.x, 2.x, 3.x, 1.x, 2.x, 3.x, 4.x, 1.x, 2.x, 3.x, 1.x, 2.x, 3.x, 1.x, 2.x, 3.x, 4.x]</span> </li>
+ <li><span class="li-head">system-support-fsw</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4]</span> </li>
  <li><span class="li-head">umsvc-log</span> - The um_service log level (default = info). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span> </li>
  <li><span class="li-head">unreg-dev-option</span> - set the option for unregister devices <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ignore, svc-only, add-service]</span>  <span class="li-normal">default: add-service</span> </li>
  <li><span class="li-head">update-schedule</span> <span class="li-normal">type: dict</span> </li>
@@ -95,6 +120,8 @@ Parameters
  <li><span class="li-head">time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  <li><span class="li-head">wanip-query-mode</span> - public ip query mode <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, ipify]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">fortiguard-anycast</span> - Enable/disable use of FortiGuards anycast network <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">fortiguard-anycast-source</span> - Configure which of Fortinets servers to provide FortiGuard services in FortiGuards anycast network. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortinet, aws]</span>  <span class="li-normal">default: fortinet</span> </li>
  </ul>
  </ul>
 
@@ -175,11 +202,118 @@ Examples
               - 5.4
               - 5.6
               - 6.0
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
             system-support-fgt:
               - 5.4
               - 5.6
               - 6.0
               - 6.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 7.0
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 7.0
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 7.0
             system-support-fml:
               - 4.x
               - 5.x
@@ -188,11 +322,101 @@ Examples
               - 1.x
               - 2.x
               - 3.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 4.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 4.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 1.x
+              - 2.x
+              - 3.x
+              - 4.x
             system-support-fsw:
               - 5.4
               - 5.6
               - 6.0
               - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 4.x
+              - 5.0
+              - 5.2
+              - 5.4
+              - 5.6
+              - 6.0
+              - 6.2
+              - 6.4
             umsvc-log: <value in [emergency, alert, critical, ...]>
             unreg-dev-option: <value in [ignore, svc-only, add-service]>
             update-schedule:
@@ -201,6 +425,8 @@ Examples
                status: <value in [disable, enable]>
                time: <value of string>
             wanip-query-mode: <value in [disable, ipify]>
+            fortiguard-anycast: <value in [disable, enable]>
+            fortiguard-anycast-source: <value in [fortinet, aws]>
 
 
 

@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>devprof_system_dns</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,6 +78,11 @@ Parameters
  <li><span class="li-head">ip6-secondary</span> - Secondary DNS server IPv6 address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">primary</span> - Primary DNS server IP address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">secondary</span> - Secondary DNS server IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-over-tls</span> - Enable/disable/enforce DNS over TLS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, enforce]</span> </li>
+ <li><span class="li-head">retry</span> - Number of times to retry (0 - 5). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">server-hostname</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">ssl-certificate</span> - Name of local certificate for SSL connections. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">timeout</span> - DNS query timeout interval in seconds (1 - 10). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -107,6 +135,11 @@ Examples
             ip6-secondary: <value of string>
             primary: <value of string>
             secondary: <value of string>
+            dns-over-tls: <value in [disable, enable, enforce]>
+            retry: <value of integer>
+            server-hostname: <value of string>
+            ssl-certificate: <value of string>
+            timeout: <value of integer>
 
 
 

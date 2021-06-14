@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>icap_server</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,6 +78,8 @@ Parameters
  <li><span class="li-head">max-connections</span> - Maximum number of concurrent connections to ICAP server. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - Server name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port</span> - ICAP server port. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">secure</span> - Enable/disable secure connection to ICAP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-cert</span> - CA certificate name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -103,6 +130,8 @@ Examples
             max-connections: <value of integer>
             name: <value of string>
             port: <value of integer>
+            secure: <value in [disable, enable]>
+            ssl-cert: <value of string>
 
 
 

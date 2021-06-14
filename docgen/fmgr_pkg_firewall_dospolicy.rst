@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_firewall_dospolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -66,6 +91,7 @@ Parameters
  <li><span class="li-head">service</span> - Service object from available options. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">srcaddr</span> - Source address name from available addresses. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Enable/disable this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - Policy name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -129,6 +155,7 @@ Examples
             service: <value of string>
             srcaddr: <value of string>
             status: <value in [disable, enable]>
+            name: <value of string>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>ips_sensor</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -74,6 +99,7 @@ Parameters
  <li><span class="li-head">rule</span> - Identifies the predefined or custom IPS signatures to add to the sensor. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">severity</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">status</span> - Status of the signatures included in filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, default]</span> </li>
+ <li><span class="li-head">cve</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  <li><span class="li-head">extended-log</span> - Enable/disable extended logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
@@ -108,6 +134,7 @@ Parameters
  <li><span class="li-head">status</span> - Enable/disable status of override rule. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">scan-botnet-connections</span> - Block or monitor connections to Botnet servers, or disable Botnet scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
  </ul>
  </ul>
 
@@ -180,6 +207,7 @@ Examples
                   rule: <value of string>
                   severity: <value of string>
                   status: <value in [disable, enable, default]>
+                  cve: <value of string>
             extended-log: <value in [disable, enable]>
             filter:
               -
@@ -213,6 +241,7 @@ Examples
                   rule-id: <value of integer>
                   status: <value in [disable, enable]>
             replacemsg-group: <value of string>
+            scan-botnet-connections: <value in [disable, block, monitor]>
 
 
 

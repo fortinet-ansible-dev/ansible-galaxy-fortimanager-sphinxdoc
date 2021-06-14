@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_gtp_ieremovepolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,6 +76,7 @@ Parameters
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">remove-ies</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [apn-restriction, rat-type, rai, uli, imei]</span> </li>
  <li><span class="li-head">sgsn-addr</span> - SGSN address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sgsn-addr6</span> - SGSN IPv6 address name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -104,6 +130,7 @@ Examples
               - uli
               - imei
             sgsn-addr: <value of string>
+            sgsn-addr6: <value of string>
 
 
 

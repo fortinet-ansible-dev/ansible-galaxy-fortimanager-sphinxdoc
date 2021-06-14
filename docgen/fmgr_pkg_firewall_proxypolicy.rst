@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_firewall_proxypolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -76,7 +101,7 @@ Parameters
  <li><span class="li-head">profile-group</span> - Name of profile group. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">profile-protocol-options</span> - Name of an existing Protocol options profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">profile-type</span> - Determine whether the firewall policy allows security profile groups or single profiles only. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [single, group]</span> </li>
- <li><span class="li-head">proxy</span> - Type of explicit proxy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [explicit-web, transparent-web, ftp, wanopt, ssh, ssh-tunnel]</span> </li>
+ <li><span class="li-head">proxy</span> - Type of explicit proxy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [explicit-web, transparent-web, ftp, wanopt, ssh, ssh-tunnel, access-proxy]</span> </li>
  <li><span class="li-head">redirect-url</span> - Redirect URL for further explicit web proxy processing. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">replacemsg-override-group</span> - Authentication replacement message override group. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">scan-botnet-connections</span> - Enable/disable scanning of connections to Botnet servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
@@ -101,6 +126,22 @@ Parameters
  <li><span class="li-head">webfilter-profile</span> - Name of an existing Web filter profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">webproxy-forward-server</span> - Name of web proxy forward server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">webproxy-profile</span> - Name of web proxy profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cifs-profile</span> - Name of an existing CIFS profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">emailfilter-profile</span> - Name of an existing email filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-custom-group</span> - Custom Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-group</span> - Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">session-ttl</span> - TTL in seconds for sessions accepted by this policy (0 means use the system default session TTL). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ssh-filter-profile</span> - Name of an existing SSH filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ssh-policy-redirect</span> - Redirect SSH traffic to matching transparent proxy policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">decrypted-traffic-mirror</span> - Decrypted traffic mirror. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-name</span> - Internet Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-proxy</span> - Access Proxy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">device-ownership</span> - When enabled, the ownership enforcement will be done at policy level. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">file-filter-profile</span> - Name of an existing file-filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Policy name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">videofilter-profile</span> - Name of an existing VideoFilter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">voip-profile</span> - Name of an existing VoIP profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-ems-tag</span> - ZTNA EMS Tag names. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -199,6 +240,22 @@ Examples
             webfilter-profile: <value of string>
             webproxy-forward-server: <value of string>
             webproxy-profile: <value of string>
+            cifs-profile: <value of string>
+            emailfilter-profile: <value of string>
+            internet-service-custom-group: <value of string>
+            internet-service-group: <value of string>
+            session-ttl: <value of integer>
+            ssh-filter-profile: <value of string>
+            ssh-policy-redirect: <value in [disable, enable]>
+            decrypted-traffic-mirror: <value of string>
+            internet-service-name: <value of string>
+            access-proxy: <value of string>
+            device-ownership: <value in [disable, enable]>
+            file-filter-profile: <value of string>
+            name: <value of string>
+            videofilter-profile: <value of string>
+            voip-profile: <value of string>
+            ztna-ems-tag: <value of string>
 
 
 

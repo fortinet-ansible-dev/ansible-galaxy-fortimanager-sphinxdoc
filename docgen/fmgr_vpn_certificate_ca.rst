@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>vpn_certificate_ca</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -58,6 +83,7 @@ Parameters
  <li><span class="li-head">source</span> - CA certificate source type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [factory, user, bundle, fortiguard]</span> </li>
  <li><span class="li-head">source-ip</span> - Source IP address for communications to the SCEP server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">trusted</span> - Enable/disable as a trusted CA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-inspection-trusted</span> - Enable/disable this CA as a trusted CA for SSL inspection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -113,6 +139,7 @@ Examples
             source: <value in [factory, user, bundle, ...]>
             source-ip: <value of string>
             trusted: <value in [disable, enable]>
+            ssl-inspection-trusted: <value in [disable, enable]>
 
 
 

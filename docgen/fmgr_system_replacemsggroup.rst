@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_replacemsggroup</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -230,6 +255,12 @@ Parameters
  <li><span class="li-head">webproxy</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html, wml]</span> </li>
+ <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
+ <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">automation</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">buffer</span> - Message string. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">format</span> - Format flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, text, html]</span> </li>
  <li><span class="li-head">header</span> - Header flag. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, http, 8bit]</span> </li>
  <li><span class="li-head">msg-type</span> - Message type. <span class="li-normal">type: str</span> </li>
  </ul>
@@ -461,6 +492,12 @@ Examples
               -
                   buffer: <value of string>
                   format: <value in [none, text, html, ...]>
+                  header: <value in [none, http, 8bit]>
+                  msg-type: <value of string>
+            automation:
+              -
+                  buffer: <value of string>
+                  format: <value in [none, text, html]>
                   header: <value in [none, http, 8bit]>
                   msg-type: <value of string>
 

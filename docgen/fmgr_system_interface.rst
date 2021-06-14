@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_interface</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -47,7 +72,7 @@ Parameters
  <li><span class="li-head">system_interface</span> - Interface configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">alias</span> - Alias. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging]</span> </li>
+ <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, soc-fabric, ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, soc-fabric, ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, soc-fabric, ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, ping, https, ssh, snmp, http, webservice, https-logging, soc-fabric]</span> </li>
  <li><span class="li-head">description</span> - Description. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ip</span> - IP address of interface. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
  <li><span class="li-head">ipv6</span> <span class="li-normal">type: dict</span> </li>
@@ -61,6 +86,8 @@ Parameters
  <li><span class="li-head">serviceaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fgtupdates, fclupdates, webfilter-antispam]</span> </li>
  <li><span class="li-head">speed</span> - Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full]</span>  <span class="li-normal">default: auto</span> </li>
  <li><span class="li-head">status</span> - Interface status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span>  <span class="li-normal">default: up</span> </li>
+ <li><span class="li-head">rating-service-ip</span> - IP address for fgt rating service, must be same subnet with interface ip. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
+ <li><span class="li-head">update-service-ip</span> - IP address for fgt/fct update service, must be same subnet with interface ip. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0 0.0.0.0</span> </li>
  </ul>
  </ul>
 
@@ -113,6 +140,80 @@ Examples
               - http
               - webservice
               - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - soc-fabric
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - soc-fabric
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - soc-fabric
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - ping
+              - https
+              - ssh
+              - snmp
+              - http
+              - webservice
+              - https-logging
+              - soc-fabric
             description: <value of string>
             ip: <value of string>
             ipv6:
@@ -134,6 +235,8 @@ Examples
               - webfilter-antispam
             speed: <value in [auto, 10full, 10half, ...]>
             status: <value in [down, up]>
+            rating-service-ip: <value of string>
+            update-service-ip: <value of string>
 
 
 

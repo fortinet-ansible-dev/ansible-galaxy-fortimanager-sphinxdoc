@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_locallog_fortianalyzer3_setting</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,6 +76,7 @@ Parameters
  <li><span class="li-head">severity</span> - Least severity level to log. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span>  <span class="li-normal">default: notification</span> </li>
  <li><span class="li-head">status</span> - Log to FortiAnalyzer status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, realtime, upload]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">upload-time</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - Remote FortiAnalyzer server FQDN, hostname, or IP address <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -99,6 +125,7 @@ Examples
             severity: <value in [emergency, alert, critical, ...]>
             status: <value in [disable, realtime, upload]>
             upload-time: <value of string>
+            server: <value of string>
 
 
 

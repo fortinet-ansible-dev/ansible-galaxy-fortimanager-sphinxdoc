@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_gtp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -81,6 +106,7 @@ Parameters
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">remove-ies</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [apn-restriction, rat-type, rai, uli, imei]</span> </li>
  <li><span class="li-head">sgsn-addr</span> - SGSN address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sgsn-addr6</span> - SGSN IPv6 address name. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">ie-remover</span> - IE removal policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ie-white-list-v0v1</span> - IE white list. <span class="li-normal">type: str</span> </li>
@@ -103,6 +129,8 @@ Parameters
  <li><span class="li-head">dstaddr</span> - Destination address name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">srcaddr</span> - Source address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr6</span> - Destination IPv6 address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr6</span> - Source IPv6 address name. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">log-freq</span> - Logging of frequency of GTP-C packets. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">log-gtpu-limit</span> - the user data log limit (0-512 bytes) <span class="li-normal">type: int</span> </li>
@@ -144,6 +172,8 @@ Parameters
  <li><span class="li-head">rai</span> - RAI pattern. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot]</span> </li>
  <li><span class="li-head">uli</span> - ULI pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">imsi-prefix</span> - IMSI prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">msisdn-prefix</span> - MSISDN prefix. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">policy-filter</span> - Advanced policy filter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">port-notify</span> - overbilling notify port <span class="li-normal">type: int</span> </li>
@@ -164,6 +194,128 @@ Parameters
  <li><span class="li-head">unknown-version-action</span> - action for unknown gtp version <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny]</span> </li>
  <li><span class="li-head">user-plane-message-rate-limit</span> - user plane message rate limit <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">warning-threshold</span> - Warning threshold for rate limiting (0 - 99 percent). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">policy-v2</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">action</span> - Action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, allow]</span> </li>
+ <li><span class="li-head">apn-sel-mode</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ms, net, vrf]</span> </li>
+ <li><span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">imsi-prefix</span> - IMSI prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-apn-restriction</span> - Maximum APN restriction value. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [all, public-1, public-2, private-1, private-2]</span> </li>
+ <li><span class="li-head">mei</span> - MEI pattern. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">messages</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [create-ses-req, create-ses-res, modify-bearer-req, modify-bearer-res]</span> </li>
+ <li><span class="li-head">msisdn-prefix</span> - MSISDN prefix. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span> </li>
+ <li><span class="li-head">uli</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ </ul>
+ <li><span class="li-head">sub-second-interval</span> - Sub-second interval (0. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.1, 0.25, 0.5]</span> </li>
+ <li><span class="li-head">sub-second-sampling</span> - Enable/disable sub-second sampling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authorized-ggsns6</span> - Authorized GGSN/PGW IPv6 group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">authorized-sgsns6</span> - Authorized SGSN/SGW IPv6 group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">handover-group6</span> - Handover SGSN/SGW IPv6 group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ie-allow-list-v0v1</span> - IE allow list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ie-allow-list-v2</span> - IE allow list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ie-validation</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">apn-restriction</span> - Validate APN restriction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charging-ID</span> - Validate charging ID. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">charging-gateway-addr</span> - Validate charging gateway address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">end-user-addr</span> - Validate end user address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">gsn-addr</span> - Validate GSN address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">imei</span> - Validate IMEI(SV). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">imsi</span> - Validate IMSI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mm-context</span> - Validate MM context. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ms-tzone</span> - Validate MS time zone. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ms-validated</span> - Validate MS validated. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">msisdn</span> - Validate MSISDN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">nsapi</span> - Validate NSAPI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdp-context</span> - Validate PDP context. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">qos-profile</span> - Validate Quality of Service(QoS) profile. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rai</span> - Validate RAI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rat-type</span> - Validate RAT type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">reordering-required</span> - Validate re-ordering required. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">selection-mode</span> - Validate selection mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">uli</span> - Validate user location information. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">invalid-sgsns6-to-log</span> - Invalid SGSN IPv6 group to be logged. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">message-rate-limit</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">create-aa-pdp-request</span> - Rate limit for create AA PDP context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">create-aa-pdp-response</span> - Rate limit for create AA PDP context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">create-mbms-request</span> - Rate limit for create MBMS context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">create-mbms-response</span> - Rate limit for create MBMS context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">create-pdp-request</span> - Rate limit for create PDP context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">create-pdp-response</span> - Rate limit for create PDP context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-aa-pdp-request</span> - Rate limit for delete AA PDP context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-aa-pdp-response</span> - Rate limit for delete AA PDP context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-mbms-request</span> - Rate limit for delete MBMS context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-mbms-response</span> - Rate limit for delete MBMS context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-pdp-request</span> - Rate limit for delete PDP context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-pdp-response</span> - Rate limit for delete PDP context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">echo-reponse</span> - Rate limit for echo response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">echo-request</span> - Rate limit for echo requests (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">error-indication</span> - Rate limit for error indication (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">failure-report-request</span> - Rate limit for failure report request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">failure-report-response</span> - Rate limit for failure report response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fwd-reloc-complete-ack</span> - Rate limit for forward relocation complete acknowledge (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fwd-relocation-complete</span> - Rate limit for forward relocation complete (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fwd-relocation-request</span> - Rate limit for forward relocation request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fwd-relocation-response</span> - Rate limit for forward relocation response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fwd-srns-context</span> - Rate limit for forward SRNS context (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fwd-srns-context-ack</span> - Rate limit for forward SRNS context acknowledge (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">g-pdu</span> - Rate limit for G-PDU (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">identification-request</span> - Rate limit for identification request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">identification-response</span> - Rate limit for identification response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-de-reg-request</span> - Rate limit for MBMS de-registration request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-de-reg-response</span> - Rate limit for MBMS de-registration response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-notify-rej-request</span> - Rate limit for MBMS notification reject request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-notify-rej-response</span> - Rate limit for MBMS notification reject response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-notify-request</span> - Rate limit for MBMS notification request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-notify-response</span> - Rate limit for MBMS notification response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-reg-request</span> - Rate limit for MBMS registration request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-reg-response</span> - Rate limit for MBMS registration response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-ses-start-request</span> - Rate limit for MBMS session start request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-ses-start-response</span> - Rate limit for MBMS session start response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-ses-stop-request</span> - Rate limit for MBMS session stop request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mbms-ses-stop-response</span> - Rate limit for MBMS session stop response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">note-ms-request</span> - Rate limit for note MS GPRS present request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">note-ms-response</span> - Rate limit for note MS GPRS present response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pdu-notify-rej-request</span> - Rate limit for PDU notify reject request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pdu-notify-rej-response</span> - Rate limit for PDU notify reject response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pdu-notify-request</span> - Rate limit for PDU notify request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pdu-notify-response</span> - Rate limit for PDU notify response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ran-info</span> - Rate limit for RAN information relay (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">relocation-cancel-request</span> - Rate limit for relocation cancel request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">relocation-cancel-response</span> - Rate limit for relocation cancel response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">send-route-request</span> - Rate limit for send routing information for GPRS request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">send-route-response</span> - Rate limit for send routing information for GPRS response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sgsn-context-ack</span> - Rate limit for SGSN context acknowledgement (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sgsn-context-request</span> - Rate limit for SGSN context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sgsn-context-response</span> - Rate limit for SGSN context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">support-ext-hdr-notify</span> - Rate limit for support extension headers notification (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">update-mbms-request</span> - Rate limit for update MBMS context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">update-mbms-response</span> - Rate limit for update MBMS context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">update-pdp-request</span> - Rate limit for update PDP context request (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">update-pdp-response</span> - Rate limit for update PDP context response (packets per second). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">version-not-support</span> - Rate limit for version not supported (packets per second). <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">message-rate-limit-v0</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">create-pdp-request</span> - Rate limit (packets/s) for create PDP context request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-pdp-request</span> - Rate limit (packets/s) for delete PDP context request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">echo-request</span> - Rate limit (packets/s) for echo request. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">message-rate-limit-v1</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">create-pdp-request</span> - Rate limit (packets/s) for create PDP context request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-pdp-request</span> - Rate limit (packets/s) for delete PDP context request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">echo-request</span> - Rate limit (packets/s) for echo request. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">message-rate-limit-v2</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">create-session-request</span> - Rate limit (packets/s) for create session request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">delete-session-request</span> - Rate limit (packets/s) for delete session request. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">echo-request</span> - Rate limit (packets/s) for echo request. <span class="li-normal">type: int</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -251,6 +403,7 @@ Examples
                     - uli
                     - imei
                   sgsn-addr: <value of string>
+                  sgsn-addr6: <value of string>
             ie-remover: <value in [disable, enable]>
             ie-white-list-v0v1: <value of string>
             ie-white-list-v2: <value of string>
@@ -276,6 +429,8 @@ Examples
                   dstaddr: <value of string>
                   id: <value of integer>
                   srcaddr: <value of string>
+                  dstaddr6: <value of string>
+                  srcaddr6: <value of string>
             log-freq: <value of integer>
             log-gtpu-limit: <value of integer>
             log-imsi-prefix: <value of string>
@@ -333,6 +488,8 @@ Examples
                     - virtual
                     - nbiot
                   uli: <value of string>
+                  imsi-prefix: <value of string>
+                  msisdn-prefix: <value of string>
             policy-filter: <value in [disable, enable]>
             port-notify: <value of integer>
             rate-limit-mode: <value in [per-profile, per-stream, per-apn]>
@@ -352,6 +509,305 @@ Examples
             unknown-version-action: <value in [allow, deny]>
             user-plane-message-rate-limit: <value of integer>
             warning-threshold: <value of integer>
+            policy-v2:
+              -
+                  action: <value in [deny, allow]>
+                  apn-sel-mode:
+                    - ms
+                    - net
+                    - vrf
+                  apnmember: <value of string>
+                  id: <value of integer>
+                  imsi-prefix: <value of string>
+                  max-apn-restriction: <value in [all, public-1, public-2, ...]>
+                  mei: <value of string>
+                  messages:
+                    - create-ses-req
+                    - create-ses-res
+                    - modify-bearer-req
+                    - modify-bearer-res
+                  msisdn-prefix: <value of string>
+                  rat-type:
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - any
+                    - utran
+                    - geran
+                    - wlan
+                    - gan
+                    - hspa
+                    - eutran
+                    - virtual
+                    - nbiot
+                    - ltem
+                    - nr
+                  uli: <value of string>
+            sub-second-interval: <value in [0.1, 0.25, 0.5]>
+            sub-second-sampling: <value in [disable, enable]>
+            authorized-ggsns6: <value of string>
+            authorized-sgsns6: <value of string>
+            handover-group6: <value of string>
+            ie-allow-list-v0v1: <value of string>
+            ie-allow-list-v2: <value of string>
+            ie-validation:
+               apn-restriction: <value in [disable, enable]>
+               charging-ID: <value in [disable, enable]>
+               charging-gateway-addr: <value in [disable, enable]>
+               end-user-addr: <value in [disable, enable]>
+               gsn-addr: <value in [disable, enable]>
+               imei: <value in [disable, enable]>
+               imsi: <value in [disable, enable]>
+               mm-context: <value in [disable, enable]>
+               ms-tzone: <value in [disable, enable]>
+               ms-validated: <value in [disable, enable]>
+               msisdn: <value in [disable, enable]>
+               nsapi: <value in [disable, enable]>
+               pdp-context: <value in [disable, enable]>
+               qos-profile: <value in [disable, enable]>
+               rai: <value in [disable, enable]>
+               rat-type: <value in [disable, enable]>
+               reordering-required: <value in [disable, enable]>
+               selection-mode: <value in [disable, enable]>
+               uli: <value in [disable, enable]>
+            invalid-sgsns6-to-log: <value of string>
+            message-rate-limit:
+               create-aa-pdp-request: <value of integer>
+               create-aa-pdp-response: <value of integer>
+               create-mbms-request: <value of integer>
+               create-mbms-response: <value of integer>
+               create-pdp-request: <value of integer>
+               create-pdp-response: <value of integer>
+               delete-aa-pdp-request: <value of integer>
+               delete-aa-pdp-response: <value of integer>
+               delete-mbms-request: <value of integer>
+               delete-mbms-response: <value of integer>
+               delete-pdp-request: <value of integer>
+               delete-pdp-response: <value of integer>
+               echo-reponse: <value of integer>
+               echo-request: <value of integer>
+               error-indication: <value of integer>
+               failure-report-request: <value of integer>
+               failure-report-response: <value of integer>
+               fwd-reloc-complete-ack: <value of integer>
+               fwd-relocation-complete: <value of integer>
+               fwd-relocation-request: <value of integer>
+               fwd-relocation-response: <value of integer>
+               fwd-srns-context: <value of integer>
+               fwd-srns-context-ack: <value of integer>
+               g-pdu: <value of integer>
+               identification-request: <value of integer>
+               identification-response: <value of integer>
+               mbms-de-reg-request: <value of integer>
+               mbms-de-reg-response: <value of integer>
+               mbms-notify-rej-request: <value of integer>
+               mbms-notify-rej-response: <value of integer>
+               mbms-notify-request: <value of integer>
+               mbms-notify-response: <value of integer>
+               mbms-reg-request: <value of integer>
+               mbms-reg-response: <value of integer>
+               mbms-ses-start-request: <value of integer>
+               mbms-ses-start-response: <value of integer>
+               mbms-ses-stop-request: <value of integer>
+               mbms-ses-stop-response: <value of integer>
+               note-ms-request: <value of integer>
+               note-ms-response: <value of integer>
+               pdu-notify-rej-request: <value of integer>
+               pdu-notify-rej-response: <value of integer>
+               pdu-notify-request: <value of integer>
+               pdu-notify-response: <value of integer>
+               ran-info: <value of integer>
+               relocation-cancel-request: <value of integer>
+               relocation-cancel-response: <value of integer>
+               send-route-request: <value of integer>
+               send-route-response: <value of integer>
+               sgsn-context-ack: <value of integer>
+               sgsn-context-request: <value of integer>
+               sgsn-context-response: <value of integer>
+               support-ext-hdr-notify: <value of integer>
+               update-mbms-request: <value of integer>
+               update-mbms-response: <value of integer>
+               update-pdp-request: <value of integer>
+               update-pdp-response: <value of integer>
+               version-not-support: <value of integer>
+            message-rate-limit-v0:
+               create-pdp-request: <value of integer>
+               delete-pdp-request: <value of integer>
+               echo-request: <value of integer>
+            message-rate-limit-v1:
+               create-pdp-request: <value of integer>
+               delete-pdp-request: <value of integer>
+               echo-request: <value of integer>
+            message-rate-limit-v2:
+               create-session-request: <value of integer>
+               delete-session-request: <value of integer>
+               echo-request: <value of integer>
 
 
 

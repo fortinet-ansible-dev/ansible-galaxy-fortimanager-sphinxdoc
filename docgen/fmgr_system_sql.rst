@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_sql</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,14 +76,14 @@ Parameters
  <li><span class="li-head">device-type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span> </li>
  <li><span class="li-head">id</span> - Add or Edit log index fields. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">index-field</span> - Log field name to be indexed. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span>  <span class="li-normal">default: traffic</span> </li>
+ <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem]</span>  <span class="li-normal">default: traffic</span> </li>
  </ul>
  <li><span class="li-head">database-name</span> - Database name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">database-type</span> - Database type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mysql, postgres]</span>  <span class="li-normal">default: postgres</span> </li>
  <li><span class="li-head">device-count-high</span> - Must set to enable if the count of registered devices is greater than 8000. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">event-table-partition-time</span> - Maximum SQL database table partitioning time range in minute (0 for unlimited) for event logs. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
  <li><span class="li-head">fct-table-partition-time</span> - Maximum SQL database table partitioning time range in minute (0 for unlimited) for FortiClient logs. <span class="li-normal">type: int</span>  <span class="li-normal">default: 240</span> </li>
- <li><span class="li-head">logtype</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl]</span> </li>
+ <li><span class="li-head">logtype</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem]</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">prompt-sql-upgrade</span> - Prompt to convert log database into SQL database at start time on GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">rebuild-event</span> - Disable/Enable rebuild event during SQL database rebuilding. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
@@ -74,6 +99,13 @@ Parameters
  </ul>
  <li><span class="li-head">username</span> - User name for login remote database. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">utm-table-partition-time</span> - Maximum SQL database table partitioning time range in minute (0 for unlimited) for UTM logs. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">custom-skipidx</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">device-type</span> - Device type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiSandbox, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span> </li>
+ <li><span class="li-head">id</span> - Add or Edit log index fields. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">index-field</span> - Field to be added to skip index. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">log-type</span> - Log type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem]</span>  <span class="li-normal">default: app-ctrl</span> </li>
+ </ul>
+ <li><span class="li-head">compress-table-min-age</span> - Minimum age in days for SQL tables to be compressed. <span class="li-normal">type: int</span>  <span class="li-normal">default: 7</span> </li>
  </ul>
  </ul>
 
@@ -152,6 +184,228 @@ Examples
               - dns
               - ssh
               - ssl
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - asset
+              - protocol
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - asset
+              - protocol
+              - siem
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - asset
+              - protocol
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - asset
+              - protocol
+              - siem
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - asset
+              - protocol
+              - none
+              - app-ctrl
+              - attack
+              - content
+              - dlp
+              - emailfilter
+              - event
+              - generic
+              - history
+              - traffic
+              - virus
+              - voip
+              - webfilter
+              - netscan
+              - fct-event
+              - fct-traffic
+              - fct-netscan
+              - waf
+              - gtp
+              - dns
+              - ssh
+              - ssl
+              - file-filter
+              - asset
+              - protocol
+              - siem
             password: <value of string>
             prompt-sql-upgrade: <value in [disable, enable]>
             rebuild-event: <value in [disable, enable]>
@@ -167,6 +421,13 @@ Examples
                   value: <value of string>
             username: <value of string>
             utm-table-partition-time: <value of integer>
+            custom-skipidx:
+              -
+                  device-type: <value in [FortiGate, FortiManager, FortiClient, ...]>
+                  id: <value of integer>
+                  index-field: <value of string>
+                  log-type: <value in [app-ctrl, attack, content, ...]>
+            compress-table-min-age: <value of integer>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webfilter_profile_web</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -57,6 +82,8 @@ Parameters
  <li><span class="li-head">urlfilter-table</span> - URL filter table ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">whitelist</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> </li>
  <li><span class="li-head">youtube-restrict</span> - YouTube EDU filter level. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [strict, none, moderate]</span> </li>
+ <li><span class="li-head">allowlist</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> </li>
+ <li><span class="li-head">blocklist</span> - Enable/disable automatic addition of URLs detected by FortiSandbox to blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -122,6 +149,14 @@ Examples
               - exempt-rangeblock
               - extended-log-others
             youtube-restrict: <value in [strict, none, moderate]>
+            allowlist:
+              - exempt-av
+              - exempt-webcontent
+              - exempt-activex-java-cookie
+              - exempt-dlp
+              - exempt-rangeblock
+              - extended-log-others
+            blocklist: <value in [disable, enable]>
 
 
 

@@ -4,8 +4,8 @@
 
 .. _fmgr_fsp_vlan_interface:
 
-fmgr_fsp_vlan_interface
-+++++++++++++++++++++++
+fmgr_fsp_vlan_interface -- Configure interfaces.
+++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fsp_vlan_interface</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -45,13 +70,13 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vlan</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">fsp_vlan_interface</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">fsp_vlan_interface</span> - Configure interfaces. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">ac-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">aggregate</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">algorithm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [L2, L3, L4]</span> </li>
  <li><span class="li-head">alias</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm]</span> </li>
+ <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric]</span> </li>
  <li><span class="li-head">ap-discover</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">arpforward</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">atm-protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, ipoa]</span> </li>
@@ -123,7 +148,7 @@ Parameters
  <li><span class="li-head">fortilink-split-interface</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">fortilink-stacking</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">forward-domain</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">forward-error-correction</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, rs-fec, base-r-fec]</span> </li>
+ <li><span class="li-head">forward-error-correction</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, rs-fec, base-r-fec, fec-cl91, fec-cl74]</span> </li>
  <li><span class="li-head">fp-anomaly</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [drop_tcp_fin_noack, pass_winnuke, pass_tcpland, pass_udpland, pass_icmpland, pass_ipland, pass_iprr, pass_ipssrr, pass_iplsrr, pass_ipstream, pass_ipsecurity, pass_iptimestamp, pass_ipunknown_option, pass_ipunknown_prot, pass_icmp_frag, pass_tcp_no_flag, pass_tcp_fin_noack, drop_winnuke, drop_tcpland, drop_udpland, drop_icmpland, drop_ipland, drop_iprr, drop_ipssrr, drop_iplsrr, drop_ipstream, drop_ipsecurity, drop_iptimestamp, drop_ipunknown_option, drop_ipunknown_prot, drop_icmp_frag, drop_tcp_no_flag]</span> </li>
  <li><span class="li-head">fp-disable</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [all, ipsec, none]</span> </li>
  <li><span class="li-head">gateway-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -160,7 +185,7 @@ Parameters
  <li><span class="li-head">dhcp6-relay-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dhcp6-relay-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regular]</span> </li>
  <li><span class="li-head">ip6-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap]</span> </li>
+ <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric]</span> </li>
  <li><span class="li-head">ip6-default-life</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip6-dns-server-override</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ip6-hop-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -183,6 +208,45 @@ Parameters
  <li><span class="li-head">nd-timestamp-fuzz</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">vrip6_link_local</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vrrp-virtual-mac6</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ip6-delegated-prefix-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">autonomous-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">onlink-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">prefix-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rdnss</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">rdnss-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [delegated, default, specify]</span> </li>
+ <li><span class="li-head">subnet</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">upstream-interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">ip6-extra-addr</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">ip6-prefix-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">autonomous-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dnssl</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">onlink-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">preferred-life-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rdnss</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">valid-life-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">vrrp6</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">accept-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">adv-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">preempt</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">start-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vrdst6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vrgrp</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">vrid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">vrip6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">cli-conn6-status</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">icmp6-send-redirect</span> - Enable/disable sending of ICMPv6 redirects. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface-identifier</span> - IPv6 interface identifier. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6-prefix-mode</span> - Assigning a prefix from DHCP or RA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dhcp6, ra]</span> </li>
+ <li><span class="li-head">ra-send-mtu</span> - Enable/disable sending link MTU in RA packet. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">unique-autoconf-addr</span> - Enable/disable unique auto config address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">l2forward</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">l2tp-client</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -201,7 +265,7 @@ Parameters
  <li><span class="li-head">management-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">max-egress-burst-rate</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">max-egress-rate</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mediatype</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [serdes-sfp, sgmii-sfp, cfp2-sr10, cfp2-lr4, serdes-copper-sfp, sr, cr, lr, qsfp28-sr4, qsfp28-lr4, qsfp28-cr4]</span> </li>
+ <li><span class="li-head">mediatype</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [serdes-sfp, sgmii-sfp, cfp2-sr10, cfp2-lr4, serdes-copper-sfp, sr, cr, lr, qsfp28-sr4, qsfp28-lr4, qsfp28-cr4, sr4, cr4, lr4]</span> </li>
  <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">min-links</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">min-links-down</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [operational, administrative]</span> </li>
@@ -245,7 +309,7 @@ Parameters
  <li><span class="li-head">scan-botnet-connections</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, block, monitor]</span> </li>
  <li><span class="li-head">secondary-IP</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">secondaryip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm]</span> </li>
+ <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric]</span> </li>
  <li><span class="li-head">detectprotocol</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ping, tcp-echo, udp-echo]</span> </li>
  <li><span class="li-head">detectserver</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">gwdetect</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -298,7 +362,7 @@ Parameters
  <li><span class="li-head">trust-ip6-1</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">trust-ip6-2</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">trust-ip6-3</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical, vlan, aggregate, redundant, tunnel, wireless, vdom-link, loopback, switch, hard-switch, hdlc, vap-switch, wl-mesh, fortilink, switch-vlan, fctrl-trunk, tdm, fext-wan, vxlan, emac-vlan]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical, vlan, aggregate, redundant, tunnel, wireless, vdom-link, loopback, switch, hard-switch, hdlc, vap-switch, wl-mesh, fortilink, switch-vlan, fctrl-trunk, tdm, fext-wan, vxlan, emac-vlan, geneve, ssl]</span> </li>
  <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vci</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">vectoring</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -344,6 +408,34 @@ Parameters
  <li><span class="li-head">wifi-ssid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wifi-usergroup</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">eip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fortilink-neighbor-detect</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [lldp, fortilink]</span> </li>
+ <li><span class="li-head">ingress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ring-rx</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ring-tx</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">bandwidth-measure-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip-managed-by-fortiipam</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">managed-subnetwork-size</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]</span> </li>
+ <li><span class="li-head">measured-downstream-bandwidth</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">measured-upstream-bandwidth</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">monitor-bandwidth</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">swc-vlan</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">switch-controller-feature</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, default-vlan, quarantine, sniffer, voice, camera, rspan, video, nac]</span> </li>
+ <li><span class="li-head">switch-controller-igmp-snooping-fast-leave</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">switch-controller-igmp-snooping-proxy</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">switch-controller-mgmt-vlan</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">switch-controller-nac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">switch-controller-rspan-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vlan-protocol</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [8021q, 8021ad]</span> </li>
+ <li><span class="li-head">dhcp-relay-interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dhcp-relay-interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">dhcp-relay-request-all-server</span> - Enable/disable sending of DHCP requests to all servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">np-qos-profile</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">stp-ha-secondary</span> - Control STP behaviour on HA secondary. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, priority-adjust]</span> </li>
+ <li><span class="li-head">swc-first-create</span> - Initial create for switch-controller VLANs. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">switch-controller-dynamic</span> - Integrated FortiLink settings for managed FortiSwitch. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">switch-controller-iot-scanning</span> - Enable/disable managed FortiSwitch IoT scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">switch-controller-source-ip</span> - Source IP address used in FortiLink over L3 connections. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [outbound, fixed]</span> </li>
  </ul>
  </ul>
 
@@ -378,7 +470,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure interfaces.
       fmgr_fsp_vlan_interface:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -406,6 +498,198 @@ Examples
               - capwap
               - dnp
               - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
             ap-discover: <value in [disable, enable]>
             arpforward: <value in [disable, enable]>
             atm-protocol: <value in [none, ipoa]>
@@ -567,6 +851,128 @@ Examples
                  - telnet
                  - fgfm
                  - capwap
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
+                 - https
+                 - ping
+                 - ssh
+                 - snmp
+                 - http
+                 - telnet
+                 - fgfm
+                 - capwap
+                 - fabric
                ip6-default-life: <value of integer>
                ip6-dns-server-override: <value in [disable, enable]>
                ip6-hop-limit: <value of integer>
@@ -589,6 +995,45 @@ Examples
                nd-timestamp-fuzz: <value of integer>
                vrip6_link_local: <value of string>
                vrrp-virtual-mac6: <value in [disable, enable]>
+               ip6-delegated-prefix-list:
+                 -
+                     autonomous-flag: <value in [disable, enable]>
+                     onlink-flag: <value in [disable, enable]>
+                     prefix-id: <value of integer>
+                     rdnss: <value of string>
+                     rdnss-service: <value in [delegated, default, specify]>
+                     subnet: <value of string>
+                     upstream-interface: <value of string>
+               ip6-extra-addr:
+                 -
+                     prefix: <value of string>
+               ip6-prefix-list:
+                 -
+                     autonomous-flag: <value in [disable, enable]>
+                     dnssl: <value of string>
+                     onlink-flag: <value in [disable, enable]>
+                     preferred-life-time: <value of integer>
+                     prefix: <value of string>
+                     rdnss: <value of string>
+                     valid-life-time: <value of integer>
+               vrrp6:
+                 -
+                     accept-mode: <value in [disable, enable]>
+                     adv-interval: <value of integer>
+                     preempt: <value in [disable, enable]>
+                     priority: <value of integer>
+                     start-time: <value of integer>
+                     status: <value in [disable, enable]>
+                     vrdst6: <value of string>
+                     vrgrp: <value of integer>
+                     vrid: <value of integer>
+                     vrip6: <value of string>
+               cli-conn6-status: <value of integer>
+               icmp6-send-redirect: <value in [disable, enable]>
+               interface-identifier: <value of string>
+               ip6-prefix-mode: <value in [dhcp6, ra]>
+               ra-send-mtu: <value in [disable, enable]>
+               unique-autoconf-addr: <value in [disable, enable]>
             l2forward: <value in [disable, enable]>
             l2tp-client: <value in [disable, enable]>
             lacp-ha-slave: <value in [disable, enable]>
@@ -665,6 +1110,239 @@ Examples
                     - capwap
                     - dnp
                     - ftm
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
+                    - https
+                    - ping
+                    - ssh
+                    - snmp
+                    - http
+                    - telnet
+                    - fgfm
+                    - auto-ipsec
+                    - radius-acct
+                    - probe-response
+                    - capwap
+                    - dnp
+                    - ftm
+                    - fabric
                   detectprotocol:
                     - ping
                     - tcp-echo
@@ -765,6 +1443,34 @@ Examples
             wifi-ssid: <value of string>
             wifi-usergroup: <value of string>
             wins-ip: <value of string>
+            eip: <value of string>
+            fortilink-neighbor-detect: <value in [lldp, fortilink]>
+            ingress-shaping-profile: <value of string>
+            ring-rx: <value of integer>
+            ring-tx: <value of integer>
+            bandwidth-measure-time: <value of integer>
+            ip-managed-by-fortiipam: <value in [disable, enable]>
+            managed-subnetwork-size: <value in [256, 512, 1024, ...]>
+            measured-downstream-bandwidth: <value of integer>
+            measured-upstream-bandwidth: <value of integer>
+            monitor-bandwidth: <value in [disable, enable]>
+            swc-vlan: <value of integer>
+            switch-controller-feature: <value in [none, default-vlan, quarantine, ...]>
+            switch-controller-igmp-snooping-fast-leave: <value in [disable, enable]>
+            switch-controller-igmp-snooping-proxy: <value in [disable, enable]>
+            switch-controller-mgmt-vlan: <value of integer>
+            switch-controller-nac: <value of string>
+            switch-controller-rspan-mode: <value in [disable, enable]>
+            vlan-protocol: <value in [8021q, 8021ad]>
+            dhcp-relay-interface: <value of string>
+            dhcp-relay-interface-select-method: <value in [auto, sdwan, specify]>
+            dhcp-relay-request-all-server: <value in [disable, enable]>
+            np-qos-profile: <value of integer>
+            stp-ha-secondary: <value in [disable, enable, priority-adjust]>
+            swc-first-create: <value of integer>
+            switch-controller-dynamic: <value of string>
+            switch-controller-iot-scanning: <value in [disable, enable]>
+            switch-controller-source-ip: <value in [outbound, fixed]>
 
 
 

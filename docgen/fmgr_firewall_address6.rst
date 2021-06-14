@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_address6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -71,6 +96,18 @@ Parameters
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, dynamic, fqdn, template]</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">subnet-segment</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, specific]</span> </li>
+ <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">end-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">macaddr</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">start-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">end-ip</span> - Final IP address (inclusive) in the range for the address (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">fqdn</span> - Fully qualified domain name. <span class="li-normal">type: str</span> </li>
@@ -79,6 +116,8 @@ Parameters
  <li><span class="li-head">ip6</span> - IPv6 address prefix (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx/xxx). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">ip</span> - IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">net-id</span> - Network ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">obj-id</span> - Object ID. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">name</span> - Address name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">obj-id</span> - Object ID for NSX. <span class="li-normal">type: str</span> </li>
@@ -98,6 +137,11 @@ Parameters
  <li><span class="li-head">type</span> - Type of IPv6 address object (default = ipprefix). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, dynamic, fqdn, template]</span> </li>
  <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - Enable/disable the visibility of the object in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">country</span> - IPv6 addresses associated to a specific country. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - Global Object. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">macaddr</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  </ul>
  </ul>
 
@@ -167,6 +211,18 @@ Examples
                   type: <value in [ipprefix, iprange, dynamic, ...]>
                   uuid: <value of string>
                   visibility: <value in [disable, enable]>
+                  subnet-segment:
+                    -
+                        name: <value of string>
+                        type: <value in [any, specific]>
+                        value: <value of string>
+                  _image-base64: <value of string>
+                  country: <value of string>
+                  global-object: <value of integer>
+                  end-mac: <value of string>
+                  fabric-object: <value in [disable, enable]>
+                  macaddr: <value of string>
+                  start-mac: <value of string>
             end-ip: <value of string>
             fqdn: <value of string>
             host: <value of string>
@@ -175,6 +231,8 @@ Examples
             list:
               -
                   ip: <value of string>
+                  net-id: <value of string>
+                  obj-id: <value of string>
             name: <value of string>
             obj-id: <value of string>
             sdn: <value in [nsx]>
@@ -193,6 +251,11 @@ Examples
             type: <value in [ipprefix, iprange, dynamic, ...]>
             uuid: <value of string>
             visibility: <value in [disable, enable]>
+            _image-base64: <value of string>
+            country: <value of string>
+            global-object: <value of integer>
+            fabric-object: <value in [disable, enable]>
+            macaddr: <value of string>
 
 
 

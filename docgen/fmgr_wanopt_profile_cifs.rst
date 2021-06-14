@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanopt_profile_cifs</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,6 +79,7 @@ Parameters
  <li><span class="li-head">secure-tunnel</span> - Enable/disable securing the WAN Opt tunnel using SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">status</span> - Enable/disable HTTP WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
+ <li><span class="li-head">protocol-opt</span> - Select Protocol specific optimitation or generic TCP optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [protocol, tcp]</span> </li>
  </ul>
  </ul>
 
@@ -105,6 +131,7 @@ Examples
             secure-tunnel: <value in [disable, enable]>
             status: <value in [disable, enable]>
             tunnel-sharing: <value in [private, shared, express-shared]>
+            protocol-opt: <value in [protocol, tcp]>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>application_group</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,7 +76,13 @@ Parameters
  <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">comment</span> - Comment <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Application group name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - Application group type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [application, category]</span> </li>
+ <li><span class="li-head">type</span> - Application group type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [application, category, filter]</span> </li>
+ <li><span class="li-head">behavior</span> - Application behavior filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">popularity</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
+ <li><span class="li-head">protocols</span> - Application protocol filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">risk</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">technology</span> - Application technology filter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vendor</span> - Application vendor filter. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -100,7 +131,18 @@ Examples
             category: <value of integer>
             comment: <value of string>
             name: <value of string>
-            type: <value in [application, category]>
+            type: <value in [application, category, filter]>
+            behavior: <value of string>
+            popularity:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+            protocols: <value of string>
+            risk: <value of integer>
+            technology: <value of string>
+            vendor: <value of string>
 
 
 

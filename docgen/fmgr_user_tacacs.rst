@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_tacacs</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -64,6 +89,8 @@ Parameters
  <li><span class="li-head">source-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">tertiary-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">name</span> - TACACS+ server entry name. <span class="li-normal">type: str</span> </li>
@@ -74,6 +101,8 @@ Parameters
  <li><span class="li-head">source-ip</span> - source IP for communications to TACACS+ server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tertiary-key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">tertiary-server</span> - Tertiary TACACS+ server CN domain name or IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  </ul>
 
@@ -136,6 +165,8 @@ Examples
                   source-ip: <value of string>
                   tertiary-key: <value of string>
                   tertiary-server: <value of string>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
             key: <value of string>
             name: <value of string>
             port: <value of integer>
@@ -145,6 +176,8 @@ Examples
             source-ip: <value of string>
             tertiary-key: <value of string>
             tertiary-server: <value of string>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
 
 
 

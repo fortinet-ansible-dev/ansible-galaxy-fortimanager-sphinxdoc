@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webproxy_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -59,6 +84,11 @@ Parameters
  <li><span class="li-head">content</span> - HTTP headers content. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id</span> - HTTP forwarded header id. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - HTTP forwarded header name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">add-option</span> - Configure options to append content to existing HTTP header or add new HTTP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [append, new-on-not-found, new]</span> </li>
+ <li><span class="li-head">base64-encoding</span> - Enable/disable use of base64 encoding of HTTP content. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dstaddr</span> - Destination address and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr6</span> - Destination address and address group names (IPv6). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, http]</span> </li>
  </ul>
  <li><span class="li-head">log-header-change</span> - Enable/disable logging HTTP header changes. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
@@ -120,6 +150,13 @@ Examples
                   content: <value of string>
                   id: <value of integer>
                   name: <value of string>
+                  add-option: <value in [append, new-on-not-found, new]>
+                  base64-encoding: <value in [disable, enable]>
+                  dstaddr: <value of string>
+                  dstaddr6: <value of string>
+                  protocol:
+                    - https
+                    - http
             log-header-change: <value in [disable, enable]>
             name: <value of string>
             strip-encoding: <value in [disable, enable]>

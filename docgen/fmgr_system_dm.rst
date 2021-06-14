@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_dm</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -67,6 +92,8 @@ Parameters
  <li><span class="li-head">skip-scep-check</span> - Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">skip-tunnel-fcp-req</span> - Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">verify-install</span> - Verify install against remote configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, optimal, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">fgfm-install-refresh-count</span> - Maximum FGFM install refresh attempt. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
+ <li><span class="li-head">conf-merge-after-script</span> - Merge config after run script on remote device, instead of full retrieve. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 
@@ -131,6 +158,8 @@ Examples
             skip-scep-check: <value in [disable, enable]>
             skip-tunnel-fcp-req: <value in [disable, enable]>
             verify-install: <value in [disable, optimal, enable]>
+            fgfm-install-refresh-count: <value of integer>
+            conf-merge-after-script: <value in [disable, enable]>
 
 
 

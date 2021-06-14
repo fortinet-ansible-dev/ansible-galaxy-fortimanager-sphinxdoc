@@ -4,8 +4,8 @@
 
 .. _fmgr_pkg_header_shapingpolicy:
 
-fmgr_pkg_header_shapingpolicy
-+++++++++++++++++++++++++++++
+fmgr_pkg_header_shapingpolicy -- Configure shaping policies.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_header_shapingpolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -45,7 +70,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">pkg_header_shapingpolicy</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">pkg_header_shapingpolicy</span> - Configure shaping policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">app-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -86,6 +111,9 @@ Parameters
  <li><span class="li-head">traffic-shaper-reverse</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">url-category</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">users</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -120,7 +148,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure shaping policies.
       fmgr_pkg_header_shapingpolicy:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -169,6 +197,9 @@ Examples
             traffic-shaper-reverse: <value of string>
             url-category: <value of string>
             users: <value of string>
+            uuid: <value of string>
+            internet-service-name: <value of string>
+            internet-service-src-name: <value of string>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_sslsshprofile_imaps</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,6 +78,17 @@ Parameters
  <li><span class="li-head">status</span> - Configure protocol inspection status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, deep-inspection]</span> </li>
  <li><span class="li-head">unsupported-ssl</span> - Action based on the SSL encryption used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
  <li><span class="li-head">untrusted-cert</span> - Allow, ignore, or block the untrusted SSL session server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">invalid-server-cert</span> - Allow or block the invalid SSL session server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block]</span> </li>
+ <li><span class="li-head">sni-server-cert-check</span> - Check the SNI in the client hello message with the CN or SAN fields in the returned server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, strict]</span> </li>
+ <li><span class="li-head">untrusted-server-cert</span> - Allow, ignore, or block the untrusted SSL session server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">cert-validation-failure</span> - Action based on certificate validation failure. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">cert-validation-timeout</span> - Action based on certificate validation timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">client-certificate</span> - Action based on received client certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
+ <li><span class="li-head">expired-server-cert</span> - Action based on server certificate is expired. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">proxy-after-tcp-handshake</span> - Proxy traffic after the TCP 3-way handshake has been established (not before). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">revoked-server-cert</span> - Action based on server certificate is revoked. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">unsupported-ssl-cipher</span> - Action based on the SSL cipher used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block]</span> </li>
+ <li><span class="li-head">unsupported-ssl-negotiation</span> - Action based on the SSL negotiation used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block]</span> </li>
  </ul>
  </ul>
 
@@ -103,6 +139,17 @@ Examples
             status: <value in [disable, deep-inspection]>
             unsupported-ssl: <value in [bypass, inspect, block]>
             untrusted-cert: <value in [allow, block, ignore]>
+            invalid-server-cert: <value in [allow, block]>
+            sni-server-cert-check: <value in [disable, enable, strict]>
+            untrusted-server-cert: <value in [allow, block, ignore]>
+            cert-validation-failure: <value in [allow, block, ignore]>
+            cert-validation-timeout: <value in [allow, block, ignore]>
+            client-certificate: <value in [bypass, inspect, block]>
+            expired-server-cert: <value in [allow, block, ignore]>
+            proxy-after-tcp-handshake: <value in [disable, enable]>
+            revoked-server-cert: <value in [allow, block, ignore]>
+            unsupported-ssl-cipher: <value in [allow, block]>
+            unsupported-ssl-negotiation: <value in [allow, block]>
 
 
 

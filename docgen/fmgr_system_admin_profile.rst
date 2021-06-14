@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_admin_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -99,6 +124,15 @@ Parameters
  <li><span class="li-head">type</span> - profile type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [system, restricted]</span>  <span class="li-normal">default: system</span> </li>
  <li><span class="li-head">vpn-manager</span> - VPN manager. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
  <li><span class="li-head">web-filter</span> - Web filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">allow-to-install</span> - Enable/disable the restricted user to install objects to the devices. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">datamask-unmasked-time</span> - Time in days without data masking. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">super-user-profile</span> - Enable/disable super user profile <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">extension-access</span> - Manage extension access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">fabric-viewer</span> - Fabric viewer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">run-report</span> - Run reports. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">script-access</span> - Script access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">triage-events</span> - Triage events. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
+ <li><span class="li-head">update-incidents</span> - Create/update incidents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> </li>
  </ul>
  </ul>
 
@@ -209,6 +243,15 @@ Examples
             type: <value in [system, restricted]>
             vpn-manager: <value in [none, read, read-write]>
             web-filter: <value in [disable, enable]>
+            allow-to-install: <value in [disable, enable]>
+            datamask-unmasked-time: <value of integer>
+            super-user-profile: <value in [disable, enable]>
+            extension-access: <value in [none, read, read-write]>
+            fabric-viewer: <value in [none, read, read-write]>
+            run-report: <value in [none, read, read-write]>
+            script-access: <value in [none, read, read-write]>
+            triage-events: <value in [none, read, read-write]>
+            update-incidents: <value in [none, read, read-write]>
 
 
 

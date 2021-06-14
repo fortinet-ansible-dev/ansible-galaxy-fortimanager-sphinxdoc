@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_ha</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -49,7 +74,7 @@ Parameters
  <li><span class="li-head">file-quota</span> - File quota in MB (2048 - 20480). <span class="li-normal">type: int</span>  <span class="li-normal">default: 4096</span> </li>
  <li><span class="li-head">hb-interval</span> - Heartbeat interval (1 - 255). <span class="li-normal">type: int</span>  <span class="li-normal">default: 5</span> </li>
  <li><span class="li-head">hb-lost-threshold</span> - Heartbeat lost threshold (1 - 255). <span class="li-normal">type: int</span>  <span class="li-normal">default: 3</span> </li>
- <li><span class="li-head">mode</span> - Mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, master, slave]</span>  <span class="li-normal">default: standalone</span> </li>
+ <li><span class="li-head">mode</span> - Mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [standalone, master, slave, primary, secondary]</span>  <span class="li-normal">default: standalone</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">peer</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Id. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
@@ -58,6 +83,7 @@ Parameters
  <li><span class="li-head">serial-number</span> - Serial number of peer. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Peer admin status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
+ <li><span class="li-head">local-cert</span> - set the ha local certificate. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -104,7 +130,7 @@ Examples
             file-quota: <value of integer>
             hb-interval: <value of integer>
             hb-lost-threshold: <value of integer>
-            mode: <value in [standalone, master, slave]>
+            mode: <value in [standalone, master, slave, ...]>
             password: <value of string>
             peer:
               -
@@ -113,6 +139,7 @@ Examples
                   ip6: <value of string>
                   serial-number: <value of string>
                   status: <value in [disable, enable]>
+            local-cert: <value of string>
 
 
 

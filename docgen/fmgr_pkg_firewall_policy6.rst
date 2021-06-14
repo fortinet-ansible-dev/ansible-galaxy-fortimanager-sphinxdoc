@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_firewall_policy6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -124,6 +147,27 @@ Parameters
  <li><span class="li-head">voip-profile</span> - Name of an existing VoIP profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vpntunnel</span> - Policy-based IPsec VPN: name of the IPsec VPN Phase 1. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">webfilter-profile</span> - Name of an existing Web filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">anti-replay</span> - Enable/disable anti-replay check. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">app-group</span> - Application group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cifs-profile</span> - Name of an existing CIFS profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dnsfilter-profile</span> - Name of an existing DNS filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">emailfilter-profile</span> - Name of an existing email filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">http-policy-redirect</span> - Redirect HTTP(S) traffic to matching transparent web proxy policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">inspection-mode</span> - Policy inspection mode (Flow/proxy). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow]</span> </li>
+ <li><span class="li-head">np-acceleration</span> - Enable/disable UTM Network Processor acceleration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssh-filter-profile</span> - Name of an existing SSH filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ssh-policy-redirect</span> - Redirect SSH traffic to matching transparent proxy policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tos</span> - ToS (Type of Service) value used for comparison. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos-mask</span> - Non-zero bit positions are used for comparison while zero bit positions are ignored. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos-negate</span> - Enable negated TOS match. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vlan-filter</span> - Set VLAN filters. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">waf-profile</span> - Name of an existing Web application firewall profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webcache</span> - Enable/disable web cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webcache-https</span> - Enable/disable web cache for HTTPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webproxy-forward-server</span> - Web proxy forward server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webproxy-profile</span> - Webproxy profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">decrypted-traffic-mirror</span> - Decrypted traffic mirror. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fsso-groups</span> - Names of FSSO groups. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -245,6 +289,27 @@ Examples
             voip-profile: <value of string>
             vpntunnel: <value of string>
             webfilter-profile: <value of string>
+            anti-replay: <value in [disable, enable]>
+            app-group: <value of string>
+            cifs-profile: <value of string>
+            dnsfilter-profile: <value of string>
+            emailfilter-profile: <value of string>
+            http-policy-redirect: <value in [disable, enable]>
+            inspection-mode: <value in [proxy, flow]>
+            np-acceleration: <value in [disable, enable]>
+            ssh-filter-profile: <value of string>
+            ssh-policy-redirect: <value in [disable, enable]>
+            tos: <value of string>
+            tos-mask: <value of string>
+            tos-negate: <value in [disable, enable]>
+            vlan-filter: <value of string>
+            waf-profile: <value of string>
+            webcache: <value in [disable, enable]>
+            webcache-https: <value in [disable, enable]>
+            webproxy-forward-server: <value of string>
+            webproxy-profile: <value of string>
+            decrypted-traffic-mirror: <value of string>
+            fsso-groups: <value of string>
 
 
 

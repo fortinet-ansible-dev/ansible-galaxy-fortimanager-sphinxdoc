@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_firewall_shapingpolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -66,6 +91,30 @@ Parameters
  <li><span class="li-head">traffic-shaper-reverse</span> - Traffic shaper to apply to response traffic received by the firewall policy. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">url-category</span> - IDs of one or more FortiGuard Web Filtering categories that this shaper applies traffic shaping to. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">users</span> - Apply this traffic shaping policy to individual users that have authenticated with the FortiGate. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">app-group</span> - One or more application group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">class-id</span> - Traffic class ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">comment</span> - Comments. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">diffserv-forward</span> - Enable to change packets DiffServ values to the specified diffservcode-forward value. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">diffserv-reverse</span> - Enable to change packets reverse (reply) DiffServ values to the specified diffservcode-rev value. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">diffservcode-forward</span> - Change packets DiffServ to this value. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">diffservcode-rev</span> - Change packets reverse (reply) DiffServ to this value. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service</span> - Enable/disable use of Internet Services for this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-custom</span> - Custom Internet Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-custom-group</span> - Custom Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-group</span> - Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-id</span> - Internet Service ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src</span> - Enable/disable use of Internet Services in source for this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-src-custom</span> - Custom Internet Service source name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-custom-group</span> - Custom Internet Service source group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-group</span> - Internet Service source group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-id</span> - Internet Service source ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Shaping policy name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcintf</span> - One or more incoming (ingress) interfaces. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos</span> - ToS (Type of Service) value used for comparison. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos-mask</span> - Non-zero bit positions are used for comparison while zero bit positions are ignored. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos-negate</span> - Enable negated TOS match. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-name</span> - Internet Service ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-name</span> - Internet Service source name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -129,6 +178,30 @@ Examples
             traffic-shaper-reverse: <value of string>
             url-category: <value of string>
             users: <value of string>
+            app-group: <value of string>
+            class-id: <value of integer>
+            comment: <value of string>
+            diffserv-forward: <value in [disable, enable]>
+            diffserv-reverse: <value in [disable, enable]>
+            diffservcode-forward: <value of string>
+            diffservcode-rev: <value of string>
+            internet-service: <value in [disable, enable]>
+            internet-service-custom: <value of string>
+            internet-service-custom-group: <value of string>
+            internet-service-group: <value of string>
+            internet-service-id: <value of string>
+            internet-service-src: <value in [disable, enable]>
+            internet-service-src-custom: <value of string>
+            internet-service-src-custom-group: <value of string>
+            internet-service-src-group: <value of string>
+            internet-service-src-id: <value of string>
+            name: <value of string>
+            srcintf: <value of string>
+            tos: <value of string>
+            tos-mask: <value of string>
+            tos-negate: <value in [disable, enable]>
+            internet-service-name: <value of string>
+            internet-service-src-name: <value of string>
 
 
 

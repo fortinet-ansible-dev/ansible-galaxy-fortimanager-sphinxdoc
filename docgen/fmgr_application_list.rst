@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>application_list</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -61,6 +86,11 @@ Parameters
  <li><span class="li-head">parameters</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Parameter ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">value</span> - Parameter value. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">members</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">id</span> - Parameter. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Parameter name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">value</span> - Parameter value. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  <li><span class="li-head">per-ip-shaper</span> - Per-IP traffic shaper. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">popularity</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
@@ -79,6 +109,7 @@ Parameters
  <li><span class="li-head">sub-category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">technology</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">vendor</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">exclusion</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  </ul>
  <li><span class="li-head">extended-log</span> - Enable/disable extended logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">name</span> - List name. <span class="li-normal">type: str</span> </li>
@@ -89,6 +120,16 @@ Parameters
  <li><span class="li-head">replacemsg-group</span> - Replacement message group. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">unknown-application-action</span> - Pass or block traffic from unknown applications. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, block]</span> </li>
  <li><span class="li-head">unknown-application-log</span> - Enable/disable logging for unknown applications. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">control-default-network-services</span> - Enable/disable enforcement of protocols over selected ports. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">default-network-services</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">id</span> - Entry ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port</span> - Port number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">services</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https]</span> </li>
+ <li><span class="li-head">violation-action</span> - Action for protocols not white listed under selected port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, monitor, pass]</span> </li>
+ </ul>
+ <li><span class="li-head">enforce-default-app-port</span> - Enable/disable default application port enforcement for allowed applications. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">force-inclusion-ssl-di-sigs</span> - Enable/disable forced inclusion of SSL deep inspection signatures. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">p2p-block-list</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [skype, edonkey, bittorrent]</span> </li>
  </ul>
  </ul>
 
@@ -149,6 +190,11 @@ Examples
                     -
                         id: <value of integer>
                         value: <value of string>
+                        members:
+                          -
+                              id: <value of integer>
+                              name: <value of string>
+                              value: <value of string>
                   per-ip-shaper: <value of string>
                   popularity:
                     - 1
@@ -171,6 +217,7 @@ Examples
                   sub-category: <value of integer>
                   technology: <value of string>
                   vendor: <value of string>
+                  exclusion: <value of integer>
             extended-log: <value in [disable, enable]>
             name: <value of string>
             options:
@@ -188,6 +235,30 @@ Examples
             replacemsg-group: <value of string>
             unknown-application-action: <value in [pass, block]>
             unknown-application-log: <value in [disable, enable]>
+            control-default-network-services: <value in [disable, enable]>
+            default-network-services:
+              -
+                  id: <value of integer>
+                  port: <value of integer>
+                  services:
+                    - http
+                    - ssh
+                    - telnet
+                    - ftp
+                    - dns
+                    - smtp
+                    - pop3
+                    - imap
+                    - snmp
+                    - nntp
+                    - https
+                  violation-action: <value in [block, monitor, pass]>
+            enforce-default-app-port: <value in [disable, enable]>
+            force-inclusion-ssl-di-sigs: <value in [disable, enable]>
+            p2p-block-list:
+              - skype
+              - edonkey
+              - bittorrent
 
 
 

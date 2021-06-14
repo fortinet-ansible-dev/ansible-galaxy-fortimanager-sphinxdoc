@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_externalresource</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,6 +79,13 @@ Parameters
  <li><span class="li-head">resource</span> - URI of external resource. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Enable/disable user resource. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">type</span> - User resource type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [category, address, domain, malware]</span> </li>
+ <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">source-ip</span> - Source IPv4 address used to communicate with server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">username</span> - HTTP basic authentication user name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">user-agent</span> - HTTP User-Agent header (default = curl/7. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -105,6 +137,13 @@ Examples
             resource: <value of string>
             status: <value in [disable, enable]>
             type: <value in [category, address, domain, ...]>
+            password: <value of string>
+            source-ip: <value of string>
+            username: <value of string>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            user-agent: <value of string>
+            uuid: <value of string>
 
 
 

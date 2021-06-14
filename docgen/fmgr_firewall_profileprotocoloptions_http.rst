@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_profileprotocoloptions_http</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -67,6 +92,15 @@ Parameters
  <li><span class="li-head">switching-protocols</span> - Bypass from scanning, or block a connection that attempts to switch protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, block]</span> </li>
  <li><span class="li-head">uncompressed-nest-limit</span> - Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">uncompressed-oversize-limit</span> - Maximum in-memory uncompressed file size that can be scanned (0 - 383 MB, 0 = unlimited, default = 10). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-maximum</span> - Maximum dynamic TCP window size (default = 8MB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-minimum</span> - Minimum dynamic TCP window size (default = 128KB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-size</span> - Set TCP static window size (default = 256KB). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-type</span> - Specify type of TCP window to use for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [system, static, dynamic]</span> </li>
+ <li><span class="li-head">proxy-after-tcp-handshake</span> - Proxy traffic after the TCP 3-way handshake has been established (not before). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no, yes]</span> </li>
+ <li><span class="li-head">stream-based-uncompressed-limit</span> - Maximum stream-based uncompressed data size that will be scanned (MB, 0 = unlimited (default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tunnel-non-http</span> - Configure how to process non-HTTP traffic when a profile configured for HTTP traffic accepts a non-HTTP session. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">unknown-http-version</span> - How to handle HTTP sessions that do not comply with HTTP 0. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [best-effort, reject, tunnel]</span> </li>
  </ul>
  </ul>
 
@@ -157,6 +191,15 @@ Examples
             switching-protocols: <value in [bypass, block]>
             uncompressed-nest-limit: <value of integer>
             uncompressed-oversize-limit: <value of integer>
+            tcp-window-maximum: <value of integer>
+            tcp-window-minimum: <value of integer>
+            tcp-window-size: <value of integer>
+            tcp-window-type: <value in [system, static, dynamic]>
+            proxy-after-tcp-handshake: <value in [disable, enable]>
+            ssl-offloaded: <value in [no, yes]>
+            stream-based-uncompressed-limit: <value of integer>
+            tunnel-non-http: <value in [disable, enable]>
+            unknown-http-version: <value in [best-effort, reject, tunnel]>
 
 
 

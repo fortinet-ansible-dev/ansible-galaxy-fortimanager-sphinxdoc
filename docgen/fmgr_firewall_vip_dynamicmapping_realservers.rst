@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_vip_dynamicmapping_realservers:
 
-fmgr_firewall_vip_dynamicmapping_realservers
-++++++++++++++++++++++++++++++++++++++++++++
+fmgr_firewall_vip_dynamicmapping_realservers -- Select the real servers that this server load balancing VIP will distribute traffic to.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_vip_dynamicmapping_realservers</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -47,7 +72,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vip</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dynamic_mapping</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_vip_dynamicmapping_realservers</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_vip_dynamicmapping_realservers</span> - Select the real servers that this server load balancing VIP will distribute traffic to. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">client-ip</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">healthcheck</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, vip]</span> </li>
@@ -60,6 +85,9 @@ Parameters
  <li><span class="li-head">seq</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, standby, disable]</span> </li>
  <li><span class="li-head">weight</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ip, address]</span> </li>
  </ul>
  </ul>
 
@@ -94,7 +122,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Select the real servers that this server load balancing VIP will distribute traffic to.
       fmgr_firewall_vip_dynamicmapping_realservers:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -117,6 +145,9 @@ Examples
             seq: <value of integer>
             status: <value in [active, standby, disable]>
             weight: <value of integer>
+            address: <value of string>
+            id: <value of integer>
+            type: <value in [ip, address]>
 
 
 

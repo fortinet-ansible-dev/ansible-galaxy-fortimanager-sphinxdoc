@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_global</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -63,11 +88,11 @@ Parameters
  <li><span class="li-head">detect-unregistered-log-device</span> - Detect unregistered logging device from log message. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">device-view-mode</span> - Set devices/groups view mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regular, tree]</span>  <span class="li-normal">default: regular</span> </li>
  <li><span class="li-head">dh-params</span> - Minimum size of Diffie-Hellman prime for SSH/HTTPS (bits). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1024, 1536, 2048, 3072, 4096, 6144, 8192]</span>  <span class="li-normal">default: 2048</span> </li>
- <li><span class="li-head">disable-module</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fortiview-noc]</span> </li>
+ <li><span class="li-head">disable-module</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fortiview-noc, fortiview-noc, none, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortiview-noc, none, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortiview-noc, none, fortiview-noc, fortirecorder, siem, soc, ai]</span> </li>
  <li><span class="li-head">enc-algorithm</span> - SSL communication encryption algorithms. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span>  <span class="li-normal">default: high</span> </li>
  <li><span class="li-head">faz-status</span> - FAZ status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">fgfm-local-cert</span> - set the fgfm local certificate. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fgfm-ssl-protocol</span> - set the lowest SSL protocols for fgfmsd. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
+ <li><span class="li-head">fgfm-ssl-protocol</span> - set the lowest SSL protocols for fgfmsd. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
  <li><span class="li-head">ha-member-auto-grouping</span> - Enable/disable automatically group HA members feature <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">hitcount_concurrent</span> - The number of FortiGates that FortiManager polls at one time (10 - 500, default = 100). <span class="li-normal">type: int</span>  <span class="li-normal">default: 100</span> </li>
  <li><span class="li-head">hitcount_interval</span> - The interval for getting hit count from managed FortiGate devices, in seconds (60 - 86400, default = 300). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
@@ -83,7 +108,7 @@ Parameters
  <li><span class="li-head">longitude</span> - fmg location longitude <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">max-log-forward</span> - Maximum number of log-forward and aggregation settings. <span class="li-normal">type: int</span>  <span class="li-normal">default: 5</span> </li>
  <li><span class="li-head">max-running-reports</span> - Maximum number of reports generating at one time. <span class="li-normal">type: int</span>  <span class="li-normal">default: 1</span> </li>
- <li><span class="li-head">oftp-ssl-protocol</span> - set the lowest SSL protocols for oftpd. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
+ <li><span class="li-head">oftp-ssl-protocol</span> - set the lowest SSL protocols for oftpd. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: tlsv1.2</span> </li>
  <li><span class="li-head">partial-install</span> - Enable/Disable partial install (install some objects). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">partial-install-force</span> - Enable/Disable partial install when devdb is modified. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">partial-install-rev</span> - Enable/Disable auto creating adom revision for partial install. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
@@ -95,17 +120,30 @@ Parameters
  <li><span class="li-head">remoteauthtimeout</span> - Remote authentication (RADIUS/LDAP) timeout (sec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 10</span> </li>
  <li><span class="li-head">search-all-adoms</span> - Enable/Disable Search all ADOMs for where-used query. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">ssl-low-encryption</span> - SSL low-grade encryption. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">ssl-protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3]</span> </li>
+ <li><span class="li-head">ssl-protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3]</span> </li>
  <li><span class="li-head">ssl-static-key-ciphers</span> - Enable/disable SSL static key ciphers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  <li><span class="li-head">task-list-size</span> - Maximum number of completed tasks to keep. <span class="li-normal">type: int</span>  <span class="li-normal">default: 2000</span> </li>
  <li><span class="li-head">tftp</span> - Enable/disable TFTP in `exec restore image` command (disabled by default in FIPS mode) <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">timezone</span> - Time zone. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]</span>  <span class="li-normal">default: 04</span> </li>
+ <li><span class="li-head">timezone</span> - Time zone. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91]</span>  <span class="li-normal">default: 04</span> </li>
  <li><span class="li-head">tunnel-mtu</span> - Maximum transportation unit(68 - 9000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 1500</span> </li>
  <li><span class="li-head">usg</span> - Enable/disable Fortiguard server restriction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">vdom-mirror</span> - VDOM mirror. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">webservice-proto</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2]</span> </li>
+ <li><span class="li-head">webservice-proto</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2]</span> </li>
  <li><span class="li-head">workflow-max-sessions</span> - Maximum number of workflow sessions per ADOM (minimum 100). <span class="li-normal">type: int</span>  <span class="li-normal">default: 500</span> </li>
- <li><span class="li-head">workspace-mode</span> - Set workspace mode (ADOM Locking). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, normal, workflow]</span>  <span class="li-normal">default: disabled</span> </li>
+ <li><span class="li-head">workspace-mode</span> - Set workspace mode (ADOM Locking). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, normal, workflow, per-adom]</span>  <span class="li-normal">default: disabled</span> </li>
+ <li><span class="li-head">clone-name-option</span> - set the clone object names option. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, keep]</span>  <span class="li-normal">default: default</span> </li>
+ <li><span class="li-head">fgfm-ca-cert</span> - set the extra fgfm CA certificates. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">mc-policy-disabled-adoms</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">adom-name</span> - Adom names. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">per-policy-lock</span> - Enable/Disable per policy lock. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">policy-object-icon</span> - show icons of policy objects. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">private-data-encryption</span> - Enable/disable private data encryption using an AES 128-bit key. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">multiple-steps-upgrade-in-autolink</span> - Enable/disable multiple steps upgade in autolink process <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">object-revision-db-max</span> - Maximum revisions for a single database (10,000-1,000,000 default 100,000). <span class="li-normal">type: int</span>  <span class="li-normal">default: 100000</span> </li>
+ <li><span class="li-head">object-revision-mandatory-note</span> - Enable/disable mandatory note when create revision. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">object-revision-object-max</span> - Maximum revisions for a single object (10-1000 default 100). <span class="li-normal">type: int</span>  <span class="li-normal">default: 100</span> </li>
+ <li><span class="li-head">object-revision-status</span> - Enable/disable create revision when modify objects. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
  </ul>
  </ul>
 
@@ -168,6 +206,29 @@ Examples
             dh-params: <value in [1024, 1536, 2048, ...]>
             disable-module:
               - fortiview-noc
+              - fortiview-noc
+              - none
+              - fortiview-noc
+              - fortirecorder
+              - siem
+              - soc
+              - ai
+              - fortiview-noc
+              - fortiview-noc
+              - none
+              - fortiview-noc
+              - fortirecorder
+              - siem
+              - soc
+              - ai
+              - fortiview-noc
+              - fortiview-noc
+              - none
+              - fortiview-noc
+              - fortirecorder
+              - siem
+              - soc
+              - ai
             enc-algorithm: <value in [low, medium, high]>
             faz-status: <value in [disable, enable]>
             fgfm-local-cert: <value of string>
@@ -204,6 +265,44 @@ Examples
               - tlsv1.1
               - tlsv1.0
               - sslv3
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
             ssl-static-key-ciphers: <value in [disable, enable]>
             task-list-size: <value of integer>
             tftp: <value in [disable, enable]>
@@ -217,8 +316,67 @@ Examples
               - tlsv1.0
               - sslv3
               - sslv2
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
+              - tlsv1.3
+              - tlsv1.2
+              - tlsv1.1
+              - tlsv1.0
+              - sslv3
+              - sslv2
             workflow-max-sessions: <value of integer>
-            workspace-mode: <value in [disabled, normal, workflow]>
+            workspace-mode: <value in [disabled, normal, workflow, ...]>
+            clone-name-option: <value in [default, keep]>
+            fgfm-ca-cert: <value of string>
+            mc-policy-disabled-adoms:
+              -
+                  adom-name: <value of string>
+            per-policy-lock: <value in [disable, enable]>
+            policy-object-icon: <value in [disable, enable]>
+            private-data-encryption: <value in [disable, enable]>
+            multiple-steps-upgrade-in-autolink: <value in [disable, enable]>
+            object-revision-db-max: <value of integer>
+            object-revision-mandatory-note: <value in [disable, enable]>
+            object-revision-object-max: <value of integer>
+            object-revision-status: <value in [disable, enable]>
 
 
 

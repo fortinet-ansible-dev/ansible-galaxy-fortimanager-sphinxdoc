@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_adgrp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -49,6 +74,8 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">server-name</span> - FSSO agent name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">connector-source</span> - FSSO connector source. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -95,6 +122,8 @@ Examples
          user_adgrp:
             name: <value of string>
             server-name: <value of string>
+            id: <value of integer>
+            connector-source: <value of string>
 
 
 

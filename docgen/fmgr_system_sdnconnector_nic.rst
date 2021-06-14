@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_sdnconnector_nic</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,6 +76,7 @@ Parameters
  <li><span class="li-head">ip</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - IP configuration name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">public-ip</span> - Public IP name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">resource-group</span> - Resource group of Azure public IP. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">name</span> - Network interface name. <span class="li-normal">type: str</span> </li>
  </ul>
@@ -102,6 +128,7 @@ Examples
               -
                   name: <value of string>
                   public-ip: <value of string>
+                  resource-group: <value of string>
             name: <value of string>
 
 

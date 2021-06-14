@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dnsfilter_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -58,6 +83,32 @@ Parameters
  <li><span class="li-head">sdns-domain-log</span> - Enable/disable domain filtering and botnet domain logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">sdns-ftgd-err-log</span> - Enable/disable FortiGuard SDNS rating error logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">youtube-restrict</span> - Set safe search for YouTube restriction level. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [strict, moderate]</span> </li>
+ <li><span class="li-head">dns-translation</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">dst</span> - IPv4 address or subnet on the external network to substitute for the resolved address in DNS query replies. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">netmask</span> - If src and dst are subnets rather than single IP addresses, enter the netmask for both src and dst. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">src</span> - IPv4 address or subnet on the internal network to compare with the resolved address in DNS query replies. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable this DNS translation entry. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">addr-type</span> - DNS translation type (IPv4 or IPv6). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6]</span> </li>
+ <li><span class="li-head">dst6</span> - IPv6 address or subnet on the external network to substitute for the resolved address in DNS query replies. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">prefix</span> - If src6 and dst6 are subnets rather than single IP addresses, enter the prefix for both src6 and dst6 (1 - 128, default = 128). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">src6</span> - IPv6 address or subnet on the internal network to compare with the resolved address in DNS query replies. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">redirect-portal6</span> - IPv6 address of the SDNS redirect portal. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">domain-filter</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">domain-filter-table</span> - DNS domain filter table ID. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">ftgd-dns</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">filters</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">action</span> - Action to take for DNS requests matching the category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [monitor, block]</span> </li>
+ <li><span class="li-head">category</span> - Category number. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable DNS filter logging for this DNS profile. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [error-allow, ftgd-disable]</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -113,6 +164,30 @@ Examples
             sdns-domain-log: <value in [disable, enable]>
             sdns-ftgd-err-log: <value in [disable, enable]>
             youtube-restrict: <value in [strict, moderate]>
+            dns-translation:
+              -
+                  dst: <value of string>
+                  id: <value of integer>
+                  netmask: <value of string>
+                  src: <value of string>
+                  status: <value in [disable, enable]>
+                  addr-type: <value in [ipv4, ipv6]>
+                  dst6: <value of string>
+                  prefix: <value of integer>
+                  src6: <value of string>
+            redirect-portal6: <value of string>
+            domain-filter:
+               domain-filter-table: <value of integer>
+            ftgd-dns:
+               filters:
+                 -
+                     action: <value in [monitor, block]>
+                     category: <value of string>
+                     id: <value of integer>
+                     log: <value in [disable, enable]>
+               options:
+                 - error-allow
+                 - ftgd-disable
 
 
 

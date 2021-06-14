@@ -4,8 +4,8 @@
 
 .. _fmgr_user_fsso_dynamicmapping:
 
-fmgr_user_fsso_dynamicmapping
-+++++++++++++++++++++++++++++
+fmgr_user_fsso_dynamicmapping -- Configure Fortinet Single Sign On (FSSO) agents.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_fsso_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">fsso</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user_fsso_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user_fsso_dynamicmapping</span> - Configure Fortinet Single Sign On (FSSO) agents. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_gui_meta</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
@@ -73,8 +98,14 @@ Parameters
  <li><span class="li-head">source-ip6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-trusted-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, fortiems, fortinac]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, fortiems, fortinac, fortiems-cloud]</span> </li>
  <li><span class="li-head">user-info-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-poll</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ldap-poll-filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-poll-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">group-poll-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  </ul>
 
@@ -109,7 +140,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure Fortinet Single Sign On (FSSO) agents.
       fmgr_user_fsso_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -145,8 +176,14 @@ Examples
             source-ip6: <value of string>
             ssl: <value in [disable, enable]>
             ssl-trusted-cert: <value of string>
-            type: <value in [default, fortiems, fortinac]>
+            type: <value in [default, fortiems, fortinac, ...]>
             user-info-server: <value of string>
+            ldap-poll: <value in [disable, enable]>
+            ldap-poll-filter: <value of string>
+            ldap-poll-interval: <value of integer>
+            group-poll-interval: <value of integer>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
 
 
 

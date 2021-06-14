@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_fssopolling</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -61,6 +86,8 @@ Parameters
  <li><span class="li-head">server</span> - Host name or IP address of the Active Directory server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Enable/disable polling for the status of this Active Directory server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">user</span> - User name required to log into this Active Directory server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">smb-ntlmv1-auth</span> - Enable/disable support of NTLMv1 for Samba authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">smbv1</span> - Enable/disable support of SMBv1 for Samba. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -119,6 +146,8 @@ Examples
             server: <value of string>
             status: <value in [disable, enable]>
             user: <value of string>
+            smb-ntlmv1-auth: <value in [disable, enable]>
+            smbv1: <value in [disable, enable]>
 
 
 

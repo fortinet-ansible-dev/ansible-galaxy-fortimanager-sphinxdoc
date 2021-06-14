@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_internetservice</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -61,6 +86,17 @@ Parameters
  <li><span class="li-head">offset</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">reputation</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">sld-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">extra-ip-range-number</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip-number</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ip-range-number</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">jitter-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">latency-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">obsolete</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">packetloss-threshold</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">singularity</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">city</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">region</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  </ul>
  </ul>
 
@@ -119,6 +155,17 @@ Examples
             offset: <value of integer>
             reputation: <value of integer>
             sld-id: <value of integer>
+            extra-ip-range-number: <value of integer>
+            ip-number: <value of integer>
+            ip-range-number: <value of integer>
+            jitter-threshold: <value of integer>
+            latency-threshold: <value of integer>
+            obsolete: <value of integer>
+            packetloss-threshold: <value of integer>
+            singularity: <value of integer>
+            city: <value of integer>
+            country: <value of integer>
+            region: <value of integer>
 
 
 

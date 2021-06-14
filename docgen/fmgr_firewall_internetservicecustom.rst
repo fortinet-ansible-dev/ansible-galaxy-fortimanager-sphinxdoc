@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_internetservicecustom</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -70,6 +95,8 @@ Parameters
  </ul>
  <li><span class="li-head">master-service-id</span> - Internet Service ID in the Internet Service database. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Internet Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">reputation</span> - Reputation level of the custom Internet Service. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">id</span> - Internet Service ID. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -137,6 +164,8 @@ Examples
                   protocol: <value of integer>
             master-service-id: <value of string>
             name: <value of string>
+            reputation: <value of integer>
+            id: <value of integer>
 
 
 

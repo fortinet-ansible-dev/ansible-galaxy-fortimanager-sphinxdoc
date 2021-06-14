@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_address6template</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,6 +85,8 @@ Parameters
  </ul>
  </ul>
  <li><span class="li-head">subnet-segment-count</span> - Number of IPv6 subnet segments. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +144,8 @@ Examples
                         name: <value of string>
                         value: <value of string>
             subnet-segment-count: <value of integer>
+            _image-base64: <value of string>
+            fabric-object: <value in [disable, enable]>
 
 
 

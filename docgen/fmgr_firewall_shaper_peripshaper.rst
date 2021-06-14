@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_shaper_peripshaper</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,6 +80,8 @@ Parameters
  <li><span class="li-head">max-bandwidth</span> - Upper bandwidth limit enforced by this shaper (0 - 16776000). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">max-concurrent-session</span> - Maximum number of concurrent sessions allowed by this shaper (0 - 2097000). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - Traffic shaper name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">max-concurrent-tcp-session</span> - Maximum number of concurrent TCP sessions allowed by this shaper (0 - 2097000). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">max-concurrent-udp-session</span> - Maximum number of concurrent UDP sessions allowed by this shaper (0 - 2097000). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -107,6 +134,8 @@ Examples
             max-bandwidth: <value of integer>
             max-concurrent-session: <value of integer>
             name: <value of string>
+            max-concurrent-tcp-session: <value of integer>
+            max-concurrent-udp-session: <value of integer>
 
 
 

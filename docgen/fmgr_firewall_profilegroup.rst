@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_profilegroup</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -62,6 +87,10 @@ Parameters
  <li><span class="li-head">voip-profile</span> - Name of an existing VoIP profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">waf-profile</span> - Name of an existing Web application firewall profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">webfilter-profile</span> - Name of an existing Web filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cifs-profile</span> - Name of an existing CIFS profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">emailfilter-profile</span> - Name of an existing email filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">file-filter-profile</span> - Name of an existing file-filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">videofilter-profile</span> - Name of an existing VideoFilter profile. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +150,10 @@ Examples
             voip-profile: <value of string>
             waf-profile: <value of string>
             webfilter-profile: <value of string>
+            cifs-profile: <value of string>
+            emailfilter-profile: <value of string>
+            file-filter-profile: <value of string>
+            videofilter-profile: <value of string>
 
 
 

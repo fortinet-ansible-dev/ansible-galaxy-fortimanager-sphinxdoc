@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_managedswitch_ports</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -90,6 +115,29 @@ Parameters
  <li><span class="li-head">type</span> - Interface type: physical or trunk port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical, trunk]</span> </li>
  <li><span class="li-head">untagged-vlans</span> - Configure switch port untagged vlans <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vlan</span> - Assign switch ports to a VLAN. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">export-to-pool-flag</span> - Switch controller export port to pool-list. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mac-addr</span> - Port/Trunk MAC. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">packet-sample-rate</span> - Packet sampling rate (0 - 99999 p/sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">packet-sampler</span> - Enable/disable packet sampling on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">sticky-mac</span> - Enable or disable sticky-mac on the interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">storm-control-policy</span> - Switch controller storm control policy from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-mode</span> - Access mode of the port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [normal, nac, dynamic, static]</span> </li>
+ <li><span class="li-head">ip-source-guard</span> - Enable/disable IP source guard. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mclag-icl-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">p2p-port</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">aggregator-mode</span> - LACP member select mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bandwidth, count]</span> </li>
+ <li><span class="li-head">fec-capable</span> - FEC capable. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fec-state</span> - State of forward error correction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, cl74, cl91]</span> </li>
+ <li><span class="li-head">flow-control</span> - Flow control direction. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, tx, rx, both]</span> </li>
+ <li><span class="li-head">matched-dpp-intf-tags</span> - Matched interface tags in the dynamic port policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">matched-dpp-policy</span> - Matched child policy in the dynamic port policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">media-type</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">pause-meter</span> - Configure ingress pause metering rate, in kbps (default = 0, disabled). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">pause-meter-resume</span> - Resume threshold for resuming traffic on ingress port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [25%, 50%, 75%]</span> </li>
+ <li><span class="li-head">port-policy</span> - Switch controller dynamic port policy from available options. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rpvst-port</span> - Enable/disable inter-operability with rapid PVST on this interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, enabled]</span> </li>
+ <li><span class="li-head">status</span> - Switch port admin status: up or down. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [down, up]</span> </li>
+ <li><span class="li-head">trunk-member</span> - Trunk member. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -177,6 +225,29 @@ Examples
             type: <value in [physical, trunk]>
             untagged-vlans: <value of string>
             vlan: <value of string>
+            export-to-pool-flag: <value of integer>
+            mac-addr: <value of string>
+            packet-sample-rate: <value of integer>
+            packet-sampler: <value in [disabled, enabled]>
+            sticky-mac: <value in [disable, enable]>
+            storm-control-policy: <value of string>
+            access-mode: <value in [normal, nac, dynamic, ...]>
+            ip-source-guard: <value in [disable, enable]>
+            mclag-icl-port: <value of integer>
+            p2p-port: <value of integer>
+            aggregator-mode: <value in [bandwidth, count]>
+            fec-capable: <value of integer>
+            fec-state: <value in [disabled, cl74, cl91]>
+            flow-control: <value in [disable, tx, rx, ...]>
+            matched-dpp-intf-tags: <value of string>
+            matched-dpp-policy: <value of string>
+            media-type: <value of string>
+            pause-meter: <value of integer>
+            pause-meter-resume: <value in [25%, 50%, 75%]>
+            port-policy: <value of string>
+            rpvst-port: <value in [disabled, enabled]>
+            status: <value in [down, up]>
+            trunk-member: <value of integer>
 
 
 

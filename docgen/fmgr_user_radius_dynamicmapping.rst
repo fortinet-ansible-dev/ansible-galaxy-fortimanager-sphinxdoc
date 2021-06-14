@@ -4,8 +4,8 @@
 
 .. _fmgr_user_radius_dynamicmapping:
 
-fmgr_user_radius_dynamicmapping
-+++++++++++++++++++++++++++++++
+fmgr_user_radius_dynamicmapping -- Configure RADIUS server entries.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_radius_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">radius</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user_radius_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user_radius_dynamicmapping</span> - Configure RADIUS server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -121,6 +146,21 @@ Parameters
  <li><span class="li-head">use-group-for-profile</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">use-management-vdom</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">username-case-sensitive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">group-override-attr-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [filter-Id, class]</span> </li>
+ <li><span class="li-head">switch-controller-acct-fast-framedip-detect</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">accounting-server</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">id</span> - ID (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">port</span> - RADIUS accounting port number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - {&lt;name_str|ip_str&gt;} Server CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP address for communications to the RADIUS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">switch-controller-service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [login, framed, callback-login, callback-framed, outbound, administrative, nas-prompt, authenticate-only, callback-nas-prompt, call-check, callback-administrative]</span> </li>
  </ul>
  </ul>
 
@@ -155,7 +195,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure RADIUS server entries.
       fmgr_user_radius_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -255,6 +295,32 @@ Examples
             use-group-for-profile: <value in [disable, enable]>
             use-management-vdom: <value in [disable, enable]>
             username-case-sensitive: <value in [disable, enable]>
+            group-override-attr-type: <value in [filter-Id, class]>
+            switch-controller-acct-fast-framedip-detect: <value of integer>
+            accounting-server:
+              -
+                  id: <value of integer>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
+                  port: <value of integer>
+                  secret: <value of string>
+                  server: <value of string>
+                  source-ip: <value of string>
+                  status: <value in [disable, enable]>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            switch-controller-service-type:
+              - login
+              - framed
+              - callback-login
+              - callback-framed
+              - outbound
+              - administrative
+              - nas-prompt
+              - authenticate-only
+              - callback-nas-prompt
+              - call-check
+              - callback-administrative
 
 
 

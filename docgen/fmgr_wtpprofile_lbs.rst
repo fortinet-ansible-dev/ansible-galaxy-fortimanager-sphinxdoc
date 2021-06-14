@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>wtpprofile_lbs</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -68,6 +93,7 @@ Parameters
  <li><span class="li-head">fortipresence-server</span> - FortiPresence server IP address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">fortipresence-unassoc</span> - Enable/disable FortiPresence finding and reporting unassociated stations. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">station-locate</span> - Enable/disable client station locating services for all clients, whether associated or not (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">fortipresence-ble</span> - Enable/disable FortiPresence finding and reporting BLE devices. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -133,6 +159,7 @@ Examples
             fortipresence-server: <value of string>
             fortipresence-unassoc: <value in [disable, enable]>
             station-locate: <value in [disable, enable]>
+            fortipresence-ble: <value in [disable, enable]>
 
 
 

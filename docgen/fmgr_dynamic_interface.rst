@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dynamic_interface</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -61,10 +86,17 @@ Parameters
  <li><span class="li-head">egress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">intrazone-deny</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">local-intf</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">ingress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">egress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">single-intf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">ingress-shaping-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">platform_mapping</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">intf-zone</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">intrazone-deny</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -124,9 +156,16 @@ Examples
                   egress-shaping-profile: <value of string>
                   intrazone-deny: <value in [disable, enable]>
                   local-intf: <value of string>
+                  ingress-shaping-profile: <value of string>
             egress-shaping-profile: <value of string>
             name: <value of string>
             single-intf: <value in [disable, enable]>
+            ingress-shaping-profile: <value of string>
+            platform_mapping:
+              -
+                  intf-zone: <value of string>
+                  intrazone-deny: <value in [disable, enable]>
+                  name: <value of string>
 
 
 

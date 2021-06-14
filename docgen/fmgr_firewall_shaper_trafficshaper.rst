@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_shaper_trafficshaper</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,6 +80,12 @@ Parameters
  <li><span class="li-head">name</span> - Traffic shaper name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">per-policy</span> - Enable/disable applying a separate shaper for each policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">priority</span> - Higher priority traffic is more likely to be forwarded without delays and without compromising the guaranteed bandwidth. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium, low]</span> </li>
+ <li><span class="li-head">dscp-marking-method</span> - Select DSCP marking method. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [multi-stage, static]</span> </li>
+ <li><span class="li-head">exceed-bandwidth</span> - Exceed bandwidth used for DSCP multi-stage marking. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">exceed-class-id</span> - Class ID for traffic in [guaranteed-bandwidth, maximum-bandwidth]. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">exceed-dscp</span> - DSCP mark for traffic in [guaranteed-bandwidth, exceed-bandwidth]. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">maximum-dscp</span> - DSCP mark for traffic in [exceed-bandwidth, maximum-bandwidth]. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">overhead</span> - Per-packet size overhead used in rate computations. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -107,6 +138,12 @@ Examples
             name: <value of string>
             per-policy: <value in [disable, enable]>
             priority: <value in [high, medium, low]>
+            dscp-marking-method: <value in [multi-stage, static]>
+            exceed-bandwidth: <value of integer>
+            exceed-class-id: <value of integer>
+            exceed-dscp: <value of string>
+            maximum-dscp: <value of string>
+            overhead: <value of integer>
 
 
 

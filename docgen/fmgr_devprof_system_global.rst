@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>devprof_system_global</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -57,7 +82,7 @@ Parameters
  <li><span class="li-head">admintimeout</span> - Number of minutes before an idle administrator session times out (5 - 480 minutes (8 hours), default = 5). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">gui-ipv6</span> - Enable/disable IPv6 settings on the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">gui-lines-per-page</span> - Number of lines to display per page for web administration. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">gui-theme</span> - Color scheme for the administration GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [blue, green, melongene, red, mariner]</span> </li>
+ <li><span class="li-head">gui-theme</span> - Color scheme for the administration GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [blue, green, melongene, red, mariner, neutrino, jade, graphite, dark-matter, onyx, eclipse, retro]</span> </li>
  <li><span class="li-head">language</span> - GUI display language. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [english, simch, japanese, korean, spanish, trach, french, portuguese]</span> </li>
  <li><span class="li-head">switch-controller</span> - Enable/disable switch controller feature. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>

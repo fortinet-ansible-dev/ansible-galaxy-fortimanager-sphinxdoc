@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>qosprofile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -65,6 +90,11 @@ Parameters
  <li><span class="li-head">uplink-sta</span> - Maximum uplink bandwidth for clients (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">wmm</span> - Enable/disable WiFi multi-media (WMM) control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">wmm-uapsd</span> - Enable/disable WMM Unscheduled Automatic Power Save Delivery (U-APSD) power save mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wmm-be-dscp</span> - DSCP marking for best effort access (default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">wmm-bk-dscp</span> - DSCP marking for background access (default = 8). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">wmm-dscp-marking</span> - Enable/disable WMM Differentiated Services Code Point (DSCP) marking. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">wmm-vi-dscp</span> - DSCP marking for video access (default = 32). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">wmm-vo-dscp</span> - DSCP marking for voice access (default = 48). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -127,6 +157,11 @@ Examples
             uplink-sta: <value of integer>
             wmm: <value in [disable, enable]>
             wmm-uapsd: <value in [disable, enable]>
+            wmm-be-dscp: <value of integer>
+            wmm-bk-dscp: <value of integer>
+            wmm-dscp-marking: <value in [disable, enable]>
+            wmm-vi-dscp: <value of integer>
+            wmm-vo-dscp: <value of integer>
 
 
 

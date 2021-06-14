@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_qos_queuepolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,9 +79,13 @@ Parameters
  <li><span class="li-head">min-rate</span> - Minimum rate (0 - 4294967295 kbps, 0 to disable). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - Cos queue ID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">weight</span> - Weight of weighted round robin scheduling. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">max-rate-percent</span> - Maximum rate (0f link speed). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">min-rate-percent</span> - Minimum rate (0f link speed). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ecn</span> - Enable/disable ECN packet marking to drop eligible packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">name</span> - QoS policy name <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">schedule</span> - COS queue scheduling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [strict, round-robin, weighted]</span> </li>
+ <li><span class="li-head">rate-by</span> - COS queue rate by kbps or percent. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [kbps, percent]</span> </li>
  </ul>
  </ul>
 
@@ -109,8 +138,12 @@ Examples
                   min-rate: <value of integer>
                   name: <value of string>
                   weight: <value of integer>
+                  max-rate-percent: <value of integer>
+                  min-rate-percent: <value of integer>
+                  ecn: <value in [disable, enable]>
             name: <value of string>
             schedule: <value in [strict, round-robin, weighted]>
+            rate-by: <value in [kbps, percent]>
 
 
 

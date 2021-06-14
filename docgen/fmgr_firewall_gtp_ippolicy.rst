@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_gtp_ippolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,6 +77,8 @@ Parameters
  <li><span class="li-head">dstaddr</span> - Destination address name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">srcaddr</span> - Source address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr6</span> - Destination IPv6 address name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr6</span> - Source IPv6 address name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -101,6 +128,8 @@ Examples
             dstaddr: <value of string>
             id: <value of integer>
             srcaddr: <value of string>
+            dstaddr6: <value of string>
+            srcaddr6: <value of string>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_passwordpolicy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -50,6 +75,7 @@ Parameters
  <li><span class="li-head">expire-days</span> - Time in days before the users password expires. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - Password policy name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">warn-days</span> - Time in days before a password expiration warning message is displayed to the user upon login. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">expired-password-renewal</span> - Enable/disable renewal of a password that already is expired. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -97,6 +123,7 @@ Examples
             expire-days: <value of integer>
             name: <value of string>
             warn-days: <value of integer>
+            expired-password-renewal: <value in [disable, enable]>
 
 
 

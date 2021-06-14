@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>wtpprofile_lan</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -65,6 +90,8 @@ Parameters
  <li><span class="li-head">port7-ssid</span> - Bridge LAN port 7 to SSID. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">port8-mode</span> - LAN port 8 mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> </li>
  <li><span class="li-head">port8-ssid</span> - Bridge LAN port 8 to SSID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">port-esl-mode</span> - ESL port mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> </li>
+ <li><span class="li-head">port-esl-ssid</span> - Bridge ESL port to SSID. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -127,6 +154,8 @@ Examples
             port7-ssid: <value of string>
             port8-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
             port8-ssid: <value of string>
+            port-esl-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port-esl-ssid: <value of string>
 
 
 

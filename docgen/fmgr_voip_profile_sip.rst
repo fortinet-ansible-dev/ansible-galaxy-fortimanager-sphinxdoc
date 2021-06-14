@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>voip_profile_sip</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -132,8 +157,8 @@ Parameters
  <li><span class="li-head">ssl-auth-server</span> - Authenticate the servers certificate with the peer/peergrp. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl-client-certificate</span> - Name of Certificate to offer to server if requested. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl-client-renegotiation</span> - Allow/block client renegotiation by server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, deny, secure]</span> </li>
- <li><span class="li-head">ssl-max-version</span> - Highest SSL/TLS version to negotiate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
- <li><span class="li-head">ssl-min-version</span> - Lowest SSL/TLS version to negotiate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
+ <li><span class="li-head">ssl-max-version</span> - Highest SSL/TLS version to negotiate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-min-version</span> - Lowest SSL/TLS version to negotiate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-mode</span> - SSL/TLS mode for encryption & decryption of traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [off, full]</span> </li>
  <li><span class="li-head">ssl-pfs</span> - SSL Perfect Forward Secrecy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [require, deny, allow]</span> </li>
  <li><span class="li-head">ssl-send-empty-frags</span> - Send empty fragments to avoid attack on CBC IV (SSL 3. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -143,6 +168,23 @@ Parameters
  <li><span class="li-head">subscribe-rate</span> - SUBSCRIBE request rate limit (per second, per policy). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">unknown-header</span> - Action for unknown SIP header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, discard, respond]</span> </li>
  <li><span class="li-head">update-rate</span> - UPDATE request rate limit (per second, per policy). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">nat-port-range</span> - RTP NAT port range. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ack-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">bye-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">cancel-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">info-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">invite-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">malformed-header-no-proxy-require</span> - Action for malformed SIP messages without Proxy-Require header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, discard, respond]</span> </li>
+ <li><span class="li-head">malformed-header-no-require</span> - Action for malformed SIP messages without Require header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, discard, respond]</span> </li>
+ <li><span class="li-head">message-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">notify-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">options-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">prack-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">publish-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">refer-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">register-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">subscribe-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
+ <li><span class="li-head">update-rate-track</span> - Track the packet protocol field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, src-ip, dest-ip]</span> </li>
  </ul>
  </ul>
 
@@ -283,6 +325,23 @@ Examples
             subscribe-rate: <value of integer>
             unknown-header: <value in [pass, discard, respond]>
             update-rate: <value of integer>
+            nat-port-range: <value of string>
+            ack-rate-track: <value in [none, src-ip, dest-ip]>
+            bye-rate-track: <value in [none, src-ip, dest-ip]>
+            cancel-rate-track: <value in [none, src-ip, dest-ip]>
+            info-rate-track: <value in [none, src-ip, dest-ip]>
+            invite-rate-track: <value in [none, src-ip, dest-ip]>
+            malformed-header-no-proxy-require: <value in [pass, discard, respond]>
+            malformed-header-no-require: <value in [pass, discard, respond]>
+            message-rate-track: <value in [none, src-ip, dest-ip]>
+            notify-rate-track: <value in [none, src-ip, dest-ip]>
+            options-rate-track: <value in [none, src-ip, dest-ip]>
+            prack-rate-track: <value in [none, src-ip, dest-ip]>
+            publish-rate-track: <value in [none, src-ip, dest-ip]>
+            refer-rate-track: <value in [none, src-ip, dest-ip]>
+            register-rate-track: <value in [none, src-ip, dest-ip]>
+            subscribe-rate-track: <value in [none, src-ip, dest-ip]>
+            update-rate-track: <value in [none, src-ip, dest-ip]>
 
 
 

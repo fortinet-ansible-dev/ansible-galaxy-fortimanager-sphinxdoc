@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_address_list</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -49,6 +74,8 @@ Parameters
  <li><span class="li-head">firewall_address_list</span> - IP address list. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">ip</span> - IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">net-id</span> - Network ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">obj-id</span> - Object ID. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -95,6 +122,8 @@ Examples
          state: <value in [present, absent]>
          firewall_address_list:
             ip: <value of string>
+            net-id: <value of string>
+            obj-id: <value of string>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>widsprofile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -96,6 +121,8 @@ Parameters
  <li><span class="li-head">spoofed-deauth</span> - Enable/disable spoofed de-authentication attack detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">weak-wep-iv</span> - Enable/disable weak WEP IV (Initialization Vector) detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">wireless-bridge</span> - Enable/disable wireless bridge detection (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ap-bgscan-disable-schedules</span> - Firewall schedules for turning off FortiAP radio background scan. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ap-scan-threshold</span> - Minimum signal level/threshold in dBm required for the AP to report detected rogue AP (-95 to -20, default = -90). <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -196,6 +223,8 @@ Examples
             spoofed-deauth: <value in [disable, enable]>
             weak-wep-iv: <value in [disable, enable]>
             wireless-bridge: <value in [disable, enable]>
+            ap-bgscan-disable-schedules: <value of string>
+            ap-scan-threshold: <value of string>
 
 
 

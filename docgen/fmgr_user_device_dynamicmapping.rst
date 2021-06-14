@@ -30,6 +30,27 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ </tr>
+ <tr>
+ <td>user_device_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,6 +81,11 @@ Parameters
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipad, iphone, gaming-console, blackberry-phone, blackberry-playbook, linux-pc, mac, windows-pc, android-phone, android-tablet, media-streaming, windows-phone, fortinet-device, ip-phone, router-nat-device, other-network-device, windows-tablet, printer, forticam, fortifone, unknown]</span> </li>
  <li><span class="li-head">user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">family</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">hardware-vendor</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">hardware-version</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">os</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">software-version</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +143,11 @@ Examples
             tags: <value of string>
             type: <value in [ipad, iphone, gaming-console, ...]>
             user: <value of string>
+            family: <value of string>
+            hardware-vendor: <value of string>
+            hardware-version: <value of string>
+            os: <value of string>
+            software-version: <value of string>
 
 
 

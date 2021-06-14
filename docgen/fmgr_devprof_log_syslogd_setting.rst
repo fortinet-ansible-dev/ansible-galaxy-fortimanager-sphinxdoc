@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>devprof_log_syslogd_setting</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,6 +80,10 @@ Parameters
  <li><span class="li-head">server</span> - Address of remote syslog server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl-min-proto-version</span> - Minimum supported protocol version for SSL/TLS connections (default is to follow system global setting). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, TLSv1-1, TLSv1-2, SSLv3, TLSv1]</span> </li>
  <li><span class="li-head">status</span> - Enable/disable remote syslog logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">max-log-rate</span> - Syslog maximum log rate in MBps (0 = unlimited). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">priority</span> - Set log transmission priority. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, default]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  </ul>
 
@@ -107,6 +136,10 @@ Examples
             server: <value of string>
             ssl-min-proto-version: <value in [default, TLSv1-1, TLSv1-2, ...]>
             status: <value in [disable, enable]>
+            max-log-rate: <value of integer>
+            priority: <value in [low, default]>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
 
 
 

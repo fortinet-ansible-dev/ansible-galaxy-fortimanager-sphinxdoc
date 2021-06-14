@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_lldpprofile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -48,7 +73,7 @@ Parameters
  <li><span class="li-head">switchcontroller_lldpprofile</span> - Configure FortiSwitch LLDP profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">802.1-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [port-vlan-id]</span> </li>
- <li><span class="li-head">802.3-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [max-frame-size]</span> </li>
+ <li><span class="li-head">802.3-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation, max-frame-size, max-frame-size, power-negotiation, max-frame-size, power-negotiation]</span> </li>
  <li><span class="li-head">auto-isl</span> - Enable/disable auto inter-switch LAG. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">auto-isl-hello-timer</span> - Auto inter-switch LAG hello timer duration (1 - 30 sec, default = 3). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">auto-isl-port-group</span> - Auto inter-switch LAG port group ID (0 - 9). <span class="li-normal">type: int</span> </li>
@@ -65,9 +90,17 @@ Parameters
  <li><span class="li-head">priority</span> - Advertised Layer 2 priority (0 - 7; from lowest to highest priority). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - Enable or disable this TLV. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">vlan</span> - ID of VLAN to advertise, if configured on port (0 - 4094, 0 = priority tag). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">vlan-intf</span> - VLAN interface to advertise; if configured on port. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">assign-vlan</span> - Enable/disable VLAN assignment when this profile is applied on managed FortiSwitch port. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">med-tlvs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [inventory-management, network-policy, power-management, location-identification]</span> </li>
  <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">med-location-service</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">name</span> - Location service type name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Enable or disable this TLV. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sys-location-id</span> - Location service ID. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">auto-mclag-icl</span> - Enable/disable MCLAG inter chassis link. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -116,6 +149,45 @@ Examples
               - port-vlan-id
             802.3-tlvs:
               - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - max-frame-size
+              - power-negotiation
+              - max-frame-size
+              - power-negotiation
             auto-isl: <value in [disable, enable]>
             auto-isl-hello-timer: <value of integer>
             auto-isl-port-group: <value of integer>
@@ -133,12 +205,20 @@ Examples
                   priority: <value of integer>
                   status: <value in [disable, enable]>
                   vlan: <value of integer>
+                  vlan-intf: <value of string>
+                  assign-vlan: <value in [disable, enable]>
             med-tlvs:
               - inventory-management
               - network-policy
               - power-management
               - location-identification
             name: <value of string>
+            med-location-service:
+              -
+                  name: <value of string>
+                  status: <value in [disable, enable]>
+                  sys-location-id: <value of string>
+            auto-mclag-icl: <value in [disable, enable]>
 
 
 

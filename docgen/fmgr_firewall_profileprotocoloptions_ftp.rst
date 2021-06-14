@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_profileprotocoloptions_ftp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -57,6 +82,12 @@ Parameters
  <li><span class="li-head">status</span> - Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">uncompressed-nest-limit</span> - Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">uncompressed-oversize-limit</span> - Maximum in-memory uncompressed file size that can be scanned (0 - 383 MB, 0 = unlimited, default = 10). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ssl-offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [no, yes]</span> </li>
+ <li><span class="li-head">stream-based-uncompressed-limit</span> - Maximum stream-based uncompressed data size that will be scanned (MB, 0 = unlimited (default). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-maximum</span> - Maximum dynamic TCP window size. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-minimum</span> - Minimum dynamic TCP window size. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-size</span> - Set TCP static window size. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tcp-window-type</span> - TCP window type to use for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [system, static, dynamic]</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +148,12 @@ Examples
             status: <value in [disable, enable]>
             uncompressed-nest-limit: <value of integer>
             uncompressed-oversize-limit: <value of integer>
+            ssl-offloaded: <value in [no, yes]>
+            stream-based-uncompressed-limit: <value of integer>
+            tcp-window-maximum: <value of integer>
+            tcp-window-minimum: <value of integer>
+            tcp-window-size: <value of integer>
+            tcp-window-type: <value in [system, static, dynamic]>
 
 
 

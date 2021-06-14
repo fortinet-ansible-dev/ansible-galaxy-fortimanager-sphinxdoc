@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>application_list_entries</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -58,6 +83,11 @@ Parameters
  <li><span class="li-head">parameters</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">id</span> - Parameter ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">value</span> - Parameter value. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">members</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">id</span> - Parameter. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - Parameter name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">value</span> - Parameter value. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  <li><span class="li-head">per-ip-shaper</span> - Per-IP traffic shaper. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">popularity</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 3, 4, 5]</span> </li>
@@ -76,6 +106,7 @@ Parameters
  <li><span class="li-head">sub-category</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  <li><span class="li-head">technology</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">vendor</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">exclusion</span> - No description for the parameter <span class="li-normal">type: int</span></li>
  </ul>
  </ul>
 
@@ -132,6 +163,11 @@ Examples
               -
                   id: <value of integer>
                   value: <value of string>
+                  members:
+                    -
+                        id: <value of integer>
+                        name: <value of string>
+                        value: <value of string>
             per-ip-shaper: <value of string>
             popularity:
               - 1
@@ -154,6 +190,7 @@ Examples
             sub-category: <value of integer>
             technology: <value of string>
             vendor: <value of string>
+            exclusion: <value of integer>
 
 
 

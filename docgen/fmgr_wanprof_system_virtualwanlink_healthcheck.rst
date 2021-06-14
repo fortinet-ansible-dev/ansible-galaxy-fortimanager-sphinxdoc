@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanprof_system_virtualwanlink_healthcheck</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,7 +83,7 @@ Parameters
  <li><span class="li-head">packet-size</span> - Packet size of a twamp test session, <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">port</span> - Port number used to communicate with the server over the selected protocol. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">protocol</span> - Protocol used to determine if the FortiGate can communicate with the server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, ping6]</span> </li>
+ <li><span class="li-head">protocol</span> - Protocol used to determine if the FortiGate can communicate with the server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, ping6, dns]</span> </li>
  <li><span class="li-head">recoverytime</span> - Number of successful responses received before server is considered recovered (1 - 3600, default = 5). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">security-mode</span> - Twamp controller security mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, authentication]</span> </li>
  <li><span class="li-head">server</span> - No description for the parameter <span class="li-normal">type: str</span></li>
@@ -79,6 +102,16 @@ Parameters
  <li><span class="li-head">threshold-warning-packetloss</span> - Warning threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">update-cascade-interface</span> - Enable/disable update cascade interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">update-static-route</span> - Enable/disable updating the static route. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-id</span> - Internet service ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">probe-packets</span> - Enable/disable transmission of probe packets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sla-fail-log-period</span> - Time interval in seconds that SLA fail log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sla-pass-log-period</span> - Time interval in seconds that SLA pass log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">diffservcode</span> - Differentiated services code point (DSCP) in the IP header of the probe packet. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-request-domain</span> - Fully qualified domain name to resolve for the DNS probe. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ha-priority</span> - HA election priority (1 - 50). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">probe-count</span> - Number of most recent probes that should be used to calculate latency and jitter (5 - 30, default = 30). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">probe-timeout</span> - Time to wait before a probe packet is considered lost (500 - 5000 msec, default = 500). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">system-dns</span> - Enable/disable system DNS as the probe server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -158,6 +191,16 @@ Examples
             threshold-warning-packetloss: <value of integer>
             update-cascade-interface: <value in [disable, enable]>
             update-static-route: <value in [disable, enable]>
+            internet-service-id: <value of string>
+            probe-packets: <value in [disable, enable]>
+            sla-fail-log-period: <value of integer>
+            sla-pass-log-period: <value of integer>
+            diffservcode: <value of string>
+            dns-request-domain: <value of string>
+            ha-priority: <value of integer>
+            probe-count: <value of integer>
+            probe-timeout: <value of integer>
+            system-dns: <value in [disable, enable]>
 
 
 

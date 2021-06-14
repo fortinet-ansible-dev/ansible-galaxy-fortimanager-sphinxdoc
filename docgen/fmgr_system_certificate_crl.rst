@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_certificate_crl</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -49,6 +74,8 @@ Parameters
  <li><span class="li-head">comment</span> - Comment of this Certificate Revocation List. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">crl</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">http-url</span> - HTTP server URL for CRL auto-update <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">update-interval</span> - CRL auto-update interval (in minutes) <span class="li-normal">type: int</span>  <span class="li-normal">default: 1440</span> </li>
  </ul>
  </ul>
 
@@ -95,6 +122,8 @@ Examples
             comment: <value of string>
             crl: <value of string>
             name: <value of string>
+            http-url: <value of string>
+            update-interval: <value of integer>
 
 
 

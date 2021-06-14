@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_radius</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,6 +79,8 @@ Parameters
  <li><span class="li-head">server</span> - {&lt;name_str|ip_str&gt;} Server CN domain name or IP. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">source-ip</span> - Source IP address for communications to the RADIUS server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  <li><span class="li-head">acct-all-servers</span> - Enable/disable sending of accounting messages to all configured servers (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">acct-interim-interval</span> - Time in seconds between each accounting interim update message. <span class="li-normal">type: int</span> </li>
@@ -134,6 +161,21 @@ Parameters
  <li><span class="li-head">use-group-for-profile</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">use-management-vdom</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">username-case-sensitive</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">group-override-attr-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [filter-Id, class]</span> </li>
+ <li><span class="li-head">switch-controller-acct-fast-framedip-detect</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">accounting-server</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">id</span> - ID (0 - 4294967295). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">port</span> - RADIUS accounting port number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">secret</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server</span> - {&lt;name_str|ip_str&gt;} Server CN domain name or IP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-ip</span> - Source IP address for communications to the RADIUS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">status</span> - Status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">switch-controller-service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [login, framed, callback-login, callback-framed, outbound, administrative, nas-prompt, authenticate-only, callback-nas-prompt, call-check, callback-administrative]</span> </li>
  </ul>
  <li><span class="li-head">h3c-compatibility</span> - Enable/disable compatibility with the H3C, a mechanism that performs security checking for authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">name</span> - RADIUS server entry name. <span class="li-normal">type: str</span> </li>
@@ -167,6 +209,11 @@ Parameters
  <li><span class="li-head">timeout</span> - Time in seconds between re-sending authentication requests. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">use-management-vdom</span> - Enable/disable using management VDOM to send requests. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">username-case-sensitive</span> - Enable/disable case sensitive user names. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">group-override-attr-type</span> - RADIUS attribute type to override user group information. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [filter-Id, class]</span> </li>
+ <li><span class="li-head">switch-controller-acct-fast-framedip-detect</span> - Switch controller accounting message Framed-IP detection from DHCP snooping (seconds, default=2). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">switch-controller-service-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [login, framed, callback-login, callback-framed, outbound, administrative, nas-prompt, authenticate-only, callback-nas-prompt, call-check, callback-administrative]</span> </li>
  </ul>
  </ul>
 
@@ -219,6 +266,8 @@ Examples
                   server: <value of string>
                   source-ip: <value of string>
                   status: <value in [disable, enable]>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
             acct-all-servers: <value in [disable, enable]>
             acct-interim-interval: <value of integer>
             all-usergroup: <value in [disable, enable]>
@@ -315,6 +364,32 @@ Examples
                   use-group-for-profile: <value in [disable, enable]>
                   use-management-vdom: <value in [disable, enable]>
                   username-case-sensitive: <value in [disable, enable]>
+                  group-override-attr-type: <value in [filter-Id, class]>
+                  switch-controller-acct-fast-framedip-detect: <value of integer>
+                  accounting-server:
+                    -
+                        id: <value of integer>
+                        interface: <value of string>
+                        interface-select-method: <value in [auto, sdwan, specify]>
+                        port: <value of integer>
+                        secret: <value of string>
+                        server: <value of string>
+                        source-ip: <value of string>
+                        status: <value in [disable, enable]>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
+                  switch-controller-service-type:
+                    - login
+                    - framed
+                    - callback-login
+                    - callback-framed
+                    - outbound
+                    - administrative
+                    - nas-prompt
+                    - authenticate-only
+                    - callback-nas-prompt
+                    - call-check
+                    - callback-administrative
             h3c-compatibility: <value in [disable, enable]>
             name: <value of string>
             nas-ip: <value of string>
@@ -355,6 +430,22 @@ Examples
             timeout: <value of integer>
             use-management-vdom: <value in [disable, enable]>
             username-case-sensitive: <value in [disable, enable]>
+            group-override-attr-type: <value in [filter-Id, class]>
+            switch-controller-acct-fast-framedip-detect: <value of integer>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            switch-controller-service-type:
+              - login
+              - framed
+              - callback-login
+              - callback-framed
+              - outbound
+              - administrative
+              - nas-prompt
+              - authenticate-only
+              - callback-nas-prompt
+              - call-check
+              - callback-administrative
 
 
 

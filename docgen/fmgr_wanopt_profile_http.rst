@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanopt_profile_http</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -58,6 +83,7 @@ Parameters
  <li><span class="li-head">tunnel-non-http</span> - Configure how to process non-HTTP traffic when a profile configured for HTTP traffic accepts a non-HTTP session. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
  <li><span class="li-head">unknown-http-version</span> - How to handle HTTP sessions that do not comply with HTTP 0. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [best-effort, reject, tunnel]</span> </li>
+ <li><span class="li-head">protocol-opt</span> - Select Protocol specific optimitation or generic TCP optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [protocol, tcp]</span> </li>
  </ul>
  </ul>
 
@@ -113,6 +139,7 @@ Examples
             tunnel-non-http: <value in [disable, enable]>
             tunnel-sharing: <value in [private, shared, express-shared]>
             unknown-http-version: <value in [best-effort, reject, tunnel]>
+            protocol-opt: <value in [protocol, tcp]>
 
 
 

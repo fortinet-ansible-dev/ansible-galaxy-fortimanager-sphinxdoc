@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_address_dynamicmapping:
 
-fmgr_firewall_address_dynamicmapping
-++++++++++++++++++++++++++++++++++++
+fmgr_firewall_address_dynamicmapping -- Configure IPv4 addresses.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_address_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">address</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_address_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_address_dynamicmapping</span> - Configure IPv4 addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -82,6 +107,16 @@ Parameters
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">wildcard</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wildcard-fqdn</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">clearpass-spt</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, healthy, quarantine, checkup, transition, infected, transient]</span> </li>
+ <li><span class="li-head">fsso-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sub-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag]</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">macaddr</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">node-ip-only</span> - Enable/disable collection of node addresses only in Kubernetes. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">obj-tag</span> - Tag of dynamic address object. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">obj-type</span> - Object type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ip, mac]</span> </li>
  </ul>
  </ul>
 
@@ -116,7 +151,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure IPv4 addresses.
       fmgr_firewall_address_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -161,6 +196,16 @@ Examples
             visibility: <value in [disable, enable]>
             wildcard: <value of string>
             wildcard-fqdn: <value of string>
+            _image-base64: <value of string>
+            clearpass-spt: <value in [unknown, healthy, quarantine, ...]>
+            fsso-group: <value of string>
+            global-object: <value of integer>
+            sub-type: <value in [sdn, clearpass-spt, fsso, ...]>
+            fabric-object: <value in [disable, enable]>
+            macaddr: <value of string>
+            node-ip-only: <value in [disable, enable]>
+            obj-tag: <value of string>
+            obj-type: <value in [ip, mac]>
 
 
 

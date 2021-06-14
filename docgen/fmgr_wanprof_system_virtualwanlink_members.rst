@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanprof_system_virtualwanlink_members</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -62,6 +85,7 @@ Parameters
  <li><span class="li-head">status</span> - Enable/disable this interface in the SD-WAN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">volume-ratio</span> - Measured volume ratio (this value / sum of all values = percentage of link volume, 0 - 255). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">weight</span> - Weight of this interface for weighted load balancing. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cost</span> - Cost of this interface for services in SLA mode (0 - 4294967295, default = 0). <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +145,7 @@ Examples
             status: <value in [disable, enable]>
             volume-ratio: <value of integer>
             weight: <value of integer>
+            cost: <value of integer>
 
 
 

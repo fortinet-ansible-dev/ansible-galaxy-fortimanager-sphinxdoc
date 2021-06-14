@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>certificate_template</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,8 +77,8 @@ Parameters
  <li><span class="li-head">digest-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sha1, sha256]</span>  <span class="li-normal">default: sha1</span> </li>
  <li><span class="li-head">email</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">id-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [host-ip, domain-name, email]</span>  <span class="li-normal">default: host-ip</span> </li>
- <li><span class="li-head">key-size</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [512, 1024, 1536, 2048]</span>  <span class="li-normal">default: 2048</span> </li>
- <li><span class="li-head">key-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rsa]</span>  <span class="li-normal">default: rsa</span> </li>
+ <li><span class="li-head">key-size</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [512, 1024, 1536, 2048, 4096]</span>  <span class="li-normal">default: 2048</span> </li>
+ <li><span class="li-head">key-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rsa, ec]</span>  <span class="li-normal">default: rsa</span> </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">organization</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">organization-unit</span> - No description for the parameter <span class="li-normal">type: str</span></li>
@@ -62,6 +87,7 @@ Parameters
  <li><span class="li-head">state</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">subject-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [external, local]</span>  <span class="li-normal">default: external</span> </li>
+ <li><span class="li-head">curve-name</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [secp256r1, secp384r1, secp521r1]</span>  <span class="li-normal">default: secp256r1</span> </li>
  </ul>
  </ul>
 
@@ -112,7 +138,7 @@ Examples
             email: <value of string>
             id-type: <value in [host-ip, domain-name, email]>
             key-size: <value in [512, 1024, 1536, ...]>
-            key-type: <value in [rsa]>
+            key-type: <value in [rsa, ec]>
             name: <value of string>
             organization: <value of string>
             organization-unit: <value of string>
@@ -121,6 +147,7 @@ Examples
             state: <value of string>
             subject-name: <value of string>
             type: <value in [external, local]>
+            curve-name: <value in [secp256r1, secp384r1, secp521r1]>
 
 
 

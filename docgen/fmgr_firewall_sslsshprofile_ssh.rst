@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_sslsshprofile_ssh</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,6 +79,7 @@ Parameters
  <li><span class="li-head">ssh-tun-policy-check</span> - Enable/disable SSH tunnel policy check. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">status</span> - Configure protocol inspection status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, deep-inspection]</span> </li>
  <li><span class="li-head">unsupported-version</span> - Action based on SSH version being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, bypass]</span> </li>
+ <li><span class="li-head">proxy-after-tcp-handshake</span> - Proxy traffic after the TCP 3-way handshake has been established (not before). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -105,6 +131,7 @@ Examples
             ssh-tun-policy-check: <value in [disable, enable]>
             status: <value in [disable, deep-inspection]>
             unsupported-version: <value in [block, bypass]>
+            proxy-after-tcp-handshake: <value in [disable, enable]>
 
 
 

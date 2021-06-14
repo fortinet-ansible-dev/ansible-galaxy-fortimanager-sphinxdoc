@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_ldap</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -88,6 +113,14 @@ Parameters
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
  <li><span class="li-head">user-info-exchange-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">username</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">two-factor</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, fortitoken-cloud]</span> </li>
+ <li><span class="li-head">two-factor-authentication</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortitoken, email, sms]</span> </li>
+ <li><span class="li-head">two-factor-notification</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [email, sms]</span> </li>
+ <li><span class="li-head">antiphish</span> - Enable/disable AntiPhishing credential backend. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">password-attr</span> - Name of attribute to get password hash. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-port</span> - Source port to be used for communication with the LDAP server. <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">group-filter</span> - Filter used for group matching. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">group-member-check</span> - Group member checking methods. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [user-attr, group-object, posix-group-object]</span> </li>
@@ -108,6 +141,17 @@ Parameters
  <li><span class="li-head">tertiary-server</span> - Tertiary LDAP server CN domain name or IP. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">type</span> - Authentication type for LDAP searches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, anonymous, regular]</span> </li>
  <li><span class="li-head">username</span> - Username (full DN) for initial binding. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">obtain-user-info</span> - Enable/disable obtaining of user information. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">search-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [nested, recursive]</span> </li>
+ <li><span class="li-head">user-info-exchange-server</span> - MS Exchange server from which to fetch user information. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">two-factor</span> - Enable/disable two-factor authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, fortitoken-cloud]</span> </li>
+ <li><span class="li-head">two-factor-authentication</span> - Authentication method by FortiToken Cloud. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortitoken, email, sms]</span> </li>
+ <li><span class="li-head">two-factor-notification</span> - Notification method for user activation by FortiToken Cloud. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [email, sms]</span> </li>
+ <li><span class="li-head">antiphish</span> - Enable/disable AntiPhishing credential backend. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">password-attr</span> - Name of attribute to get password hash. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">source-port</span> - Source port to be used for communication with the LDAP server. <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -196,6 +240,14 @@ Examples
                   type: <value in [simple, anonymous, regular]>
                   user-info-exchange-server: <value of string>
                   username: <value of string>
+                  two-factor: <value in [disable, fortitoken-cloud]>
+                  two-factor-authentication: <value in [fortitoken, email, sms]>
+                  two-factor-notification: <value in [email, sms]>
+                  antiphish: <value in [disable, enable]>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
+                  password-attr: <value of string>
+                  source-port: <value of integer>
             group-filter: <value of string>
             group-member-check: <value in [user-attr, group-object, posix-group-object]>
             group-object-filter: <value of string>
@@ -215,6 +267,19 @@ Examples
             tertiary-server: <value of string>
             type: <value in [simple, anonymous, regular]>
             username: <value of string>
+            obtain-user-info: <value in [disable, enable]>
+            search-type:
+              - nested
+              - recursive
+            user-info-exchange-server: <value of string>
+            two-factor: <value in [disable, fortitoken-cloud]>
+            two-factor-authentication: <value in [fortitoken, email, sms]>
+            two-factor-notification: <value in [email, sms]>
+            antiphish: <value in [disable, enable]>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            password-attr: <value of string>
+            source-port: <value of integer>
 
 
 

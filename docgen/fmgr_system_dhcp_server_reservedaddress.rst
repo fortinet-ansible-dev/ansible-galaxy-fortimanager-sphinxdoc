@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_dhcp_server_reservedaddress</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,6 +78,11 @@ Parameters
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip</span> - IP address to be reserved for the MAC address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mac</span> - MAC address of the client that will get the reserved IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">circuit-id</span> - Option 82 circuit-ID of the client that will get the reserved IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">circuit-id-type</span> - DHCP option type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hex, string]</span> </li>
+ <li><span class="li-head">remote-id</span> - Option 82 remote-ID of the client that will get the reserved IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">remote-id-type</span> - DHCP option type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hex, string]</span> </li>
+ <li><span class="li-head">type</span> - DHCP reserved-address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mac, option82]</span> </li>
  </ul>
  </ul>
 
@@ -103,6 +133,11 @@ Examples
             id: <value of integer>
             ip: <value of string>
             mac: <value of string>
+            circuit-id: <value of string>
+            circuit-id-type: <value in [hex, string]>
+            remote-id: <value of string>
+            remote-id-type: <value in [hex, string]>
+            type: <value in [mac, option82]>
 
 
 

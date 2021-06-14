@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_vip46</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -71,6 +96,7 @@ Parameters
  <li><span class="li-head">src-filter</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [static-nat, server-load-balance]</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcintf-filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">extip</span> - Start-external-IP [-end-external-IP]. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">extport</span> - External service port. <span class="li-normal">type: str</span> </li>
@@ -167,6 +193,7 @@ Examples
                   src-filter: <value of string>
                   type: <value in [static-nat, server-load-balance]>
                   uuid: <value of string>
+                  srcintf-filter: <value of string>
             extip: <value of string>
             extport: <value of string>
             id: <value of integer>

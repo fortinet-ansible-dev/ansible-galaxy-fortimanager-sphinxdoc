@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dvmdb_device_vdom</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,6 +78,8 @@ Parameters
  <li><span class="li-head">opmode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [nat, transparent]</span>  <span class="li-normal">default: nat</span> </li>
  <li><span class="li-head">rtm_prof_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vpn_id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">meta fields</span> - No description for the parameter <span class="li-normal">type: dict</span> </li>
  </ul>
  </ul>
 
@@ -103,6 +130,8 @@ Examples
             opmode: <value in [nat, transparent]>
             rtm_prof_id: <value of integer>
             status: <value of string>
+            vpn_id: <value of integer>
+            meta fields: <value of dict>
 
 
 

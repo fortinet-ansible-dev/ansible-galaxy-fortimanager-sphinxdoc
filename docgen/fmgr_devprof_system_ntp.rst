@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>devprof_system_ntp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,11 +79,17 @@ Parameters
  <li><span class="li-head">key-id</span> - Key ID for authentication. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ntpv3</span> - Enable to use NTPv3 instead of NTPv4. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">server</span> - IP address or hostname of the NTP Server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  <li><span class="li-head">ntpsync</span> - Enable/disable setting the FortiGate system time by synchronizing with an NTP Server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">source-ip6</span> - Source IPv6 address for communication to the NTP server. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">syncinterval</span> - NTP synchronization interval (1 - 1440 min). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">type</span> - Use the FortiGuard NTP server or any other available NTP Server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortiguard, custom]</span> </li>
+ <li><span class="li-head">authentication</span> - Enable/disable authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">key</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">key-id</span> - Key ID for authentication. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">key-type</span> - Key type for authentication (MD5, SHA1). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [MD5, SHA1]</span> </li>
  </ul>
  </ul>
 
@@ -111,10 +142,16 @@ Examples
                   key-id: <value of integer>
                   ntpv3: <value in [disable, enable]>
                   server: <value of string>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
             ntpsync: <value in [disable, enable]>
             source-ip6: <value of string>
             syncinterval: <value of integer>
             type: <value in [fortiguard, custom]>
+            authentication: <value in [disable, enable]>
+            key: <value of string>
+            key-id: <value of integer>
+            key-type: <value in [MD5, SHA1]>
 
 
 

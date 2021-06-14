@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webfilter_urlfilter</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,13 +76,14 @@ Parameters
  <li><span class="li-head">entries</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">action</span> - Action to take for URL filter matches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [exempt, block, allow, monitor, pass]</span> </li>
  <li><span class="li-head">dns-address-family</span> - Resolve IPv4 address, IPv6 address, or both from DNS server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6, both]</span> </li>
- <li><span class="li-head">exempt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block]</span> </li>
+ <li><span class="li-head">exempt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish]</span> </li>
  <li><span class="li-head">id</span> - Id. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">referrer-host</span> - Referrer host name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Enable/disable this URL filter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">type</span> - Filter type (simple, regex, or wildcard). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [simple, regex, wildcard]</span> </li>
  <li><span class="li-head">url</span> - URL to be filtered. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">web-proxy-profile</span> - Web proxy profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">antiphish-action</span> - Action to take for AntiPhishing matches. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, log]</span> </li>
  </ul>
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip-addr-block</span> - Enable/disable blocking URLs when the hostname appears as an IP address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -122,12 +148,265 @@ Examples
                     - filepattern
                     - pass
                     - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
+                    - av
+                    - web-content
+                    - activex-java-cookie
+                    - dlp
+                    - fortiguard
+                    - all
+                    - filepattern
+                    - pass
+                    - range-block
+                    - antiphish
                   id: <value of integer>
                   referrer-host: <value of string>
                   status: <value in [disable, enable]>
                   type: <value in [simple, regex, wildcard]>
                   url: <value of string>
                   web-proxy-profile: <value of string>
+                  antiphish-action: <value in [block, log]>
             id: <value of integer>
             ip-addr-block: <value in [disable, enable]>
             name: <value of string>

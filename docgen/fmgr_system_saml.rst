@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_saml</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,7 +78,7 @@ Parameters
  <li><span class="li-head">idp-single-logout-url</span> - IDP single logout url. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">idp-single-sign-on-url</span> - IDP single sign-on URL. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">login-auto-redirect</span> - Enable/Disable auto redirect to IDP login page. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">role</span> - SAML role. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [IDP, SP]</span>  <span class="li-normal">default: SP</span> </li>
+ <li><span class="li-head">role</span> - SAML role. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [IDP, SP, FAB-SP]</span>  <span class="li-normal">default: SP</span> </li>
  <li><span class="li-head">server-address</span> - server address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">service-providers</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">idp-entity-id</span> - IDP Entity ID. <span class="li-normal">type: str</span> </li>
@@ -68,6 +93,16 @@ Parameters
  </ul>
  <li><span class="li-head">sls-url</span> - SP SLS(logout) URL. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">status</span> - Enable/disable SAML authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">default-profile</span> - Default Profile Name. <span class="li-normal">type: str</span>  <span class="li-normal">default: Restricted_User</span> </li>
+ <li><span class="li-head">fabric-idp</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">dev-id</span> - IDP Device ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">idp-cert</span> - IDP Certificate name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">idp-entity-id</span> - IDP entity ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">idp-single-logout-url</span> - IDP single logout url. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">idp-single-sign-on-url</span> - IDP single sign-on URL. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">idp-status</span> - Enable/disable SAML authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ </ul>
+ <li><span class="li-head">forticloud-sso</span> - Enable/disable FortiCloud SSO (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 
@@ -118,7 +153,7 @@ Examples
             idp-single-logout-url: <value of string>
             idp-single-sign-on-url: <value of string>
             login-auto-redirect: <value in [disable, enable]>
-            role: <value in [IDP, SP]>
+            role: <value in [IDP, SP, FAB-SP]>
             server-address: <value of string>
             service-providers:
               -
@@ -133,6 +168,16 @@ Examples
                   sp-single-sign-on-url: <value of string>
             sls-url: <value of string>
             status: <value in [disable, enable]>
+            default-profile: <value of string>
+            fabric-idp:
+              -
+                  dev-id: <value of string>
+                  idp-cert: <value of string>
+                  idp-entity-id: <value of string>
+                  idp-single-logout-url: <value of string>
+                  idp-single-sign-on-url: <value of string>
+                  idp-status: <value in [disable, enable]>
+            forticloud-sso: <value in [disable, enable]>
 
 
 

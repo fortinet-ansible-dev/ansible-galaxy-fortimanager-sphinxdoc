@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_fortiguard</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -64,7 +89,7 @@ Parameters
  <li><span class="li-head">outbreak-prevention-force-off</span> - Turn off FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">outbreak-prevention-license</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">outbreak-prevention-timeout</span> - FortiGuard Virus Outbreak Prevention time out (1 - 30 sec, default = 7). <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">port</span> - Port used to communicate with the FortiGuard servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [53, 80, 8888]</span> </li>
+ <li><span class="li-head">port</span> - Port used to communicate with the FortiGuard servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [53, 80, 8888, 443]</span> </li>
  <li><span class="li-head">sdns-server-ip</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">sdns-server-port</span> - Port used to communicate with FortiDNS servers. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">service-account-id</span> - Service account ID. <span class="li-normal">type: str</span> </li>
@@ -77,6 +102,26 @@ Parameters
  <li><span class="li-head">webfilter-force-off</span> - Enable/disable turning off the FortiGuard web filtering service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">webfilter-license</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">webfilter-timeout</span> - Web filter query time out (1 - 30 sec, default = 7). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">protocol</span> - Protocol used to communicate with the FortiGuard servers. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [udp, http, https]</span> </li>
+ <li><span class="li-head">proxy-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">proxy-server-ip</span> - IP address of the proxy server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">proxy-server-port</span> - Port used to communicate with the proxy server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">proxy-username</span> - Proxy user name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sandbox-region</span> - Cloud sandbox region. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fortiguard-anycast</span> - Enable/disable use of FortiGuards anycast network. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">fortiguard-anycast-source</span> - Configure which of Fortinets servers to provide FortiGuard services in FortiGuards anycast network. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortinet, aws, debug]</span> </li>
+ <li><span class="li-head">sdns-options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [include-question-section]</span> </li>
+ <li><span class="li-head">anycast-sdns-server-ip</span> - IP address of the FortiGuard anycast DNS rating server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">anycast-sdns-server-port</span> - Port to connect to on the FortiGuard anycast DNS rating server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">persistent-connection</span> - Enable/disable use of persistent connection to receive update notification from FortiGuard. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">update-build-proxy</span> - Enable/disable proxy dictionary rebuild. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">update-extdb</span> - Enable/disable external resource update. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">update-ffdb</span> - Enable/disable Internet Service Database update. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">update-uwdb</span> - Enable/disable allowlist update. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">videofilter-expiration</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">videofilter-license</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  </ul>
  </ul>
 
@@ -138,7 +183,7 @@ Examples
             outbreak-prevention-force-off: <value in [disable, enable]>
             outbreak-prevention-license: <value of integer>
             outbreak-prevention-timeout: <value of integer>
-            port: <value in [53, 80, 8888]>
+            port: <value in [53, 80, 8888, ...]>
             sdns-server-ip: <value of string>
             sdns-server-port: <value of integer>
             service-account-id: <value of string>
@@ -151,6 +196,27 @@ Examples
             webfilter-force-off: <value in [disable, enable]>
             webfilter-license: <value of integer>
             webfilter-timeout: <value of integer>
+            protocol: <value in [udp, http, https]>
+            proxy-password: <value of string>
+            proxy-server-ip: <value of string>
+            proxy-server-port: <value of integer>
+            proxy-username: <value of string>
+            sandbox-region: <value of string>
+            fortiguard-anycast: <value in [disable, enable]>
+            fortiguard-anycast-source: <value in [fortinet, aws, debug]>
+            sdns-options:
+              - include-question-section
+            anycast-sdns-server-ip: <value of string>
+            anycast-sdns-server-port: <value of integer>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            persistent-connection: <value in [disable, enable]>
+            update-build-proxy: <value in [disable, enable]>
+            update-extdb: <value in [disable, enable]>
+            update-ffdb: <value in [disable, enable]>
+            update-uwdb: <value in [disable, enable]>
+            videofilter-expiration: <value of integer>
+            videofilter-license: <value of integer>
 
 
 

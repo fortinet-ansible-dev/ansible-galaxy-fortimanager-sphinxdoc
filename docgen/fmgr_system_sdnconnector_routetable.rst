@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_sdnconnector_routetable</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,6 +78,8 @@ Parameters
  <li><span class="li-head">name</span> - Route name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">next-hop</span> - Next hop address. <span class="li-normal">type: str</span> </li>
  </ul>
+ <li><span class="li-head">resource-group</span> - Resource group of Azure route table. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">subscription-id</span> - Subscription ID of Azure route table. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -103,6 +130,8 @@ Examples
               -
                   name: <value of string>
                   next-hop: <value of string>
+            resource-group: <value of string>
+            subscription-id: <value of string>
 
 
 

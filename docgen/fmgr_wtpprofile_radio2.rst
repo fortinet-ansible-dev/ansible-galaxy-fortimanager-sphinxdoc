@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>wtpprofile_radio2</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,14 +85,14 @@ Parameters
  <li><span class="li-head">auto-power-high</span> - Automatic transmit power high limit in dBm (the actual range of transmit power depends on the AP platform type). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">auto-power-level</span> - Enable/disable automatic power-level adjustment to prevent co-channel interference (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">auto-power-low</span> - Automatic transmission power low limit in dBm (the actual range of transmit power depends on the AP platform type). <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">band</span> - WiFi band that Radio 2 operates on. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.11b, 802.11a, 802.11g, 802.11n, 802.11ac, 802.11n-5G, 802.11g-only, 802.11n-only, 802.11n,g-only, 802.11ac-only, 802.11ac,n-only, 802.11n-5G-only]</span> </li>
+ <li><span class="li-head">band</span> - WiFi band that Radio 2 operates on. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.11b, 802.11a, 802.11g, 802.11n, 802.11ac, 802.11n-5G, 802.11g-only, 802.11n-only, 802.11n,g-only, 802.11ac-only, 802.11ac,n-only, 802.11n-5G-only, 802.11ax-5G, 802.11ax, 802.11ax-5G-only, 802.11ax,ac-only, 802.11ax,ac,n-only, 802.11ax-only, 802.11ax,n-only, 802.11ax,n,g-only, 802.11ac-2G]</span> </li>
  <li><span class="li-head">bandwidth-admission-control</span> - Enable/disable WiFi multimedia (WMM) bandwidth admission control to optimize WiFi bandwidth use. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">bandwidth-capacity</span> - Maximum bandwidth capacity allowed (1 - 600000 Kbps, default = 2000). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">beacon-interval</span> - Beacon interval. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">call-admission-control</span> - Enable/disable WiFi multimedia (WMM) call admission control to optimize WiFi bandwidth use for VoIP calls. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">call-capacity</span> - Maximum number of Voice over WLAN (VoWLAN) phones supported by the radio (0 - 60, default = 10). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">channel</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">channel-bonding</span> - Channel bandwidth: 80, 40, or 20MHz. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, 80MHz, 40MHz, 20MHz]</span> </li>
+ <li><span class="li-head">channel-bonding</span> - Channel bandwidth: 80, 40, or 20MHz. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, 80MHz, 40MHz, 20MHz, 160MHz]</span> </li>
  <li><span class="li-head">channel-utilization</span> - Enable/disable measuring channel utilization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">coexistence</span> - Enable/disable allowing both HT20 and HT40 on the same radio (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">darrp</span> - Enable/disable Distributed Automatic Radio Resource Provisioning (DARRP) to make sure the radio is always using the most optimal channel (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -76,18 +101,46 @@ Parameters
  <li><span class="li-head">frequency-handoff</span> - Enable/disable frequency handoff of clients to other channels (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">max-clients</span> - Maximum number of stations (STAs) or WiFi clients supported by the radio. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">max-distance</span> - Maximum expected distance between the AP and clients (0 - 54000 m, default = 0). <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">mode</span> - Mode of radio 2. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, ap, monitor, sniffer]</span> </li>
+ <li><span class="li-head">mode</span> - Mode of radio 2. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, ap, monitor, sniffer, sam]</span> </li>
  <li><span class="li-head">power-level</span> - Radio power level as a percentage of the maximum transmit power (0 - 100, default = 100). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">powersave-optimize</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tim, ac-vo, no-obss-scan, no-11b-rate, client-rate-follow]</span> </li>
  <li><span class="li-head">protection-mode</span> - Enable/disable 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rtscts, ctsonly, disable]</span> </li>
  <li><span class="li-head">radio-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">rts-threshold</span> - Maximum packet size for RTS transmissions, specifying the maximum size of a data packet before RTS/CTS (256 - 2346 bytes, default = 2346). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">short-guard-interval</span> - Use either the short guard interval (Short GI) of 400 ns or the long guard interval (Long GI) of 800 ns. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">spectrum-analysis</span> - Enable/disable spectrum analysis to find interference that would negatively impact wireless performance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">spectrum-analysis</span> - Enable/disable spectrum analysis to find interference that would negatively impact wireless performance. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, scan-only]</span> </li>
  <li><span class="li-head">transmit-optimize</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [disable, power-save, aggr-limit, retry-limit, send-bar]</span> </li>
- <li><span class="li-head">vap-all</span> - Enable/disable the automatic inheritance of all Virtual Access Points (VAPs) (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vap-all</span> - Enable/disable the automatic inheritance of all Virtual Access Points (VAPs) (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, tunnel, bridge, manual]</span> </li>
  <li><span class="li-head">vaps</span> - Manually selected list of Virtual Access Points (VAPs). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wids-profile</span> - Wireless Intrusion Detection System (WIDS) profile name to assign to the radio. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">airtime-fairness</span> - Enable/disable airtime fairness (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">band-5g-type</span> - WiFi 5G band type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [5g-full, 5g-high, 5g-low]</span> </li>
+ <li><span class="li-head">vap1</span> - Virtual Access Point (VAP) for wlan ID 1 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap2</span> - Virtual Access Point (VAP) for wlan ID 2 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap3</span> - Virtual Access Point (VAP) for wlan ID 3 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap4</span> - Virtual Access Point (VAP) for wlan ID 4 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap5</span> - Virtual Access Point (VAP) for wlan ID 5 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap6</span> - Virtual Access Point (VAP) for wlan ID 6 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap7</span> - Virtual Access Point (VAP) for wlan ID 7 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vap8</span> - Virtual Access Point (VAP) for wlan ID 8 <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">zero-wait-dfs</span> - Enable/disable zero wait DFS on radio (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">auto-power-target</span> - The target of automatic transmit power adjustment in dBm. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">bss-color</span> - BSS color value for this 11ax radio (0 - 63, 0 means disable. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">drma</span> - Enable/disable dynamic radio mode assignment (DRMA) (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">drma-sensitivity</span> - Network Coverage Factor (NCF) percentage required to consider a radio as redundant (default = low). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, medium, high]</span> </li>
+ <li><span class="li-head">iperf-protocol</span> - Iperf test protocol (default = "UDP"). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [udp, tcp]</span> </li>
+ <li><span class="li-head">iperf-server-port</span> - Iperf service port number. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">power-mode</span> - Set radio effective isotropic radiated power (EIRP) in dBm or by a percentage of the maximum EIRP (default = percentage). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dBm, percentage]</span> </li>
+ <li><span class="li-head">power-value</span> - Radio EIRP power in dBm (1 - 33, default = 27). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sam-bssid</span> - BSSID for WiFi network. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sam-captive-portal</span> - Enable/disable Captive Portal Authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sam-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">sam-report-intv</span> - SAM report interval (sec), 0 for a one-time report. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">sam-security-type</span> - Select WiFi network security type (default = "wpa-personal"). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [open, wpa-personal, wpa-enterprise]</span> </li>
+ <li><span class="li-head">sam-server</span> - SAM test server IP address or domain name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sam-ssid</span> - SSID for WiFi network. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sam-test</span> - Select SAM test type (default = "PING"). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, iperf]</span> </li>
+ <li><span class="li-head">sam-username</span> - Username for WiFi network connection. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -173,16 +226,44 @@ Examples
             radio-id: <value of integer>
             rts-threshold: <value of integer>
             short-guard-interval: <value in [disable, enable]>
-            spectrum-analysis: <value in [disable, enable]>
+            spectrum-analysis: <value in [disable, enable, scan-only]>
             transmit-optimize:
               - disable
               - power-save
               - aggr-limit
               - retry-limit
               - send-bar
-            vap-all: <value in [disable, enable]>
+            vap-all: <value in [disable, enable, tunnel, ...]>
             vaps: <value of string>
             wids-profile: <value of string>
+            airtime-fairness: <value in [disable, enable]>
+            band-5g-type: <value in [5g-full, 5g-high, 5g-low]>
+            vap1: <value of string>
+            vap2: <value of string>
+            vap3: <value of string>
+            vap4: <value of string>
+            vap5: <value of string>
+            vap6: <value of string>
+            vap7: <value of string>
+            vap8: <value of string>
+            zero-wait-dfs: <value in [disable, enable]>
+            auto-power-target: <value of string>
+            bss-color: <value of integer>
+            drma: <value in [disable, enable]>
+            drma-sensitivity: <value in [low, medium, high]>
+            iperf-protocol: <value in [udp, tcp]>
+            iperf-server-port: <value of integer>
+            power-mode: <value in [dBm, percentage]>
+            power-value: <value of integer>
+            sam-bssid: <value of string>
+            sam-captive-portal: <value in [disable, enable]>
+            sam-password: <value of string>
+            sam-report-intv: <value of integer>
+            sam-security-type: <value in [open, wpa-personal, wpa-enterprise]>
+            sam-server: <value of string>
+            sam-ssid: <value of string>
+            sam-test: <value in [ping, iperf]>
+            sam-username: <value of string>
 
 
 

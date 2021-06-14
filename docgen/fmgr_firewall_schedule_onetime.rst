@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_schedule_onetime</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,6 +77,8 @@ Parameters
  <li><span class="li-head">expiration-days</span> - Write an event log message this many days before the schedule expires. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">name</span> - Onetime schedule name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">start</span> - Schedule start date and time, format hh:mm yyyy/mm/dd. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - Global Object. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -101,6 +128,8 @@ Examples
             expiration-days: <value of integer>
             name: <value of string>
             start: <value of string>
+            global-object: <value of integer>
+            fabric-object: <value in [disable, enable]>
 
 
 

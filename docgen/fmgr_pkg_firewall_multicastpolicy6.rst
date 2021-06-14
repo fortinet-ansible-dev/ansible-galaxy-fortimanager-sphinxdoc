@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_firewall_multicastpolicy6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,6 +85,9 @@ Parameters
  <li><span class="li-head">srcintf</span> - IPv6 source interface name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">start-port</span> - Integer value for starting TCP/UDP/SCTP destination port in range (1 - 65535, default = 1). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - Enable/disable this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">comments</span> - Comment. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Policy name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +145,9 @@ Examples
             srcintf: <value of string>
             start-port: <value of integer>
             status: <value in [disable, enable]>
+            comments: <value of string>
+            name: <value of string>
+            uuid: <value of string>
 
 
 

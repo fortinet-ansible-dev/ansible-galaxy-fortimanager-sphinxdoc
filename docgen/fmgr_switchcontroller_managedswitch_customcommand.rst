@@ -30,6 +30,25 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_managedswitch_customcommand</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -44,9 +63,13 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">switchcontroller_managedswitch_customcommand</span> - Configuration method to edit FortiSwitch commands to be pushed to this FortiSwitch device upon rebooting the FortiGate switch controller... <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self">
+ <li><span class="li-head">command-entry</span> - List of FortiSwitch commands. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">command-name</span> - Names of commands to be pushed to this FortiSwitch device, as configured under config switch-controller custom-command. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
 
 
@@ -87,10 +110,12 @@ Examples
          workspace_locking_timeout: 300
          rc_succeeded: [0, -2, -3, ...]
          rc_failed: [-2, -3, ...]
-         device: <your own value>
-         vdom: <your own value>
+         adom: <your own value>
          managed-switch: <your own value>
          state: <value in [present, absent]>
+         switchcontroller_managedswitch_customcommand:
+            command-entry: <value of string>
+            command-name: <value of string>
 
 
 

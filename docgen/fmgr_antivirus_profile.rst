@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>antivirus_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,7 +85,150 @@ Parameters
  <li><span class="li-head">mobile-malware-db</span> - Enable/disable using the mobile malware signature database. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">replacemsg-group</span> - Replacement message group customized for this profile. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">scan-mode</span> - Choose between full scan mode and quick scan mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [quick, full]</span> </li>
+ <li><span class="li-head">scan-mode</span> - Choose between full scan mode and quick scan mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [quick, full, legacy, default]</span> </li>
+ <li><span class="li-head">feature-set</span> - Flow/proxy feature set. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow]</span> </li>
+ <li><span class="li-head">analytics-accept-filetype</span> - Only submit files matching this DLP file-pattern to FortiSandbox. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">analytics-ignore-filetype</span> - Do not submit files matching this DLP file-pattern to FortiSandbox. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cifs</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, quarantine, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">content-disarm</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">cover-page</span> - Enable/disable inserting a cover page into the disarmed document. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">detect-only</span> - Enable/disable only detect disarmable files, do not alter content. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">error-action</span> - Action to be taken if CDR engine encounters an unrecoverable error. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, log-only, ignore]</span> </li>
+ <li><span class="li-head">office-action</span> - Enable/disable stripping of PowerPoint action events in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-dde</span> - Enable/disable stripping of Dynamic Data Exchange events in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-embed</span> - Enable/disable stripping of embedded objects in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-hylink</span> - Enable/disable stripping of hyperlinks in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-linked</span> - Enable/disable stripping of linked objects in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-macro</span> - Enable/disable stripping of macros in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">original-file-destination</span> - Destination to send original file if active content is removed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortisandbox, quarantine, discard]</span> </li>
+ <li><span class="li-head">pdf-act-form</span> - Enable/disable stripping of PDF document actions that submit data to other targets. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-act-gotor</span> - Enable/disable stripping of PDF document actions that access other PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-act-java</span> - Enable/disable stripping of PDF document actions that execute JavaScript code. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-act-launch</span> - Enable/disable stripping of PDF document actions that launch other applications. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-act-movie</span> - Enable/disable stripping of PDF document actions that play a movie. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-act-sound</span> - Enable/disable stripping of PDF document actions that play a sound. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-embedfile</span> - Enable/disable stripping of embedded files in PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-hyperlink</span> - Enable/disable stripping of hyperlinks from PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pdf-javacode</span> - Enable/disable stripping of JavaScript code in PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">ems-threat-feed</span> - Enable/disable use of EMS threat feed when performing AntiVirus scan. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - One or more external malware block lists. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">external-blocklist-archive-scan</span> - Enable/disable external-blocklist archive scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist-enable-all</span> - Enable/disable all external blocklists. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ftp</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">http</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">content-disarm</span> - Enable Content Disarm and Reconstruction for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor, strict-file]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">imap</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">content-disarm</span> - Enable Content Disarm and Reconstruction for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">executables</span> - Treat Windows executable files as viruses for the purpose of blocking or monitoring. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, virus]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">mapi</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">executables</span> - Treat Windows executable files as viruses for the purpose of blocking or monitoring. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, virus]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, quarantine, avquery, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">nac-quar</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">expiry</span> - Duration of quarantine. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">infected</span> - Enable/Disable quarantining infected hosts to the banned user list. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, quar-src-ip, quar-interface]</span> </li>
+ <li><span class="li-head">log</span> - Enable/disable AntiVirus quarantine logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">nntp</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">outbreak-prevention-archive-scan</span> - Enable/disable outbreak-prevention archive scanning. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">pop3</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">content-disarm</span> - Enable Content Disarm and Reconstruction for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">executables</span> - Treat Windows executable files as viruses for the purpose of blocking or monitoring. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, virus]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">smtp</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">content-disarm</span> - Enable Content Disarm and Reconstruction for this protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">executables</span> - Treat Windows executable files as viruses for the purpose of blocking or monitoring. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, virus]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
+ <li><span class="li-head">ssh</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
+ <li><span class="li-head">av-scan</span> - Enable AntiVirus scan service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">external-blocklist</span> - Enable external-blocklist. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, monitor, block]</span> </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [avmonitor, quarantine, scan]</span> </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable virus outbreak prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span> </li>
+ <li><span class="li-head">quarantine</span> - Enable/disable quarantine for infected files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -118,7 +286,331 @@ Examples
             mobile-malware-db: <value in [disable, enable]>
             name: <value of string>
             replacemsg-group: <value of string>
-            scan-mode: <value in [quick, full]>
+            scan-mode: <value in [quick, full, legacy, ...]>
+            feature-set: <value in [proxy, flow]>
+            analytics-accept-filetype: <value of string>
+            analytics-ignore-filetype: <value of string>
+            cifs:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               emulator: <value in [disable, enable]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - quarantine
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            content-disarm:
+               cover-page: <value in [disable, enable]>
+               detect-only: <value in [disable, enable]>
+               error-action: <value in [block, log-only, ignore]>
+               office-action: <value in [disable, enable]>
+               office-dde: <value in [disable, enable]>
+               office-embed: <value in [disable, enable]>
+               office-hylink: <value in [disable, enable]>
+               office-linked: <value in [disable, enable]>
+               office-macro: <value in [disable, enable]>
+               original-file-destination: <value in [fortisandbox, quarantine, discard]>
+               pdf-act-form: <value in [disable, enable]>
+               pdf-act-gotor: <value in [disable, enable]>
+               pdf-act-java: <value in [disable, enable]>
+               pdf-act-launch: <value in [disable, enable]>
+               pdf-act-movie: <value in [disable, enable]>
+               pdf-act-sound: <value in [disable, enable]>
+               pdf-embedfile: <value in [disable, enable]>
+               pdf-hyperlink: <value in [disable, enable]>
+               pdf-javacode: <value in [disable, enable]>
+            ems-threat-feed: <value in [disable, enable]>
+            external-blocklist: <value of string>
+            external-blocklist-archive-scan: <value in [disable, enable]>
+            external-blocklist-enable-all: <value in [disable, enable]>
+            ftp:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               emulator: <value in [disable, enable]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - file-filter
+                 - quarantine
+                 - avquery
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            http:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               content-disarm: <value in [disable, enable]>
+               emulator: <value in [disable, enable]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - file-filter
+                 - quarantine
+                 - avquery
+                 - avmonitor
+                 - strict-file
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            imap:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               content-disarm: <value in [disable, enable]>
+               emulator: <value in [disable, enable]>
+               executables: <value in [default, virus]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - file-filter
+                 - quarantine
+                 - avquery
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            mapi:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               emulator: <value in [disable, enable]>
+               executables: <value in [default, virus]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - quarantine
+                 - avquery
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            nac-quar:
+               expiry: <value of string>
+               infected: <value in [none, quar-src-ip, quar-interface]>
+               log: <value in [disable, enable]>
+            nntp:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               emulator: <value in [disable, enable]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - file-filter
+                 - quarantine
+                 - avquery
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            outbreak-prevention-archive-scan: <value in [disable, enable]>
+            pop3:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               content-disarm: <value in [disable, enable]>
+               emulator: <value in [disable, enable]>
+               executables: <value in [default, virus]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - file-filter
+                 - quarantine
+                 - avquery
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            smtp:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               content-disarm: <value in [disable, enable]>
+               emulator: <value in [disable, enable]>
+               executables: <value in [default, virus]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - scan
+                 - file-filter
+                 - quarantine
+                 - avquery
+                 - avmonitor
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
+            ssh:
+               archive-block:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               archive-log:
+                 - encrypted
+                 - corrupted
+                 - multipart
+                 - nested
+                 - mailbomb
+                 - unhandled
+                 - partiallycorrupted
+                 - fileslimit
+                 - timeout
+               av-scan: <value in [disable, monitor, block]>
+               emulator: <value in [disable, enable]>
+               external-blocklist: <value in [disable, monitor, block]>
+               options:
+                 - avmonitor
+                 - quarantine
+                 - scan
+               outbreak-prevention: <value in [disabled, files, full-archive, ...]>
+               quarantine: <value in [disable, enable]>
 
 
 

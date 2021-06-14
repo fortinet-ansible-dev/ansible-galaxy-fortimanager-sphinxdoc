@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>vap_mpskkey</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,6 +75,7 @@ Parameters
  <li><span class="li-head">concurrent-clients</span> - Number of clients that can connect using this pre-shared key. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">key-name</span> - Pre-shared key name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">passphrase</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">mpsk-schedules</span> - Firewall schedule for MPSK passphrase. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -101,6 +125,7 @@ Examples
             concurrent-clients: <value of string>
             key-name: <value of string>
             passphrase: <value of string>
+            mpsk-schedules: <value of string>
 
 
 

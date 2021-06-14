@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_local</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -68,6 +93,10 @@ Parameters
  <li><span class="li-head">two-factor</span> - Enable/disable two-factor authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, fortitoken, email, sms, fortitoken-cloud]</span> </li>
  <li><span class="li-head">type</span> - Authentication method. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [password, radius, tacacs+, ldap]</span> </li>
  <li><span class="li-head">workstation</span> - Name of the remote user workstation, if you want to limit the user to authenticate only from a particular workstation. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">two-factor-authentication</span> - Authentication method by FortiToken Cloud. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fortitoken, email, sms]</span> </li>
+ <li><span class="li-head">two-factor-notification</span> - Notification method for user activation by FortiToken Cloud. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [email, sms]</span> </li>
+ <li><span class="li-head">username-case-insensitivity</span> - Enable/disable case sensitivity when performing username matching (uppercase and lowercase letters are treated either as distinct or equivalent). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">username-case-sensitivity</span> - Enable/disable case sensitivity when performing username matching (uppercase and lowercase letters are treated either as distinct or equivalent). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -133,6 +162,10 @@ Examples
             two-factor: <value in [disable, fortitoken, email, ...]>
             type: <value in [password, radius, tacacs+, ...]>
             workstation: <value of string>
+            two-factor-authentication: <value in [fortitoken, email, sms]>
+            two-factor-notification: <value in [email, sms]>
+            username-case-insensitivity: <value in [disable, enable]>
+            username-case-sensitivity: <value in [disable, enable]>
 
 
 

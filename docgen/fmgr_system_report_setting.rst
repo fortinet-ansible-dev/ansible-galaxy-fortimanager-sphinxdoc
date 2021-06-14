@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_report_setting</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,6 +77,9 @@ Parameters
  <li><span class="li-head">report-priority</span> - Priority of sql report. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, auto]</span>  <span class="li-normal">default: auto</span> </li>
  <li><span class="li-head">template-auto-install</span> - The language used for new ADOMs (default = default). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, english]</span>  <span class="li-normal">default: default</span> </li>
  <li><span class="li-head">week-start</span> - Day of the week on which the week starts. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sun, mon]</span>  <span class="li-normal">default: sun</span> </li>
+ <li><span class="li-head">capwap-port</span> - Exclude capwap traffic by port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 5246</span> </li>
+ <li><span class="li-head">capwap-service</span> - Exclude capwap traffic by service. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">exclude-capwap</span> - Exclude capwap traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, by-port, by-service]</span>  <span class="li-normal">default: by-port</span> </li>
  </ul>
  </ul>
 
@@ -101,6 +129,9 @@ Examples
             report-priority: <value in [high, low, auto]>
             template-auto-install: <value in [default, english]>
             week-start: <value in [sun, mon]>
+            capwap-port: <value of integer>
+            capwap-service: <value of string>
+            exclude-capwap: <value in [disable, by-port, by-service]>
 
 
 

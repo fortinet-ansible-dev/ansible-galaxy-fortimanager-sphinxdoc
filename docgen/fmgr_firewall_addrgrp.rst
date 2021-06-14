@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_addrgrp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -64,6 +89,11 @@ Parameters
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, array, folder]</span> </li>
+ <li><span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  <li><span class="li-head">name</span> - Address group name. <span class="li-normal">type: str</span> </li>
@@ -74,6 +104,13 @@ Parameters
  </ul>
  <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - Enable/disable address visibility in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">exclude</span> - Enable/disable address exclusion. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">exclude-member</span> - Address exclusion member. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - Global Object. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">type</span> - Address group type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, array, folder]</span> </li>
+ <li><span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -136,6 +173,11 @@ Examples
                   tags: <value of string>
                   uuid: <value of string>
                   visibility: <value in [disable, enable]>
+                  _image-base64: <value of string>
+                  global-object: <value of integer>
+                  type: <value in [default, array, folder]>
+                  category: <value in [default, ztna-ems-tag, ztna-geo-tag]>
+                  fabric-object: <value in [disable, enable]>
             member: <value of list>
             name: <value of string>
             tagging:
@@ -145,6 +187,13 @@ Examples
                   tags: <value of string>
             uuid: <value of string>
             visibility: <value in [disable, enable]>
+            exclude: <value in [disable, enable]>
+            exclude-member: <value of string>
+            _image-base64: <value of string>
+            global-object: <value of integer>
+            type: <value in [default, array, folder]>
+            category: <value in [default, ztna-ems-tag, ztna-geo-tag]>
+            fabric-object: <value in [disable, enable]>
 
 
 

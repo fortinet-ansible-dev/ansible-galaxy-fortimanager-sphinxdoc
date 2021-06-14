@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_dhcp_server</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -100,6 +125,11 @@ Parameters
  <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip</span> - IP address to be reserved for the MAC address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">mac</span> - MAC address of the client that will get the reserved IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">circuit-id</span> - Option 82 circuit-ID of the client that will get the reserved IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">circuit-id-type</span> - DHCP option type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hex, string]</span> </li>
+ <li><span class="li-head">remote-id</span> - Option 82 remote-ID of the client that will get the reserved IP address. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">remote-id-type</span> - DHCP option type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hex, string]</span> </li>
+ <li><span class="li-head">type</span> - DHCP reserved-address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mac, option82]</span> </li>
  </ul>
  <li><span class="li-head">server-type</span> - DHCP server can be a normal DHCP server or an IPsec DHCP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regular, ipsec]</span> </li>
  <li><span class="li-head">status</span> - Enable/disable this DHCP configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -113,6 +143,10 @@ Parameters
  <li><span class="li-head">wifi-ac3</span> - WiFi Access Controller 3 IP address (DHCP option 138, RFC 5417). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-server1</span> - WINS server 1. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-server2</span> - WINS server 2. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auto-managed-status</span> - Enable/disable use of this DHCP server once this interface has been assigned an IP address from FortiIPAM. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dhcp-settings-from-fortiipam</span> - Enable/disable populating of DHCP server settings from FortiIPAM. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dns-server4</span> - DNS server 4. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">wifi-ac-service</span> - Options for assigning WiFi Access Controllers to DHCP clients <span class="li-normal">type: str</span>  <span class="li-normal">choices: [specify, local]</span> </li>
  </ul>
  </ul>
 
@@ -211,6 +245,11 @@ Examples
                   id: <value of integer>
                   ip: <value of string>
                   mac: <value of string>
+                  circuit-id: <value of string>
+                  circuit-id-type: <value in [hex, string]>
+                  remote-id: <value of string>
+                  remote-id-type: <value in [hex, string]>
+                  type: <value in [mac, option82]>
             server-type: <value in [regular, ipsec]>
             status: <value in [disable, enable]>
             tftp-server: <value of string>
@@ -223,6 +262,10 @@ Examples
             wifi-ac3: <value of string>
             wins-server1: <value of string>
             wins-server2: <value of string>
+            auto-managed-status: <value in [disable, enable]>
+            dhcp-settings-from-fortiipam: <value in [disable, enable]>
+            dns-server4: <value of string>
+            wifi-ac-service: <value in [specify, local]>
 
 
 

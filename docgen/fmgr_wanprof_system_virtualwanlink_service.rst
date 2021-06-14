@@ -30,6 +30,29 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanprof_system_virtualwanlink_service</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -95,6 +118,13 @@ Parameters
  <li><span class="li-head">tos</span> - Type of service bit pattern. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tos-mask</span> - Type of service evaluated bits. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">users</span> - User name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-app-ctrl</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">internet-service-app-ctrl-group</span> - Application control based Internet Service group list. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">role</span> - Service role to work with neighbor. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [primary, secondary, standalone]</span> </li>
+ <li><span class="li-head">sla-compare-method</span> - Method to compare SLA value for sla and load balance mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [order, number]</span> </li>
+ <li><span class="li-head">standalone-action</span> - Enable/disable service when selected neighbor role is standalone while service role is not standalone. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">input-device</span> - Source interface name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-name</span> - Internet service name list. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -187,6 +217,13 @@ Examples
             tos: <value of string>
             tos-mask: <value of string>
             users: <value of string>
+            internet-service-app-ctrl: <value of integer>
+            internet-service-app-ctrl-group: <value of string>
+            role: <value in [primary, secondary, standalone]>
+            sla-compare-method: <value in [order, number]>
+            standalone-action: <value in [disable, enable]>
+            input-device: <value of string>
+            internet-service-name: <value of string>
 
 
 

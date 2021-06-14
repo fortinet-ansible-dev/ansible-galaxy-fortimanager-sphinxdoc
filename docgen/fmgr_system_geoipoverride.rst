@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_geoipoverride</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -54,6 +79,11 @@ Parameters
  <li><span class="li-head">start-ip</span> - Starting IP address, inclusive, of the address range (format: xxx. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">name</span> - Location name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6-range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">end-ip</span> - Ending IP address, inclusive, of the address range (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID of individual entry in the IPv6 range table. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">start-ip</span> - Starting IP address, inclusive, of the address range (format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -105,6 +135,11 @@ Examples
                   id: <value of integer>
                   start-ip: <value of string>
             name: <value of string>
+            ip6-range:
+              -
+                  end-ip: <value of string>
+                  id: <value of integer>
+                  start-ip: <value of string>
 
 
 

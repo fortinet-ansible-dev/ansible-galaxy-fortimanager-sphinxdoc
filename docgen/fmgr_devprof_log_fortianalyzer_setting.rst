@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>devprof_log_fortianalyzer_setting</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,6 +85,13 @@ Parameters
  <li><span class="li-head">upload-interval</span> - Frequency to upload log files to FortiAnalyzer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [daily, weekly, monthly]</span> </li>
  <li><span class="li-head">upload-option</span> - Enable/disable logging to hard disk and then uploading to FortiAnalyzer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [store-and-upload, realtime, 1-minute, 5-minute]</span> </li>
  <li><span class="li-head">upload-time</span> - Time to upload logs (hh:mm). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-config</span> - Enable/disable FortiAnalyzer access to configuration and data. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">certificate-verification</span> - Enable/disable identity verification of FortiAnalyzer by use of certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">max-log-rate</span> - FortiAnalyzer maximum log rate in MBps (0 = unlimited). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">priority</span> - Set log transmission priority. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [low, default]</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
+ <li><span class="li-head">preshared-key</span> - Preshared-key used for auto-authorization on FortiAnalyzer. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -117,6 +149,13 @@ Examples
             upload-interval: <value in [daily, weekly, monthly]>
             upload-option: <value in [store-and-upload, realtime, 1-minute, ...]>
             upload-time: <value of string>
+            access-config: <value in [disable, enable]>
+            certificate-verification: <value in [disable, enable]>
+            max-log-rate: <value of integer>
+            priority: <value in [low, default]>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
+            preshared-key: <value of string>
 
 
 

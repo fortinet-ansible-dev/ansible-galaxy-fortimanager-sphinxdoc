@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webproxy_forwardservergroup</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -49,7 +74,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">affinity</span> - Enable/disable affinity, attaching a source-ips traffic to the assigned forwarding server until the forward-server-affinity-timeout is reached (under web-proxy global). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">group-down-option</span> - Action to take when all of the servers in the forward server group are down: block sessions until at least one server is back up or pass sessions to their destination. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, pass]</span> </li>
- <li><span class="li-head">ldb-method</span> - Load balance method: weighted or least-session. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [weighted, least-session]</span> </li>
+ <li><span class="li-head">ldb-method</span> - Load balance method: weighted or least-session. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [weighted, least-session, active-passive]</span> </li>
  <li><span class="li-head">name</span> - Configure a forward server group consisting one or multiple forward servers. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">server-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - Forward server name. <span class="li-normal">type: str</span> </li>
@@ -101,7 +126,7 @@ Examples
          webproxy_forwardservergroup:
             affinity: <value in [disable, enable]>
             group-down-option: <value in [block, pass]>
-            ldb-method: <value in [weighted, least-session]>
+            ldb-method: <value in [weighted, least-session, active-passive]>
             name: <value of string>
             server-list:
               -

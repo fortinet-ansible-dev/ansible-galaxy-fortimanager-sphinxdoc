@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_address6_dynamicmapping:
 
-fmgr_firewall_address6_dynamicmapping
-+++++++++++++++++++++++++++++++++++++
+fmgr_firewall_address6_dynamicmapping -- Configure IPv6 firewall addresses.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_address6_dynamicmapping</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -46,7 +71,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">address6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_address6_dynamicmapping</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_address6_dynamicmapping</span> - Configure IPv6 firewall addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_scope</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -65,9 +90,21 @@ Parameters
  <li><span class="li-head">start-ip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">template</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, nsx, dynamic, fqdn, template]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipprefix, iprange, nsx, dynamic, fqdn, template, geography, mac]</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">subnet-segment</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [any, specific]</span> </li>
+ <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">country</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">end-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">macaddr</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">start-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -102,7 +139,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure IPv6 firewall addresses.
       fmgr_firewall_address6_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -133,6 +170,18 @@ Examples
             type: <value in [ipprefix, iprange, nsx, ...]>
             uuid: <value of string>
             visibility: <value in [disable, enable]>
+            subnet-segment:
+              -
+                  name: <value of string>
+                  type: <value in [any, specific]>
+                  value: <value of string>
+            _image-base64: <value of string>
+            country: <value of string>
+            global-object: <value of integer>
+            end-mac: <value of string>
+            fabric-object: <value in [disable, enable]>
+            macaddr: <value of string>
+            start-mac: <value of string>
 
 
 

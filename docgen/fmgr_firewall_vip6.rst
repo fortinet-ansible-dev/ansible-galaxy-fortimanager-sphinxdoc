@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_vip6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -101,14 +126,14 @@ Parameters
  <li><span class="li-head">ssl-hsts-include-subdomains</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-http-location-conversion</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-http-match-host</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ssl-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
- <li><span class="li-head">ssl-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
+ <li><span class="li-head">ssl-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [half, full]</span> </li>
  <li><span class="li-head">ssl-pfs</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [require, deny, allow]</span> </li>
  <li><span class="li-head">ssl-send-empty-frags</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-server-algorithm</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, medium, custom, client]</span> </li>
- <li><span class="li-head">ssl-server-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client]</span> </li>
- <li><span class="li-head">ssl-server-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client]</span> </li>
+ <li><span class="li-head">ssl-server-max-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-server-min-version</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-server-session-state-max</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ssl-server-session-state-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ssl-server-session-state-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, time, count, both]</span> </li>
@@ -116,6 +141,9 @@ Parameters
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">weblogic-server</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">websphere-server</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">http-redirect</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-client-rekey-count</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">nat-source-vip</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">extip</span> - IP address or address range on the external interface that you want to map to an address or address range on the destination network. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">extport</span> - Incoming port number range that you want to map to a port number range on the destination network. <span class="li-normal">type: str</span> </li>
@@ -158,9 +186,9 @@ Parameters
  <li><span class="li-head">ssl-algorithm</span> - Permitted encryption algorithms for SSL sessions according to encryption strength. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, medium, custom]</span> </li>
  <li><span class="li-head">ssl-certificate</span> - The name of the SSL certificate to use for SSL acceleration. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl-cipher-suites</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">cipher</span> - Cipher suite name. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, TLS-RSA-WITH-3DES-EDE-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA, TLS-RSA-WITH-AES-256-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA256, TLS-RSA-WITH-AES-256-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-RSA-WITH-SEED-CBC-SHA, TLS-RSA-WITH-ARIA-128-CBC-SHA256, TLS-RSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-RSA-WITH-DES-CBC-SHA, TLS-DHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA, TLS-DHE-RSA-WITH-AES-256-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA256, TLS-DHE-RSA-WITH-AES-256-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-RSA-WITH-SEED-CBC-SHA, TLS-DHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-RC4-128-SHA, TLS-ECDHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA, TLS-ECDHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-ECDHE-ECDSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-AES-128-GCM-SHA256, TLS-DHE-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-AES-128-CBC-SHA, TLS-DHE-DSS-WITH-AES-256-CBC-SHA, TLS-DHE-DSS-WITH-AES-128-CBC-SHA256, TLS-DHE-DSS-WITH-AES-128-GCM-SHA256, TLS-DHE-DSS-WITH-AES-256-CBC-SHA256, TLS-DHE-DSS-WITH-AES-256-GCM-SHA384, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384, TLS-RSA-WITH-AES-128-GCM-SHA256, TLS-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-DSS-WITH-SEED-CBC-SHA, TLS-DHE-DSS-WITH-ARIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-DSS-WITH-3DES-EDE-CBC-SHA, TLS-DHE-DSS-WITH-DES-CBC-SHA]</span> </li>
+ <li><span class="li-head">cipher</span> - Cipher suite name. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, TLS-RSA-WITH-3DES-EDE-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA, TLS-RSA-WITH-AES-256-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA256, TLS-RSA-WITH-AES-256-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-RSA-WITH-SEED-CBC-SHA, TLS-RSA-WITH-ARIA-128-CBC-SHA256, TLS-RSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-RSA-WITH-DES-CBC-SHA, TLS-DHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA, TLS-DHE-RSA-WITH-AES-256-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA256, TLS-DHE-RSA-WITH-AES-256-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-RSA-WITH-SEED-CBC-SHA, TLS-DHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-RC4-128-SHA, TLS-ECDHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA, TLS-ECDHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-ECDHE-ECDSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-AES-128-GCM-SHA256, TLS-DHE-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-AES-128-CBC-SHA, TLS-DHE-DSS-WITH-AES-256-CBC-SHA, TLS-DHE-DSS-WITH-AES-128-CBC-SHA256, TLS-DHE-DSS-WITH-AES-128-GCM-SHA256, TLS-DHE-DSS-WITH-AES-256-CBC-SHA256, TLS-DHE-DSS-WITH-AES-256-GCM-SHA384, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384, TLS-RSA-WITH-AES-128-GCM-SHA256, TLS-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-DSS-WITH-SEED-CBC-SHA, TLS-DHE-DSS-WITH-ARIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-DSS-WITH-3DES-EDE-CBC-SHA, TLS-DHE-DSS-WITH-DES-CBC-SHA, TLS-AES-128-GCM-SHA256, TLS-AES-256-GCM-SHA384, TLS-CHACHA20-POLY1305-SHA256]</span> </li>
  <li><span class="li-head">priority</span> - SSL/TLS cipher suites priority. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">versions</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
+ <li><span class="li-head">versions</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
  </ul>
  <li><span class="li-head">ssl-client-fallback</span> - Enable/disable support for preventing Downgrade Attacks on client connections (RFC 7507). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-client-renegotiation</span> - Allow, deny, or require secure renegotiation of client sessions to comply with RFC 5746. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, allow, secure]</span> </li>
@@ -179,19 +207,19 @@ Parameters
  <li><span class="li-head">ssl-hsts-include-subdomains</span> - Indicate that HSTS header applies to all subdomains. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-http-location-conversion</span> - Enable to replace HTTP with HTTPS in the replys Location HTTP header field. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-http-match-host</span> - Enable/disable HTTP host matching for location conversion. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">ssl-max-version</span> - Highest SSL/TLS version acceptable from a client. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
- <li><span class="li-head">ssl-min-version</span> - Lowest SSL/TLS version acceptable from a client. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
+ <li><span class="li-head">ssl-max-version</span> - Highest SSL/TLS version acceptable from a client. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-min-version</span> - Lowest SSL/TLS version acceptable from a client. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-mode</span> - Apply SSL offloading between the client and the FortiGate (half) or from the client to the FortiGate and from the FortiGate to the server (full). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [half, full]</span> </li>
  <li><span class="li-head">ssl-pfs</span> - Select the cipher suites that can be used for SSL perfect forward secrecy (PFS). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [require, deny, allow]</span> </li>
  <li><span class="li-head">ssl-send-empty-frags</span> - Enable/disable sending empty fragments to avoid CBC IV attacks (SSL 3. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-server-algorithm</span> - Permitted encryption algorithms for the server side of SSL full mode sessions according to encryption strength. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, low, medium, custom, client]</span> </li>
  <li><span class="li-head">ssl-server-cipher-suites</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">cipher</span> - Cipher suite name. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, TLS-RSA-WITH-3DES-EDE-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA, TLS-RSA-WITH-AES-256-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA256, TLS-RSA-WITH-AES-256-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-RSA-WITH-SEED-CBC-SHA, TLS-RSA-WITH-ARIA-128-CBC-SHA256, TLS-RSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-RSA-WITH-DES-CBC-SHA, TLS-DHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA, TLS-DHE-RSA-WITH-AES-256-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA256, TLS-DHE-RSA-WITH-AES-256-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-RSA-WITH-SEED-CBC-SHA, TLS-DHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-RC4-128-SHA, TLS-ECDHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA, TLS-ECDHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-ECDHE-ECDSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-AES-128-GCM-SHA256, TLS-DHE-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-AES-128-CBC-SHA, TLS-DHE-DSS-WITH-AES-256-CBC-SHA, TLS-DHE-DSS-WITH-AES-128-CBC-SHA256, TLS-DHE-DSS-WITH-AES-128-GCM-SHA256, TLS-DHE-DSS-WITH-AES-256-CBC-SHA256, TLS-DHE-DSS-WITH-AES-256-GCM-SHA384, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384, TLS-RSA-WITH-AES-128-GCM-SHA256, TLS-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-DSS-WITH-SEED-CBC-SHA, TLS-DHE-DSS-WITH-ARIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-DSS-WITH-3DES-EDE-CBC-SHA, TLS-DHE-DSS-WITH-DES-CBC-SHA]</span> </li>
+ <li><span class="li-head">cipher</span> - Cipher suite name. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, TLS-RSA-WITH-3DES-EDE-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA, TLS-RSA-WITH-AES-256-CBC-SHA, TLS-RSA-WITH-AES-128-CBC-SHA256, TLS-RSA-WITH-AES-256-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-RSA-WITH-SEED-CBC-SHA, TLS-RSA-WITH-ARIA-128-CBC-SHA256, TLS-RSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-RSA-WITH-DES-CBC-SHA, TLS-DHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA, TLS-DHE-RSA-WITH-AES-256-CBC-SHA, TLS-DHE-RSA-WITH-AES-128-CBC-SHA256, TLS-DHE-RSA-WITH-AES-256-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-RSA-WITH-SEED-CBC-SHA, TLS-DHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-DHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-RC4-128-SHA, TLS-ECDHE-RSA-WITH-3DES-EDE-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA, TLS-ECDHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-ECDHE-ECDSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-CHACHA20-POLY1305-SHA256, TLS-DHE-RSA-WITH-AES-128-GCM-SHA256, TLS-DHE-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-AES-128-CBC-SHA, TLS-DHE-DSS-WITH-AES-256-CBC-SHA, TLS-DHE-DSS-WITH-AES-128-CBC-SHA256, TLS-DHE-DSS-WITH-AES-128-GCM-SHA256, TLS-DHE-DSS-WITH-AES-256-CBC-SHA256, TLS-DHE-DSS-WITH-AES-256-GCM-SHA384, TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA, TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256, TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384, TLS-RSA-WITH-AES-128-GCM-SHA256, TLS-RSA-WITH-AES-256-GCM-SHA384, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA, TLS-DHE-DSS-WITH-CAMELLIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-CAMELLIA-256-CBC-SHA256, TLS-DHE-DSS-WITH-SEED-CBC-SHA, TLS-DHE-DSS-WITH-ARIA-128-CBC-SHA256, TLS-DHE-DSS-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-RSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-RSA-WITH-ARIA-256-CBC-SHA384, TLS-ECDHE-ECDSA-WITH-ARIA-128-CBC-SHA256, TLS-ECDHE-ECDSA-WITH-ARIA-256-CBC-SHA384, TLS-DHE-DSS-WITH-3DES-EDE-CBC-SHA, TLS-DHE-DSS-WITH-DES-CBC-SHA, TLS-AES-128-GCM-SHA256, TLS-AES-256-GCM-SHA384, TLS-CHACHA20-POLY1305-SHA256]</span> </li>
  <li><span class="li-head">priority</span> - SSL/TLS cipher suites priority. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">versions</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2]</span> </li>
+ <li><span class="li-head">versions</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3, ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> </li>
  </ul>
- <li><span class="li-head">ssl-server-max-version</span> - Highest SSL/TLS version acceptable from a server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client]</span> </li>
- <li><span class="li-head">ssl-server-min-version</span> - Lowest SSL/TLS version acceptable from a server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client]</span> </li>
+ <li><span class="li-head">ssl-server-max-version</span> - Highest SSL/TLS version acceptable from a server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client, tls-1.3]</span> </li>
+ <li><span class="li-head">ssl-server-min-version</span> - Lowest SSL/TLS version acceptable from a server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, client, tls-1.3]</span> </li>
  <li><span class="li-head">ssl-server-session-state-max</span> - Maximum number of FortiGate to Server SSL session states to keep. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ssl-server-session-state-timeout</span> - Number of minutes to keep FortiGate to Server SSL session state. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ssl-server-session-state-type</span> - How to expire SSL sessions for the segment of the SSL connection between the server and the FortiGate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, time, count, both]</span> </li>
@@ -199,6 +227,9 @@ Parameters
  <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">weblogic-server</span> - Enable to add an HTTP header to indicate SSL offloading for a WebLogic server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">websphere-server</span> - Enable to add an HTTP header to indicate SSL offloading for a WebSphere server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">http-redirect</span> - Enable/disable redirection of HTTP to HTTPS <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-client-rekey-count</span> - Maximum length of data in MB before triggering a client rekey (0 = disable). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">nat-source-vip</span> - Enable to perform SNAT on traffic from mappedip to the extip for all egress interfaces. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -313,6 +344,9 @@ Examples
                   uuid: <value of string>
                   weblogic-server: <value in [disable, enable]>
                   websphere-server: <value in [disable, enable]>
+                  http-redirect: <value in [disable, enable]>
+                  ssl-client-rekey-count: <value of integer>
+                  nat-source-vip: <value in [disable, enable]>
             extip: <value of string>
             extport: <value of string>
             http-cookie-age: <value of integer>
@@ -362,6 +396,141 @@ Examples
                     - tls-1.0
                     - tls-1.1
                     - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
             ssl-client-fallback: <value in [disable, enable]>
             ssl-client-renegotiation: <value in [deny, allow, secure]>
             ssl-client-session-state-max: <value of integer>
@@ -394,6 +563,128 @@ Examples
                     - tls-1.0
                     - tls-1.1
                     - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
+                    - ssl-3.0
+                    - tls-1.0
+                    - tls-1.1
+                    - tls-1.2
+                    - tls-1.3
             ssl-server-max-version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             ssl-server-min-version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             ssl-server-session-state-max: <value of integer>
@@ -403,6 +694,9 @@ Examples
             uuid: <value of string>
             weblogic-server: <value in [disable, enable]>
             websphere-server: <value in [disable, enable]>
+            http-redirect: <value in [disable, enable]>
+            ssl-client-rekey-count: <value of integer>
+            nat-source-vip: <value in [disable, enable]>
 
 
 

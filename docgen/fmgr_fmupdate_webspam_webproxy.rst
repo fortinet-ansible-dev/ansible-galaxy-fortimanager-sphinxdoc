@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fmupdate_webspam_webproxy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -52,6 +77,7 @@ Parameters
  <li><span class="li-head">port</span> - The port number of the web proxy (1 - 65535, default = 80). <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
  <li><span class="li-head">status</span> - Enable/disable connections through the web proxy (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">username</span> - The user name used for authentication. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">address</span> - web proxy address. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -101,6 +127,7 @@ Examples
             port: <value of integer>
             status: <value in [disable, enable]>
             username: <value of string>
+            address: <value of string>
 
 
 

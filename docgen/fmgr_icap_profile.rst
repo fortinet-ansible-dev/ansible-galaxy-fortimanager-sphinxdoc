@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>icap_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -59,6 +84,28 @@ Parameters
  <li><span class="li-head">response-path</span> - Path component of the ICAP URI that identifies the HTTP response processing service. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">response-server</span> - ICAP server to use for an HTTP response. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">streaming-content-bypass</span> - Enable/disable bypassing of ICAP server for streaming content. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">icap-headers</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">base64-encoding</span> - Enable/disable use of base64 encoding of HTTP content. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">content</span> - HTTP header content. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - HTTP forwarded header ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">name</span> - HTTP forwarded header name. <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">preview</span> - Enable/disable preview of data to ICAP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">preview-data-length</span> - Preview data length to be sent to ICAP server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">response-req-hdr</span> - Enable/disable addition of req-hdr for ICAP response modification (respmod) processing. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">respmod-default-action</span> - Default action to ICAP response modification (respmod) processing. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, forward]</span> </li>
+ <li><span class="li-head">respmod-forward-rules</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">action</span> - Action to be taken for ICAP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, forward]</span> </li>
+ <li><span class="li-head">header-group</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">case-sensitivity</span> - Enable/disable case sensitivity when matching header. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">header</span> - HTTP header regular expression. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">header-name</span> - HTTP header. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - ID. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">host</span> - Address object for the host. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">http-resp-status-code</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">name</span> - Address name. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -123,6 +170,28 @@ Examples
             response-path: <value of string>
             response-server: <value of string>
             streaming-content-bypass: <value in [disable, enable]>
+            icap-headers:
+              -
+                  base64-encoding: <value in [disable, enable]>
+                  content: <value of string>
+                  id: <value of integer>
+                  name: <value of string>
+            preview: <value in [disable, enable]>
+            preview-data-length: <value of integer>
+            response-req-hdr: <value in [disable, enable]>
+            respmod-default-action: <value in [bypass, forward]>
+            respmod-forward-rules:
+              -
+                  action: <value in [bypass, forward]>
+                  header-group:
+                    -
+                        case-sensitivity: <value in [disable, enable]>
+                        header: <value of string>
+                        header-name: <value of string>
+                        id: <value of integer>
+                  host: <value of string>
+                  http-resp-status-code: <value of integer>
+                  name: <value of string>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_vip_realservers</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -59,6 +84,9 @@ Parameters
  <li><span class="li-head">seq</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">status</span> - Set the status of the real server to active so that it can accept traffic, or on standby or disabled so no traffic is sent. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [active, standby, disable]</span> </li>
  <li><span class="li-head">weight</span> - Weight of the real server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">address</span> - Dynamic address of the real server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">id</span> - Real server ID. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">type</span> - Type of address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ip, address]</span> </li>
  </ul>
  </ul>
 
@@ -115,6 +143,9 @@ Examples
             seq: <value of integer>
             status: <value in [active, standby, disable]>
             weight: <value of integer>
+            address: <value of string>
+            id: <value of integer>
+            type: <value in [ip, address]>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>antivirus_profile_contentdisarm</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -63,6 +88,9 @@ Parameters
  <li><span class="li-head">pdf-embedfile</span> - Enable/disable stripping of embedded files in PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">pdf-hyperlink</span> - Enable/disable stripping of hyperlinks from PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">pdf-javacode</span> - Enable/disable stripping of JavaScript code in PDF documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-action</span> - Enable/disable stripping of PowerPoint action events in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">office-dde</span> - Enable/disable stripping of Dynamic Data Exchange events in Microsoft Office documents. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">error-action</span> - Action to be taken if CDR engine encounters an unrecoverable error. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, log-only, ignore]</span> </li>
  </ul>
  </ul>
 
@@ -123,6 +151,9 @@ Examples
             pdf-embedfile: <value in [disable, enable]>
             pdf-hyperlink: <value in [disable, enable]>
             pdf-javacode: <value in [disable, enable]>
+            office-action: <value in [disable, enable]>
+            office-dde: <value in [disable, enable]>
+            error-action: <value in [block, log-only, ignore]>
 
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dvmdb_script</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -53,7 +78,7 @@ Parameters
  <li><span class="li-head">filter_device</span> - Name or id of an existing device in the database. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">filter_hostname</span> - The value has no effect if target is "adom_database". <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">filter_ostype</span> - The value has no effect if target is "adom_database". <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, fos]</span>  <span class="li-normal">default: unknown</span> </li>
- <li><span class="li-head">filter_osver</span> - The value will be ignored in add/set/update requests if filter_ostype is not set. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 4.00, 5.00]</span>  <span class="li-normal">default: unknown</span> </li>
+ <li><span class="li-head">filter_osver</span> - The value will be ignored in add/set/update requests if filter_ostype is not set. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unknown, 4.00, 5.00, 6.00]</span>  <span class="li-normal">default: unknown</span> </li>
  <li><span class="li-head">filter_platform</span> - The value will be ignored in add/set/update requests if filter_ostype is not set. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">filter_serial</span> - The value has no effect if target is "adom_database". <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">modification_time</span> - It is a read-only attribute indicating the time when the script was created or modified. <span class="li-normal">type: str</span> </li>
@@ -118,7 +143,7 @@ Examples
             filter_device: <value of integer>
             filter_hostname: <value of string>
             filter_ostype: <value in [unknown, fos]>
-            filter_osver: <value in [unknown, 4.00, 5.00]>
+            filter_osver: <value in [unknown, 4.00, 5.00, ...]>
             filter_platform: <value of string>
             filter_serial: <value of string>
             modification_time: <value of string>

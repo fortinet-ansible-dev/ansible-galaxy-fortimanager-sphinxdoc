@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_ldbmonitor</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,7 +80,11 @@ Parameters
  <li><span class="li-head">port</span> - Service port used to perform the health check. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">retry</span> - Number health check attempts before the server is considered down (1 - 255, default = 3). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">timeout</span> - Time to wait to receive response to a health check from a server. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">type</span> - Select the Monitor type used by the health check monitor to check the health of the server (PING | TCP | HTTP). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp, http, passive-sip]</span> </li>
+ <li><span class="li-head">type</span> - Select the Monitor type used by the health check monitor to check the health of the server (PING | TCP | HTTP). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ping, tcp, http, passive-sip, https, dns]</span> </li>
+ <li><span class="li-head">src-ip</span> - Source IP for ldb-monitor. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-match-ip</span> - Response IP expected from DNS server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dns-protocol</span> - Select the protocol used by the DNS health check monitor to check the health of the server (UDP | TCP). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [udp, tcp]</span> </li>
+ <li><span class="li-head">dns-request-domain</span> - Fully qualified domain name to resolve for the DNS probe. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -109,6 +138,10 @@ Examples
             retry: <value of integer>
             timeout: <value of integer>
             type: <value in [ping, tcp, http, ...]>
+            src-ip: <value of string>
+            dns-match-ip: <value of string>
+            dns-protocol: <value in [udp, tcp]>
+            dns-request-domain: <value of string>
 
 
 

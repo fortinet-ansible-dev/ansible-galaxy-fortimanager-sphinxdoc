@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_securitypolicy_8021x</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -62,6 +87,11 @@ Parameters
  <li><span class="li-head">radius-timeout-overwrite</span> - Enable to override the global RADIUS session timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">security-mode</span> - Port or MAC based 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [802.1X, 802.1X-mac-based]</span> </li>
  <li><span class="li-head">user-group</span> - Name of user-group to assign to this MAC Authentication Bypass (MAB) policy. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">framevid-apply</span> - Enable/disable the capability to apply the EAP/MAB frame VLAN to the port native VLAN. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">eap-auto-untagged-vlans</span> - Enable/disable automatic inclusion of untagged VLANs. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authserver-timeout-period</span> - Authentication server timeout period (3 - 15 sec, default = 3). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">authserver-timeout-vlan</span> - Enable/disable the authentication server timeout VLAN to allow limited access when RADIUS is unavailable. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">authserver-timeout-vlanid</span> - Authentication server timeout VLAN name. <span class="li-normal">type: str</span> </li>
  </ul>
  </ul>
 
@@ -121,6 +151,11 @@ Examples
             radius-timeout-overwrite: <value in [disable, enable]>
             security-mode: <value in [802.1X, 802.1X-mac-based]>
             user-group: <value of string>
+            framevid-apply: <value in [disable, enable]>
+            eap-auto-untagged-vlans: <value in [disable, enable]>
+            authserver-timeout-period: <value of integer>
+            authserver-timeout-vlan: <value in [disable, enable]>
+            authserver-timeout-vlanid: <value of string>
 
 
 

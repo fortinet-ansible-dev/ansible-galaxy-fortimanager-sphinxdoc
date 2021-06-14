@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_admin_setting</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -55,7 +80,7 @@ Parameters
  <li><span class="li-head">chassis-mgmt</span> - Enable or disable chassis management. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">chassis-update-interval</span> - Chassis background update interval (4 - 1440 mins). <span class="li-normal">type: int</span>  <span class="li-normal">default: 15</span> </li>
  <li><span class="li-head">device_sync_status</span> - Enable/disable device synchronization status indication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">gui-theme</span> - Color scheme to use for the administration GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, space, calla-lily, binary-tunnel, diving, dreamy, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, panda, polar-bear, parrot, cave]</span>  <span class="li-normal">default: blue</span> </li>
+ <li><span class="li-head">gui-theme</span> - Color scheme to use for the administration GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, space, calla-lily, binary-tunnel, diving, dreamy, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, panda, polar-bear, parrot, cave, circuit-board, mars, blue-sea, mountain, zebra, contrast-dark]</span>  <span class="li-normal">default: blue</span> </li>
  <li><span class="li-head">http_port</span> - HTTP port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
  <li><span class="li-head">https_port</span> - HTTPS port. <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span> </li>
  <li><span class="li-head">idle_timeout</span> - Idle timeout (1 - 480 min). <span class="li-normal">type: int</span>  <span class="li-normal">default: 15</span> </li>
@@ -79,6 +104,12 @@ Parameters
  <li><span class="li-head">show_tcl_script</span> - Enable/disable TCL script. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  <li><span class="li-head">unreg_dev_opt</span> - Action to take when unregistered device connects to FortiManager. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [add_no_service, ignore, add_allow_service]</span>  <span class="li-normal">default: add_allow_service</span> </li>
  <li><span class="li-head">webadmin_language</span> - Web admin language. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto_detect, english, simplified_chinese, traditional_chinese, japanese, korean, spanish]</span>  <span class="li-normal">default: auto_detect</span> </li>
+ <li><span class="li-head">show-fct-manager</span> - Enable/disable FCT manager. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">auth-addr</span> - IP which is used by FGT to authorize FMG. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-port</span> - Port which is used by FGT to authorize FMG. <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span> </li>
+ <li><span class="li-head">idle_timeout_api</span> - Idle timeout for API sessions (1 - 28800 sec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 900</span> </li>
+ <li><span class="li-head">idle_timeout_gui</span> - Idle timeout for GUI sessions (60 - 28800 sec). <span class="li-normal">type: int</span>  <span class="li-normal">default: 900</span> </li>
+ <li><span class="li-head">sdwan-skip-unmapped-input-device</span> - Skip unmapped interface for sdwan/rule/input-device instead of report mapping error. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
  </ul>
  </ul>
 
@@ -155,6 +186,12 @@ Examples
             show_tcl_script: <value in [disable, enable]>
             unreg_dev_opt: <value in [add_no_service, ignore, add_allow_service]>
             webadmin_language: <value in [auto_detect, english, simplified_chinese, ...]>
+            show-fct-manager: <value in [disable, enable]>
+            auth-addr: <value of string>
+            auth-port: <value of integer>
+            idle_timeout_api: <value of integer>
+            idle_timeout_gui: <value of integer>
+            sdwan-skip-unmapped-input-device: <value in [disable, enable]>
 
 
 

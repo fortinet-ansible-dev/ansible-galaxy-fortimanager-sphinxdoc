@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_internetservicegroup</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -50,6 +75,7 @@ Parameters
  <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">member</span> - Internet Service group member. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">direction</span> - How this service may be used (source, destination or both). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [both, source, destination]</span> </li>
  </ul>
  </ul>
 
@@ -97,6 +123,7 @@ Examples
             comment: <value of string>
             member: <value of string>
             name: <value of string>
+            direction: <value in [both, source, destination]>
 
 
 

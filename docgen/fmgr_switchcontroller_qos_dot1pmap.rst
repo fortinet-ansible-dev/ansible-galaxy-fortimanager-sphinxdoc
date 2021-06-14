@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>switchcontroller_qos_dot1pmap</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -57,6 +82,7 @@ Parameters
  <li><span class="li-head">priority-5</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
  <li><span class="li-head">priority-6</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
  <li><span class="li-head">priority-7</span> - COS queue mapped to dot1p priority number. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [queue-0, queue-1, queue-2, queue-3, queue-4, queue-5, queue-6, queue-7]</span> </li>
+ <li><span class="li-head">egress-pri-tagging</span> - Enable/disable egress priority-tag frame. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -111,6 +137,7 @@ Examples
             priority-5: <value in [queue-0, queue-1, queue-2, ...]>
             priority-6: <value in [queue-0, queue-1, queue-2, ...]>
             priority-7: <value in [queue-0, queue-1, queue-2, ...]>
+            egress-pri-tagging: <value in [disable, enable]>
 
 
 

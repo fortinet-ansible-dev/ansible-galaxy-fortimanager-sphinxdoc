@@ -4,8 +4,8 @@
 
 .. _fmgr_pkg_footer_policy:
 
-fmgr_pkg_footer_policy
-++++++++++++++++++++++
+fmgr_pkg_footer_policy -- Configure IPv4/IPv6 policies.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_footer_policy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -45,7 +70,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">pkg_footer_policy</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">pkg_footer_policy</span> - Configure IPv4/IPv6 policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">action</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [deny, accept, ipsec, ssl-vpn]</span> </li>
  <li><span class="li-head">active-auth-method</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ntlm, basic, digest, form]</span> </li>
@@ -276,6 +301,29 @@ Parameters
  <li><span class="li-head">webproxy-forward-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">webproxy-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wsso</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">fsso-groups</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">match-vip-only</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">best-route</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">decrypted-traffic-mirror</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">geoip-match</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical-location, registered-location]</span> </li>
+ <li><span class="li-head">internet-service-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-name</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">poolname6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">src-vendor-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vendor-mac</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cgn-eif</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">cgn-eim</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">cgn-log-server-grp</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cgn-resource-quota</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">cgn-session-quota</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dynamic-shaping</span> - Enable/disable dynamic RADIUS defined traffic shaping. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">file-filter-profile</span> - Name of an existing file-filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">passive-wan-health-measurement</span> - Enable/disable passive WAN health measurement. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">policy-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">videofilter-profile</span> - Name of an existing VideoFilter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-ems-tag</span> - Source ztna-ems-tag names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-geo-tag</span> - Source ztna-geo-tag names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-status</span> - Enable/disable zero trust access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -310,7 +358,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure IPv4/IPv6 policies.
       fmgr_pkg_footer_policy:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -572,6 +620,29 @@ Examples
             webproxy-forward-server: <value of string>
             webproxy-profile: <value of string>
             wsso: <value in [disable, enable]>
+            fsso-groups: <value of string>
+            match-vip-only: <value in [disable, enable]>
+            best-route: <value in [disable, enable]>
+            decrypted-traffic-mirror: <value of string>
+            geoip-match: <value in [physical-location, registered-location]>
+            internet-service-name: <value of string>
+            internet-service-src-name: <value of string>
+            poolname6: <value of string>
+            src-vendor-mac: <value of string>
+            vendor-mac: <value of string>
+            cgn-eif: <value in [disable, enable]>
+            cgn-eim: <value in [disable, enable]>
+            cgn-log-server-grp: <value of string>
+            cgn-resource-quota: <value of integer>
+            cgn-session-quota: <value of integer>
+            dynamic-shaping: <value in [disable, enable]>
+            file-filter-profile: <value of string>
+            passive-wan-health-measurement: <value in [disable, enable]>
+            policy-offload: <value in [disable, enable]>
+            videofilter-profile: <value of string>
+            ztna-ems-tag: <value of string>
+            ztna-geo-tag: <value of string>
+            ztna-status: <value in [disable, enable]>
 
 
 

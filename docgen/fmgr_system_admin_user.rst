@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system_admin_user</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -144,12 +169,15 @@ Parameters
  <li><span class="li-head">trusthost8</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
  <li><span class="li-head">trusthost9</span> - Admin user trusted host IP, default 255. <span class="li-normal">type: str</span>  <span class="li-normal">default: 255.255.255.255 255.255.255.255</span> </li>
  <li><span class="li-head">two-factor-auth</span> - Enable 2-factor authentication (certificate + password). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">user_type</span> - User type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [local, radius, ldap, tacacs-plus, pki-auth, group]</span>  <span class="li-normal">default: local</span> </li>
+ <li><span class="li-head">user_type</span> - User type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [local, radius, ldap, tacacs-plus, pki-auth, group, sso]</span>  <span class="li-normal">default: local</span> </li>
  <li><span class="li-head">userid</span> - User name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">web-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
  <li><span class="li-head">web-filter-name</span> - Web filter name. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">wildcard</span> - Enable/disable wildcard remote authentication. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">login-max</span> - Max login session for this user. <span class="li-normal">type: int</span>  <span class="li-normal">default: 32</span> </li>
+ <li><span class="li-head">use-global-theme</span> - Enable/disble global theme for administration GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">user-theme</span> - Color scheme to use for the admin user GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, circuit-board, calla-lily, binary-tunnel, mars, blue-sea, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, mountain, panda, parrot, cave, zebra, contrast-dark]</span>  <span class="li-normal">default: blue</span> </li>
  </ul>
  </ul>
 
@@ -297,6 +325,9 @@ Examples
               -
                   web-filter-name: <value of string>
             wildcard: <value in [disable, enable]>
+            login-max: <value of integer>
+            use-global-theme: <value in [disable, enable]>
+            user-theme: <value in [blue, green, red, ...]>
 
 
 

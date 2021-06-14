@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_footer_policy6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -185,6 +210,16 @@ Parameters
  <li><span class="li-head">voip-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vpntunnel</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">webfilter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">waf-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webcache</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webcache-https</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">webproxy-forward-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webproxy-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">decrypted-traffic-mirror</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fsso-groups</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cgn-log-server-grp</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">file-filter-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">policy-offload</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -382,6 +417,16 @@ Examples
             voip-profile: <value of string>
             vpntunnel: <value of string>
             webfilter-profile: <value of string>
+            waf-profile: <value of string>
+            webcache: <value in [disable, enable]>
+            webcache-https: <value in [disable, enable]>
+            webproxy-forward-server: <value of string>
+            webproxy-profile: <value of string>
+            decrypted-traffic-mirror: <value of string>
+            fsso-groups: <value of string>
+            cgn-log-server-grp: <value of string>
+            file-filter-profile: <value of string>
+            policy-offload: <value in [disable, enable]>
 
 
 

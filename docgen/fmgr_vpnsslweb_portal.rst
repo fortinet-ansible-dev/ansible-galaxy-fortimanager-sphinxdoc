@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>vpnsslweb_portal</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -70,7 +95,7 @@ Parameters
  <li><span class="li-head">preconnection-id</span> - The numeric ID of the RDP source (0-2147483648). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">remote-port</span> - Remote port (0 - 65535). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">security</span> - Security mode for RDP connection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [rdp, nla, tls, any]</span> </li>
- <li><span class="li-head">server-layout</span> - Server side keyboard layout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [en-us-qwerty, de-de-qwertz, fr-fr-azerty, it-it-qwerty, sv-se-qwerty, failsafe, en-gb-qwerty, es-es-qwerty, fr-ch-qwertz, ja-jp-qwerty, pt-br-qwerty, tr-tr-qwerty]</span> </li>
+ <li><span class="li-head">server-layout</span> - Server side keyboard layout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [en-us-qwerty, de-de-qwertz, fr-fr-azerty, it-it-qwerty, sv-se-qwerty, failsafe, en-gb-qwerty, es-es-qwerty, fr-ch-qwertz, ja-jp-qwerty, pt-br-qwerty, tr-tr-qwerty, fr-ca-qwerty]</span> </li>
  <li><span class="li-head">show-status-window</span> - Enable/disable showing of status window. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">sso</span> - Single Sign-On. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, static, auto]</span> </li>
  <li><span class="li-head">sso-credential</span> - Single sign-on credentials. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [sslvpn-login, alternative]</span> </li>
@@ -78,6 +103,7 @@ Parameters
  <li><span class="li-head">sso-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">sso-username</span> - SSO user name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">url</span> - URL parameter. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">domain</span> - Login domain. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">name</span> - Bookmark group name. <span class="li-normal">type: str</span> </li>
  </ul>
@@ -139,7 +165,7 @@ Parameters
  </ul>
  <li><span class="li-head">split-tunneling</span> - Enable/disable IPv4 split tunneling. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">split-tunneling-routing-address</span> - IPv4 SSL-VPN tunnel mode firewall address objects that override firewall policy destination addresses to control split-tunneling access. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">theme</span> - Web portal color scheme. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [gray, blue, orange, crimson, steelblue, darkgrey, green, melongene, red, mariner]</span> </li>
+ <li><span class="li-head">theme</span> - Web portal color scheme. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [gray, blue, orange, crimson, steelblue, darkgrey, green, melongene, red, mariner, neutrino, jade, graphite, dark-matter, onyx, eclipse]</span> </li>
  <li><span class="li-head">tunnel-mode</span> - Enable/disable IPv4 SSL-VPN tunnel mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">user-bookmark</span> - Enable to allow web portal users to create their own bookmarks. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">user-group-bookmark</span> - Enable to allow web portal users to create bookmarks for all users in the same user group. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -147,6 +173,21 @@ Parameters
  <li><span class="li-head">windows-forticlient-download-url</span> - Download URL for Windows FortiClient. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-server1</span> - IPv4 WINS server 1. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-server2</span> - IPv4 WINS server 1. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">skip-check-for-browser</span> - Enable to skip host check for browser support. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">smb-max-version</span> - SMB maximum client protocol version. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [smbv1, smbv2, smbv3]</span> </li>
+ <li><span class="li-head">smb-min-version</span> - SMB minimum client protocol version. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [smbv1, smbv2, smbv3]</span> </li>
+ <li><span class="li-head">ipv6-split-tunneling-routing-negate</span> - Enable to negate IPv6 split tunneling routing address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">split-tunneling-routing-negate</span> - Enable to negate split tunneling routing address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">os-check-list</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> - OS check options. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, check-up-to-date, deny]</span> </li>
+ <li><span class="li-head">latest-patch-level</span> - Latest OS patch level. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tolerance</span> - OS patch level tolerance. <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">prefer-ipv6-dns</span> - prefer to query IPv6 dns first if enabled. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">rewrite-ip-uri-ui</span> - Rewrite contents for URI contains IP and "/ui/". <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">use-sdwan</span> - Use SD-WAN rules to get output interface. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -235,6 +276,7 @@ Examples
                         sso-password: <value of string>
                         sso-username: <value of string>
                         url: <value of string>
+                        domain: <value of string>
                   name: <value of string>
             custom-lang: <value of string>
             customize-forticlient-download-url: <value in [disable, enable]>
@@ -302,6 +344,19 @@ Examples
             windows-forticlient-download-url: <value of string>
             wins-server1: <value of string>
             wins-server2: <value of string>
+            skip-check-for-browser: <value in [disable, enable]>
+            smb-max-version: <value in [smbv1, smbv2, smbv3]>
+            smb-min-version: <value in [smbv1, smbv2, smbv3]>
+            ipv6-split-tunneling-routing-negate: <value in [disable, enable]>
+            split-tunneling-routing-negate: <value in [disable, enable]>
+            os-check-list:
+               action: <value in [allow, check-up-to-date, deny]>
+               latest-patch-level: <value of string>
+               name: <value of string>
+               tolerance: <value of integer>
+            prefer-ipv6-dns: <value in [disable, enable]>
+            rewrite-ip-uri-ui: <value in [disable, enable]>
+            use-sdwan: <value in [disable, enable]>
 
 
 

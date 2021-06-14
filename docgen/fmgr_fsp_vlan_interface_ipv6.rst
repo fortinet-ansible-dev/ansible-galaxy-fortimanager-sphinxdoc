@@ -4,8 +4,8 @@
 
 .. _fmgr_fsp_vlan_interface_ipv6:
 
-fmgr_fsp_vlan_interface_ipv6
-++++++++++++++++++++++++++++
+fmgr_fsp_vlan_interface_ipv6 -- IPv6 of interface.
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fsp_vlan_interface_ipv6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -45,7 +70,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vlan</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">fsp_vlan_interface_ipv6</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">fsp_vlan_interface_ipv6</span> - IPv6 of interface. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">autoconf</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dhcp6-client-options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [rapid, iapd, iana, dns, dnsname]</span> </li>
@@ -58,7 +83,7 @@ Parameters
  <li><span class="li-head">dhcp6-relay-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dhcp6-relay-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [regular]</span> </li>
  <li><span class="li-head">ip6-address</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap]</span> </li>
+ <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric]</span> </li>
  <li><span class="li-head">ip6-default-life</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">ip6-dns-server-override</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ip6-hop-limit</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -81,6 +106,45 @@ Parameters
  <li><span class="li-head">nd-timestamp-fuzz</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">vrip6_link_local</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">vrrp-virtual-mac6</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ip6-delegated-prefix-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">autonomous-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">onlink-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">prefix-id</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">rdnss</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">rdnss-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [delegated, default, specify]</span> </li>
+ <li><span class="li-head">subnet</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">upstream-interface</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">ip6-extra-addr</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">ip6-prefix-list</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">autonomous-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dnssl</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">onlink-flag</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">preferred-life-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">prefix</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">rdnss</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">valid-life-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ </ul>
+ <li><span class="li-head">vrrp6</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
+ <li><span class="li-head">accept-mode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">adv-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">preempt</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">priority</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">start-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vrdst6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">vrgrp</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">vrid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">vrip6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ </ul>
+ <li><span class="li-head">cli-conn6-status</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">icmp6-send-redirect</span> - Enable/disable sending of ICMPv6 redirects. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">interface-identifier</span> - IPv6 interface identifier. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ip6-prefix-mode</span> - Assigning a prefix from DHCP or RA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dhcp6, ra]</span> </li>
+ <li><span class="li-head">ra-send-mtu</span> - Enable/disable sending link MTU in RA packet. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">unique-autoconf-addr</span> - Enable/disable unique auto config address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -115,7 +179,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: IPv6 of interface.
       fmgr_fsp_vlan_interface_ipv6:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -150,6 +214,336 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
             ip6-default-life: <value of integer>
             ip6-dns-server-override: <value in [disable, enable]>
             ip6-hop-limit: <value of integer>
@@ -172,6 +566,45 @@ Examples
             nd-timestamp-fuzz: <value of integer>
             vrip6_link_local: <value of string>
             vrrp-virtual-mac6: <value in [disable, enable]>
+            ip6-delegated-prefix-list:
+              -
+                  autonomous-flag: <value in [disable, enable]>
+                  onlink-flag: <value in [disable, enable]>
+                  prefix-id: <value of integer>
+                  rdnss: <value of string>
+                  rdnss-service: <value in [delegated, default, specify]>
+                  subnet: <value of string>
+                  upstream-interface: <value of string>
+            ip6-extra-addr:
+              -
+                  prefix: <value of string>
+            ip6-prefix-list:
+              -
+                  autonomous-flag: <value in [disable, enable]>
+                  dnssl: <value of string>
+                  onlink-flag: <value in [disable, enable]>
+                  preferred-life-time: <value of integer>
+                  prefix: <value of string>
+                  rdnss: <value of string>
+                  valid-life-time: <value of integer>
+            vrrp6:
+              -
+                  accept-mode: <value in [disable, enable]>
+                  adv-interval: <value of integer>
+                  preempt: <value in [disable, enable]>
+                  priority: <value of integer>
+                  start-time: <value of integer>
+                  status: <value in [disable, enable]>
+                  vrdst6: <value of string>
+                  vrgrp: <value of integer>
+                  vrid: <value of integer>
+                  vrip6: <value of string>
+            cli-conn6-status: <value of integer>
+            icmp6-send-redirect: <value in [disable, enable]>
+            interface-identifier: <value of string>
+            ip6-prefix-mode: <value in [dhcp6, ra]>
+            ra-send-mtu: <value in [disable, enable]>
+            unique-autoconf-addr: <value in [disable, enable]>
 
 
 

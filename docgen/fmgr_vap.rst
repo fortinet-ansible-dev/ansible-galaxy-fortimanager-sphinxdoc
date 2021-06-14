@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>vap</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -74,7 +99,7 @@ Parameters
  <li><span class="li-head">captive-portal-radius-server</span> - Captive portal RADIUS server domain name or IP address. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">captive-portal-session-timeout-interval</span> - Session timeout interval (0 - 864000 sec, default = 0). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">dhcp-lease-time</span> - DHCP lease time in seconds for NAT IP address. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">dhcp-option82-circuit-id-insertion</span> - Enable/disable DHCP option 82 circuit-id insert (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, style-1, style-2]</span> </li>
+ <li><span class="li-head">dhcp-option82-circuit-id-insertion</span> - Enable/disable DHCP option 82 circuit-id insert (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, style-1, style-2, style-3]</span> </li>
  <li><span class="li-head">dhcp-option82-insertion</span> - Enable/disable DHCP option 82 insert (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dhcp-option82-remote-id-insertion</span> - Enable/disable DHCP option 82 remote-id insert (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, style-1]</span> </li>
  <li><span class="li-head">dynamic-vlan</span> - Enable/disable dynamic VLAN assignment. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -113,7 +138,7 @@ Parameters
  <li><span class="li-head">captive-portal-session-timeout-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">client-count</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">dhcp-lease-time</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">dhcp-option82-circuit-id-insertion</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, style-1, style-2]</span> </li>
+ <li><span class="li-head">dhcp-option82-circuit-id-insertion</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, style-1, style-2, style-3]</span> </li>
  <li><span class="li-head">dhcp-option82-insertion</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">dhcp-option82-remote-id-insertion</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, style-1]</span> </li>
  <li><span class="li-head">dynamic-vlan</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -163,7 +188,7 @@ Parameters
  <li><span class="li-head">pmf-assoc-comeback-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">pmf-sa-query-retry-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">portal-message-override-group</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">portal-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auth, auth+disclaimer, disclaimer, email-collect, cmcc, cmcc-macauth, auth-mac]</span> </li>
+ <li><span class="li-head">portal-type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auth, auth+disclaimer, disclaimer, email-collect, cmcc, cmcc-macauth, auth-mac, external-auth, external-macauth]</span> </li>
  <li><span class="li-head">probe-resp-suppression</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">probe-resp-threshold</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ptk-rekey</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -186,7 +211,7 @@ Parameters
  <li><span class="li-head">sae-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31]</span> </li>
  <li><span class="li-head">sae-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
  <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">security</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [None, WEP64, wep64, WEP128, wep128, WPA_PSK, WPA_RADIUS, WPA, WPA2, WPA2_AUTO, open, wpa-personal, wpa-enterprise, captive-portal, wpa-only-personal, wpa-only-enterprise, wpa2-only-personal, wpa2-only-enterprise, wpa-personal+captive-portal, wpa-only-personal+captive-portal, wpa2-only-personal+captive-portal, osen, wpa3-enterprise, sae, sae-transition, owe, wpa3-sae, wpa3-sae-transition]</span> </li>
+ <li><span class="li-head">security</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [None, WEP64, wep64, WEP128, wep128, WPA_PSK, WPA_RADIUS, WPA, WPA2, WPA2_AUTO, open, wpa-personal, wpa-enterprise, captive-portal, wpa-only-personal, wpa-only-enterprise, wpa2-only-personal, wpa2-only-enterprise, wpa-personal+captive-portal, wpa-only-personal+captive-portal, wpa2-only-personal+captive-portal, osen, wpa3-enterprise, sae, sae-transition, owe, wpa3-sae, wpa3-sae-transition, wpa3-only-enterprise, wpa3-enterprise-transition]</span> </li>
  <li><span class="li-head">security-exempt-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">security-obsolete-option</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">security-redirect-url</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
@@ -201,6 +226,45 @@ Parameters
  <li><span class="li-head">vlan-pooling</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wtp-group, round-robin, hash, disable]</span> </li>
  <li><span class="li-head">vlanid</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">voice-enterprise</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mu-mimo</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">_intf_device-access-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-control-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">captive-portal-auth-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">external-web-format</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto-detect, no-query-string, partial-query-string]</span> </li>
+ <li><span class="li-head">high-efficiency</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ipv6-rules</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [drop-icmp6ra, drop-icmp6rs, drop-llmnr6, drop-icmp6mld2, drop-dhcp6s, drop-dhcp6c, ndp-proxy, drop-ns-dad, drop-ns-nondad]</span> </li>
+ <li><span class="li-head">primary-wag-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secondary-wag-profile</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sticky-client-remove</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sticky-client-threshold-2g</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sticky-client-threshold-5g</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">target-wake-time</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-echo-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tunnel-fallback-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">additional-akms</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [akm6]</span> </li>
+ <li><span class="li-head">bss-color-partial</span> - Enable/disable 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bstm-disassociation-imminent</span> - Enable/disable forcing of disassociation after the BSTM request timer has been reached (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bstm-load-balancing-disassoc-timer</span> - Time interval for client to voluntarily leave AP before forcing a disassociation due to AP load-balancing (0 to 30, default = 10). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">bstm-rssi-disassoc-timer</span> - Time interval for client to voluntarily leave AP before forcing a disassociation due to low RSSI (0 to 2000, default = 200). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dhcp-address-enforcement</span> - Enable/disable DHCP address enforcement (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dhcp-option43-insertion</span> - Enable/disable insertion of DHCP option 43 (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">gas-comeback-delay</span> - GAS comeback delay (0 or 100 - 10000 milliseconds, default = 500). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">gas-fragmentation-limit</span> - GAS fragmentation limit (512 - 4096, default = 1024). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">igmp-snooping</span> - Enable/disable IGMP snooping. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mac-called-station-delimiter</span> - MAC called station delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mac-calling-station-delimiter</span> - MAC calling station delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mac-case</span> - MAC case (default = uppercase). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [uppercase, lowercase]</span> </li>
+ <li><span class="li-head">mac-password-delimiter</span> - MAC authentication password delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mac-username-delimiter</span> - MAC authentication username delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mbo</span> - Enable/disable Multiband Operation (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mbo-cell-data-conn-pref</span> - MBO cell data connection preference (0, 1, or 255, default = 1). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [excluded, prefer-not, prefer-use]</span> </li>
+ <li><span class="li-head">mpsk-profile</span> - MPSK profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">nac</span> - Enable/disable network access control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">nac-profile</span> - NAC profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">neighbor-report-dual-band</span> - Enable/disable dual-band neighbor report (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">port-macauth</span> - Enable/disable LAN port MAC authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, radius, address-group]</span> </li>
+ <li><span class="li-head">port-macauth-reauth-timeout</span> - LAN port MAC authentication re-authentication timeout value (default = 7200 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port-macauth-timeout</span> - LAN port MAC authentication idle timeout value (default = 600 sec). <span class="li-normal">type: int</span> </li>
  </ul>
  <li><span class="li-head">eap-reauth</span> - Enable/disable EAP re-authentication for WPA-Enterprise security. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">eap-reauth-intv</span> - EAP re-authentication interval (1800 - 864000 sec, default = 86400). <span class="li-normal">type: int</span> </li>
@@ -246,6 +310,7 @@ Parameters
  <li><span class="li-head">concurrent-clients</span> - Number of clients that can connect using this pre-shared key. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">key-name</span> - Pre-shared key name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">passphrase</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">mpsk-schedules</span> - Firewall schedule for MPSK passphrase. <span class="li-normal">type: str</span> </li>
  </ul>
  <li><span class="li-head">multicast-enhance</span> - Enable/disable converting multicast to unicast to improve performance (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">multicast-rate</span> - Multicast rate (0, 6000, 12000, or 24000 kbps, default = 0). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0, 6000, 12000, 24000]</span> </li>
@@ -256,7 +321,7 @@ Parameters
  <li><span class="li-head">pmf-assoc-comeback-timeout</span> - Protected Management Frames (PMF) comeback maximum timeout (1-20 sec). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">pmf-sa-query-retry-timeout</span> - Protected Management Frames (PMF) SA query retry timeout interval (1 - 5 100s of msec). <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">portal-message-override-group</span> - Replacement message group for this VAP (only available when security is set to a captive portal type). <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">portal-type</span> - Captive portal functionality. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auth, auth+disclaimer, disclaimer, email-collect, cmcc, cmcc-macauth, auth-mac]</span> </li>
+ <li><span class="li-head">portal-type</span> - Captive portal functionality. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auth, auth+disclaimer, disclaimer, email-collect, cmcc, cmcc-macauth, auth-mac, external-auth, external-macauth]</span> </li>
  <li><span class="li-head">probe-resp-suppression</span> - Enable/disable probe response suppression (to ignore weak signals) (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">probe-resp-threshold</span> - Minimum signal level/threshold in dBm required for the AP response to probe requests (-95 to -20, default = -80). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ptk-rekey</span> - Enable/disable PTK rekey for WPA-Enterprise security. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
@@ -277,7 +342,7 @@ Parameters
  <li><span class="li-head">rates-11n-ss12</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [mcs0/1, mcs1/1, mcs2/1, mcs3/1, mcs4/1, mcs5/1, mcs6/1, mcs7/1, mcs8/2, mcs9/2, mcs10/2, mcs11/2, mcs12/2, mcs13/2, mcs14/2, mcs15/2]</span> </li>
  <li><span class="li-head">rates-11n-ss34</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [mcs16/3, mcs17/3, mcs18/3, mcs19/3, mcs20/3, mcs21/3, mcs22/3, mcs23/3, mcs24/4, mcs25/4, mcs26/4, mcs27/4, mcs28/4, mcs29/4, mcs30/4, mcs31/4]</span> </li>
  <li><span class="li-head">schedule</span> - VAP schedule name. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">security</span> - Security mode for the wireless interface (default = wpa2-only-personal). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [None, WEP64, wep64, WEP128, wep128, WPA_PSK, WPA_RADIUS, WPA, WPA2, WPA2_AUTO, open, wpa-personal, wpa-enterprise, captive-portal, wpa-only-personal, wpa-only-enterprise, wpa2-only-personal, wpa2-only-enterprise, wpa-personal+captive-portal, wpa-only-personal+captive-portal, wpa2-only-personal+captive-portal, osen, wpa3-enterprise, sae, sae-transition, owe, wpa3-sae, wpa3-sae-transition]</span> </li>
+ <li><span class="li-head">security</span> - Security mode for the wireless interface (default = wpa2-only-personal). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [None, WEP64, wep64, WEP128, wep128, WPA_PSK, WPA_RADIUS, WPA, WPA2, WPA2_AUTO, open, wpa-personal, wpa-enterprise, captive-portal, wpa-only-personal, wpa-only-enterprise, wpa2-only-personal, wpa2-only-enterprise, wpa-personal+captive-portal, wpa-only-personal+captive-portal, wpa2-only-personal+captive-portal, osen, wpa3-enterprise, sae, sae-transition, owe, wpa3-sae, wpa3-sae-transition, wpa3-only-enterprise, wpa3-enterprise-transition]</span> </li>
  <li><span class="li-head">security-exempt-list</span> - Optional security exempt list for captive portal authentication. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">security-obsolete-option</span> - Enable/disable obsolete security options. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">security-redirect-url</span> - Optional URL for redirecting users after they pass captive portal authentication. <span class="li-normal">type: str</span> </li>
@@ -297,6 +362,59 @@ Parameters
  <li><span class="li-head">vlan-pooling</span> - Enable/disable VLAN pooling, to allow grouping of multiple wireless controller VLANs into VLAN pools (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [wtp-group, round-robin, hash, disable]</span> </li>
  <li><span class="li-head">vlanid</span> - Optional VLAN ID. <span class="li-normal">type: int</span> </li>
  <li><span class="li-head">voice-enterprise</span> - Enable/disable 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">address-group</span> - Address group ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">atf-weight</span> - Airtime weight in percentage (default = 20). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">mu-mimo</span> - Enable/disable Multi-user MIMO (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">owe-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [19, 20, 21]</span> </li>
+ <li><span class="li-head">owe-transition</span> - Enable/disable OWE transition mode support. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">owe-transition-ssid</span> - OWE transition mode peer SSID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sae-groups</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28, 29, 30, 31]</span> </li>
+ <li><span class="li-head">sae-password</span> - No description for the parameter <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">_intf_device-access-list</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">access-control-list</span> - access-control-list profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">captive-portal-auth-timeout</span> - Hard timeout - AP will always clear the session after timeout regardless of traffic (0 - 864000 sec, default = 0). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">external-web-format</span> - URL query parameter detection (default = auto-detect). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto-detect, no-query-string, partial-query-string]</span> </li>
+ <li><span class="li-head">high-efficiency</span> - Enable/disable 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ipv6-rules</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [drop-icmp6ra, drop-icmp6rs, drop-llmnr6, drop-icmp6mld2, drop-dhcp6s, drop-dhcp6c, ndp-proxy, drop-ns-dad, drop-ns-nondad]</span> </li>
+ <li><span class="li-head">primary-wag-profile</span> - Primary wireless access gateway profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secondary-wag-profile</span> - Secondary wireless access gateway profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sticky-client-remove</span> - Enable/disable sticky client remove to maintain good signal level clients in SSID. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">sticky-client-threshold-2g</span> - Minimum signal level/threshold in dBm required for the 2G client to be serviced by the AP (-95 to -20, default = -79). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sticky-client-threshold-5g</span> - Minimum signal level/threshold in dBm required for the 5G client to be serviced by the AP (-95 to -20, default = -76). <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">target-wake-time</span> - Enable/disable 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-echo-interval</span> - The time interval to send echo to both primary and secondary tunnel peers (1 - 65535 sec, default = 300). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">tunnel-fallback-interval</span> - The time interval for secondary tunnel to fall back to primary tunnel (0 - 65535 sec, default = 7200). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">additional-akms</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [akm6]</span> </li>
+ <li><span class="li-head">bss-color-partial</span> - Enable/disable 802. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bstm-disassociation-imminent</span> - Enable/disable forcing of disassociation after the BSTM request timer has been reached (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">bstm-load-balancing-disassoc-timer</span> - Time interval for client to voluntarily leave AP before forcing a disassociation due to AP load-balancing (0 to 30, default = 10). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">bstm-rssi-disassoc-timer</span> - Time interval for client to voluntarily leave AP before forcing a disassociation due to low RSSI (0 to 2000, default = 200). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dhcp-address-enforcement</span> - Enable/disable DHCP address enforcement (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dhcp-option43-insertion</span> - Enable/disable insertion of DHCP option 43 (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">gas-comeback-delay</span> - GAS comeback delay (0 or 100 - 10000 milliseconds, default = 500). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">gas-fragmentation-limit</span> - GAS fragmentation limit (512 - 4096, default = 1024). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">igmp-snooping</span> - Enable/disable IGMP snooping. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mac-called-station-delimiter</span> - MAC called station delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mac-calling-station-delimiter</span> - MAC calling station delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mac-case</span> - MAC case (default = uppercase). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [uppercase, lowercase]</span> </li>
+ <li><span class="li-head">mac-password-delimiter</span> - MAC authentication password delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mac-username-delimiter</span> - MAC authentication username delimiter (default = hyphen). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> </li>
+ <li><span class="li-head">mbo</span> - Enable/disable Multiband Operation (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">mbo-cell-data-conn-pref</span> - MBO cell data connection preference (0, 1, or 255, default = 1). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [excluded, prefer-not, prefer-use]</span> </li>
+ <li><span class="li-head">mpsk-profile</span> - MPSK profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">nac</span> - Enable/disable network access control. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">nac-profile</span> - NAC profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">neighbor-report-dual-band</span> - Enable/disable dual-band neighbor report (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">port-macauth</span> - Enable/disable LAN port MAC authentication (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, radius, address-group]</span> </li>
+ <li><span class="li-head">port-macauth-reauth-timeout</span> - LAN port MAC authentication re-authentication timeout value (default = 7200 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">port-macauth-timeout</span> - LAN port MAC authentication idle timeout value (default = 600 sec). <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">portal-message-overrides</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">auth-disclaimer-page</span> - Override auth-disclaimer-page message with message from portal-message-overrides group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-login-failed-page</span> - Override auth-login-failed-page message with message from portal-message-overrides group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-login-page</span> - Override auth-login-page message with message from portal-message-overrides group. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auth-reject-page</span> - Override auth-reject-page message with message from portal-message-overrides group. <span class="li-normal">type: str</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -407,7 +525,7 @@ Examples
             captive-portal-radius-server: <value of string>
             captive-portal-session-timeout-interval: <value of integer>
             dhcp-lease-time: <value of integer>
-            dhcp-option82-circuit-id-insertion: <value in [disable, style-1, style-2]>
+            dhcp-option82-circuit-id-insertion: <value in [disable, style-1, style-2, ...]>
             dhcp-option82-insertion: <value in [disable, enable]>
             dhcp-option82-remote-id-insertion: <value in [disable, style-1]>
             dynamic-vlan: <value in [disable, enable]>
@@ -486,7 +604,7 @@ Examples
                   captive-portal-session-timeout-interval: <value of integer>
                   client-count: <value of integer>
                   dhcp-lease-time: <value of integer>
-                  dhcp-option82-circuit-id-insertion: <value in [disable, style-1, style-2]>
+                  dhcp-option82-circuit-id-insertion: <value in [disable, style-1, style-2, ...]>
                   dhcp-option82-insertion: <value in [disable, enable]>
                   dhcp-option82-remote-id-insertion: <value in [disable, style-1]>
                   dynamic-vlan: <value in [disable, enable]>
@@ -721,6 +839,55 @@ Examples
                   vlan-pooling: <value in [wtp-group, round-robin, hash, ...]>
                   vlanid: <value of integer>
                   voice-enterprise: <value in [disable, enable]>
+                  mu-mimo: <value in [disable, enable]>
+                  _intf_device-access-list: <value of string>
+                  access-control-list: <value of string>
+                  captive-portal-auth-timeout: <value of integer>
+                  external-web-format: <value in [auto-detect, no-query-string, partial-query-string]>
+                  high-efficiency: <value in [disable, enable]>
+                  ipv6-rules:
+                    - drop-icmp6ra
+                    - drop-icmp6rs
+                    - drop-llmnr6
+                    - drop-icmp6mld2
+                    - drop-dhcp6s
+                    - drop-dhcp6c
+                    - ndp-proxy
+                    - drop-ns-dad
+                    - drop-ns-nondad
+                  primary-wag-profile: <value of string>
+                  secondary-wag-profile: <value of string>
+                  sticky-client-remove: <value in [disable, enable]>
+                  sticky-client-threshold-2g: <value of string>
+                  sticky-client-threshold-5g: <value of string>
+                  target-wake-time: <value in [disable, enable]>
+                  tunnel-echo-interval: <value of integer>
+                  tunnel-fallback-interval: <value of integer>
+                  additional-akms:
+                    - akm6
+                  bss-color-partial: <value in [disable, enable]>
+                  bstm-disassociation-imminent: <value in [disable, enable]>
+                  bstm-load-balancing-disassoc-timer: <value of integer>
+                  bstm-rssi-disassoc-timer: <value of integer>
+                  dhcp-address-enforcement: <value in [disable, enable]>
+                  dhcp-option43-insertion: <value in [disable, enable]>
+                  gas-comeback-delay: <value of integer>
+                  gas-fragmentation-limit: <value of integer>
+                  igmp-snooping: <value in [disable, enable]>
+                  mac-called-station-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+                  mac-calling-station-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+                  mac-case: <value in [uppercase, lowercase]>
+                  mac-password-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+                  mac-username-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+                  mbo: <value in [disable, enable]>
+                  mbo-cell-data-conn-pref: <value in [excluded, prefer-not, prefer-use]>
+                  mpsk-profile: <value of string>
+                  nac: <value in [disable, enable]>
+                  nac-profile: <value of string>
+                  neighbor-report-dual-band: <value in [disable, enable]>
+                  port-macauth: <value in [disable, radius, address-group]>
+                  port-macauth-reauth-timeout: <value of integer>
+                  port-macauth-timeout: <value of integer>
             eap-reauth: <value in [disable, enable]>
             eap-reauth-intv: <value of integer>
             eapol-key-retries: <value in [disable, enable]>
@@ -766,6 +933,7 @@ Examples
                   concurrent-clients: <value of string>
                   key-name: <value of string>
                   passphrase: <value of string>
+                  mpsk-schedules: <value of string>
             multicast-enhance: <value in [disable, enable]>
             multicast-rate: <value in [0, 6000, 12000, ...]>
             name: <value of string>
@@ -944,6 +1112,86 @@ Examples
             vlan-pooling: <value in [wtp-group, round-robin, hash, ...]>
             vlanid: <value of integer>
             voice-enterprise: <value in [disable, enable]>
+            address-group: <value of string>
+            atf-weight: <value of integer>
+            mu-mimo: <value in [disable, enable]>
+            owe-groups:
+              - 19
+              - 20
+              - 21
+            owe-transition: <value in [disable, enable]>
+            owe-transition-ssid: <value of string>
+            sae-groups:
+              - 1
+              - 2
+              - 5
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+              - 20
+              - 21
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+            sae-password: <value of string>
+            _intf_device-access-list: <value of string>
+            access-control-list: <value of string>
+            captive-portal-auth-timeout: <value of integer>
+            external-web-format: <value in [auto-detect, no-query-string, partial-query-string]>
+            high-efficiency: <value in [disable, enable]>
+            ipv6-rules:
+              - drop-icmp6ra
+              - drop-icmp6rs
+              - drop-llmnr6
+              - drop-icmp6mld2
+              - drop-dhcp6s
+              - drop-dhcp6c
+              - ndp-proxy
+              - drop-ns-dad
+              - drop-ns-nondad
+            primary-wag-profile: <value of string>
+            secondary-wag-profile: <value of string>
+            sticky-client-remove: <value in [disable, enable]>
+            sticky-client-threshold-2g: <value of string>
+            sticky-client-threshold-5g: <value of string>
+            target-wake-time: <value in [disable, enable]>
+            tunnel-echo-interval: <value of integer>
+            tunnel-fallback-interval: <value of integer>
+            additional-akms:
+              - akm6
+            bss-color-partial: <value in [disable, enable]>
+            bstm-disassociation-imminent: <value in [disable, enable]>
+            bstm-load-balancing-disassoc-timer: <value of integer>
+            bstm-rssi-disassoc-timer: <value of integer>
+            dhcp-address-enforcement: <value in [disable, enable]>
+            dhcp-option43-insertion: <value in [disable, enable]>
+            gas-comeback-delay: <value of integer>
+            gas-fragmentation-limit: <value of integer>
+            igmp-snooping: <value in [disable, enable]>
+            mac-called-station-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+            mac-calling-station-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+            mac-case: <value in [uppercase, lowercase]>
+            mac-password-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+            mac-username-delimiter: <value in [hyphen, single-hyphen, colon, ...]>
+            mbo: <value in [disable, enable]>
+            mbo-cell-data-conn-pref: <value in [excluded, prefer-not, prefer-use]>
+            mpsk-profile: <value of string>
+            nac: <value in [disable, enable]>
+            nac-profile: <value of string>
+            neighbor-report-dual-band: <value in [disable, enable]>
+            port-macauth: <value in [disable, radius, address-group]>
+            port-macauth-reauth-timeout: <value of integer>
+            port-macauth-timeout: <value of integer>
+            portal-message-overrides:
+               auth-disclaimer-page: <value of string>
+               auth-login-failed-page: <value of string>
+               auth-login-page: <value of string>
+               auth-reject-page: <value of string>
 
 
 

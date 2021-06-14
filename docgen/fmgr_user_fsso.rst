@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>user_fsso</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -74,8 +99,14 @@ Parameters
  <li><span class="li-head">source-ip6</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">ssl</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">ssl-trusted-cert</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, fortiems, fortinac]</span> </li>
+ <li><span class="li-head">type</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, fortiems, fortinac, fortiems-cloud]</span> </li>
  <li><span class="li-head">user-info-server</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-poll</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ldap-poll-filter</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-poll-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">group-poll-interval</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  <li><span class="li-head">ldap-server</span> - LDAP server to get group information. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> </li>
@@ -96,6 +127,16 @@ Parameters
  <li><span class="li-head">server5</span> - Domain name or IP address of the fifth FSSO collector agent. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">source-ip</span> - Source IP for communications to FSSO agent. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">source-ip6</span> - IPv6 source for communications to FSSO agent. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-poll</span> - Enable/disable automatic fetching of groups from LDAP server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ldap-poll-filter</span> - Filter used to fetch groups. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ldap-poll-interval</span> - Interval in minutes within to fetch groups from LDAP server. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ssl</span> - Enable/disable use of SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-trusted-cert</span> - Trusted server certificate or CA certificate. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">type</span> - Server type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, fortiems, fortinac, fortiems-cloud]</span> </li>
+ <li><span class="li-head">user-info-server</span> - LDAP server to get user information. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">group-poll-interval</span> - Interval in minutes within to fetch groups from FSSO server, or unset to disable. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">interface</span> - Specify outgoing interface to reach server. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">interface-select-method</span> - Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, sdwan, specify]</span> </li>
  </ul>
  </ul>
 
@@ -168,8 +209,14 @@ Examples
                   source-ip6: <value of string>
                   ssl: <value in [disable, enable]>
                   ssl-trusted-cert: <value of string>
-                  type: <value in [default, fortiems, fortinac]>
+                  type: <value in [default, fortiems, fortinac, ...]>
                   user-info-server: <value of string>
+                  ldap-poll: <value in [disable, enable]>
+                  ldap-poll-filter: <value of string>
+                  ldap-poll-interval: <value of integer>
+                  group-poll-interval: <value of integer>
+                  interface: <value of string>
+                  interface-select-method: <value in [auto, sdwan, specify]>
             ldap-server: <value of string>
             name: <value of string>
             password: <value of string>
@@ -189,6 +236,16 @@ Examples
             server5: <value of string>
             source-ip: <value of string>
             source-ip6: <value of string>
+            ldap-poll: <value in [disable, enable]>
+            ldap-poll-filter: <value of string>
+            ldap-poll-interval: <value of integer>
+            ssl: <value in [disable, enable]>
+            ssl-trusted-cert: <value of string>
+            type: <value in [default, fortiems, fortinac, ...]>
+            user-info-server: <value of string>
+            group-poll-interval: <value of integer>
+            interface: <value of string>
+            interface-select-method: <value in [auto, sdwan, specify]>
 
 
 

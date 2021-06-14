@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>wanopt_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -51,6 +76,58 @@ Parameters
  <li><span class="li-head">comments</span> - Comment. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - Profile name. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">transparent</span> - Enable/disable transparent mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">cifs</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">byte-caching</span> - Enable/disable byte-caching. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-traffic</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">prefer-chunking</span> - Select dynamic or fixed-size data chunking for WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dynamic, fix]</span> </li>
+ <li><span class="li-head">protocol-opt</span> - Select Protocol specific optimitation or generic TCP optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [protocol, tcp]</span> </li>
+ <li><span class="li-head">secure-tunnel</span> - Enable/disable securing the WAN Opt tunnel using SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
+ </ul>
+ <li><span class="li-head">ftp</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">byte-caching</span> - Enable/disable byte-caching. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-traffic</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">prefer-chunking</span> - Select dynamic or fixed-size data chunking for WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dynamic, fix]</span> </li>
+ <li><span class="li-head">protocol-opt</span> - Select Protocol specific optimitation or generic TCP optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [protocol, tcp]</span> </li>
+ <li><span class="li-head">secure-tunnel</span> - Enable/disable securing the WAN Opt tunnel using SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl</span> - Enable/disable SSL/TLS offloading (hardware acceleration) for traffic in this tunnel. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
+ </ul>
+ <li><span class="li-head">http</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">byte-caching</span> - Enable/disable byte-caching. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-traffic</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">prefer-chunking</span> - Select dynamic or fixed-size data chunking for WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dynamic, fix]</span> </li>
+ <li><span class="li-head">protocol-opt</span> - Select Protocol specific optimitation or generic TCP optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [protocol, tcp]</span> </li>
+ <li><span class="li-head">secure-tunnel</span> - Enable/disable securing the WAN Opt tunnel using SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl</span> - Enable/disable SSL/TLS offloading (hardware acceleration) for traffic in this tunnel. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
+ </ul>
+ <li><span class="li-head">mapi</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">byte-caching</span> - Enable/disable byte-caching. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">log-traffic</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">secure-tunnel</span> - Enable/disable securing the WAN Opt tunnel using SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">status</span> - Enable/disable WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
+ </ul>
+ <li><span class="li-head">tcp</span> <span class="li-normal">type: dict</span> </li>
+ <ul class="ul-self">
+ <li><span class="li-head">byte-caching</span> - Enable/disable byte-caching. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">byte-caching-opt</span> - Select whether TCP byte-caching uses system memory only or both memory and disk space. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [mem-only, mem-disk]</span> </li>
+ <li><span class="li-head">log-traffic</span> - Enable/disable logging. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">port</span> - Port numbers or port number ranges for TCP. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">secure-tunnel</span> - Enable/disable securing the WAN Opt tunnel using SSL. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl</span> - Enable/disable SSL/TLS offloading (hardware acceleration) for traffic in this tunnel. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">ssl-port</span> - No description for the parameter <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">status</span> - Enable/disable WAN Optimization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tunnel-sharing</span> - Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [private, shared, express-shared]</span> </li>
+ </ul>
  </ul>
  </ul>
 
@@ -99,6 +176,48 @@ Examples
             comments: <value of string>
             name: <value of string>
             transparent: <value in [disable, enable]>
+            cifs:
+               byte-caching: <value in [disable, enable]>
+               log-traffic: <value in [disable, enable]>
+               prefer-chunking: <value in [dynamic, fix]>
+               protocol-opt: <value in [protocol, tcp]>
+               secure-tunnel: <value in [disable, enable]>
+               status: <value in [disable, enable]>
+               tunnel-sharing: <value in [private, shared, express-shared]>
+            ftp:
+               byte-caching: <value in [disable, enable]>
+               log-traffic: <value in [disable, enable]>
+               prefer-chunking: <value in [dynamic, fix]>
+               protocol-opt: <value in [protocol, tcp]>
+               secure-tunnel: <value in [disable, enable]>
+               ssl: <value in [disable, enable]>
+               status: <value in [disable, enable]>
+               tunnel-sharing: <value in [private, shared, express-shared]>
+            http:
+               byte-caching: <value in [disable, enable]>
+               log-traffic: <value in [disable, enable]>
+               prefer-chunking: <value in [dynamic, fix]>
+               protocol-opt: <value in [protocol, tcp]>
+               secure-tunnel: <value in [disable, enable]>
+               ssl: <value in [disable, enable]>
+               status: <value in [disable, enable]>
+               tunnel-sharing: <value in [private, shared, express-shared]>
+            mapi:
+               byte-caching: <value in [disable, enable]>
+               log-traffic: <value in [disable, enable]>
+               secure-tunnel: <value in [disable, enable]>
+               status: <value in [disable, enable]>
+               tunnel-sharing: <value in [private, shared, express-shared]>
+            tcp:
+               byte-caching: <value in [disable, enable]>
+               byte-caching-opt: <value in [mem-only, mem-disk]>
+               log-traffic: <value in [disable, enable]>
+               port: <value of string>
+               secure-tunnel: <value in [disable, enable]>
+               ssl: <value in [disable, enable]>
+               ssl-port: <value of integer>
+               status: <value in [disable, enable]>
+               tunnel-sharing: <value in [private, shared, express-shared]>
 
 
 

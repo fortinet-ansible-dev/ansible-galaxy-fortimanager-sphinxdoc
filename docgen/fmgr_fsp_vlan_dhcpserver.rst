@@ -4,8 +4,8 @@
 
 .. _fmgr_fsp_vlan_dhcpserver:
 
-fmgr_fsp_vlan_dhcpserver
-++++++++++++++++++++++++
+fmgr_fsp_vlan_dhcpserver -- Configure DHCP servers.
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10
 
@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fsp_vlan_dhcpserver</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -45,7 +70,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vlan</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">fsp_vlan_dhcpserver</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">fsp_vlan_dhcpserver</span> - Configure DHCP servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">auto-configuration</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">conflicted-ip-timeout</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
@@ -125,6 +150,10 @@ Parameters
  <li><span class="li-head">wifi-ac3</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-server1</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wins-server2</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">auto-managed-status</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dhcp-settings-from-fortiipam</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">dns-server4</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">wifi-ac-service</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [specify, local]</span> </li>
  </ul>
  </ul>
 
@@ -159,7 +188,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: Configure DHCP servers.
       fmgr_fsp_vlan_dhcpserver:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -247,6 +276,10 @@ Examples
             wifi-ac3: <value of string>
             wins-server1: <value of string>
             wins-server2: <value of string>
+            auto-managed-status: <value in [disable, enable]>
+            dhcp-settings-from-fortiipam: <value in [disable, enable]>
+            dns-server4: <value of string>
+            wifi-ac-service: <value in [specify, local]>
 
 
 

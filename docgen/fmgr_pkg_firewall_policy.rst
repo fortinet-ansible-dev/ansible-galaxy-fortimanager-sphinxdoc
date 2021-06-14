@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>pkg_firewall_policy</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -174,6 +199,50 @@ Parameters
  <li><span class="li-head">webcache-https</span> - Enable/disable web cache for HTTPS. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, ssl-server, any, enable]</span> </li>
  <li><span class="li-head">webfilter-profile</span> - Name of an existing Web filter profile. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">wsso</span> - Enable/disable WiFi Single Sign On (WSSO). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">anti-replay</span> - Enable/disable anti-replay check. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">app-group</span> - Application group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">cifs-profile</span> - Name of an existing CIFS profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">email-collect</span> - Enable/disable email collection. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">emailfilter-profile</span> - Name of an existing email filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">fsso-groups</span> - Names of FSSO groups. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">geoip-anycast</span> - Enable/disable recognition of anycast IP addresses using the geography IP database. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">http-policy-redirect</span> - Redirect HTTP(S) traffic to matching transparent web proxy policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">inspection-mode</span> - Policy inspection mode (Flow/proxy). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [proxy, flow]</span> </li>
+ <li><span class="li-head">internet-service-custom-group</span> - Custom Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-group</span> - Internet Service group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src</span> - Enable/disable use of Internet Services in source for this policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">internet-service-src-custom</span> - Custom Internet Service source name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-custom-group</span> - Custom Internet Service source group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-group</span> - Internet Service source group name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-id</span> - Internet Service source ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-negate</span> - When enabled internet-service-src specifies what the service must NOT be. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">match-vip-only</span> - Enable/disable matching of only those packets that have had their destination addresses changed by a VIP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">np-acceleration</span> - Enable/disable UTM Network Processor acceleration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">reputation-direction</span> - Direction of the initial traffic for reputation to take effect. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [source, destination]</span> </li>
+ <li><span class="li-head">reputation-minimum</span> - Minimum Reputation to take action. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">ssh-filter-profile</span> - Name of an existing SSH filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ssh-policy-redirect</span> - Redirect SSH traffic to matching transparent proxy policy. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">tos</span> - ToS (Type of Service) value used for comparison. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos-mask</span> - Non-zero bit positions are used for comparison while zero bit positions are ignored. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">tos-negate</span> - Enable negated TOS match. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">vlan-filter</span> - Set VLAN filters. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webproxy-forward-server</span> - Webproxy forward server name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">webproxy-profile</span> - Webproxy profile name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">decrypted-traffic-mirror</span> - Decrypted traffic mirror. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dstaddr6</span> - Destination IPv6 address name and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">geoip-match</span> - Match geography address based either on its physical location or registered location. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [physical-location, registered-location]</span> </li>
+ <li><span class="li-head">internet-service-name</span> - Internet Service name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">internet-service-src-name</span> - Internet Service source name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">poolname6</span> - IPv6 pool names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">src-vendor-mac</span> - Vendor MAC source ID. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">srcaddr6</span> - Source IPv6 address name and address group names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">dynamic-shaping</span> - Enable/disable dynamic RADIUS defined traffic shaping. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">file-filter-profile</span> - Name of an existing file-filter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">passive-wan-health-measurement</span> - Enable/disable passive WAN health measurement. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">videofilter-profile</span> - Name of an existing VideoFilter profile. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-ems-tag</span> - Source ztna-ems-tag names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-geo-tag</span> - Source ztna-geo-tag names. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ztna-status</span> - Enable/disable zero trust access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  <li><span class="li-head">object position</span> - No description for the parameter <span class="li-normal">type: list</span></li>
  </ul>
  </ul>
@@ -346,6 +415,50 @@ Examples
             webcache-https: <value in [disable, ssl-server, any, ...]>
             webfilter-profile: <value of string>
             wsso: <value in [disable, enable]>
+            anti-replay: <value in [disable, enable]>
+            app-group: <value of string>
+            cifs-profile: <value of string>
+            email-collect: <value in [disable, enable]>
+            emailfilter-profile: <value of string>
+            fsso-groups: <value of string>
+            geoip-anycast: <value in [disable, enable]>
+            http-policy-redirect: <value in [disable, enable]>
+            inspection-mode: <value in [proxy, flow]>
+            internet-service-custom-group: <value of string>
+            internet-service-group: <value of string>
+            internet-service-src: <value in [disable, enable]>
+            internet-service-src-custom: <value of string>
+            internet-service-src-custom-group: <value of string>
+            internet-service-src-group: <value of string>
+            internet-service-src-id: <value of string>
+            internet-service-src-negate: <value in [disable, enable]>
+            match-vip-only: <value in [disable, enable]>
+            np-acceleration: <value in [disable, enable]>
+            reputation-direction: <value in [source, destination]>
+            reputation-minimum: <value of integer>
+            ssh-filter-profile: <value of string>
+            ssh-policy-redirect: <value in [disable, enable]>
+            tos: <value of string>
+            tos-mask: <value of string>
+            tos-negate: <value in [disable, enable]>
+            vlan-filter: <value of string>
+            webproxy-forward-server: <value of string>
+            webproxy-profile: <value of string>
+            decrypted-traffic-mirror: <value of string>
+            dstaddr6: <value of string>
+            geoip-match: <value in [physical-location, registered-location]>
+            internet-service-name: <value of string>
+            internet-service-src-name: <value of string>
+            poolname6: <value of string>
+            src-vendor-mac: <value of string>
+            srcaddr6: <value of string>
+            dynamic-shaping: <value in [disable, enable]>
+            file-filter-profile: <value of string>
+            passive-wan-health-measurement: <value in [disable, enable]>
+            videofilter-profile: <value of string>
+            ztna-ems-tag: <value of string>
+            ztna-geo-tag: <value of string>
+            ztna-status: <value in [disable, enable]>
             object position: <value of list>
 
 

@@ -30,6 +30,31 @@ The below requirements are needed on the host that executes this module.
 
 
 
+FortiManager Version Compatibility
+----------------------------------
+.. raw:: html
+
+ <br>
+ <table>
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>firewall_addrgrp6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ <p>
+
+
+
 Parameters
 ----------
 
@@ -60,6 +85,9 @@ Parameters
  <li><span class="li-head">tags</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  <li><span class="li-head">member</span> - Address objects contained within the group. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">name</span> - IPv6 address group name. <span class="li-normal">type: str</span> </li>
@@ -70,6 +98,9 @@ Parameters
  </ul>
  <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">visibility</span> - Enable/disable address group6 visibility in the GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">_image-base64</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">global-object</span> - Global Object. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
  </ul>
  </ul>
 
@@ -128,6 +159,9 @@ Examples
                   tags: <value of string>
                   uuid: <value of string>
                   visibility: <value in [disable, enable]>
+                  _image-base64: <value of string>
+                  global-object: <value of integer>
+                  fabric-object: <value in [disable, enable]>
             member: <value of string>
             name: <value of string>
             tagging:
@@ -137,6 +171,9 @@ Examples
                   tags: <value of string>
             uuid: <value of string>
             visibility: <value in [disable, enable]>
+            _image-base64: <value of string>
+            global-object: <value of integer>
+            fabric-object: <value in [disable, enable]>
 
 
 
