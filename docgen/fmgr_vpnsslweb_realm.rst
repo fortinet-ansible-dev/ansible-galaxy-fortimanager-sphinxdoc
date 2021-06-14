@@ -72,14 +72,146 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vpnsslweb_realm</span> - Realm. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">login-page</span> - Replacement HTML for SSL-VPN login page. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">max-concurrent-user</span> - Maximum concurrent users (0 - 65535, 0 means unlimited). <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">url-path</span> - URL path to access SSL-VPN login page. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">virtual-host</span> - Virtual host name for realm. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">nas-ip</span> - IP address used as a NAS-IP to communicate with the RADIUS server. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">radius-server</span> - RADIUS server associated with realm. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">radius-port</span> - RADIUS service port number (0 - 65535, 0 means user. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">virtual-host-only</span> - Enable/disable enforcement of virtual host method for SSL-VPN client access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
+ <li><span class="li-head">login-page</span> - Replacement HTML for SSL-VPN login page. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>login-page</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">max-concurrent-user</span> - Maximum concurrent users (0 - 65535, 0 means unlimited). <span class="li-normal">type: int</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>max-concurrent-user</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">url-path</span> - URL path to access SSL-VPN login page. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>url-path</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">virtual-host</span> - Virtual host name for realm. <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>virtual-host</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">nas-ip</span> - IP address used as a NAS-IP to communicate with the RADIUS server. <span class="li-normal">type: str</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>nas-ip</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">radius-server</span> - RADIUS server associated with realm. <span class="li-normal">type: str</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>radius-server</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">radius-port</span> - RADIUS service port number (0 - 65535, 0 means user. <span class="li-normal">type: int</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>radius-port</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">virtual-host-only</span> - Enable/disable enforcement of virtual host method for SSL-VPN client access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>virtual-host-only</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

@@ -70,8 +70,46 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_fctservices</span> - Configure FortiGuard to provide services to FortiClient installations. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">port</span> - Configure the port number on which the built-in FortiGuard should provide updates to FortiClient installations (1 - 65535, default = 80). <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span> </li>
- <li><span class="li-head">status</span> - Enable/disable built-in FortiGuard service to FortiClient installations (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
+ <li><span class="li-head">port</span> - Configure the port number on which the built-in FortiGuard should provide updates to FortiClient installations (1 - 65535, default = 80). <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>port</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> - Enable/disable built-in FortiGuard service to FortiClient installations (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>status</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

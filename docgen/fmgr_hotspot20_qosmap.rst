@@ -72,18 +72,210 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_qosmap</span> - Configure QoS map set. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">dscp-except</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">dscp</span> - DSCP value. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">index</span> - DSCP exception index. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dscp-except</span> - No description for the parameter <span class="li-normal">type: array</span>
+ <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dscp-except</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">dscp</span> - DSCP value. <span class="li-normal">type: int</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dscp</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">index</span> - DSCP exception index. <span class="li-normal">type: int</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>index</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>up</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
- <li><span class="li-head">dscp-range</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">high</span> - DSCP high value. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">index</span> - DSCP range index. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">low</span> - DSCP low value. <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">dscp-range</span> - No description for the parameter <span class="li-normal">type: array</span>
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>dscp-range</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">high</span> - DSCP high value. <span class="li-normal">type: int</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>high</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">index</span> - DSCP range index. <span class="li-normal">type: int</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>index</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">low</span> - DSCP low value. <span class="li-normal">type: int</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>low</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">up</span> - User priority. <span class="li-normal">type: int</span>  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>up</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
- <li><span class="li-head">name</span> - QOS-MAP name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">name</span> - QOS-MAP name. <span class="li-normal">type: str</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

@@ -70,14 +70,166 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_service</span> - Enable/disable services provided by the built-in FortiGuard. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">avips</span> - Enable/disable the built-in FortiGuard to provide FortiGuard antivirus and IPS updates (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">query-antispam</span> - Enable/disable antispam service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">query-antivirus</span> - Enable/disable antivirus query service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">query-filequery</span> - Enable/disable file query service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">query-geoip</span> - Enable/disable geoip service (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> </li>
- <li><span class="li-head">query-outbreak-prevention</span> - Enable/disable  outbreak prevention query service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">query-webfilter</span> - Enable/disable Web Filter service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">webfilter-https-traversal</span> - Enable/disable Web Filter HTTPS traversal (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> </li>
+ <li><span class="li-head">avips</span> - Enable/disable the built-in FortiGuard to provide FortiGuard antivirus and IPS updates (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>avips</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">query-antispam</span> - Enable/disable antispam service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>query-antispam</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">query-antivirus</span> - Enable/disable antivirus query service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>query-antivirus</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">query-filequery</span> - Enable/disable file query service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>query-filequery</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">query-geoip</span> - Enable/disable geoip service (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>query-geoip</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">query-outbreak-prevention</span> - Enable/disable  outbreak prevention query service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>query-outbreak-prevention</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">query-webfilter</span> - Enable/disable Web Filter service (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>query-webfilter</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">webfilter-https-traversal</span> - Enable/disable Web Filter HTTPS traversal (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>webfilter-https-traversal</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

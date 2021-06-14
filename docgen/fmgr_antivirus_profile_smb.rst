@@ -66,11 +66,106 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">antivirus_profile_smb</span> - Configure SMB AntiVirus options. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
- <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> </li>
- <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, quarantine, avquery, avmonitor]</span> </li>
- <li><span class="li-head">outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span> </li>
+ <li><span class="li-head">archive-block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>archive-block</td>
+ <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">archive-log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>archive-log</td>
+ <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">emulator</span> - Enable/disable the virus emulator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>emulator</td>
+ <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [scan, quarantine, avquery, avmonitor]</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>options</td>
+ <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">outbreak-prevention</span> - Enable FortiGuard Virus Outbreak Prevention service. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disabled, files, full-archive]</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>outbreak-prevention</td>
+ <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

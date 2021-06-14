@@ -70,10 +70,86 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_connector</span> - Configure connector. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">fsso-refresh-interval</span> - FSSO refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 180</span> </li>
- <li><span class="li-head">fsso-sess-timeout</span> - FSSO session timeout (30 - 600 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">px-refresh-interval</span> - pxGrid refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">px-svr-timeout</span> - pxGrid server timeout (30 - 600 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 900</span> </li>
+ <li><span class="li-head">fsso-refresh-interval</span> - FSSO refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 180</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fsso-refresh-interval</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">fsso-sess-timeout</span> - FSSO session timeout (30 - 600 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fsso-sess-timeout</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">px-refresh-interval</span> - pxGrid refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 300</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>px-refresh-interval</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">px-svr-timeout</span> - pxGrid server timeout (30 - 600 seconds). <span class="li-normal">type: int</span>  <span class="li-normal">default: 900</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>px-svr-timeout</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

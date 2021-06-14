@@ -66,17 +66,160 @@ Parameters
  <li><span class="li-head">ssl-ssh-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_sslsshprofile_dot</span> - Configure DNS over TLS options. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">cert-validation-failure</span> - Action based on certificate validation failure. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
- <li><span class="li-head">cert-validation-timeout</span> - Action based on certificate validation timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
- <li><span class="li-head">client-certificate</span> - Action based on received client certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span> </li>
- <li><span class="li-head">expired-server-cert</span> - Action based on server certificate is expired. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
- <li><span class="li-head">proxy-after-tcp-handshake</span> - Proxy traffic after the TCP 3-way handshake has been established (not before). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span> </li>
- <li><span class="li-head">revoked-server-cert</span> - Action based on server certificate is revoked. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
- <li><span class="li-head">sni-server-cert-check</span> - Check the SNI in the client hello message with the CN or SAN fields in the returned server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, strict, disable]</span> </li>
- <li><span class="li-head">status</span> - Configure protocol inspection status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, deep-inspection]</span> </li>
- <li><span class="li-head">unsupported-ssl-cipher</span> - Action based on the SSL cipher used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow]</span> </li>
- <li><span class="li-head">unsupported-ssl-negotiation</span> - Action based on the SSL negotiation used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow]</span> </li>
- <li><span class="li-head">untrusted-server-cert</span> - Action based on server certificate is not issued by a trusted CA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span> </li>
+ <li><span class="li-head">cert-validation-failure</span> - Action based on certificate validation failure. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>cert-validation-failure</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">cert-validation-timeout</span> - Action based on certificate validation timeout. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>cert-validation-timeout</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">client-certificate</span> - Action based on received client certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [bypass, inspect, block]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>client-certificate</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">expired-server-cert</span> - Action based on server certificate is expired. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>expired-server-cert</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">proxy-after-tcp-handshake</span> - Proxy traffic after the TCP 3-way handshake has been established (not before). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>proxy-after-tcp-handshake</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">revoked-server-cert</span> - Action based on server certificate is revoked. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>revoked-server-cert</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">sni-server-cert-check</span> - Check the SNI in the client hello message with the CN or SAN fields in the returned server certificate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, strict, disable]</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>sni-server-cert-check</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> - Configure protocol inspection status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, deep-inspection]</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>status</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">unsupported-ssl-cipher</span> - Action based on the SSL cipher used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow]</span>  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>unsupported-ssl-cipher</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">unsupported-ssl-negotiation</span> - Action based on the SSL negotiation used being unsupported. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [block, allow]</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>unsupported-ssl-negotiation</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">untrusted-server-cert</span> - Action based on server certificate is not issued by a trusted CA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [allow, block, ignore]</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>untrusted-server-cert</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

@@ -68,9 +68,54 @@ Parameters
  <li><span class="li-head">ip-source-guard</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_managedswitch_ipsourceguard_bindingentry</span> - IP and MAC address configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">entry-name</span> - Configure binding pair. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">ip</span> - Source IP for this rule. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mac</span> - MAC address for this rule. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">entry-name</span> - Configure binding pair. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>entry-name</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">ip</span> - Source IP for this rule. <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>ip</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">mac</span> - MAC address for this rule. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>mac</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

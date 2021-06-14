@@ -64,15 +64,120 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">system_log_ratelimit</span> - Logging rate limit. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">device</span> - No description for the parameter <span class="li-normal">type: array</span> <ul class="ul-self">
- <li><span class="li-head">device</span> - Device(s) filter according to filter-type setting, wildcard expression supported. <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">filter-type</span> - Device filter type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [devid]</span>  <span class="li-normal">default: devid</span> </li>
- <li><span class="li-head">id</span> - Device filter ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">ratelimit</span> - Maximum device log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">device</span> - No description for the parameter <span class="li-normal">type: array</span>
+ <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>device</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">device</span> - Device(s) filter according to filter-type setting, wildcard expression supported. <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>device</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">filter-type</span> - Device filter type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [devid]</span>  <span class="li-normal">default: devid</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>filter-type</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">id</span> - Device filter ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>id</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">ratelimit</span> - Maximum device log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>ratelimit</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
- <li><span class="li-head">device-ratelimit-default</span> - Default maximum device log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
- <li><span class="li-head">mode</span> - Logging rate limit mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, manual]</span>  <span class="li-normal">default: disable</span> </li>
- <li><span class="li-head">system-ratelimit</span> - Maximum system log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span> </li>
+ <li><span class="li-head">device-ratelimit-default</span> - Default maximum device log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>device-ratelimit-default</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">mode</span> - Logging rate limit mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, manual]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>mode</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">system-ratelimit</span> - Maximum system log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>system-ratelimit</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

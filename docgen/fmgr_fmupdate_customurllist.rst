@@ -70,7 +70,26 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_customurllist</span> - Configure the URL database for rating and filtering. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">db_selection</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [both, custom-url, fortiguard-db]</span> </li>
+ <li><span class="li-head">db_selection</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [both, custom-url, fortiguard-db]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>db_selection</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

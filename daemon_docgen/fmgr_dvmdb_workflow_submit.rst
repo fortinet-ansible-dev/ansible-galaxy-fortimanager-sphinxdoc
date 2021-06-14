@@ -71,11 +71,11 @@ Parameters
  <li><span class="li-head">session_id</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dvmdb_workflow_submit</span> - no description <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">fmgip</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
- <li><span class="li-head">mail_user</span> - No description for the parameter <span class="li-normal">type: str</span></li>
- <li><span class="li-head">no_diff</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
- <li><span class="li-head">no_mail</span> - No description for the parameter <span class="li-normal">type: int</span> </li>
+ <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
+ <li><span class="li-head">fmgip</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
+ <li><span class="li-head">mail_user</span> - No description for the parameter <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">no_diff</span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
+ <li><span class="li-head">no_mail</span> - No description for the parameter <span class="li-normal">type: int</span>  </li>
  </ul>
  </ul>
 

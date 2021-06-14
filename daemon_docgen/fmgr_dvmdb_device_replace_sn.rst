@@ -71,7 +71,7 @@ Parameters
  <li><span class="li-head">device_name</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dvmdb_device_replace_sn</span> - Replace devices serial number with new value. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">sn</span> - New serial number. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">sn</span> - New serial number. <span class="li-normal">type: str</span>  </li>
  </ul>
  </ul>
 

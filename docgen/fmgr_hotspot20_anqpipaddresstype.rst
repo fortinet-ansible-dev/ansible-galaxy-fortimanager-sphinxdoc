@@ -72,9 +72,66 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_anqpipaddresstype</span> - Configure IP address type availability. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ipv4-address-type</span> - IPv4 address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [not-available, not-known, public, port-restricted, single-NATed-private, double-NATed-private, port-restricted-and-single-NATed, port-restricted-and-double-NATed]</span> </li>
- <li><span class="li-head">ipv6-address-type</span> - IPv6 address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [not-available, available, not-known]</span> </li>
- <li><span class="li-head">name</span> - IP type name. <span class="li-normal">type: str</span> </li>
+ <li><span class="li-head">ipv4-address-type</span> - IPv4 address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [not-available, not-known, public, port-restricted, single-NATed-private, double-NATed-private, port-restricted-and-single-NATed, port-restricted-and-double-NATed]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>ipv4-address-type</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">ipv6-address-type</span> - IPv6 address type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [not-available, available, not-known]</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>ipv6-address-type</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">name</span> - IP type name. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 

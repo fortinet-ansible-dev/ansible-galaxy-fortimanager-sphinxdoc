@@ -70,7 +70,26 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">fmupdate_diskquota</span> - Configure disk space available for use by the Upgrade Manager. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">value</span> - Configure the size of the Upgrade Manager disk quota, in megabytes. <span class="li-normal">type: int</span>  <span class="li-normal">default: 51200</span> </li>
+ <li><span class="li-head">value</span> - Configure the size of the Upgrade Manager disk quota, in megabytes. <span class="li-normal">type: int</span>  <span class="li-normal">default: 51200</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>value</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
  </ul>
  </ul>
 
