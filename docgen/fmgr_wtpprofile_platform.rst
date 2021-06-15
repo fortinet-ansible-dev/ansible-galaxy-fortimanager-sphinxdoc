@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>wtpprofile_platform</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -79,7 +87,11 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -88,36 +100,54 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ddscan</span> - Enable/disable use of one radio for dedicated dual-band scanning to detect RF characterization and wireless threat management. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">mode</span> - Configure operation mode of 5G radios (default = dual-5G). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dual-5G, single-5G]</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>mode</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">ddscan</span> - Enable/disable use of one radio for dedicated dual-band scanning to detect RF characterization and wireless threat management. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ddscan</td>
  <td>True</td>
  <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">mode</span> - Configure operation mode of 5G radios (default = single-5G). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dual-5G, single-5G]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>mode</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -183,8 +213,8 @@ Examples
          wtp-profile: <your own value>
          wtpprofile_platform:
             type: <value in [30B-50B, 60B, 80CM-81CM, ...]>
-            ddscan: <value in [disable, enable]>
             mode: <value in [dual-5G, single-5G]>
+            ddscan: <value in [disable, enable]>
             _local_platform_str: <value of string>
 
 

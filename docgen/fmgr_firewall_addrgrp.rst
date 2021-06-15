@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>firewall_addrgrp</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -79,11 +87,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>allow-routing</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -99,11 +115,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>color</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -121,11 +145,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dynamic_mapping</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -142,11 +174,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>_scope</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -162,11 +202,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -182,11 +230,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vdom</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -203,11 +259,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>allow-routing</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -223,11 +287,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>color</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -244,11 +316,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exclude</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -264,11 +344,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exclude-member</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -284,11 +372,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>member</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -304,11 +400,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>tags</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -324,11 +428,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>uuid</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -344,11 +456,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>visibility</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -362,11 +482,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>_image-base64</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -379,10 +507,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>global-object</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -395,31 +527,37 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>type</td>
  <td>True</td>
  <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
- <div id="label35" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>category</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fabric-object</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table border="1">
  <tr>
@@ -427,7 +565,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
- <td>fabric-object</td>
+ <td>category</td>
  <td>True</td>
  </tr>
  </table>
@@ -441,11 +579,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>member</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -461,11 +607,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -482,11 +636,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>tagging</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -502,11 +664,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>category</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -522,11 +692,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -542,11 +720,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>tags</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -563,11 +749,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>uuid</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -583,13 +777,21 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>visibility</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>False</td>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
@@ -602,11 +804,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exclude</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -620,11 +830,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exclude-member</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -637,11 +855,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>_image-base64</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -654,10 +880,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>global-object</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -670,31 +900,37 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>type</td>
  <td>True</td>
  <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
- <div id="label65" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>category</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">fabric-object</span> - Security Fabric global object setting. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>fabric-object</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <table border="1">
  <tr>
@@ -702,7 +938,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
- <td>fabric-object</td>
+ <td>category</td>
  <td>True</td>
  </tr>
  </table>
@@ -773,8 +1009,8 @@ Examples
                   _image-base64: <value of string>
                   global-object: <value of integer>
                   type: <value in [default, array, folder]>
-                  category: <value in [default, ztna-ems-tag, ztna-geo-tag]>
                   fabric-object: <value in [disable, enable]>
+                  category: <value in [default, ztna-ems-tag, ztna-geo-tag]>
             member: <value of list>
             name: <value of string>
             tagging:
@@ -789,8 +1025,8 @@ Examples
             _image-base64: <value of string>
             global-object: <value of integer>
             type: <value in [default, array, folder]>
-            category: <value in [default, ztna-ems-tag, ztna-geo-tag]>
             fabric-object: <value in [disable, enable]>
+            category: <value in [default, ztna-ems-tag, ztna-geo-tag]>
 
 
 

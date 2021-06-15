@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>firewall_shaper_trafficshaper</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -79,11 +87,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>bandwidth-unit</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -99,11 +115,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>diffserv</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -119,11 +143,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>diffservcode</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -139,11 +171,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>guaranteed-bandwidth</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -159,11 +199,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>maximum-bandwidth</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -179,11 +227,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -199,11 +255,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>per-policy</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -219,11 +283,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>priority</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -238,11 +310,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dscp-marking-method</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -256,11 +336,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exceed-bandwidth</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -274,11 +362,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exceed-class-id</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -292,11 +388,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exceed-dscp</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -310,11 +414,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>maximum-dscp</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -328,11 +440,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>overhead</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>

@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>system_dm</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -77,11 +85,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>concurrent-install-image-limit</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -97,11 +113,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>concurrent-install-limit</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -117,11 +141,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>concurrent-install-script-limit</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -137,11 +169,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>discover-timeout</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -157,11 +197,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dpm-logsize</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -177,11 +225,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fgfm-sock-timeout</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -197,11 +253,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fgfm_keepalive_itvl</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -217,11 +281,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>force-remote-diff</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -237,11 +309,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fortiap-refresh-cnt</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -257,11 +337,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fortiap-refresh-itvl</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -277,11 +365,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fortiext-refresh-cnt</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -297,11 +393,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>install-image-timeout</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -317,11 +421,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>install-tunnel-retry-itvl</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -337,11 +449,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>max-revs</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -357,11 +477,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nr-retry</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -377,11 +505,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>retry</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -397,11 +533,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>retry-intvl</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -417,11 +561,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>rollback-allow-reboot</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -437,11 +589,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>script-logsize</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -457,11 +617,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>skip-scep-check</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -477,11 +645,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>skip-tunnel-fcp-req</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -497,11 +673,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>verify-install</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -515,11 +699,17 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fgfm-install-refresh-count</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -531,10 +721,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>conf-merge-after-script</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>

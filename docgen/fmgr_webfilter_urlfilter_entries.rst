@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>webfilter_urlfilter_entries</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -80,11 +88,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -100,7 +116,11 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -109,22 +129,34 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">exempt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">exempt</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish, av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>exempt</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -140,11 +172,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>id</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -160,11 +200,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>referrer-host</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -180,11 +228,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>status</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -200,11 +256,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>type</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -220,11 +284,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>url</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -240,11 +312,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>web-proxy-profile</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -259,10 +339,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>antiphish-action</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -355,15 +439,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
               - antiphish
               - av
               - web-content
@@ -393,46 +468,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
               - av
               - web-content
               - activex-java-cookie
@@ -471,15 +506,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
               - antiphish
               - av
               - web-content
@@ -509,46 +535,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
               - av
               - web-content
               - activex-java-cookie
@@ -587,15 +573,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
               - antiphish
               - av
               - web-content
@@ -625,46 +602,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
               - av
               - web-content
               - activex-java-cookie
@@ -703,15 +640,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
               - antiphish
               - av
               - web-content
@@ -741,46 +669,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
               - av
               - web-content
               - activex-java-cookie
@@ -819,6 +707,64 @@ Examples
               - filepattern
               - pass
               - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
               - av
               - web-content
               - activex-java-cookie
@@ -857,17 +803,6 @@ Examples
               - filepattern
               - pass
               - range-block
-              - antiphish
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
               - av
               - web-content
               - activex-java-cookie
@@ -906,6 +841,935 @@ Examples
               - filepattern
               - pass
               - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
+              - av
+              - web-content
+              - activex-java-cookie
+              - dlp
+              - fortiguard
+              - all
+              - filepattern
+              - pass
+              - range-block
+              - antiphish
               - av
               - web-content
               - activex-java-cookie

@@ -39,10 +39,14 @@ FortiManager Version Compatibility
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>firewall_internetservicename</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  </tr>
@@ -74,10 +78,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>city-id</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -90,10 +98,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>country-id</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -106,10 +118,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>internet-service-id</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -122,10 +138,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -138,10 +158,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>region-id</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -154,10 +178,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>type</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>

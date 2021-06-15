@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fsp_vlan_interface_ipv6</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -79,11 +87,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>autoconf</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -99,11 +115,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-client-options</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -119,11 +143,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-information-request</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -139,11 +171,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-prefix-delegation</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -159,11 +199,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-prefix-hint</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -179,11 +227,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-prefix-hint-plt</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -199,11 +255,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-prefix-hint-vlt</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -219,11 +283,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-relay-ip</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -239,11 +311,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-relay-service</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -259,11 +339,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dhcp6-relay-type</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -279,7 +367,11 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -288,22 +380,34 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric]</span>  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ip6-allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric]</span>  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-allowaccess</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -319,11 +423,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-default-life</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -339,11 +451,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-dns-server-override</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -359,11 +479,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-hop-limit</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -379,11 +507,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-link-mtu</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -399,11 +535,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-manage-flag</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -419,11 +563,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-max-interval</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -439,11 +591,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-min-interval</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -459,11 +619,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-mode</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -479,11 +647,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-other-flag</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -499,11 +675,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-reachable-time</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -519,11 +703,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-retrans-time</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -539,11 +731,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-send-adv</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -559,11 +759,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-subnet</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -579,11 +787,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-upstream-interface</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -599,11 +815,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nd-cert</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -619,11 +843,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nd-cga-modifier</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -639,11 +871,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nd-mode</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -659,11 +899,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nd-security-level</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -679,11 +927,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nd-timestamp-delta</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -699,11 +955,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>nd-timestamp-fuzz</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -719,11 +983,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrip6_link_local</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -739,11 +1011,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrrp-virtual-mac6</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -758,11 +1038,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-delegated-prefix-list</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -774,11 +1062,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>autonomous-flag</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -790,11 +1086,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>onlink-flag</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -806,11 +1110,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>prefix-id</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -822,11 +1134,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>rdnss</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -838,11 +1158,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>rdnss-service</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -854,11 +1182,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>subnet</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -870,11 +1206,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>upstream-interface</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -888,11 +1232,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-extra-addr</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -904,11 +1256,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>prefix</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -922,11 +1282,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6-prefix-list</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -938,11 +1306,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>autonomous-flag</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -954,11 +1330,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dnssl</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -970,11 +1354,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>onlink-flag</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -986,11 +1378,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>preferred-life-time</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1002,11 +1402,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>prefix</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1018,11 +1426,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>rdnss</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1034,11 +1450,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>valid-life-time</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1052,11 +1476,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrrp6</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1068,11 +1500,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>accept-mode</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1084,11 +1524,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>adv-interval</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1100,11 +1548,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>preempt</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1116,11 +1572,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>priority</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1132,11 +1596,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>start-time</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1148,11 +1620,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>status</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1164,11 +1644,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrdst6</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1180,11 +1668,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrgrp</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1196,11 +1692,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrid</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1212,11 +1716,19 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>vrip6</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1224,8 +1736,60 @@ Parameters
  </div>
  </li>
  </ul>
- <li><span class="li-head">cli-conn6-status</span> - No description for the parameter <span class="li-normal">type: int</span>  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">interface-identifier</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>interface-identifier</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">unique-autoconf-addr</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
+ <div id="label129" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>unique-autoconf-addr</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">icmp6-send-redirect</span> - Enable/disable sending of ICMPv6 redirects. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
+ <div id="label131" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>icmp6-send-redirect</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">cli-conn6-status</span> - No description for the parameter <span class="li-normal">type: int</span>  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
+ <div id="label133" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1238,36 +1802,8 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">icmp6-send-redirect</span> - Enable/disable sending of ICMPv6 redirects. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
- <div id="label129" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>icmp6-send-redirect</td>
- <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">interface-identifier</span> - IPv6 interface identifier. <span class="li-normal">type: str</span>  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
- <div id="label131" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>interface-identifier</td>
- <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">ip6-prefix-mode</span> - Assigning a prefix from DHCP or RA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dhcp6, ra]</span>  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
- <div id="label133" style="display:none">
+ <li><span class="li-head">ip6-prefix-mode</span> - Assigning a prefix from DHCP or RA. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [dhcp6, ra]</span>  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
+ <div id="label135" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1280,21 +1816,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">ra-send-mtu</span> - Enable/disable sending link MTU in RA packet. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
- <div id="label135" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>ra-send-mtu</td>
- <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">unique-autoconf-addr</span> - Enable/disable unique auto config address. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ra-send-mtu</span> - Enable/disable sending link MTU in RA packet. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <table border="1">
  <tr>
@@ -1302,7 +1824,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
- <td>unique-autoconf-addr</td>
+ <td>ra-send-mtu</td>
  <td>True</td>
  </tr>
  </table>
@@ -1403,6 +1925,16 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1455,6 +1987,16 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1507,6 +2049,16 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1559,6 +2111,16 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1611,6 +2173,16 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1663,6 +2235,16 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1689,6 +2271,414 @@ Examples
               - telnet
               - fgfm
               - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - capwap
+              - fabric
               - https
               - ping
               - ssh
@@ -1762,12 +2752,12 @@ Examples
                   vrgrp: <value of integer>
                   vrid: <value of integer>
                   vrip6: <value of string>
-            cli-conn6-status: <value of integer>
-            icmp6-send-redirect: <value in [disable, enable]>
             interface-identifier: <value of string>
+            unique-autoconf-addr: <value in [disable, enable]>
+            icmp6-send-redirect: <value in [disable, enable]>
+            cli-conn6-status: <value of integer>
             ip6-prefix-mode: <value in [dhcp6, ra]>
             ra-send-mtu: <value in [disable, enable]>
-            unique-autoconf-addr: <value in [disable, enable]>
 
 
 

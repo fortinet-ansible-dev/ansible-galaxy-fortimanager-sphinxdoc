@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fsp_vlan_interface_secondaryip</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -73,18 +81,26 @@ Parameters
  <li><span class="li-head">vlan</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">fsp_vlan_interface_secondaryip</span> - Second IP address of interface. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">allowaccess</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>allowaccess</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -100,11 +116,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>detectprotocol</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -120,11 +144,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>detectserver</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -140,11 +172,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>gwdetect</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -160,11 +200,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ha-priority</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -180,11 +228,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>id</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -200,11 +256,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -220,11 +284,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ping-serv-status</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -240,11 +312,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>seq</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -353,6 +433,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -435,6 +530,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -517,6 +627,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -599,6 +724,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -681,6 +821,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -763,6 +918,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -845,6 +1015,21 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh
@@ -927,6 +1112,797 @@ Examples
               - capwap
               - dnp
               - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
+              - https
+              - ping
+              - ssh
+              - snmp
+              - http
+              - telnet
+              - fgfm
+              - auto-ipsec
+              - radius-acct
+              - probe-response
+              - capwap
+              - dnp
+              - ftm
+              - fabric
               - https
               - ping
               - ssh

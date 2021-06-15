@@ -39,9 +39,13 @@ FortiManager Version Compatibility
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  </tr>
  <tr>
  <td>credentialstore_domaincontroller</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  </tr>
  </table>
@@ -72,10 +76,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>domain-name</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -88,10 +96,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -104,10 +116,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ip6</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -120,10 +136,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>password</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -136,10 +156,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>port</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -152,10 +176,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>server-name</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -168,10 +196,32 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>username</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">hostname</span> - Hostname of the server to connect to. <span class="li-normal">type: str</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>hostname</td>
+ <td>True</td>
  <td>True</td>
  <td>False</td>
  </tr>
@@ -229,6 +279,7 @@ Examples
             port: <value of integer>
             server-name: <value of string>
             username: <value of string>
+            hostname: <value of string>
 
 
 

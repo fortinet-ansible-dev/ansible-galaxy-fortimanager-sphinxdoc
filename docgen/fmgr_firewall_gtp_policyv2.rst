@@ -39,11 +39,19 @@ FortiManager Version Compatibility
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>firewall_gtp_policyv2</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -77,11 +85,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -95,11 +111,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>apn-sel-mode</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -113,11 +137,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>apnmember</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -131,11 +163,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>id</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -149,11 +189,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>imsi-prefix</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -167,11 +215,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>max-apn-restriction</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -185,11 +241,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>mei</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -203,11 +267,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>messages</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -221,7 +293,11 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -229,21 +305,33 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">rat-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>rat-type</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -257,11 +345,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>uli</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -360,6 +456,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -389,8 +487,6 @@ Examples
               - eutran
               - virtual
               - nbiot
-              - ltem
-              - nr
               - any
               - utran
               - geran
@@ -420,6 +516,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -449,8 +547,6 @@ Examples
               - eutran
               - virtual
               - nbiot
-              - ltem
-              - nr
               - any
               - utran
               - geran
@@ -480,6 +576,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -509,8 +607,6 @@ Examples
               - eutran
               - virtual
               - nbiot
-              - ltem
-              - nr
               - any
               - utran
               - geran
@@ -540,6 +636,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -569,8 +667,6 @@ Examples
               - eutran
               - virtual
               - nbiot
-              - ltem
-              - nr
               - any
               - utran
               - geran
@@ -600,6 +696,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -629,8 +727,6 @@ Examples
               - eutran
               - virtual
               - nbiot
-              - ltem
-              - nr
               - any
               - utran
               - geran
@@ -660,6 +756,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -689,8 +787,6 @@ Examples
               - eutran
               - virtual
               - nbiot
-              - ltem
-              - nr
               - any
               - utran
               - geran
@@ -720,6 +816,8 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran
@@ -740,6 +838,826 @@ Examples
               - eutran
               - virtual
               - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
+              - any
+              - utran
+              - geran
+              - wlan
+              - gan
+              - hspa
+              - eutran
+              - virtual
+              - nbiot
+              - ltem
+              - nr
               - any
               - utran
               - geran

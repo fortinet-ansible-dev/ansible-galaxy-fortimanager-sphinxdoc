@@ -40,11 +40,19 @@ FortiManager Version Compatibility
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>sshfilter_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -72,18 +80,26 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">sshfilter_profile</span> - SSH filter profile. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">block</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>block</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -99,7 +115,11 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -108,22 +128,34 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp, x11, shell, exec, port-forward, tun-forward, sftp, unknown, scp]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -139,11 +171,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -160,11 +200,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>shell-commands</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -180,11 +228,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -200,11 +256,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>alert</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -220,11 +284,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>id</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -240,11 +312,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -260,11 +340,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>pattern</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -280,11 +368,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>severity</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -300,11 +396,19 @@ Parameters
  <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>type</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -389,6 +493,15 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -435,6 +548,15 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -481,6 +603,15 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -527,6 +658,235 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -575,6 +935,15 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -621,6 +990,15 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -667,6 +1045,15 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec
@@ -713,6 +1100,235 @@ Examples
               - tun-forward
               - sftp
               - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
+              - x11
+              - shell
+              - exec
+              - port-forward
+              - tun-forward
+              - sftp
+              - unknown
+              - scp
               - x11
               - shell
               - exec

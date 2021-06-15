@@ -39,11 +39,19 @@ FortiManager Version Compatibility
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>authentication_scheme</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -76,11 +84,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>domain-controller</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -94,11 +110,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fsso-agent-for-ntlm</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -112,11 +136,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>fsso-guest</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -130,7 +162,11 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -138,21 +174,33 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">method</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert]</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">method</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert]</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>method</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -166,11 +214,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>name</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -184,11 +240,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>negotiate-ntlm</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -202,11 +266,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>require-tfa</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -220,11 +292,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>ssh-ca</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -238,11 +318,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>user-database</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -375,8 +463,22 @@ Examples
               - fsso
               - rsso
               - ssh-publickey
-              - saml
-              - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
               - ntlm
               - basic
               - digest
@@ -411,8 +513,22 @@ Examples
               - fsso
               - rsso
               - ssh-publickey
-              - saml
-              - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
               - ntlm
               - basic
               - digest
@@ -447,8 +563,22 @@ Examples
               - fsso
               - rsso
               - ssh-publickey
-              - saml
-              - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
               - ntlm
               - basic
               - digest
@@ -467,6 +597,188 @@ Examples
               - ssh-publickey
               - saml
               - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - saml
+              - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - saml
+              - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - saml
+              - cert
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
+              - ntlm
+              - basic
+              - digest
+              - form
+              - negotiate
+              - fsso
+              - rsso
+              - ssh-publickey
               - ntlm
               - basic
               - digest

@@ -38,10 +38,12 @@ FortiManager Version Compatibility
  <table>
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>extendercontroller_simprofile_autoswitchprofile</td>
+ <td>yes</td>
  <td>yes</td>
  </tr>
  </table>
@@ -71,10 +73,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>dataplan</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -85,10 +89,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>disconnect</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -99,10 +105,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>disconnect-period</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -113,10 +121,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>disconnect-threshold</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -127,10 +137,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>signal</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -141,10 +153,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>status</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -155,10 +169,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>switch-back</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -169,10 +185,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>switch-back-time</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -183,10 +201,12 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>switch-back-timer</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>

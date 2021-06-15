@@ -39,11 +39,19 @@ FortiManager Version Compatibility
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>emailfilter_profile</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>yes</td>
  <td>yes</td>
@@ -76,11 +84,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>comment</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -94,11 +110,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>external</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -112,7 +136,11 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
@@ -120,21 +148,33 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal]</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">options</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, bannedword, spambwl, spamfsip, spamfssubmit, spamfschksum, spamfsurl, spamhelodns, spamraddrdns, spamrbl, spamhdrcheck, spamfsphish, spambal]</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table border="1">
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>options</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -148,11 +188,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>replacemsg-group</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -166,11 +214,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-bwl-table</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>False</td>
@@ -184,11 +240,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-bword-table</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -202,11 +266,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-bword-threshold</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -220,11 +292,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-filtering</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -238,11 +318,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-iptrust-table</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -256,11 +344,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-log</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -274,11 +370,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-log-fortiguard-response</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -292,11 +396,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-mheader-table</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -310,11 +422,19 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>spam-rbl-table</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -328,10 +448,14 @@ Parameters
  <tr>
  <td></td>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>feature-set</td>
+ <td>True</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -340,15 +464,33 @@ Parameters
  </li>
  <li><span class="li-head">gmail</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>log</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -357,57 +499,81 @@ Parameters
  </ul>
  <li><span class="li-head">imap</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, tag]</span>  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
- <div id="label33" style="display:none">
+ <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, tag]</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
- <div id="label35" style="display:none">
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>log</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
  <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">tag-msg</span> - Subject text or header added to spam email. <span class="li-normal">type: str</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>tag-msg</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tag-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [subject, header, spaminfo]</span>  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
+ <li><span class="li-head">tag-msg</span> - Subject text or header added to spam email. <span class="li-normal">type: str</span>  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>tag-msg</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">tag-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [subject, header, spaminfo]</span>  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>tag-type</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -416,29 +582,49 @@ Parameters
  </ul>
  <li><span class="li-head">mapi</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, discard]</span>  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
+ <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, discard]</span>  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
- <div id="label43" style="display:none">
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>log</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -447,15 +633,33 @@ Parameters
  </ul>
  <li><span class="li-head">msn-hotmail</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>log</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -464,15 +668,17 @@ Parameters
  </ul>
  <li><span class="li-head">other-webmails</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -481,57 +687,81 @@ Parameters
  </ul>
  <li><span class="li-head">pop3</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, tag]</span>  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, tag]</span>  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>log</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
  <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">tag-msg</span> - Subject text or header added to spam email. <span class="li-normal">type: str</span>  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
- <div id="label53" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>tag-msg</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tag-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [subject, header, spaminfo]</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <li><span class="li-head">tag-msg</span> - Subject text or header added to spam email. <span class="li-normal">type: str</span>  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>tag-msg</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">tag-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [subject, header, spaminfo]</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>tag-type</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -540,93 +770,121 @@ Parameters
  </ul>
  <li><span class="li-head">smtp</span> <span class="li-normal">type: dict</span> </li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, tag, discard]</span>  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <li><span class="li-head">action</span> - Action for spam email. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [pass, tag, discard]</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>action</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">hdrip</span> - Enable/disable SMTP email header IP checks for spamfsip, spamrbl and spambal filters. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
- <div id="label59" style="display:none">
+ <li><span class="li-head">hdrip</span> - Enable/disable SMTP email header IP checks for spamfsip, spamrbl and spambwl filters. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>hdrip</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">local-override</span> - Enable/disable local filter to override SMTP remote check result. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
+ <li><span class="li-head">local-override</span> - Enable/disable local filter to override SMTP remote check result. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>local-override</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
- <div id="label63" style="display:none">
+ <li><span class="li-head">log</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>log</td>
+ <td>True</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">log-all</span> - Enable/disable logging of all email traffic. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>log-all</td>
  <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">tag-msg</span> - Subject text or header added to spam email. <span class="li-normal">type: str</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
- <div id="label65" style="display:none">
- <table border="1">
- <tr>
- <td></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- </tr>
- <tr>
- <td>tag-msg</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tag-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [subject, header, spaminfo]</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
- <div id="label67" style="display:none">
+ <li><span class="li-head">tag-msg</span> - Subject text or header added to spam email. <span class="li-normal">type: str</span>  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
  <table border="1">
  <tr>
  <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ </tr>
+ <tr>
+ <td>tag-msg</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">tag-type</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [subject, header, spaminfo]</span>  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
+ <div id="label79" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
  </tr>
  <tr>
  <td>tag-type</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
  </ul>
- <li><span class="li-head">spam-bal-table</span> - Anti-spam block/allow list table ID. <span class="li-normal">type: str</span>  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
- <div id="label69" style="display:none">
+ <li><span class="li-head">spam-bal-table</span> - Anti-spam block/allow list table ID. <span class="li-normal">type: str</span>  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -732,7 +990,28 @@ Examples
               - spamrbl
               - spamhdrcheck
               - spamfsphish
-              - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
               - bannedword
               - spambwl
               - spamfsip
@@ -778,7 +1057,28 @@ Examples
               - spamrbl
               - spamhdrcheck
               - spamfsphish
-              - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
               - bannedword
               - spambwl
               - spamfsip
@@ -824,7 +1124,28 @@ Examples
               - spamrbl
               - spamhdrcheck
               - spamfsphish
-              - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
               - bannedword
               - spambwl
               - spamfsip
@@ -848,6 +1169,251 @@ Examples
               - spamhdrcheck
               - spamfsphish
               - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - spambal
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
+              - bannedword
+              - spambwl
+              - spamfsip
+              - spamfssubmit
+              - spamfschksum
+              - spamfsurl
+              - spamhelodns
+              - spamraddrdns
+              - spamrbl
+              - spamhdrcheck
+              - spamfsphish
               - bannedword
               - spambwl
               - spamfsip
@@ -883,9 +1449,11 @@ Examples
             spam-rbl-table: <value of string>
             feature-set: <value in [proxy, flow]>
             gmail:
+               log: <value in [disable, enable]>
                log-all: <value in [disable, enable]>
             imap:
                action: <value in [pass, tag]>
+               log: <value in [disable, enable]>
                log-all: <value in [disable, enable]>
                tag-msg: <value of string>
                tag-type:
@@ -894,13 +1462,16 @@ Examples
                  - spaminfo
             mapi:
                action: <value in [pass, discard]>
+               log: <value in [disable, enable]>
                log-all: <value in [disable, enable]>
             msn-hotmail:
+               log: <value in [disable, enable]>
                log-all: <value in [disable, enable]>
             other-webmails:
                log-all: <value in [disable, enable]>
             pop3:
                action: <value in [pass, tag]>
+               log: <value in [disable, enable]>
                log-all: <value in [disable, enable]>
                tag-msg: <value of string>
                tag-type:
@@ -911,6 +1482,7 @@ Examples
                action: <value in [pass, tag, discard]>
                hdrip: <value in [disable, enable]>
                local-override: <value in [disable, enable]>
+               log: <value in [disable, enable]>
                log-all: <value in [disable, enable]>
                tag-msg: <value of string>
                tag-type:
