@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Fortinet FortiManager Ansible Collection'
-copyright = '2020, Fortinet'
+copyright = '2020-2021, Fortinet'
 author = 'Fortinet'
 
 # The full version, including alpha/beta/rc tags
-release = '2.0.0'
+release = '2.1.0'
 
 html_static_path = ['_static']
 
