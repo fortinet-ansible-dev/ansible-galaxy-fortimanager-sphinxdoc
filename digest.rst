@@ -147,6 +147,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/antivirus/profile/{profile}/cifs</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_cifs.html">fmgr_antivirus_profile_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/cifs</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_cifs.html">fmgr_antivirus_profile_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/antivirus/profile/{profile}/cifs/{cifs}</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_cifs.html">fmgr_antivirus_profile_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/cifs/{cifs}</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_cifs.html">fmgr_antivirus_profile_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/content-disarm</td>
   <td><a class="reference external" href="docgen/fmgr_antivirus_profile_contentdisarm.html">fmgr_antivirus_profile_contentdisarm</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -287,6 +307,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/antivirus/profile/{profile}/outbreak-prevention</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_outbreakprevention.html">fmgr_antivirus_profile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/outbreak-prevention</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_outbreakprevention.html">fmgr_antivirus_profile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/antivirus/profile/{profile}/outbreak-prevention/{outbreak-prevention}</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_outbreakprevention.html">fmgr_antivirus_profile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/outbreak-prevention/{outbreak-prevention}</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_outbreakprevention.html">fmgr_antivirus_profile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/pop3</td>
   <td><a class="reference external" href="docgen/fmgr_antivirus_profile_pop3.html">fmgr_antivirus_profile_pop3</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -346,6 +386,66 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_antivirus_profile_smtp.html">fmgr_antivirus_profile_smtp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/antivirus/profile/{profile}/ssh</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_ssh.html">fmgr_antivirus_profile_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/ssh</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_ssh.html">fmgr_antivirus_profile_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/antivirus/profile/{profile}/ssh/{ssh}</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_ssh.html">fmgr_antivirus_profile_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/antivirus/profile/{profile}/ssh/{ssh}</td>
+  <td><a class="reference external" href="docgen/fmgr_antivirus_profile_ssh.html">fmgr_antivirus_profile_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/apcfg-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile.html">fmgr_apcfgprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/apcfg-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile.html">fmgr_apcfgprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/apcfg-profile/{apcfg-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile.html">fmgr_apcfgprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/apcfg-profile/{apcfg-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile.html">fmgr_apcfgprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/apcfg-profile/{apcfg-profile}/command-list</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile_commandlist.html">fmgr_apcfgprofile_commandlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">apcfg-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/apcfg-profile/{apcfg-profile}/command-list</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile_commandlist.html">fmgr_apcfgprofile_commandlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">apcfg-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/apcfg-profile/{apcfg-profile}/command-list/{command-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile_commandlist.html">fmgr_apcfgprofile_commandlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">apcfg-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/apcfg-profile/{apcfg-profile}/command-list/{command-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_apcfgprofile_commandlist.html">fmgr_apcfgprofile_commandlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">apcfg-profile</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/application/categories</td>
   <td><a class="reference external" href="docgen/fmgr_application_categories.html">fmgr_application_categories</a></td>
@@ -427,6 +527,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/application/list/{list}/default-network-services</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_defaultnetworkservices.html">fmgr_application_list_defaultnetworkservices</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/application/list/{list}/default-network-services</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_defaultnetworkservices.html">fmgr_application_list_defaultnetworkservices</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/application/list/{list}/default-network-services/{default-network-services}</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_defaultnetworkservices.html">fmgr_application_list_defaultnetworkservices</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/application/list/{list}/default-network-services/{default-network-services}</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_defaultnetworkservices.html">fmgr_application_list_defaultnetworkservices</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/application/list/{list}/entries</td>
   <td><a class="reference external" href="docgen/fmgr_application_list_entries.html">fmgr_application_list_entries</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -466,6 +586,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_application_list_entries_parameters.html">fmgr_application_list_entries_parameters</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code><code class="docutils literal notranslate"><span class="pre">entries</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/application/list/{list}/entries/{entries}/parameters/{parameters}/members</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_entries_parameters_members.html">fmgr_application_list_entries_parameters_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code><code class="docutils literal notranslate"><span class="pre">entries</span></code><code class="docutils literal notranslate"><span class="pre">parameters</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/application/list/{list}/entries/{entries}/parameters/{parameters}/members</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_entries_parameters_members.html">fmgr_application_list_entries_parameters_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code><code class="docutils literal notranslate"><span class="pre">entries</span></code><code class="docutils literal notranslate"><span class="pre">parameters</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/application/list/{list}/entries/{entries}/parameters/{parameters}/members/{members}</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_entries_parameters_members.html">fmgr_application_list_entries_parameters_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code><code class="docutils literal notranslate"><span class="pre">entries</span></code><code class="docutils literal notranslate"><span class="pre">parameters</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/application/list/{list}/entries/{entries}/parameters/{parameters}/members/{members}</td>
+  <td><a class="reference external" href="docgen/fmgr_application_list_entries_parameters_members.html">fmgr_application_list_entries_parameters_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">list</span></code><code class="docutils literal notranslate"><span class="pre">entries</span></code><code class="docutils literal notranslate"><span class="pre">parameters</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/authentication/scheme</td>
+  <td><a class="reference external" href="docgen/fmgr_authentication_scheme.html">fmgr_authentication_scheme</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/authentication/scheme</td>
+  <td><a class="reference external" href="docgen/fmgr_authentication_scheme.html">fmgr_authentication_scheme</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/authentication/scheme/{scheme}</td>
+  <td><a class="reference external" href="docgen/fmgr_authentication_scheme.html">fmgr_authentication_scheme</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/authentication/scheme/{scheme}</td>
+  <td><a class="reference external" href="docgen/fmgr_authentication_scheme.html">fmgr_authentication_scheme</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/wireless-controller/ble-profile</td>
   <td><a class="reference external" href="docgen/fmgr_bleprofile.html">fmgr_bleprofile</a></td>
@@ -547,6 +707,126 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/domain-controller</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_domaincontroller.html">fmgr_cifs_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/domain-controller</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_domaincontroller.html">fmgr_cifs_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/domain-controller/{domain-controller}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_domaincontroller.html">fmgr_cifs_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/domain-controller/{domain-controller}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_domaincontroller.html">fmgr_cifs_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile.html">fmgr_cifs_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile.html">fmgr_cifs_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile.html">fmgr_cifs_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile.html">fmgr_cifs_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter.html">fmgr_cifs_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter.html">fmgr_cifs_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter.html">fmgr_cifs_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter.html">fmgr_cifs_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter_entries.html">fmgr_cifs_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter_entries.html">fmgr_cifs_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter_entries.html">fmgr_cifs_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_filefilter_entries.html">fmgr_cifs_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}/server-keytab</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_serverkeytab.html">fmgr_cifs_profile_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}/server-keytab</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_serverkeytab.html">fmgr_cifs_profile_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/cifs/profile/{profile}/server-keytab/{server-keytab}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_serverkeytab.html">fmgr_cifs_profile_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/cifs/profile/{profile}/server-keytab/{server-keytab}</td>
+  <td><a class="reference external" href="docgen/fmgr_cifs_profile_serverkeytab.html">fmgr_cifs_profile_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/credential-store/domain-controller</td>
+  <td><a class="reference external" href="docgen/fmgr_credentialstore_domaincontroller.html">fmgr_credentialstore_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/credential-store/domain-controller</td>
+  <td><a class="reference external" href="docgen/fmgr_credentialstore_domaincontroller.html">fmgr_credentialstore_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/credential-store/domain-controller/{domain-controller}</td>
+  <td><a class="reference external" href="docgen/fmgr_credentialstore_domaincontroller.html">fmgr_credentialstore_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/credential-store/domain-controller/{domain-controller}</td>
+  <td><a class="reference external" href="docgen/fmgr_credentialstore_domaincontroller.html">fmgr_credentialstore_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/devprof/{devprof}/device/profile/fortianalyzer</td>
   <td><a class="reference external" href="docgen/fmgr_devprof_device_profile_fortianalyzer.html">fmgr_devprof_device_profile_fortianalyzer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -567,6 +847,16 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">devprof</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_devprof/import</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_devprof_import.html">fmgr_devprof_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/_devprof/import/{import}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_devprof_import.html">fmgr_devprof_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/devprof/{devprof}/log/fortianalyzer/setting</td>
   <td><a class="reference external" href="docgen/fmgr_devprof_log_fortianalyzer_setting.html">fmgr_devprof_log_fortianalyzer_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -574,6 +864,16 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   </tr>
   <tr class="row-odd"><td>/pm/config/adom/{adom}/devprof/{devprof}/log/fortianalyzer/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_devprof_log_fortianalyzer_setting.html">fmgr_devprof_log_fortianalyzer_setting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">devprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/devprof/{devprof}/log/fortianalyzer-cloud/setting</td>
+  <td><a class="reference external" href="docgen/fmgr_devprof_log_fortianalyzercloud_setting.html">fmgr_devprof_log_fortianalyzercloud_setting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">devprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/devprof/{devprof}/log/fortianalyzer-cloud/setting/{setting}</td>
+  <td><a class="reference external" href="docgen/fmgr_devprof_log_fortianalyzercloud_setting.html">fmgr_devprof_log_fortianalyzercloud_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">devprof</span></code></td>
   </tr>
@@ -947,6 +1247,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dlp/sensitivity</td>
+  <td><a class="reference external" href="docgen/fmgr_dlp_sensitivity.html">fmgr_dlp_sensitivity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dlp/sensitivity</td>
+  <td><a class="reference external" href="docgen/fmgr_dlp_sensitivity.html">fmgr_dlp_sensitivity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dlp/sensitivity/{sensitivity}</td>
+  <td><a class="reference external" href="docgen/fmgr_dlp_sensitivity.html">fmgr_dlp_sensitivity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dlp/sensitivity/{sensitivity}</td>
+  <td><a class="reference external" href="docgen/fmgr_dlp_sensitivity.html">fmgr_dlp_sensitivity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/dlp/sensor</td>
   <td><a class="reference external" href="docgen/fmgr_dlp_sensor.html">fmgr_dlp_sensor</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -1047,6 +1367,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dnsfilter/profile/{profile}/dns-translation</td>
+  <td><a class="reference external" href="docgen/fmgr_dnsfilter_profile_dnstranslation.html">fmgr_dnsfilter_profile_dnstranslation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dnsfilter/profile/{profile}/dns-translation</td>
+  <td><a class="reference external" href="docgen/fmgr_dnsfilter_profile_dnstranslation.html">fmgr_dnsfilter_profile_dnstranslation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dnsfilter/profile/{profile}/dns-translation/{dns-translation}</td>
+  <td><a class="reference external" href="docgen/fmgr_dnsfilter_profile_dnstranslation.html">fmgr_dnsfilter_profile_dnstranslation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dnsfilter/profile/{profile}/dns-translation/{dns-translation}</td>
+  <td><a class="reference external" href="docgen/fmgr_dnsfilter_profile_dnstranslation.html">fmgr_dnsfilter_profile_dnstranslation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/dnsfilter/profile/{profile}/domain-filter</td>
   <td><a class="reference external" href="docgen/fmgr_dnsfilter_profile_domainfilter.html">fmgr_dnsfilter_profile_domainfilter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -1110,212 +1450,122 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/dvm/cmd/add/device</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_device.html">fmgr_dvm_cmd_add_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/add/device</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_device.html">fmgr_dvm_cmd_add_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/add/device/{device}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_device.html">fmgr_dvm_cmd_add_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/add/device/{device}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_device.html">fmgr_dvm_cmd_add_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/add/dev-list</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_devlist.html">fmgr_dvm_cmd_add_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/add/dev-list</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_devlist.html">fmgr_dvm_cmd_add_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/add/dev-list/{dev-list}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_devlist.html">fmgr_dvm_cmd_add_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/add/dev-list/{dev-list}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_add_devlist.html">fmgr_dvm_cmd_add_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/change-ha-seq</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_changehaseq.html">fmgr_dvm_cmd_changehaseq</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/change-ha-seq</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_changehaseq.html">fmgr_dvm_cmd_changehaseq</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/change-ha-seq/{change-ha-seq}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_changehaseq.html">fmgr_dvm_cmd_changehaseq</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/change-ha-seq/{change-ha-seq}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_changehaseq.html">fmgr_dvm_cmd_changehaseq</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/del/device</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_device.html">fmgr_dvm_cmd_del_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/del/device</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_device.html">fmgr_dvm_cmd_del_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/del/device/{device}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_device.html">fmgr_dvm_cmd_del_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/del/device/{device}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_device.html">fmgr_dvm_cmd_del_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/del/dev-list</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_devlist.html">fmgr_dvm_cmd_del_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/del/dev-list</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_devlist.html">fmgr_dvm_cmd_del_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/del/dev-list/{dev-list}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_devlist.html">fmgr_dvm_cmd_del_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/del/dev-list/{dev-list}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_del_devlist.html">fmgr_dvm_cmd_del_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/discover/device</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_discover_device.html">fmgr_dvm_cmd_discover_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/discover/device</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_discover_device.html">fmgr_dvm_cmd_discover_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/discover/device/{device}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_discover_device.html">fmgr_dvm_cmd_discover_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/discover/device/{device}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_discover_device.html">fmgr_dvm_cmd_discover_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/import/dev-list</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_import_devlist.html">fmgr_dvm_cmd_import_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/import/dev-list</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_import_devlist.html">fmgr_dvm_cmd_import_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/import/dev-list/{dev-list}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_import_devlist.html">fmgr_dvm_cmd_import_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/import/dev-list/{dev-list}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_import_devlist.html">fmgr_dvm_cmd_import_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/reload/dev-list</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_reload_devlist.html">fmgr_dvm_cmd_reload_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/reload/dev-list</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_reload_devlist.html">fmgr_dvm_cmd_reload_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/reload/dev-list/{dev-list}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_reload_devlist.html">fmgr_dvm_cmd_reload_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/reload/dev-list/{dev-list}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_reload_devlist.html">fmgr_dvm_cmd_reload_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/update/device</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_device.html">fmgr_dvm_cmd_update_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/update/device</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_device.html">fmgr_dvm_cmd_update_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/update/device/{device}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_device.html">fmgr_dvm_cmd_update_device</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/update/device/{device}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_device.html">fmgr_dvm_cmd_update_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvm/cmd/update/dev-list</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_devlist.html">fmgr_dvm_cmd_update_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-odd"><td>/dvm/cmd/update/dev-list</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_devlist.html">fmgr_dvm_cmd_update_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
-  </tr>
-  <tr class="row-even"><td>/dvm/cmd/update/dev-list/{dev-list}</td>
-  <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_devlist.html">fmgr_dvm_cmd_update_devlist</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvm/cmd/update/dev-list/{dev-list}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvm_cmd_update_devlist.html">fmgr_dvm_cmd_update_devlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvmdb/adom</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_adom.html">fmgr_dvmdb_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/dvmdb/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_adom.html">fmgr_dvmdb_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_adom_objectmember.html">fmgr_dvmdb_adom_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_adom_objectmember.html">fmgr_dvmdb_adom_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/dvmdb/adom/{adom}/device/{device}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_device.html">fmgr_dvmdb_device</a></td>
@@ -1327,12 +1577,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/device/{device}/{{device}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/device/{device}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_device.html">fmgr_dvmdb_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/device/{device}/{{device}}</td>
+  <tr class="row-odd"><td>/dvmdb/device/{device}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_device.html">fmgr_dvmdb_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device</span></code></td>
@@ -1347,12 +1597,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/device/replace/sn/{device_name}/{{device_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/device/replace/sn/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_device_replace_sn.html">fmgr_dvmdb_device_replace_sn</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/device/replace/sn/{device_name}/{{device_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/device/replace/sn/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_device_replace_sn.html">fmgr_dvmdb_device_replace_sn</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
@@ -1377,6 +1627,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device</span></code></td>
   </tr>
+  <tr class="row-even"><td>/dvmdb/folder</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_folder.html">fmgr_dvmdb_folder</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}/folder</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_folder.html">fmgr_dvmdb_folder</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/dvmdb/folder/{folder}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_folder.html">fmgr_dvmdb_folder</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}/folder/{folder}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_folder.html">fmgr_dvmdb_folder</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/dvmdb/adom/{adom}/group</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_group.html">fmgr_dvmdb_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -1397,35 +1667,55 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/<em>meta</em>fields/adom</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/group/{group}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_group_objectmember.html">fmgr_dvmdb_group_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/group/{group}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_group_objectmember.html">fmgr_dvmdb_group_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/group/{group}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_group_objectmember.html">fmgr_dvmdb_group_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/group/{group}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_group_objectmember.html">fmgr_dvmdb_group_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/dvmdb/_meta_fields/adom</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_metafields_adom.html">fmgr_dvmdb_metafields_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/<em>meta</em>fields/adom/{adom}</td>
+  <tr class="row-odd"><td>/dvmdb/_meta_fields/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_metafields_adom.html">fmgr_dvmdb_metafields_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/<em>meta</em>fields/device</td>
+  <tr class="row-even"><td>/dvmdb/_meta_fields/device</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_metafields_device.html">fmgr_dvmdb_metafields_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/<em>meta</em>fields/device/{device}</td>
+  <tr class="row-odd"><td>/dvmdb/_meta_fields/device/{device}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_metafields_device.html">fmgr_dvmdb_metafields_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/<em>meta</em>fields/group</td>
+  <tr class="row-even"><td>/dvmdb/_meta_fields/group</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_metafields_group.html">fmgr_dvmdb_metafields_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/<em>meta</em>fields/group/{group}</td>
+  <tr class="row-odd"><td>/dvmdb/_meta_fields/group/{group}</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_metafields_group.html">fmgr_dvmdb_metafields_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/dvmdb/adom/{adom}/revision</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_revision.html">fmgr_dvmdb_revision</a></td>
@@ -1517,6 +1807,36 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/script/{script}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_script_objectmember.html">fmgr_dvmdb_script_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">script</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/global/script/{script}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_script_objectmember.html">fmgr_dvmdb_script_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">script</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/dvmdb/script/{script}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_script_objectmember.html">fmgr_dvmdb_script_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">script</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}/script/{script}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_script_objectmember.html">fmgr_dvmdb_script_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">script</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/dvmdb/global/script/{script}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_script_objectmember.html">fmgr_dvmdb_script_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">script</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/dvmdb/script/{script}</td>
+  <td><a class="reference external" href="docgen/fmgr_dvmdb_script_objectmember.html">fmgr_dvmdb_script_objectmember</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">script</span></code></td>
+  </tr>
   <tr class="row-even"><td>/dvmdb/adom/{adom}/script/{script}/script_schedule</td>
   <td><a class="reference external" href="docgen/fmgr_dvmdb_script_scriptschedule.html">fmgr_dvmdb_script_scriptschedule</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -1557,12 +1877,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/approve/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/approve/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_approve.html">fmgr_dvmdb_workflow_approve</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/approve/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/approve/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_approve.html">fmgr_dvmdb_workflow_approve</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1577,12 +1897,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/discard/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/discard/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_discard.html">fmgr_dvmdb_workflow_discard</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/discard/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/discard/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_discard.html">fmgr_dvmdb_workflow_discard</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1597,12 +1917,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/drop/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/drop/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_drop.html">fmgr_dvmdb_workflow_drop</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/drop/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/drop/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_drop.html">fmgr_dvmdb_workflow_drop</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1617,12 +1937,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/reject/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/reject/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_reject.html">fmgr_dvmdb_workflow_reject</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/reject/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/reject/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_reject.html">fmgr_dvmdb_workflow_reject</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1637,12 +1957,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/repair/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/repair/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_repair.html">fmgr_dvmdb_workflow_repair</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/repair/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/repair/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_repair.html">fmgr_dvmdb_workflow_repair</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1657,12 +1977,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/revert/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/revert/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_revert.html">fmgr_dvmdb_workflow_revert</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/revert/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/revert/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_revert.html">fmgr_dvmdb_workflow_revert</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1677,12 +1997,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/review/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/review/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_review.html">fmgr_dvmdb_workflow_review</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/review/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/review/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_review.html">fmgr_dvmdb_workflow_review</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1697,12 +2017,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/save/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/save/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_save.html">fmgr_dvmdb_workflow_save</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/save/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/save/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_save.html">fmgr_dvmdb_workflow_save</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1717,12 +2037,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/start/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/start/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_start.html">fmgr_dvmdb_workflow_start</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/start/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/start/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_start.html">fmgr_dvmdb_workflow_start</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1737,12 +2057,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/submit/{session_id}/{{session_id}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workflow/submit/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_submit.html">fmgr_dvmdb_workflow_submit</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workflow/submit/{session_id}/{{session_id}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workflow/submit/{session_id}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workflow_submit.html">fmgr_dvmdb_workflow_submit</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">session_id</span></code></td>
@@ -1772,7 +2092,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/adom/{adom}/workspace/commit/dev/{device_name}/{{device_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}/workspace/commit/dev/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_commit_dev.html">fmgr_dvmdb_workspace_commit_dev</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
@@ -1787,12 +2107,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/commit/obj/{object_url_name}/{{object_url_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/commit/obj/{object_url_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_commit_obj.html">fmgr_dvmdb_workspace_commit_obj</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workspace/commit/obj/{object_url_name}/{{object_url_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workspace/commit/obj/{object_url_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_commit_obj.html">fmgr_dvmdb_workspace_commit_obj</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
@@ -1807,12 +2127,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/commit/pkg/{package_path_name}/{{package_path_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/commit/pkg/{package_path_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_commit_pkg.html">fmgr_dvmdb_workspace_commit_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workspace/commit/pkg/{package_path_name}/{{package_path_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workspace/commit/pkg/{package_path_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_commit_pkg.html">fmgr_dvmdb_workspace_commit_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
@@ -1842,7 +2162,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/adom/{adom}/workspace/lock/dev/{device_name}/{{device_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}/workspace/lock/dev/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_lock_dev.html">fmgr_dvmdb_workspace_lock_dev</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
@@ -1857,12 +2177,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/lock/obj/{object_url_name}/{{object_url_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/lock/obj/{object_url_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_lock_obj.html">fmgr_dvmdb_workspace_lock_obj</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workspace/lock/obj/{object_url_name}/{{object_url_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workspace/lock/obj/{object_url_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_lock_obj.html">fmgr_dvmdb_workspace_lock_obj</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
@@ -1877,12 +2197,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/lock/pkg/{package_path_name}/{{package_path_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/lock/pkg/{package_path_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_lock_pkg.html">fmgr_dvmdb_workspace_lock_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workspace/lock/pkg/{package_path_name}/{{package_path_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workspace/lock/pkg/{package_path_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_lock_pkg.html">fmgr_dvmdb_workspace_lock_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
@@ -1912,7 +2232,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/adom/{adom}/workspace/unlock/dev/{device_name}/{{device_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/adom/{adom}/workspace/unlock/dev/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_unlock_dev.html">fmgr_dvmdb_workspace_unlock_dev</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
@@ -1927,12 +2247,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/unlock/obj/{object_url_name}/{{object_url_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/unlock/obj/{object_url_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_unlock_obj.html">fmgr_dvmdb_workspace_unlock_obj</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workspace/unlock/obj/{object_url_name}/{{object_url_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workspace/unlock/obj/{object_url_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_unlock_obj.html">fmgr_dvmdb_workspace_unlock_obj</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">object_url_name</span></code></td>
@@ -1947,12 +2267,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
   </tr>
-  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/unlock/pkg/{package_path_name}/{{package_path_name}}</td>
+  <tr class="row-even"><td>/dvmdb/adom/{adom}/workspace/unlock/pkg/{package_path_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_unlock_pkg.html">fmgr_dvmdb_workspace_unlock_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/dvmdb/global/workspace/unlock/pkg/{package_path_name}/{{package_path_name}}</td>
+  <tr class="row-odd"><td>/dvmdb/global/workspace/unlock/pkg/{package_path_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_dvmdb_workspace_unlock_pkg.html">fmgr_dvmdb_workspace_unlock_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">package_path_name</span></code></td>
@@ -2037,6 +2357,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">local</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/input/interface</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface.html">fmgr_dynamic_input_interface</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/input/interface</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface.html">fmgr_dynamic_input_interface</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/input/interface/{interface}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface.html">fmgr_dynamic_input_interface</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/input/interface/{interface}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface.html">fmgr_dynamic_input_interface</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/input/interface/{interface}/dynamic_mapping</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface_dynamicmapping.html">fmgr_dynamic_input_interface_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/input/interface/{interface}/dynamic_mapping</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface_dynamicmapping.html">fmgr_dynamic_input_interface_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/input/interface/{interface}/dynamic_mapping/{dynamic_mapping}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface_dynamicmapping.html">fmgr_dynamic_input_interface_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/input/interface/{interface}/dynamic_mapping/{dynamic_mapping}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_input_interface_dynamicmapping.html">fmgr_dynamic_input_interface_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/dynamic/interface</td>
   <td><a class="reference external" href="docgen/fmgr_dynamic_interface.html">fmgr_dynamic_interface</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -2075,6 +2435,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/dynamic/interface/{interface}/dynamic_mapping/{dynamic_mapping}</td>
   <td><a class="reference external" href="docgen/fmgr_dynamic_interface_dynamicmapping.html">fmgr_dynamic_interface_dynamicmapping</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/interface/{interface}/platform_mapping</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_interface_platformmapping.html">fmgr_dynamic_interface_platformmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/interface/{interface}/platform_mapping</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_interface_platformmapping.html">fmgr_dynamic_interface_platformmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/interface/{interface}/platform_mapping/{platform_mapping}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_interface_platformmapping.html">fmgr_dynamic_interface_platformmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/interface/{interface}/platform_mapping/{platform_mapping}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_interface_platformmapping.html">fmgr_dynamic_interface_platformmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/dynamic/ippool</td>
@@ -2197,6 +2577,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">members</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/virtual-wan-link/neighbor</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor.html">fmgr_dynamic_virtualwanlink_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/virtual-wan-link/neighbor</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor.html">fmgr_dynamic_virtualwanlink_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/virtual-wan-link/neighbor/{neighbor}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor.html">fmgr_dynamic_virtualwanlink_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/virtual-wan-link/neighbor/{neighbor}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor.html">fmgr_dynamic_virtualwanlink_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/virtual-wan-link/neighbor/{neighbor}/dynamic_mapping</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping.html">fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">neighbor</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/virtual-wan-link/neighbor/{neighbor}/dynamic_mapping</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping.html">fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">neighbor</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/dynamic/virtual-wan-link/neighbor/{neighbor}/dynamic_mapping/{dynamic_mapping}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping.html">fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">neighbor</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/dynamic/virtual-wan-link/neighbor/{neighbor}/dynamic_mapping/{dynamic_mapping}</td>
+  <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping.html">fmgr_dynamic_virtualwanlink_neighbor_dynamicmapping</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">neighbor</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/dynamic/virtual-wan-link/server</td>
   <td><a class="reference external" href="docgen/fmgr_dynamic_virtualwanlink_server.html">fmgr_dynamic_virtualwanlink_server</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -2277,15 +2697,735 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vpntunnel</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/block-allow-list</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_blockallowlist.html">fmgr_emailfilter_blockallowlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/block-allow-list</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_blockallowlist.html">fmgr_emailfilter_blockallowlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/block-allow-list/{block-allow-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_blockallowlist.html">fmgr_emailfilter_blockallowlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/block-allow-list/{block-allow-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_blockallowlist.html">fmgr_emailfilter_blockallowlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bwl</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl.html">fmgr_emailfilter_bwl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bwl</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl.html">fmgr_emailfilter_bwl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bwl/{bwl}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl.html">fmgr_emailfilter_bwl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bwl/{bwl}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl.html">fmgr_emailfilter_bwl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bwl/{bwl}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl_entries.html">fmgr_emailfilter_bwl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bwl</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bwl/{bwl}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl_entries.html">fmgr_emailfilter_bwl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bwl</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bwl/{bwl}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl_entries.html">fmgr_emailfilter_bwl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bwl</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bwl/{bwl}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bwl_entries.html">fmgr_emailfilter_bwl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bwl</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bword</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword.html">fmgr_emailfilter_bword</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bword</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword.html">fmgr_emailfilter_bword</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bword/{bword}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword.html">fmgr_emailfilter_bword</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bword/{bword}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword.html">fmgr_emailfilter_bword</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bword/{bword}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword_entries.html">fmgr_emailfilter_bword_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bword</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bword/{bword}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword_entries.html">fmgr_emailfilter_bword_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bword</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/bword/{bword}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword_entries.html">fmgr_emailfilter_bword_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bword</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/bword/{bword}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_bword_entries.html">fmgr_emailfilter_bword_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">bword</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/dnsbl</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl.html">fmgr_emailfilter_dnsbl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/dnsbl</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl.html">fmgr_emailfilter_dnsbl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/dnsbl/{dnsbl}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl.html">fmgr_emailfilter_dnsbl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/dnsbl/{dnsbl}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl.html">fmgr_emailfilter_dnsbl</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/dnsbl/{dnsbl}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl_entries.html">fmgr_emailfilter_dnsbl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">dnsbl</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/dnsbl/{dnsbl}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl_entries.html">fmgr_emailfilter_dnsbl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">dnsbl</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/dnsbl/{dnsbl}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl_entries.html">fmgr_emailfilter_dnsbl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">dnsbl</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/dnsbl/{dnsbl}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_dnsbl_entries.html">fmgr_emailfilter_dnsbl_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">dnsbl</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/fortishield</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_fortishield.html">fmgr_emailfilter_fortishield</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/fortishield</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_fortishield.html">fmgr_emailfilter_fortishield</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/fortishield/{fortishield}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_fortishield.html">fmgr_emailfilter_fortishield</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/fortishield/{fortishield}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_fortishield.html">fmgr_emailfilter_fortishield</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/iptrust</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust.html">fmgr_emailfilter_iptrust</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/iptrust</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust.html">fmgr_emailfilter_iptrust</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/iptrust/{iptrust}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust.html">fmgr_emailfilter_iptrust</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/iptrust/{iptrust}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust.html">fmgr_emailfilter_iptrust</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/iptrust/{iptrust}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust_entries.html">fmgr_emailfilter_iptrust_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">iptrust</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/iptrust/{iptrust}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust_entries.html">fmgr_emailfilter_iptrust_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">iptrust</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/iptrust/{iptrust}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust_entries.html">fmgr_emailfilter_iptrust_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">iptrust</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/iptrust/{iptrust}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_iptrust_entries.html">fmgr_emailfilter_iptrust_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">iptrust</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/mheader</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader.html">fmgr_emailfilter_mheader</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/mheader</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader.html">fmgr_emailfilter_mheader</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/mheader/{mheader}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader.html">fmgr_emailfilter_mheader</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/mheader/{mheader}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader.html">fmgr_emailfilter_mheader</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/mheader/{mheader}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader_entries.html">fmgr_emailfilter_mheader_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mheader</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/mheader/{mheader}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader_entries.html">fmgr_emailfilter_mheader_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mheader</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/mheader/{mheader}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader_entries.html">fmgr_emailfilter_mheader_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mheader</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/mheader/{mheader}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_mheader_entries.html">fmgr_emailfilter_mheader_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mheader</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/options</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_options.html">fmgr_emailfilter_options</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/options</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_options.html">fmgr_emailfilter_options</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/options/{options}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_options.html">fmgr_emailfilter_options</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/options/{options}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_options.html">fmgr_emailfilter_options</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile.html">fmgr_emailfilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile.html">fmgr_emailfilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile.html">fmgr_emailfilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile.html">fmgr_emailfilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter.html">fmgr_emailfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter.html">fmgr_emailfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter.html">fmgr_emailfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter.html">fmgr_emailfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter_entries.html">fmgr_emailfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter_entries.html">fmgr_emailfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter_entries.html">fmgr_emailfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_filefilter_entries.html">fmgr_emailfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/gmail</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_gmail.html">fmgr_emailfilter_profile_gmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/gmail</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_gmail.html">fmgr_emailfilter_profile_gmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/gmail/{gmail}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_gmail.html">fmgr_emailfilter_profile_gmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/gmail/{gmail}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_gmail.html">fmgr_emailfilter_profile_gmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/imap</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_imap.html">fmgr_emailfilter_profile_imap</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/imap</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_imap.html">fmgr_emailfilter_profile_imap</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/imap/{imap}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_imap.html">fmgr_emailfilter_profile_imap</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/imap/{imap}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_imap.html">fmgr_emailfilter_profile_imap</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/mapi</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_mapi.html">fmgr_emailfilter_profile_mapi</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/mapi</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_mapi.html">fmgr_emailfilter_profile_mapi</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/mapi/{mapi}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_mapi.html">fmgr_emailfilter_profile_mapi</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/mapi/{mapi}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_mapi.html">fmgr_emailfilter_profile_mapi</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/msn-hotmail</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_msnhotmail.html">fmgr_emailfilter_profile_msnhotmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/msn-hotmail</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_msnhotmail.html">fmgr_emailfilter_profile_msnhotmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/msn-hotmail/{msn-hotmail}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_msnhotmail.html">fmgr_emailfilter_profile_msnhotmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/msn-hotmail/{msn-hotmail}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_msnhotmail.html">fmgr_emailfilter_profile_msnhotmail</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/other-webmails</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_otherwebmails.html">fmgr_emailfilter_profile_otherwebmails</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/other-webmails</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_otherwebmails.html">fmgr_emailfilter_profile_otherwebmails</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/other-webmails/{other-webmails}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_otherwebmails.html">fmgr_emailfilter_profile_otherwebmails</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/other-webmails/{other-webmails}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_otherwebmails.html">fmgr_emailfilter_profile_otherwebmails</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/pop3</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_pop3.html">fmgr_emailfilter_profile_pop3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/pop3</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_pop3.html">fmgr_emailfilter_profile_pop3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/pop3/{pop3}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_pop3.html">fmgr_emailfilter_profile_pop3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/pop3/{pop3}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_pop3.html">fmgr_emailfilter_profile_pop3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/smtp</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_smtp.html">fmgr_emailfilter_profile_smtp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/smtp</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_smtp.html">fmgr_emailfilter_profile_smtp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/emailfilter/profile/{profile}/smtp/{smtp}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_smtp.html">fmgr_emailfilter_profile_smtp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/emailfilter/profile/{profile}/smtp/{smtp}</td>
+  <td><a class="reference external" href="docgen/fmgr_emailfilter_profile_smtp.html">fmgr_emailfilter_profile_smtp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
   <tr class="row-even"><td>/cli/global/exec/fgfm/reclaim-dev-tunnel/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_exec_fgfm_reclaimdevtunnel.html">fmgr_exec_fgfm_reclaimdevtunnel</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/cli/global/exec/fgfm/reclaim-dev-tunnel/{device_name}/{{device_name}}</td>
+  <tr class="row-odd"><td>/cli/global/exec/fgfm/reclaim-dev-tunnel/{device_name}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_exec_fgfm_reclaimdevtunnel.html">fmgr_exec_fgfm_reclaimdevtunnel</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device_name</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/dataplan</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_dataplan.html">fmgr_extendercontroller_dataplan</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/dataplan</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_dataplan.html">fmgr_extendercontroller_dataplan</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/dataplan/{dataplan}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_dataplan.html">fmgr_extendercontroller_dataplan</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/dataplan/{dataplan}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_dataplan.html">fmgr_extendercontroller_dataplan</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/sim_profile</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile.html">fmgr_extendercontroller_simprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/sim_profile</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile.html">fmgr_extendercontroller_simprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/sim_profile/{sim_profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile.html">fmgr_extendercontroller_simprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/sim_profile/{sim_profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile.html">fmgr_extendercontroller_simprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/sim_profile/{sim_profile}/auto-switch_profile</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile_autoswitchprofile.html">fmgr_extendercontroller_simprofile_autoswitchprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sim_profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/sim_profile/{sim_profile}/auto-switch_profile</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile_autoswitchprofile.html">fmgr_extendercontroller_simprofile_autoswitchprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sim_profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/sim_profile/{sim_profile}/auto-switch_profile/{auto-switch_profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile_autoswitchprofile.html">fmgr_extendercontroller_simprofile_autoswitchprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sim_profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/sim_profile/{sim_profile}/auto-switch_profile/{auto-switch_profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_simprofile_autoswitchprofile.html">fmgr_extendercontroller_simprofile_autoswitchprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sim_profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/template</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_template.html">fmgr_extendercontroller_template</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/template</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_template.html">fmgr_extendercontroller_template</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/extender-controller/template/{template}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_template.html">fmgr_extendercontroller_template</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/extender-controller/template/{template}</td>
+  <td><a class="reference external" href="docgen/fmgr_extendercontroller_template.html">fmgr_extendercontroller_template</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/file-filter/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile.html">fmgr_filefilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/file-filter/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile.html">fmgr_filefilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/file-filter/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile.html">fmgr_filefilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/file-filter/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile.html">fmgr_filefilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/file-filter/profile/{profile}/rules</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile_rules.html">fmgr_filefilter_profile_rules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/file-filter/profile/{profile}/rules</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile_rules.html">fmgr_filefilter_profile_rules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/file-filter/profile/{profile}/rules/{rules}</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile_rules.html">fmgr_filefilter_profile_rules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/file-filter/profile/{profile}/rules/{rules}</td>
+  <td><a class="reference external" href="docgen/fmgr_filefilter_profile_rules.html">fmgr_filefilter_profile_rules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy.html">fmgr_firewall_accessproxy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy.html">fmgr_firewall_accessproxy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy.html">fmgr_firewall_accessproxy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy.html">fmgr_firewall_accessproxy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/api-gateway</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway.html">fmgr_firewall_accessproxy_apigateway</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/api-gateway</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway.html">fmgr_firewall_accessproxy_apigateway</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway.html">fmgr_firewall_accessproxy_apigateway</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway.html">fmgr_firewall_accessproxy_apigateway</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/realservers</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_realservers.html">fmgr_firewall_accessproxy_apigateway_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/realservers</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_realservers.html">fmgr_firewall_accessproxy_apigateway_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/realservers/{realservers}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_realservers.html">fmgr_firewall_accessproxy_apigateway_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/realservers/{realservers}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_realservers.html">fmgr_firewall_accessproxy_apigateway_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/ssl-cipher-suites</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_sslciphersuites.html">fmgr_firewall_accessproxy_apigateway_sslciphersuites</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/ssl-cipher-suites</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_sslciphersuites.html">fmgr_firewall_accessproxy_apigateway_sslciphersuites</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/ssl-cipher-suites/{ssl-cipher-suites}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_sslciphersuites.html">fmgr_firewall_accessproxy_apigateway_sslciphersuites</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/api-gateway/{api-gateway}/ssl-cipher-suites/{ssl-cipher-suites}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_apigateway_sslciphersuites.html">fmgr_firewall_accessproxy_apigateway_sslciphersuites</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code><code class="docutils literal notranslate"><span class="pre">api-gateway</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/realservers</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_realservers.html">fmgr_firewall_accessproxy_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/realservers</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_realservers.html">fmgr_firewall_accessproxy_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/realservers/{realservers}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_realservers.html">fmgr_firewall_accessproxy_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/realservers/{realservers}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_realservers.html">fmgr_firewall_accessproxy_realservers</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings/{server-pubkey-auth-settings}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings/{server-pubkey-auth-settings}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings/cert-extension</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings/cert-extension</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings/cert-extension/{cert-extension}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/access-proxy/{access-proxy}/server-pubkey-auth-settings/cert-extension/{cert-extension}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension.html">fmgr_firewall_accessproxy_serverpubkeyauthsettings_certextension</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">access-proxy</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/address</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_address.html">fmgr_firewall_address</a></td>
@@ -2346,6 +3486,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_firewall_address6_dynamicmapping.html">fmgr_firewall_address6_dynamicmapping</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">address6</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/address6/{address6}/dynamic_mapping/{dynamic_mapping}/subnet-segment</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_address6_dynamicmapping_subnetsegment.html">fmgr_firewall_address6_dynamicmapping_subnetsegment</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">address6</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/address6/{address6}/dynamic_mapping/{dynamic_mapping}/subnet-segment</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_address6_dynamicmapping_subnetsegment.html">fmgr_firewall_address6_dynamicmapping_subnetsegment</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">address6</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/address6/{address6}/dynamic_mapping/{dynamic_mapping}/subnet-segment/{subnet-segment}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_address6_dynamicmapping_subnetsegment.html">fmgr_firewall_address6_dynamicmapping_subnetsegment</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">address6</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/address6/{address6}/dynamic_mapping/{dynamic_mapping}/subnet-segment/{subnet-segment}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_address6_dynamicmapping_subnetsegment.html">fmgr_firewall_address6_dynamicmapping_subnetsegment</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">address6</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/address6/{address6}/list</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_address6_list.html">fmgr_firewall_address6_list</a></td>
@@ -2687,6 +3847,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">carrier-endpoint-bwl</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/decrypted-traffic-mirror</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_decryptedtrafficmirror.html">fmgr_firewall_decryptedtrafficmirror</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/decrypted-traffic-mirror</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_decryptedtrafficmirror.html">fmgr_firewall_decryptedtrafficmirror</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/decrypted-traffic-mirror/{decrypted-traffic-mirror}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_decryptedtrafficmirror.html">fmgr_firewall_decryptedtrafficmirror</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/decrypted-traffic-mirror/{decrypted-traffic-mirror}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_decryptedtrafficmirror.html">fmgr_firewall_decryptedtrafficmirror</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/gtp</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_gtp.html">fmgr_firewall_gtp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -2947,6 +4127,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">gtp</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/gtp/{gtp}/policy-v2</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_gtp_policyv2.html">fmgr_firewall_gtp_policyv2</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">gtp</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/gtp/{gtp}/policy-v2</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_gtp_policyv2.html">fmgr_firewall_gtp_policyv2</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">gtp</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/gtp/{gtp}/policy-v2/{policy-v2}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_gtp_policyv2.html">fmgr_firewall_gtp_policyv2</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">gtp</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/gtp/{gtp}/policy-v2/{policy-v2}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_gtp_policyv2.html">fmgr_firewall_gtp_policyv2</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">gtp</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/identity-based-route</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_identitybasedroute.html">fmgr_firewall_identitybasedroute</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -3026,6 +4226,66 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_firewall_internetservice_entry.html">fmgr_firewall_internetservice_entry</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-addition</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition.html">fmgr_firewall_internetserviceaddition</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-addition</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition.html">fmgr_firewall_internetserviceaddition</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-addition/{internet-service-addition}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition.html">fmgr_firewall_internetserviceaddition</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-addition/{internet-service-addition}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition.html">fmgr_firewall_internetserviceaddition</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-addition/{internet-service-addition}/entry</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry.html">fmgr_firewall_internetserviceaddition_entry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-addition/{internet-service-addition}/entry</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry.html">fmgr_firewall_internetserviceaddition_entry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-addition/{internet-service-addition}/entry/{entry}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry.html">fmgr_firewall_internetserviceaddition_entry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-addition/{internet-service-addition}/entry/{entry}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry.html">fmgr_firewall_internetserviceaddition_entry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-addition/{internet-service-addition}/entry/{entry}/port-range</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry_portrange.html">fmgr_firewall_internetserviceaddition_entry_portrange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code><code class="docutils literal notranslate"><span class="pre">entry</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-addition/{internet-service-addition}/entry/{entry}/port-range</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry_portrange.html">fmgr_firewall_internetserviceaddition_entry_portrange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code><code class="docutils literal notranslate"><span class="pre">entry</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-addition/{internet-service-addition}/entry/{entry}/port-range/{port-range}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry_portrange.html">fmgr_firewall_internetserviceaddition_entry_portrange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code><code class="docutils literal notranslate"><span class="pre">entry</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-addition/{internet-service-addition}/entry/{entry}/port-range/{port-range}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetserviceaddition_entry_portrange.html">fmgr_firewall_internetserviceaddition_entry_portrange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">internet-service-addition</span></code><code class="docutils literal notranslate"><span class="pre">entry</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-custom</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_internetservicecustom.html">fmgr_firewall_internetservicecustom</a></td>
@@ -3165,6 +4425,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/firewall/internet-service-group/{internet-service-group}</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_internetservicegroup.html">fmgr_firewall_internetservicegroup</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-name</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetservicename.html">fmgr_firewall_internetservicename</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-name</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetservicename.html">fmgr_firewall_internetservicename</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/internet-service-name/{internet-service-name}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetservicename.html">fmgr_firewall_internetservicename</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/internet-service-name/{internet-service-name}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_internetservicename.html">fmgr_firewall_internetservicename</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/ippool</td>
@@ -3367,6 +4647,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mms-profile</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/mms-profile/{mms-profile}/outbreak-prevention</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_mmsprofile_outbreakprevention.html">fmgr_firewall_mmsprofile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mms-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/mms-profile/{mms-profile}/outbreak-prevention</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_mmsprofile_outbreakprevention.html">fmgr_firewall_mmsprofile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mms-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/mms-profile/{mms-profile}/outbreak-prevention/{outbreak-prevention}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_mmsprofile_outbreakprevention.html">fmgr_firewall_mmsprofile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mms-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/mms-profile/{mms-profile}/outbreak-prevention/{outbreak-prevention}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_mmsprofile_outbreakprevention.html">fmgr_firewall_mmsprofile_outbreakprevention</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mms-profile</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/multicast-address</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_multicastaddress.html">fmgr_firewall_multicastaddress</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -3486,6 +4786,86 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions.html">fmgr_firewall_profileprotocoloptions</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs.html">fmgr_firewall_profileprotocoloptions_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs.html">fmgr_firewall_profileprotocoloptions_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/{cifs}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs.html">fmgr_firewall_profileprotocoloptions_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/{cifs}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs.html">fmgr_firewall_profileprotocoloptions_cifs</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries.html">fmgr_firewall_profileprotocoloptions_cifs_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/server-keytab</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_serverkeytab.html">fmgr_firewall_profileprotocoloptions_cifs_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/server-keytab</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_serverkeytab.html">fmgr_firewall_profileprotocoloptions_cifs_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/server-keytab/{server-keytab}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_serverkeytab.html">fmgr_firewall_profileprotocoloptions_cifs_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/cifs/server-keytab/{server-keytab}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_cifs_serverkeytab.html">fmgr_firewall_profileprotocoloptions_cifs_serverkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/dns</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_dns.html">fmgr_firewall_profileprotocoloptions_dns</a></td>
@@ -3664,6 +5044,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/smtp/{smtp}</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_smtp.html">fmgr_firewall_profileprotocoloptions_smtp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/ssh</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_ssh.html">fmgr_firewall_profileprotocoloptions_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/ssh</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_ssh.html">fmgr_firewall_profileprotocoloptions_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/profile-protocol-options/{profile-protocol-options}/ssh/{ssh}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_ssh.html">fmgr_firewall_profileprotocoloptions_ssh</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/profile-protocol-options/{profile-protocol-options}/ssh/{ssh}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_profileprotocoloptions_ssh.html">fmgr_firewall_profileprotocoloptions_ssh</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile-protocol-options</span></code></td>
   </tr>
@@ -3967,6 +5367,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">shaping-profile</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/ssh/local-ca</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_ssh_localca.html">fmgr_firewall_ssh_localca</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/ssh/local-ca</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_ssh_localca.html">fmgr_firewall_ssh_localca</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/ssh/local-ca/{local-ca}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_ssh_localca.html">fmgr_firewall_ssh_localca</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/ssh/local-ca/{local-ca}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_ssh_localca.html">fmgr_firewall_ssh_localca</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/ssl-ssh-profile</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile.html">fmgr_firewall_sslsshprofile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -3986,6 +5406,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile.html">fmgr_firewall_sslsshprofile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/ssl-ssh-profile/{ssl-ssh-profile}/dot</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile_dot.html">fmgr_firewall_sslsshprofile_dot</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">ssl-ssh-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/ssl-ssh-profile/{ssl-ssh-profile}/dot</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile_dot.html">fmgr_firewall_sslsshprofile_dot</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">ssl-ssh-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/ssl-ssh-profile/{ssl-ssh-profile}/dot/{dot}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile_dot.html">fmgr_firewall_sslsshprofile_dot</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">ssl-ssh-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/ssl-ssh-profile/{ssl-ssh-profile}/dot/{dot}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile_dot.html">fmgr_firewall_sslsshprofile_dot</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">ssl-ssh-profile</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/ssl-ssh-profile/{ssl-ssh-profile}/ftps</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile_ftps.html">fmgr_firewall_sslsshprofile_ftps</a></td>
@@ -4166,6 +5606,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_firewall_sslsshprofile_sslserver.html">fmgr_firewall_sslsshprofile_sslserver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">ssl-ssh-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/traffic-class</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_trafficclass.html">fmgr_firewall_trafficclass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/traffic-class</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_trafficclass.html">fmgr_firewall_trafficclass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/firewall/traffic-class/{traffic-class}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_trafficclass.html">fmgr_firewall_trafficclass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/firewall/traffic-class/{traffic-class}</td>
+  <td><a class="reference external" href="docgen/fmgr_firewall_trafficclass.html">fmgr_firewall_trafficclass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/firewall/vip</td>
   <td><a class="reference external" href="docgen/fmgr_firewall_vip.html">fmgr_firewall_vip</a></td>
@@ -4670,232 +6130,242 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/fmupdate/analyzer/virusreport</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_analyzer_virusreport.html">fmgr_fmupdate_analyzer_virusreport</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/analyzer/virusreport/{virusreport}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_analyzer_virusreport.html">fmgr_fmupdate_analyzer_virusreport</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/av-ips/advanced-log</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_avips_advancedlog.html">fmgr_fmupdate_avips_advancedlog</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/av-ips/advanced-log/{advanced-log}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_avips_advancedlog.html">fmgr_fmupdate_avips_advancedlog</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/av-ips/web-proxy</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_avips_webproxy.html">fmgr_fmupdate_avips_webproxy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/av-ips/web-proxy/{web-proxy}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_avips_webproxy.html">fmgr_fmupdate_avips_webproxy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/custom-url-list</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_customurllist.html">fmgr_fmupdate_customurllist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/custom-url-list/{custom-url-list}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_customurllist.html">fmgr_fmupdate_customurllist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/disk-quota</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_diskquota.html">fmgr_fmupdate_diskquota</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/disk-quota/{disk-quota}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_diskquota.html">fmgr_fmupdate_diskquota</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fct-services</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fctservices.html">fmgr_fmupdate_fctservices</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fct-services/{fct-services}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fctservices.html">fmgr_fmupdate_fctservices</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting.html">fmgr_fmupdate_fdssetting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/{fds-setting}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting.html">fmgr_fmupdate_fdssetting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting/push-override</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_pushoverride.html">fmgr_fmupdate_fdssetting_pushoverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/push-override/{push-override}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_pushoverride.html">fmgr_fmupdate_fdssetting_pushoverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting/push-override-to-client</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_pushoverridetoclient.html">fmgr_fmupdate_fdssetting_pushoverridetoclient</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/push-override-to-client/{push-override-to-client}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_pushoverridetoclient.html">fmgr_fmupdate_fdssetting_pushoverridetoclient</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting/push-override-to-client/announce-ip</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_pushoverridetoclient_announceip.html">fmgr_fmupdate_fdssetting_pushoverridetoclient_announceip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/push-override-to-client/announce-ip/{announce-ip}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_pushoverridetoclient_announceip.html">fmgr_fmupdate_fdssetting_pushoverridetoclient_announceip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting/server-override</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_serveroverride.html">fmgr_fmupdate_fdssetting_serveroverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/server-override/{server-override}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_serveroverride.html">fmgr_fmupdate_fdssetting_serveroverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting/server-override/servlist</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_serveroverride_servlist.html">fmgr_fmupdate_fdssetting_serveroverride_servlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/server-override/servlist/{servlist}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_serveroverride_servlist.html">fmgr_fmupdate_fdssetting_serveroverride_servlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/fds-setting/update-schedule</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_updateschedule.html">fmgr_fmupdate_fdssetting_updateschedule</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/fds-setting/update-schedule/{update-schedule}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_fdssetting_updateschedule.html">fmgr_fmupdate_fdssetting_updateschedule</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/fmupdate/fwm-setting</td>
+  <td><a class="reference external" href="docgen/fmgr_fmupdate_fwmsetting.html">fmgr_fmupdate_fwmsetting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/fmupdate/fwm-setting/{fwm-setting}</td>
+  <td><a class="reference external" href="docgen/fmgr_fmupdate_fwmsetting.html">fmgr_fmupdate_fwmsetting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/multilayer</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_multilayer.html">fmgr_fmupdate_multilayer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/multilayer/{multilayer}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_multilayer.html">fmgr_fmupdate_multilayer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/publicnetwork</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_publicnetwork.html">fmgr_fmupdate_publicnetwork</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/publicnetwork/{publicnetwork}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_publicnetwork.html">fmgr_fmupdate_publicnetwork</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/server-access-priorities</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_serveraccesspriorities.html">fmgr_fmupdate_serveraccesspriorities</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/server-access-priorities/{server-access-priorities}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_serveraccesspriorities.html">fmgr_fmupdate_serveraccesspriorities</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/server-access-priorities/private-server</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_serveraccesspriorities_privateserver.html">fmgr_fmupdate_serveraccesspriorities_privateserver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/server-access-priorities/private-server/{private-server}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_serveraccesspriorities_privateserver.html">fmgr_fmupdate_serveraccesspriorities_privateserver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/server-override-status</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_serveroverridestatus.html">fmgr_fmupdate_serveroverridestatus</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/server-override-status/{server-override-status}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_serveroverridestatus.html">fmgr_fmupdate_serveroverridestatus</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/service</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_service.html">fmgr_fmupdate_service</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/service/{service}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_service.html">fmgr_fmupdate_service</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/web-spam/fgd-setting</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_fgdsetting.html">fmgr_fmupdate_webspam_fgdsetting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/web-spam/fgd-setting/{fgd-setting}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_fgdsetting.html">fmgr_fmupdate_webspam_fgdsetting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/web-spam/fgd-setting/server-override</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_fgdsetting_serveroverride.html">fmgr_fmupdate_webspam_fgdsetting_serveroverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/web-spam/fgd-setting/server-override/{server-override}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_fgdsetting_serveroverride.html">fmgr_fmupdate_webspam_fgdsetting_serveroverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/web-spam/fgd-setting/server-override/servlist</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist.html">fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/web-spam/fgd-setting/server-override/servlist/{servlist}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist.html">fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/fmupdate/web-spam/web-proxy</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_webproxy.html">fmgr_fmupdate_webspam_webproxy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/fmupdate/web-spam/web-proxy/{web-proxy}</td>
   <td><a class="reference external" href="docgen/fmgr_fmupdate_webspam_webproxy.html">fmgr_fmupdate_webspam_webproxy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/fsp/vlan</td>
   <td><a class="reference external" href="docgen/fmgr_fsp_vlan.html">fmgr_fsp_vlan</a></td>
@@ -5157,6 +6627,126 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/{ipv6}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/{ipv6}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-delegated-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-delegated-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-delegated-prefix-list/{ip6-delegated-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-delegated-prefix-list/{ip6-delegated-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-extra-addr</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-extra-addr</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-extra-addr/{ip6-extra-addr}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-extra-addr/{ip6-extra-addr}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-prefix-list/{ip6-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/ip6-prefix-list/{ip6-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/vrrp6</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/vrrp6</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/vrrp6/{vrrp6}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/ipv6/vrrp6/{vrrp6}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_dynamicmapping_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/secondaryip</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_secondaryip.html">fmgr_fsp_vlan_dynamicmapping_interface_secondaryip</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/secondaryip</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_secondaryip.html">fmgr_fsp_vlan_dynamicmapping_interface_secondaryip</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/secondaryip/{secondaryip}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_secondaryip.html">fmgr_fsp_vlan_dynamicmapping_interface_secondaryip</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/dynamic_mapping/{dynamic_mapping}/interface/secondaryip/{secondaryip}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_dynamicmapping_interface_secondaryip.html">fmgr_fsp_vlan_dynamicmapping_interface_secondaryip</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface</td>
   <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface.html">fmgr_fsp_vlan_interface</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -5195,6 +6785,86 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/{ipv6}</td>
   <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6.html">fmgr_fsp_vlan_interface_ipv6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-delegated-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-delegated-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-delegated-prefix-list/{ip6-delegated-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-delegated-prefix-list/{ip6-delegated-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6delegatedprefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-extra-addr</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-extra-addr</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-extra-addr/{ip6-extra-addr}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-extra-addr/{ip6-extra-addr}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6extraaddr.html">fmgr_fsp_vlan_interface_ipv6_ip6extraaddr</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-prefix-list</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-prefix-list/{ip6-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/ip6-prefix-list/{ip6-prefix-list}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_ip6prefixlist.html">fmgr_fsp_vlan_interface_ipv6_ip6prefixlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/vrrp6</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/vrrp6</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/fsp/vlan/{vlan}/interface/ipv6/vrrp6/{vrrp6}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/ipv6/vrrp6/{vrrp6}</td>
+  <td><a class="reference external" href="docgen/fmgr_fsp_vlan_interface_ipv6_vrrp6.html">fmgr_fsp_vlan_interface_ipv6_vrrp6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vlan</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/fsp/vlan/{vlan}/interface/secondaryip</td>
@@ -5857,6 +7527,66 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/icap/profile/{profile}/icap-headers</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_icapheaders.html">fmgr_icap_profile_icapheaders</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/icap/profile/{profile}/icap-headers</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_icapheaders.html">fmgr_icap_profile_icapheaders</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/icap/profile/{profile}/icap-headers/{icap-headers}</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_icapheaders.html">fmgr_icap_profile_icapheaders</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/icap/profile/{profile}/icap-headers/{icap-headers}</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_icapheaders.html">fmgr_icap_profile_icapheaders</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/icap/profile/{profile}/respmod-forward-rules</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules.html">fmgr_icap_profile_respmodforwardrules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/icap/profile/{profile}/respmod-forward-rules</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules.html">fmgr_icap_profile_respmodforwardrules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/icap/profile/{profile}/respmod-forward-rules/{respmod-forward-rules}</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules.html">fmgr_icap_profile_respmodforwardrules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/icap/profile/{profile}/respmod-forward-rules/{respmod-forward-rules}</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules.html">fmgr_icap_profile_respmodforwardrules</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/icap/profile/{profile}/respmod-forward-rules/{respmod-forward-rules}/header-group</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules_headergroup.html">fmgr_icap_profile_respmodforwardrules_headergroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code><code class="docutils literal notranslate"><span class="pre">respmod-forward-rules</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/icap/profile/{profile}/respmod-forward-rules/{respmod-forward-rules}/header-group</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules_headergroup.html">fmgr_icap_profile_respmodforwardrules_headergroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code><code class="docutils literal notranslate"><span class="pre">respmod-forward-rules</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/icap/profile/{profile}/respmod-forward-rules/{respmod-forward-rules}/header-group/{header-group}</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules_headergroup.html">fmgr_icap_profile_respmodforwardrules_headergroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code><code class="docutils literal notranslate"><span class="pre">respmod-forward-rules</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/icap/profile/{profile}/respmod-forward-rules/{respmod-forward-rules}/header-group/{header-group}</td>
+  <td><a class="reference external" href="docgen/fmgr_icap_profile_respmodforwardrules_headergroup.html">fmgr_icap_profile_respmodforwardrules_headergroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code><code class="docutils literal notranslate"><span class="pre">respmod-forward-rules</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/icap/server</td>
   <td><a class="reference external" href="docgen/fmgr_icap_server.html">fmgr_icap_server</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -5958,62 +7688,62 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code><code class="docutils literal notranslate"><span class="pre">entries</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ips/sensor/{sensor}/filter</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/ips/sensor/{sensor}/filter</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ips/sensor/{sensor}/filter/{filter}</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/ips/sensor/{sensor}/filter/{filter}</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_filter.html">fmgr_ips_sensor_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ips/sensor/{sensor}/override</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/ips/sensor/{sensor}/override</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ips/sensor/{sensor}/override/{override}</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/ips/sensor/{sensor}/override/{override}</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override.html">fmgr_ips_sensor_override</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ips/sensor/{sensor}/override/{override}/exempt-ip</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code><code class="docutils literal notranslate"><span class="pre">override</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/ips/sensor/{sensor}/override/{override}/exempt-ip</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code><code class="docutils literal notranslate"><span class="pre">override</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ips/sensor/{sensor}/override/{override}/exempt-ip/{exempt-ip}</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code><code class="docutils literal notranslate"><span class="pre">override</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/ips/sensor/{sensor}/override/{override}/exempt-ip/{exempt-ip}</td>
-  <td><a class="reference external" href="docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_ips_sensor_override_exemptip.html">fmgr_ips_sensor_override_exemptip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">sensor</span></code><code class="docutils literal notranslate"><span class="pre">override</span></code></td>
   </tr>
@@ -6037,15 +7767,95 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
-  <tr class="row-even"><td>/cli/global/<em>meta</em>fields/system/admin/user</td>
+  <tr class="row-even"><td>/cli/global/_meta_fields/system/admin/user</td>
   <td><a class="reference external" href="docgen/fmgr_metafields_system_admin_user.html">fmgr_metafields_system_admin_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
-  <tr class="row-odd"><td>/cli/global/<em>meta</em>fields/system/admin/user/{user}</td>
+  <tr class="row-odd"><td>/cli/global/_meta_fields/system/admin/user/{user}</td>
   <td><a class="reference external" href="docgen/fmgr_metafields_system_admin_user.html">fmgr_metafields_system_admin_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/mpsk-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile.html">fmgr_mpskprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/mpsk-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile.html">fmgr_mpskprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/mpsk-profile/{mpsk-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile.html">fmgr_mpskprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/mpsk-profile/{mpsk-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile.html">fmgr_mpskprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup.html">fmgr_mpskprofile_mpskgroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup.html">fmgr_mpskprofile_mpskgroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group/{mpsk-group}</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup.html">fmgr_mpskprofile_mpskgroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group/{mpsk-group}</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup.html">fmgr_mpskprofile_mpskgroup</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group/{mpsk-group}/mpsk-key</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup_mpskkey.html">fmgr_mpskprofile_mpskgroup_mpskkey</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-group</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group/{mpsk-group}/mpsk-key</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup_mpskkey.html">fmgr_mpskprofile_mpskgroup_mpskkey</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group/{mpsk-group}/mpsk-key/{mpsk-key}</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup_mpskkey.html">fmgr_mpskprofile_mpskgroup_mpskkey</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-group</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/mpsk-profile/{mpsk-profile}/mpsk-group/{mpsk-group}/mpsk-key/{mpsk-key}</td>
+  <td><a class="reference external" href="docgen/fmgr_mpskprofile_mpskgroup_mpskkey.html">fmgr_mpskprofile_mpskgroup_mpskkey</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-profile</span></code><code class="docutils literal notranslate"><span class="pre">mpsk-group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/authentication/rule</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_authentication_rule.html">fmgr_pkg_authentication_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/authentication/rule/{rule}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_authentication_rule.html">fmgr_pkg_authentication_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/authentication/setting</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_authentication_setting.html">fmgr_pkg_authentication_setting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/authentication/setting/{setting}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_authentication_setting.html">fmgr_pkg_authentication_setting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/central/dnat</td>
   <td><a class="reference external" href="docgen/fmgr_pkg_central_dnat.html">fmgr_pkg_central_dnat</a></td>
@@ -6057,6 +7867,16 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/central/dnat6</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_central_dnat6.html">fmgr_pkg_central_dnat6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/central/dnat6/{dnat6}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_central_dnat6.html">fmgr_pkg_central_dnat6</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/central-snat-map</td>
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_centralsnatmap.html">fmgr_pkg_firewall_centralsnatmap</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -6066,6 +7886,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_centralsnatmap.html">fmgr_pkg_firewall_centralsnatmap</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/consolidated/policy</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_consolidated_policy.html">fmgr_pkg_firewall_consolidated_policy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/consolidated/policy/{policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_consolidated_policy.html">fmgr_pkg_firewall_consolidated_policy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/consolidated/policy/{policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_consolidated_policy_sectionvalue.html">fmgr_pkg_firewall_consolidated_policy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">clone</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/consolidated/policy/{policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_consolidated_policy_sectionvalue.html">fmgr_pkg_firewall_consolidated_policy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">clone</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/DoS-policy</td>
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_dospolicy.html">fmgr_pkg_firewall_dospolicy</a></td>
@@ -6126,6 +7966,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_interfacepolicy6.html">fmgr_pkg_firewall_interfacepolicy6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/interface-policy6/{interface-policy6}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_interfacepolicy6_sectionvalue.html">fmgr_pkg_firewall_interfacepolicy6_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">interface-policy6</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/interface-policy6/{interface-policy6}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_interfacepolicy6_sectionvalue.html">fmgr_pkg_firewall_interfacepolicy6_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">interface-policy6</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/interface-policy/{interface-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_interfacepolicy_sectionvalue.html">fmgr_pkg_firewall_interfacepolicy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">interface-policy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/interface-policy/{interface-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_interfacepolicy_sectionvalue.html">fmgr_pkg_firewall_interfacepolicy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">interface-policy</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/local-in-policy</td>
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_localinpolicy.html">fmgr_pkg_firewall_localinpolicy</a></td>
@@ -6207,6 +8067,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/policy6/{policy6}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_policy6_sectionvalue.html">fmgr_pkg_firewall_policy6_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy6</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/policy6/{policy6}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_policy6_sectionvalue.html">fmgr_pkg_firewall_policy6_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy6</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/policy/{policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_policy_sectionvalue.html">fmgr_pkg_firewall_policy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/policy/{policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_policy_sectionvalue.html">fmgr_pkg_firewall_policy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/policy/{policy}/vpn_dst_node</td>
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_policy_vpndstnode.html">fmgr_pkg_firewall_policy_vpndstnode</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -6237,6 +8117,36 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/proxy-policy/{proxy-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_proxypolicy_sectionvalue.html">fmgr_pkg_firewall_proxypolicy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">proxy-policy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/proxy-policy/{proxy-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_proxypolicy_sectionvalue.html">fmgr_pkg_firewall_proxypolicy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">clone</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">proxy-policy</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/security-policy</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_securitypolicy.html">fmgr_pkg_firewall_securitypolicy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/security-policy/{security-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_securitypolicy.html">fmgr_pkg_firewall_securitypolicy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/security-policy/{security-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_securitypolicy_sectionvalue.html">fmgr_pkg_firewall_securitypolicy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">clone</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">security-policy</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/security-policy/{security-policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pkg_firewall_securitypolicy_sectionvalue.html">fmgr_pkg_firewall_securitypolicy_sectionvalue</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">move</span></code><code class="docutils literal notranslate"><span class="pre">clone</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">security-policy</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/pkg/{pkg}/firewall/shaping-policy</td>
   <td><a class="reference external" href="docgen/fmgr_pkg_firewall_shapingpolicy.html">fmgr_pkg_firewall_shapingpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -6248,12 +8158,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/global/pkg/{pkg}/global/footer/consolidated/policy</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_footer_consolidated_policy.html">fmgr_pkg_footer_consolidated_policy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_footer_consolidated_policy.html">fmgr_pkg_footer_consolidated_policy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/pkg/{pkg}/global/footer/consolidated/policy/{policy}</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_footer_consolidated_policy.html">fmgr_pkg_footer_consolidated_policy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_footer_consolidated_policy.html">fmgr_pkg_footer_consolidated_policy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
@@ -6278,22 +8188,22 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/global/pkg/{pkg}/global/footer/policy6/{policy6}/identity-based-policy6</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_footer_policy6_identitybasedpolicy6.html">fmgr_pkg_footer_policy6_identitybasedpolicy6</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_footer_policy6_identitybasedpolicy6.html">fmgr_pkg_footer_policy6_identitybasedpolicy6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy6</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/pkg/{pkg}/global/footer/policy6/{policy6}/identity-based-policy6/{identity-based-policy6}</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_footer_policy6_identitybasedpolicy6.html">fmgr_pkg_footer_policy6_identitybasedpolicy6</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_footer_policy6_identitybasedpolicy6.html">fmgr_pkg_footer_policy6_identitybasedpolicy6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy6</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/global/pkg/{pkg}/global/footer/policy/{policy}/identity-based-policy</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_footer_policy_identitybasedpolicy.html">fmgr_pkg_footer_policy_identitybasedpolicy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_footer_policy_identitybasedpolicy.html">fmgr_pkg_footer_policy_identitybasedpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/pkg/{pkg}/global/footer/policy/{policy}/identity-based-policy/{identity-based-policy}</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_footer_policy_identitybasedpolicy.html">fmgr_pkg_footer_policy_identitybasedpolicy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_footer_policy_identitybasedpolicy.html">fmgr_pkg_footer_policy_identitybasedpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
   </tr>
@@ -6308,12 +8218,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/global/pkg/{pkg}/global/header/consolidated/policy</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_header_consolidated_policy.html">fmgr_pkg_header_consolidated_policy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_header_consolidated_policy.html">fmgr_pkg_header_consolidated_policy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/pkg/{pkg}/global/header/consolidated/policy/{policy}</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_header_consolidated_policy.html">fmgr_pkg_header_consolidated_policy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_header_consolidated_policy.html">fmgr_pkg_header_consolidated_policy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
@@ -6338,22 +8248,22 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/global/pkg/{pkg}/global/header/policy6/{policy6}/identity-based-policy6</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_header_policy6_identitybasedpolicy6.html">fmgr_pkg_header_policy6_identitybasedpolicy6</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_header_policy6_identitybasedpolicy6.html">fmgr_pkg_header_policy6_identitybasedpolicy6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy6</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/pkg/{pkg}/global/header/policy6/{policy6}/identity-based-policy6/{identity-based-policy6}</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_header_policy6_identitybasedpolicy6.html">fmgr_pkg_header_policy6_identitybasedpolicy6</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_header_policy6_identitybasedpolicy6.html">fmgr_pkg_header_policy6_identitybasedpolicy6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy6</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/global/pkg/{pkg}/global/header/policy/{policy}/identity-based-policy</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_header_policy_identitybasedpolicy.html">fmgr_pkg_header_policy_identitybasedpolicy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_header_policy_identitybasedpolicy.html">fmgr_pkg_header_policy_identitybasedpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/config/global/pkg/{pkg}/global/header/policy/{policy}/identity-based-policy/{identity-based-policy}</td>
-  <td><a class="reference external" href="docgen/fmgr_pkg_header_policy_identitybasedpolicy.html">fmgr_pkg_header_policy_identitybasedpolicy</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pkg_header_policy_identitybasedpolicy.html">fmgr_pkg_header_policy_identitybasedpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code><code class="docutils literal notranslate"><span class="pre">policy</span></code></td>
   </tr>
@@ -6367,12 +8277,162 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">pkg</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/_meta_fields/firewall/address</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_address.html">fmgr_pm_config_metafields_firewall_address</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/_meta_fields/firewall/address/{address}</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_address.html">fmgr_pm_config_metafields_firewall_address</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/_meta_fields/firewall/addrgrp</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_addrgrp.html">fmgr_pm_config_metafields_firewall_addrgrp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/_meta_fields/firewall/addrgrp/{addrgrp}</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_addrgrp.html">fmgr_pm_config_metafields_firewall_addrgrp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/_meta_fields/firewall/central-snat-map</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_centralsnatmap.html">fmgr_pm_config_metafields_firewall_centralsnatmap</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/_meta_fields/firewall/central-snat-map/{central-snat-map}</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_centralsnatmap.html">fmgr_pm_config_metafields_firewall_centralsnatmap</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/_meta_fields/firewall/policy</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_policy.html">fmgr_pm_config_metafields_firewall_policy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/_meta_fields/firewall/policy/{policy}</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_policy.html">fmgr_pm_config_metafields_firewall_policy</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/_meta_fields/firewall/service/custom</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_service_custom.html">fmgr_pm_config_metafields_firewall_service_custom</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/_meta_fields/firewall/service/custom/{custom}</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_service_custom.html">fmgr_pm_config_metafields_firewall_service_custom</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/_meta_fields/firewall/service/group</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_service_group.html">fmgr_pm_config_metafields_firewall_service_group</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/_meta_fields/firewall/service/group/{group}</td>
+  <td><a class="reference external" href="docgen/fmgr_pm_config_metafields_firewall_service_group.html">fmgr_pm_config_metafields_firewall_service_group</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/_reset/database</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_reset_database.html">fmgr_pm_config_reset_database</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_reset/database/{database}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_reset_database.html">fmgr_pm_config_reset_database</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_upgrade</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_upgrade.html">fmgr_pm_config_upgrade</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_upgrade</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_upgrade.html">fmgr_pm_config_upgrade</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_upgrade/{_upgrade}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_upgrade.html">fmgr_pm_config_upgrade</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_upgrade/{_upgrade}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_upgrade.html">fmgr_pm_config_upgrade</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_workspace/commit</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_commit.html">fmgr_pm_config_workspace_commit</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_workspace/commit</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_commit.html">fmgr_pm_config_workspace_commit</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_workspace/commit/{commit}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_commit.html">fmgr_pm_config_workspace_commit</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_workspace/commit/{commit}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_commit.html">fmgr_pm_config_workspace_commit</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_workspace/lock</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_lock.html">fmgr_pm_config_workspace_lock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_workspace/lock</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_lock.html">fmgr_pm_config_workspace_lock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_workspace/lock/{lock}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_lock.html">fmgr_pm_config_workspace_lock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_workspace/lock/{lock}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_lock.html">fmgr_pm_config_workspace_lock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_workspace/unlock</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_unlock.html">fmgr_pm_config_workspace_unlock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_workspace/unlock</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_unlock.html">fmgr_pm_config_workspace_unlock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/_workspace/unlock/{unlock}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_unlock.html">fmgr_pm_config_workspace_unlock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/global/_workspace/unlock/{unlock}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_pm_config_workspace_unlock.html">fmgr_pm_config_workspace_unlock</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/devprof/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_devprof_adom.html">fmgr_pm_devprof_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/devprof/adom/{adom}/{{adom}}</td>
+  <tr class="row-odd"><td>/pm/devprof/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_devprof_adom.html">fmgr_pm_devprof_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
@@ -6382,7 +8442,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/devprof/adom/{adom}/{pkg_path}/{{pkg_path}}</td>
+  <tr class="row-odd"><td>/pm/devprof/adom/{adom}/{pkg_path}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_devprof_pkg.html">fmgr_pm_devprof_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
@@ -6397,12 +8457,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
   </tr>
-  <tr class="row-even"><td>/pm/pkg/adom/{adom}/{pkg_path}/{{pkg_path}}</td>
+  <tr class="row-even"><td>/pm/pkg/adom/{adom}/{pkg_path}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_pkg.html">fmgr_pm_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/pkg/global/{pkg_path}/{{pkg_path}}</td>
+  <tr class="row-odd"><td>/pm/pkg/global/{pkg_path}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_pkg.html">fmgr_pm_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
@@ -6412,7 +8472,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/pkg/adom/{adom}/{{adom}}</td>
+  <tr class="row-odd"><td>/pm/pkg/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_pkg_adom.html">fmgr_pm_pkg_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
@@ -6420,19 +8480,19 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/pm/pkg/global</td>
   <td><a class="reference external" href="docgen/fmgr_pm_pkg_global.html">fmgr_pm_pkg_global</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/pm/pkg/global/{global}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_pkg_global.html">fmgr_pm_pkg_global</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/wanprof/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_wanprof_adom.html">fmgr_pm_wanprof_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/wanprof/adom/{adom}/{{adom}}</td>
+  <tr class="row-odd"><td>/pm/wanprof/adom/{adom}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_wanprof_adom.html">fmgr_pm_wanprof_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
@@ -6442,7 +8502,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/wanprof/adom/{adom}/{pkg_path}/{{pkg_path}}</td>
+  <tr class="row-odd"><td>/pm/wanprof/adom/{adom}/{pkg_path}</td>
   <td><a class="reference external" href="docgen/fmgr_pm_wanprof_pkg.html">fmgr_pm_wanprof_pkg</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">pkg_path</span></code></td>
@@ -6467,145 +8527,165 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/region</td>
+  <td><a class="reference external" href="docgen/fmgr_region.html">fmgr_region</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/region</td>
+  <td><a class="reference external" href="docgen/fmgr_region.html">fmgr_region</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/region/{region}</td>
+  <td><a class="reference external" href="docgen/fmgr_region.html">fmgr_region</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/region/{region}</td>
+  <td><a class="reference external" href="docgen/fmgr_region.html">fmgr_region</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/securityconsole/abort</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_abort.html">fmgr_securityconsole_abort</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/abort/{abort}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_abort.html">fmgr_securityconsole_abort</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/assign/package</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_assign_package.html">fmgr_securityconsole_assign_package</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/assign/package/{package}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_assign_package.html">fmgr_securityconsole_assign_package</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/import/dev/objs</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_import_dev_objs.html">fmgr_securityconsole_import_dev_objs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/import/dev/objs/{objs}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_import_dev_objs.html">fmgr_securityconsole_import_dev_objs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/install/device</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_install_device.html">fmgr_securityconsole_install_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/install/device/{device}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_install_device.html">fmgr_securityconsole_install_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/install/package</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_install_package.html">fmgr_securityconsole_install_package</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/install/package/{package}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_install_package.html">fmgr_securityconsole_install_package</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/install/preview</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_install_preview.html">fmgr_securityconsole_install_preview</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/install/preview/{preview}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_install_preview.html">fmgr_securityconsole_install_preview</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/package/cancel/install</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_cancel_install.html">fmgr_securityconsole_package_cancel_install</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/package/cancel/install/{install}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_cancel_install.html">fmgr_securityconsole_package_cancel_install</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/package/clone</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_clone.html">fmgr_securityconsole_package_clone</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/package/clone/{clone}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_clone.html">fmgr_securityconsole_package_clone</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/package/commit</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_commit.html">fmgr_securityconsole_package_commit</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/package/commit/{commit}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_commit.html">fmgr_securityconsole_package_commit</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/package/move</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_move.html">fmgr_securityconsole_package_move</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/package/move/{move}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_package_move.html">fmgr_securityconsole_package_move</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/pblock/clone</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_pblock_clone.html">fmgr_securityconsole_pblock_clone</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/pblock/clone/{clone}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_pblock_clone.html">fmgr_securityconsole_pblock_clone</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/preview/result</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_preview_result.html">fmgr_securityconsole_preview_result</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/preview/result/{result}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_preview_result.html">fmgr_securityconsole_preview_result</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/reinstall/package</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_reinstall_package.html">fmgr_securityconsole_reinstall_package</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/reinstall/package/{package}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_reinstall_package.html">fmgr_securityconsole_reinstall_package</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/securityconsole/sign/certificate/template</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_sign_certificate_template.html">fmgr_securityconsole_sign_certificate_template</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/securityconsole/sign/certificate/template/{template}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_securityconsole_sign_certificate_template.html">fmgr_securityconsole_sign_certificate_template</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/spamfilter/bwl</td>
   <td><a class="reference external" href="docgen/fmgr_spamfilter_bwl.html">fmgr_spamfilter_bwl</a></td>
@@ -6987,6 +9067,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/ssh-filter/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter.html">fmgr_sshfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/ssh-filter/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter.html">fmgr_sshfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/ssh-filter/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter.html">fmgr_sshfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/ssh-filter/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter.html">fmgr_sshfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/ssh-filter/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter_entries.html">fmgr_sshfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/ssh-filter/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter_entries.html">fmgr_sshfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/ssh-filter/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter_entries.html">fmgr_sshfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/ssh-filter/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_filefilter_entries.html">fmgr_sshfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/ssh-filter/profile/{profile}/shell-commands</td>
   <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_shellcommands.html">fmgr_sshfilter_profile_shellcommands</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -7006,6 +9126,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_sshfilter_profile_shellcommands.html">fmgr_sshfilter_profile_shellcommands</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/custom-command</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_customcommand.html">fmgr_switchcontroller_customcommand</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/custom-command</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_customcommand.html">fmgr_switchcontroller_customcommand</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/custom-command/{custom-command}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_customcommand.html">fmgr_switchcontroller_customcommand</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/custom-command/{custom-command}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_customcommand.html">fmgr_switchcontroller_customcommand</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/switch-controller/lldp-profile</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_lldpprofile.html">fmgr_switchcontroller_lldpprofile</a></td>
@@ -7045,6 +9185,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/switch-controller/lldp-profile/{lldp-profile}/custom-tlvs/{custom-tlvs}</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_lldpprofile_customtlvs.html">fmgr_switchcontroller_lldpprofile_customtlvs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">lldp-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/lldp-profile/{lldp-profile}/med-location-service</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_lldpprofile_medlocationservice.html">fmgr_switchcontroller_lldpprofile_medlocationservice</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">lldp-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/lldp-profile/{lldp-profile}/med-location-service</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_lldpprofile_medlocationservice.html">fmgr_switchcontroller_lldpprofile_medlocationservice</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">lldp-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/lldp-profile/{lldp-profile}/med-location-service/{med-location-service}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_lldpprofile_medlocationservice.html">fmgr_switchcontroller_lldpprofile_medlocationservice</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">lldp-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/lldp-profile/{lldp-profile}/med-location-service/{med-location-service}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_lldpprofile_medlocationservice.html">fmgr_switchcontroller_lldpprofile_medlocationservice</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">lldp-profile</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/switch-controller/lldp-profile/{lldp-profile}/med-network-policy</td>
@@ -7097,15 +9257,25 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
   </tr>
-  <tr class="row-even"><td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/custom-command</td>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/custom-command</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_customcommand.html">fmgr_switchcontroller_managedswitch_customcommand</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
   </tr>
-  <tr class="row-odd"><td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/custom-command/{custom-command}</td>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/custom-command</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_customcommand.html">fmgr_switchcontroller_managedswitch_customcommand</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/custom-command/{custom-command}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_customcommand.html">fmgr_switchcontroller_managedswitch_customcommand</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/custom-command/{custom-command}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_customcommand.html">fmgr_switchcontroller_managedswitch_customcommand</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/igmp-snooping</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_igmpsnooping.html">fmgr_switchcontroller_managedswitch_igmpsnooping</a></td>
@@ -7116,6 +9286,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_igmpsnooping.html">fmgr_switchcontroller_managedswitch_igmpsnooping</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard.html">fmgr_switchcontroller_managedswitch_ipsourceguard</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard.html">fmgr_switchcontroller_managedswitch_ipsourceguard</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard/{ip-source-guard}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard.html">fmgr_switchcontroller_managedswitch_ipsourceguard</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard/{ip-source-guard}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard.html">fmgr_switchcontroller_managedswitch_ipsourceguard</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard/{ip-source-guard}/binding-entry</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry.html">fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">ip-source-guard</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard/{ip-source-guard}/binding-entry</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry.html">fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">ip-source-guard</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard/{ip-source-guard}/binding-entry/{binding-entry}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry.html">fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">ip-source-guard</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/ip-source-guard/{ip-source-guard}/binding-entry/{binding-entry}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry.html">fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">ip-source-guard</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/mirror</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_mirror.html">fmgr_switchcontroller_managedswitch_mirror</a></td>
@@ -7145,6 +9355,126 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/ports/{ports}</td>
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_ports.html">fmgr_switchcontroller_managedswitch_ports</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/remote-log</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_remotelog.html">fmgr_switchcontroller_managedswitch_remotelog</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/remote-log</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_remotelog.html">fmgr_switchcontroller_managedswitch_remotelog</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/remote-log/{remote-log}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_remotelog.html">fmgr_switchcontroller_managedswitch_remotelog</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/remote-log/{remote-log}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_remotelog.html">fmgr_switchcontroller_managedswitch_remotelog</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-community</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity.html">fmgr_switchcontroller_managedswitch_snmpcommunity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-community</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity.html">fmgr_switchcontroller_managedswitch_snmpcommunity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-community/{snmp-community}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity.html">fmgr_switchcontroller_managedswitch_snmpcommunity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-community/{snmp-community}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity.html">fmgr_switchcontroller_managedswitch_snmpcommunity</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-community/{snmp-community}/hosts</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity_hosts.html">fmgr_switchcontroller_managedswitch_snmpcommunity_hosts</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">snmp-community</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-community/{snmp-community}/hosts</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity_hosts.html">fmgr_switchcontroller_managedswitch_snmpcommunity_hosts</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">snmp-community</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-community/{snmp-community}/hosts/{hosts}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity_hosts.html">fmgr_switchcontroller_managedswitch_snmpcommunity_hosts</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">snmp-community</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-community/{snmp-community}/hosts/{hosts}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpcommunity_hosts.html">fmgr_switchcontroller_managedswitch_snmpcommunity_hosts</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code><code class="docutils literal notranslate"><span class="pre">snmp-community</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-sysinfo</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpsysinfo.html">fmgr_switchcontroller_managedswitch_snmpsysinfo</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-sysinfo</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpsysinfo.html">fmgr_switchcontroller_managedswitch_snmpsysinfo</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-sysinfo/{snmp-sysinfo}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpsysinfo.html">fmgr_switchcontroller_managedswitch_snmpsysinfo</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-sysinfo/{snmp-sysinfo}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpsysinfo.html">fmgr_switchcontroller_managedswitch_snmpsysinfo</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-trap-threshold</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmptrapthreshold.html">fmgr_switchcontroller_managedswitch_snmptrapthreshold</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-trap-threshold</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmptrapthreshold.html">fmgr_switchcontroller_managedswitch_snmptrapthreshold</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-trap-threshold/{snmp-trap-threshold}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmptrapthreshold.html">fmgr_switchcontroller_managedswitch_snmptrapthreshold</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-trap-threshold/{snmp-trap-threshold}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmptrapthreshold.html">fmgr_switchcontroller_managedswitch_snmptrapthreshold</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-user</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpuser.html">fmgr_switchcontroller_managedswitch_snmpuser</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-user</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpuser.html">fmgr_switchcontroller_managedswitch_snmpuser</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/switch-controller/managed-switch/{managed-switch}/snmp-user/{snmp-user}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpuser.html">fmgr_switchcontroller_managedswitch_snmpuser</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/switch-controller/managed-switch/{managed-switch}/snmp-user/{snmp-user}</td>
+  <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_snmpuser.html">fmgr_switchcontroller_managedswitch_snmpuser</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/storm-control</td>
@@ -7350,72 +9680,82 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/sys/api/sdnconnector</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_api_sdnconnector.html">fmgr_sys_api_sdnconnector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/sys/api/sdnconnector/{sdnconnector}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_api_sdnconnector.html">fmgr_sys_api_sdnconnector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/sys/generate/wsdl</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_generate_wsdl.html">fmgr_sys_generate_wsdl</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/sys/generate/wsdl/{wsdl}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_generate_wsdl.html">fmgr_sys_generate_wsdl</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/sys/login/challenge</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_login_challenge.html">fmgr_sys_login_challenge</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/sys/login/challenge/{challenge}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_login_challenge.html">fmgr_sys_login_challenge</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/sys/login/user</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_login_user.html">fmgr_sys_login_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/sys/login/user/{user}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_login_user.html">fmgr_sys_login_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/sys/logout</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_logout.html">fmgr_sys_logout</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/sys/logout/{logout}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_logout.html">fmgr_sys_logout</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/sys/proxy/json</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_proxy_json.html">fmgr_sys_proxy_json</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/sys/proxy/json/{json}</td>
   <td><a class="reference external" href="daemon_docgen/fmgr_sys_proxy_json.html">fmgr_sys_proxy_json</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/sys/reboot</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_sys_reboot.html">fmgr_sys_reboot</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/sys/reboot/{reboot}</td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_sys_reboot.html">fmgr_sys_reboot</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/group</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_group.html">fmgr_system_admin_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/group/{group}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_group.html">fmgr_system_admin_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/group/{group}/member</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_group_member.html">fmgr_system_admin_group_member</a></td>
@@ -7430,12 +9770,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/admin/ldap</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_ldap.html">fmgr_system_admin_ldap</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/ldap/{ldap}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_ldap.html">fmgr_system_admin_ldap</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/ldap/{ldap}/adom</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_ldap_adom.html">fmgr_system_admin_ldap_adom</a></td>
@@ -7450,12 +9790,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/admin/profile</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_profile.html">fmgr_system_admin_profile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/profile/{profile}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_profile.html">fmgr_system_admin_profile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/profile/{profile}/datamask-custom-fields</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_profile_datamaskcustomfields.html">fmgr_system_admin_profile_datamaskcustomfields</a></td>
@@ -7470,42 +9810,42 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/admin/radius</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_radius.html">fmgr_system_admin_radius</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/radius/{radius}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_radius.html">fmgr_system_admin_radius</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_setting.html">fmgr_system_admin_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_setting.html">fmgr_system_admin_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/tacacs</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_tacacs.html">fmgr_system_admin_tacacs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/tacacs/{tacacs}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_tacacs.html">fmgr_system_admin_tacacs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/user</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_user.html">fmgr_system_admin_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/admin/user/{user}</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_user.html">fmgr_system_admin_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/admin/user/{user}/adom</td>
   <td><a class="reference external" href="docgen/fmgr_system_admin_user_adom.html">fmgr_system_admin_user_adom</a></td>
@@ -7610,32 +9950,32 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/alert-console</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertconsole.html">fmgr_system_alertconsole</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/alert-console/{alert-console}</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertconsole.html">fmgr_system_alertconsole</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/alertemail</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertemail.html">fmgr_system_alertemail</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/alertemail/{alertemail}</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertemail.html">fmgr_system_alertemail</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/alert-event</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertevent.html">fmgr_system_alertevent</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/alert-event/{alert-event}</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertevent.html">fmgr_system_alertevent</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/alert-event/{alert-event}/alert-destination</td>
   <td><a class="reference external" href="docgen/fmgr_system_alertevent_alertdestination.html">fmgr_system_alertevent_alertdestination</a></td>
@@ -7650,132 +9990,132 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/auto-delete</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete.html">fmgr_system_autodelete</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/auto-delete/{auto-delete}</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete.html">fmgr_system_autodelete</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/auto-delete/dlp-files-auto-deletion</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_dlpfilesautodeletion.html">fmgr_system_autodelete_dlpfilesautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/auto-delete/dlp-files-auto-deletion/{dlp-files-auto-deletion}</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_dlpfilesautodeletion.html">fmgr_system_autodelete_dlpfilesautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/auto-delete/log-auto-deletion</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_logautodeletion.html">fmgr_system_autodelete_logautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/auto-delete/log-auto-deletion/{log-auto-deletion}</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_logautodeletion.html">fmgr_system_autodelete_logautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/auto-delete/quarantine-files-auto-deletion</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_quarantinefilesautodeletion.html">fmgr_system_autodelete_quarantinefilesautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/auto-delete/quarantine-files-auto-deletion/{quarantine-files-auto-deletion}</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_quarantinefilesautodeletion.html">fmgr_system_autodelete_quarantinefilesautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/auto-delete/report-auto-deletion</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_reportautodeletion.html">fmgr_system_autodelete_reportautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/auto-delete/report-auto-deletion/{report-auto-deletion}</td>
   <td><a class="reference external" href="docgen/fmgr_system_autodelete_reportautodeletion.html">fmgr_system_autodelete_reportautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/backup/all-settings</td>
   <td><a class="reference external" href="docgen/fmgr_system_backup_allsettings.html">fmgr_system_backup_allsettings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/backup/all-settings/{all-settings}</td>
   <td><a class="reference external" href="docgen/fmgr_system_backup_allsettings.html">fmgr_system_backup_allsettings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/certificate/ca</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_ca.html">fmgr_system_certificate_ca</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/certificate/ca/{ca}</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_ca.html">fmgr_system_certificate_ca</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/certificate/crl</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_crl.html">fmgr_system_certificate_crl</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/certificate/crl/{crl}</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_crl.html">fmgr_system_certificate_crl</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/certificate/local</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_local.html">fmgr_system_certificate_local</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/certificate/local/{local}</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_local.html">fmgr_system_certificate_local</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/certificate/oftp</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_oftp.html">fmgr_system_certificate_oftp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/certificate/oftp/{oftp}</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_oftp.html">fmgr_system_certificate_oftp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/certificate/remote</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_remote.html">fmgr_system_certificate_remote</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/certificate/remote/{remote}</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_remote.html">fmgr_system_certificate_remote</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/certificate/ssh</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_ssh.html">fmgr_system_certificate_ssh</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/certificate/ssh/{ssh}</td>
   <td><a class="reference external" href="docgen/fmgr_system_certificate_ssh.html">fmgr_system_certificate_ssh</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/connector</td>
   <td><a class="reference external" href="docgen/fmgr_system_connector.html">fmgr_system_connector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/connector/{connector}</td>
   <td><a class="reference external" href="docgen/fmgr_system_connector.html">fmgr_system_connector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/custom-language</td>
   <td><a class="reference external" href="docgen/fmgr_system_customlanguage.html">fmgr_system_customlanguage</a></td>
@@ -7900,22 +10240,32 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/dm</td>
   <td><a class="reference external" href="docgen/fmgr_system_dm.html">fmgr_system_dm</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/dm/{dm}</td>
   <td><a class="reference external" href="docgen/fmgr_system_dm.html">fmgr_system_dm</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/dns</td>
   <td><a class="reference external" href="docgen/fmgr_system_dns.html">fmgr_system_dns</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/dns/{dns}</td>
   <td><a class="reference external" href="docgen/fmgr_system_dns.html">fmgr_system_dns</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/docker</td>
+  <td><a class="reference external" href="docgen/fmgr_system_docker.html">fmgr_system_docker</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/docker/{docker}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_docker.html">fmgr_system_docker</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/external-resource</td>
   <td><a class="reference external" href="docgen/fmgr_system_externalresource.html">fmgr_system_externalresource</a></td>
@@ -7940,12 +10290,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/fips</td>
   <td><a class="reference external" href="docgen/fmgr_system_fips.html">fmgr_system_fips</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/fips/{fips}</td>
   <td><a class="reference external" href="docgen/fmgr_system_fips.html">fmgr_system_fips</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/fortiguard</td>
   <td><a class="reference external" href="docgen/fmgr_system_fortiguard.html">fmgr_system_fortiguard</a></td>
@@ -7970,22 +10320,22 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/fortiview/auto-cache</td>
   <td><a class="reference external" href="docgen/fmgr_system_fortiview_autocache.html">fmgr_system_fortiview_autocache</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/fortiview/auto-cache/{auto-cache}</td>
   <td><a class="reference external" href="docgen/fmgr_system_fortiview_autocache.html">fmgr_system_fortiview_autocache</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/fortiview/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_fortiview_setting.html">fmgr_system_fortiview_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/fortiview/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_fortiview_setting.html">fmgr_system_fortiview_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/geoip-country</td>
   <td><a class="reference external" href="docgen/fmgr_system_geoipcountry.html">fmgr_system_geoipcountry</a></td>
@@ -8027,6 +10377,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/system/geoip-override/{geoip-override}/ip6-range</td>
+  <td><a class="reference external" href="docgen/fmgr_system_geoipoverride_ip6range.html">fmgr_system_geoipoverride_ip6range</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">geoip-override</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/system/geoip-override/{geoip-override}/ip6-range</td>
+  <td><a class="reference external" href="docgen/fmgr_system_geoipoverride_ip6range.html">fmgr_system_geoipoverride_ip6range</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">geoip-override</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/system/geoip-override/{geoip-override}/ip6-range/{ip6-range}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_geoipoverride_ip6range.html">fmgr_system_geoipoverride_ip6range</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">geoip-override</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/system/geoip-override/{geoip-override}/ip6-range/{ip6-range}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_geoipoverride_ip6range.html">fmgr_system_geoipoverride_ip6range</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">geoip-override</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/geoip-override/{geoip-override}/ip-range</td>
   <td><a class="reference external" href="docgen/fmgr_system_geoipoverride_iprange.html">fmgr_system_geoipoverride_iprange</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -8050,52 +10420,52 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/global</td>
   <td><a class="reference external" href="docgen/fmgr_system_global.html">fmgr_system_global</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/global/{global}</td>
   <td><a class="reference external" href="docgen/fmgr_system_global.html">fmgr_system_global</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/guiact</td>
   <td><a class="reference external" href="docgen/fmgr_system_guiact.html">fmgr_system_guiact</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/guiact/{guiact}</td>
   <td><a class="reference external" href="docgen/fmgr_system_guiact.html">fmgr_system_guiact</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/ha</td>
   <td><a class="reference external" href="docgen/fmgr_system_ha.html">fmgr_system_ha</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/ha/{ha}</td>
   <td><a class="reference external" href="docgen/fmgr_system_ha.html">fmgr_system_ha</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/ha/peer</td>
   <td><a class="reference external" href="docgen/fmgr_system_ha_peer.html">fmgr_system_ha_peer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/ha/peer/{peer}</td>
   <td><a class="reference external" href="docgen/fmgr_system_ha_peer.html">fmgr_system_ha_peer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/interface</td>
   <td><a class="reference external" href="docgen/fmgr_system_interface.html">fmgr_system_interface</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/interface/{interface}</td>
   <td><a class="reference external" href="docgen/fmgr_system_interface.html">fmgr_system_interface</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/interface/{interface}/ipv6</td>
   <td><a class="reference external" href="docgen/fmgr_system_interface_ipv6.html">fmgr_system_interface_ipv6</a></td>
@@ -8110,252 +10480,292 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/locallog/disk/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_disk_filter.html">fmgr_system_locallog_disk_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/disk/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_disk_filter.html">fmgr_system_locallog_disk_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/disk/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_disk_setting.html">fmgr_system_locallog_disk_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/disk/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_disk_setting.html">fmgr_system_locallog_disk_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/fortianalyzer2/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer2_filter.html">fmgr_system_locallog_fortianalyzer2_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/fortianalyzer2/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer2_filter.html">fmgr_system_locallog_fortianalyzer2_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/fortianalyzer2/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer2_setting.html">fmgr_system_locallog_fortianalyzer2_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/fortianalyzer2/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer2_setting.html">fmgr_system_locallog_fortianalyzer2_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/fortianalyzer3/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer3_filter.html">fmgr_system_locallog_fortianalyzer3_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/fortianalyzer3/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer3_filter.html">fmgr_system_locallog_fortianalyzer3_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/fortianalyzer3/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer3_setting.html">fmgr_system_locallog_fortianalyzer3_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/fortianalyzer3/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer3_setting.html">fmgr_system_locallog_fortianalyzer3_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/fortianalyzer/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer_filter.html">fmgr_system_locallog_fortianalyzer_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/fortianalyzer/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer_filter.html">fmgr_system_locallog_fortianalyzer_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/fortianalyzer/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer_setting.html">fmgr_system_locallog_fortianalyzer_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/fortianalyzer/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_fortianalyzer_setting.html">fmgr_system_locallog_fortianalyzer_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/memory/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_memory_filter.html">fmgr_system_locallog_memory_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/memory/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_memory_filter.html">fmgr_system_locallog_memory_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/memory/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_memory_setting.html">fmgr_system_locallog_memory_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/memory/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_memory_setting.html">fmgr_system_locallog_memory_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_setting.html">fmgr_system_locallog_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_setting.html">fmgr_system_locallog_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/syslogd2/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd2_filter.html">fmgr_system_locallog_syslogd2_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/syslogd2/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd2_filter.html">fmgr_system_locallog_syslogd2_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/syslogd2/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd2_setting.html">fmgr_system_locallog_syslogd2_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/syslogd2/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd2_setting.html">fmgr_system_locallog_syslogd2_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/syslogd3/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd3_filter.html">fmgr_system_locallog_syslogd3_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/syslogd3/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd3_filter.html">fmgr_system_locallog_syslogd3_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/syslogd3/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd3_setting.html">fmgr_system_locallog_syslogd3_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/syslogd3/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd3_setting.html">fmgr_system_locallog_syslogd3_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/syslogd/filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd_filter.html">fmgr_system_locallog_syslogd_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/syslogd/filter/{filter}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd_filter.html">fmgr_system_locallog_syslogd_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/locallog/syslogd/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd_setting.html">fmgr_system_locallog_syslogd_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/locallog/syslogd/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_locallog_syslogd_setting.html">fmgr_system_locallog_syslogd_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/alert</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_alert.html">fmgr_system_log_alert</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/alert/{alert}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_alert.html">fmgr_system_log_alert</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/log/device-disable</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_devicedisable.html">fmgr_system_log_devicedisable</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/log/device-disable/{device-disable}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_devicedisable.html">fmgr_system_log_devicedisable</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/log/interface-stats</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_interfacestats.html">fmgr_system_log_interfacestats</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/log/interface-stats/{interface-stats}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_interfacestats.html">fmgr_system_log_interfacestats</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/ioc</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_ioc.html">fmgr_system_log_ioc</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/ioc/{ioc}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_ioc.html">fmgr_system_log_ioc</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/mail-domain</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_maildomain.html">fmgr_system_log_maildomain</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/mail-domain/{mail-domain}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_maildomain.html">fmgr_system_log_maildomain</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/log/ratelimit</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_ratelimit.html">fmgr_system_log_ratelimit</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/log/ratelimit/{ratelimit}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_ratelimit.html">fmgr_system_log_ratelimit</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/log/ratelimit/device</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_ratelimit_device.html">fmgr_system_log_ratelimit_device</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/log/ratelimit/device/{device}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_log_ratelimit_device.html">fmgr_system_log_ratelimit_device</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/settings</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings.html">fmgr_system_log_settings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/settings/{settings}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings.html">fmgr_system_log_settings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/settings/rolling-analyzer</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings_rollinganalyzer.html">fmgr_system_log_settings_rollinganalyzer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/settings/rolling-analyzer/{rolling-analyzer}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings_rollinganalyzer.html">fmgr_system_log_settings_rollinganalyzer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/settings/rolling-local</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings_rollinglocal.html">fmgr_system_log_settings_rollinglocal</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/settings/rolling-local/{rolling-local}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings_rollinglocal.html">fmgr_system_log_settings_rollinglocal</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log/settings/rolling-regular</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings_rollingregular.html">fmgr_system_log_settings_rollingregular</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log/settings/rolling-regular/{rolling-regular}</td>
   <td><a class="reference external" href="docgen/fmgr_system_log_settings_rollingregular.html">fmgr_system_log_settings_rollingregular</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log-fetch/client-profile</td>
   <td><a class="reference external" href="docgen/fmgr_system_logfetch_clientprofile.html">fmgr_system_logfetch_clientprofile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log-fetch/client-profile/{client-profile}</td>
   <td><a class="reference external" href="docgen/fmgr_system_logfetch_clientprofile.html">fmgr_system_logfetch_clientprofile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/log-fetch/client-profile/{client-profile}/device-filter</td>
   <td><a class="reference external" href="docgen/fmgr_system_logfetch_clientprofile_devicefilter.html">fmgr_system_logfetch_clientprofile_devicefilter</a></td>
@@ -8380,22 +10790,32 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/log-fetch/server-settings</td>
   <td><a class="reference external" href="docgen/fmgr_system_logfetch_serversettings.html">fmgr_system_logfetch_serversettings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/log-fetch/server-settings/{server-settings}</td>
   <td><a class="reference external" href="docgen/fmgr_system_logfetch_serversettings.html">fmgr_system_logfetch_serversettings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/mail</td>
   <td><a class="reference external" href="docgen/fmgr_system_mail.html">fmgr_system_mail</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/mail/{mail}</td>
   <td><a class="reference external" href="docgen/fmgr_system_mail.html">fmgr_system_mail</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/global/mc-policy-disabled-adoms</td>
+  <td><a class="reference external" href="docgen/fmgr_system_mcpolicydisabledadoms.html">fmgr_system_mcpolicydisabledadoms</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/global/mc-policy-disabled-adoms/{mc-policy-disabled-adoms}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_mcpolicydisabledadoms.html">fmgr_system_mcpolicydisabledadoms</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/meta</td>
   <td><a class="reference external" href="docgen/fmgr_system_meta.html">fmgr_system_meta</a></td>
@@ -8440,32 +10860,32 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/metadata/admins</td>
   <td><a class="reference external" href="docgen/fmgr_system_metadata_admins.html">fmgr_system_metadata_admins</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/metadata/admins/{admins}</td>
   <td><a class="reference external" href="docgen/fmgr_system_metadata_admins.html">fmgr_system_metadata_admins</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/ntp</td>
   <td><a class="reference external" href="docgen/fmgr_system_ntp.html">fmgr_system_ntp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/ntp/{ntp}</td>
   <td><a class="reference external" href="docgen/fmgr_system_ntp.html">fmgr_system_ntp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/ntp/ntpserver</td>
   <td><a class="reference external" href="docgen/fmgr_system_ntp_ntpserver.html">fmgr_system_ntp_ntpserver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/ntp/ntpserver/{ntpserver}</td>
   <td><a class="reference external" href="docgen/fmgr_system_ntp_ntpserver.html">fmgr_system_ntp_ntpserver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/object-tagging</td>
   <td><a class="reference external" href="docgen/fmgr_system_objecttagging.html">fmgr_system_objecttagging</a></td>
@@ -8490,12 +10910,12 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/password-policy</td>
   <td><a class="reference external" href="docgen/fmgr_system_passwordpolicy.html">fmgr_system_passwordpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/password-policy/{password-policy}</td>
   <td><a class="reference external" href="docgen/fmgr_system_passwordpolicy.html">fmgr_system_passwordpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/replacemsg-group</td>
   <td><a class="reference external" href="docgen/fmgr_system_replacemsggroup.html">fmgr_system_replacemsggroup</a></td>
@@ -8575,6 +10995,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/system/replacemsg-group/{replacemsg-group}/auth/{auth}</td>
   <td><a class="reference external" href="docgen/fmgr_system_replacemsggroup_auth.html">fmgr_system_replacemsggroup_auth</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">replacemsg-group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/system/replacemsg-group/{replacemsg-group}/automation</td>
+  <td><a class="reference external" href="docgen/fmgr_system_replacemsggroup_automation.html">fmgr_system_replacemsggroup_automation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">replacemsg-group</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/system/replacemsg-group/{replacemsg-group}/automation</td>
+  <td><a class="reference external" href="docgen/fmgr_system_replacemsggroup_automation.html">fmgr_system_replacemsggroup_automation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">replacemsg-group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/system/replacemsg-group/{replacemsg-group}/automation/{automation}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_replacemsggroup_automation.html">fmgr_system_replacemsggroup_automation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">replacemsg-group</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/system/replacemsg-group/{replacemsg-group}/automation/{automation}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_replacemsggroup_automation.html">fmgr_system_replacemsggroup_automation</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">replacemsg-group</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/replacemsg-group/{replacemsg-group}/custom-message</td>
@@ -9000,32 +11440,32 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/report/auto-cache</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_autocache.html">fmgr_system_report_autocache</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/report/auto-cache/{auto-cache}</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_autocache.html">fmgr_system_report_autocache</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/report/est-browse-time</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_estbrowsetime.html">fmgr_system_report_estbrowsetime</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/report/est-browse-time/{est-browse-time}</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_estbrowsetime.html">fmgr_system_report_estbrowsetime</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/report/group</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_group.html">fmgr_system_report_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/report/group/{group}</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_group.html">fmgr_system_report_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/report/group/{group}/chart-alternative</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_group_chartalternative.html">fmgr_system_report_group_chartalternative</a></td>
@@ -9050,52 +11490,62 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/report/setting</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_setting.html">fmgr_system_report_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/report/setting/{setting}</td>
   <td><a class="reference external" href="docgen/fmgr_system_report_setting.html">fmgr_system_report_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/route</td>
   <td><a class="reference external" href="docgen/fmgr_system_route.html">fmgr_system_route</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/route/{route}</td>
   <td><a class="reference external" href="docgen/fmgr_system_route.html">fmgr_system_route</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/route6</td>
   <td><a class="reference external" href="docgen/fmgr_system_route6.html">fmgr_system_route6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/route6/{route6}</td>
   <td><a class="reference external" href="docgen/fmgr_system_route6.html">fmgr_system_route6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/saml</td>
   <td><a class="reference external" href="docgen/fmgr_system_saml.html">fmgr_system_saml</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/saml/{saml}</td>
   <td><a class="reference external" href="docgen/fmgr_system_saml.html">fmgr_system_saml</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/saml/fabric-idp</td>
+  <td><a class="reference external" href="docgen/fmgr_system_saml_fabricidp.html">fmgr_system_saml_fabricidp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/saml/fabric-idp/{fabric-idp}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_saml_fabricidp.html">fmgr_system_saml_fabricidp</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/saml/service-providers</td>
-  <td><a class="reference external" href="docgen/fmgr_system_saml_serviceproviders.html">fmgr_system_saml_serviceproviders</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_system_saml_serviceproviders.html">fmgr_system_saml_serviceproviders</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/saml/service-providers/{service-providers}</td>
-  <td><a class="reference external" href="docgen/fmgr_system_saml_serviceproviders.html">fmgr_system_saml_serviceproviders</a></td>
+  <td><a class="reference external" href="daemon_docgen/fmgr_system_saml_serviceproviders.html">fmgr_system_saml_serviceproviders</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/sdn-connector</td>
   <td><a class="reference external" href="docgen/fmgr_system_sdnconnector.html">fmgr_system_sdnconnector</a></td>
@@ -9257,15 +11707,25 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/cli/global/system/sniffer</td>
+  <td><a class="reference external" href="docgen/fmgr_system_sniffer.html">fmgr_system_sniffer</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/sniffer/{sniffer}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_sniffer.html">fmgr_system_sniffer</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
   <tr class="row-even"><td>/cli/global/system/snmp/community</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_community.html">fmgr_system_snmp_community</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/snmp/community/{community}</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_community.html">fmgr_system_snmp_community</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/snmp/community/{community}/hosts</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_community_hosts.html">fmgr_system_snmp_community_hosts</a></td>
@@ -9290,62 +11750,82 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/snmp/sysinfo</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_sysinfo.html">fmgr_system_snmp_sysinfo</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/snmp/sysinfo/{sysinfo}</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_sysinfo.html">fmgr_system_snmp_sysinfo</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/snmp/user</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_user.html">fmgr_system_snmp_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/snmp/user/{user}</td>
   <td><a class="reference external" href="docgen/fmgr_system_snmp_user.html">fmgr_system_snmp_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/soc-fabric</td>
+  <td><a class="reference external" href="docgen/fmgr_system_socfabric.html">fmgr_system_socfabric</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/soc-fabric/{soc-fabric}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_socfabric.html">fmgr_system_socfabric</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/sql</td>
   <td><a class="reference external" href="docgen/fmgr_system_sql.html">fmgr_system_sql</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/sql/{sql}</td>
   <td><a class="reference external" href="docgen/fmgr_system_sql.html">fmgr_system_sql</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/sql/custom-index</td>
   <td><a class="reference external" href="docgen/fmgr_system_sql_customindex.html">fmgr_system_sql_customindex</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/sql/custom-index/{custom-index}</td>
   <td><a class="reference external" href="docgen/fmgr_system_sql_customindex.html">fmgr_system_sql_customindex</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/sql/custom-skipidx</td>
+  <td><a class="reference external" href="docgen/fmgr_system_sql_customskipidx.html">fmgr_system_sql_customskipidx</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/sql/custom-skipidx/{custom-skipidx}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_sql_customskipidx.html">fmgr_system_sql_customskipidx</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/sql/ts-index-field</td>
   <td><a class="reference external" href="docgen/fmgr_system_sql_tsindexfield.html">fmgr_system_sql_tsindexfield</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/sql/ts-index-field/{ts-index-field}</td>
   <td><a class="reference external" href="docgen/fmgr_system_sql_tsindexfield.html">fmgr_system_sql_tsindexfield</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/cli/global/system/syslog</td>
   <td><a class="reference external" href="docgen/fmgr_system_syslog.html">fmgr_system_syslog</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/syslog/{syslog}</td>
   <td><a class="reference external" href="docgen/fmgr_system_syslog.html">fmgr_system_syslog</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/system/virtual-wire-pair</td>
   <td><a class="reference external" href="docgen/fmgr_system_virtualwirepair.html">fmgr_system_virtualwirepair</a></td>
@@ -9370,12 +11850,22 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-even"><td>/cli/global/system/workflow/approval-matrix</td>
   <td><a class="reference external" href="docgen/fmgr_system_workflow_approvalmatrix.html">fmgr_system_workflow_approvalmatrix</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
   </tr>
   <tr class="row-odd"><td>/cli/global/system/workflow/approval-matrix/{approval-matrix}</td>
   <td><a class="reference external" href="docgen/fmgr_system_workflow_approvalmatrix.html">fmgr_system_workflow_approvalmatrix</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
-  <td>&#160;</td>
+  <td><code class="docutils literal notranslate"><span class="pre"></span></code></td>
+  </tr>
+  <tr class="row-even"><td>/cli/global/system/workflow/approval-matrix/{approval-matrix}/approver</td>
+  <td><a class="reference external" href="docgen/fmgr_system_workflow_approvalmatrix_approver.html">fmgr_system_workflow_approvalmatrix_approver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">approval-matrix</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/cli/global/system/workflow/approval-matrix/{approval-matrix}/approver/{approver}</td>
+  <td><a class="reference external" href="docgen/fmgr_system_workflow_approvalmatrix_approver.html">fmgr_system_workflow_approvalmatrix_approver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">approval-matrix</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/cli/template</td>
   <td><a class="reference external" href="docgen/fmgr_template.html">fmgr_template</a></td>
@@ -9435,6 +11925,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/user/adgrp/{adgrp}</td>
   <td><a class="reference external" href="docgen/fmgr_user_adgrp.html">fmgr_user_adgrp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/clearpass</td>
+  <td><a class="reference external" href="docgen/fmgr_user_clearpass.html">fmgr_user_clearpass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/clearpass</td>
+  <td><a class="reference external" href="docgen/fmgr_user_clearpass.html">fmgr_user_clearpass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/clearpass/{clearpass}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_clearpass.html">fmgr_user_clearpass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/clearpass/{clearpass}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_clearpass.html">fmgr_user_clearpass</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/user/device</td>
@@ -9576,6 +12086,66 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_user_devicegroup_tagging.html">fmgr_user_devicegroup_tagging</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">device-group</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/domain-controller</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller.html">fmgr_user_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/domain-controller</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller.html">fmgr_user_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/domain-controller/{domain-controller}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller.html">fmgr_user_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/domain-controller/{domain-controller}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller.html">fmgr_user_domaincontroller</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/domain-controller/{domain-controller}/extra-server</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller_extraserver.html">fmgr_user_domaincontroller_extraserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">domain-controller</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/domain-controller/{domain-controller}/extra-server</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller_extraserver.html">fmgr_user_domaincontroller_extraserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">domain-controller</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/domain-controller/{domain-controller}/extra-server/{extra-server}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller_extraserver.html">fmgr_user_domaincontroller_extraserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">domain-controller</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/domain-controller/{domain-controller}/extra-server/{extra-server}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_domaincontroller_extraserver.html">fmgr_user_domaincontroller_extraserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">domain-controller</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/exchange</td>
+  <td><a class="reference external" href="docgen/fmgr_user_exchange.html">fmgr_user_exchange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/exchange</td>
+  <td><a class="reference external" href="docgen/fmgr_user_exchange.html">fmgr_user_exchange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/exchange/{exchange}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_exchange.html">fmgr_user_exchange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/exchange/{exchange}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_exchange.html">fmgr_user_exchange</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/user/fortitoken</td>
   <td><a class="reference external" href="docgen/fmgr_user_fortitoken.html">fmgr_user_fortitoken</a></td>
@@ -9737,6 +12307,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/krb-keytab</td>
+  <td><a class="reference external" href="docgen/fmgr_user_krbkeytab.html">fmgr_user_krbkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/krb-keytab</td>
+  <td><a class="reference external" href="docgen/fmgr_user_krbkeytab.html">fmgr_user_krbkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/krb-keytab/{krb-keytab}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_krbkeytab.html">fmgr_user_krbkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/krb-keytab/{krb-keytab}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_krbkeytab.html">fmgr_user_krbkeytab</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/user/ldap</td>
   <td><a class="reference external" href="docgen/fmgr_user_ldap.html">fmgr_user_ldap</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -9795,6 +12385,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <tr class="row-odd"><td>/pm/config/global/obj/user/local/{local}</td>
   <td><a class="reference external" href="docgen/fmgr_user_local.html">fmgr_user_local</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/nsx</td>
+  <td><a class="reference external" href="docgen/fmgr_user_nsx.html">fmgr_user_nsx</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/nsx</td>
+  <td><a class="reference external" href="docgen/fmgr_user_nsx.html">fmgr_user_nsx</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/nsx/{nsx}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_nsx.html">fmgr_user_nsx</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/nsx/{nsx}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_nsx.html">fmgr_user_nsx</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/user/password-policy</td>
@@ -9957,6 +12567,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">radius</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/radius/{radius}/dynamic_mapping/{dynamic_mapping}/accounting-server</td>
+  <td><a class="reference external" href="docgen/fmgr_user_radius_dynamicmapping_accountingserver.html">fmgr_user_radius_dynamicmapping_accountingserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">radius</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/radius/{radius}/dynamic_mapping/{dynamic_mapping}/accounting-server</td>
+  <td><a class="reference external" href="docgen/fmgr_user_radius_dynamicmapping_accountingserver.html">fmgr_user_radius_dynamicmapping_accountingserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">radius</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/radius/{radius}/dynamic_mapping/{dynamic_mapping}/accounting-server/{accounting-server}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_radius_dynamicmapping_accountingserver.html">fmgr_user_radius_dynamicmapping_accountingserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">radius</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/radius/{radius}/dynamic_mapping/{dynamic_mapping}/accounting-server/{accounting-server}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_radius_dynamicmapping_accountingserver.html">fmgr_user_radius_dynamicmapping_accountingserver</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">radius</span></code><code class="docutils literal notranslate"><span class="pre">dynamic_mapping</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/saml</td>
+  <td><a class="reference external" href="docgen/fmgr_user_saml.html">fmgr_user_saml</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/saml</td>
+  <td><a class="reference external" href="docgen/fmgr_user_saml.html">fmgr_user_saml</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/saml/{saml}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_saml.html">fmgr_user_saml</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/saml/{saml}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_saml.html">fmgr_user_saml</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/user/security-exempt-list</td>
   <td><a class="reference external" href="docgen/fmgr_user_securityexemptlist.html">fmgr_user_securityexemptlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -10036,6 +12686,66 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_user_tacacs_dynamicmapping.html">fmgr_user_tacacs_dynamicmapping</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">tacacs+</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/vcenter</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter.html">fmgr_user_vcenter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/vcenter</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter.html">fmgr_user_vcenter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/vcenter/{vcenter}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter.html">fmgr_user_vcenter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/vcenter/{vcenter}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter.html">fmgr_user_vcenter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/vcenter/{vcenter}/rule</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter_rule.html">fmgr_user_vcenter_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vcenter</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/vcenter/{vcenter}/rule</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter_rule.html">fmgr_user_vcenter_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vcenter</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/user/vcenter/{vcenter}/rule/{rule}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter_rule.html">fmgr_user_vcenter_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vcenter</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/user/vcenter/{vcenter}/rule/{rule}</td>
+  <td><a class="reference external" href="docgen/fmgr_user_vcenter_rule.html">fmgr_user_vcenter_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">vcenter</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/utm-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_utmprofile.html">fmgr_utmprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/utm-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_utmprofile.html">fmgr_utmprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/utm-profile/{utm-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_utmprofile.html">fmgr_utmprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/utm-profile/{utm-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_utmprofile.html">fmgr_utmprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/wireless-controller/vap</td>
   <td><a class="reference external" href="docgen/fmgr_vap.html">fmgr_vap</a></td>
@@ -10177,6 +12887,106 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile.html">fmgr_videofilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/profile</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile.html">fmgr_videofilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile.html">fmgr_videofilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/profile/{profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile.html">fmgr_videofilter_profile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/profile/{profile}/fortiguard-category</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory.html">fmgr_videofilter_profile_fortiguardcategory</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/profile/{profile}/fortiguard-category</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory.html">fmgr_videofilter_profile_fortiguardcategory</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/profile/{profile}/fortiguard-category/{fortiguard-category}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory.html">fmgr_videofilter_profile_fortiguardcategory</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/profile/{profile}/fortiguard-category/{fortiguard-category}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory.html">fmgr_videofilter_profile_fortiguardcategory</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/profile/{profile}/fortiguard-category/filters</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory_filters.html">fmgr_videofilter_profile_fortiguardcategory_filters</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/profile/{profile}/fortiguard-category/filters</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory_filters.html">fmgr_videofilter_profile_fortiguardcategory_filters</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/profile/{profile}/fortiguard-category/filters/{filters}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory_filters.html">fmgr_videofilter_profile_fortiguardcategory_filters</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/profile/{profile}/fortiguard-category/filters/{filters}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_profile_fortiguardcategory_filters.html">fmgr_videofilter_profile_fortiguardcategory_filters</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/youtube-channel-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter.html">fmgr_videofilter_youtubechannelfilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/youtube-channel-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter.html">fmgr_videofilter_youtubechannelfilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/youtube-channel-filter/{youtube-channel-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter.html">fmgr_videofilter_youtubechannelfilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/youtube-channel-filter/{youtube-channel-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter.html">fmgr_videofilter_youtubechannelfilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/youtube-channel-filter/{youtube-channel-filter}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter_entries.html">fmgr_videofilter_youtubechannelfilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">youtube-channel-filter</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/youtube-channel-filter/{youtube-channel-filter}/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter_entries.html">fmgr_videofilter_youtubechannelfilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">youtube-channel-filter</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/videofilter/youtube-channel-filter/{youtube-channel-filter}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter_entries.html">fmgr_videofilter_youtubechannelfilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">youtube-channel-filter</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/videofilter/youtube-channel-filter/{youtube-channel-filter}/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_videofilter_youtubechannelfilter_entries.html">fmgr_videofilter_youtubechannelfilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">youtube-channel-filter</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/voip/profile</td>
   <td><a class="reference external" href="docgen/fmgr_voip_profile.html">fmgr_voip_profile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -10296,6 +13106,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_vpn_certificate_remote.html">fmgr_vpn_certificate_remote</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/device/{device}/vdom/{vdom}/vpn/ssl/settings</td>
+  <td><a class="reference external" href="docgen/fmgr_vpn_ssl_settings.html">fmgr_vpn_ssl_settings</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/device/{device}/vdom/{vdom}/vpn/ssl/settings/{settings}</td>
+  <td><a class="reference external" href="docgen/fmgr_vpn_ssl_settings.html">fmgr_vpn_ssl_settings</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/device/{device}/vdom/{vdom}/vpn/ssl/settings/authentication-rule</td>
+  <td><a class="reference external" href="docgen/fmgr_vpn_ssl_settings_authenticationrule.html">fmgr_vpn_ssl_settings_authenticationrule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/device/{device}/vdom/{vdom}/vpn/ssl/settings/authentication-rule/{authentication-rule}</td>
+  <td><a class="reference external" href="docgen/fmgr_vpn_ssl_settings_authenticationrule.html">fmgr_vpn_ssl_settings_authenticationrule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">device</span></code><code class="docutils literal notranslate"><span class="pre">vdom</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/vpnmgr/node</td>
   <td><a class="reference external" href="docgen/fmgr_vpnmgr_node.html">fmgr_vpnmgr_node</a></td>
@@ -11157,6 +13987,26 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/wag-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_wagprofile.html">fmgr_wagprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/wag-profile</td>
+  <td><a class="reference external" href="docgen/fmgr_wagprofile.html">fmgr_wagprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/wag-profile/{wag-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_wagprofile.html">fmgr_wagprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/wag-profile/{wag-profile}</td>
+  <td><a class="reference external" href="docgen/fmgr_wagprofile.html">fmgr_wagprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/wanopt/auth-group</td>
   <td><a class="reference external" href="docgen/fmgr_wanopt_authgroup.html">fmgr_wanopt_authgroup</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -11317,6 +14167,96 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
   </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan.html">fmgr_wanprof_system_sdwan</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/{sdwan}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan.html">fmgr_wanprof_system_sdwan</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/duplication</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_duplication.html">fmgr_wanprof_system_sdwan_duplication</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/duplication/{duplication}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_duplication.html">fmgr_wanprof_system_sdwan_duplication</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/health-check</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_healthcheck.html">fmgr_wanprof_system_sdwan_healthcheck</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/health-check/{health-check}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_healthcheck.html">fmgr_wanprof_system_sdwan_healthcheck</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/health-check/{health-check}/sla</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_healthcheck_sla.html">fmgr_wanprof_system_sdwan_healthcheck_sla</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code><code class="docutils literal notranslate"><span class="pre">health-check</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/health-check/{health-check}/sla/{sla}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_healthcheck_sla.html">fmgr_wanprof_system_sdwan_healthcheck_sla</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code><code class="docutils literal notranslate"><span class="pre">health-check</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/members</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_members.html">fmgr_wanprof_system_sdwan_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/members/{members}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_members.html">fmgr_wanprof_system_sdwan_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/neighbor</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_neighbor.html">fmgr_wanprof_system_sdwan_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/neighbor/{neighbor}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_neighbor.html">fmgr_wanprof_system_sdwan_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/service</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_service.html">fmgr_wanprof_system_sdwan_service</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/service/{service}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_service.html">fmgr_wanprof_system_sdwan_service</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/service/{service}/sla</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_service_sla.html">fmgr_wanprof_system_sdwan_service_sla</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code><code class="docutils literal notranslate"><span class="pre">service</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/service/{service}/sla/{sla}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_service_sla.html">fmgr_wanprof_system_sdwan_service_sla</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code><code class="docutils literal notranslate"><span class="pre">service</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/zone</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_zone.html">fmgr_wanprof_system_sdwan_zone</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/zone/{zone}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_zone.html">fmgr_wanprof_system_sdwan_zone</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/virtual-wan-link</td>
   <td><a class="reference external" href="docgen/fmgr_wanprof_system_virtualwanlink.html">fmgr_wanprof_system_virtualwanlink</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
@@ -11354,6 +14294,16 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   </tr>
   <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/virtual-wan-link/members/{members}</td>
   <td><a class="reference external" href="docgen/fmgr_wanprof_system_virtualwanlink_members.html">fmgr_wanprof_system_virtualwanlink_members</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/virtual-wan-link/neighbor</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_virtualwanlink_neighbor.html">fmgr_wanprof_system_virtualwanlink_neighbor</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/virtual-wan-link/neighbor/{neighbor}</td>
+  <td><a class="reference external" href="docgen/fmgr_wanprof_system_virtualwanlink_neighbor.html">fmgr_wanprof_system_virtualwanlink_neighbor</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
   </tr>
@@ -11536,6 +14486,106 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_webfilter_profile.html">fmgr_webfilter_profile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/antiphish</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish.html">fmgr_webfilter_profile_antiphish</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/antiphish</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish.html">fmgr_webfilter_profile_antiphish</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/antiphish/{antiphish}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish.html">fmgr_webfilter_profile_antiphish</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/antiphish/{antiphish}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish.html">fmgr_webfilter_profile_antiphish</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/antiphish/custom-patterns</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_custompatterns.html">fmgr_webfilter_profile_antiphish_custompatterns</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/antiphish/custom-patterns</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_custompatterns.html">fmgr_webfilter_profile_antiphish_custompatterns</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/antiphish/custom-patterns/{custom-patterns}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_custompatterns.html">fmgr_webfilter_profile_antiphish_custompatterns</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/antiphish/custom-patterns/{custom-patterns}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_custompatterns.html">fmgr_webfilter_profile_antiphish_custompatterns</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/antiphish/inspection-entries</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_inspectionentries.html">fmgr_webfilter_profile_antiphish_inspectionentries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/antiphish/inspection-entries</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_inspectionentries.html">fmgr_webfilter_profile_antiphish_inspectionentries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/antiphish/inspection-entries/{inspection-entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_inspectionentries.html">fmgr_webfilter_profile_antiphish_inspectionentries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/antiphish/inspection-entries/{inspection-entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_antiphish_inspectionentries.html">fmgr_webfilter_profile_antiphish_inspectionentries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter.html">fmgr_webfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/file-filter</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter.html">fmgr_webfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter.html">fmgr_webfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/file-filter/{file-filter}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter.html">fmgr_webfilter_profile_filefilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter_entries.html">fmgr_webfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/file-filter/entries</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter_entries.html">fmgr_webfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/webfilter/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter_entries.html">fmgr_webfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/file-filter/entries/{entries}</td>
+  <td><a class="reference external" href="docgen/fmgr_webfilter_profile_filefilter_entries.html">fmgr_webfilter_profile_filefilter_entries</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">add</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
   </tr>
   <tr class="row-even"><td>/pm/config/adom/{adom}/obj/webfilter/profile/{profile}/ftgd-wf</td>
   <td><a class="reference external" href="docgen/fmgr_webfilter_profile_ftgdwf.html">fmgr_webfilter_profile_ftgdwf</a></td>
@@ -11994,6 +15044,46 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   </tr>
   <tr class="row-odd"><td>/pm/config/global/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-2/{radio-2}</td>
   <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio2.html">fmgr_wtpprofile_radio2</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-3</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio3.html">fmgr_wtpprofile_radio3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-3</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio3.html">fmgr_wtpprofile_radio3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-3/{radio-3}</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio3.html">fmgr_wtpprofile_radio3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-3/{radio-3}</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio3.html">fmgr_wtpprofile_radio3</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-4</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio4.html">fmgr_wtpprofile_radio4</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-4</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio4.html">fmgr_wtpprofile_radio4</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-even"><td>/pm/config/global/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-4/{radio-4}</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio4.html">fmgr_wtpprofile_radio4</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
+  </tr>
+  <tr class="row-odd"><td>/pm/config/adom/{adom}/obj/wireless-controller/wtp-profile/{wtp-profile}/radio-4/{radio-4}</td>
+  <td><a class="reference external" href="docgen/fmgr_wtpprofile_radio4.html">fmgr_wtpprofile_radio4</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><code class="docutils literal notranslate"><span class="pre">set</span></code><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><code class="docutils literal notranslate"><span class="pre">wtp-profile</span></code></td>
   </tr>
