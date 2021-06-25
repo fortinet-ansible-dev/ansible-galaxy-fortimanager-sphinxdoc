@@ -1285,6 +1285,12 @@ PRs are welcome ``https://github.com/fortinet-ansible-dev/fortimanager-playbook-
  <td><code ><span class="pre">2020.09.28</span></code></td>
  <td><code class="docutils literal notranslate"><span class="pre">firewall</span></code><code class="docutils literal notranslate"><span class="pre">IPv6</span></code></td>
  </tr>
+ <tr class="row-odd"><td><a target="_blank" href="https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/fmgr_securityconsole_install_preview.yml">fmgr_securityconsole_install_preview.yml</a></td>
+ <td><code ><span>Trigger an install preview for a policy package (will preview all changes from Device Manager & Policy & Objects)</span></code></td>
+ <td><code ><span class="pre">Jean-Pierre Forcioli<b>(Fortinet)</b></span></code></td>
+ <td><code ><span class="pre">2021.06.04</span></code></td>
+ <td><code class="docutils literal notranslate"><span class="pre">install</span></code><code class="docutils literal notranslate"><span class="pre">preview</span></code></td>
+ </tr>
  <tr class="row-even"><td><a target="_blank" href="https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/fmgr_firewall_vip64__fact.yml">fmgr_firewall_vip64__fact.yml</a></td>
  <td><code ><span>Retrieve all the IPv6 to IPv4 virtual IPs</span></code></td>
  <td><code ><span class="pre">Xing Li<b>(Fortinet)</b></span></code></td>
