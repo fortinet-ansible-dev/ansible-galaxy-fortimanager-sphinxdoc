@@ -1,0 +1,27 @@
+FortiManager Galaxy Versions Mapping
+====================================
+
+
+From ``fortinet.fortimanager`` galaxy ``v2.1.0`` on,  galaxy collections are supporting multiple FortiManager versions, in the meantime, the new unified
+Galaxy collection are not breaking the backward compatibility.
+
+The ``unified`` collections cover FMG releases ranging from ``v6.0`` to ``v7.0``.
+
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| FMG version   | Galaxy Version      | Release date   | Path to Install                                                      |
++===============+=====================+================+======================================================================+
+| 6.0.0         | 2.0.0               | 2020/10/12     | ``ansible-galaxy collection install fortinet.fortimanager:2.0.0``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| 6.0.0         | 2.0.1               | 2020/11/5      | ``ansible-galaxy collection install fortinet.fortimanager:2.0.1``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| 6.0.0         | 2.0.2               | 2021/4/20      | ``ansible-galaxy collection install fortinet.fortimanager:2.0.2``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| 6.0.0         | 2.0.3               | 2021/5/10      | ``ansible-galaxy collection install fortinet.fortimanager:2.0.3``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| unified       | 2.1.0 ``latest``    | 2021/6/25      | ``ansible-galaxy collection install fortinet.fortimanager:2.1.0``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+
+
+**Note**: Use ``-f`` option (i.e.
+``ansible-galaxy collection install -f fortinet.fortimanager:x.x.x``) to
+renew your existing local installation.

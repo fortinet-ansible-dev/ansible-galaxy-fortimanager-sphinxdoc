@@ -10,6 +10,15 @@ The FortiManager Ansible Collection provides Ansible modules for configuring For
 
 .. toctree::
    :glob:
+   :caption: FortiManager/Galaxy Multi-versions Guide
+   :maxdepth: 1
+
+   version.rst
+   mismatch.rst
+
+
+.. toctree::
+   :glob:
    :caption: User's Guide
    :maxdepth: 1
 
