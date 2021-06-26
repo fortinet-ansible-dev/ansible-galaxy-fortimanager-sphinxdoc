@@ -75,7 +75,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">sys_login_user</span> - Log into the device with user name and password. A new session cookies will be generated and returned as a property of the response object. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">sys_login_user</span> - Log into the device with user name and password. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">passwd</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -167,7 +167,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Log into the device with user name and password. A new session cookies will be generated and returned as a property of the response object.
+    - name: Log into the device with user name and password.
       fmgr_sys_login_user:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

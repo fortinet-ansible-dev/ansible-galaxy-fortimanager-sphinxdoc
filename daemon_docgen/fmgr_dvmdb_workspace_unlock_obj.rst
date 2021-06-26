@@ -110,7 +110,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Unlock a specific object, where the url contains the full path to the object (eg. <i>firewall/address/obj_name</i>).
+    - name: Unlock a specific object, where the url contains the full path to the object
       fmgr_dvmdb_workspace_unlock_obj:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

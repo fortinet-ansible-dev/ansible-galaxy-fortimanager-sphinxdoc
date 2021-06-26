@@ -110,7 +110,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Commit change(s) of a device.
+    - name: Commit change
       fmgr_dvmdb_workspace_commit_dev:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

@@ -79,7 +79,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">fsso</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user_fsso_dynamicmapping</span> - Configure Fortinet Single Sign On (FSSO) agents. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user_fsso_dynamicmapping</span> - Configure Fortinet Single Sign On <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">_gui_meta</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -983,7 +983,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configure Fortinet Single Sign On (FSSO) agents.
+    - name: Configure Fortinet Single Sign On
       fmgr_user_fsso_dynamicmapping:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

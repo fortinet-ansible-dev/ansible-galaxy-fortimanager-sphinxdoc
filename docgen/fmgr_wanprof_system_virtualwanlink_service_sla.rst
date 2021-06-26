@@ -74,7 +74,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wanprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">service</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">wanprof_system_virtualwanlink_service_sla</span> - Service level agreement (SLA). <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">wanprof_system_virtualwanlink_service_sla</span> - Service level agreement <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">health-check</span> - Virtual WAN Link health-check. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -166,7 +166,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Service level agreement (SLA).
+    - name: Service level agreement
       fmgr_wanprof_system_virtualwanlink_service_sla:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

@@ -77,7 +77,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">session_id</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">dvmdb_workflow_start</span> - Continue a workflow session. Start a new session if ID is not specified in the request.<br/><br/>Refer to workflow and wflog object for ... <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">dvmdb_workflow_start</span> - Continue a workflow session. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">desc</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
  <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
@@ -115,7 +115,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Continue a workflow session. Start a new session if ID is not specified in the request.<br/><br/>Refer to workflow and wflog object for ...
+    - name: Continue a workflow session.
       fmgr_dvmdb_workflow_start:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

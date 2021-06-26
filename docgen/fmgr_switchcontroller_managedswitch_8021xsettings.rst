@@ -98,7 +98,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configuration method to edit FortiSwitch 802.1X global settings.
+    - name: Configuration method to edit FortiSwitch 802.
       fmgr_switchcontroller_managedswitch_8021xsettings:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

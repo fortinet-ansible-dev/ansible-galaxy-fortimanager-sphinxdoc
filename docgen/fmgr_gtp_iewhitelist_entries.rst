@@ -77,7 +77,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ie-white-list</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">gtp_iewhitelist_entries</span> - Entries of white list (to allow) for unknown or out-of-state IEs. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">gtp_iewhitelist_entries</span> - Entries of white list <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">id</span> - Entry ID. <span class="li-normal">type: int</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -197,7 +197,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Entries of white list (to allow) for unknown or out-of-state IEs.
+    - name: Entries of white list
       fmgr_gtp_iewhitelist_entries:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

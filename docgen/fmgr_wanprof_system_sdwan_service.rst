@@ -69,7 +69,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wanprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">wanprof_system_sdwan_service</span> - Create SD-WAN rules (also called services) to control how sessions are distributed to interfaces in the SD-WAN. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">wanprof_system_sdwan_service</span> - Create SD-WAN rules <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">addr-mode</span> - Address mode (IPv4 or IPv6). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [ipv4, ipv6]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -1075,7 +1075,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Create SD-WAN rules (also called services) to control how sessions are distributed to interfaces in the SD-WAN.
+    - name: Create SD-WAN rules
       fmgr_wanprof_system_sdwan_service:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

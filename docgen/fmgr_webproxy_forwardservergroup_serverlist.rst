@@ -79,7 +79,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">forward-server-group</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">webproxy_forwardservergroup_serverlist</span> - Add web forward servers to a list to form a server group. Optionally assign weights to each server. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">webproxy_forwardservergroup_serverlist</span> - Add web forward servers to a list to form a server group. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">name</span> - Forward server name. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -171,7 +171,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Add web forward servers to a list to form a server group. Optionally assign weights to each server.
+    - name: Add web forward servers to a list to form a server group.
       fmgr_webproxy_forwardservergroup_serverlist:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

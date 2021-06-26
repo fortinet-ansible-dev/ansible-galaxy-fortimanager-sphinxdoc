@@ -98,7 +98,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configuration method to edit FortiSwitch logging settings (logs are transferred to and inserted into the FortiGate event log).
+    - name: Configuration method to edit FortiSwitch logging settings
       fmgr_switchcontroller_managedswitch_switchlog:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

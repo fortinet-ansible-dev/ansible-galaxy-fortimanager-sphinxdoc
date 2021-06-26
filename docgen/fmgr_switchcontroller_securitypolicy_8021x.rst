@@ -78,7 +78,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_securitypolicy_8021x</span> - Configure 802.1x MAC Authentication Bypass (MAB) policies. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">switchcontroller_securitypolicy_8021x</span> - Configure 802. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">auth-fail-vlan</span> - Enable to allow limited access to clients that cannot authenticate. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -628,7 +628,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configure 802.1x MAC Authentication Bypass (MAB) policies.
+    - name: Configure 802.
       fmgr_switchcontroller_securitypolicy_8021x:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

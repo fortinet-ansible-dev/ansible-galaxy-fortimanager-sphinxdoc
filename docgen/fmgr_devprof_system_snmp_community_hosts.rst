@@ -78,7 +78,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">community</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">devprof_system_snmp_community_hosts</span> - Configure IPv4 SNMP managers (hosts). <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">devprof_system_snmp_community_hosts</span> - Configure IPv4 SNMP managers <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">ha-direct</span> - Enable/disable direct management of HA cluster members. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -254,7 +254,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configure IPv4 SNMP managers (hosts).
+    - name: Configure IPv4 SNMP managers
       fmgr_devprof_system_snmp_community_hosts:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

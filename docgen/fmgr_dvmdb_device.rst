@@ -78,7 +78,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">dvmdb_device</span> - Device table, most attributes are read-only and can only be changed internally. Refer to Device Manager Command module for API to add, d... <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">dvmdb_device</span> - Device table, most attributes are read-only and can only be changed internally. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">adm_pass</span> - No description for the parameter <span class="li-normal">type: str</span> <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -2382,7 +2382,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Device table, most attributes are read-only and can only be changed internally. Refer to Device Manager Command module for API to add, d...
+    - name: Device table, most attributes are read-only and can only be changed internally.
       fmgr_dvmdb_device:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

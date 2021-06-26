@@ -110,7 +110,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Commit change(s) of a specific package, where the url includes both the folder(s) and name of the policy package.
+    - name: Commit change
       fmgr_dvmdb_workspace_commit_pkg:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

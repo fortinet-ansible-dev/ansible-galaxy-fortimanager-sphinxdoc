@@ -77,7 +77,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">lldp-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_lldpprofile_medlocationservice</span> - Configuration method to edit Media Endpoint Discovery (MED) location service type-length-value (TLV) categories. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">switchcontroller_lldpprofile_medlocationservice</span> - Configuration method to edit Media Endpoint Discovery <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">name</span> - Location service type name. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -191,7 +191,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configuration method to edit Media Endpoint Discovery (MED) location service type-length-value (TLV) categories.
+    - name: Configuration method to edit Media Endpoint Discovery
       fmgr_switchcontroller_lldpprofile_medlocationservice:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

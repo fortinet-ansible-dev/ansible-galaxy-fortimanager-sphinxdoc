@@ -98,7 +98,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configuration method to edit Spanning Tree Protocol (STP) settings used to prevent bridge loops.
+    - name: Configuration method to edit Spanning Tree Protocol
       fmgr_switchcontroller_managedswitch_stpsettings:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>

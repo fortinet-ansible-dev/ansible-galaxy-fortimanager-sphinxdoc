@@ -68,7 +68,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wanprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">wanprof_system_sdwan</span> - Configure redundant internet connections using SD-WAN (formerly virtual WAN link). <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">wanprof_system_sdwan</span> - Configure redundant internet connections using SD-WAN <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">duplication</span> - No description for the parameter <span class="li-normal">type: array</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -2750,7 +2750,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: Configure redundant internet connections using SD-WAN (formerly virtual WAN link).
+    - name: Configure redundant internet connections using SD-WAN
       fmgr_wanprof_system_sdwan:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
