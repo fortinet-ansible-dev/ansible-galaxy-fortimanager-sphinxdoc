@@ -492,3 +492,19 @@ Features & Bugfix
 ------------------
 
 - Fix multiple-data list in multi-versioning context
+
+
+Release Galaxy 2.1.2
+~~~~~~~~~~~~~~~~~~~
+
+|
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+
+Features & Bugfix
+------------------
+
+- Remove duplicated enum values for arrayed attributes.

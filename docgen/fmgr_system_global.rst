@@ -582,7 +582,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">disable-module</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fortiview-noc, fortiview-noc, none, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortiview-noc, fortiview-noc, fortiview-noc, none, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortiview-noc, fortiview-noc, fortiview-noc, none, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortirecorder, siem, soc, ai, fortiview-noc, fortirecorder, siem, soc, ai]</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">disable-module</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [fortiview-noc, none, fortirecorder, siem, soc, ai]</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table border="1">
  <tr>
@@ -1478,7 +1478,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">ssl-protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3]</span>  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ssl-protocol</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, tlsv1.3]</span>  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <table border="1">
  <tr>
@@ -1702,7 +1702,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">webservice-proto</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3, tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2]</span>  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">webservice-proto</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [tlsv1.2, tlsv1.1, tlsv1.0, sslv3, sslv2, tlsv1.3]</span>  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <table border="1">
  <tr>
@@ -2084,59 +2084,7 @@ Examples
             dh-params: <value in [1024, 1536, 2048, ...]>
             disable-module:
               - fortiview-noc
-              - fortiview-noc
               - none
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortiview-noc
-              - fortiview-noc
-              - fortiview-noc
-              - none
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortiview-noc
-              - fortiview-noc
-              - fortiview-noc
-              - none
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
-              - fortirecorder
-              - siem
-              - soc
-              - ai
-              - fortiview-noc
               - fortirecorder
               - siem
               - soc
@@ -2178,89 +2126,6 @@ Examples
               - tlsv1.0
               - sslv3
               - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
             ssl-static-key-ciphers: <value in [disable, enable]>
             task-list-size: <value of integer>
             tftp: <value in [disable, enable]>
@@ -2275,107 +2140,6 @@ Examples
               - sslv3
               - sslv2
               - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
-              - tlsv1.3
-              - tlsv1.2
-              - tlsv1.1
-              - tlsv1.0
-              - sslv3
-              - sslv2
             workflow-max-sessions: <value of integer>
             workspace-mode: <value in [disabled, normal, workflow, ...]>
             clone-name-option: <value in [default, keep]>

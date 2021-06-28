@@ -22,7 +22,7 @@ copyright = '2020-2021, Fortinet'
 author = 'Fortinet'
 
 # The full version, including alpha/beta/rc tags
-release = '2.1.0'
+release = '2.1.2'
 
 html_static_path = ['_static']
 
