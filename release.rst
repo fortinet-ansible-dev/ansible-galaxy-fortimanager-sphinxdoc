@@ -507,4 +507,38 @@ FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
 Features & Bugfix
 ------------------
 
-- Remove duplicated enum values for arrayed attributes.
+Remove duplicated enum values for arrayed attributes.
+
+- fmgr_authentication_scheme
+- fmgr_devprof_system_snmp_community
+- fmgr_devprof_system_snmp_user
+- fmgr_dlp_sensor
+- fmgr_dlp_sensor_filter
+- fmgr_dvm_cmd_import_devlist
+- fmgr_dvmdb_adom
+- fmgr_emailfilter_profile
+- fmgr_firewall_gtp
+- fmgr_firewall_gtp_policyv2
+- fmgr_firewall_vip
+- fmgr_firewall_vip6
+- fmgr_firewall_vip6_sslciphersuites
+- fmgr_firewall_vip6_sslserverciphersuites
+- fmgr_firewall_vip_dynamicmapping
+- fmgr_firewall_vip_dynamicmapping_sslciphersuites
+- fmgr_firewall_vip_sslciphersuites
+- fmgr_firewall_vip_sslserverciphersuites
+- fmgr_fmupdate_fdssetting
+- fmgr_fsp_vlan_interface
+- fmgr_fsp_vlan_interface_ipv6
+- fmgr_fsp_vlan_interface_secondaryip
+- fmgr_sshfilter_profile
+- fmgr_switchcontroller_lldpprofile
+- fmgr_system_global
+- fmgr_system_interface
+- fmgr_system_sql
+- fmgr_webfilter_profile
+- fmgr_webfilter_urlfilter
+- fmgr_webfilter_urlfilter_entries
+- fmgr_wtpprofile
+
+
