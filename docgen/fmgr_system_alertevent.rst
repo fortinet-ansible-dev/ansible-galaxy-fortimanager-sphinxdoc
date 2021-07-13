@@ -473,7 +473,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">severity-level-comp</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [string of >=, string of =, string of <=]</span>  </li>
+ <li><span class="li-head">severity-level-comp</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [>=, =, <=]</span>  </li>
  <li><span class="li-head">severity-level-logs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [no-check, information, notify, warning, error, critical, alert, emergency]</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table border="1">
@@ -565,9 +565,9 @@ Examples
             num-events: <value in [1, 5, 10, ...]>
             severity-filter: <value in [high, medium-high, medium, ...]>
             severity-level-comp:
-              - string of >=
-              - string of =
-              - string of <=
+              - >=
+              - =
+              - <=
             severity-level-logs:
               - no-check
               - information

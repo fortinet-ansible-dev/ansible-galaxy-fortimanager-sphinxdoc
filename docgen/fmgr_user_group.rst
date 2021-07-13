@@ -836,7 +836,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">member</span> - Names of users, peers, LDAP severs, or RADIUS servers to add to the user group. <span class="li-normal">type: str</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">member</span> - No description for the parameter <span class="li-normal">type: list</span> <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <table border="1">
  <tr>
@@ -1217,7 +1217,7 @@ Examples
                   id: <value of integer>
                   server-name: <value of string>
             max-accounts: <value of integer>
-            member: <value of string>
+            member: <value of list>
             mobile-phone: <value in [disable, enable]>
             multiple-guest-add: <value in [disable, enable]>
             name: <value of string>

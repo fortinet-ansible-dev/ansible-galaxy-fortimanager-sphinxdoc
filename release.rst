@@ -495,7 +495,7 @@ Features & Bugfix
 
 
 Release Galaxy 2.1.2
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 |
 
@@ -541,4 +541,27 @@ Remove duplicated enum values for arrayed attributes.
 - fmgr_webfilter_urlfilter_entries
 - fmgr_wtpprofile
 
+
+Release Galaxy 2.1.3
+~~~~~~~~~~~~~~~~~~~~
+
+|
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+
+Features & Bugfix
+------------------
+
+Fix schema for module:
+
+- fmgr_system_alertevent
+- fmgr_user_group
+
+Fix primary key requirement when it changes in between versions, modules being impacted:
+
+- fmgr_firewall_internetservicecustom
+- fmgr_user_adgrp
 
