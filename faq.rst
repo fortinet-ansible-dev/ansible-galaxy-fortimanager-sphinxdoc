@@ -11,7 +11,7 @@ Frequently Asked Questions (FAQ)
  -  `How To Deal With Task Result?`_
  - `When to Use Parameter bypass_validation?`_
  - `How To Monitor FortiManager Task?`_
- - `How To Use FortiManager Ansible With FortiCloud?`_
+ - `How To Use FortiManager Ansible With FortiManager Cloud?`_
 
 |
 
@@ -193,8 +193,8 @@ the snippet is very straightforward:
 - ``delay`` - checking frequency: `1/delay`.
 - ``failed_when`` - failing condition in which you regard the task a failure, this is the condition to quit abnormally
 
-How To Use FortiManager Ansible With FortiCloud?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How To Use FortiManager Ansible With FortiManager CLoud?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 FortiManager can be managed by forticloud, as a result, it's possible to authenticate Ansible client with forticloud API access token.
 ``forticloud_access_token`` is the module option to enable forticloud access token based authentication. 
