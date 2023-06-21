@@ -7,7 +7,7 @@
 fmgr_hotspot20_anqpnairealm_nailist_eapmethod -- EAP Methods.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.10
+.. versionadded:: 2.0.0
 
 .. contents::
    :local:
@@ -19,6 +19,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
+- Tested with FortiManager v6.x and v7.x.
 
 
 
@@ -37,28 +38,98 @@ FortiManager Version Compatibility
  <br>
  <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>hotspot20_anqpnairealm_nailist_eapmethod</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
  </tr>
  </table>
  <p>
@@ -71,38 +142,43 @@ Parameters
 .. raw:: html
 
  <ul>
- <li><span class="li-head">enable_log</span> - Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
- <li><span class="li-head">forticloud_access_token</span> - Access token of forticloud managed API users, this option is available with FortiManager later than 6.4.0 <span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
- <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiManager API structure, module continues to execute without validating parameters <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
- <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
- <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">access_token</span> -The token to access FortiManager without using username and password. <span class="li-normal">type: str</span> <span class="li-required">required: false</span></li> <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiManager API structure, module continues to execute without validating parameters. <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
+ <li><span class="li-head">enable_log</span> - Enable/Disable logging for task. <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
+ <li><span class="li-head">forticloud_access_token</span> - Access token of forticloud managed API users, this option is available with FortiManager later than 6.4.0. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
+ <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
+ <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">anqp-nai-realm</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">nai-list</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">hotspot20_anqpnairealm_nailist_eapmethod</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">hotspot20_anqpnairealm_nailist_eapmethod</span> - EAP Methods. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">auth-param</span> - No description for the parameter <span class="li-normal">type: array</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <table border="1">
+ <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>auth-param</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -111,6 +187,71 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  </tr>
  </table>
@@ -118,21 +259,26 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">id</span> - ID of authentication parameter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [non-eap-inner-auth, inner-auth-eap, credential, tunneled-credential]</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <table border="1">
+ <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>id</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -141,6 +287,71 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  </tr>
  </table>
@@ -148,21 +359,26 @@ Parameters
  </li>
  <li><span class="li-head">index</span> - Param index. <span class="li-normal">type: int</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <table border="1">
+ <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>index</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -171,6 +387,71 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  </tr>
  </table>
@@ -178,21 +459,26 @@ Parameters
  </li>
  <li><span class="li-head">val</span> - Value of authentication parameter. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [eap-identity, eap-md5, eap-tls, eap-ttls, eap-peap, eap-sim, eap-aka, eap-aka-prime, non-eap-pap, non-eap-chap, non-eap-mschap, non-eap-mschapv2, cred-sim, cred-usim, cred-nfc, cred-hardware-token, cred-softoken, cred-certificate, cred-user-pwd, cred-none, cred-vendor-specific, tun-cred-sim, tun-cred-usim, tun-cred-nfc, tun-cred-hardware-token, tun-cred-softoken, tun-cred-certificate, tun-cred-user-pwd, tun-cred-anonymous, tun-cred-vendor-specific]</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <table border="1">
+ <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>val</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -201,6 +487,71 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  </tr>
  </table>
@@ -209,21 +560,26 @@ Parameters
  </ul>
  <li><span class="li-head">index</span> - EAP method index. <span class="li-normal">type: int</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <table border="1">
+ <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>index</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -232,6 +588,71 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  </tr>
  </table>
@@ -239,21 +660,26 @@ Parameters
  </li>
  <li><span class="li-head">method</span> - EAP method type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [eap-identity, eap-md5, eap-tls, eap-ttls, eap-peap, eap-sim, eap-aka, eap-aka-prime]</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <table border="1">
+ <table>
  <tr>
- <td></td>
  <td><code class="docutils literal notranslate">6.0.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  </tr>
  <tr>
- <td>method</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -262,6 +688,71 @@ Parameters
  <td>True</td>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>True</td>
+ <td>True</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ </tr>
+ <tr>
  <td>True</td>
  </tr>
  </table>
@@ -301,7 +792,7 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
    tasks:
-    - name: no description
+    - name: EAP Methods.
       fmgr_hotspot20_anqpnairealm_nailist_eapmethod:
          bypass_validation: False
          workspace_locking_adom: <value in [global, custom adom including root]>
@@ -333,10 +824,15 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
 .. raw:: html
 
  <ul>
- <li> <span class="li-return">request_url</span> - The full url requested <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
- <li> <span class="li-return">response_code</span> - The status of api request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
- <li> <span class="li-return">response_message</span> - The descriptive message of the api response <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</li>
- <li> <span class="li-return">response_data</span> - The data body of the api response <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
+ <li> <span class="li-return">meta</span> - The result of the request.<span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self"> <li> <span class="li-return">request_url</span> - The full url requested. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
+ <li> <span class="li-return">response_code</span> - The status of api request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">response_data</span> - The data body of the api response. <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
+ <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
+ <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
+ </ul>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
  </ul>
 
 
@@ -352,8 +848,10 @@ Status
 Authors
 -------
 
-- Link Zheng (@chillancezen)
+- Xinwei Du (@dux-fortinet)
+- Xing Li (@lix-fortinet)
 - Jie Xue (@JieX19)
+- Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
 

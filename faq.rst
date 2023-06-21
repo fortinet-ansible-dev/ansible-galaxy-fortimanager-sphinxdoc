@@ -11,7 +11,8 @@ Frequently Asked Questions (FAQ)
  -  `How To Deal With Task Result?`_
  - `When to Use Parameter bypass_validation?`_
  - `How To Monitor FortiManager Task?`_
- - `How To Use FortiManager Ansible With FortiCloud?`_
+ - `How To Use FortiManager Ansible without Providing Username and Password?`_
+ - `How To Use FortiManager Ansible With FortiManager Cloud?`_
 
 |
 
@@ -193,8 +194,69 @@ the snippet is very straightforward:
 - ``delay`` - checking frequency: `1/delay`.
 - ``failed_when`` - failing condition in which you regard the task a failure, this is the condition to quit abnormally
 
-How To Use FortiManager Ansible With FortiCloud?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+How To Use FortiManager Ansible without Providing Username and Password?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+FortiManager Ansible collection supports three different ways to log in.
+
+- Providing ansible_user and ansible_password.
+- Using access token.
+- Using the Forticloud access token (only for the FortiManager managed by Forticloud).
+
+If you use multiple login methods at the same time, the program will first consider the access token, then consider the FortiCloud access token, and finally consider the ansible_user and ansible_password.
+
+
+If you want to use the access token to log in FortiManager Ansible, please go to the CLI interface of FortiManager and enter the following command:
+
+::
+
+  config system admin user
+    edit api_user_example_name
+      set profileid Super_User
+      set user_type api
+      set rpc-permit read-write
+    next
+  end
+
+
+Then, use ``execute api-user generate-key api_user_example_name`` and you will get an API key.
+
+::
+
+  FMG-VM64 # execute api-user generate-key api_user_example_name
+  New API key: XXXXXXXXXXXXXXX
+  
+
+You can use this API key in your playbook, and you don't need to provide ansible_user and ansible_password anymore.
+
+Here is an example of how to use access token:
+
+::
+
+  - hosts: fortimanagers
+    connection: httpapi
+    collections:
+      - fortinet.fortimanager
+    vars:
+      ansible_httpapi_use_ssl: yes
+      ansible_httpapi_validate_certs: no
+      ansible_httpapi_port: 443
+    tasks:
+      - name: get fact
+        fmgr_fact:
+          access_token: <your access_token>
+          enable_log: true
+          facts:
+            selector: "sys_status"
+        register: result
+      - name: Display response
+        debug:
+          var: result
+
+
+How To Use FortiManager Ansible With FortiManager Cloud?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 FortiManager can be managed by forticloud, as a result, it's possible to authenticate Ansible client with forticloud API access token.
 ``forticloud_access_token`` is the module option to enable forticloud access token based authentication. 

@@ -107,3 +107,7 @@ padding: 0;
 .rst-versions .rst-current-version {
 	background: #22ffff;
 } */
+
+.rst-content section ul li>* {
+	margin-top: 0px;
+}
