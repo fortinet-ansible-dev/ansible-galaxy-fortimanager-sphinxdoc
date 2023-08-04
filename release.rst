@@ -2,14 +2,8 @@
 Release Notes
 ==============================
 
-
-
-
 Release Galaxy 2.0.0
 ~~~~~~~~~~~~~~~~~~~~~~
-
-|
-
 
 Release Target
 ---------------
@@ -46,10 +40,10 @@ Features
 -  Runnable examples `repository <example.html>`__.
 
 
+|
+
 Release Galaxy 2.0.1
 ~~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -69,10 +63,10 @@ Features & Bugfix
 - Fix module ``fmgr_templategroup`` attribute: member
 
 
+|
+
 Release Galaxy 2.0.2
 ~~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -85,10 +79,10 @@ Features & Bugfix
 - Fix ``pylint`` sanity test error.
 
 
+|
+
 Release Galaxy 2.0.3
 ~~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -106,10 +100,10 @@ Features & Bugfix
  - Add ``enable_log`` option to support explicit logging
  - Add ``proposed_method`` option to support overriding underlying request method
 
+|
+
 Release Galaxy 2.1.0
 ~~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -477,11 +471,10 @@ Features & Bugfix
 
 - Support multiple versions of FortiManager releases.
 
+|
 
 Release Galaxy 2.1.1
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -494,10 +487,10 @@ Features & Bugfix
 - Fix multiple-data list in multi-versioning context
 
 
+|
+
 Release Galaxy 2.1.2
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -541,11 +534,11 @@ Remove duplicated enum values for arrayed attributes.
 - fmgr_webfilter_urlfilter_entries
 - fmgr_wtpprofile
 
+|
+
 
 Release Galaxy 2.1.3
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -565,10 +558,10 @@ Fix primary key requirement when it changes in between versions, modules being i
 - fmgr_firewall_internetservicecustom
 - fmgr_user_adgrp
 
+|
+
 Release Galaxy 2.1.4
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -587,10 +580,10 @@ Features & Bugfix
 - Support forticloud access token based authentication.
 
 
+|
+
 Release Galaxy 2.1.5
 ~~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ----------------
@@ -606,11 +599,11 @@ Features & Bugfix
 - fix some sphinx document minor typos.
 - fix readthedoc requirement. 
 
+|
+
 
 Release Galaxy 2.1.6
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ---------------
@@ -821,11 +814,11 @@ New Modules
 +---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
 
 
+|
+
 
 Release Galaxy 2.1.7
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ----------------
@@ -840,11 +833,11 @@ Features & Bugfix
 - Support Ansible changelogs.
 
 
+|
+
 
 Release Galaxy 2.2.0
 ~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Release Target
 ----------------
@@ -1148,3 +1141,20 @@ New Modules
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
 | `fmgr_wireless_syslogprofile <docgen/fmgr_wireless_syslogprofile.html>`__                                                                                               | ``v7.2.1``       |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+|
+
+Release Galaxy 2.2.1
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
+
+Features & Bugfix
+------------------
+
+- Fix a bug where the user may not be able to use workspace_locking_adom if the workspace mode is per-adom.
+- Improve login logic in httpapi plugin.
+- Support newest FortiManager versions.

@@ -198,7 +198,7 @@ the snippet is very straightforward:
 How To Use FortiManager Ansible without Providing Username and Password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-FortiManager Ansible collection supports three different ways to log in.
+FortiManager Ansible collection supports three different ways to login.
 
 - Providing ansible_user and ansible_password.
 - Using access token.
@@ -207,7 +207,7 @@ FortiManager Ansible collection supports three different ways to log in.
 If you use multiple login methods at the same time, the program will first consider the access token, then consider the FortiCloud access token, and finally consider the ansible_user and ansible_password.
 
 
-If you want to use the access token to log in FortiManager Ansible, please go to the CLI interface of FortiManager and enter the following command:
+If you want to use the access token to login FortiManager Ansible, please go to the CLI interface of FortiManager and enter the following command:
 
 ::
 
@@ -258,7 +258,9 @@ Here is an example of how to use access token:
 How To Use FortiManager Ansible With FortiManager Cloud?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-FortiManager can be managed by forticloud, as a result, it's possible to authenticate Ansible client with forticloud API access token.
+FortiManager can be managed by forticloud. Example of a fortimanager cloud host: ``1234567.us-west-1.fortimanager.forticloud.com``.
+
+It's possible to authenticate Ansible client with forticloud API access token.
 ``forticloud_access_token`` is the module option to enable forticloud access token based authentication. 
 
 To obatin access token, it's required to register an API user in https://support.fortinet.com/iam/#/api-user and download the crendentials which contains
@@ -267,32 +269,32 @@ needed API user ID and password. it's strongly recommended that you keep it safe
 below is an example to obtain access token:
 ::
 
+  - hosts: fortimanager00
+    collections:
+      - fortinet.fortimanager
+    connection: httpapi
+    vars:
+      ansible_httpapi_use_ssl: True
+      ansible_httpapi_validate_certs: False
+      ansible_httpapi_port: 443
+      FORTICLOUD_APIID: "3EE835AF-F9F8-48........"
+      FORTICLOUD_PASSWD: "36b25667c61b2.........."
+    tasks:
+      - name: Generate Access Token From FortiCloud Auth Server.
+        uri:
+          url: https://customerapiauth.fortinet.com/api/v1/oauth/token/
+          method: POST
+          body_format: json
+          return_content: true
+          headers:
+            Content-Type: application/json
+          body: '{"username": "{{ FORTICLOUD_APIID }}", "password": "{{ FORTICLOUD_PASSWD }}", "client_id": "FortiManager", "grant_type": "password"}'
+        register: tokeninfo
 
- - hosts: fortimanager00
-   collections:
-    - fortinet.fortimanager
-   connection: httpapi
-   vars:
-     ansible_httpapi_use_ssl: True
-     ansible_httpapi_validate_certs: False
-     ansible_httpapi_port: 443
-     FORTICLOUD_APIID: '3EE835AF-F9F8-48........'
-     FORTICLOUD_PASSWD: '36b25667c61b2..........'
-   tasks:
-   - name: Generate Access Token From FortiCloud Auth Server.
-     uri:
-       url: https://customerapiauth.fortinet.com/api/v1/oauth/token/
-       method: POST
-       body_format: json
-       return_content: true
-       headers:
-         Content-Type: application/json
-       body: '{"username": "{{ FORTICLOUD_APIID }}", "password": "{{ FORTICLOUD_PASSWD }}", "client_id": "FortiManager", "grant_type": "password"}'
-     register: tokeninfo
 
 then in subsequent tasks, we can reference returned token:
-::
 
+::
 
    - name: Configure IPv4 addresses.
      fmgr_firewall_address:
