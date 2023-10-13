@@ -206,6 +206,7 @@ FortiManager Ansible collection supports three different ways to login.
 
 If you use multiple login methods at the same time, the program will first consider the access token, then consider the FortiCloud access token, and finally consider the ansible_user and ansible_password.
 
+To avoid unexpected behavior, it is suggested to only use one login method at a time.
 
 If you want to use the access token to login FortiManager Ansible, please go to the CLI interface of FortiManager and enter the following command:
 

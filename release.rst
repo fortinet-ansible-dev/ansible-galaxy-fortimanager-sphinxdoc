@@ -1158,3 +1158,34 @@ Features & Bugfix
 - Fix a bug where the user may not be able to use workspace_locking_adom if the workspace mode is per-adom.
 - Improve login logic in httpapi plugin.
 - Support newest FortiManager versions.
+
+
+|
+
+Release Galaxy 2.3.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
+
+
+Minor Changes
+-------------
+
+- Some arguments can support both list or string format input now.
+- Support newest versions for FortiManager v6.2 ~ v7.4
+
+Bugfixes
+--------
+
+- Add 'access_token' in 'fmgr_generic'.
+- Add param 'platform' in 'fmgr_wtpprofile' and param 'interface' in 'fmgr_fsp_vlan'.
+- Fix a bug that collection may update the resource when it does not need to.
+- Fix some modules missing revision (used for version warning).
+- Fixed the bug that would report an error when providing access_token and username/password at the same time.
+- Improve document.
+- Improve fmgr_fact. 'changed' will not be true anymore if you get the result.
+- Improve sanity tests.
+- When the JSON data sent by FortiManager is not in the right format, the collection can still execute correctly.

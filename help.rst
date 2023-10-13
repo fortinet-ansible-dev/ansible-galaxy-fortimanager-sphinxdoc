@@ -19,5 +19,5 @@ issue in git `issues page`_
 
 .. _Technical Assistance Center: https://www.fortinet.com/support/contact.html
 .. _community: https://www.ansible.com/
-.. _issues page: https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection/issues
+.. _issues page: https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues
 
