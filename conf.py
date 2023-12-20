@@ -22,7 +22,7 @@ copyright = "2020-2023, Fortinet"
 author = "Fortinet"
 
 # The full version, including alpha/beta/rc tags
-release = "2.3.0"
+release = "2.3.1"
 
 master_doc = "index"
 

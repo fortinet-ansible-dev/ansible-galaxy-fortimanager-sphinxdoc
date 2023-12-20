@@ -110,8 +110,10 @@ FortiManager Version Compatibility
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -243,8 +245,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -358,8 +362,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -473,8 +479,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -588,8 +596,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -703,8 +713,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -818,8 +830,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -933,8 +947,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1048,8 +1064,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1163,9 +1181,11 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1279,6 +1299,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1286,6 +1307,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1394,6 +1416,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1401,6 +1424,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1509,6 +1533,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1516,6 +1541,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1624,6 +1650,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1631,6 +1658,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1739,6 +1767,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1746,6 +1775,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1854,6 +1884,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1861,6 +1892,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1969,6 +2001,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -1976,6 +2009,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2084,6 +2118,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -2091,6 +2126,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2199,6 +2235,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -2206,6 +2243,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2314,6 +2352,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -2321,6 +2360,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2429,6 +2469,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -2436,6 +2477,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2544,6 +2586,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -2551,6 +2594,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2659,6 +2703,7 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
  <td>False</td>
@@ -2666,6 +2711,7 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2698,6 +2744,240 @@ Parameters
  </div>
  </li>
  </ul>
+ </li>
+ <li><span class="li-head">retry-interval</span> - waiting time for resending request to device(1-360s, default=60) <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <table>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.4 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ <td><code class="docutils literal notranslate">6.2.11 </code></td>
+ <td><code class="docutils literal notranslate">6.2.12 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>None</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ <td><code class="docutils literal notranslate">6.4.12 </code></td>
+ <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ <td><code class="docutils literal notranslate">7.0.8 </code></td>
+ <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ <td><code class="docutils literal notranslate">7.2.3 </code></td>
+ <td><code class="docutils literal notranslate">7.2.4 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">retry-max</span> - max retry times(0-100, default=10) <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <table>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.4 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ <td><code class="docutils literal notranslate">6.2.11 </code></td>
+ <td><code class="docutils literal notranslate">6.2.12 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>None</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ <td><code class="docutils literal notranslate">6.4.12 </code></td>
+ <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ <td><code class="docutils literal notranslate">7.0.8 </code></td>
+ <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>True</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ <td><code class="docutils literal notranslate">7.2.3 </code></td>
+ <td><code class="docutils literal notranslate">7.2.4 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
  </li>
  </ul>
  </ul>
@@ -2764,6 +3044,8 @@ Examples
               retrieve-timeout: <integer>
               rpc-timeout: <integer>
               total-timeout: <integer>
+            retry-interval: <integer>
+            retry-max: <integer>
   
 
 

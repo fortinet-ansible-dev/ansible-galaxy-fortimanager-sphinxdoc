@@ -110,8 +110,10 @@ FortiManager Version Compatibility
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -243,8 +245,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -358,8 +362,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -473,8 +479,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -588,8 +596,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -703,8 +713,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -741,7 +753,7 @@ Parameters
  </table>
  </div>
  </li>
- <li><span class="li-head">service-type</span> - Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fgd, fgc, fsa]</span> 
+ <li><span class="li-head">service-type</span> - Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fgd, fgc, fsa, fgfq, geoip, iot-collect]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -818,8 +830,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -935,8 +949,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.7 </code></td>
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1025,6 +1041,9 @@ Examples
                   - fgd
                   - fgc
                   - fsa
+                  - fgfq
+                  - geoip
+                  - iot-collect
             status: <value in [disable, enable]>
   
 
