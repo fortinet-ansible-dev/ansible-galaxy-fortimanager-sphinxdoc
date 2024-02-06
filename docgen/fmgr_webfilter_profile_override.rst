@@ -9,6 +9,16 @@ fmgr_webfilter_profile_override -- Web Filter override settings.
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -170,7 +178,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_profile_override</span> - Web Filter override settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ovrd-cookie</span> - Allow/deny browser-based (cookie) overrides. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">ovrd_cookie</span> <b>(Alias name: ovrd-cookie)</b>  Allow/deny browser-based (cookie) overrides. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -279,15 +287,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ovrd-dur</span> - Override duration. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ovrd_dur</span> <b>(Alias name: ovrd-dur)</b>  Override duration. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -396,15 +406,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ovrd-dur-mode</span> - Override duration mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [constant, ask]</span> 
+ <li><span class="li-head">ovrd_dur_mode</span> <b>(Alias name: ovrd-dur-mode)</b>  Override duration mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [constant, ask]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -513,15 +525,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ovrd-scope</span> - Override scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user, user-group, ip, ask, browser]</span> 
+ <li><span class="li-head">ovrd_scope</span> <b>(Alias name: ovrd-scope)</b>  Override scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user, user-group, ip, ask, browser]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -630,15 +644,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ovrd-user-group</span> - User groups with permission to use the override. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">ovrd_user_group</span> <b>(Alias name: ovrd-user-group)</b>  User groups with permission to use the override. <span class="li-normal">type: list or str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -747,15 +763,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">profile</span> - Web filter profile with permission to create overrides. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">profile</span> Web filter profile with permission to create overrides. <span class="li-normal">type: list or str</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -864,15 +882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">profile-attribute</span> - Profile attribute to retrieve from the RADIUS server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
+ <li><span class="li-head">profile_attribute</span> <b>(Alias name: profile-attribute)</b>  Profile attribute to retrieve from the radius server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -981,15 +1001,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">profile-type</span> - Override profile type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [list, radius]</span> 
+ <li><span class="li-head">profile_type</span> <b>(Alias name: profile-type)</b>  Override profile type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [list, radius]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1098,8 +1120,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1111,19 +1135,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -1131,42 +1148,38 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Web Filter override settings.
-        fmgr_webfilter_profile_override:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_webfilter_profile_override:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           profile: <your own value>
           webfilter_profile_override:
-            ovrd-cookie: <value in [deny, allow]>
-            ovrd-dur: <string>
-            ovrd-dur-mode: <value in [constant, ask]>
-            ovrd-scope: <value in [user, user-group, ip, ...]>
-            ovrd-user-group: <list or string>
+            ovrd_cookie: <value in [deny, allow]>
+            ovrd_dur: <string>
+            ovrd_dur_mode: <value in [constant, ask]>
+            ovrd_scope: <value in [user, user-group, ip, ...]>
+            ovrd_user_group: <list or string>
             profile: <list or string>
-            profile-attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
-            profile-type: <value in [list, radius]>
-  
+            profile_attribute: <value in [User-Name, User-Password, CHAP-Password, ...]>
+            profile_type: <value in [list, radius]>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -1178,12 +1191,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -1201,11 +1211,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

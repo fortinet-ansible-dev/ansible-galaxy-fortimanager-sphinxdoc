@@ -69,40 +69,35 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager01
+  - name: Generic module
+    hosts: fortimanagers
     connection: httpapi
-    collections:
-      - fortinet.fortimanager
     vars:
       adom: "root"
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: "create a script on fortimanager"
-        fmgr_generic:
-          method: "add"
+      - name: Login a user
+        fortinet.fortimanager.fmgr_generic:
+          method: "exec"
           params:
-            - url: "/dvmdb/adom/{{ adom }}/script"
+            - url: "sys/login/user"
               data:
-                - name: "user_script0"
-                  type: "cli"
-                  desc: "The script is created by ansible"
-                  content: "the script content to be executed"
-      - name: "create a script on fortimanager"
-        fmgr_generic:
+                - user: "APIUser"
+                  passwd: "Fortinet1!e"
+      - name: Login another user
+        fortinet.fortimanager.fmgr_generic:
           json: |
             {
-             "method":"add",
+             "method":"exec",
              "params":[
               {
-                   "url":"/dvmdb/adom/root/script",
+                   "url":"sys/login/user",
                    "data":[
                       {
-                         "name": "user_script0",
-                         "type": "cli",
-                         "desc": "The script is created by ansible",
-                         "content": "the script content to be executed"
+                         "user":"APIUser",
+                         "passwd":"Fortinet1!"
                       }
                     ]
                }

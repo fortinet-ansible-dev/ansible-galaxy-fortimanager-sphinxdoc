@@ -9,6 +9,16 @@ fmgr_system_dm -- Configure dm.
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -168,7 +176,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_dm</span> - Configure dm. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">concurrent-install-image-limit</span> - Maximum number of concurrent install image (1 - 1000). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span> 
+ <li><span class="li-head">concurrent_install_image_limit</span> <b>(Alias name: concurrent-install-image-limit)</b>  Maximum number of concurrent install image (1 - 1000). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -277,15 +285,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">concurrent-install-limit</span> - Maximum number of concurrent installs (5 - 2000). <span class="li-normal">type: int</span> <span class="li-normal">default: 480</span> 
+ <li><span class="li-head">concurrent_install_limit</span> <b>(Alias name: concurrent-install-limit)</b>  Maximum number of concurrent installs (5 - 2000). <span class="li-normal">type: int</span> <span class="li-normal">default: 480</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -394,15 +404,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">concurrent-install-script-limit</span> - Maximum number of concurrent install scripts (5 - 2000). <span class="li-normal">type: int</span> <span class="li-normal">default: 480</span> 
+ <li><span class="li-head">concurrent_install_script_limit</span> <b>(Alias name: concurrent-install-script-limit)</b>  Maximum number of concurrent install scripts (5 - 2000). <span class="li-normal">type: int</span> <span class="li-normal">default: 480</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -511,15 +523,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">discover-timeout</span> - Check connection timeout when discover device (3 - 15). <span class="li-normal">type: int</span> <span class="li-normal">default: 6</span> 
+ <li><span class="li-head">discover_timeout</span> <b>(Alias name: discover-timeout)</b>  Check connection timeout when discover device (3 - 15). <span class="li-normal">type: int</span> <span class="li-normal">default: 6</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -628,15 +642,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dpm-logsize</span> - Maximum dpm log size per device (1 - 10000K). <span class="li-normal">type: int</span> <span class="li-normal">default: 10000</span> 
+ <li><span class="li-head">dpm_logsize</span> <b>(Alias name: dpm-logsize)</b>  Maximum dpm log size per device (1 - 10000k). <span class="li-normal">type: int</span> <span class="li-normal">default: 10000</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -745,15 +761,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fgfm-sock-timeout</span> - Maximum FGFM socket idle time (90 - 1800 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 360</span> 
+ <li><span class="li-head">fgfm_sock_timeout</span> <b>(Alias name: fgfm-sock-timeout)</b>  Maximum fgfm socket idle time (90 - 1800 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 360</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -862,15 +880,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fgfm_keepalive_itvl</span> - FGFM protocol keep alive interval (30 - 600 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 120</span> 
+ <li><span class="li-head">fgfm_keepalive_itvl</span> Fgfm protocol keep alive interval (30 - 600 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 120</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -979,15 +999,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">force-remote-diff</span> - Always use remote diff when installing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">force_remote_diff</span> <b>(Alias name: force-remote-diff)</b>  Always use remote diff when installing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1096,15 +1118,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fortiap-refresh-cnt</span> - Max auto refresh FortiAP number each time (1 - 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span> 
+ <li><span class="li-head">fortiap_refresh_cnt</span> <b>(Alias name: fortiap-refresh-cnt)</b>  Max auto refresh fortiap number each time (1 - 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1213,15 +1237,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fortiap-refresh-itvl</span> - Auto refresh FortiAP status interval (0 - 1440) minutes, set to 0 will disable auto refresh. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
+ <li><span class="li-head">fortiap_refresh_itvl</span> <b>(Alias name: fortiap-refresh-itvl)</b>  Auto refresh fortiap status interval (0 - 1440) minutes, set to 0 will disable auto refresh. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1330,15 +1356,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fortiext-refresh-cnt</span> - Max device number for FortiExtender auto refresh (1 - 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 50</span> 
+ <li><span class="li-head">fortiext_refresh_cnt</span> <b>(Alias name: fortiext-refresh-cnt)</b>  Max device number for fortiextender auto refresh (1 - 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 50</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1447,15 +1475,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">install-image-timeout</span> - Maximum waiting time for image transfer and device upgrade (600 - 7200 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 3600</span> 
+ <li><span class="li-head">install_image_timeout</span> <b>(Alias name: install-image-timeout)</b>  Maximum waiting time for image transfer and device upgrade (600 - 7200 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 3600</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1564,15 +1594,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">install-tunnel-retry-itvl</span> - Time to re-establish tunnel during install (10 - 60 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
+ <li><span class="li-head">install_tunnel_retry_itvl</span> <b>(Alias name: install-tunnel-retry-itvl)</b>  Time to re-establish tunnel during install (10 - 60 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1681,15 +1713,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">max-revs</span> - Maximum number of revisions saved (1 - 250). <span class="li-normal">type: int</span> <span class="li-normal">default: 100</span> 
+ <li><span class="li-head">max_revs</span> <b>(Alias name: max-revs)</b>  Maximum number of revisions saved (1 - 250). <span class="li-normal">type: int</span> <span class="li-normal">default: 100</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1798,15 +1832,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">nr-retry</span> - Number of retries. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span> 
+ <li><span class="li-head">nr_retry</span> <b>(Alias name: nr-retry)</b>  Number of retries. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1915,15 +1951,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">retry</span> - Enable/disable configuration install retry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">retry</span> Enable/disable configuration install retry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2032,15 +2070,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">retry-intvl</span> - Retry interval. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span> 
+ <li><span class="li-head">retry_intvl</span> <b>(Alias name: retry-intvl)</b>  Retry interval. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2149,15 +2189,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">rollback-allow-reboot</span> - Enable/disable FortiGate reboot to rollback when installing script/config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">rollback_allow_reboot</span> <b>(Alias name: rollback-allow-reboot)</b>  Enable/disable fortigate reboot to rollback when installing script/config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2266,15 +2308,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">script-logsize</span> - Maximum script log size per device (1 - 10000K). <span class="li-normal">type: int</span> <span class="li-normal">default: 100</span> 
+ <li><span class="li-head">script_logsize</span> <b>(Alias name: script-logsize)</b>  Maximum script log size per device (1 - 10000k). <span class="li-normal">type: int</span> <span class="li-normal">default: 100</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2383,15 +2427,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">skip-scep-check</span> - Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">skip_scep_check</span> <b>(Alias name: skip-scep-check)</b>  Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2500,15 +2546,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">skip-tunnel-fcp-req</span> - Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">skip_tunnel_fcp_req</span> <b>(Alias name: skip-tunnel-fcp-req)</b>  Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <table>
@@ -2617,15 +2665,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">verify-install</span> - Verify install against remote configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, optimal, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">verify_install</span> <b>(Alias name: verify-install)</b>  Verify install against remote configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, optimal, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table>
@@ -2734,15 +2784,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fgfm-install-refresh-count</span> - Maximum FGFM install refresh attempt. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
+ <li><span class="li-head">fgfm_install_refresh_count</span> <b>(Alias name: fgfm-install-refresh-count)</b>  Maximum fgfm install refresh attempt. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <table>
@@ -2851,15 +2903,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">conf-merge-after-script</span> - Merge config after run script on remote device, instead of full retrieve. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">conf_merge_after_script</span> <b>(Alias name: conf-merge-after-script)</b>  Merge config after run script on remote device, instead of full retrieve. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <table>
@@ -2968,15 +3022,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log-autoupdate</span> - Enable/disable autoupdate debug logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">log_autoupdate</span> <b>(Alias name: log-autoupdate)</b>  Enable/disable autoupdate debug logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <table>
@@ -3085,15 +3141,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fgfm-auto-retrieve-timeout</span> - Maximum waiting time for auto retrieve(60 seconds - 3 hours, default 30min). <span class="li-normal">type: int</span> <span class="li-normal">default: 1800</span> 
+ <li><span class="li-head">fgfm_auto_retrieve_timeout</span> <b>(Alias name: fgfm-auto-retrieve-timeout)</b>  Maximum waiting time for auto retrieve(60 seconds - 3 hours, default 30min). <span class="li-normal">type: int</span> <span class="li-normal">default: 1800</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <table>
@@ -3202,15 +3260,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">install-fds-timeout</span> - Maximum waiting time for fgt update during install (1-30 minutes, default 10). <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
+ <li><span class="li-head">install_fds_timeout</span> <b>(Alias name: install-fds-timeout)</b>  Maximum waiting time for fgt update during install (1-30 minutes, default 10). <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <table>
@@ -3319,9 +3379,11 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -3332,19 +3394,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -3352,59 +3407,55 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Configure dm.
-        fmgr_system_dm:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_system_dm:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           system_dm:
-            concurrent-install-image-limit: <integer>
-            concurrent-install-limit: <integer>
-            concurrent-install-script-limit: <integer>
-            discover-timeout: <integer>
-            dpm-logsize: <integer>
-            fgfm-sock-timeout: <integer>
+            concurrent_install_image_limit: <integer>
+            concurrent_install_limit: <integer>
+            concurrent_install_script_limit: <integer>
+            discover_timeout: <integer>
+            dpm_logsize: <integer>
+            fgfm_sock_timeout: <integer>
             fgfm_keepalive_itvl: <integer>
-            force-remote-diff: <value in [disable, enable]>
-            fortiap-refresh-cnt: <integer>
-            fortiap-refresh-itvl: <integer>
-            fortiext-refresh-cnt: <integer>
-            install-image-timeout: <integer>
-            install-tunnel-retry-itvl: <integer>
-            max-revs: <integer>
-            nr-retry: <integer>
+            force_remote_diff: <value in [disable, enable]>
+            fortiap_refresh_cnt: <integer>
+            fortiap_refresh_itvl: <integer>
+            fortiext_refresh_cnt: <integer>
+            install_image_timeout: <integer>
+            install_tunnel_retry_itvl: <integer>
+            max_revs: <integer>
+            nr_retry: <integer>
             retry: <value in [disable, enable]>
-            retry-intvl: <integer>
-            rollback-allow-reboot: <value in [disable, enable]>
-            script-logsize: <integer>
-            skip-scep-check: <value in [disable, enable]>
-            skip-tunnel-fcp-req: <value in [disable, enable]>
-            verify-install: <value in [disable, optimal, enable]>
-            fgfm-install-refresh-count: <integer>
-            conf-merge-after-script: <value in [disable, enable]>
-            log-autoupdate: <value in [disable, enable]>
-            fgfm-auto-retrieve-timeout: <integer>
-            install-fds-timeout: <integer>
-  
+            retry_intvl: <integer>
+            rollback_allow_reboot: <value in [disable, enable]>
+            script_logsize: <integer>
+            skip_scep_check: <value in [disable, enable]>
+            skip_tunnel_fcp_req: <value in [disable, enable]>
+            verify_install: <value in [disable, optimal, enable]>
+            fgfm_install_refresh_count: <integer>
+            conf_merge_after_script: <value in [disable, enable]>
+            log_autoupdate: <value in [disable, enable]>
+            fgfm_auto_retrieve_timeout: <integer>
+            install_fds_timeout: <integer>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -3416,12 +3467,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -3439,11 +3487,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

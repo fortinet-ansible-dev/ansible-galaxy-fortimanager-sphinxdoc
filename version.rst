@@ -40,7 +40,9 @@ The ``unified`` collections cover FMG releases ranging from ``v6.x`` to ``v7.x``
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 | unified       | 2.3.0               | 2023/10/13     | ``ansible-galaxy collection install fortinet.fortimanager:2.3.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.3.1 ``latest``    | 2023/12/20     | ``ansible-galaxy collection install fortinet.fortimanager:2.3.1``    |
+| unified       | 2.3.1               | 2023/12/20     | ``ansible-galaxy collection install fortinet.fortimanager:2.3.1``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| unified       | 2.4.0 ``latest``    | 2024/02/06     | ``ansible-galaxy collection install fortinet.fortimanager:2.4.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 
 

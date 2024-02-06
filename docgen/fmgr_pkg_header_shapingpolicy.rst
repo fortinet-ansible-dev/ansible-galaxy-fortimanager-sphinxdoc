@@ -9,6 +9,16 @@ fmgr_pkg_header_shapingpolicy -- Configure shaping policies.
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -170,7 +178,7 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_header_shapingpolicy</span> - Configure shaping policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">app-category</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">app_category</span> <b>(Alias name: app-category)</b>  <span class="li-normal">type: list or str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -279,15 +287,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">app-group</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">app_group</span> <b>(Alias name: app-group)</b>  <span class="li-normal">type: list or str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -396,15 +406,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">application</span> - No description for the parameter <span class="li-normal">type: list</span>
+ <li><span class="li-head">application</span> <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -513,15 +525,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">class-id</span> - No description for the parameter <span class="li-normal">type: int or str</span>
+ <li><span class="li-head">class_id</span> <b>(Alias name: class-id)</b>  <span class="li-normal">type: int or str</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -630,15 +644,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">comment</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">comment</span> <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -747,15 +763,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">diffserv-forward</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">diffserv_forward</span> <b>(Alias name: diffserv-forward)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -864,15 +882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">diffserv-reverse</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">diffserv_reverse</span> <b>(Alias name: diffserv-reverse)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -981,15 +1001,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">diffservcode-forward</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">diffservcode_forward</span> <b>(Alias name: diffservcode-forward)</b>  <span class="li-normal">type: str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1098,15 +1120,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">diffservcode-rev</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">diffservcode_rev</span> <b>(Alias name: diffservcode-rev)</b>  <span class="li-normal">type: str</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1215,15 +1239,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">dstaddr</span> <span class="li-normal">type: list or str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1332,15 +1358,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstaddr6</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">dstaddr6</span> <span class="li-normal">type: list or str</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1449,15 +1477,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">dstintf</span> <span class="li-normal">type: list or str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1566,15 +1596,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">groups</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">groups</span> <span class="li-normal">type: list or str</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1683,15 +1715,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> <span class="li-normal">type: int</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1800,15 +1834,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">internet_service</span> <b>(Alias name: internet-service)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1917,15 +1953,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-custom</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_custom</span> <b>(Alias name: internet-service-custom)</b>  <span class="li-normal">type: list or str</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2034,15 +2072,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-custom-group</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_custom_group</span> <b>(Alias name: internet-service-custom-group)</b>  <span class="li-normal">type: list or str</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2151,15 +2191,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-group</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_group</span> <b>(Alias name: internet-service-group)</b>  <span class="li-normal">type: list or str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2268,15 +2310,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-id</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_id</span> <b>(Alias name: internet-service-id)</b>  <span class="li-normal">type: list or str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2385,15 +2429,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-src</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">internet_service_src</span> <b>(Alias name: internet-service-src)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2502,15 +2548,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-src-custom</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_src_custom</span> <b>(Alias name: internet-service-src-custom)</b>  <span class="li-normal">type: list or str</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <table>
@@ -2619,15 +2667,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-src-custom-group</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_src_custom_group</span> <b>(Alias name: internet-service-src-custom-group)</b>  <span class="li-normal">type: list or str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table>
@@ -2736,15 +2786,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-src-group</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_src_group</span> <b>(Alias name: internet-service-src-group)</b>  <span class="li-normal">type: list or str</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <table>
@@ -2853,15 +2905,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-src-id</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_src_id</span> <b>(Alias name: internet-service-src-id)</b>  <span class="li-normal">type: list or str</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <table>
@@ -2970,15 +3024,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ip-version</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [4, 6]</span> 
+ <li><span class="li-head">ip_version</span> <b>(Alias name: ip-version)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [4, 6]</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <table>
@@ -3087,15 +3143,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">per-ip-shaper</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">per_ip_shaper</span> <b>(Alias name: per-ip-shaper)</b>  <span class="li-normal">type: str</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <table>
@@ -3204,15 +3262,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">schedule</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">schedule</span> <span class="li-normal">type: str</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <table>
@@ -3321,15 +3381,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">service</span> <span class="li-normal">type: list or str</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <table>
@@ -3438,15 +3500,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">srcaddr</span> <span class="li-normal">type: list or str</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <table>
@@ -3555,15 +3619,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcaddr6</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">srcaddr6</span> <span class="li-normal">type: list or str</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <table>
@@ -3672,15 +3738,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcintf</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">srcintf</span> <span class="li-normal">type: list or str</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <table>
@@ -3789,15 +3857,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <table>
@@ -3906,15 +3976,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tos</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">tos</span> <span class="li-normal">type: str</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <table>
@@ -4023,15 +4095,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tos-mask</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">tos_mask</span> <b>(Alias name: tos-mask)</b>  <span class="li-normal">type: str</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <table>
@@ -4140,15 +4214,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tos-negate</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">tos_negate</span> <b>(Alias name: tos-negate)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <table>
@@ -4257,15 +4333,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">traffic-shaper</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">traffic_shaper</span> <b>(Alias name: traffic-shaper)</b>  <span class="li-normal">type: str</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <table>
@@ -4374,15 +4452,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">traffic-shaper-reverse</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">traffic_shaper_reverse</span> <b>(Alias name: traffic-shaper-reverse)</b>  <span class="li-normal">type: str</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <table>
@@ -4491,15 +4571,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">url-category</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">url_category</span> <b>(Alias name: url-category)</b>  <span class="li-normal">type: list or str</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <table>
@@ -4608,15 +4690,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">users</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">users</span> <span class="li-normal">type: list or str</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <table>
@@ -4725,15 +4809,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">uuid</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">uuid</span> <span class="li-normal">type: str</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <table>
@@ -4842,15 +4928,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-name</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_name</span> <b>(Alias name: internet-service-name)</b>  <span class="li-normal">type: list or str</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <table>
@@ -4959,15 +5047,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">internet-service-src-name</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">internet_service_src_name</span> <b>(Alias name: internet-service-src-name)</b>  <span class="li-normal">type: list or str</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <table>
@@ -5076,15 +5166,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">class-id-reverse</span> - No description for the parameter <span class="li-normal">type: int</span>
+ <li><span class="li-head">class_id_reverse</span> <b>(Alias name: class-id-reverse)</b>  <span class="li-normal">type: int</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <table>
@@ -5193,15 +5285,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">service-type</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [service, internet-service]</span> 
+ <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [service, internet-service]</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <table>
@@ -5310,15 +5404,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">uuid-idx</span> - No description for the parameter <span class="li-normal">type: int</span>
+ <li><span class="li-head">uuid_idx</span> <b>(Alias name: uuid-idx)</b>  <span class="li-normal">type: int</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <table>
@@ -5427,15 +5523,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cos</span> - VLAN CoS bit pattern. <span class="li-normal">type: str</span>
+ <li><span class="li-head">cos</span> Vlan cos bit pattern. <span class="li-normal">type: str</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <table>
@@ -5544,15 +5642,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cos-mask</span> - VLAN CoS evaluated bits. <span class="li-normal">type: str</span>
+ <li><span class="li-head">cos_mask</span> <b>(Alias name: cos-mask)</b>  Vlan cos evaluated bits. <span class="li-normal">type: str</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <table>
@@ -5661,15 +5761,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">traffic-type</span> - Traffic type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [forwarding, local-in, local-out]</span> 
+ <li><span class="li-head">traffic_type</span> <b>(Alias name: traffic-type)</b>  Traffic type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [forwarding, local-in, local-out]</span> 
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <table>
@@ -5778,8 +5880,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -5791,19 +5895,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -5811,51 +5908,50 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Configure shaping policies.
-        fmgr_pkg_header_shapingpolicy:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_pkg_header_shapingpolicy:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           pkg: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           pkg_header_shapingpolicy:
-            app-category: <list or string>
-            app-group: <list or string>
+            app_category: <list or string>
+            app_group: <list or string>
             application: <list or integer>
-            class-id: <integer or string>
+            class_id: <integer or string>
             comment: <string>
-            diffserv-forward: <value in [disable, enable]>
-            diffserv-reverse: <value in [disable, enable]>
-            diffservcode-forward: <string>
-            diffservcode-rev: <string>
+            diffserv_forward: <value in [disable, enable]>
+            diffserv_reverse: <value in [disable, enable]>
+            diffservcode_forward: <string>
+            diffservcode_rev: <string>
             dstaddr: <list or string>
             dstaddr6: <list or string>
             dstintf: <list or string>
             groups: <list or string>
             id: <integer>
-            internet-service: <value in [disable, enable]>
-            internet-service-custom: <list or string>
-            internet-service-custom-group: <list or string>
-            internet-service-group: <list or string>
-            internet-service-id: <list or string>
-            internet-service-src: <value in [disable, enable]>
-            internet-service-src-custom: <list or string>
-            internet-service-src-custom-group: <list or string>
-            internet-service-src-group: <list or string>
-            internet-service-src-id: <list or string>
-            ip-version: <value in [4, 6]>
-            per-ip-shaper: <string>
+            internet_service: <value in [disable, enable]>
+            internet_service_custom: <list or string>
+            internet_service_custom_group: <list or string>
+            internet_service_group: <list or string>
+            internet_service_id: <list or string>
+            internet_service_src: <value in [disable, enable]>
+            internet_service_src_custom: <list or string>
+            internet_service_src_custom_group: <list or string>
+            internet_service_src_group: <list or string>
+            internet_service_src_id: <list or string>
+            ip_version: <value in [4, 6]>
+            per_ip_shaper: <string>
             schedule: <string>
             service: <list or string>
             srcaddr: <list or string>
@@ -5863,30 +5959,27 @@ Examples
             srcintf: <list or string>
             status: <value in [disable, enable]>
             tos: <string>
-            tos-mask: <string>
-            tos-negate: <value in [disable, enable]>
-            traffic-shaper: <string>
-            traffic-shaper-reverse: <string>
-            url-category: <list or string>
+            tos_mask: <string>
+            tos_negate: <value in [disable, enable]>
+            traffic_shaper: <string>
+            traffic_shaper_reverse: <string>
+            url_category: <list or string>
             users: <list or string>
             uuid: <string>
-            internet-service-name: <list or string>
-            internet-service-src-name: <list or string>
-            class-id-reverse: <integer>
-            service-type: <value in [service, internet-service]>
-            uuid-idx: <integer>
+            internet_service_name: <list or string>
+            internet_service_src_name: <list or string>
+            class_id_reverse: <integer>
+            service_type: <value in [service, internet-service]>
+            uuid_idx: <integer>
             cos: <string>
-            cos-mask: <string>
-            traffic-type: <value in [forwarding, local-in, local-out]>
-  
+            cos_mask: <string>
+            traffic_type: <value in [forwarding, local-in, local-out]>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -5898,12 +5991,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -5921,11 +6011,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

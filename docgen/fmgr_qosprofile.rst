@@ -9,6 +9,16 @@ fmgr_qosprofile -- Configure WiFi quality of service (QoS) profiles.
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -170,7 +178,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">qosprofile</span> - Configure WiFi quality of service <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bandwidth-admission-control</span> - Enable/disable WMM bandwidth admission control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">bandwidth_admission_control</span> <b>(Alias name: bandwidth-admission-control)</b>  Enable/disable wmm bandwidth admission control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -279,15 +287,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">bandwidth-capacity</span> - Maximum bandwidth capacity allowed (1 - 600000 Kbps, default = 2000). <span class="li-normal">type: int</span>
+ <li><span class="li-head">bandwidth_capacity</span> <b>(Alias name: bandwidth-capacity)</b>  Maximum bandwidth capacity allowed (1 - 600000 kbps, default = 2000). <span class="li-normal">type: int</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -396,15 +406,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">burst</span> - Enable/disable client rate burst. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">burst</span> Enable/disable client rate burst. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -513,15 +525,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">call-admission-control</span> - Enable/disable WMM call admission control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">call_admission_control</span> <b>(Alias name: call-admission-control)</b>  Enable/disable wmm call admission control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -630,15 +644,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">call-capacity</span> - Maximum number of Voice over WLAN (VoWLAN) phones allowed (0 - 60, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">call_capacity</span> <b>(Alias name: call-capacity)</b>  Maximum number of voice over wlan (vowlan) phones allowed (0 - 60, default = 10). <span class="li-normal">type: int</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -747,15 +763,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span>
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -864,15 +882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">downlink</span> - Maximum downlink bandwidth for Virtual Access Points (VAPs) (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
+ <li><span class="li-head">downlink</span> Maximum downlink bandwidth for virtual access points (vaps) (0 - 2097152 kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -981,15 +1001,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">downlink-sta</span> - Maximum downlink bandwidth for clients (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
+ <li><span class="li-head">downlink_sta</span> <b>(Alias name: downlink-sta)</b>  Maximum downlink bandwidth for clients (0 - 2097152 kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1098,15 +1120,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dscp-wmm-be</span> - DSCP mapping for best effort access (default = 0 24). <span class="li-normal">type: list</span>
+ <li><span class="li-head">dscp_wmm_be</span> <b>(Alias name: dscp-wmm-be)</b>  Dscp mapping for best effort access (default = 0 24). <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1215,15 +1239,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dscp-wmm-bk</span> - DSCP mapping for background access (default = 8 16). <span class="li-normal">type: list</span>
+ <li><span class="li-head">dscp_wmm_bk</span> <b>(Alias name: dscp-wmm-bk)</b>  Dscp mapping for background access (default = 8 16). <span class="li-normal">type: list</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1332,15 +1358,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dscp-wmm-mapping</span> - Enable/disable Differentiated Services Code Point (DSCP) mapping. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dscp_wmm_mapping</span> <b>(Alias name: dscp-wmm-mapping)</b>  Enable/disable differentiated services code point (dscp) mapping. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1449,15 +1477,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dscp-wmm-vi</span> - DSCP mapping for video access (default = 32 40). <span class="li-normal">type: list</span>
+ <li><span class="li-head">dscp_wmm_vi</span> <b>(Alias name: dscp-wmm-vi)</b>  Dscp mapping for video access (default = 32 40). <span class="li-normal">type: list</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1566,15 +1596,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dscp-wmm-vo</span> - DSCP mapping for voice access (default = 48 56). <span class="li-normal">type: list</span>
+ <li><span class="li-head">dscp_wmm_vo</span> <b>(Alias name: dscp-wmm-vo)</b>  Dscp mapping for voice access (default = 48 56). <span class="li-normal">type: list</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1683,15 +1715,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">name</span> - WiFi QoS profile name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Wifi qos profile name. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1800,15 +1834,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">uplink</span> - Maximum uplink bandwidth for Virtual Access Points (VAPs) (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uplink</span> Maximum uplink bandwidth for virtual access points (vaps) (0 - 2097152 kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1917,15 +1953,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">uplink-sta</span> - Maximum uplink bandwidth for clients (0 - 2097152 Kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uplink_sta</span> <b>(Alias name: uplink-sta)</b>  Maximum uplink bandwidth for clients (0 - 2097152 kbps, default = 0, 0 means no limit). <span class="li-normal">type: int</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2034,15 +2072,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm</span> - Enable/disable WiFi multi-media (WMM) control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">wmm</span> Enable/disable wifi multi-media (wmm) control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2151,15 +2191,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm-uapsd</span> - Enable/disable WMM Unscheduled Automatic Power Save Delivery (U-APSD) power save mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">wmm_uapsd</span> <b>(Alias name: wmm-uapsd)</b>  Enable/disable wmm unscheduled automatic power save delivery (u-apsd) power save mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2268,15 +2310,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm-be-dscp</span> - DSCP marking for best effort access (default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">wmm_be_dscp</span> <b>(Alias name: wmm-be-dscp)</b>  Dscp marking for best effort access (default = 0). <span class="li-normal">type: int</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2385,15 +2429,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm-bk-dscp</span> - DSCP marking for background access (default = 8). <span class="li-normal">type: int</span>
+ <li><span class="li-head">wmm_bk_dscp</span> <b>(Alias name: wmm-bk-dscp)</b>  Dscp marking for background access (default = 8). <span class="li-normal">type: int</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2502,15 +2548,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm-dscp-marking</span> - Enable/disable WMM Differentiated Services Code Point (DSCP) marking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">wmm_dscp_marking</span> <b>(Alias name: wmm-dscp-marking)</b>  Enable/disable wmm differentiated services code point (dscp) marking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <table>
@@ -2619,15 +2667,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm-vi-dscp</span> - DSCP marking for video access (default = 32). <span class="li-normal">type: int</span>
+ <li><span class="li-head">wmm_vi_dscp</span> <b>(Alias name: wmm-vi-dscp)</b>  Dscp marking for video access (default = 32). <span class="li-normal">type: int</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table>
@@ -2736,15 +2786,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">wmm-vo-dscp</span> - DSCP marking for voice access (default = 48). <span class="li-normal">type: int</span>
+ <li><span class="li-head">wmm_vo_dscp</span> <b>(Alias name: wmm-vo-dscp)</b>  Dscp marking for voice access (default = 48). <span class="li-normal">type: int</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <table>
@@ -2853,8 +2905,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -2866,19 +2920,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -2886,57 +2933,53 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Configure WiFi quality of service
-        fmgr_qosprofile:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_qosprofile:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           qosprofile:
-            bandwidth-admission-control: <value in [disable, enable]>
-            bandwidth-capacity: <integer>
+            bandwidth_admission_control: <value in [disable, enable]>
+            bandwidth_capacity: <integer>
             burst: <value in [disable, enable]>
-            call-admission-control: <value in [disable, enable]>
-            call-capacity: <integer>
+            call_admission_control: <value in [disable, enable]>
+            call_capacity: <integer>
             comment: <string>
             downlink: <integer>
-            downlink-sta: <integer>
-            dscp-wmm-be: <list or integer>
-            dscp-wmm-bk: <list or integer>
-            dscp-wmm-mapping: <value in [disable, enable]>
-            dscp-wmm-vi: <list or integer>
-            dscp-wmm-vo: <list or integer>
+            downlink_sta: <integer>
+            dscp_wmm_be: <list or integer>
+            dscp_wmm_bk: <list or integer>
+            dscp_wmm_mapping: <value in [disable, enable]>
+            dscp_wmm_vi: <list or integer>
+            dscp_wmm_vo: <list or integer>
             name: <string>
             uplink: <integer>
-            uplink-sta: <integer>
+            uplink_sta: <integer>
             wmm: <value in [disable, enable]>
-            wmm-uapsd: <value in [disable, enable]>
-            wmm-be-dscp: <integer>
-            wmm-bk-dscp: <integer>
-            wmm-dscp-marking: <value in [disable, enable]>
-            wmm-vi-dscp: <integer>
-            wmm-vo-dscp: <integer>
-  
+            wmm_uapsd: <value in [disable, enable]>
+            wmm_be_dscp: <integer>
+            wmm_bk_dscp: <integer>
+            wmm_dscp_marking: <value in [disable, enable]>
+            wmm_vi_dscp: <integer>
+            wmm_vo_dscp: <integer>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -2948,12 +2991,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -2971,11 +3011,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

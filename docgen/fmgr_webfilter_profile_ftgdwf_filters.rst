@@ -9,6 +9,16 @@ fmgr_webfilter_profile_ftgdwf_filters -- FortiGuard filters.
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -171,7 +179,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_profile_ftgdwf_filters</span> - FortiGuard filters. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - Action to take for matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, warning, authenticate]</span> 
+ <li><span class="li-head">action</span> Action to take for matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, warning, authenticate]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -280,15 +288,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">auth-usr-grp</span> - Groups with permission to authenticate. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">auth_usr_grp</span> <b>(Alias name: auth-usr-grp)</b>  Groups with permission to authenticate. <span class="li-normal">type: list or str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -397,15 +407,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">category</span> - Categories and groups the filter examines. <span class="li-normal">type: str</span>
+ <li><span class="li-head">category</span> Categories and groups the filter examines. <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -514,15 +526,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">id</span> - ID number. <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> Id number. <span class="li-normal">type: int</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -631,15 +645,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">log</span> - Enable/disable logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log</span> Enable/disable logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -748,15 +764,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">override-replacemsg</span> - Override replacement message. <span class="li-normal">type: str</span>
+ <li><span class="li-head">override_replacemsg</span> <b>(Alias name: override-replacemsg)</b>  Override replacement message. <span class="li-normal">type: str</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -865,15 +883,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">warn-duration</span> - Duration of warnings. <span class="li-normal">type: str</span>
+ <li><span class="li-head">warn_duration</span> <b>(Alias name: warn-duration)</b>  Duration of warnings. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -982,15 +1002,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">warning-duration-type</span> - Re-display warning after closing browser or after a timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [session, timeout]</span> 
+ <li><span class="li-head">warning_duration_type</span> <b>(Alias name: warning-duration-type)</b>  Re-display warning after closing browser or after a timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [session, timeout]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1099,15 +1121,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">warning-prompt</span> - Warning prompts in each category or each domain. <span class="li-normal">type: str</span> <span class="li-normal">choices: [per-domain, per-category]</span> 
+ <li><span class="li-head">warning_prompt</span> <b>(Alias name: warning-prompt)</b>  Warning prompts in each category or each domain. <span class="li-normal">type: str</span> <span class="li-normal">choices: [per-domain, per-category]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1216,8 +1240,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1229,19 +1255,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -1249,44 +1268,40 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: FortiGuard filters.
-        fmgr_webfilter_profile_ftgdwf_filters:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_webfilter_profile_ftgdwf_filters:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           profile: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           webfilter_profile_ftgdwf_filters:
             action: <value in [block, monitor, warning, ...]>
-            auth-usr-grp: <list or string>
+            auth_usr_grp: <list or string>
             category: <string>
             id: <integer>
             log: <value in [disable, enable]>
-            override-replacemsg: <string>
-            warn-duration: <string>
-            warning-duration-type: <value in [session, timeout]>
-            warning-prompt: <value in [per-domain, per-category]>
-  
+            override_replacemsg: <string>
+            warn_duration: <string>
+            warning_duration_type: <value in [session, timeout]>
+            warning_prompt: <value in [per-domain, per-category]>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -1298,12 +1313,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -1321,11 +1333,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

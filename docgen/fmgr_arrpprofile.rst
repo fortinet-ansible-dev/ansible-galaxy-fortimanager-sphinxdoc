@@ -9,6 +9,16 @@ fmgr_arrpprofile -- Configure WiFi Automatic Radio Resource Provisioning (ARRP) 
 
 .. versionadded:: 2.1.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -170,7 +178,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">arrpprofile</span> - Configure WiFi Automatic Radio Resource Provisioning <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">comment</span> - Comment. <span class="li-normal">type: str</span>
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -279,15 +287,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">darrp-optimize</span> - Time for running Dynamic Automatic Radio Resource Provisioning (DARRP) optimizations (0 - 86400 sec, default = 86400, 0 = disable). <span class="li-normal">type: int</span>
+ <li><span class="li-head">darrp_optimize</span> <b>(Alias name: darrp-optimize)</b>  Time for running dynamic automatic radio resource provisioning (darrp) optimizations (0 - 86400 sec, default = 86400, 0 = disable). <span class="li-normal">type: int</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -396,15 +406,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">darrp-optimize-schedules</span> - No description for the parameter <span class="li-normal">type: list</span>
+ <li><span class="li-head">darrp_optimize_schedules</span> <b>(Alias name: darrp-optimize-schedules)</b>  <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -513,15 +525,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">include-dfs-channel</span> - Enable/disable use of DFS channel in DARRP channel selection phase 1 (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, disable, yes, enable]</span> 
+ <li><span class="li-head">include_dfs_channel</span> <b>(Alias name: include-dfs-channel)</b>  Enable/disable use of dfs channel in darrp channel selection phase 1 (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, disable, yes, enable]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -630,15 +644,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">include-weather-channel</span> - Enable/disable use of weather channel in DARRP channel selection phase 1 (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, disable, yes, enable]</span> 
+ <li><span class="li-head">include_weather_channel</span> <b>(Alias name: include-weather-channel)</b>  Enable/disable use of weather channel in darrp channel selection phase 1 (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, disable, yes, enable]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -747,15 +763,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">monitor-period</span> - Period in seconds to measure average transmit retries and receive errors (default = 300). <span class="li-normal">type: int</span>
+ <li><span class="li-head">monitor_period</span> <b>(Alias name: monitor-period)</b>  Period in seconds to measure average transmit retries and receive errors (default = 300). <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -864,15 +882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">name</span> - WiFi ARRP profile name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Wifi arrp profile name. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -981,15 +1001,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">override-darrp-optimize</span> - Enable to override setting darrp-optimize and darrp-optimize-schedules (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">override_darrp_optimize</span> <b>(Alias name: override-darrp-optimize)</b>  Enable to override setting darrp-optimize and darrp-optimize-schedules (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1098,15 +1120,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">selection-period</span> - Period in seconds to measure average channel load, noise floor, spectral RSSI (default = 3600). <span class="li-normal">type: int</span>
+ <li><span class="li-head">selection_period</span> <b>(Alias name: selection-period)</b>  Period in seconds to measure average channel load, noise floor, spectral rssi (default = 3600). <span class="li-normal">type: int</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1215,15 +1239,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">threshold-ap</span> - Threshold to reject channel in DARRP channel selection phase 1 due to surrounding APs (0 - 500, default = 250). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_ap</span> <b>(Alias name: threshold-ap)</b>  Threshold to reject channel in darrp channel selection phase 1 due to surrounding aps (0 - 500, default = 250). <span class="li-normal">type: int</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1332,15 +1358,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">threshold-channel-load</span> - Threshold in percentage to reject channel in DARRP channel selection phase 1 due to channel load (0 - 100, default = 60). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_channel_load</span> <b>(Alias name: threshold-channel-load)</b>  Threshold in percentage to reject channel in darrp channel selection phase 1 due to channel load (0 - 100, default = 60). <span class="li-normal">type: int</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1449,15 +1477,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">threshold-noise-floor</span> - Threshold in dBm to reject channel in DARRP channel selection phase 1 due to noise floor (-95 to -20, default = -85). <span class="li-normal">type: str</span>
+ <li><span class="li-head">threshold_noise_floor</span> <b>(Alias name: threshold-noise-floor)</b>  Threshold in dbm to reject channel in darrp channel selection phase 1 due to noise floor (-95 to -20, default = -85). <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1566,15 +1596,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">threshold-rx-errors</span> - Threshold in percentage for receive errors to trigger channel reselection in DARRP monitor stage (0 - 100, default = 50). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_rx_errors</span> <b>(Alias name: threshold-rx-errors)</b>  Threshold in percentage for receive errors to trigger channel reselection in darrp monitor stage (0 - 100, default = 50). <span class="li-normal">type: int</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1683,15 +1715,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">threshold-spectral-rssi</span> - Threshold in dBm to reject channel in DARRP channel selection phase 1 due to spectral RSSI (-95 to -20, default = -65). <span class="li-normal">type: str</span>
+ <li><span class="li-head">threshold_spectral_rssi</span> <b>(Alias name: threshold-spectral-rssi)</b>  Threshold in dbm to reject channel in darrp channel selection phase 1 due to spectral rssi (-95 to -20, default = -65). <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1800,15 +1834,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">threshold-tx-retries</span> - Threshold in percentage for transmit retries to trigger channel reselection in DARRP monitor stage (0 - 1000, default = 300). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_tx_retries</span> <b>(Alias name: threshold-tx-retries)</b>  Threshold in percentage for transmit retries to trigger channel reselection in darrp monitor stage (0 - 1000, default = 300). <span class="li-normal">type: int</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1917,15 +1953,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-channel-load</span> - Weight in DARRP channel score calculation for channel load (0 - 2000, default = 20). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_channel_load</span> <b>(Alias name: weight-channel-load)</b>  Weight in darrp channel score calculation for channel load (0 - 2000, default = 20). <span class="li-normal">type: int</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2034,15 +2072,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-dfs-channel</span> - Weight in DARRP channel score calculation for DFS channel (0 - 2000, default = 500). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_dfs_channel</span> <b>(Alias name: weight-dfs-channel)</b>  Weight in darrp channel score calculation for dfs channel (0 - 2000, default = 500). <span class="li-normal">type: int</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2151,15 +2191,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-managed-ap</span> - Weight in DARRP channel score calculation for managed APs (0 - 2000, default = 50). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_managed_ap</span> <b>(Alias name: weight-managed-ap)</b>  Weight in darrp channel score calculation for managed aps (0 - 2000, default = 50). <span class="li-normal">type: int</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2268,15 +2310,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-noise-floor</span> - Weight in DARRP channel score calculation for noise floor (0 - 2000, default = 40). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_noise_floor</span> <b>(Alias name: weight-noise-floor)</b>  Weight in darrp channel score calculation for noise floor (0 - 2000, default = 40). <span class="li-normal">type: int</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2385,15 +2429,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-rogue-ap</span> - Weight in DARRP channel score calculation for rogue APs (0 - 2000, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_rogue_ap</span> <b>(Alias name: weight-rogue-ap)</b>  Weight in darrp channel score calculation for rogue aps (0 - 2000, default = 10). <span class="li-normal">type: int</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2502,15 +2548,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-spectral-rssi</span> - Weight in DARRP channel score calculation for spectral RSSI (0 - 2000, default = 40). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_spectral_rssi</span> <b>(Alias name: weight-spectral-rssi)</b>  Weight in darrp channel score calculation for spectral rssi (0 - 2000, default = 40). <span class="li-normal">type: int</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <table>
@@ -2619,15 +2667,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">weight-weather-channel</span> - Weight in DARRP channel score calculation for weather channel (0 - 2000, default = 1000). <span class="li-normal">type: int</span>
+ <li><span class="li-head">weight_weather_channel</span> <b>(Alias name: weight-weather-channel)</b>  Weight in darrp channel score calculation for weather channel (0 - 2000, default = 1000). <span class="li-normal">type: int</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table>
@@ -2736,8 +2786,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -2749,19 +2801,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -2769,56 +2814,52 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Configure WiFi Automatic Radio Resource Provisioning
-        fmgr_arrpprofile:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_arrpprofile:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           arrpprofile:
             comment: <string>
-            darrp-optimize: <integer>
-            darrp-optimize-schedules: <list or string>
-            include-dfs-channel: <value in [no, disable, yes, ...]>
-            include-weather-channel: <value in [no, disable, yes, ...]>
-            monitor-period: <integer>
+            darrp_optimize: <integer>
+            darrp_optimize_schedules: <list or string>
+            include_dfs_channel: <value in [no, disable, yes, ...]>
+            include_weather_channel: <value in [no, disable, yes, ...]>
+            monitor_period: <integer>
             name: <string>
-            override-darrp-optimize: <value in [disable, enable]>
-            selection-period: <integer>
-            threshold-ap: <integer>
-            threshold-channel-load: <integer>
-            threshold-noise-floor: <string>
-            threshold-rx-errors: <integer>
-            threshold-spectral-rssi: <string>
-            threshold-tx-retries: <integer>
-            weight-channel-load: <integer>
-            weight-dfs-channel: <integer>
-            weight-managed-ap: <integer>
-            weight-noise-floor: <integer>
-            weight-rogue-ap: <integer>
-            weight-spectral-rssi: <integer>
-            weight-weather-channel: <integer>
-  
+            override_darrp_optimize: <value in [disable, enable]>
+            selection_period: <integer>
+            threshold_ap: <integer>
+            threshold_channel_load: <integer>
+            threshold_noise_floor: <string>
+            threshold_rx_errors: <integer>
+            threshold_spectral_rssi: <string>
+            threshold_tx_retries: <integer>
+            weight_channel_load: <integer>
+            weight_dfs_channel: <integer>
+            weight_managed_ap: <integer>
+            weight_noise_floor: <integer>
+            weight_rogue_ap: <integer>
+            weight_spectral_rssi: <integer>
+            weight_weather_channel: <integer>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -2830,12 +2871,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -2853,11 +2891,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

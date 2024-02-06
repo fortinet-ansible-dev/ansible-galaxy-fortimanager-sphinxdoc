@@ -9,6 +9,16 @@ fmgr_securityconsole_package_cancel_install -- Cancel policy install and clear p
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -167,7 +175,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">securityconsole_package_cancel_install</span> - Cancel policy install and clear preview cache. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> - Source ADOM name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">adom</span> Source adom name. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -276,8 +284,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -289,19 +299,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -312,35 +315,34 @@ Examples
   - name: INSTALL PREVIEW - POLICY PACKAGE
     hosts: fmg
     connection: httpapi
-    collections: fortinet.fortimanager
     vars:
       adom: demo
       ppkg: ppkg_hubs
       device: fgt_00_1
     tasks:
-      - name: Install for policy package {{ adom }}/{{ ppkg }} [preview mode]
-        fmgr_securityconsole_install_package:
+      - name: Install for policy package [preview mode] {{ ppkg }}
+        fortinet.fortimanager.fmgr_securityconsole_install_package:
           securityconsole_install_package:
             adom: "{{ adom }}"
             flags:
-               - preview
+              - preview
             pkg: "{{ ppkg }}"
             scope:
               - name: "{{ device }}"
                 vdom: root
         register: r
       - name: Poll the task
-        fmgr_fact:
+        fortinet.fortimanager.fmgr_fact:
           facts:
-            selector: 'task_task'
+            selector: "task_task"
             params:
-              task: '{{ r.meta.response_data.task }}'
+              task: "{{ r.meta.response_data.task }}"
         register: taskinfo
         until: taskinfo.meta.response_data.percent == 100
         retries: 30
         delay: 5
-      - name: Trigger the preview report generation for policy package {{ adom }}/{{ ppkg }}
-        fmgr_securityconsole_install_preview:
+      - name: Trigger the preview report generation for policy package {{ ppkg }}
+        fortinet.fortimanager.fmgr_securityconsole_install_preview:
           securityconsole_install_preview:
             adom: "{{ adom }}"
             device: "{{ device }}"
@@ -349,37 +351,34 @@ Examples
             vdoms: root
         register: r
       - name: Poll the task
-        fmgr_fact:
+        fortinet.fortimanager.fmgr_fact:
           facts:
-            selector: 'task_task'
+            selector: "task_task"
             params:
-              task: '{{ r.meta.response_data.task }}'
+              task: "{{ r.meta.response_data.task }}"
         register: taskinfo
         until: taskinfo.meta.response_data.percent == 100
         retries: 30
         delay: 5
-      - name: Get the preview report for policy package {{ adom }}/{{ ppkg }}
-        fmgr_securityconsole_preview_result:
+      - name: Get the preview report for policy package {{ ppkg }}
+        fortinet.fortimanager.fmgr_securityconsole_preview_result:
           securityconsole_preview_result:
-             adom: "{{ adom }}"
-             device: "{{ device }}"
+            adom: "{{ adom }}"
+            device: "{{ device }}"
         register: r
-      - name: Cancel install task for policy package {{ adom }}/{{ ppkg }}
-        fmgr_securityconsole_package_cancel_install:
+      - name: Cancel install task for policy package {{ ppkg }}
+        fortinet.fortimanager.fmgr_securityconsole_package_cancel_install:
           securityconsole_package_cancel_install:
             adom: "{{ adom }}"
       - name: Show preview report
-        debug:
+        ansible.builtin.debug:
           msg: "{{ r }}"
-  
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -391,12 +390,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -414,11 +410,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

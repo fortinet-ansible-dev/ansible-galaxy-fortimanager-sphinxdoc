@@ -9,6 +9,16 @@ fmgr_pkg_firewall_hyperscalepolicy -- Configure IPv4/IPv6 policies.
 
 .. versionadded:: 2.2.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
  <td>False</td>
+ <td>False</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -171,7 +179,7 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_hyperscalepolicy</span> - Configure IPv4/IPv6 policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> - Policy action (accept/deny/ipsec). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, accept]</span> 
+ <li><span class="li-head">action</span> Policy action (accept/deny/ipsec). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, accept]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -280,15 +288,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">auto-asic-offload</span> - Enable/disable policy traffic ASIC offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auto_asic_offload</span> <b>(Alias name: auto-asic-offload)</b>  Enable/disable policy traffic asic offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -397,15 +407,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cgn-eif</span> - Enable/Disable CGN endpoint independent filtering. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_eif</span> <b>(Alias name: cgn-eif)</b>  Enable/disable cgn endpoint independent filtering. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -514,15 +526,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cgn-eim</span> - Enable/Disable CGN endpoint independent mapping <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_eim</span> <b>(Alias name: cgn-eim)</b>  Enable/disable cgn endpoint independent mapping <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -631,15 +645,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cgn-log-server-grp</span> - NP log server group name <span class="li-normal">type: str</span>
+ <li><span class="li-head">cgn_log_server_grp</span> <b>(Alias name: cgn-log-server-grp)</b>  Np log server group name <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -748,15 +764,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cgn-resource-quota</span> - resource quota <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_resource_quota</span> <b>(Alias name: cgn-resource-quota)</b>  Resource quota <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -865,15 +883,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cgn-session-quota</span> - session quota <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_session_quota</span> <b>(Alias name: cgn-session-quota)</b>  Session quota <span class="li-normal">type: int</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -982,15 +1002,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">comments</span> - Comment. <span class="li-normal">type: str</span>
+ <li><span class="li-head">comments</span> Comment. <span class="li-normal">type: str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1099,15 +1121,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">delay-tcp-npu-session</span> - Enable TCP NPU session delay to guarantee packet order of 3-way handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">delay_tcp_npu_session</span> <b>(Alias name: delay-tcp-npu-session)</b>  Enable tcp npu session delay to guarantee packet order of 3-way handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1216,15 +1240,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstaddr</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">dstaddr</span> <span class="li-normal">type: list or str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1333,15 +1359,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstaddr-negate</span> - When enabled dstaddr/dstaddr6 specifies what the destination address must NOT be. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dstaddr_negate</span> <b>(Alias name: dstaddr-negate)</b>  When enabled dstaddr/dstaddr6 specifies what the destination address must not be. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1450,15 +1478,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstaddr6</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">dstaddr6</span> <span class="li-normal">type: list or str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1567,15 +1597,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dstintf</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">dstintf</span> <span class="li-normal">type: list or str</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1684,15 +1716,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">firewall-session-dirty</span> - How to handle sessions if the configuration of this firewall policy changes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [check-all, check-new]</span> 
+ <li><span class="li-head">firewall_session_dirty</span> <b>(Alias name: firewall-session-dirty)</b>  How to handle sessions if the configuration of this firewall policy changes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [check-all, check-new]</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1801,15 +1835,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">global-label</span> - Label for the policy that appears when the GUI is in Global View mode. <span class="li-normal">type: str</span>
+ <li><span class="li-head">global_label</span> <b>(Alias name: global-label)</b>  Label for the policy that appears when the gui is in global view mode. <span class="li-normal">type: str</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1918,15 +1954,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ippool</span> - Enable to use IP Pools for source NAT. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ippool</span> Enable to use ip pools for source nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2035,15 +2073,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">label</span> - Label for the policy that appears when the GUI is in Section View mode. <span class="li-normal">type: str</span>
+ <li><span class="li-head">label</span> Label for the policy that appears when the gui is in section view mode. <span class="li-normal">type: str</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2152,15 +2192,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">name</span> - Policy name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Policy name. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2269,15 +2311,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">nat</span> - Enable/disable source NAT. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">nat</span> Enable/disable source nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2386,15 +2430,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">policy-offload</span> - Enable/Disable hardware session setup for CGNAT. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">policy_offload</span> <b>(Alias name: policy-offload)</b>  Enable/disable hardware session setup for cgnat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2503,15 +2549,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">policyid</span> - Policy ID (0 - 4294967294). <span class="li-normal">type: int</span>
+ <li><span class="li-head">policyid</span> Policy id (0 - 4294967294). <span class="li-normal">type: int</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <table>
@@ -2620,15 +2668,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">poolname</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">poolname</span> <span class="li-normal">type: list or str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table>
@@ -2737,15 +2787,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">poolname6</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">poolname6</span> <span class="li-normal">type: list or str</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <table>
@@ -2854,15 +2906,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">send-deny-packet</span> - Enable to send a reply when a session is denied or blocked by a firewall policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">send_deny_packet</span> <b>(Alias name: send-deny-packet)</b>  Enable to send a reply when a session is denied or blocked by a firewall policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <table>
@@ -2971,15 +3025,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">service</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">service</span> <span class="li-normal">type: list or str</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <table>
@@ -3088,15 +3144,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">service-negate</span> - When enabled service specifies what the service must NOT be. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">service_negate</span> <b>(Alias name: service-negate)</b>  When enabled service specifies what the service must not be. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <table>
@@ -3205,15 +3263,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcaddr</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">srcaddr</span> <span class="li-normal">type: list or str</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <table>
@@ -3322,15 +3382,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcaddr-negate</span> - When enabled srcaddr/srcaddr6 specifies what the source address must NOT be. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">srcaddr_negate</span> <b>(Alias name: srcaddr-negate)</b>  When enabled srcaddr/srcaddr6 specifies what the source address must not be. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <table>
@@ -3439,15 +3501,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcaddr6</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">srcaddr6</span> <span class="li-normal">type: list or str</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <table>
@@ -3556,15 +3620,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">srcintf</span> - No description for the parameter <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">srcintf</span> <span class="li-normal">type: list or str</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <table>
@@ -3673,15 +3739,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">status</span> - Enable or disable this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable or disable this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <table>
@@ -3790,15 +3858,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">tcp-timeout-pid</span> - TCP timeout profile ID <span class="li-normal">type: str</span>
+ <li><span class="li-head">tcp_timeout_pid</span> <b>(Alias name: tcp-timeout-pid)</b>  Tcp timeout profile id <span class="li-normal">type: str</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <table>
@@ -3907,15 +3977,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">traffic-shaper</span> - Traffic shaper. <span class="li-normal">type: str</span>
+ <li><span class="li-head">traffic_shaper</span> <b>(Alias name: traffic-shaper)</b>  Traffic shaper. <span class="li-normal">type: str</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <table>
@@ -4024,15 +4096,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">traffic-shaper-reverse</span> - Reverse traffic shaper. <span class="li-normal">type: str</span>
+ <li><span class="li-head">traffic_shaper_reverse</span> <b>(Alias name: traffic-shaper-reverse)</b>  Reverse traffic shaper. <span class="li-normal">type: str</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <table>
@@ -4141,15 +4215,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">udp-timeout-pid</span> - UDP timeout profile ID <span class="li-normal">type: str</span>
+ <li><span class="li-head">udp_timeout_pid</span> <b>(Alias name: udp-timeout-pid)</b>  Udp timeout profile id <span class="li-normal">type: str</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <table>
@@ -4258,15 +4334,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
+ <li><span class="li-head">uuid</span> Universally unique identifier (uuid; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <table>
@@ -4375,8 +4453,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
@@ -4388,19 +4468,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -4408,71 +4481,67 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Configure IPv4/IPv6 policies.
-        fmgr_pkg_firewall_hyperscalepolicy:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_pkg_firewall_hyperscalepolicy:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           pkg: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           pkg_firewall_hyperscalepolicy:
             action: <value in [deny, accept]>
-            auto-asic-offload: <value in [disable, enable]>
-            cgn-eif: <value in [disable, enable]>
-            cgn-eim: <value in [disable, enable]>
-            cgn-log-server-grp: <string>
-            cgn-resource-quota: <integer>
-            cgn-session-quota: <integer>
+            auto_asic_offload: <value in [disable, enable]>
+            cgn_eif: <value in [disable, enable]>
+            cgn_eim: <value in [disable, enable]>
+            cgn_log_server_grp: <string>
+            cgn_resource_quota: <integer>
+            cgn_session_quota: <integer>
             comments: <string>
-            delay-tcp-npu-session: <value in [disable, enable]>
+            delay_tcp_npu_session: <value in [disable, enable]>
             dstaddr: <list or string>
-            dstaddr-negate: <value in [disable, enable]>
+            dstaddr_negate: <value in [disable, enable]>
             dstaddr6: <list or string>
             dstintf: <list or string>
-            firewall-session-dirty: <value in [check-all, check-new]>
-            global-label: <string>
+            firewall_session_dirty: <value in [check-all, check-new]>
+            global_label: <string>
             ippool: <value in [disable, enable]>
             label: <string>
             name: <string>
             nat: <value in [disable, enable]>
-            policy-offload: <value in [disable, enable]>
+            policy_offload: <value in [disable, enable]>
             policyid: <integer>
             poolname: <list or string>
             poolname6: <list or string>
-            send-deny-packet: <value in [disable, enable]>
+            send_deny_packet: <value in [disable, enable]>
             service: <list or string>
-            service-negate: <value in [disable, enable]>
+            service_negate: <value in [disable, enable]>
             srcaddr: <list or string>
-            srcaddr-negate: <value in [disable, enable]>
+            srcaddr_negate: <value in [disable, enable]>
             srcaddr6: <list or string>
             srcintf: <list or string>
             status: <value in [disable, enable]>
-            tcp-timeout-pid: <string>
-            traffic-shaper: <string>
-            traffic-shaper-reverse: <string>
-            udp-timeout-pid: <string>
+            tcp_timeout_pid: <string>
+            traffic_shaper: <string>
+            traffic_shaper_reverse: <string>
+            udp_timeout_pid: <string>
             uuid: <string>
-  
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -4484,12 +4553,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -4507,11 +4573,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

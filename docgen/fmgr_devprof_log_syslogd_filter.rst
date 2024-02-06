@@ -9,6 +9,16 @@ fmgr_devprof_log_syslogd_filter -- Filters for remote system server.
 
 .. versionadded:: 1.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -170,7 +178,7 @@ Parameters
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof_log_syslogd_filter</span> - Filters for remote system server. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">severity</span> - Lowest severity level to log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> 
+ <li><span class="li-head">severity</span> Lowest severity level to log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -279,15 +287,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">anomaly</span> - Enable/disable anomaly logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">anomaly</span> Enable/disable anomaly logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -396,15 +406,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">exclude-list</span> - No description for the parameter <span class="li-normal">type: list</span>
+ <li><span class="li-head">exclude_list</span> <b>(Alias name: exclude-list)</b>  <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -513,15 +525,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">category</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [app-ctrl, attack, dlp, event, traffic, virus, voip, webfilter, netscan, spam, anomaly, waf]</span> 
+ <li><span class="li-head">category</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [app-ctrl, attack, dlp, event, traffic, virus, voip, webfilter, netscan, spam, anomaly, waf]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -630,15 +644,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">fields</span> - No description for the parameter <span class="li-normal">type: list</span>
+ <li><span class="li-head">fields</span> <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -747,15 +763,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">args</span> - No description for the parameter <span class="li-normal">type: list</span>
+ <li><span class="li-head">args</span> <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -864,15 +882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">field</span> - No description for the parameter <span class="li-normal">type: str</span>
+ <li><span class="li-head">field</span> <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -981,15 +1001,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">negate</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">negate</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1098,8 +1120,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
@@ -1108,7 +1132,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">id</span> - No description for the parameter <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> <span class="li-normal">type: int</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1217,8 +1241,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
@@ -1227,7 +1253,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">forward-traffic</span> - Enable/disable forward traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">forward_traffic</span> <b>(Alias name: forward-traffic)</b>  Enable/disable forward traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1336,15 +1362,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">free-style</span> - No description for the parameter <span class="li-normal">type: list</span>
+ <li><span class="li-head">free_style</span> <b>(Alias name: free-style)</b>  <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1453,15 +1481,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">category</span> - Log category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, event, virus, webfilter, attack, spam, voip, dlp, app-ctrl, anomaly, waf, gtp, dns, ssh, ssl, file-filter, icap, ztna, virtual-patch]</span> 
+ <li><span class="li-head">category</span> Log category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, event, virus, webfilter, attack, spam, voip, dlp, app-ctrl, anomaly, waf, gtp, dns, ssh, ssl, file-filter, icap, ztna, virtual-patch]</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1570,15 +1600,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">filter</span> - Free style filter string. <span class="li-normal">type: str</span>
+ <li><span class="li-head">filter</span> Free style filter string. <span class="li-normal">type: str</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1687,15 +1719,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">filter-type</span> - Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">filter_type</span> <b>(Alias name: filter-type)</b>  Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1804,15 +1838,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">id</span> - Entry ID. <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> Entry id. <span class="li-normal">type: int</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1921,8 +1957,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1931,7 +1969,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">gtp</span> - Enable/disable GTP messages logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">gtp</span> Enable/disable gtp messages logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2040,15 +2078,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">local-traffic</span> - Enable/disable local in or out traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">local_traffic</span> <b>(Alias name: local-traffic)</b>  Enable/disable local in or out traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2157,15 +2197,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">multicast-traffic</span> - Enable/disable multicast traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">multicast_traffic</span> <b>(Alias name: multicast-traffic)</b>  Enable/disable multicast traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2274,15 +2316,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">sniffer-traffic</span> - Enable/disable sniffer traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sniffer_traffic</span> <b>(Alias name: sniffer-traffic)</b>  Enable/disable sniffer traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2391,15 +2435,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">voip</span> - Enable/disable VoIP logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">voip</span> Enable/disable voip logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2508,15 +2554,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ztna-traffic</span> - Enable/disable ztna traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ztna_traffic</span> <b>(Alias name: ztna-traffic)</b>  Enable/disable ztna traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <table>
@@ -2625,15 +2673,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">filter-type</span> - Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">filter_type</span> <b>(Alias name: filter-type)</b>  Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table>
@@ -2742,15 +2792,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">filter</span> - Syslog filter. <span class="li-normal">type: str</span>
+ <li><span class="li-head">filter</span> Syslog filter. <span class="li-normal">type: str</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <table>
@@ -2859,15 +2911,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">cifs</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cifs</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <table>
@@ -2976,15 +3030,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ssl</span> - No description for the parameter <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ssl</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <table>
@@ -3093,15 +3149,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">dns</span> - Enable/disable detailed DNS event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dns</span> Enable/disable detailed dns event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <table>
@@ -3210,15 +3268,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ssh</span> - Enable/disable SSH logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ssh</span> Enable/disable ssh logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <table>
@@ -3327,15 +3387,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">netscan-discovery</span> - Enable/disable netscan discovery event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">netscan_discovery</span> <b>(Alias name: netscan-discovery)</b>  Enable/disable netscan discovery event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <table>
@@ -3444,15 +3506,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">netscan-vulnerability</span> - Enable/disable netscan vulnerability event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">netscan_vulnerability</span> <b>(Alias name: netscan-vulnerability)</b>  Enable/disable netscan vulnerability event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <table>
@@ -3561,10 +3625,131 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
  <td>False</td>
+ <td>False</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">forti_switch</span> <b>(Alias name: forti-switch)</b>  Enable/disable forti-switch logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <table>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.4 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ <td><code class="docutils literal notranslate">6.2.11 </code></td>
+ <td><code class="docutils literal notranslate">6.2.12 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>None</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ <td><code class="docutils literal notranslate">6.4.12 </code></td>
+ <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ <td><code class="docutils literal notranslate">7.0.8 </code></td>
+ <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ <td><code class="docutils literal notranslate">7.2.3 </code></td>
+ <td><code class="docutils literal notranslate">7.2.4 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>True</td>
  </tr>
  </table>
  </div>
@@ -3574,19 +3759,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -3594,28 +3772,27 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Filters for remote system server.
-        fmgr_devprof_log_syslogd_filter:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_devprof_log_syslogd_filter:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           devprof: <your own value>
           devprof_log_syslogd_filter:
             severity: <value in [emergency, alert, critical, ...]>
             anomaly: <value in [disable, enable]>
-            exclude-list:
+            exclude_list:
               -
                 category: <value in [app-ctrl, attack, dlp, ...]>
                 fields:
@@ -3624,36 +3801,34 @@ Examples
                     field: <string>
                     negate: <value in [disable, enable]>
                 id: <integer>
-            forward-traffic: <value in [disable, enable]>
-            free-style:
+            forward_traffic: <value in [disable, enable]>
+            free_style:
               -
                 category: <value in [traffic, event, virus, ...]>
                 filter: <string>
-                filter-type: <value in [include, exclude]>
+                filter_type: <value in [include, exclude]>
                 id: <integer>
             gtp: <value in [disable, enable]>
-            local-traffic: <value in [disable, enable]>
-            multicast-traffic: <value in [disable, enable]>
-            sniffer-traffic: <value in [disable, enable]>
+            local_traffic: <value in [disable, enable]>
+            multicast_traffic: <value in [disable, enable]>
+            sniffer_traffic: <value in [disable, enable]>
             voip: <value in [disable, enable]>
-            ztna-traffic: <value in [disable, enable]>
-            filter-type: <value in [include, exclude]>
+            ztna_traffic: <value in [disable, enable]>
+            filter_type: <value in [include, exclude]>
             filter: <string>
             cifs: <value in [disable, enable]>
             ssl: <value in [disable, enable]>
             dns: <value in [disable, enable]>
             ssh: <value in [disable, enable]>
-            netscan-discovery: <value in [disable, enable]>
-            netscan-vulnerability: <value in [disable, enable]>
-  
+            netscan_discovery: <value in [disable, enable]>
+            netscan_vulnerability: <value in [disable, enable]>
+            forti_switch: <value in [disable, enable]>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -3665,12 +3840,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -3688,11 +3860,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

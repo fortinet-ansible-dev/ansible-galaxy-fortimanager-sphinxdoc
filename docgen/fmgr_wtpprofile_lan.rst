@@ -9,6 +9,16 @@ fmgr_wtpprofile_lan -- WTP LAN port mapping.
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -170,7 +178,7 @@ Parameters
  <li><span class="li-head">wtp-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wtpprofile_lan</span> - WTP LAN port mapping. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">port-mode</span> - LAN port mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port_mode</span> <b>(Alias name: port-mode)</b>  Lan port mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -279,15 +287,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port-ssid</span> - Bridge LAN port to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port_ssid</span> <b>(Alias name: port-ssid)</b>  Bridge lan port to ssid. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -396,15 +406,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port1-mode</span> - LAN port 1 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port1_mode</span> <b>(Alias name: port1-mode)</b>  Lan port 1 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -513,15 +525,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port1-ssid</span> - Bridge LAN port 1 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port1_ssid</span> <b>(Alias name: port1-ssid)</b>  Bridge lan port 1 to ssid. <span class="li-normal">type: str</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
@@ -630,15 +644,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port2-mode</span> - LAN port 2 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port2_mode</span> <b>(Alias name: port2-mode)</b>  Lan port 2 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
@@ -747,15 +763,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port2-ssid</span> - Bridge LAN port 2 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port2_ssid</span> <b>(Alias name: port2-ssid)</b>  Bridge lan port 2 to ssid. <span class="li-normal">type: str</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
@@ -864,15 +882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port3-mode</span> - LAN port 3 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port3_mode</span> <b>(Alias name: port3-mode)</b>  Lan port 3 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
@@ -981,15 +1001,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port3-ssid</span> - Bridge LAN port 3 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port3_ssid</span> <b>(Alias name: port3-ssid)</b>  Bridge lan port 3 to ssid. <span class="li-normal">type: str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
@@ -1098,15 +1120,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port4-mode</span> - LAN port 4 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port4_mode</span> <b>(Alias name: port4-mode)</b>  Lan port 4 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
@@ -1215,15 +1239,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port4-ssid</span> - Bridge LAN port 4 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port4_ssid</span> <b>(Alias name: port4-ssid)</b>  Bridge lan port 4 to ssid. <span class="li-normal">type: str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
@@ -1332,15 +1358,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port5-mode</span> - LAN port 5 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port5_mode</span> <b>(Alias name: port5-mode)</b>  Lan port 5 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
@@ -1449,15 +1477,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port5-ssid</span> - Bridge LAN port 5 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port5_ssid</span> <b>(Alias name: port5-ssid)</b>  Bridge lan port 5 to ssid. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table>
@@ -1566,15 +1596,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port6-mode</span> - LAN port 6 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port6_mode</span> <b>(Alias name: port6-mode)</b>  Lan port 6 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
@@ -1683,15 +1715,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port6-ssid</span> - Bridge LAN port 6 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port6_ssid</span> <b>(Alias name: port6-ssid)</b>  Bridge lan port 6 to ssid. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
@@ -1800,15 +1834,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port7-mode</span> - LAN port 7 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port7_mode</span> <b>(Alias name: port7-mode)</b>  Lan port 7 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
@@ -1917,15 +1953,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port7-ssid</span> - Bridge LAN port 7 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port7_ssid</span> <b>(Alias name: port7-ssid)</b>  Bridge lan port 7 to ssid. <span class="li-normal">type: str</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
@@ -2034,15 +2072,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port8-mode</span> - LAN port 8 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port8_mode</span> <b>(Alias name: port8-mode)</b>  Lan port 8 mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table>
@@ -2151,15 +2191,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port8-ssid</span> - Bridge LAN port 8 to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port8_ssid</span> <b>(Alias name: port8-ssid)</b>  Bridge lan port 8 to ssid. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table>
@@ -2268,15 +2310,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port-esl-mode</span> - ESL port mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
+ <li><span class="li-head">port_esl_mode</span> <b>(Alias name: port-esl-mode)</b>  Esl port mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [offline, bridge-to-wan, bridge-to-ssid, nat-to-wan]</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table>
@@ -2385,15 +2429,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port-esl-ssid</span> - Bridge ESL port to SSID. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port_esl_ssid</span> <b>(Alias name: port-esl-ssid)</b>  Bridge esl port to ssid. <span class="li-normal">type: str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table>
@@ -2502,8 +2548,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -2515,19 +2563,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -2535,54 +2576,50 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortimanager-inventory
-    collections:
-      - fortinet.fortimanager
+  - name: Example playbook (generated based on argument schema)
+    hosts: fortimanagers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: WTP LAN port mapping.
-        fmgr_wtpprofile_lan:
-          bypass_validation: False
+        fortinet.fortimanager.fmgr_wtpprofile_lan:
+          # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          wtp-profile: <your own value>
+          wtp_profile: <your own value>
           wtpprofile_lan:
-            port-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port-ssid: <string>
-            port1-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port1-ssid: <string>
-            port2-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port2-ssid: <string>
-            port3-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port3-ssid: <string>
-            port4-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port4-ssid: <string>
-            port5-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port5-ssid: <string>
-            port6-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port6-ssid: <string>
-            port7-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port7-ssid: <string>
-            port8-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port8-ssid: <string>
-            port-esl-mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
-            port-esl-ssid: <string>
-  
+            port_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port_ssid: <string>
+            port1_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port1_ssid: <string>
+            port2_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port2_ssid: <string>
+            port3_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port3_ssid: <string>
+            port4_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port4_ssid: <string>
+            port5_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port5_ssid: <string>
+            port6_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port6_ssid: <string>
+            port7_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port7_ssid: <string>
+            port8_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port8_ssid: <string>
+            port_esl_mode: <value in [offline, bridge-to-wan, bridge-to-ssid, ...]>
+            port_esl_ssid: <string>
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -2594,12 +2631,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -2617,11 +2651,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-

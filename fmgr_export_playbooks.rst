@@ -98,6 +98,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_mmschecksum</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -145,6 +146,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_mmschecksum_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -192,6 +194,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_notification</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -239,6 +242,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_notification_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -286,6 +290,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -333,6 +338,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_cifs</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -379,6 +385,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_contentdisarm</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -426,6 +433,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_ftp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -473,6 +481,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_http</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -520,6 +529,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_imap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -567,6 +577,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_mapi</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -614,6 +625,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_nacquar</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -661,6 +673,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_nntp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -708,6 +721,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_outbreakprevention</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -754,6 +768,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_pop3</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -801,6 +816,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_smb</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -890,6 +906,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">antivirus_profile_ssh</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -934,6 +951,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">apcfgprofile</span> - available versions:
                 <span class="li-normal">6.4.6</span>
@@ -962,6 +980,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">apcfgprofile_commandlist</span> - available versions:
                 <span class="li-normal">6.4.6</span>
@@ -990,6 +1009,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_casi_profile</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1065,6 +1085,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_custom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1112,6 +1133,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1159,6 +1181,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_internetservice</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1304,6 +1327,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_list_defaultnetworkservices</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1350,6 +1374,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_list_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1397,6 +1422,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_list_entries_parameters</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1444,6 +1470,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">application_list_entries_parameters_members</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -1478,6 +1505,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">arrpprofile</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -1495,6 +1523,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">authentication_scheme</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -1540,6 +1569,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">bleprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1587,6 +1617,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">bonjourprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1634,6 +1665,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">bonjourprofile_policylist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1681,39 +1713,51 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_profile</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_profile_saasapplication</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_profile_saasapplication_accessrule</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_profile_saasapplication_customcontrol</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_profile_saasapplication_customcontrol_option</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_saasapplication</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_useractivity</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_useractivity_controloptions</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_useractivity_controloptions_operations</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_useractivity_match</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">casb_useractivity_match_rules</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">certificate_template</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -1761,6 +1805,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cifs_domaincontroller</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1807,6 +1852,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cifs_profile</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1853,6 +1899,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cifs_profile_filefilter</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1899,6 +1946,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cifs_profile_filefilter_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1945,6 +1993,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cifs_profile_serverkeytab</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -1991,30 +2040,37 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cloud_orchestaws</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cloud_orchestawsconnector</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cloud_orchestawstemplate_autoscaleexistingvpc</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cloud_orchestawstemplate_autoscalenewvpc</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cloud_orchestawstemplate_autoscaletgwnewvpc</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">cloud_orchestration</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">credentialstore_domaincontroller</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -2049,6 +2105,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_device_profile_fortianalyzer</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2096,6 +2153,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_device_profile_fortiguard</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2143,6 +2201,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_log_fortianalyzer_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2188,6 +2247,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_log_fortianalyzercloud_setting</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -2231,6 +2291,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2276,6 +2337,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_excludelist</span> - available versions:
                 <span class="li-normal">7.0.4</span>
@@ -2309,6 +2371,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2354,6 +2417,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_setting_customfieldname</span> - available versions:
                 <span class="li-normal">7.0.4</span>
@@ -2369,6 +2433,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_centralmanagement</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2414,6 +2479,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_centralmanagement_serverlist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2459,6 +2525,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_dns</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2520,6 +2587,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_global</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2565,6 +2633,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_ntp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2610,6 +2679,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_ntp_ntpserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2655,6 +2725,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_admin</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2700,6 +2771,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_alertmail</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2745,6 +2817,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_auth</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2790,6 +2863,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_devicedetectionportal</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2835,6 +2909,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_ec</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2920,6 +2995,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_ftp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -2965,6 +3041,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_http</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3010,6 +3087,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_mail</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3055,6 +3133,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_mms</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3100,6 +3179,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_nacquar</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3145,6 +3225,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_nntp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3190,6 +3271,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_spam</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3235,6 +3317,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_sslvpn</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3280,6 +3363,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_trafficquota</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3325,6 +3409,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_utm</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3370,6 +3455,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_replacemsg_webproxy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3415,6 +3501,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_community</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3460,6 +3547,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_community_hosts</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3505,6 +3593,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_community_hosts6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3550,6 +3639,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_sysinfo</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3595,6 +3685,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_user</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3640,6 +3731,10 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">diameterfilter_profile</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_datatype</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -3649,6 +3744,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_dictionary</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -3658,6 +3754,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_dictionary_entries</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -3667,6 +3764,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_filepattern</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3714,6 +3812,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_filepattern_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3761,6 +3860,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_fpsensitivity</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3812,6 +3912,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_profile_rule</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -3821,6 +3922,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_sensitivity</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -3867,6 +3969,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_sensor</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3914,6 +4017,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_sensor_entries</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -3923,6 +4027,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dlp_sensor_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -3970,6 +4075,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_domainfilter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4017,6 +4123,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_domainfilter_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4064,6 +4171,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4111,6 +4219,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_profile_dnstranslation</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -4157,6 +4266,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_profile_domainfilter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4204,6 +4314,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_profile_ftgddns</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4251,6 +4362,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_profile_ftgddns_filters</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4298,6 +4410,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dnsfilter_profile_urlfilter</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -4387,6 +4500,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_device</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4434,6 +4548,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_device_haslave</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4481,6 +4596,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_device_vdom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4528,6 +4644,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_folder</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -4560,6 +4677,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4607,6 +4725,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_metafields_adom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4654,6 +4773,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_metafields_device</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4701,6 +4821,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_metafields_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4748,6 +4869,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_revision</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4795,6 +4917,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4842,6 +4965,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_latest</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4889,6 +5013,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_latest_device</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4936,6 +5061,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_list</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -4983,6 +5109,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_list_device</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5030,6 +5157,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_output_device_logid</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5077,6 +5205,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_output_logid</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5124,6 +5253,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_summary</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5171,6 +5301,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_summary_device</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5218,6 +5349,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_script_scriptschedule</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5265,6 +5397,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workflow</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5312,6 +5445,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workflow_wflog</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5359,6 +5493,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workspace_dirty</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5406,6 +5541,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workspace_dirty_dev</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5453,6 +5589,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workspace_lockinfo</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5500,6 +5637,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workspace_lockinfo_dev</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5547,6 +5685,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workspace_lockinfo_obj</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5594,6 +5733,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dvmdb_workspace_lockinfo_pkg</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5641,6 +5781,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_address</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5688,6 +5829,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_address_dynamicaddrmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5735,6 +5877,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_certificate_local</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5782,6 +5925,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_certificate_local_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5901,6 +6045,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_interface_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -5980,6 +6125,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_ippool</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -6027,6 +6173,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_multicast_interface</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -6074,6 +6221,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_multicast_interface_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -6167,6 +6315,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_virtualwanlink_members</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -6382,6 +6531,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">dynamic_vpntunnel_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -6448,6 +6598,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_blockallowlist_entries</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -6468,6 +6619,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_bwl</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6514,6 +6666,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_bwl_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6560,6 +6713,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_bword</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6606,6 +6760,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_bword_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6652,6 +6807,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_dnsbl</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6698,6 +6854,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_dnsbl_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6744,6 +6901,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_fortishield</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6790,6 +6948,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_iptrust</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6836,6 +6995,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_iptrust_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6882,6 +7042,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_mheader</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6928,6 +7089,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_mheader_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -6974,6 +7136,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_options</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7020,6 +7183,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7066,6 +7230,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_filefilter</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7112,6 +7277,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_filefilter_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7158,6 +7324,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_gmail</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7204,6 +7371,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_imap</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7250,6 +7418,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_mapi</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7296,6 +7465,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_msnhotmail</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7342,6 +7512,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_otherwebmails</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -7374,6 +7545,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_pop3</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7420,6 +7592,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_smtp</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7466,6 +7639,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">emailfilter_profile_yahoomail</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -7487,6 +7661,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_dataplan</span> - available versions:
                 <span class="li-normal">6.4.4</span>
@@ -7517,6 +7692,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7535,6 +7711,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7553,6 +7730,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_controllerreport</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7571,6 +7749,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_modem1</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7589,6 +7768,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_modem1_autoswitch</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7607,6 +7787,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_modem2</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7625,6 +7806,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_modem2_autoswitch</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7643,6 +7825,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_smsnotification</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7661,6 +7844,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_smsnotification_alert</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7679,6 +7863,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_cellular_smsnotification_receiver</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7697,6 +7882,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_lanextension</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7715,6 +7901,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_extenderprofile_lanextension_backhaul</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -7733,6 +7920,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_simprofile</span> - available versions:
                 <span class="li-normal">6.4.4</span>
@@ -7763,6 +7951,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_simprofile_autoswitchprofile</span> - available versions:
                 <span class="li-normal">6.4.4</span>
@@ -7793,6 +7982,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extendercontroller_template</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -7813,6 +8003,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_dataplan</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7821,6 +8012,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7829,6 +8021,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7837,6 +8030,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_controllerreport</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7845,6 +8039,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_modem1</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7853,6 +8048,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_modem1_autoswitch</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7861,6 +8057,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_modem2</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7869,6 +8066,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_modem2_autoswitch</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7877,6 +8075,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_smsnotification</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7885,6 +8084,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_smsnotification_alert</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7893,6 +8093,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_cellular_smsnotification_receiver</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7901,6 +8102,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_lanextension</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7909,6 +8111,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_backhaul</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -7917,6 +8120,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">filefilter_profile</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -7950,6 +8154,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">filefilter_profile_rules</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -7983,6 +8188,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8003,6 +8209,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8011,6 +8218,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8019,6 +8227,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway6</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8027,9 +8236,11 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway6_quic</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway6_realservers</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8038,6 +8249,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway6_sslciphersuites</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8046,9 +8258,11 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway_quic</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway_realservers</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8057,6 +8271,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy6_apigateway_sslciphersuites</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -8065,6 +8280,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8085,6 +8301,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway6</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -8104,9 +8321,11 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway6_quic</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway6_realservers</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -8126,6 +8345,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway6_sslciphersuites</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -8145,9 +8365,11 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway_quic</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway_realservers</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8168,6 +8390,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_apigateway_sslciphersuites</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8188,6 +8411,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_realservers</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8208,6 +8432,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_serverpubkeyauthsettings</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8228,6 +8453,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxy_serverpubkeyauthsettings_certextension</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -8248,6 +8474,13 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">firewall_accessproxysshclientcert</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">firewall_accessproxysshclientcert_certextension</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_accessproxyvirtualhost</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -8267,6 +8500,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8314,6 +8548,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8361,6 +8596,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8498,6 +8734,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6_profilelist</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -8559,6 +8796,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6_tagging</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8606,6 +8844,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6template</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8653,6 +8892,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6template_subnetsegment</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8700,6 +8940,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address6template_subnetsegment_values</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8747,6 +8988,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8840,6 +9082,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_address_profilelist</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -8901,6 +9144,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_addrgrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8948,6 +9192,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_addrgrp6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -8995,6 +9240,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_addrgrp6_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9088,6 +9334,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_addrgrp_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9181,6 +9428,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_carrierendpointbwl</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9228,6 +9476,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_carrierendpointbwl_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9275,6 +9524,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_casbprofile</span> - available versions:
                 <span class="li-normal">7.4.1</span>
@@ -9323,6 +9573,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_explicitproxyaddress</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -9412,6 +9663,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_apn</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9459,6 +9711,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_ieremovepolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9506,6 +9759,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_ievalidation</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9553,6 +9807,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_imsi</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9600,6 +9855,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_ippolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9647,6 +9903,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_messagefilter</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -9708,6 +9965,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_messageratelimitv0</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9755,6 +10013,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_messageratelimitv1</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9802,6 +10061,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_messageratelimitv2</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9849,6 +10109,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_noippolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9896,6 +10157,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_perapnshaper</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9943,6 +10205,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -9990,6 +10253,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_gtp_policyv2</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -10035,6 +10299,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_identitybasedroute</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10082,6 +10347,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_identitybasedroute_rule</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10129,6 +10395,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservice</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10176,6 +10443,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservice_entry</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10262,6 +10530,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetserviceaddition_entry</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -10306,6 +10575,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetserviceaddition_entry_portrange</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -10350,6 +10620,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservicecustom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10397,6 +10668,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservicecustom_disableentry</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10528,6 +10800,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservicecustom_entry_portrange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10575,6 +10848,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservicecustomgroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10622,6 +10896,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservicegroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10669,6 +10944,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_internetservicename</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -10703,6 +10979,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_ippool</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10750,6 +11027,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_ippool6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10797,6 +11075,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_ippool6_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10915,6 +11194,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_ldbmonitor</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -10962,6 +11242,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_mmsprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11009,6 +11290,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_mmsprofile_dupe</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11056,6 +11338,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_mmsprofile_flood</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11103,6 +11386,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_mmsprofile_notification</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11150,6 +11434,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_mmsprofile_notifmsisdn</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11197,6 +11482,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_mmsprofile_outbreakprevention</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -11243,6 +11529,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_multicastaddress</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11290,6 +11577,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_multicastaddress6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11337,6 +11625,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_multicastaddress6_tagging</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11384,6 +11673,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_multicastaddress_tagging</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11431,6 +11721,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_networkservicedynamic</span> - available versions:
                 <span class="li-normal">7.2.2</span>
@@ -11438,6 +11729,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profilegroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11485,6 +11777,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11532,6 +11825,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_cifs</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -11578,6 +11872,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_cifs_filefilter</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -11610,6 +11905,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_cifs_filefilter_entries</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -11642,6 +11938,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_cifs_serverkeytab</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -11674,6 +11971,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_dns</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11721,6 +12019,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_ftp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11768,6 +12067,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_http</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11815,6 +12115,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_imap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11862,6 +12163,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_mailsignature</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11909,6 +12211,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_mapi</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -11956,6 +12259,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_nntp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12003,6 +12307,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_pop3</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12050,6 +12355,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_smtp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12097,6 +12403,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_ssh</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -12141,6 +12448,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_proxyaddress</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12188,6 +12496,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_proxyaddress_headergroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12235,6 +12544,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_proxyaddress_tagging</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12282,6 +12592,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_proxyaddrgrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12329,6 +12640,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_proxyaddrgrp_tagging</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12376,6 +12688,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_schedule_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12423,6 +12736,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_schedule_onetime</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12470,6 +12784,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_schedule_recurring</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12517,6 +12832,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_service_category</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12564,6 +12880,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_service_custom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12611,6 +12928,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_service_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12658,6 +12976,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_shaper_peripshaper</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12705,6 +13024,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_shaper_trafficshaper</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12752,6 +13072,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12799,6 +13120,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_shapingentries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12846,6 +13168,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_ssh_localca</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -12891,6 +13214,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -12938,6 +13262,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_dot</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -12958,6 +13283,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_ftps</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13005,6 +13331,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_https</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13052,6 +13379,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_imaps</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13099,6 +13427,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_pop3s</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13146,6 +13475,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_smtps</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13193,6 +13523,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_ssh</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13240,6 +13571,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_ssl</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13287,6 +13619,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_sslexempt</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13334,6 +13667,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_sslsshprofile_sslserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13381,6 +13715,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_trafficclass</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -13425,10 +13760,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vendormac</span> - available versions:
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13476,6 +13813,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip46</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13523,6 +13861,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip46_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13616,6 +13955,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13663,6 +14003,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip64</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13710,6 +14051,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip64_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13803,6 +14145,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip6_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13884,6 +14227,9 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
         </li>
+        <li><span class="li-required">firewall_vip6_quic</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
         <li><span class="li-required">firewall_vip6_realservers</span> - available versions:
                 <span class="li-normal">6.0.0</span>
                 <span class="li-normal">6.2.0</span>
@@ -13930,6 +14276,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip6_sslciphersuites</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -13977,6 +14324,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip6_sslserverciphersuites</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14024,6 +14372,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14163,8 +14512,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
         </li>
+        <li><span class="li-required">firewall_vip_gslbpublicips</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
         <li><span class="li-required">firewall_vip_quic</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip_realservers</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14212,6 +14565,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip_sslciphersuites</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14259,6 +14613,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vip_sslserverciphersuites</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14306,6 +14661,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vipgrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14353,6 +14709,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vipgrp46</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14400,6 +14757,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vipgrp6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14447,6 +14805,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vipgrp64</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14494,6 +14853,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_vipgrp_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14587,6 +14947,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">firewall_wildcardfqdn_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14634,6 +14995,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmg_device_blueprint</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -14643,6 +15005,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmg_fabric_authorization_template</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -14651,6 +15014,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmg_fabric_authorization_template_platforms</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -14659,6 +15023,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmg_variable</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -14668,6 +15033,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmg_variable_dynamicmapping</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -14723,6 +15089,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_avips_advancedlog</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14770,6 +15137,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_avips_webproxy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14863,6 +15231,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_diskquota</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14910,6 +15279,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fctservices</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -14957,6 +15327,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15004,6 +15375,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting_pushoverride</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15051,6 +15423,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting_pushoverridetoclient</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15098,6 +15471,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting_pushoverridetoclient_announceip</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15145,6 +15519,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting_serveroverride</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15192,6 +15567,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15239,6 +15615,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fdssetting_updateschedule</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15286,6 +15663,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fwmsetting</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -15330,6 +15708,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_fwmsetting_upgradetimeout</span> - available versions:
                 <span class="li-normal">7.0.5</span>
@@ -15343,6 +15722,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_multilayer</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15390,6 +15770,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_publicnetwork</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15437,6 +15818,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_serveraccesspriorities</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15484,6 +15866,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_serveraccesspriorities_privateserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15531,6 +15914,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_serveroverridestatus</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15578,6 +15962,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_service</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15625,6 +16010,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_webspam_fgdsetting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15672,6 +16058,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_webspam_fgdsetting_serveroverride</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15719,6 +16106,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -15766,6 +16154,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fmupdate_webspam_webproxy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16011,6 +16400,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_dhcpserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16058,6 +16448,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_dhcpserver_excluderange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16105,6 +16496,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_dhcpserver_iprange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16152,6 +16544,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_dhcpserver_options</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16199,6 +16592,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_dhcpserver_reservedaddress</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16246,6 +16640,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16878,6 +17273,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_ipv6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -16925,6 +17321,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_ipv6_ip6delegatedprefixlist</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -16969,6 +17366,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_ipv6_ip6extraaddr</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -17013,6 +17411,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_ipv6_ip6prefixlist</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -17057,6 +17456,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_ipv6_vrrp6</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -17101,6 +17501,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_secondaryip</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17148,6 +17549,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_vrrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17195,10 +17597,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">fsp_vlan_interface_vrrp_proxyarp</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_apn</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17246,6 +17650,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_apngrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17293,6 +17698,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_iewhitelist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17340,6 +17746,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_iewhitelist_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17387,6 +17794,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_messagefilterv0v1</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17434,6 +17842,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_messagefilterv2</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17481,6 +17890,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">gtp_tunnellimit</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17528,6 +17938,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">header_consolidated_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17727,6 +18138,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqp3gppcellular_mccmnclist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17774,6 +18186,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpipaddresstype</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17821,6 +18234,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpnairealm</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17868,6 +18282,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpnairealm_nailist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17915,6 +18330,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpnairealm_nailist_eapmethod</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -17962,6 +18378,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpnairealm_nailist_eapmethod_authparam</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18009,6 +18426,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpnetworkauthtype</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18056,6 +18474,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqproamingconsortium</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18103,6 +18522,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqproamingconsortium_oilist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18150,6 +18570,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpvenuename</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18197,6 +18618,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpvenuename_valuelist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18244,6 +18666,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpvenueurl</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18261,6 +18684,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_anqpvenueurl_valuelist</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18278,6 +18702,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpadviceofcharge</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18295,6 +18720,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpadviceofcharge_aoclist</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18312,6 +18738,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpadviceofcharge_aoclist_planinfo</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18329,6 +18756,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpconncapability</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18376,6 +18804,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpoperatorname</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18423,6 +18852,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpoperatorname_valuelist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18470,6 +18900,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qposuprovider</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18517,6 +18948,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qposuprovider_friendlyname</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18564,6 +18996,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qposuprovider_servicedescription</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18611,6 +19044,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qposuprovidernai</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18628,6 +19062,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qposuprovidernai_nailist</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18645,6 +19080,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qptermsandconditions</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18662,6 +19098,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_h2qpwanmetric</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18709,6 +19146,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_hsprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18756,6 +19194,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_icon</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18773,6 +19212,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_icon_iconlist</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -18790,6 +19230,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_qosmap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18837,6 +19278,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_qosmap_dscpexcept</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18884,6 +19326,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">hotspot20_qosmap_dscprange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18931,6 +19374,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">icap_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -18978,6 +19422,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">icap_profile_icapheaders</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -19024,6 +19469,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">icap_profile_respmodforwardrules</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -19058,6 +19504,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">icap_profile_respmodforwardrules_headergroup</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -19092,6 +19539,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">icap_server</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19139,6 +19587,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">ips_baseline_sensor</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -19210,6 +19659,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">ips_sensor</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -19227,6 +19677,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">ips_sensor_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19274,6 +19725,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">ips_sensor_entries_exemptip</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -19291,6 +19743,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">ips_sensor_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19312,6 +19765,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">ips_sensor_override_exemptip</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -19329,6 +19783,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">log_customfield</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19376,6 +19831,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">log_npuserver</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -19402,6 +19858,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">log_npuserver_servergroup</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -19428,6 +19885,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">log_npuserver_serverinfo</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -19454,6 +19912,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">metafields_system_admin_user</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19501,6 +19960,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">mpskprofile</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -19533,6 +19993,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">mpskprofile_mpskgroup</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -19565,6 +20026,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">mpskprofile_mpskgroup_mpskkey</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -19597,6 +20059,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">nacprofile</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -19614,6 +20077,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_authentication_rule</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -19659,6 +20123,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_authentication_setting</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -19704,6 +20169,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_central_dnat</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19751,6 +20217,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_central_dnat6</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -19783,6 +20250,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -19836,6 +20304,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_consolidated_policy</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -19882,6 +20351,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_dospolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19929,6 +20399,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_dospolicy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -19976,6 +20447,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_dospolicy6_anomaly</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20023,6 +20495,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_dospolicy_anomaly</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20070,6 +20543,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_explicitproxypolicy</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -20311,6 +20785,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20358,6 +20833,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_multicastpolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20405,6 +20881,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_multicastpolicy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20452,6 +20929,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20499,6 +20977,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy46</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20546,6 +21025,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20593,6 +21073,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy64</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20640,6 +21121,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy_vpndstnode</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20751,6 +21233,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_securitypolicy</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -20796,6 +21279,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_shapingpolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20843,6 +21327,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_footer_consolidated_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20890,6 +21375,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_footer_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20937,6 +21423,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_footer_policy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -20984,6 +21471,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_footer_policy6_identitybasedpolicy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -21039,6 +21527,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_header_consolidated_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -21086,6 +21575,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_header_policy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -21133,6 +21623,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_header_policy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -21180,6 +21671,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_header_policy6_identitybasedpolicy6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -21235,6 +21727,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pkg_user_nacpolicy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -21243,6 +21736,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_adom_options</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21287,6 +21781,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_application_list</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21333,6 +21828,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_category_list</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21379,6 +21875,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_data_tablesize</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21652,6 +22149,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_metafields_firewall_addrgrp</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21696,6 +22194,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_metafields_firewall_centralsnatmap</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21740,6 +22239,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_metafields_firewall_policy</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21784,6 +22284,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_metafields_firewall_service_custom</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21828,6 +22329,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_metafields_firewall_service_group</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21872,6 +22374,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_package_status</span> - available versions:
                 <span class="li-normal">7.0.7</span>
@@ -21883,6 +22386,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -21900,6 +22404,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_policy</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -21917,6 +22422,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_policy6</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -21934,6 +22440,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_securitypolicy</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -21951,6 +22458,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_config_rule_list</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -21997,6 +22505,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_devprof</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22044,6 +22553,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_devprof_adom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22091,6 +22601,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_pblock</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -22108,6 +22619,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_pblock_adom</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -22125,6 +22637,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_pkg</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22172,6 +22685,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_pkg_adom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22219,6 +22733,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_pkg_global</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22266,6 +22781,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_pkg_schedule</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22313,6 +22829,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_wanprof</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22360,6 +22877,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">pm_wanprof_adom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22407,6 +22925,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">qosprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -22454,6 +22973,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">region</span> - available versions:
                 <span class="li-normal">6.2.8</span>
@@ -22487,6 +23007,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_accesslist</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22505,6 +23026,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_accesslist6</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22523,6 +23045,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_accesslist6_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22541,6 +23064,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_accesslist_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22559,6 +23083,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_aspathlist</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22577,6 +23102,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_aspathlist_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22595,6 +23121,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_communitylist</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22613,6 +23140,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_communitylist_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22631,6 +23159,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_prefixlist</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22649,6 +23178,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_prefixlist6</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22667,6 +23197,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_prefixlist6_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22685,6 +23216,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_prefixlist_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22703,6 +23235,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_routemap</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22721,6 +23254,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">router_routemap_rule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -22739,6 +23273,13 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">sctpfilter_profile</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">sctpfilter_profile_ppidfilters</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">spamfilter_bwl</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -23515,6 +24056,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">sshfilter_profile_filefilter</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -23559,6 +24101,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">sshfilter_profile_filefilter_entries</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -23603,6 +24146,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">sshfilter_profile_shellcommands</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -23650,22 +24194,27 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_acl_group</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_acl_ingress</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_acl_ingress_action</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_acl_ingress_classifier</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_customcommand</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -23686,6 +24235,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_dsl_policy</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -23703,6 +24253,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_dynamicportpolicy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -23711,6 +24262,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_dynamicportpolicy_policy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -23719,6 +24271,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_fortilinksettings</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -23727,6 +24280,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_fortilinksettings_nacports</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -23735,6 +24289,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_lldpprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -23782,6 +24337,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_lldpprofile_customtlvs</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -23829,6 +24385,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_lldpprofile_medlocationservice</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -23875,6 +24432,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_lldpprofile_mednetworkpolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -23922,6 +24480,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_macpolicy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -23930,6 +24489,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -23977,6 +24537,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_8021xsettings</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24001,6 +24562,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_dhcpsnoopingstaticclient</span> - available versions:
                 <span class="li-normal">7.2.2</span>
@@ -24008,6 +24570,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_igmpsnooping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24071,10 +24634,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_ports_dhcpsnoopoption82override</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_remotelog</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -24083,6 +24648,7 @@ Parameters
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_routeoffloadrouter</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_snmpcommunity</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -24131,8 +24697,12 @@ Parameters
                 <span class="li-normal">6.0.0</span>
                 <span class="li-normal">6.2.0</span>
         </li>
+        <li><span class="li-required">switchcontroller_managedswitch_vlan</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
         <li><span class="li-required">switchcontroller_ptp_profile</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_qos_dot1pmap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24180,6 +24750,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_qos_ipdscpmap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24227,6 +24798,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_qos_ipdscpmap_map</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24274,6 +24846,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_qos_qospolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24321,6 +24894,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_qos_queuepolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24368,6 +24942,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_qos_queuepolicy_cosqueue</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24415,6 +24990,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_securitypolicy_8021x</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24462,6 +25038,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_securitypolicy_captiveportal</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24475,6 +25052,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_trafficpolicy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -24483,6 +25061,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">switchcontroller_vlanpolicy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -24491,6 +25070,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">sys_ha_status</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24538,6 +25118,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">sys_status</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24585,6 +25166,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24632,6 +25214,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_group_member</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24679,6 +25262,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_ldap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24726,6 +25310,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_ldap_adom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24773,6 +25358,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24820,6 +25406,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_profile_datamaskcustomfields</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24867,6 +25454,13 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_admin_profile_writepasswdprofiles</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_admin_profile_writepasswduserlist</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_radius</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24914,6 +25508,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -24961,6 +25556,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_tacacs</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25008,6 +25604,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25055,6 +25652,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_adom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25102,6 +25700,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_adomexclude</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25181,6 +25780,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_dashboard</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25228,6 +25828,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_dashboardtabs</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25275,6 +25876,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_ipsfilter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25322,6 +25924,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_metadata</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25369,6 +25972,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_policypackage</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25416,6 +26020,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_admin_user_restrictdevvdom</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25471,6 +26076,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_alertconsole</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25518,6 +26124,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_alertemail</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25565,6 +26172,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_alertevent</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25612,6 +26220,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_alertevent_alertdestination</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25659,6 +26268,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_autodelete</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25706,6 +26316,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_autodelete_dlpfilesautodeletion</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25753,6 +26364,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_autodelete_logautodeletion</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25800,6 +26412,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_autodelete_quarantinefilesautodeletion</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25847,6 +26460,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_autodelete_reportautodeletion</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25894,6 +26508,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_backup_allsettings</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25941,6 +26556,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_certificate_ca</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -25988,6 +26604,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_certificate_crl</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26035,6 +26652,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_certificate_local</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26082,6 +26700,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_certificate_oftp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26129,6 +26748,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_certificate_remote</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26176,6 +26796,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_certificate_ssh</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26223,6 +26844,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_connector</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26270,15 +26892,19 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_csf</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_csf_fabricconnector</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_csf_trustedlist</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_customlanguage</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26326,6 +26952,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dhcp_server</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26373,6 +27000,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dhcp_server_excluderange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26420,6 +27048,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dhcp_server_iprange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26467,6 +27096,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dhcp_server_options</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26514,6 +27144,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dhcp_server_reservedaddress</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26561,6 +27192,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dm</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26608,6 +27240,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_dns</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26655,6 +27288,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_docker</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -26689,6 +27323,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_externalresource</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26736,6 +27371,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_fips</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26783,6 +27419,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_fortiguard</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26830,6 +27467,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_fortiview_autocache</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26877,6 +27515,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_fortiview_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26924,6 +27563,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_geoipcountry</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -26971,6 +27611,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_geoipoverride</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27018,6 +27659,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_geoipoverride_ip6range</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -27052,6 +27694,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_geoipoverride_iprange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27099,6 +27742,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_global</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27146,6 +27790,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_guiact</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27239,6 +27884,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_ha_monitoredinterfaces</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -27248,6 +27894,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_ha_monitoredips</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -27257,6 +27904,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_ha_peer</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27304,6 +27952,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_hascheduledcheck</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -27323,6 +27972,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_interface</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27370,6 +28020,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_interface_ipv6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27417,6 +28068,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_interface_member</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -27426,6 +28078,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_localinpolicy</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -27435,6 +28088,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_localinpolicy6</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -27444,6 +28098,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_disk_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27491,6 +28146,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_disk_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27538,6 +28194,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_fortianalyzer2_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27585,6 +28242,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_fortianalyzer2_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27632,6 +28290,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_fortianalyzer3_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27679,6 +28338,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_fortianalyzer3_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27726,6 +28386,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_fortianalyzer_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27773,6 +28434,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_fortianalyzer_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27820,6 +28482,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_memory_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27867,6 +28530,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_memory_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27914,6 +28578,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -27961,6 +28626,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_syslogd2_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28008,6 +28674,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_syslogd2_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28055,6 +28722,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_syslogd3_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28102,6 +28770,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_syslogd3_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28149,6 +28818,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_syslogd_filter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28196,6 +28866,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_locallog_syslogd_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28243,6 +28914,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_alert</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28290,6 +28962,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_devicedisable</span> - available versions:
                 <span class="li-normal">6.4.4</span>
@@ -28320,6 +28993,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_fospolicystats</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -28338,6 +29012,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_interfacestats</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -28383,6 +29058,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_ioc</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28430,6 +29106,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_maildomain</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28477,6 +29154,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_ratelimit</span> - available versions:
                 <span class="li-normal">6.4.8</span>
@@ -28503,6 +29181,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_ratelimit_device</span> - available versions:
                 <span class="li-normal">6.4.8</span>
@@ -28531,6 +29210,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_settings</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28578,6 +29258,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_settings_rollinganalyzer</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28625,6 +29306,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_settings_rollinglocal</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28672,6 +29354,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_settings_rollingregular</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28719,6 +29402,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_log_topology</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -28744,6 +29428,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_logfetch_clientprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -28959,6 +29644,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_mcpolicydisabledadoms</span> - available versions:
                 <span class="li-normal">6.2.3</span>
@@ -29002,6 +29688,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_meta</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29049,6 +29736,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_meta_sysmetafields</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29096,6 +29784,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_metadata_admins</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29143,6 +29832,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29169,6 +29859,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_backgroundssescan</span> - available versions:
                 <span class="li-normal">6.4.8</span>
@@ -29192,6 +29883,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_dosoptions</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29218,6 +29910,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_dswdtsprofile</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29244,6 +29937,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_dswqueuedtsprofile</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29270,6 +29964,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_fpanomaly</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29296,6 +29991,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_hpe</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29322,6 +30018,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_ipreassembly</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29348,6 +30045,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_isfnpqueues</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29374,6 +30072,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_npqueues</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29400,6 +30099,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_ethernettype</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29426,6 +30126,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_ipprotocol</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29452,6 +30153,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_ipservice</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29478,6 +30180,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_profile</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29504,6 +30207,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_scheduler</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29530,6 +30234,28 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam_data</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam_mask</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam_miract</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam_priact</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam_sact</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">system_npu_nputcam_tact</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_portcpumap</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29556,6 +30282,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_portnpumap</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29582,6 +30309,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_portpathoption</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29608,6 +30336,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_priorityprotocol</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29634,6 +30363,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_ssehascan</span> - available versions:
                 <span class="li-normal">6.4.10</span>
@@ -29653,6 +30383,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_swehhash</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -29672,11 +30403,13 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_swtrhash</span> - available versions:
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_tcptimeoutprofile</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29703,6 +30436,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_npu_udptimeoutprofile</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -29729,6 +30463,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_ntp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29776,6 +30511,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_ntp_ntpserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29823,6 +30559,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_objecttag</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -29898,6 +30635,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_passwordpolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29945,6 +30683,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_performance</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -29992,6 +30731,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30039,6 +30779,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_admin</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30086,6 +30827,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_alertmail</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30133,6 +30875,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_auth</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30180,6 +30923,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_automation</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -30200,6 +30944,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_custommessage</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30247,6 +30992,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_devicedetectionportal</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30294,6 +31040,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_ec</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30383,6 +31130,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_ftp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30430,6 +31178,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_http</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30477,6 +31226,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_icap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30524,6 +31274,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_mail</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30571,6 +31322,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_mm1</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30618,6 +31370,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_mm3</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30665,6 +31418,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_mm4</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30712,6 +31466,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_mm7</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30759,6 +31514,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_mms</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30806,6 +31562,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_nacquar</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30853,6 +31610,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_nntp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30900,6 +31658,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_spam</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30947,6 +31706,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_sslvpn</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -30994,6 +31754,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_trafficquota</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31041,6 +31802,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_utm</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31088,6 +31850,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_webproxy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31135,6 +31898,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_replacemsgimage</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31182,6 +31946,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_report_autocache</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31229,6 +31994,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_report_estbrowsetime</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31276,6 +32042,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_report_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31323,6 +32090,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_report_group_chartalternative</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31370,6 +32138,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_report_group_groupby</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31417,6 +32186,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_report_setting</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31464,6 +32234,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_route</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31511,6 +32282,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_route6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31558,6 +32330,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_saml</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31605,6 +32378,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_saml_fabricidp</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -31639,6 +32413,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_saml_serviceproviders</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31686,6 +32461,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31733,10 +32509,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_compartmentlist</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_externalaccountlist</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -31754,6 +32532,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_externalip</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31801,6 +32580,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_forwardingrule</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -31819,6 +32599,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_gcpprojectlist</span> - available versions:
                 <span class="li-normal">6.4.7</span>
@@ -31844,6 +32625,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_nic</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31891,6 +32673,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_nic_ip</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31938,10 +32721,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_ociregionlist</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_route</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -31989,6 +32774,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_routetable</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32036,6 +32822,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnconnector_routetable_route</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32083,9 +32870,11 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sdnproxy</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_smsserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32133,6 +32922,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sniffer</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -32177,6 +32967,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_snmp_community</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32224,6 +33015,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_snmp_community_hosts</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32271,6 +33063,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_snmp_community_hosts6</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32318,6 +33111,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_snmp_sysinfo</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32365,6 +33159,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_snmp_user</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32412,6 +33207,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_socfabric</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -32432,10 +33228,12 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_socfabric_trustedlist</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sql</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32483,6 +33281,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sql_customindex</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32530,6 +33329,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sql_customskipidx</span> - available versions:
                 <span class="li-normal">6.2.3</span>
@@ -32573,6 +33373,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sql_tsindexfield</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32620,6 +33421,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_sslciphersuites</span> - available versions:
                 <span class="li-normal">6.4.8</span>
@@ -32644,6 +33446,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_status</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32691,6 +33494,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_syslog</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32738,6 +33542,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_virtualwirepair</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32785,6 +33590,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_webproxy</span> - available versions:
                 <span class="li-normal">6.4.8</span>
@@ -32808,6 +33614,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_workflow_approvalmatrix</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32855,6 +33662,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">system_workflow_approvalmatrix_approver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32902,6 +33710,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">task_task</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -32949,6 +33758,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">task_task_history</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33011,6 +33821,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">task_task_line_history</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -33045,6 +33856,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">template</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33092,6 +33904,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">templategroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33139,6 +33952,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_adgrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33186,6 +34000,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_certificate</span> - available versions:
                 <span class="li-normal">7.0.8</span>
@@ -33195,6 +34010,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_clearpass</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -33240,6 +34056,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_connector</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -33259,6 +34076,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_device</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33306,6 +34124,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_device_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33399,6 +34218,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_deviceaccesslist</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -33690,6 +34510,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_domaincontroller_extraserver</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -33735,6 +34556,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_exchange</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -33781,6 +34603,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_flexvm</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -33789,6 +34612,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_fortitoken</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33836,6 +34660,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_fsso</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33883,6 +34708,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_fsso_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -33976,6 +34802,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_fssopolling_adgrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34023,6 +34850,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_group</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34070,6 +34898,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_group_dynamicmapping</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -34185,6 +35014,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_group_match</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34232,6 +35062,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_json</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -34240,6 +35071,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_krbkeytab</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -34285,6 +35117,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_ldap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34332,6 +35165,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_ldap_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34425,6 +35259,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_nsx</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -34470,6 +35305,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_nsx_service</span> - available versions:
                 <span class="li-normal">7.0.4</span>
@@ -34486,6 +35322,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_passwordpolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34533,6 +35370,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_peer</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34580,6 +35418,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_peergrp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34627,6 +35466,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_pop3</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34674,6 +35514,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_pxgrid</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34721,6 +35562,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_radius</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34768,6 +35610,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_radius_accountingserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34815,6 +35658,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_radius_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -34933,6 +35777,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_saml_dynamicmapping</span> - available versions:
                 <span class="li-normal">7.0.5</span>
@@ -34993,6 +35838,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_securityexemptlist_rule</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35040,6 +35886,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_tacacs</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35087,6 +35934,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_tacacs_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35167,6 +36015,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">user_vcenter_rule</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -35201,6 +36050,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">utmprofile</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -35245,6 +36095,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vap</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35292,6 +36143,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vap_dynamicmapping</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35385,6 +36237,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vap_mpskkey</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35432,6 +36285,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vap_portalmessageoverrides</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35479,6 +36333,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vap_vlanname</span> - available versions:
                 <span class="li-normal">7.0.3</span>
@@ -35496,6 +36351,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vap_vlanpool</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35543,6 +36399,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vapgroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35590,6 +36447,13 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">videofilter_keyword</span> - available versions:
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">videofilter_keyword_word</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">videofilter_profile</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -35610,6 +36474,10 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">videofilter_profile_filters</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">videofilter_profile_fortiguardcategory</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -35630,6 +36498,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">videofilter_profile_fortiguardcategory_filters</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -35650,6 +36519,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">videofilter_youtubechannelfilter</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -35670,6 +36540,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">videofilter_youtubechannelfilter_entries</span> - available versions:
                 <span class="li-normal">7.0.0</span>
@@ -35690,12 +36561,18 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
+        </li>
+        <li><span class="li-required">videofilter_youtubekey</span> - available versions:
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">virtualpatch_profile</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">virtualpatch_profile_exemption</span> - available versions:
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">voip_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35743,6 +36620,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">voip_profile_msrp</span> - available versions:
                 <span class="li-normal">7.0.2</span>
@@ -35761,6 +36639,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">voip_profile_sccp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35808,6 +36687,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">voip_profile_sip</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35855,6 +36735,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_certificate_ca</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35902,6 +36783,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_certificate_ocspserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35949,6 +36831,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_certificate_remote</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -35996,6 +36879,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_ipsec_fec</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -36005,6 +36889,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_ipsec_fec_mappings</span> - available versions:
                 <span class="li-normal">7.2.0</span>
@@ -36014,6 +36899,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_ssl_settings</span> - available versions:
                 <span class="li-normal">6.2.6</span>
@@ -36053,6 +36939,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpn_ssl_settings_authenticationrule</span> - available versions:
                 <span class="li-normal">6.2.6</span>
@@ -36092,6 +36979,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnmgr_node</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36139,6 +37027,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnmgr_node_iprange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36186,6 +37075,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnmgr_node_ipv4excluderange</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36233,6 +37123,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnmgr_node_protectedsubnet</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36280,6 +37171,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnmgr_node_summaryaddr</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36327,6 +37219,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnmgr_vpntable</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36374,6 +37267,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_hostchecksoftware</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36421,6 +37315,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_hostchecksoftware_checkitemlist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36468,6 +37363,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36515,6 +37411,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_bookmarkgroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36562,6 +37459,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_bookmarkgroup_bookmarks</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36609,6 +37507,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_bookmarkgroup_bookmarks_formdata</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36656,14 +37555,17 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_landingpage</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_landingpage_formdata</span> - available versions:
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_macaddrcheckrule</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36711,6 +37613,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_oschecklist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36758,6 +37661,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_splitdns</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36805,6 +37709,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_realm</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36852,6 +37757,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">vpnsslweb_virtualdesktopapplist</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -36927,6 +37833,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -36974,6 +37881,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_addresslist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37021,6 +37929,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37068,6 +37977,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_contentlength</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37115,6 +38025,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_exception</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37162,6 +38073,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_headerlength</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37209,6 +38121,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_hostname</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37256,6 +38169,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_linelength</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37303,6 +38217,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_malformed</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37350,6 +38265,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_maxcookie</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37397,6 +38313,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_maxheaderline</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37444,6 +38361,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_maxrangesegment</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37491,6 +38409,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_maxurlparam</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37538,6 +38457,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_method</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37585,6 +38505,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_paramlength</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37632,6 +38553,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_urlparamlength</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37679,6 +38601,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_constraint_version</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37726,6 +38649,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_method</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37773,6 +38697,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_method_methodpolicy</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37820,6 +38745,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_signature</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37867,6 +38793,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_signature_customsignature</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37914,6 +38841,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_signature_mainclass</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -37961,6 +38889,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_urlaccess</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38008,6 +38937,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_profile_urlaccess_accesspattern</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38055,6 +38985,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_signature</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38102,6 +39033,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">waf_subclass</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38149,6 +39081,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wagprofile</span> - available versions:
                 <span class="li-normal">6.2.3</span>
@@ -38192,6 +39125,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_authgroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38239,6 +39173,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_peer</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38286,6 +39221,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38333,6 +39269,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_profile_cifs</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38380,6 +39317,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_profile_ftp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38427,6 +39365,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_profile_http</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38474,6 +39413,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_profile_mapi</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38521,6 +39461,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanopt_profile_tcp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38568,6 +39509,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38601,6 +39543,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_duplication</span> - available versions:
                 <span class="li-normal">6.4.2</span>
@@ -38633,6 +39576,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_healthcheck</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38666,6 +39610,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_healthcheck_sla</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38699,6 +39644,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_members</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38732,6 +39678,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_neighbor</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38765,6 +39712,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_service</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38798,6 +39746,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_service_sla</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38831,6 +39780,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_zone</span> - available versions:
                 <span class="li-normal">6.4.1</span>
@@ -38864,6 +39814,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38911,6 +39862,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_healthcheck</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -38958,6 +39910,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_healthcheck_sla</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39005,6 +39958,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_members</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39052,6 +40006,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_neighbor</span> - available versions:
                 <span class="li-normal">6.2.1</span>
@@ -39097,6 +40052,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_service</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39144,6 +40100,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_service_sla</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39191,6 +40148,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_categories</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39238,6 +40196,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_content</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39285,6 +40244,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_content_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39332,6 +40292,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_contentheader</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39379,6 +40340,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_contentheader_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39426,6 +40388,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_ftgdlocalcat</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39473,6 +40436,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_ftgdlocalrating</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39520,6 +40484,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39567,6 +40532,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_antiphish</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -39601,6 +40567,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_antiphish_custompatterns</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -39635,6 +40602,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_antiphish_inspectionentries</span> - available versions:
                 <span class="li-normal">6.4.0</span>
@@ -39669,6 +40637,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_filefilter</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -39715,6 +40684,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_filefilter_entries</span> - available versions:
                 <span class="li-normal">6.2.0</span>
@@ -39761,6 +40731,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_ftgdwf</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39808,6 +40779,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_ftgdwf_filters</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39855,6 +40827,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_ftgdwf_quota</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39902,6 +40875,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_override</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39949,6 +40923,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_urlextraction</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -39996,6 +40971,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_web</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40043,6 +41019,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_profile_youtubechannelfilter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40090,6 +41067,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_urlfilter</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40137,6 +41115,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webfilter_urlfilter_entries</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40184,6 +41163,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webproxy_forwardserver</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40231,6 +41211,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webproxy_forwardservergroup</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40278,6 +41259,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webproxy_forwardservergroup_serverlist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40325,6 +41307,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webproxy_profile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40372,6 +41355,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webproxy_profile_headers</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40419,6 +41403,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">webproxy_wisp</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40466,6 +41451,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">widsprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40513,6 +41499,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_accesscontrollist</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -40521,6 +41508,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_accesscontrollist_layer3ipv4rules</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -40529,6 +41517,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_accesscontrollist_layer3ipv6rules</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -40537,6 +41526,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_address</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -40556,6 +41546,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_addrgrp</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -40575,6 +41566,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_ssidpolicy</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -40583,6 +41575,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wireless_syslogprofile</span> - available versions:
                 <span class="li-normal">7.2.1</span>
@@ -40591,6 +41584,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40638,6 +41632,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_denymaclist</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40685,6 +41680,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_eslsesdongle</span> - available versions:
                 <span class="li-normal">7.0.1</span>
@@ -40704,6 +41700,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_lan</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40751,6 +41748,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_lbs</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40798,6 +41796,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_platform</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40845,6 +41844,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_radio1</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40892,6 +41892,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_radio2</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -40939,6 +41940,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_radio3</span> - available versions:
                 <span class="li-normal">6.2.2</span>
@@ -40983,6 +41985,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_radio4</span> - available versions:
                 <span class="li-normal">6.2.5</span>
@@ -41025,6 +42028,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
         <li><span class="li-required">wtpprofile_splittunnelingacl</span> - available versions:
                 <span class="li-normal">6.0.0</span>
@@ -41072,6 +42076,7 @@ Parameters
                 <span class="li-normal">7.2.4</span>
                 <span class="li-normal">7.4.0</span>
                 <span class="li-normal">7.4.1</span>
+                <span class="li-normal">7.4.2</span>
         </li>
     </ul>
     </div>
@@ -41917,6 +42922,13 @@ Parameters
             <li><span class="li-normal">devprof</span>
             </li>
             <li><span class="li-normal">user</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for diameterfilter_profile:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">profile</span> <span class="li-normal">(optional)</span>
             </li>
             <li><span class="li-normal">adom</span>
             </li>
@@ -43060,6 +44072,22 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for firewall_accessproxysshclientcert:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">access-proxy-ssh-client-cert</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for firewall_accessproxysshclientcert_certextension:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">access-proxy-ssh-client-cert</span>
+            </li>
+            <li><span class="li-normal">cert-extension</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for firewall_accessproxyvirtualhost:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">access-proxy-virtual-host</span> <span class="li-normal">(optional)</span>
@@ -44144,6 +45172,13 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for firewall_vip6_quic:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">vip6</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for firewall_vip6_realservers:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">vip6</span>
@@ -44198,6 +45233,15 @@ Parameters
             <li><span class="li-normal">dynamic_mapping</span>
             </li>
             <li><span class="li-normal">ssl-cipher-suites</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for firewall_vip_gslbpublicips:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">vip</span>
+            </li>
+            <li><span class="li-normal">gslb-public-ips</span> <span class="li-normal">(optional)</span>
             </li>
             <li><span class="li-normal">adom</span>
             </li>
@@ -46065,6 +47109,22 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for sctpfilter_profile:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">profile</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for sctpfilter_profile_ppidfilters:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">profile</span>
+            </li>
+            <li><span class="li-normal">ppid-filters</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for spamfilter_bwl:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">bwl</span> <span class="li-normal">(optional)</span>
@@ -46559,6 +47619,15 @@ Parameters
             <li><span class="li-normal">managed-switch</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_vlan:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">managed-switch</span>
+            </li>
+            <li><span class="li-normal">vlan</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for switchcontroller_ptp_profile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">profile</span> <span class="li-normal">(optional)</span>
@@ -46687,6 +47756,20 @@ Parameters
             <li><span class="li-normal">profile</span>
             </li>
             <li><span class="li-normal">datamask-custom-fields</span> <span class="li-normal">(optional)</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_admin_profile_writepasswdprofiles:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">profile</span>
+            </li>
+            <li><span class="li-normal">write-passwd-profiles</span> <span class="li-normal">(optional)</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_admin_profile_writepasswduserlist:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">profile</span>
+            </li>
+            <li><span class="li-normal">write-passwd-user-list</span> <span class="li-normal">(optional)</span>
             </li>
         </ul>
         <li><span class="li-normal">params for system_admin_radius:</span></li>
@@ -47262,6 +48345,55 @@ Parameters
         <li><span class="li-normal">params for system_npu_npqueues_scheduler:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">scheduler</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam_data:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam_mask:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam_miract:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam_priact:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam_sact:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_nputcam_tact:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">npu-tcam</span>
             </li>
             <li><span class="li-normal">adom</span>
             </li>
@@ -48383,9 +49515,34 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for videofilter_keyword:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">keyword</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for videofilter_keyword_word:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">keyword</span>
+            </li>
+            <li><span class="li-normal">word</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for videofilter_profile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">profile</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for videofilter_profile_filters:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">profile</span>
+            </li>
+            <li><span class="li-normal">filters</span> <span class="li-normal">(optional)</span>
             </li>
             <li><span class="li-normal">adom</span>
             </li>
@@ -48418,6 +49575,13 @@ Parameters
             <li><span class="li-normal">youtube-channel-filter</span>
             </li>
             <li><span class="li-normal">entries</span> <span class="li-normal">(optional)</span>
+            </li>
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for videofilter_youtubekey:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">youtube-key</span> <span class="li-normal">(optional)</span>
             </li>
             <li><span class="li-normal">adom</span>
             </li>
@@ -49494,15 +50658,13 @@ Examples
   - name: Export playbooks for all objects in global domain
     hosts: fortimanagers
     connection: httpapi
-    collections:
-      - fortinet.fortimanager
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Export Playbooks
-        fmgr_export_playbooks:
+        fortinet.fortimanager.fmgr_export_playbooks:
           export_playbooks:
             selector:
               - all
@@ -49514,15 +50676,13 @@ Examples
   - name: Export playbooks for all objects in root domain
     hosts: fortimanagers
     connection: httpapi
-    collections:
-      - fortinet.fortimanager
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Export Playbooks
-        fmgr_export_playbooks:
+        fortinet.fortimanager.fmgr_export_playbooks:
           export_playbooks:
             selector:
               - all
@@ -49534,15 +50694,13 @@ Examples
   - name: Export playbooks for script and route objects
     hosts: fortimanager
     connection: httpapi
-    collections:
-      - fortinet.fortimanager
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Export Playbooks
-        fmgr_export_playbooks:
+        fortinet.fortimanager.fmgr_export_playbooks:
           export_playbooks:
             selector:
               - dvmdb_script

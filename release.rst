@@ -1206,3 +1206,31 @@ Bugfixes
 - Change minimum required ansible-core version to 2.14.0
 - Fixed a bug where ansible may skip update incorrectly.
 - Support FortiManager 7.0.10
+
+|
+
+Release Galaxy 2.4.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+
+Minor Changes
+-------------
+
+- Added deprecated warning to invalid argument name, please change the invalid argument name such as "var-name", "var name" to "var_name".
+- Supported fortimanager 7.4.2, 21 new modules.
+
+Bugfixes
+--------
+
+- Changed revision to v_range to reduce the size of the code.
+- Fixed the behavior of module fmgr_firewall_internetservicecustom.
+- Fixed the behavior of some modules that contain the argument policyid.
+- Improved example ansible playbooks.
+- Improved the logic of fmgr_fact, fmgr_clone, fmgr_rename, fmgr_move. Usage remains unchanged.
+- Reduced the size of module_arg_spec in each module.
+- Removed most of the sanity test ignores.

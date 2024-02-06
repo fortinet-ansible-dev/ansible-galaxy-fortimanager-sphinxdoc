@@ -9,6 +9,16 @@ fmgr_firewall_internetservicecustom_entry_portrange -- Port ranges in the custom
 
 .. versionadded:: 2.0.0
 
+.. warning::
+   Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
+  
+   - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
+   - New argument name starting in 3.0.0: ``var_name``
+  
+   FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
+
 .. contents::
    :local:
    :depth: 1
@@ -22,13 +32,11 @@ Synopsis
 - Tested with FortiManager v6.x and v7.x.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.14.0
 
 
 FortiManager Version Compatibility
@@ -142,19 +150,19 @@ FortiManager Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
 
 
 
 Parameters
 ----------
-
 .. raw:: html
 
  <ul>
@@ -172,7 +180,7 @@ Parameters
  <li><span class="li-head">entry</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_internetservicecustom_entry_portrange</span> - Port ranges in the custom entry. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">end-port</span> - Integer value for ending TCP/UDP/SCTP destination port in range (1 to 65535). <span class="li-normal">type: int</span>
+ <li><span class="li-head">end_port</span> <b>(Alias name: end-port)</b>  Integer value for ending tcp/udp/sctp destination port in range (1 to 65535). <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -281,15 +289,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">id</span> - Custom entry port range ID. <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> Custom entry port range id. <span class="li-normal">type: int</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
@@ -398,15 +408,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">start-port</span> - Integer value for starting TCP/UDP/SCTP destination port in range (1 to 65535). <span class="li-normal">type: int</span>
+ <li><span class="li-head">start_port</span> <b>(Alias name: start-port)</b>  Integer value for starting tcp/udp/sctp destination port in range (1 to 65535). <span class="li-normal">type: int</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
@@ -515,8 +527,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -528,19 +542,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
-
    - Running in workspace locking mode is supported in this FortiManager module, the top level parameters workspace_locking_adom and workspace_locking_timeout help do the work.
-
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -548,54 +555,50 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: gathering fortimanager facts
-    hosts: fortimanager00
-    gather_facts: no
+  - name: Example playbook
+    hosts: fortimanagers
     connection: httpapi
-    collections:
-      - fortinet.fortimanager
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-     - name: retrieve all the port ranges in the entry
-       fmgr_fact:
-         facts:
-             selector: 'firewall_internetservicecustom_entry_portrange'
-             params:
-                 adom: 'ansible'
-                 internet-service-custom: 'ansible-test' # name
-                 entry: '1' # id
-                 port-range: 'your_value'
-  - hosts: fortimanager00
-    collections:
-      - fortinet.fortimanager
-    connection: httpapi
-    vars:
-       ansible_httpapi_use_ssl: True
-       ansible_httpapi_validate_certs: False
-       ansible_httpapi_port: 443
-    tasks:
-     - name: Port ranges in the custom entry.
-       fmgr_firewall_internetservicecustom_entry_portrange:
-          bypass_validation: False
+      - name: Port ranges in the custom entry.
+        fortinet.fortimanager.fmgr_firewall_internetservicecustom_entry_portrange:
+          bypass_validation: false
           adom: ansible
-          internet-service-custom: 'ansible-test' # name
-          entry: '1' # id
+          internet-service-custom: "ansible-test" # name
+          entry: "1" # id
           state: present
           firewall_internetservicecustom_entry_portrange:
-             end-port: 6
-             id: 1
-             start-port: 1
+            end-port: 6
+            id: 1
+            start-port: 1
+  
+  - name: Gathering fortimanager facts
+    hosts: fortimanagers
+    gather_facts: false
+    connection: httpapi
+    vars:
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
+      ansible_httpapi_port: 443
+    tasks:
+      - name: Retrieve all the port ranges in the entry
+        fortinet.fortimanager.fmgr_fact:
+          facts:
+            selector: "firewall_internetservicecustom_entry_portrange"
+            params:
+              adom: "ansible"
+              internet-service-custom: "ansible-test" # name
+              entry: "1" # id
+              port-range: "your_value"
 
 
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -607,12 +610,9 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
  <li> <span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
  <li> <span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
  </ul>
- <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">0</li>
- <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least on parameter mpt supported by the current FortiManager version</span> <span class="li-normal">type: list</span> <span class="li-normal">0</li>
+ <li> <span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+ <li> <span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current FortiManager version. <span class="li-normal">returned: if at least one parameter not supported by the current FortiManager version</span> <span class="li-normal">type: list</span> </li>
  </ul>
-
-
-
 
 
 Status
@@ -630,11 +630,3 @@ Authors
 - Link Zheng (@chillancezen)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-
