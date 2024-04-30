@@ -2,103 +2,795 @@
 Release Notes
 ==============================
 
-Release Galaxy 2.0.0
-~~~~~~~~~~~~~~~~~~~~~~
+Release Galaxy 2.5.0
+~~~~~~~~~~~~~~~~~~~~
 
 Release Target
----------------
-
-FortiManager version: ``v6.0.x``
-
-Module Category
 ----------------
 
-+-------------------------------+--------------------------+---------------------------------+
-| Module Category               | Supported JPRC methods   | Location                        |
-+===============================+==========================+=================================+
-| Object Oriented Modules       | add/update(set)/delete   | `ref <modules.html>`__          |
-+-------------------------------+--------------------------+---------------------------------+
-| Facts Gathering Modules       | get                      | `ref <fact.html>`__             |
-+-------------------------------+--------------------------+---------------------------------+
-| Object Manipulating Modules   | move/clone               | `ref <objman.html>`__           |
-+-------------------------------+--------------------------+---------------------------------+
-| Daemon Modules                | exec                     | `ref <daemon_modules.html>`__   |
-+-------------------------------+--------------------------+---------------------------------+
-| Generic Modules               | (all methods)            | `ref <generic.html>`__          |
-+-------------------------------+--------------------------+---------------------------------+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
 
-Features
-------------
+Minor Changes
+-------------
 
--  Full FortiManager JRPC URLs coverage (more than 700 modules).
--  Smooth migration for legacy playbooks.
--  Flexible error handling mechanism.
--  Multiple workspace modes supported.
--  Module quick workaround technique: ``bypass_validation``
--  Specilized modules: ``fmgr_fact``, ``fmgr_move``, ``fmgr_clone`` and
-   ``fmgr_generic``.
--  Runnable examples `repository <example.html>`__.
+- Renamed the input argument "message" to "fmgr_message" to comply with Ansible requirements.
+
+Bugfixes
+--------
+
+- Improved bypass_validation. If you now set bypass_validation to true, it will allow you to send parameters that are not defined in the schema.
+- Improved documentation.
+- Supported "state:absent" for all modules end with "_objectmember", "_scopemember", and "_scetionvalue".
+- Supported FortiManager 6.4.14, 7.0.11, 7.0.12, 7.2.5.
+- Improved documentation, added description for all "no description" modules.
 
 
 |
 
-Release Galaxy 2.0.1
-~~~~~~~~~~~~~~~~~~~~~
+
+Release Galaxy 2.4.0
+~~~~~~~~~~~~~~~~~~~~
 
 Release Target
----------------
+----------------
 
-FortiManager version: ``v6.0.x``
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
 
-Features & Bugfix
-------------------
 
-- Fix attribute:type for module: ``fmgr_firewall_addresss`` and ``fmgr_firewall_addresss6``.
-- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/9
-- Fix mantis #0672125
-- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/11
-- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/12
-- ``fmgr_fact`` module supports full selectors.
-- Remove all default value in module argument specification to avoid confusion
-- Fix module ``fmgr_templategroup`` attribute: member
+Minor Changes
+-------------
+
+- Added deprecated warning to invalid argument name, please change the invalid argument name such as "var-name", "var name" to "var_name".
+- Supported fortimanager 7.4.2, 21 new modules.
+
+Bugfixes
+--------
+
+- Changed revision to v_range to reduce the size of the code.
+- Fixed the behavior of module fmgr_firewall_internetservicecustom.
+- Fixed the behavior of some modules that contain the argument policyid.
+- Improved example ansible playbooks.
+- Improved the logic of fmgr_fact, fmgr_clone, fmgr_rename, fmgr_move. Usage remains unchanged.
+- Reduced the size of module_arg_spec in each module.
+- Removed most of the sanity test ignores.
+
+|
+
+Release Galaxy 2.3.1
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
+
+Bugfixes
+--------
+- Added missing enum values for some arguments.
+- Change minimum required ansible-core version to 2.14.0
+- Fixed a bug where ansible may skip update incorrectly.
+- Support FortiManager 7.0.10
 
 
 |
 
-Release Galaxy 2.0.2
-~~~~~~~~~~~~~~~~~~~~~
+Release Galaxy 2.3.0
+~~~~~~~~~~~~~~~~~~~~
 
 Release Target
----------------
+----------------
 
-FortiManager version: ``v6.0.x``
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
 
-Features & Bugfix
-------------------
 
-- Fix ``pylint`` sanity test error.
+Minor Changes
+-------------
+
+- Some arguments can support both list or string format input now.
+- Support newest versions for FortiManager v6.2 ~ v7.4
+
+Bugfixes
+--------
+
+- Add 'access_token' in 'fmgr_generic'.
+- Add param 'platform' in 'fmgr_wtpprofile' and param 'interface' in 'fmgr_fsp_vlan'.
+- Fix a bug that collection may update the resource when it does not need to.
+- Fix some modules missing revision (used for version warning).
+- Fixed the bug that would report an error when providing access_token and username/password at the same time.
+- Improve document.
+- Improve fmgr_fact. 'changed' will not be true anymore if you get the result.
+- Improve sanity tests.
+- When the JSON data sent by FortiManager is not in the right format, the collection can still execute correctly.
 
 
 |
 
-Release Galaxy 2.0.3
-~~~~~~~~~~~~~~~~~~~~~
+Release Galaxy 2.2.1
+~~~~~~~~~~~~~~~~~~~~
 
 Release Target
----------------
+----------------
 
-FortiManager version: ``v6.0.x``
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
 
 Features & Bugfix
 ------------------
 
- - Fix mantis issue #712100
- - Fix mantis issue #712116
- - Fix issues like https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/18
- - Fix issues like https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/23
- - Add `object position` of module:``fmgr_pkg_firewall_policy``
- - Add ``enable_log`` option to support explicit logging
- - Add ``proposed_method`` option to support overriding underlying request method
+- Fix a bug where the user may not be able to use workspace_locking_adom if the workspace mode is per-adom.
+- Improve login logic in httpapi plugin.
+- Support newest FortiManager versions.
+
+
+|
+
+
+Release Galaxy 2.2.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
+
+Features & Bugfix
+------------------
+
+- Support newest versions in  ``v6.x`` and ``v7.x``. 139 new modules.
+- Fix version_added in the document. The value of this parameter is the version each module first supported in the FortiManager Ansible Collection.
+- Fix many sanity test warnings and errors.
+- Fix a bug where users might not be able to log in.
+- Fix a bug where users might not be able to use workspace_locking_adom correctly.
+- Support token based authentication.
+- Correct the behavior of module ``fmgr_pkg_firewall_consolidated_policy_sectionvalue`` and ``fmgr_pkg_firewall_securitypolicy_sectionvalue``.
+- Modify `Module Digest <digest.html>`__  page.
+
+
+New Modules
+------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| Module Name                                                                                                                                                             | Earliest Version |
++=========================================================================================================================================================================+==================+
+| `fmgr_application_casi_profile <docgen/fmgr_application_casi_profile.html>`__                                                                                           | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_casi_profile_entries <docgen/fmgr_application_casi_profile_entries.html>`__                                                                           | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservice <docgen/fmgr_application_internetservice.html>`__                                                                                     | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservice_entry <docgen/fmgr_application_internetservice_entry.html>`__                                                                         | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservicecustom <docgen/fmgr_application_internetservicecustom.html>`__                                                                         | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservicecustom_disableentry <docgen/fmgr_application_internetservicecustom_disableentry.html>`__                                               | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservicecustom_disableentry_iprange <docgen/fmgr_application_internetservicecustom_disableentry_iprange.html>`__                               | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservicecustom_entry <docgen/fmgr_application_internetservicecustom_entry.html>`__                                                             | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_application_internetservicecustom_entry_portrange <docgen/fmgr_application_internetservicecustom_entry_portrange.html>`__                                         | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_cloud_orchestaws <docgen/fmgr_cloud_orchestaws.html>`__                                                                                                           | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_cloud_orchestawsconnector <docgen/fmgr_cloud_orchestawsconnector.html>`__                                                                                         | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_cloud_orchestawstemplate_autoscaleexistingvpc <docgen/fmgr_cloud_orchestawstemplate_autoscaleexistingvpc.html>`__                                                 | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_cloud_orchestawstemplate_autoscalenewvpc <docgen/fmgr_cloud_orchestawstemplate_autoscalenewvpc.html>`__                                                           | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_cloud_orchestawstemplate_autoscaletgwnewvpc <docgen/fmgr_cloud_orchestawstemplate_autoscaletgwnewvpc.html>`__                                                     | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_cloud_orchestration <docgen/fmgr_cloud_orchestration.html>`__                                                                                                     | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_devprof_log_syslogd_filter_excludelist <docgen/fmgr_devprof_log_syslogd_filter_excludelist.html>`__                                                               | ``v7.0.4``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_devprof_log_syslogd_filter_excludelist_fields <docgen/fmgr_devprof_log_syslogd_filter_excludelist_fields.html>`__                                                 | ``v7.0.4``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_devprof_log_syslogd_filter_freestyle <docgen/fmgr_devprof_log_syslogd_filter_freestyle.html>`__                                                                   | ``v7.0.4``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_devprof_log_syslogd_setting_customfieldname <docgen/fmgr_devprof_log_syslogd_setting_customfieldname.html>`__                                                     | ``v7.0.4``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_dnsfilter_profile_urlfilter <docgen/fmgr_dnsfilter_profile_urlfilter.html>`__                                                                                     | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_dnsfilter_urlfilter <docgen/fmgr_dnsfilter_urlfilter.html>`__                                                                                                     | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_dnsfilter_urlfilter_entries <docgen/fmgr_dnsfilter_urlfilter_entries.html>`__                                                                                     | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_emailfilter_profile_yahoomail <docgen/fmgr_emailfilter_profile_yahoomail.html>`__                                                                                 | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_dataplan <docgen/fmgr_extensioncontroller_dataplan.html>`__                                                                                   | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile <docgen/fmgr_extensioncontroller_extenderprofile.html>`__                                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular <docgen/fmgr_extensioncontroller_extenderprofile_cellular.html>`__                                                   | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_controllerreport <docgen/fmgr_extensioncontroller_extenderprofile_cellular_controllerreport.html>`__                 | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_modem1 <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem1.html>`__                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_modem1_autoswitch <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem1_autoswitch.html>`__               | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_modem2 <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem2.html>`__                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_modem2_autoswitch <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem2_autoswitch.html>`__               | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_smsnotification <docgen/fmgr_extensioncontroller_extenderprofile_cellular_smsnotification.html>`__                   | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_alert <docgen/fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_alert.html>`__       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_receiver <docgen/fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_receiver.html>`__ | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_lanextension <docgen/fmgr_extensioncontroller_extenderprofile_lanextension.html>`__                                           | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_extensioncontroller_extenderprofile_lanextension_backhaul <docgen/fmgr_extensioncontroller_extenderprofile_lanextension_backhaul.html>`__                         | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6 <docgen/fmgr_firewall_accessproxy6.html>`__                                                                                                 | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6_apigateway <docgen/fmgr_firewall_accessproxy6_apigateway.html>`__                                                                           | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6_apigateway6 <docgen/fmgr_firewall_accessproxy6_apigateway6.html>`__                                                                         | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6_apigateway6_realservers <docgen/fmgr_firewall_accessproxy6_apigateway6_realservers.html>`__                                                 | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6_apigateway6_sslciphersuites <docgen/fmgr_firewall_accessproxy6_apigateway6_sslciphersuites.html>`__                                         | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6_apigateway_realservers <docgen/fmgr_firewall_accessproxy6_apigateway_realservers.html>`__                                                   | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_accessproxy6_apigateway_sslciphersuites <docgen/fmgr_firewall_accessproxy6_apigateway_sslciphersuites.html>`__                                           | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_address6_profilelist <docgen/fmgr_firewall_address6_profilelist.html>`__                                                                                 | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_address_profilelist <docgen/fmgr_firewall_address_profilelist.html>`__                                                                                   | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_explicitproxyaddress <docgen/fmgr_firewall_explicitproxyaddress.html>`__                                                                                 | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_explicitproxyaddress_headergroup <docgen/fmgr_firewall_explicitproxyaddress_headergroup.html>`__                                                         | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_explicitproxyaddrgrp <docgen/fmgr_firewall_explicitproxyaddrgrp.html>`__                                                                                 | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_gtp_messagefilter <docgen/fmgr_firewall_gtp_messagefilter.html>`__                                                                                       | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_ippoolgrp <docgen/fmgr_firewall_ippoolgrp.html>`__                                                                                                       | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_firewall_networkservicedynamic <docgen/fmgr_firewall_networkservicedynamic.html>`__                                                                               | ``v7.2.2``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_fmg_fabric_authorization_template <docgen/fmgr_fmg_fabric_authorization_template.html>`__                                                                         | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_fmg_fabric_authorization_template_platforms <docgen/fmgr_fmg_fabric_authorization_template_platforms.html>`__                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_fmupdate_fwmsetting_upgradetimeout <docgen/fmgr_fmupdate_fwmsetting_upgradetimeout.html>`__                                                                       | ``v7.0.5``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_fsp_vlan_dynamicmapping_interface_vrrp <docgen/fmgr_fsp_vlan_dynamicmapping_interface_vrrp.html>`__                                                               | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_fsp_vlan_dynamicmapping_interface_vrrp_proxyarp <docgen/fmgr_fsp_vlan_dynamicmapping_interface_vrrp_proxyarp.html>`__                                             | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_fsp_vlan_interface_vrrp_proxyarp <docgen/fmgr_fsp_vlan_interface_vrrp_proxyarp.html>`__                                                                           | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_ips_baseline_sensor <docgen/fmgr_ips_baseline_sensor.html>`__                                                                                                     | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_ips_baseline_sensor_entries <docgen/fmgr_ips_baseline_sensor_entries.html>`__                                                                                     | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_ips_baseline_sensor_entries_exemptip <docgen/fmgr_ips_baseline_sensor_entries_exemptip.html>`__                                                                   | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_ips_baseline_sensor_filter <docgen/fmgr_ips_baseline_sensor_filter.html>`__                                                                                       | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_ips_baseline_sensor_override <docgen/fmgr_ips_baseline_sensor_override.html>`__                                                                                   | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_ips_baseline_sensor_override_exemptip <docgen/fmgr_ips_baseline_sensor_override_exemptip.html>`__                                                                 | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_log_npuserver <docgen/fmgr_log_npuserver.html>`__                                                                                                                 | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_log_npuserver_servergroup <docgen/fmgr_log_npuserver_servergroup.html>`__                                                                                         | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_log_npuserver_serverinfo <docgen/fmgr_log_npuserver_serverinfo.html>`__                                                                                           | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_explicitproxypolicy <docgen/fmgr_pkg_firewall_explicitproxypolicy.html>`__                                                                           | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_explicitproxypolicy_identitybasedpolicy <docgen/fmgr_pkg_firewall_explicitproxypolicy_identitybasedpolicy.html>`__                                   | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_explicitproxypolicy_sectionvalue <docgen/fmgr_pkg_firewall_explicitproxypolicy_sectionvalue.html>`__                                                 | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_hyperscalepolicy <docgen/fmgr_pkg_firewall_hyperscalepolicy.html>`__                                                                                 | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_hyperscalepolicy46 <docgen/fmgr_pkg_firewall_hyperscalepolicy46.html>`__                                                                             | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_hyperscalepolicy6 <docgen/fmgr_pkg_firewall_hyperscalepolicy6.html>`__                                                                               | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_firewall_hyperscalepolicy64 <docgen/fmgr_pkg_firewall_hyperscalepolicy64.html>`__                                                                             | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pkg_user_nacpolicy <docgen/fmgr_pkg_user_nacpolicy.html>`__                                                                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_config_pblock_firewall_consolidated_policy <docgen/fmgr_pm_config_pblock_firewall_consolidated_policy.html>`__                                                 | ``v7.0.3``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_config_pblock_firewall_consolidated_policy_sectionvalue <docgen/fmgr_pm_config_pblock_firewall_consolidated_policy_sectionvalue.html>`__                       | ``v7.0.3``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_config_pblock_firewall_policy6 <docgen/fmgr_pm_config_pblock_firewall_policy6.html>`__                                                                         | ``v7.0.3``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_config_pblock_firewall_policy6_sectionvalue <docgen/fmgr_pm_config_pblock_firewall_policy6_sectionvalue.html>`__                                               | ``v7.0.3``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_devprof_scopemember <docgen/fmgr_pm_devprof_scopemember.html>`__                                                                                               | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_pkg_scopemember <docgen/fmgr_pm_pkg_scopemember.html>`__                                                                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_pm_wanprof_scopemember <docgen/fmgr_pm_wanprof_scopemember.html>`__                                                                                               | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_securityconsole_template_cli_preview <docgen/fmgr_securityconsole_template_cli_preview.html>`__                                                                   | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_acl_group <docgen/fmgr_switchcontroller_acl_group.html>`__                                                                                       | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_acl_ingress <docgen/fmgr_switchcontroller_acl_ingress.html>`__                                                                                   | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_acl_ingress_action <docgen/fmgr_switchcontroller_acl_ingress_action.html>`__                                                                     | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_acl_ingress_classifier <docgen/fmgr_switchcontroller_acl_ingress_classifier.html>`__                                                             | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_dynamicportpolicy <docgen/fmgr_switchcontroller_dynamicportpolicy.html>`__                                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_dynamicportpolicy_policy <docgen/fmgr_switchcontroller_dynamicportpolicy_policy.html>`__                                                         | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_fortilinksettings <docgen/fmgr_switchcontroller_fortilinksettings.html>`__                                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_fortilinksettings_nacports <docgen/fmgr_switchcontroller_fortilinksettings_nacports.html>`__                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_macpolicy <docgen/fmgr_switchcontroller_macpolicy.html>`__                                                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_managedswitch_dhcpsnoopingstaticclient <docgen/fmgr_switchcontroller_managedswitch_dhcpsnoopingstaticclient.html>`__                             | ``v7.2.2``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_managedswitch_ports_dhcpsnoopoption82override <docgen/fmgr_switchcontroller_managedswitch_ports_dhcpsnoopoption82override.html>`__               | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_managedswitch_staticmac <docgen/fmgr_switchcontroller_managedswitch_staticmac.html>`__                                                           | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_managedswitch_stpinstance <docgen/fmgr_switchcontroller_managedswitch_stpinstance.html>`__                                                       | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_switchinterfacetag <docgen/fmgr_switchcontroller_switchinterfacetag.html>`__                                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_trafficpolicy <docgen/fmgr_switchcontroller_trafficpolicy.html>`__                                                                               | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_switchcontroller_vlanpolicy <docgen/fmgr_switchcontroller_vlanpolicy.html>`__                                                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_sys_cloud_orchest <docgen/fmgr_sys_cloud_orchest.html>`__                                                                                                         | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_backgroundssescan <docgen/fmgr_system_npu_backgroundssescan.html>`__                                                                                   | ``v6.4.8``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_dosoptions <docgen/fmgr_system_npu_dosoptions.html>`__                                                                                                 | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_dswdtsprofile <docgen/fmgr_system_npu_dswdtsprofile.html>`__                                                                                           | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_dswqueuedtsprofile <docgen/fmgr_system_npu_dswqueuedtsprofile.html>`__                                                                                 | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_hpe <docgen/fmgr_system_npu_hpe.html>`__                                                                                                               | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_ipreassembly <docgen/fmgr_system_npu_ipreassembly.html>`__                                                                                             | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_npqueues <docgen/fmgr_system_npu_npqueues.html>`__                                                                                                     | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_npqueues_ethernettype <docgen/fmgr_system_npu_npqueues_ethernettype.html>`__                                                                           | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_npqueues_ipprotocol <docgen/fmgr_system_npu_npqueues_ipprotocol.html>`__                                                                               | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_npqueues_ipservice <docgen/fmgr_system_npu_npqueues_ipservice.html>`__                                                                                 | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_npqueues_profile <docgen/fmgr_system_npu_npqueues_profile.html>`__                                                                                     | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_npqueues_scheduler <docgen/fmgr_system_npu_npqueues_scheduler.html>`__                                                                                 | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_portpathoption <docgen/fmgr_system_npu_portpathoption.html>`__                                                                                         | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_ssehascan <docgen/fmgr_system_npu_ssehascan.html>`__                                                                                                   | ``v6.4.10``      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_swtrhash <docgen/fmgr_system_npu_swtrhash.html>`__                                                                                                     | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_tcptimeoutprofile <docgen/fmgr_system_npu_tcptimeoutprofile.html>`__                                                                                   | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_npu_udptimeoutprofile <docgen/fmgr_system_npu_udptimeoutprofile.html>`__                                                                                   | ``v6.4.7``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_objecttag <docgen/fmgr_system_objecttag.html>`__                                                                                                           | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_sdnconnector_compartmentlist <docgen/fmgr_system_sdnconnector_compartmentlist.html>`__                                                                     | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_sdnconnector_ociregionlist <docgen/fmgr_system_sdnconnector_ociregionlist.html>`__                                                                         | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_system_socfabric_trustedlist <docgen/fmgr_system_socfabric_trustedlist.html>`__                                                                                   | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_um_image_upgrade <docgen/fmgr_um_image_upgrade.html>`__                                                                                                           | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_um_image_upgrade_ext <docgen/fmgr_um_image_upgrade_ext.html>`__                                                                                                   | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_user_certificate <docgen/fmgr_user_certificate.html>`__                                                                                                           | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_user_deviceaccesslist <docgen/fmgr_user_deviceaccesslist.html>`__                                                                                                 | ``v6.2.2``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_user_deviceaccesslist_devicelist <docgen/fmgr_user_deviceaccesslist_devicelist.html>`__                                                                           | ``v6.2.2``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_user_flexvm <docgen/fmgr_user_flexvm.html>`__                                                                                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_user_json <docgen/fmgr_user_json.html>`__                                                                                                                         | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_user_saml_dynamicmapping <docgen/fmgr_user_saml_dynamicmapping.html>`__                                                                                           | ``v7.0.5``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_vpnsslweb_portal_landingpage <docgen/fmgr_vpnsslweb_portal_landingpage.html>`__                                                                                   | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_vpnsslweb_portal_landingpage_formdata <docgen/fmgr_vpnsslweb_portal_landingpage_formdata.html>`__                                                                 | ``v7.4.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_vpnsslweb_virtualdesktopapplist <docgen/fmgr_vpnsslweb_virtualdesktopapplist.html>`__                                                                             | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_vpnsslweb_virtualdesktopapplist_apps <docgen/fmgr_vpnsslweb_virtualdesktopapplist_apps.html>`__                                                                   | ``v6.2.0``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_accesscontrollist <docgen/fmgr_wireless_accesscontrollist.html>`__                                                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_accesscontrollist_layer3ipv4rules <docgen/fmgr_wireless_accesscontrollist_layer3ipv4rules.html>`__                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_accesscontrollist_layer3ipv6rules <docgen/fmgr_wireless_accesscontrollist_layer3ipv6rules.html>`__                                                       | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_address <docgen/fmgr_wireless_address.html>`__                                                                                                           | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_addrgrp <docgen/fmgr_wireless_addrgrp.html>`__                                                                                                           | ``v7.0.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_ssidpolicy <docgen/fmgr_wireless_ssidpolicy.html>`__                                                                                                     | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| `fmgr_wireless_syslogprofile <docgen/fmgr_wireless_syslogprofile.html>`__                                                                                               | ``v7.2.1``       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+|
+
+
+Release Galaxy 2.1.7
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.0`` and ``v7.2.0``
+
+
+Features & Bugfix
+------------------
+
+- Fix compatibility issue for ansible 2.9.x and ansible-base 2.10.x.
+- Support Ansible changelogs.
+
+|
+
+
+Release Galaxy 2.1.6
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.0`` and ``v7.2.0``
+
+New Modules
+------------------
+
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| Module Name                                                               | Version    | Location                                                                                           |
++===========================================================================+============+====================================================================================================+
+| fmgr_arrpprofile                                                          | ``v7.2.0`` | `module <docgen/fmgr_arrpprofile.html>`__                                                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_dlp_datatype                                                         | ``v7.2.0`` | `module <docgen/fmgr_dlp_datatype.html>`__                                                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_dlp_dictionary_entries                                               | ``v7.2.0`` | `module <docgen/fmgr_dlp_dictionary_entries.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_dlp_dictionary                                                       | ``v7.2.0`` | `module <docgen/fmgr_dlp_dictionary.html>`__                                                       |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_dlp_profile                                                          | ``v7.2.0`` | `module <docgen/fmgr_dlp_profile.html>`__                                                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_dlp_profile_rule                                                     | ``v7.2.0`` | `module <docgen/fmgr_dlp_profile_rule.html>`__                                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_dlp_sensor_entries                                                   | ``v7.2.0`` | `module <docgen/fmgr_dlp_sensor_entries.html>`__                                                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_endpointcontrol_fctems                                               | ``v7.2.0`` | `module <docgen/fmgr_endpointcontrol_fctems.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_controllerreport         | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_controllerreport.html>`__         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_modem1_autoswitch        | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem1_autoswitch.html>`__        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_modem1                   | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem1.html>`__                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_modem2_autoswitch        | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem2_autoswitch.html>`__        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_modem2                   | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem2.html>`__                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular                          | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular.html>`__                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_smsnotification_alert    | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_smsnotification_alert.html>`__    |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_smsnotification          | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_smsnotification.html>`__          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_cellular_smsnotification_receiver | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_smsnotification_receiver.html>`__ |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_lanextension_backhaul             | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_lanextension_backhaul.html>`__             |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile_lanextension                      | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_lanextension.html>`__                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_extendercontroller_extenderprofile                                   | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile.html>`__                                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_firewall_accessproxy_apigateway6                                     | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxy_apigateway6.html>`__                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_firewall_accessproxy_apigateway6_realservers                         | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxy_apigateway6_realservers.html>`__                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_firewall_accessproxy_apigateway6_sslciphersuites                     | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxy_apigateway6_sslciphersuites.html>`__                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_firewall_accessproxyvirtualhost                                      | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxyvirtualhost.html>`__                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_firewall_vip6_dynamicmapping_realservers                             | ``v7.2.0`` | `module <docgen/fmgr_firewall_vip6_dynamicmapping_realservers.html>`__                             |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_firewall_vip6_dynamicmapping_sslciphersuites                         | ``v7.2.0`` | `module <docgen/fmgr_firewall_vip6_dynamicmapping_sslciphersuites.html>`__                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_fmg_device_blueprint                                                 | ``v7.2.0`` | `module <docgen/fmgr_fmg_device_blueprint.html>`__                                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_fmg_variable_dynamicmapping                                          | ``v7.2.0`` | `module <docgen/fmgr_fmg_variable_dynamicmapping.html>`__                                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_fmg_variable                                                         | ``v7.2.0`` | `module <docgen/fmgr_fmg_variable.html>`__                                                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_anqpvenueurl                                               | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_anqpvenueurl.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_anqpvenueurl_valuelist                                     | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_anqpvenueurl_valuelist.html>`__                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_h2qpadviceofcharge_aoclist_planinfo                        | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qpadviceofcharge_aoclist_planinfo.html>`__                        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_h2qpadviceofcharge_aoclist                                 | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qpadviceofcharge_aoclist.html>`__                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_h2qpadviceofcharge                                         | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qpadviceofcharge.html>`__                                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_h2qposuprovidernai_nailist                                 | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qposuprovidernai_nailist.html>`__                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_h2qposuprovidernai                                         | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qposuprovidernai.html>`__                                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_h2qptermsandconditions                                     | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qptermsandconditions.html>`__                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_icon_iconlist                                              | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_icon_iconlist.html>`__                                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_hotspot20_icon                                                       | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_icon.html>`__                                                       |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_nacprofile                                                           | ``v7.2.0`` | `module <docgen/fmgr_nacprofile.html>`__                                                           |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pkg_firewall_acl6                                                    | ``v7.2.0`` | `module <docgen/fmgr_pkg_firewall_acl6.html>`__                                                    |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pkg_firewall_acl                                                     | ``v7.2.0`` | `module <docgen/fmgr_pkg_firewall_acl.html>`__                                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pm_config_pblock_firewall_policy                                     | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_policy.html>`__                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pm_config_pblock_firewall_policy_sectionvalue                        | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_policy_sectionvalue.html>`__                        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pm_config_pblock_firewall_securitypolicy                             | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_securitypolicy.html>`__                             |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pm_config_pblock_firewall_securitypolicy_sectionvalue                | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_securitypolicy_sectionvalue.html>`__                |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pm_pblock_adom                                                       | ``v7.2.0`` | `module <docgen/fmgr_pm_pblock_adom.html>`__                                                       |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_pm_pblock_obj                                                        | ``v7.2.0`` | `module <docgen/fmgr_pm_pblock_obj.html>`__                                                        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_accesslist6                                                   | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist6.html>`__                                                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_accesslist6_rule                                              | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist6_rule.html>`__                                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_accesslist                                                    | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist.html>`__                                                    |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_accesslist_rule                                               | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist_rule.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_aspathlist                                                    | ``v7.2.0`` | `module <docgen/fmgr_router_aspathlist.html>`__                                                    |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_aspathlist_rule                                               | ``v7.2.0`` | `module <docgen/fmgr_router_aspathlist_rule.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_communitylist                                                 | ``v7.2.0`` | `module <docgen/fmgr_router_communitylist.html>`__                                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_communitylist_rule                                            | ``v7.2.0`` | `module <docgen/fmgr_router_communitylist_rule.html>`__                                            |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_prefixlist6                                                   | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist6.html>`__                                                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_prefixlist6_rule                                              | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist6_rule.html>`__                                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_prefixlist                                                    | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist.html>`__                                                    |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_prefixlist_rule                                               | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist_rule.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_routemap                                                      | ``v7.2.0`` | `module <docgen/fmgr_router_routemap.html>`__                                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_router_routemap_rule                                                 | ``v7.2.0`` | `module <docgen/fmgr_router_routemap_rule.html>`__                                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_securityconsole_cliprof_check                                        | ``v7.2.0`` | `module <docgen/fmgr_securityconsole_cliprof_check.html>`__                                        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_switchcontroller_dsl_policy                                          | ``v7.2.0`` | `module <docgen/fmgr_switchcontroller_dsl_policy.html>`__                                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_sys_hitcount                                                         | ``v7.2.0`` | `module <docgen/fmgr_sys_hitcount.html>`__                                                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_sys_task_result                                                      | ``v7.2.0`` | `module <docgen/fmgr_sys_task_result.html>`__                                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_ha_monitoredinterfaces                                        | ``v7.2.0`` | `module <docgen/fmgr_system_ha_monitoredinterfaces.html>`__                                        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_ha_monitoredips                                               | ``v7.2.0`` | `module <docgen/fmgr_system_ha_monitoredips.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_hascheduledcheck                                              | ``v7.2.0`` | `module <docgen/fmgr_system_hascheduledcheck.html>`__                                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_interface_member                                              | ``v7.2.0`` | `module <docgen/fmgr_system_interface_member.html>`__                                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_localinpolicy6                                                | ``v7.2.0`` | `module <docgen/fmgr_system_localinpolicy6.html>`__                                                |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_localinpolicy                                                 | ``v7.2.0`` | `module <docgen/fmgr_system_localinpolicy.html>`__                                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_log_fospolicystats                                            | ``v7.2.0`` | `module <docgen/fmgr_system_log_fospolicystats.html>`__                                            |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_log_ratelimit_ratelimits                                      | ``v7.2.0`` | `module <docgen/fmgr_system_log_ratelimit_ratelimits.html>`__                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_log_topology                                                  | ``v7.2.0`` | `module <docgen/fmgr_system_log_topology.html>`__                                                  |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu_fpanomaly                                                 | ``v7.2.0`` | `module <docgen/fmgr_system_npu_fpanomaly.html>`__                                                 |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu_isfnpqueues                                               | ``v7.2.0`` | `module <docgen/fmgr_system_npu_isfnpqueues.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu_portcpumap                                                | ``v7.2.0`` | `module <docgen/fmgr_system_npu_portcpumap.html>`__                                                |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu_portnpumap                                                | ``v7.2.0`` | `module <docgen/fmgr_system_npu_portnpumap.html>`__                                                |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu_priorityprotocol                                          | ``v7.2.0`` | `module <docgen/fmgr_system_npu_priorityprotocol.html>`__                                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu                                                           | ``v7.2.0`` | `module <docgen/fmgr_system_npu.html>`__                                                           |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_npu_swehhash                                                  | ``v7.2.0`` | `module <docgen/fmgr_system_npu_swehhash.html>`__                                                  |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_sdnconnector_externalaccountlist                              | ``v7.2.0`` | `module <docgen/fmgr_system_sdnconnector_externalaccountlist.html>`__                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_sdnconnector_forwardingrule                                   | ``v7.2.0`` | `module <docgen/fmgr_system_sdnconnector_forwardingrule.html>`__                                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_sdnconnector_gcpprojectlist                                   | ``v7.2.0`` | `module <docgen/fmgr_system_sdnconnector_gcpprojectlist.html>`__                                   |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_sslciphersuites                                               | ``v7.2.0`` | `module <docgen/fmgr_system_sslciphersuites.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_system_webproxy                                                      | ``v7.2.0`` | `module <docgen/fmgr_system_webproxy.html>`__                                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_user_connector                                                       | ``v7.2.0`` | `module <docgen/fmgr_user_connector.html>`__                                                       |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_user_group_dynamicmapping_guest                                      | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping_guest.html>`__                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_user_group_dynamicmapping_match                                      | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping_match.html>`__                                      |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_user_group_dynamicmapping                                            | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping.html>`__                                            |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_user_group_dynamicmapping_sslvpnoschecklist                          | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping_sslvpnoschecklist.html>`__                          |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_user_nsx_service                                                     | ``v7.2.0`` | `module <docgen/fmgr_user_nsx_service.html>`__                                                     |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_vap_vlanname                                                         | ``v7.2.0`` | `module <docgen/fmgr_vap_vlanname.html>`__                                                         |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_voip_profile_msrp                                                    | ``v7.2.0`` | `module <docgen/fmgr_voip_profile_msrp.html>`__                                                    |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_vpn_ipsec_fec_mappings                                               | ``v7.2.0`` | `module <docgen/fmgr_vpn_ipsec_fec_mappings.html>`__                                               |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_vpn_ipsec_fec                                                        | ``v7.2.0`` | `module <docgen/fmgr_vpn_ipsec_fec.html>`__                                                        |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+| fmgr_wtpprofile_eslsesdongle                                              | ``v7.2.0`` | `module <docgen/fmgr_wtpprofile_eslsesdongle.html>`__                                              |
++---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
+
+
+|
+
+Release Galaxy 2.1.5
+~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+
+
+Features & Bugfix
+------------------
+
+- fix enable_log parameter issue for recent ansible release.
+- fix `fmgr_dvm_cmd_add_device.device.os_ver` parameter enum values.
+- fix some sphinx document minor typos.
+- fix readthedoc requirement. 
+
+|
+
+Release Galaxy 2.1.4
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+ 
+Features & Bugfix
+------------------
+
+- new module: `fmgr_rename <fmgr_rename.html>`__ to rename an object.
+- skip duplicated updates for existing objects.
+- fix workspace locking issue: auto commit in ``normal`` workspace mode.
+- enrich description for some parameter options of modules.
+- replace examples with real-world cases for some modules.
+- new module: `fmgr_export` to export running config to runable playbooks.
+- Support forticloud access token based authentication.
+
+
+|
+
+
+Release Galaxy 2.1.3
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+
+Features & Bugfix
+------------------
+
+Fix schema for module:
+
+- fmgr_system_alertevent
+- fmgr_user_group
+
+Fix primary key requirement when it changes in between versions, modules being impacted:
+
+- fmgr_firewall_internetservicecustom
+- fmgr_user_adgrp
+
+
+|
+
+Release Galaxy 2.1.2
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+
+Features & Bugfix
+------------------
+
+Remove duplicated enum values for arrayed attributes.
+
+- fmgr_authentication_scheme
+- fmgr_devprof_system_snmp_community
+- fmgr_devprof_system_snmp_user
+- fmgr_dlp_sensor
+- fmgr_dlp_sensor_filter
+- fmgr_dvm_cmd_import_devlist
+- fmgr_dvmdb_adom
+- fmgr_emailfilter_profile
+- fmgr_firewall_gtp
+- fmgr_firewall_gtp_policyv2
+- fmgr_firewall_vip
+- fmgr_firewall_vip6
+- fmgr_firewall_vip6_sslciphersuites
+- fmgr_firewall_vip6_sslserverciphersuites
+- fmgr_firewall_vip_dynamicmapping
+- fmgr_firewall_vip_dynamicmapping_sslciphersuites
+- fmgr_firewall_vip_sslciphersuites
+- fmgr_firewall_vip_sslserverciphersuites
+- fmgr_fmupdate_fdssetting
+- fmgr_fsp_vlan_interface
+- fmgr_fsp_vlan_interface_ipv6
+- fmgr_fsp_vlan_interface_secondaryip
+- fmgr_sshfilter_profile
+- fmgr_switchcontroller_lldpprofile
+- fmgr_system_global
+- fmgr_system_interface
+- fmgr_system_sql
+- fmgr_webfilter_profile
+- fmgr_webfilter_urlfilter
+- fmgr_webfilter_urlfilter_entries
+- fmgr_wtpprofile
+
+|
+
+Release Galaxy 2.1.1
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
+
+Features & Bugfix
+------------------
+
+- Fix multiple-data list in multi-versioning context
 
 |
 
@@ -473,764 +1165,98 @@ Features & Bugfix
 
 |
 
-Release Galaxy 2.1.1
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
----------------
-
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
-
-Features & Bugfix
-------------------
-
-- Fix multiple-data list in multi-versioning context
-
-
-|
-
-Release Galaxy 2.1.2
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
----------------
-
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
-
-Features & Bugfix
-------------------
-
-Remove duplicated enum values for arrayed attributes.
-
-- fmgr_authentication_scheme
-- fmgr_devprof_system_snmp_community
-- fmgr_devprof_system_snmp_user
-- fmgr_dlp_sensor
-- fmgr_dlp_sensor_filter
-- fmgr_dvm_cmd_import_devlist
-- fmgr_dvmdb_adom
-- fmgr_emailfilter_profile
-- fmgr_firewall_gtp
-- fmgr_firewall_gtp_policyv2
-- fmgr_firewall_vip
-- fmgr_firewall_vip6
-- fmgr_firewall_vip6_sslciphersuites
-- fmgr_firewall_vip6_sslserverciphersuites
-- fmgr_firewall_vip_dynamicmapping
-- fmgr_firewall_vip_dynamicmapping_sslciphersuites
-- fmgr_firewall_vip_sslciphersuites
-- fmgr_firewall_vip_sslserverciphersuites
-- fmgr_fmupdate_fdssetting
-- fmgr_fsp_vlan_interface
-- fmgr_fsp_vlan_interface_ipv6
-- fmgr_fsp_vlan_interface_secondaryip
-- fmgr_sshfilter_profile
-- fmgr_switchcontroller_lldpprofile
-- fmgr_system_global
-- fmgr_system_interface
-- fmgr_system_sql
-- fmgr_webfilter_profile
-- fmgr_webfilter_urlfilter
-- fmgr_webfilter_urlfilter_entries
-- fmgr_wtpprofile
-
-|
-
-
-Release Galaxy 2.1.3
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
----------------
-
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
-
-Features & Bugfix
-------------------
-
-Fix schema for module:
-
-- fmgr_system_alertevent
-- fmgr_user_group
-
-Fix primary key requirement when it changes in between versions, modules being impacted:
-
-- fmgr_firewall_internetservicecustom
-- fmgr_user_adgrp
-
-|
-
-Release Galaxy 2.1.4
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
----------------
-
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
- 
-Features & Bugfix
-------------------
-
-- new module: `fmgr_rename <fmgr_rename.html>`__ to rename an object.
-- skip duplicated updates for existing objects.
-- fix workspace locking issue: auto commit in ``normal`` workspace mode.
-- enrich description for some parameter options of modules.
-- replace examples with real-world cases for some modules.
-- new module: `fmgr_export` to export running config to runable playbooks.
-- Support forticloud access token based authentication.
-
-
-|
-
-Release Galaxy 2.1.5
+Release Galaxy 2.0.3
 ~~~~~~~~~~~~~~~~~~~~~
 
 Release Target
-----------------
+---------------
 
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
-
+FortiManager version: ``v6.0.x``
 
 Features & Bugfix
 ------------------
 
-- fix enable_log parameter issue for recent ansible release.
-- fix `fmgr_dvm_cmd_add_device.device.os_ver` parameter enum values.
-- fix some sphinx document minor typos.
-- fix readthedoc requirement. 
+ - Fix mantis issue #712100
+ - Fix mantis issue #712116
+ - Fix issues like https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/18
+ - Fix issues like https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/23
+ - Add `object position` of module:``fmgr_pkg_firewall_policy``
+ - Add ``enable_log`` option to support explicit logging
+ - Add ``proposed_method`` option to support overriding underlying request method
+
 
 |
 
-
-Release Galaxy 2.1.6
-~~~~~~~~~~~~~~~~~~~~
+Release Galaxy 2.0.2
+~~~~~~~~~~~~~~~~~~~~~
 
 Release Target
 ---------------
 
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.0`` and ``v7.2.0``
-
-New Modules
-------------------
-
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| Module Name                                                               | Version    | Location                                                                                           |
-+===========================================================================+============+====================================================================================================+
-| fmgr_arrpprofile                                                          | ``v7.2.0`` | `module <docgen/fmgr_arrpprofile.html>`__                                                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_dlp_datatype                                                         | ``v7.2.0`` | `module <docgen/fmgr_dlp_datatype.html>`__                                                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_dlp_dictionary_entries                                               | ``v7.2.0`` | `module <docgen/fmgr_dlp_dictionary_entries.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_dlp_dictionary                                                       | ``v7.2.0`` | `module <docgen/fmgr_dlp_dictionary.html>`__                                                       |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_dlp_profile                                                          | ``v7.2.0`` | `module <docgen/fmgr_dlp_profile.html>`__                                                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_dlp_profile_rule                                                     | ``v7.2.0`` | `module <docgen/fmgr_dlp_profile_rule.html>`__                                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_dlp_sensor_entries                                                   | ``v7.2.0`` | `module <docgen/fmgr_dlp_sensor_entries.html>`__                                                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_endpointcontrol_fctems                                               | ``v7.2.0`` | `module <docgen/fmgr_endpointcontrol_fctems.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_controllerreport         | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_controllerreport.html>`__         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_modem1_autoswitch        | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem1_autoswitch.html>`__        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_modem1                   | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem1.html>`__                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_modem2_autoswitch        | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem2_autoswitch.html>`__        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_modem2                   | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_modem2.html>`__                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular                          | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular.html>`__                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_smsnotification_alert    | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_smsnotification_alert.html>`__    |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_smsnotification          | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_smsnotification.html>`__          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_cellular_smsnotification_receiver | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_cellular_smsnotification_receiver.html>`__ |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_lanextension_backhaul             | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_lanextension_backhaul.html>`__             |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile_lanextension                      | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile_lanextension.html>`__                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_extendercontroller_extenderprofile                                   | ``v7.2.0`` | `module <docgen/fmgr_extendercontroller_extenderprofile.html>`__                                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_firewall_accessproxy_apigateway6                                     | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxy_apigateway6.html>`__                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_firewall_accessproxy_apigateway6_realservers                         | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxy_apigateway6_realservers.html>`__                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_firewall_accessproxy_apigateway6_sslciphersuites                     | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxy_apigateway6_sslciphersuites.html>`__                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_firewall_accessproxyvirtualhost                                      | ``v7.2.0`` | `module <docgen/fmgr_firewall_accessproxyvirtualhost.html>`__                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_firewall_vip6_dynamicmapping_realservers                             | ``v7.2.0`` | `module <docgen/fmgr_firewall_vip6_dynamicmapping_realservers.html>`__                             |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_firewall_vip6_dynamicmapping_sslciphersuites                         | ``v7.2.0`` | `module <docgen/fmgr_firewall_vip6_dynamicmapping_sslciphersuites.html>`__                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_fmg_device_blueprint                                                 | ``v7.2.0`` | `module <docgen/fmgr_fmg_device_blueprint.html>`__                                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_fmg_variable_dynamicmapping                                          | ``v7.2.0`` | `module <docgen/fmgr_fmg_variable_dynamicmapping.html>`__                                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_fmg_variable                                                         | ``v7.2.0`` | `module <docgen/fmgr_fmg_variable.html>`__                                                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_anqpvenueurl                                               | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_anqpvenueurl.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_anqpvenueurl_valuelist                                     | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_anqpvenueurl_valuelist.html>`__                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_h2qpadviceofcharge_aoclist_planinfo                        | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qpadviceofcharge_aoclist_planinfo.html>`__                        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_h2qpadviceofcharge_aoclist                                 | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qpadviceofcharge_aoclist.html>`__                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_h2qpadviceofcharge                                         | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qpadviceofcharge.html>`__                                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_h2qposuprovidernai_nailist                                 | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qposuprovidernai_nailist.html>`__                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_h2qposuprovidernai                                         | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qposuprovidernai.html>`__                                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_h2qptermsandconditions                                     | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_h2qptermsandconditions.html>`__                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_icon_iconlist                                              | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_icon_iconlist.html>`__                                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_hotspot20_icon                                                       | ``v7.2.0`` | `module <docgen/fmgr_hotspot20_icon.html>`__                                                       |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_nacprofile                                                           | ``v7.2.0`` | `module <docgen/fmgr_nacprofile.html>`__                                                           |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pkg_firewall_acl6                                                    | ``v7.2.0`` | `module <docgen/fmgr_pkg_firewall_acl6.html>`__                                                    |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pkg_firewall_acl                                                     | ``v7.2.0`` | `module <docgen/fmgr_pkg_firewall_acl.html>`__                                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pm_config_pblock_firewall_policy                                     | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_policy.html>`__                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pm_config_pblock_firewall_policy_sectionvalue                        | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_policy_sectionvalue.html>`__                        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pm_config_pblock_firewall_securitypolicy                             | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_securitypolicy.html>`__                             |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pm_config_pblock_firewall_securitypolicy_sectionvalue                | ``v7.2.0`` | `module <docgen/fmgr_pm_config_pblock_firewall_securitypolicy_sectionvalue.html>`__                |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pm_pblock_adom                                                       | ``v7.2.0`` | `module <docgen/fmgr_pm_pblock_adom.html>`__                                                       |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_pm_pblock_obj                                                        | ``v7.2.0`` | `module <docgen/fmgr_pm_pblock_obj.html>`__                                                        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_accesslist6                                                   | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist6.html>`__                                                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_accesslist6_rule                                              | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist6_rule.html>`__                                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_accesslist                                                    | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist.html>`__                                                    |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_accesslist_rule                                               | ``v7.2.0`` | `module <docgen/fmgr_router_accesslist_rule.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_aspathlist                                                    | ``v7.2.0`` | `module <docgen/fmgr_router_aspathlist.html>`__                                                    |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_aspathlist_rule                                               | ``v7.2.0`` | `module <docgen/fmgr_router_aspathlist_rule.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_communitylist                                                 | ``v7.2.0`` | `module <docgen/fmgr_router_communitylist.html>`__                                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_communitylist_rule                                            | ``v7.2.0`` | `module <docgen/fmgr_router_communitylist_rule.html>`__                                            |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_prefixlist6                                                   | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist6.html>`__                                                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_prefixlist6_rule                                              | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist6_rule.html>`__                                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_prefixlist                                                    | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist.html>`__                                                    |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_prefixlist_rule                                               | ``v7.2.0`` | `module <docgen/fmgr_router_prefixlist_rule.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_routemap                                                      | ``v7.2.0`` | `module <docgen/fmgr_router_routemap.html>`__                                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_router_routemap_rule                                                 | ``v7.2.0`` | `module <docgen/fmgr_router_routemap_rule.html>`__                                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_securityconsole_cliprof_check                                        | ``v7.2.0`` | `module <docgen/fmgr_securityconsole_cliprof_check.html>`__                                        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_switchcontroller_dsl_policy                                          | ``v7.2.0`` | `module <docgen/fmgr_switchcontroller_dsl_policy.html>`__                                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_sys_hitcount                                                         | ``v7.2.0`` | `module <docgen/fmgr_sys_hitcount.html>`__                                                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_sys_task_result                                                      | ``v7.2.0`` | `module <docgen/fmgr_sys_task_result.html>`__                                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_ha_monitoredinterfaces                                        | ``v7.2.0`` | `module <docgen/fmgr_system_ha_monitoredinterfaces.html>`__                                        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_ha_monitoredips                                               | ``v7.2.0`` | `module <docgen/fmgr_system_ha_monitoredips.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_hascheduledcheck                                              | ``v7.2.0`` | `module <docgen/fmgr_system_hascheduledcheck.html>`__                                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_interface_member                                              | ``v7.2.0`` | `module <docgen/fmgr_system_interface_member.html>`__                                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_localinpolicy6                                                | ``v7.2.0`` | `module <docgen/fmgr_system_localinpolicy6.html>`__                                                |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_localinpolicy                                                 | ``v7.2.0`` | `module <docgen/fmgr_system_localinpolicy.html>`__                                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_log_fospolicystats                                            | ``v7.2.0`` | `module <docgen/fmgr_system_log_fospolicystats.html>`__                                            |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_log_ratelimit_ratelimits                                      | ``v7.2.0`` | `module <docgen/fmgr_system_log_ratelimit_ratelimits.html>`__                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_log_topology                                                  | ``v7.2.0`` | `module <docgen/fmgr_system_log_topology.html>`__                                                  |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu_fpanomaly                                                 | ``v7.2.0`` | `module <docgen/fmgr_system_npu_fpanomaly.html>`__                                                 |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu_isfnpqueues                                               | ``v7.2.0`` | `module <docgen/fmgr_system_npu_isfnpqueues.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu_portcpumap                                                | ``v7.2.0`` | `module <docgen/fmgr_system_npu_portcpumap.html>`__                                                |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu_portnpumap                                                | ``v7.2.0`` | `module <docgen/fmgr_system_npu_portnpumap.html>`__                                                |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu_priorityprotocol                                          | ``v7.2.0`` | `module <docgen/fmgr_system_npu_priorityprotocol.html>`__                                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu                                                           | ``v7.2.0`` | `module <docgen/fmgr_system_npu.html>`__                                                           |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_npu_swehhash                                                  | ``v7.2.0`` | `module <docgen/fmgr_system_npu_swehhash.html>`__                                                  |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_sdnconnector_externalaccountlist                              | ``v7.2.0`` | `module <docgen/fmgr_system_sdnconnector_externalaccountlist.html>`__                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_sdnconnector_forwardingrule                                   | ``v7.2.0`` | `module <docgen/fmgr_system_sdnconnector_forwardingrule.html>`__                                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_sdnconnector_gcpprojectlist                                   | ``v7.2.0`` | `module <docgen/fmgr_system_sdnconnector_gcpprojectlist.html>`__                                   |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_sslciphersuites                                               | ``v7.2.0`` | `module <docgen/fmgr_system_sslciphersuites.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_system_webproxy                                                      | ``v7.2.0`` | `module <docgen/fmgr_system_webproxy.html>`__                                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_user_connector                                                       | ``v7.2.0`` | `module <docgen/fmgr_user_connector.html>`__                                                       |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_user_group_dynamicmapping_guest                                      | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping_guest.html>`__                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_user_group_dynamicmapping_match                                      | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping_match.html>`__                                      |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_user_group_dynamicmapping                                            | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping.html>`__                                            |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_user_group_dynamicmapping_sslvpnoschecklist                          | ``v7.2.0`` | `module <docgen/fmgr_user_group_dynamicmapping_sslvpnoschecklist.html>`__                          |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_user_nsx_service                                                     | ``v7.2.0`` | `module <docgen/fmgr_user_nsx_service.html>`__                                                     |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_vap_vlanname                                                         | ``v7.2.0`` | `module <docgen/fmgr_vap_vlanname.html>`__                                                         |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_voip_profile_msrp                                                    | ``v7.2.0`` | `module <docgen/fmgr_voip_profile_msrp.html>`__                                                    |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_vpn_ipsec_fec_mappings                                               | ``v7.2.0`` | `module <docgen/fmgr_vpn_ipsec_fec_mappings.html>`__                                               |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_vpn_ipsec_fec                                                        | ``v7.2.0`` | `module <docgen/fmgr_vpn_ipsec_fec.html>`__                                                        |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-| fmgr_wtpprofile_eslsesdongle                                              | ``v7.2.0`` | `module <docgen/fmgr_wtpprofile_eslsesdongle.html>`__                                              |
-+---------------------------------------------------------------------------+------------+----------------------------------------------------------------------------------------------------+
-
-
-|
-
-
-Release Galaxy 2.1.7
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
-----------------
-
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.0`` and ``v7.2.0``
-
+FortiManager version: ``v6.0.x``
 
 Features & Bugfix
 ------------------
 
-- Fix compatibility issue for ansible 2.9.x and ansible-base 2.10.x.
-- Support Ansible changelogs.
-
+- Fix ``pylint`` sanity test error.
 
 |
 
-
-Release Galaxy 2.2.0
-~~~~~~~~~~~~~~~~~~~~
+Release Galaxy 2.0.1
+~~~~~~~~~~~~~~~~~~~~~
 
 Release Target
-----------------
+---------------
 
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
+FortiManager version: ``v6.0.x``
 
 Features & Bugfix
 ------------------
 
-- Support newest versions in  ``v6.x`` and ``v7.x``. 139 new modules.
-- Fix version_added in the document. The value of this parameter is the version each module first supported in the FortiManager Ansible Collection.
-- Fix many sanity test warnings and errors.
-- Fix a bug where users might not be able to log in.
-- Fix a bug where users might not be able to use workspace_locking_adom correctly.
-- Support token based authentication.
-- Correct the behavior of module ``fmgr_pkg_firewall_consolidated_policy_sectionvalue`` and ``fmgr_pkg_firewall_securitypolicy_sectionvalue``.
-- Modify `Module Digest <digest.html>`__  page.
-
-
-New Modules
-------------------
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| Module Name                                                                                                                                                             | Earliest Version |
-+=========================================================================================================================================================================+==================+
-| `fmgr_application_casi_profile <docgen/fmgr_application_casi_profile.html>`__                                                                                           | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_casi_profile_entries <docgen/fmgr_application_casi_profile_entries.html>`__                                                                           | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservice <docgen/fmgr_application_internetservice.html>`__                                                                                     | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservice_entry <docgen/fmgr_application_internetservice_entry.html>`__                                                                         | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservicecustom <docgen/fmgr_application_internetservicecustom.html>`__                                                                         | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservicecustom_disableentry <docgen/fmgr_application_internetservicecustom_disableentry.html>`__                                               | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservicecustom_disableentry_iprange <docgen/fmgr_application_internetservicecustom_disableentry_iprange.html>`__                               | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservicecustom_entry <docgen/fmgr_application_internetservicecustom_entry.html>`__                                                             | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_application_internetservicecustom_entry_portrange <docgen/fmgr_application_internetservicecustom_entry_portrange.html>`__                                         | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_cloud_orchestaws <docgen/fmgr_cloud_orchestaws.html>`__                                                                                                           | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_cloud_orchestawsconnector <docgen/fmgr_cloud_orchestawsconnector.html>`__                                                                                         | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_cloud_orchestawstemplate_autoscaleexistingvpc <docgen/fmgr_cloud_orchestawstemplate_autoscaleexistingvpc.html>`__                                                 | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_cloud_orchestawstemplate_autoscalenewvpc <docgen/fmgr_cloud_orchestawstemplate_autoscalenewvpc.html>`__                                                           | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_cloud_orchestawstemplate_autoscaletgwnewvpc <docgen/fmgr_cloud_orchestawstemplate_autoscaletgwnewvpc.html>`__                                                     | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_cloud_orchestration <docgen/fmgr_cloud_orchestration.html>`__                                                                                                     | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_devprof_log_syslogd_filter_excludelist <docgen/fmgr_devprof_log_syslogd_filter_excludelist.html>`__                                                               | ``v7.0.4``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_devprof_log_syslogd_filter_excludelist_fields <docgen/fmgr_devprof_log_syslogd_filter_excludelist_fields.html>`__                                                 | ``v7.0.4``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_devprof_log_syslogd_filter_freestyle <docgen/fmgr_devprof_log_syslogd_filter_freestyle.html>`__                                                                   | ``v7.0.4``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_devprof_log_syslogd_setting_customfieldname <docgen/fmgr_devprof_log_syslogd_setting_customfieldname.html>`__                                                     | ``v7.0.4``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_dnsfilter_profile_urlfilter <docgen/fmgr_dnsfilter_profile_urlfilter.html>`__                                                                                     | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_dnsfilter_urlfilter <docgen/fmgr_dnsfilter_urlfilter.html>`__                                                                                                     | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_dnsfilter_urlfilter_entries <docgen/fmgr_dnsfilter_urlfilter_entries.html>`__                                                                                     | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_emailfilter_profile_yahoomail <docgen/fmgr_emailfilter_profile_yahoomail.html>`__                                                                                 | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_dataplan <docgen/fmgr_extensioncontroller_dataplan.html>`__                                                                                   | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile <docgen/fmgr_extensioncontroller_extenderprofile.html>`__                                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular <docgen/fmgr_extensioncontroller_extenderprofile_cellular.html>`__                                                   | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_controllerreport <docgen/fmgr_extensioncontroller_extenderprofile_cellular_controllerreport.html>`__                 | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_modem1 <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem1.html>`__                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_modem1_autoswitch <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem1_autoswitch.html>`__               | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_modem2 <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem2.html>`__                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_modem2_autoswitch <docgen/fmgr_extensioncontroller_extenderprofile_cellular_modem2_autoswitch.html>`__               | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_smsnotification <docgen/fmgr_extensioncontroller_extenderprofile_cellular_smsnotification.html>`__                   | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_alert <docgen/fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_alert.html>`__       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_receiver <docgen/fmgr_extensioncontroller_extenderprofile_cellular_smsnotification_receiver.html>`__ | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_lanextension <docgen/fmgr_extensioncontroller_extenderprofile_lanextension.html>`__                                           | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_extensioncontroller_extenderprofile_lanextension_backhaul <docgen/fmgr_extensioncontroller_extenderprofile_lanextension_backhaul.html>`__                         | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6 <docgen/fmgr_firewall_accessproxy6.html>`__                                                                                                 | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6_apigateway <docgen/fmgr_firewall_accessproxy6_apigateway.html>`__                                                                           | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6_apigateway6 <docgen/fmgr_firewall_accessproxy6_apigateway6.html>`__                                                                         | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6_apigateway6_realservers <docgen/fmgr_firewall_accessproxy6_apigateway6_realservers.html>`__                                                 | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6_apigateway6_sslciphersuites <docgen/fmgr_firewall_accessproxy6_apigateway6_sslciphersuites.html>`__                                         | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6_apigateway_realservers <docgen/fmgr_firewall_accessproxy6_apigateway_realservers.html>`__                                                   | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_accessproxy6_apigateway_sslciphersuites <docgen/fmgr_firewall_accessproxy6_apigateway_sslciphersuites.html>`__                                           | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_address6_profilelist <docgen/fmgr_firewall_address6_profilelist.html>`__                                                                                 | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_address_profilelist <docgen/fmgr_firewall_address_profilelist.html>`__                                                                                   | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_explicitproxyaddress <docgen/fmgr_firewall_explicitproxyaddress.html>`__                                                                                 | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_explicitproxyaddress_headergroup <docgen/fmgr_firewall_explicitproxyaddress_headergroup.html>`__                                                         | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_explicitproxyaddrgrp <docgen/fmgr_firewall_explicitproxyaddrgrp.html>`__                                                                                 | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_gtp_messagefilter <docgen/fmgr_firewall_gtp_messagefilter.html>`__                                                                                       | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_ippoolgrp <docgen/fmgr_firewall_ippoolgrp.html>`__                                                                                                       | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_firewall_networkservicedynamic <docgen/fmgr_firewall_networkservicedynamic.html>`__                                                                               | ``v7.2.2``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_fmg_fabric_authorization_template <docgen/fmgr_fmg_fabric_authorization_template.html>`__                                                                         | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_fmg_fabric_authorization_template_platforms <docgen/fmgr_fmg_fabric_authorization_template_platforms.html>`__                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_fmupdate_fwmsetting_upgradetimeout <docgen/fmgr_fmupdate_fwmsetting_upgradetimeout.html>`__                                                                       | ``v7.0.5``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_fsp_vlan_dynamicmapping_interface_vrrp <docgen/fmgr_fsp_vlan_dynamicmapping_interface_vrrp.html>`__                                                               | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_fsp_vlan_dynamicmapping_interface_vrrp_proxyarp <docgen/fmgr_fsp_vlan_dynamicmapping_interface_vrrp_proxyarp.html>`__                                             | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_fsp_vlan_interface_vrrp_proxyarp <docgen/fmgr_fsp_vlan_interface_vrrp_proxyarp.html>`__                                                                           | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_ips_baseline_sensor <docgen/fmgr_ips_baseline_sensor.html>`__                                                                                                     | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_ips_baseline_sensor_entries <docgen/fmgr_ips_baseline_sensor_entries.html>`__                                                                                     | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_ips_baseline_sensor_entries_exemptip <docgen/fmgr_ips_baseline_sensor_entries_exemptip.html>`__                                                                   | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_ips_baseline_sensor_filter <docgen/fmgr_ips_baseline_sensor_filter.html>`__                                                                                       | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_ips_baseline_sensor_override <docgen/fmgr_ips_baseline_sensor_override.html>`__                                                                                   | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_ips_baseline_sensor_override_exemptip <docgen/fmgr_ips_baseline_sensor_override_exemptip.html>`__                                                                 | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_log_npuserver <docgen/fmgr_log_npuserver.html>`__                                                                                                                 | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_log_npuserver_servergroup <docgen/fmgr_log_npuserver_servergroup.html>`__                                                                                         | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_log_npuserver_serverinfo <docgen/fmgr_log_npuserver_serverinfo.html>`__                                                                                           | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_explicitproxypolicy <docgen/fmgr_pkg_firewall_explicitproxypolicy.html>`__                                                                           | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_explicitproxypolicy_identitybasedpolicy <docgen/fmgr_pkg_firewall_explicitproxypolicy_identitybasedpolicy.html>`__                                   | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_explicitproxypolicy_sectionvalue <docgen/fmgr_pkg_firewall_explicitproxypolicy_sectionvalue.html>`__                                                 | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_hyperscalepolicy <docgen/fmgr_pkg_firewall_hyperscalepolicy.html>`__                                                                                 | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_hyperscalepolicy46 <docgen/fmgr_pkg_firewall_hyperscalepolicy46.html>`__                                                                             | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_hyperscalepolicy6 <docgen/fmgr_pkg_firewall_hyperscalepolicy6.html>`__                                                                               | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_firewall_hyperscalepolicy64 <docgen/fmgr_pkg_firewall_hyperscalepolicy64.html>`__                                                                             | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pkg_user_nacpolicy <docgen/fmgr_pkg_user_nacpolicy.html>`__                                                                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_config_pblock_firewall_consolidated_policy <docgen/fmgr_pm_config_pblock_firewall_consolidated_policy.html>`__                                                 | ``v7.0.3``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_config_pblock_firewall_consolidated_policy_sectionvalue <docgen/fmgr_pm_config_pblock_firewall_consolidated_policy_sectionvalue.html>`__                       | ``v7.0.3``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_config_pblock_firewall_policy6 <docgen/fmgr_pm_config_pblock_firewall_policy6.html>`__                                                                         | ``v7.0.3``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_config_pblock_firewall_policy6_sectionvalue <docgen/fmgr_pm_config_pblock_firewall_policy6_sectionvalue.html>`__                                               | ``v7.0.3``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_devprof_scopemember <docgen/fmgr_pm_devprof_scopemember.html>`__                                                                                               | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_pkg_scopemember <docgen/fmgr_pm_pkg_scopemember.html>`__                                                                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_pm_wanprof_scopemember <docgen/fmgr_pm_wanprof_scopemember.html>`__                                                                                               | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_securityconsole_template_cli_preview <docgen/fmgr_securityconsole_template_cli_preview.html>`__                                                                   | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_acl_group <docgen/fmgr_switchcontroller_acl_group.html>`__                                                                                       | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_acl_ingress <docgen/fmgr_switchcontroller_acl_ingress.html>`__                                                                                   | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_acl_ingress_action <docgen/fmgr_switchcontroller_acl_ingress_action.html>`__                                                                     | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_acl_ingress_classifier <docgen/fmgr_switchcontroller_acl_ingress_classifier.html>`__                                                             | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_dynamicportpolicy <docgen/fmgr_switchcontroller_dynamicportpolicy.html>`__                                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_dynamicportpolicy_policy <docgen/fmgr_switchcontroller_dynamicportpolicy_policy.html>`__                                                         | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_fortilinksettings <docgen/fmgr_switchcontroller_fortilinksettings.html>`__                                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_fortilinksettings_nacports <docgen/fmgr_switchcontroller_fortilinksettings_nacports.html>`__                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_macpolicy <docgen/fmgr_switchcontroller_macpolicy.html>`__                                                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_managedswitch_dhcpsnoopingstaticclient <docgen/fmgr_switchcontroller_managedswitch_dhcpsnoopingstaticclient.html>`__                             | ``v7.2.2``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_managedswitch_ports_dhcpsnoopoption82override <docgen/fmgr_switchcontroller_managedswitch_ports_dhcpsnoopoption82override.html>`__               | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_managedswitch_staticmac <docgen/fmgr_switchcontroller_managedswitch_staticmac.html>`__                                                           | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_managedswitch_stpinstance <docgen/fmgr_switchcontroller_managedswitch_stpinstance.html>`__                                                       | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_switchinterfacetag <docgen/fmgr_switchcontroller_switchinterfacetag.html>`__                                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_trafficpolicy <docgen/fmgr_switchcontroller_trafficpolicy.html>`__                                                                               | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_switchcontroller_vlanpolicy <docgen/fmgr_switchcontroller_vlanpolicy.html>`__                                                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_sys_cloud_orchest <docgen/fmgr_sys_cloud_orchest.html>`__                                                                                                         | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_backgroundssescan <docgen/fmgr_system_npu_backgroundssescan.html>`__                                                                                   | ``v6.4.8``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_dosoptions <docgen/fmgr_system_npu_dosoptions.html>`__                                                                                                 | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_dswdtsprofile <docgen/fmgr_system_npu_dswdtsprofile.html>`__                                                                                           | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_dswqueuedtsprofile <docgen/fmgr_system_npu_dswqueuedtsprofile.html>`__                                                                                 | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_hpe <docgen/fmgr_system_npu_hpe.html>`__                                                                                                               | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_ipreassembly <docgen/fmgr_system_npu_ipreassembly.html>`__                                                                                             | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_npqueues <docgen/fmgr_system_npu_npqueues.html>`__                                                                                                     | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_npqueues_ethernettype <docgen/fmgr_system_npu_npqueues_ethernettype.html>`__                                                                           | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_npqueues_ipprotocol <docgen/fmgr_system_npu_npqueues_ipprotocol.html>`__                                                                               | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_npqueues_ipservice <docgen/fmgr_system_npu_npqueues_ipservice.html>`__                                                                                 | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_npqueues_profile <docgen/fmgr_system_npu_npqueues_profile.html>`__                                                                                     | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_npqueues_scheduler <docgen/fmgr_system_npu_npqueues_scheduler.html>`__                                                                                 | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_portpathoption <docgen/fmgr_system_npu_portpathoption.html>`__                                                                                         | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_ssehascan <docgen/fmgr_system_npu_ssehascan.html>`__                                                                                                   | ``v6.4.10``      |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_swtrhash <docgen/fmgr_system_npu_swtrhash.html>`__                                                                                                     | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_tcptimeoutprofile <docgen/fmgr_system_npu_tcptimeoutprofile.html>`__                                                                                   | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_npu_udptimeoutprofile <docgen/fmgr_system_npu_udptimeoutprofile.html>`__                                                                                   | ``v6.4.7``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_objecttag <docgen/fmgr_system_objecttag.html>`__                                                                                                           | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_sdnconnector_compartmentlist <docgen/fmgr_system_sdnconnector_compartmentlist.html>`__                                                                     | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_sdnconnector_ociregionlist <docgen/fmgr_system_sdnconnector_ociregionlist.html>`__                                                                         | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_system_socfabric_trustedlist <docgen/fmgr_system_socfabric_trustedlist.html>`__                                                                                   | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_um_image_upgrade <docgen/fmgr_um_image_upgrade.html>`__                                                                                                           | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_um_image_upgrade_ext <docgen/fmgr_um_image_upgrade_ext.html>`__                                                                                                   | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_user_certificate <docgen/fmgr_user_certificate.html>`__                                                                                                           | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_user_deviceaccesslist <docgen/fmgr_user_deviceaccesslist.html>`__                                                                                                 | ``v6.2.2``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_user_deviceaccesslist_devicelist <docgen/fmgr_user_deviceaccesslist_devicelist.html>`__                                                                           | ``v6.2.2``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_user_flexvm <docgen/fmgr_user_flexvm.html>`__                                                                                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_user_json <docgen/fmgr_user_json.html>`__                                                                                                                         | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_user_saml_dynamicmapping <docgen/fmgr_user_saml_dynamicmapping.html>`__                                                                                           | ``v7.0.5``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_vpnsslweb_portal_landingpage <docgen/fmgr_vpnsslweb_portal_landingpage.html>`__                                                                                   | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_vpnsslweb_portal_landingpage_formdata <docgen/fmgr_vpnsslweb_portal_landingpage_formdata.html>`__                                                                 | ``v7.4.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_vpnsslweb_virtualdesktopapplist <docgen/fmgr_vpnsslweb_virtualdesktopapplist.html>`__                                                                             | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_vpnsslweb_virtualdesktopapplist_apps <docgen/fmgr_vpnsslweb_virtualdesktopapplist_apps.html>`__                                                                   | ``v6.2.0``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_accesscontrollist <docgen/fmgr_wireless_accesscontrollist.html>`__                                                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_accesscontrollist_layer3ipv4rules <docgen/fmgr_wireless_accesscontrollist_layer3ipv4rules.html>`__                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_accesscontrollist_layer3ipv6rules <docgen/fmgr_wireless_accesscontrollist_layer3ipv6rules.html>`__                                                       | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_address <docgen/fmgr_wireless_address.html>`__                                                                                                           | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_addrgrp <docgen/fmgr_wireless_addrgrp.html>`__                                                                                                           | ``v7.0.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_ssidpolicy <docgen/fmgr_wireless_ssidpolicy.html>`__                                                                                                     | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
-| `fmgr_wireless_syslogprofile <docgen/fmgr_wireless_syslogprofile.html>`__                                                                                               | ``v7.2.1``       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+- Fix attribute:type for module: ``fmgr_firewall_addresss`` and ``fmgr_firewall_addresss6``.
+- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/9
+- Fix mantis #0672125
+- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/11
+- Fix https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues/12
+- ``fmgr_fact`` module supports full selectors.
+- Remove all default value in module argument specification to avoid confusion
+- Fix module ``fmgr_templategroup`` attribute: member
 
 |
 
-Release Galaxy 2.2.1
-~~~~~~~~~~~~~~~~~~~~
+Release Galaxy 2.0.0
+~~~~~~~~~~~~~~~~~~~~~~
 
 Release Target
+---------------
+
+FortiManager version: ``v6.0.x``
+
+Module Category
 ----------------
 
-FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
++-------------------------------+--------------------------+---------------------------------+
+| Module Category               | Supported JPRC methods   | Location                        |
++===============================+==========================+=================================+
+| Object Oriented Modules       | add/update(set)/delete   | `ref <modules.html>`__          |
++-------------------------------+--------------------------+---------------------------------+
+| Facts Gathering Modules       | get                      | `ref <fact.html>`__             |
++-------------------------------+--------------------------+---------------------------------+
+| Object Manipulating Modules   | move/clone               | `ref <objman.html>`__           |
++-------------------------------+--------------------------+---------------------------------+
+| Daemon Modules                | exec                     | `ref <daemon_modules.html>`__   |
++-------------------------------+--------------------------+---------------------------------+
+| Generic Modules               | (all methods)            | `ref <generic.html>`__          |
++-------------------------------+--------------------------+---------------------------------+
 
-Features & Bugfix
-------------------
+Features
+------------
 
-- Fix a bug where the user may not be able to use workspace_locking_adom if the workspace mode is per-adom.
-- Improve login logic in httpapi plugin.
-- Support newest FortiManager versions.
-
-
-|
-
-Release Galaxy 2.3.0
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
-----------------
-
-FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
-
-
-Minor Changes
--------------
-
-- Some arguments can support both list or string format input now.
-- Support newest versions for FortiManager v6.2 ~ v7.4
-
-Bugfixes
---------
-
-- Add 'access_token' in 'fmgr_generic'.
-- Add param 'platform' in 'fmgr_wtpprofile' and param 'interface' in 'fmgr_fsp_vlan'.
-- Fix a bug that collection may update the resource when it does not need to.
-- Fix some modules missing revision (used for version warning).
-- Fixed the bug that would report an error when providing access_token and username/password at the same time.
-- Improve document.
-- Improve fmgr_fact. 'changed' will not be true anymore if you get the result.
-- Improve sanity tests.
-- When the JSON data sent by FortiManager is not in the right format, the collection can still execute correctly.
-
-|
-
-Release Galaxy 2.3.1
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
-----------------
-
-FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.0``
-
-Bugfixes
---------
-- Added missing enum values for some arguments.
-- Change minimum required ansible-core version to 2.14.0
-- Fixed a bug where ansible may skip update incorrectly.
-- Support FortiManager 7.0.10
-
-|
-
-Release Galaxy 2.4.0
-~~~~~~~~~~~~~~~~~~~~
-
-Release Target
-----------------
-
-FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
-
-
-Minor Changes
--------------
-
-- Added deprecated warning to invalid argument name, please change the invalid argument name such as "var-name", "var name" to "var_name".
-- Supported fortimanager 7.4.2, 21 new modules.
-
-Bugfixes
---------
-
-- Changed revision to v_range to reduce the size of the code.
-- Fixed the behavior of module fmgr_firewall_internetservicecustom.
-- Fixed the behavior of some modules that contain the argument policyid.
-- Improved example ansible playbooks.
-- Improved the logic of fmgr_fact, fmgr_clone, fmgr_rename, fmgr_move. Usage remains unchanged.
-- Reduced the size of module_arg_spec in each module.
-- Removed most of the sanity test ignores.
+-  Full FortiManager JRPC URLs coverage (more than 700 modules).
+-  Smooth migration for legacy playbooks.
+-  Flexible error handling mechanism.
+-  Multiple workspace modes supported.
+-  Module quick workaround technique: ``bypass_validation``
+-  Specilized modules: ``fmgr_fact``, ``fmgr_move``, ``fmgr_clone`` and
+   ``fmgr_generic``.
+-  Runnable examples `repository <example.html>`__.

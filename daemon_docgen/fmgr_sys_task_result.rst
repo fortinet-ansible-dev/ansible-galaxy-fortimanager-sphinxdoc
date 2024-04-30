@@ -4,8 +4,8 @@
 
 .. _fmgr_sys_task_result:
 
-fmgr_sys_task_result
-++++++++++++++++++++
+fmgr_sys_task_result -- Sys task result.
+++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.1.0
 
@@ -36,128 +36,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.14.0
+- ansible>=2.15.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <br>
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>None</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- <td><code class="docutils literal notranslate">7.0.10 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- <td><code class="docutils literal notranslate">7.4.2 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- </table>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
 
 
 
@@ -173,125 +59,12 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">sys_task_result</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">sys_task_result</span> - Sys task result <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">taskid</span> <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>None</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- <td><code class="docutils literal notranslate">7.0.10 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- <td><code class="docutils literal notranslate">7.4.2 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- </table>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -320,7 +93,7 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: No description
+      - name: Sys task result
         fortinet.fortimanager.fmgr_sys_task_result:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>

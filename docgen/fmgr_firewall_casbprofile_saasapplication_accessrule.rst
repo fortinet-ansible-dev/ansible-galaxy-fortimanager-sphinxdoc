@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_casbprofile_saasapplication_accessrule:
 
-fmgr_firewall_casbprofile_saasapplication_accessrule
-++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_firewall_casbprofile_saasapplication_accessrule -- Firewall casb profile saas application access rule.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.3.0
 
@@ -36,128 +36,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.14.0
+- ansible>=2.15.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <br>
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>None</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- <td><code class="docutils literal notranslate">7.0.10 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- <td><code class="docutils literal notranslate">7.4.2 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>True</td>
- <td>False</td>
- </tr>
- </table>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.1</code></p>
 
 
 
@@ -178,363 +64,24 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">casb-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">saas-application</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_casbprofile_saasapplication_accessrule</span> - no description <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_casbprofile_saasapplication_accessrule</span> - Firewall casb profile saas application access rule <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">action</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, bypass]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>None</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- <td><code class="docutils literal notranslate">7.0.10 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- <td><code class="docutils literal notranslate">7.4.2 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>True</td>
- <td>False</td>
- </tr>
- </table>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.1</code></p>
  </div>
  </li>
  <li><span class="li-head">bypass</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [av, dlp, web-filter, file-filter, video-filter]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>None</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- <td><code class="docutils literal notranslate">7.0.10 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- <td><code class="docutils literal notranslate">7.4.2 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>True</td>
- <td>False</td>
- </tr>
- </table>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.1</code></p>
  </div>
  </li>
  <li><span class="li-head">name</span> <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>None</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- <td><code class="docutils literal notranslate">7.0.10 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- <td>False</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- <td><code class="docutils literal notranslate">7.4.2 </code></td>
- </tr>
- <tr>
- <td>False</td>
- <td>True</td>
- <td>False</td>
- </tr>
- </table>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.1</code></p>
  </div>
  </li>
  </ul>
@@ -563,7 +110,7 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: No description
+      - name: Firewall casb profile saas application access rule
         fortinet.fortimanager.fmgr_firewall_casbprofile_saasapplication_accessrule:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
