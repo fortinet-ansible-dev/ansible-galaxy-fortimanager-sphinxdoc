@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -126,7 +126,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.11 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.6 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -172,7 +172,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">custom_message</span> <b>(Alias name: custom-message)</b>  Custom-message. <span class="li-normal">type: list</span>
+ <li><span class="li-head">custom_message</span> <b>(Alias name: custom-message)</b>  Custom message. <span class="li-normal">type: list</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -204,7 +204,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">device_detection_portal</span> <b>(Alias name: device-detection-portal)</b>  Device-detection-portal. <span class="li-normal">type: list</span>
+ <li><span class="li-head">device_detection_portal</span> <b>(Alias name: device-detection-portal)</b>  Device detection portal. <span class="li-normal">type: list</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -236,7 +236,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">ec</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">ec</span> Ec. <span class="li-normal">type: list</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -268,7 +268,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">fortiguard_wf</span> <b>(Alias name: fortiguard-wf)</b>  Fortiguard-wf. <span class="li-normal">type: list</span>
+ <li><span class="li-head">fortiguard_wf</span> <b>(Alias name: fortiguard-wf)</b>  Fortiguard wf. <span class="li-normal">type: list</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -864,7 +864,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">nac_quar</span> <b>(Alias name: nac-quar)</b>  Nac-quar. <span class="li-normal">type: list</span>
+ <li><span class="li-head">nac_quar</span> <b>(Alias name: nac-quar)</b>  Nac quar. <span class="li-normal">type: list</span>
  <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
  <div id="label257" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -894,7 +894,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> <span class="li-normal">type: int</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.11 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.6 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -1004,7 +1004,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">traffic_quota</span> <b>(Alias name: traffic-quota)</b>  Traffic-quota. <span class="li-normal">type: list</span>
+ <li><span class="li-head">traffic_quota</span> <b>(Alias name: traffic-quota)</b>  Traffic quota. <span class="li-normal">type: list</span>
  <a id='label300' href="javascript:ContentClick('label301', 'label300');" onmouseover="ContentPreview('label301');" onmouseout="ContentUnpreview('label301');" title="click to collapse or expand..."> more... </a>
  <div id="label301" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

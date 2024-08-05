@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -65,19 +65,19 @@ Parameters
  <li><span class="li-head">meta</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_meta_sysmetafields</span> - System meta sys meta fields <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">fieldlength</span> <span class="li-normal">type: int</span>
+ <li><span class="li-head">fieldlength</span> Fieldlength. <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">importance</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, required]</span> 
+ <li><span class="li-head">importance</span> Importance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, required]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">name</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

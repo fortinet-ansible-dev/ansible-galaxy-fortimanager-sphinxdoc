@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -160,7 +160,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">exclude_range</span> <b>(Alias name: exclude-range)</b>  Exclude-range. <span class="li-normal">type: list</span>
+ <li><span class="li-head">exclude_range</span> <b>(Alias name: exclude-range)</b>  Exclude range. <span class="li-normal">type: list</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -190,7 +190,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_string</span> <b>(Alias name: vci-string)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">vci_string</span> <b>(Alias name: vci-string)</b>  One or more vci strings in quotes separated by spaces. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -208,7 +208,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uci_string</span> <b>(Alias name: uci-string)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">uci_string</span> <b>(Alias name: uci-string)</b>  One or more uci strings in quotes separated by spaces. <span class="li-normal">type: list</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -246,7 +246,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_range</span> <b>(Alias name: ip-range)</b>  Ip-range. <span class="li-normal">type: list</span>
+ <li><span class="li-head">ip_range</span> <b>(Alias name: ip-range)</b>  Ip range. <span class="li-normal">type: list</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -276,7 +276,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_string</span> <b>(Alias name: vci-string)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">vci_string</span> <b>(Alias name: vci-string)</b>  One or more vci strings in quotes separated by spaces. <span class="li-normal">type: list</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -294,7 +294,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uci_string</span> <b>(Alias name: uci-string)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">uci_string</span> <b>(Alias name: uci-string)</b>  One or more uci strings in quotes separated by spaces. <span class="li-normal">type: list</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -398,7 +398,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_string</span> <b>(Alias name: vci-string)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">vci_string</span> <b>(Alias name: vci-string)</b>  One or more vci strings in quotes separated by spaces. <span class="li-normal">type: list</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -410,7 +410,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uci_string</span> <b>(Alias name: uci-string)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">uci_string</span> <b>(Alias name: uci-string)</b>  One or more uci strings in quotes separated by spaces. <span class="li-normal">type: list</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -418,7 +418,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">reserved_address</span> <b>(Alias name: reserved-address)</b>  Reserved-address. <span class="li-normal">type: list</span>
+ <li><span class="li-head">reserved_address</span> <b>(Alias name: reserved-address)</b>  Reserved address. <span class="li-normal">type: list</span>
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

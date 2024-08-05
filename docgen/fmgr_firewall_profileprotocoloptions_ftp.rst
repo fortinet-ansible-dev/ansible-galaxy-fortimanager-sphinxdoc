@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -82,7 +82,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">options</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [clientcomfort, no-content-summary, oversize, splice, bypass-rest-command, bypass-mode-command]</span> 
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [clientcomfort, no-content-summary, oversize, splice, bypass-rest-command, bypass-mode-command]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -94,7 +94,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 21). <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

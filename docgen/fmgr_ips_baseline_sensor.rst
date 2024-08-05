@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -76,7 +76,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">entries</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">entries</span> Entries. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -88,19 +88,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">application</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">application</span> Applications to be protected. <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">cve</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">cve</span> List of cve ids of the signatures to add to the sensor <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">exempt_ip</span> <b>(Alias name: exempt-ip)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">exempt_ip</span> <b>(Alias name: exempt-ip)</b>  Exempt ip. <span class="li-normal">type: list</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -132,7 +132,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">location</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">location</span> Protect client or server traffic. <span class="li-normal">type: list</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -156,13 +156,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">os</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">os</span> Operating systems to be protected. <span class="li-normal">type: list</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">protocol</span> Protocols to be examined. <span class="li-normal">type: list</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -216,7 +216,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">severity</span> Relative severity of the signature, from info to critical. <span class="li-normal">type: list</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -228,7 +228,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">tags</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">tags</span> Tags. <span class="li-normal">type: str</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -242,7 +242,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">filter</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">filter</span> Filter. <span class="li-normal">type: list</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -254,25 +254,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">application</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">application</span> Vulnerable application filter. <span class="li-normal">type: list</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">application_real)</span> <b>(Alias name: application(real))</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">application_real)</span> <b>(Alias name: application(real))</b>  Application(real). <span class="li-normal">type: str</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">location</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">location</span> Vulnerability location filter. <span class="li-normal">type: list</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">location_real)</span> <b>(Alias name: location(real))</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">location_real)</span> <b>(Alias name: location(real))</b>  Location(real). <span class="li-normal">type: str</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -296,25 +296,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">os</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">os</span> Vulnerable os filter. <span class="li-normal">type: list</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">os_real)</span> <b>(Alias name: os(real))</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">os_real)</span> <b>(Alias name: os(real))</b>  Os(real). <span class="li-normal">type: str</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">protocol</span> Vulnerable protocol filter. <span class="li-normal">type: list</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol_real)</span> <b>(Alias name: protocol(real))</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">protocol_real)</span> <b>(Alias name: protocol(real))</b>  Protocol(real). <span class="li-normal">type: str</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -338,13 +338,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">severity</span> Vulnerability severity filter. <span class="li-normal">type: list</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">severity_real)</span> <b>(Alias name: severity(real))</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">severity_real)</span> <b>(Alias name: severity(real))</b>  Severity(real). <span class="li-normal">type: str</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -358,7 +358,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">log</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log</span> Log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -370,7 +370,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">override</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">override</span> Override. <span class="li-normal">type: list</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -382,7 +382,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">exempt_ip</span> <b>(Alias name: exempt-ip)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">exempt_ip</span> <b>(Alias name: exempt-ip)</b>  Exempt ip. <span class="li-normal">type: list</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>

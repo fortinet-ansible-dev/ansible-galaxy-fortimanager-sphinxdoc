@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -94,13 +94,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dynamic_mapping</span> Dynamic_mapping. <span class="li-normal">type: list</span>
+ <li><span class="li-head">dynamic_mapping</span> Dynamic mapping. <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">_scope</span> _scope. <span class="li-normal">type: list</span>
+ <li><span class="li-head">_scope</span> Scope. <span class="li-normal">type: list</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -120,139 +120,139 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">arp_intf</span> <b>(Alias name: arp-intf)</b>  Select an interface from available options that will reply to arp requests. <span class="li-normal">type: str</span>
+ <li><span class="li-head">arp_intf</span> <b>(Alias name: arp-intf)</b>  Arp intf. <span class="li-normal">type: str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable/disable replying to arp requests when an ip pool is added to a policy (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Arp reply. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">associated_interface</span> <b>(Alias name: associated-interface)</b>  Associated interface name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">associated_interface</span> <b>(Alias name: associated-interface)</b>  Associated interface. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">block_size</span> <b>(Alias name: block-size)</b>  Number of addresses in a block (64 to 4096, default = 128). <span class="li-normal">type: int</span>
+ <li><span class="li-head">block_size</span> <b>(Alias name: block-size)</b>  Block size. <span class="li-normal">type: int</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">comments</span> Comment. <span class="li-normal">type: str</span>
+ <li><span class="li-head">comments</span> Comments. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">endip</span> Final ipv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">endip</span> Endip. <span class="li-normal">type: str</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">num_blocks_per_user</span> <b>(Alias name: num-blocks-per-user)</b>  Number of addresses blocks that can be used by a user (1 to 128, default = 8). <span class="li-normal">type: int</span>
+ <li><span class="li-head">num_blocks_per_user</span> <b>(Alias name: num-blocks-per-user)</b>  Num blocks per user. <span class="li-normal">type: int</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pba_timeout</span> <b>(Alias name: pba-timeout)</b>  Port block allocation timeout (seconds). <span class="li-normal">type: int</span>
+ <li><span class="li-head">pba_timeout</span> <b>(Alias name: pba-timeout)</b>  Pba timeout. <span class="li-normal">type: int</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">permit_any_host</span> <b>(Alias name: permit-any-host)</b>  Enable/disable full cone nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">permit_any_host</span> <b>(Alias name: permit-any-host)</b>  Permit any host. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_endip</span> <b>(Alias name: source-endip)</b>  Final ipv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">source_endip</span> <b>(Alias name: source-endip)</b>  Source endip. <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_startip</span> <b>(Alias name: source-startip)</b>  First ipv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">source_startip</span> <b>(Alias name: source-startip)</b>  Source startip. <span class="li-normal">type: str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">startip</span> First ipv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">startip</span> Startip. <span class="li-normal">type: str</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Ip pool type (overload, one-to-one, fixed port range, or port block allocation). <span class="li-normal">type: str</span> <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation, cgn-resource-allocation]</span> 
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation, cgn-resource-allocation]</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_block_size</span> <b>(Alias name: cgn-block-size)</b>  Number of ports in a block(64 to 4096 in unit of 64, default = 128). <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_block_size</span> <b>(Alias name: cgn-block-size)</b>  Cgn block size. <span class="li-normal">type: int</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_client_endip</span> <b>(Alias name: cgn-client-endip)</b>  Final client ipv4 address (inclusive) (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">cgn_client_endip</span> <b>(Alias name: cgn-client-endip)</b>  Cgn client endip. <span class="li-normal">type: str</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_client_startip</span> <b>(Alias name: cgn-client-startip)</b>  First client ipv4 address (inclusive) (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">cgn_client_startip</span> <b>(Alias name: cgn-client-startip)</b>  Cgn client startip. <span class="li-normal">type: str</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_fixedalloc</span> <b>(Alias name: cgn-fixedalloc)</b>  Enable/disable fixed-allocation mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_fixedalloc</span> <b>(Alias name: cgn-fixedalloc)</b>  Cgn fixedalloc. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_overload</span> <b>(Alias name: cgn-overload)</b>  Enable/disable overload mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_overload</span> <b>(Alias name: cgn-overload)</b>  Cgn overload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_port_end</span> <b>(Alias name: cgn-port-end)</b>  Ending public port can be allocated. <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_port_end</span> <b>(Alias name: cgn-port-end)</b>  Cgn port end. <span class="li-normal">type: int</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_port_start</span> <b>(Alias name: cgn-port-start)</b>  Starting public port can be allocated. <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_port_start</span> <b>(Alias name: cgn-port-start)</b>  Cgn port start. <span class="li-normal">type: int</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_spa</span> <b>(Alias name: cgn-spa)</b>  Enable/disable single port allocation mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_spa</span> <b>(Alias name: cgn-spa)</b>  Cgn spa. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">utilization_alarm_clear</span> <b>(Alias name: utilization-alarm-clear)</b>  Pool utilization alarm clear threshold (40-100). <span class="li-normal">type: int</span>
+ <li><span class="li-head">utilization_alarm_clear</span> <b>(Alias name: utilization-alarm-clear)</b>  Utilization alarm clear. <span class="li-normal">type: int</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">utilization_alarm_raise</span> <b>(Alias name: utilization-alarm-raise)</b>  Pool utilization alarm raise threshold (50-100). <span class="li-normal">type: int</span>
+ <li><span class="li-head">utilization_alarm_raise</span> <b>(Alias name: utilization-alarm-raise)</b>  Utilization alarm raise. <span class="li-normal">type: int</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -300,174 +300,186 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">exclude_ip</span> <b>(Alias name: exclude-ip)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">exclude_ip</span> <b>(Alias name: exclude-ip)</b>  Exclude ips x. <span class="li-normal">type: list</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">pba_interim_log</span> <b>(Alias name: pba-interim-log)</b>  Port block allocation interim logging interval (600 - 86400 seconds, default = 0 which disables interim logging). <span class="li-normal">type: int</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">endip</span> Final ipv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span>
- <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
- <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">name</span> Ip pool name. <span class="li-normal">type: str</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">num_blocks_per_user</span> <b>(Alias name: num-blocks-per-user)</b>  Number of addresses blocks that can be used by a user (1 to 128, default = 8). <span class="li-normal">type: int</span>
+ <li><span class="li-head">name</span> Ip pool name. <span class="li-normal">type: str</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pba_timeout</span> <b>(Alias name: pba-timeout)</b>  Port block allocation timeout (seconds). <span class="li-normal">type: int</span>
+ <li><span class="li-head">num_blocks_per_user</span> <b>(Alias name: num-blocks-per-user)</b>  Number of addresses blocks that can be used by a user (1 to 128, default = 8). <span class="li-normal">type: int</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">permit_any_host</span> <b>(Alias name: permit-any-host)</b>  Enable/disable full cone nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">pba_timeout</span> <b>(Alias name: pba-timeout)</b>  Port block allocation timeout (seconds). <span class="li-normal">type: int</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_endip</span> <b>(Alias name: source-endip)</b>  Final ipv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">permit_any_host</span> <b>(Alias name: permit-any-host)</b>  Enable/disable full cone nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_startip</span> <b>(Alias name: source-startip)</b>  First ipv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">source_endip</span> <b>(Alias name: source-endip)</b>  Final ipv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">startip</span> First ipv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">source_startip</span> <b>(Alias name: source-startip)</b>  First ipv4 address (inclusive) in the range of the source addresses to be translated (format xxx. <span class="li-normal">type: str</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Ip pool type (overload, one-to-one, fixed port range, or port block allocation). <span class="li-normal">type: str</span> <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation, cgn-resource-allocation]</span> 
+ <li><span class="li-head">startip</span> First ipv4 address (inclusive) in the range for the address pool (format xxx. <span class="li-normal">type: str</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">utilization_alarm_clear</span> <b>(Alias name: utilization-alarm-clear)</b>  Pool utilization alarm clear threshold (40-100). <span class="li-normal">type: int</span>
+ <li><span class="li-head">type</span> Ip pool type (overload, one-to-one, fixed port range, or port block allocation). <span class="li-normal">type: str</span> <span class="li-normal">choices: [overload, one-to-one, fixed-port-range, port-block-allocation, cgn-resource-allocation]</span> 
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_fixedalloc</span> <b>(Alias name: cgn-fixedalloc)</b>  Enable/disable fixed-allocation mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">utilization_alarm_clear</span> <b>(Alias name: utilization-alarm-clear)</b>  Pool utilization alarm clear threshold (40-100). <span class="li-normal">type: int</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_client_startip</span> <b>(Alias name: cgn-client-startip)</b>  First client ipv4 address (inclusive) (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">cgn_fixedalloc</span> <b>(Alias name: cgn-fixedalloc)</b>  Enable/disable fixed-allocation mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_client_endip</span> <b>(Alias name: cgn-client-endip)</b>  Final client ipv4 address (inclusive) (format xxx. <span class="li-normal">type: str</span>
+ <li><span class="li-head">cgn_client_startip</span> <b>(Alias name: cgn-client-startip)</b>  First client ipv4 address (inclusive) (format xxx. <span class="li-normal">type: str</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_overload</span> <b>(Alias name: cgn-overload)</b>  Enable/disable overload mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_client_endip</span> <b>(Alias name: cgn-client-endip)</b>  Final client ipv4 address (inclusive) (format xxx. <span class="li-normal">type: str</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_block_size</span> <b>(Alias name: cgn-block-size)</b>  Number of ports in a block(64 to 4096 in unit of 64, default = 128). <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_overload</span> <b>(Alias name: cgn-overload)</b>  Enable/disable overload mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">utilization_alarm_raise</span> <b>(Alias name: utilization-alarm-raise)</b>  Pool utilization alarm raise threshold (50-100). <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_block_size</span> <b>(Alias name: cgn-block-size)</b>  Number of ports in a block(64 to 4096 in unit of 64, default = 128). <span class="li-normal">type: int</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_port_start</span> <b>(Alias name: cgn-port-start)</b>  Starting public port can be allocated. <span class="li-normal">type: int</span>
+ <li><span class="li-head">utilization_alarm_raise</span> <b>(Alias name: utilization-alarm-raise)</b>  Pool utilization alarm raise threshold (50-100). <span class="li-normal">type: int</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_spa</span> <b>(Alias name: cgn-spa)</b>  Enable/disable single port allocation mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cgn_port_start</span> <b>(Alias name: cgn-port-start)</b>  Starting public port can be allocated. <span class="li-normal">type: int</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_port_end</span> <b>(Alias name: cgn-port-end)</b>  Ending public port can be allocated. <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_spa</span> <b>(Alias name: cgn-spa)</b>  Enable/disable single port allocation mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">endport</span> Final port number (inclusive) in the range for the address pool (default: 65533). <span class="li-normal">type: int</span>
+ <li><span class="li-head">cgn_port_end</span> <b>(Alias name: cgn-port-end)</b>  Ending public port can be allocated. <span class="li-normal">type: int</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port_per_user</span> <b>(Alias name: port-per-user)</b>  Number of port for each user (32 to 60416, default = 0, auto). <span class="li-normal">type: int</span>
+ <li><span class="li-head">endport</span> Final port number (inclusive) in the range for the address pool (default: 65533). <span class="li-normal">type: int</span>
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">startport</span> First port number (inclusive) in the range for the address pool (default: 5117). <span class="li-normal">type: int</span>
+ <li><span class="li-head">port_per_user</span> <b>(Alias name: port-per-user)</b>  Number of port for each user (32 to 60416, default = 0, auto). <span class="li-normal">type: int</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">add_nat64_route</span> <b>(Alias name: add-nat64-route)</b>  Enable/disable adding nat64 route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">startport</span> First port number (inclusive) in the range for the address pool (default: 5117). <span class="li-normal">type: int</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nat64</span> Enable/disable nat64. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">add_nat64_route</span> <b>(Alias name: add-nat64-route)</b>  Enable/disable adding nat64 route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cgn_client_ipv6shift</span> <b>(Alias name: cgn-client-ipv6shift)</b>  Ipv6 shift for fixed-allocation. <span class="li-normal">type: int</span>
+ <li><span class="li-head">nat64</span> Enable/disable nat64. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cgn_client_ipv6shift</span> <b>(Alias name: cgn-client-ipv6shift)</b>  Ipv6 shift for fixed-allocation. <span class="li-normal">type: int</span>
+ <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
+ <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">subnet_broadcast_in_ippool</span> <b>(Alias name: subnet-broadcast-in-ippool)</b>  Enable/disable inclusion of the subnetwork address and broadcast ip address in the nat64 ip pool. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
- <div id="label131" style="display:none">
+ <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
+ <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">exclude_ip</span> <b>(Alias name: exclude-ip)</b>  <span class="li-normal">type: list</span>
- <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
- <div id="label133" style="display:none">
+ <li><span class="li-head">exclude_ip</span> <b>(Alias name: exclude-ip)</b>  Exclude ips x. <span class="li-normal">type: list</span>
+ <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
+ <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pba_interim_log</span> <b>(Alias name: pba-interim-log)</b>  Port block allocation interim logging interval (600 - 86400 seconds, default = 0 which disables interim logging). <span class="li-normal">type: int</span>
+ <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>

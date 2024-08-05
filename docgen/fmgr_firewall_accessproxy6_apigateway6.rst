@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">access-proxy6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_accessproxy6_apigateway6</span> - Set IPv6 API Gateway. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">application</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">application</span> Saas application controlled by this access proxy. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -131,7 +131,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">realservers</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">realservers</span> Realservers. <span class="li-normal">type: list</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -209,7 +209,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssh_host_key</span> <b>(Alias name: ssh-host-key)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ssh_host_key</span> <b>(Alias name: ssh-host-key)</b>  One or more server host key. <span class="li-normal">type: list</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -283,7 +283,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_cipher_suites</span> <b>(Alias name: ssl-cipher-suites)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ssl_cipher_suites</span> <b>(Alias name: ssl-cipher-suites)</b>  Ssl cipher suites. <span class="li-normal">type: list</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -301,7 +301,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">versions</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> 
+ <li><span class="li-head">versions</span> Ssl/tls versions that the cipher suite can be used with. <span class="li-normal">type: list</span> <span class="li-normal">choices: [tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> 
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -369,52 +369,57 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">quic</span> <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">ack_delay_exponent</span> <b>(Alias name: ack-delay-exponent)</b>  Ack delay exponent (1 - 20, default = 3). <span class="li-normal">type: int</span>
+ <li><span class="li-head">quic</span> Quic. <span class="li-normal">type: dict</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">active_connection_id_limit</span> <b>(Alias name: active-connection-id-limit)</b>  Active connection id limit (1 - 8, default = 2). <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">ack_delay_exponent</span> <b>(Alias name: ack-delay-exponent)</b>  Ack delay exponent (1 - 20, default = 3). <span class="li-normal">type: int</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">active_migration</span> <b>(Alias name: active-migration)</b>  Enable/disable active migration (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">active_connection_id_limit</span> <b>(Alias name: active-connection-id-limit)</b>  Active connection id limit (1 - 8, default = 2). <span class="li-normal">type: int</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">grease_quic_bit</span> <b>(Alias name: grease-quic-bit)</b>  Enable/disable grease quic bit (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">active_migration</span> <b>(Alias name: active-migration)</b>  Enable/disable active migration (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">max_ack_delay</span> <b>(Alias name: max-ack-delay)</b>  Maximum ack delay in milliseconds (1 - 16383, default = 25). <span class="li-normal">type: int</span>
+ <li><span class="li-head">grease_quic_bit</span> <b>(Alias name: grease-quic-bit)</b>  Enable/disable grease quic bit (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">max_datagram_frame_size</span> <b>(Alias name: max-datagram-frame-size)</b>  Maximum datagram frame size in bytes (1 - 1500, default = 1500). <span class="li-normal">type: int</span>
+ <li><span class="li-head">max_ack_delay</span> <b>(Alias name: max-ack-delay)</b>  Maximum ack delay in milliseconds (1 - 16383, default = 25). <span class="li-normal">type: int</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">max_idle_timeout</span> <b>(Alias name: max-idle-timeout)</b>  Maximum idle timeout milliseconds (1 - 60000, default = 30000). <span class="li-normal">type: int</span>
+ <li><span class="li-head">max_datagram_frame_size</span> <b>(Alias name: max-datagram-frame-size)</b>  Maximum datagram frame size in bytes (1 - 1500, default = 1500). <span class="li-normal">type: int</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">max_udp_payload_size</span> <b>(Alias name: max-udp-payload-size)</b>  Maximum udp payload size in bytes (1200 - 1500, default = 1500). <span class="li-normal">type: int</span>
+ <li><span class="li-head">max_idle_timeout</span> <b>(Alias name: max-idle-timeout)</b>  Maximum idle timeout milliseconds (1 - 60000, default = 30000). <span class="li-normal">type: int</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">max_udp_payload_size</span> <b>(Alias name: max-udp-payload-size)</b>  Maximum udp payload size in bytes (1200 - 1500, default = 1500). <span class="li-normal">type: int</span>
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>

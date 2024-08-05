@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -191,7 +191,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">members</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">members</span> Aggregated lag bundle interfaces. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -320,13 +320,13 @@ Parameters
  <li><span class="li-head">export_to_pool_flag</span> <b>(Alias name: export-to-pool-flag)</b>  Switch controller export port to pool-list. <span class="li-normal">type: int</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mac_addr</span> <b>(Alias name: mac-addr)</b>  Port/trunk mac. <span class="li-normal">type: str</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.1</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.1</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">packet_sample_rate</span> <b>(Alias name: packet-sample-rate)</b>  Packet sampling rate (0 - 99999 p/sec). <span class="li-normal">type: int</span>
@@ -350,10 +350,10 @@ Parameters
  <li><span class="li-head">storm_control_policy</span> <b>(Alias name: storm-control-policy)</b>  Switch controller storm control policy from available options. <span class="li-normal">type: str</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.3</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.3</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dot1x_enable</span> <b>(Alias name: dot1x-enable)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dot1x_enable</span> <b>(Alias name: dot1x-enable)</b>  Dot1x enable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
@@ -377,13 +377,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mclag_icl_port</span> <b>(Alias name: mclag-icl-port)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">mclag_icl_port</span> <b>(Alias name: mclag-icl-port)</b>  Mclag icl port. <span class="li-normal">type: int</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">p2p_port</span> <b>(Alias name: p2p-port)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">p2p_port</span> <b>(Alias name: p2p-port)</b>  P2p port. <span class="li-normal">type: int</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -407,7 +407,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">media_type</span> <b>(Alias name: media-type)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">media_type</span> <b>(Alias name: media-type)</b>  Media type. <span class="li-normal">type: str</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -497,19 +497,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface_tags</span> <b>(Alias name: interface-tags)</b>  <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">interface_tags</span> <b>(Alias name: interface-tags)</b>  Tag(s) associated with the interface for various features including virtual port pool, dynamic port policy. <span class="li-normal">type: list or str</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">poe_max_power</span> <b>(Alias name: poe-max-power)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">poe_max_power</span> <b>(Alias name: poe-max-power)</b>  Poe max power. <span class="li-normal">type: str</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">poe_standard</span> <b>(Alias name: poe-standard)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">poe_standard</span> <b>(Alias name: poe-standard)</b>  Poe standard. <span class="li-normal">type: str</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -527,7 +527,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">link_status</span> <b>(Alias name: link-status)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [down, up]</span> 
+ <li><span class="li-head">link_status</span> <b>(Alias name: link-status)</b>  Link status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [down, up]</span> 
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -557,13 +557,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">acl_group</span> <b>(Alias name: acl-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">acl_group</span> <b>(Alias name: acl-group)</b>  Acl groups on this port. <span class="li-normal">type: list</span>
  <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
  <div id="label165" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dhcp_snoop_option82_override</span> <b>(Alias name: dhcp-snoop-option82-override)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">dhcp_snoop_option82_override</span> <b>(Alias name: dhcp-snoop-option82-override)</b>  Dhcp snoop option82 override. <span class="li-normal">type: list</span>
  <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
  <div id="label167" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -589,25 +589,25 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">fortiswitch_acls</span> <b>(Alias name: fortiswitch-acls)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">fortiswitch_acls</span> <b>(Alias name: fortiswitch-acls)</b>  Acls on this port. <span class="li-normal">type: list</span>
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">isl_peer_device_sn</span> <b>(Alias name: isl-peer-device-sn)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">isl_peer_device_sn</span> <b>(Alias name: isl-peer-device-sn)</b>  Isl peer device sn. <span class="li-normal">type: str</span>
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authenticated_port</span> <b>(Alias name: authenticated-port)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">authenticated_port</span> <b>(Alias name: authenticated-port)</b>  Authenticated port. <span class="li-normal">type: int</span>
  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">encrypted_port</span> <b>(Alias name: encrypted-port)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">encrypted_port</span> <b>(Alias name: encrypted-port)</b>  Encrypted port. <span class="li-normal">type: int</span>
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -619,10 +619,142 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restricted_auth_port</span> <b>(Alias name: restricted-auth-port)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">restricted_auth_port</span> <b>(Alias name: restricted-auth-port)</b>  Restricted auth port. <span class="li-normal">type: int</span>
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">allow_arp_monitor</span> <b>(Alias name: allow-arp-monitor)</b>  Enable/disable allow arp monitor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">export_to</span> <b>(Alias name: export-to)</b>  Export managed-switch port to a tenant vdom. <span class="li-normal">type: list</span>
+ <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
+ <div id="label189" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">export_to_pool</span> <b>(Alias name: export-to-pool)</b>  Switch controller export port to pool-list. <span class="li-normal">type: list</span>
+ <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
+ <div id="label191" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fallback_port</span> <b>(Alias name: fallback-port)</b>  Lacp fallback port. <span class="li-normal">type: str</span>
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fgt_peer_device_name</span> <b>(Alias name: fgt-peer-device-name)</b>  Fgt peer device name. <span class="li-normal">type: str</span>
+ <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fgt_peer_port_name</span> <b>(Alias name: fgt-peer-port-name)</b>  Fgt peer port name. <span class="li-normal">type: str</span>
+ <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fiber_port</span> <b>(Alias name: fiber-port)</b>  Fiber port. <span class="li-normal">type: int</span>
+ <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: int</span>
+ <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortilink_port</span> <b>(Alias name: fortilink-port)</b>  Fortilink port. <span class="li-normal">type: int</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">isl_local_trunk_name</span> <b>(Alias name: isl-local-trunk-name)</b>  Isl local trunk name. <span class="li-normal">type: str</span>
+ <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <div id="label205" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">isl_peer_device_name</span> <b>(Alias name: isl-peer-device-name)</b>  Isl peer device name. <span class="li-normal">type: str</span>
+ <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">isl_peer_port_name</span> <b>(Alias name: isl-peer-port-name)</b>  Isl peer port name. <span class="li-normal">type: str</span>
+ <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
+ <div id="label209" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">poe_capable</span> <b>(Alias name: poe-capable)</b>  Poe capable. <span class="li-normal">type: int</span>
+ <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
+ <div id="label211" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">port_number</span> <b>(Alias name: port-number)</b>  Port number. <span class="li-normal">type: int</span>
+ <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
+ <div id="label213" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">port_prefix_type</span> <b>(Alias name: port-prefix-type)</b>  Port prefix type. <span class="li-normal">type: int</span>
+ <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
+ <div id="label215" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ptp_policy</span> <b>(Alias name: ptp-policy)</b>  Ptp policy configuration. <span class="li-normal">type: list</span>
+ <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
+ <div id="label217" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">speed</span> Switch port speed; default and available settings depend on hardware. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1000auto, 40000full, 1000fiber, 10000, 40000, auto-module, 100FX-half, 100FX-full, 100000full, 2500full, 25000full, 50000full, 40000auto, 10000cr, 10000sr, 100000sr4, 100000cr4, 25000cr4, 25000sr4, 5000full, 2500auto, 5000auto, 1000full-fiber, 40000sr4, 40000cr4, 25000cr, 25000sr, 50000cr, 50000sr]</span> 
+ <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
+ <div id="label219" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">speed_mask</span> <b>(Alias name: speed-mask)</b>  Switch port speed mask. <span class="li-normal">type: int</span>
+ <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
+ <div id="label221" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">stacking_port</span> <b>(Alias name: stacking-port)</b>  Stacking port. <span class="li-normal">type: int</span>
+ <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
+ <div id="label223" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_id</span> <b>(Alias name: switch-id)</b>  Switch id. <span class="li-normal">type: str</span>
+ <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
+ <div id="label225" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">virtual_port</span> <b>(Alias name: virtual-port)</b>  Virtualized switch port. <span class="li-normal">type: int</span>
+ <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
+ <div id="label227" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">export_tags</span> <b>(Alias name: export-tags)</b>  Configure export tag(s) for fortiswitch port when exported to a virtual port pool. <span class="li-normal">type: list</span>
+ <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
+ <div id="label229" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -756,6 +888,28 @@ Examples
             encrypted_port: <integer>
             ptp_status: <value in [disable, enable]>
             restricted_auth_port: <integer>
+            allow_arp_monitor: <value in [disable, enable]>
+            export_to: <list or string>
+            export_to_pool: <list or string>
+            fallback_port: <string>
+            fgt_peer_device_name: <string>
+            fgt_peer_port_name: <string>
+            fiber_port: <integer>
+            flags: <integer>
+            fortilink_port: <integer>
+            isl_local_trunk_name: <string>
+            isl_peer_device_name: <string>
+            isl_peer_port_name: <string>
+            poe_capable: <integer>
+            port_number: <integer>
+            port_prefix_type: <integer>
+            ptp_policy: <list or string>
+            speed: <value in [auto, 10full, 10half, ...]>
+            speed_mask: <integer>
+            stacking_port: <integer>
+            switch_id: <string>
+            virtual_port: <integer>
+            export_tags: <list or string>
 
 
 Return Values

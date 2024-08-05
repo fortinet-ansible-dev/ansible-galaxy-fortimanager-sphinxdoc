@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,43 +64,43 @@ Parameters
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof_device_profile_fortiguard</span> - System template device profile fortiguard <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">target</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, direct, this-fmg]</span> 
+ <li><span class="li-head">target</span> Target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, direct, this-fmg]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">target_ip</span> <b>(Alias name: target-ip)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">target_ip</span> <b>(Alias name: target-ip)</b>  Target ip. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_firmware_upgrade</span> <b>(Alias name: auto-firmware-upgrade)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">auto_firmware_upgrade</span> <b>(Alias name: auto-firmware-upgrade)</b>  Auto firmware upgrade. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_firmware_upgrade_day</span> <b>(Alias name: auto-firmware-upgrade-day)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
+ <li><span class="li-head">auto_firmware_upgrade_day</span> <b>(Alias name: auto-firmware-upgrade-day)</b>  Auto firmware upgrade day. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_firmware_upgrade_delay</span> <b>(Alias name: auto-firmware-upgrade-delay)</b>  <span class="li-normal">type: int</span> <span class="li-normal">default: 3</span> 
+ <li><span class="li-head">auto_firmware_upgrade_delay</span> <b>(Alias name: auto-firmware-upgrade-delay)</b>  Auto firmware upgrade delay. <span class="li-normal">type: int</span> <span class="li-normal">default: 3</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_firmware_upgrade_end_hour</span> <b>(Alias name: auto-firmware-upgrade-end-hour)</b>  <span class="li-normal">type: int</span> <span class="li-normal">default: 4</span> 
+ <li><span class="li-head">auto_firmware_upgrade_end_hour</span> <b>(Alias name: auto-firmware-upgrade-end-hour)</b>  Auto firmware upgrade end hour. <span class="li-normal">type: int</span> <span class="li-normal">default: 4</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_firmware_upgrade_start_hour</span> <b>(Alias name: auto-firmware-upgrade-start-hour)</b>  <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span> 
+ <li><span class="li-head">auto_firmware_upgrade_start_hour</span> <b>(Alias name: auto-firmware-upgrade-start-hour)</b>  Auto firmware upgrade start hour. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>

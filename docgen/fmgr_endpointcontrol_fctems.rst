@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -70,7 +70,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">capabilities</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, single-vdom-connector, client-avatars]</span> 
+ <li><span class="li-head">capabilities</span> List of ems capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, single-vdom-connector, client-avatars, fgt-sysinfo-api, ztna-server-info]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -190,7 +190,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">admin_password</span> <b>(Alias name: admin-password)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">admin_password</span> <b>(Alias name: admin-password)</b>  Forticlient ems admin password. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -226,13 +226,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ca_cn_info</span> <b>(Alias name: ca-cn-info)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">ca_cn_info</span> <b>(Alias name: ca-cn-info)</b>  Ca cn info. <span class="li-normal">type: str</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.6 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">trust_ca_cn</span> <b>(Alias name: trust-ca-cn)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">trust_ca_cn</span> <b>(Alias name: trust-ca-cn)</b>  Trust ca cn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.6 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -260,6 +260,12 @@ Parameters
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cloud_authentication_access_key</span> <b>(Alias name: cloud-authentication-access-key)</b>  Forticlient ems cloud multitenancy access key <span class="li-normal">type: str</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -309,6 +315,8 @@ Examples
               - tenant-id
               - single-vdom-connector
               - client-avatars
+              - fgt-sysinfo-api
+              - ztna-server-info
             certificate_fingerprint: <string>
             cloud_server_type: <value in [production, alpha, beta]>
             fortinetone_cloud_authentication: <value in [disable, enable]>
@@ -340,6 +348,7 @@ Examples
             send_tags_to_all_vdoms: <value in [disable, enable]>
             verified_cn: <string>
             verifying_ca: <string>
+            cloud_authentication_access_key: <string>
 
 
 Return Values

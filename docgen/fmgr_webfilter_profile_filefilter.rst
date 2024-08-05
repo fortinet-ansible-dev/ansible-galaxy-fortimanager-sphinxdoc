@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_profile_filefilter</span> - File filter. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">entries</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">entries</span> Entries. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -94,7 +94,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v7.2.0</code></p>
  </div>
  </li>
- <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select file type. <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -112,7 +112,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ftp]</span> 
+ <li><span class="li-head">protocol</span> Protocols to apply with. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ftp]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>

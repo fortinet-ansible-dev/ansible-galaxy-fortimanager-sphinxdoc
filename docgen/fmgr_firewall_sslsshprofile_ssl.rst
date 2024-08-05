@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -172,6 +172,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">encrypted_client_hello</span> <b>(Alias name: encrypted-client-hello)</b>  Block/allow session based on existence of encrypted-client-hello. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, allow]</span> 
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -226,6 +232,7 @@ Examples
             cert_probe_failure: <value in [block, allow]>
             min_allowed_ssl_version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             unsupported_ssl_version: <value in [block, allow, inspect]>
+            encrypted_client_hello: <value in [block, allow]>
 
 
 Return Values

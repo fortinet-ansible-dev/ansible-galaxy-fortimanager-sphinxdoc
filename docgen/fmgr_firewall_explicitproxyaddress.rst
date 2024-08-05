@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -94,7 +94,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">header_group</span> <b>(Alias name: header-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">header_group</span> <b>(Alias name: header-group)</b>  Header group. <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
@@ -144,7 +144,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">method</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span> 
+ <li><span class="li-head">method</span> Http methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
@@ -174,7 +174,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">ua</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [chrome, ms, firefox, safari, other]</span> 
+ <li><span class="li-head">ua</span> User agent. <span class="li-normal">type: list</span> <span class="li-normal">choices: [chrome, ms, firefox, safari, other]</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>

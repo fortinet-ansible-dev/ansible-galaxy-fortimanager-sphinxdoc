@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -123,7 +123,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">datamask_custom_fields</span> <b>(Alias name: datamask-custom-fields)</b>  Datamask-custom-fields. <span class="li-normal">type: list</span>
+ <li><span class="li-head">datamask_custom_fields</span> <b>(Alias name: datamask-custom-fields)</b>  Datamask custom fields. <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -200,7 +200,7 @@ Parameters
  <li><span class="li-head">device_forticlient</span> <b>(Alias name: device-forticlient)</b>  Manage forticlient. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">device_fortiswitch</span> <b>(Alias name: device-fortiswitch)</b>  Manage fortiswitch. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
@@ -320,13 +320,13 @@ Parameters
  <li><span class="li-head">read_passwd</span> <b>(Alias name: read-passwd)</b>  View password in clear text. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">realtime_monitor</span> <b>(Alias name: realtime-monitor)</b>  Realtime monitor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">report_viewer</span> <b>(Alias name: report-viewer)</b>  Report viewer. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
@@ -605,7 +605,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">write_passwd_profiles</span> <b>(Alias name: write-passwd-profiles)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">write_passwd_profiles</span> <b>(Alias name: write-passwd-profiles)</b>  Write passwd profiles. <span class="li-normal">type: list</span>
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -619,7 +619,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">write_passwd_user_list</span> <b>(Alias name: write-passwd-user-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">write_passwd_user_list</span> <b>(Alias name: write-passwd-user-list)</b>  Write passwd user list. <span class="li-normal">type: list</span>
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>

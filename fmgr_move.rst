@@ -19,7 +19,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -197,10 +197,12 @@ Parameters
           <span class="li-normal">v6.4.2->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
-          <span class="li-normal">v7.2.0->v7.2.0</span>
+          <span class="li-normal">v7.2.0->v7.2.0</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
-          <span class="li-normal">v7.2.0->v7.2.0</span>
+          <span class="li-normal">v7.2.0->v7.2.0</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -222,25 +224,31 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.14</span>,
-          <span class="li-normal">v7.0.1->v7.2.0</span>
+          <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.14</span>,
-          <span class="li-normal">v7.0.1->v7.2.0</span>
+          <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.14</span>,
-          <span class="li-normal">v7.0.1->v7.2.0</span>
+          <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.14</span>,
-          <span class="li-normal">v7.0.1->v7.2.0</span>
+          <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
-          <span class="li-normal">v6.0.0->v7.2.2</span>
+          <span class="li-normal">v6.0.0->v7.2.2</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
-          <span class="li-normal">v6.0.0->v7.2.2</span>
+          <span class="li-normal">v6.0.0->v7.2.2</span>,
+          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -306,6 +314,9 @@ Parameters
           <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch</span> - available versions:
+          <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">system_externalresource</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_compartmentlist</span> - available versions:
@@ -430,26 +441,26 @@ Parameters
         <li><span class="li-normal">params for application_casi_profile_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for application_list_defaultnetworkservices:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">list</span></li>
             <li><span class="li-normal">default-network-services</span></li>
+            <li><span class="li-normal">list</span></li>
         </ul>
         <li><span class="li-normal">params for application_list_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">list</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">list</span></li>
         </ul>
         <li><span class="li-normal">params for application_list_entries_parameters:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">list</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">list</span></li>
             <li><span class="li-normal">parameters</span></li>
         </ul>
         <li><span class="li-normal">params for bonjourprofile_policylist:</span></li>
@@ -476,8 +487,8 @@ Parameters
         <li><span class="li-normal">params for cifs_profile_filefilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for dlp_dictionary_entries:</span></li>
         <ul class="ul-self">
@@ -488,8 +499,8 @@ Parameters
         <li><span class="li-normal">params for dlp_filepattern_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">filepattern</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">filepattern</span></li>
         </ul>
         <li><span class="li-normal">params for dlp_profile_rule:</span></li>
         <ul class="ul-self">
@@ -500,14 +511,14 @@ Parameters
         <li><span class="li-normal">params for dlp_sensor_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">sensor</span></li>
         </ul>
         <li><span class="li-normal">params for dlp_sensor_filter:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
             <li><span class="li-normal">filter</span></li>
+            <li><span class="li-normal">sensor</span></li>
         </ul>
         <li><span class="li-normal">params for dnsfilter_domainfilter_entries:</span></li>
         <ul class="ul-self">
@@ -518,8 +529,8 @@ Parameters
         <li><span class="li-normal">params for dnsfilter_urlfilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">urlfilter</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">urlfilter</span></li>
         </ul>
         <li><span class="li-normal">params for emailfilter_blockallowlist_entries:</span></li>
         <ul class="ul-self">
@@ -542,8 +553,8 @@ Parameters
         <li><span class="li-normal">params for emailfilter_profile_filefilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for endpointcontrol_fctems:</span></li>
         <ul class="ul-self">
@@ -559,8 +570,8 @@ Parameters
         <li><span class="li-normal">params for extendercontroller_extenderprofile_lanextension_backhaul:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender-profile</span></li>
             <li><span class="li-normal">backhaul</span></li>
+            <li><span class="li-normal">extender-profile</span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile_cellular_smsnotification_receiver:</span></li>
         <ul class="ul-self">
@@ -571,8 +582,8 @@ Parameters
         <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_backhaul:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender-profile</span></li>
             <li><span class="li-normal">backhaul</span></li>
+            <li><span class="li-normal">extender-profile</span></li>
         </ul>
         <li><span class="li-normal">params for filefilter_profile_rules:</span></li>
         <ul class="ul-self">
@@ -582,23 +593,23 @@ Parameters
         </ul>
         <li><span class="li-normal">params for firewall_accessproxy:</span></li>
         <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">access-proxy</span></li>
+            <li><span class="li-normal">adom</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_accessproxy6:</span></li>
         <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">access-proxy6</span></li>
+            <li><span class="li-normal">adom</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_accessproxysshclientcert:</span></li>
         <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">access-proxy-ssh-client-cert</span></li>
+            <li><span class="li-normal">adom</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_accessproxyvirtualhost:</span></li>
         <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">access-proxy-virtual-host</span></li>
+            <li><span class="li-normal">adom</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_carrierendpointbwl_entries:</span></li>
         <ul class="ul-self">
@@ -619,8 +630,8 @@ Parameters
         <li><span class="li-normal">params for firewall_profileprotocoloptions_cifs_filefilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile-protocol-options</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile-protocol-options</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_service_category:</span></li>
         <ul class="ul-self">
@@ -635,8 +646,8 @@ Parameters
         <li><span class="li-normal">params for firewall_shapingprofile_shapingentries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">shaping-profile</span></li>
             <li><span class="li-normal">shaping-entries</span></li>
+            <li><span class="li-normal">shaping-profile</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_vip:</span></li>
         <ul class="ul-self">
@@ -651,27 +662,27 @@ Parameters
         <li><span class="li-normal">params for ips_sensor_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">sensor</span></li>
         </ul>
         <li><span class="li-normal">params for ips_sensor_filter:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
             <li><span class="li-normal">filter</span></li>
+            <li><span class="li-normal">sensor</span></li>
         </ul>
         <li><span class="li-normal">params for mpskprofile_mpskgroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">mpsk-profile</span></li>
             <li><span class="li-normal">mpsk-group</span></li>
+            <li><span class="li-normal">mpsk-profile</span></li>
         </ul>
         <li><span class="li-normal">params for mpskprofile_mpskgroup_mpskkey:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">mpsk-profile</span></li>
             <li><span class="li-normal">mpsk-group</span></li>
             <li><span class="li-normal">mpsk-key</span></li>
+            <li><span class="li-normal">mpsk-profile</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_authentication_rule:</span></li>
         <ul class="ul-self">
@@ -682,32 +693,32 @@ Parameters
         <li><span class="li-normal">params for pkg_central_dnat:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">dnat</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_central_dnat6:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">dnat6</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_acl:</span></li>
         <ul class="ul-self">
+            <li><span class="li-normal">acl</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">acl</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_acl6:</span></li>
         <ul class="ul-self">
+            <li><span class="li-normal">acl6</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">acl6</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_centralsnatmap:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">central-snat-map</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_consolidated_policy:</span></li>
         <ul class="ul-self">
@@ -717,88 +728,88 @@ Parameters
         </ul>
         <li><span class="li-normal">params for pkg_firewall_dospolicy:</span></li>
         <ul class="ul-self">
+            <li><span class="li-normal">DoS-policy</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">DoS-policy</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_dospolicy6:</span></li>
         <ul class="ul-self">
+            <li><span class="li-normal">DoS-policy6</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">DoS-policy6</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_explicitproxypolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">explicit-proxy-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_explicitproxypolicy_identitybasedpolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">explicit-proxy-policy</span></li>
             <li><span class="li-normal">identity-based-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_hyperscalepolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">hyperscale-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_hyperscalepolicy46:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">hyperscale-policy46</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_hyperscalepolicy6:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">hyperscale-policy6</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_hyperscalepolicy64:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">hyperscale-policy64</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_interfacepolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">interface-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_interfacepolicy6:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">interface-policy6</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_localinpolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">local-in-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_localinpolicy6:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">local-in-policy6</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_multicastpolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">multicast-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_multicastpolicy6:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">multicast-policy6</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_policy:</span></li>
         <ul class="ul-self">
@@ -845,8 +856,8 @@ Parameters
         <li><span class="li-normal">params for pkg_user_nacpolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">nac-policy</span></li>
+            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_consolidated_policy:</span></li>
         <ul class="ul-self">
@@ -887,8 +898,8 @@ Parameters
         <li><span class="li-normal">params for sshfilter_profile_filefilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for sshfilter_profile_shellcommands:</span></li>
         <ul class="ul-self">
@@ -907,73 +918,78 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">managed-switch</span></li>
         </ul>
+        <li><span class="li-normal">params for system_externalresource:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">external-resource</span></li>
+        </ul>
         <li><span class="li-normal">params for system_sdnconnector_compartmentlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">compartment-list</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_externalaccountlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">external-account-list</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_externalip:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">external-ip</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_forwardingrule:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">forwarding-rule</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_gcpprojectlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">gcp-project-list</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_nic:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">nic</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_nic_ip:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
-            <li><span class="li-normal">nic</span></li>
             <li><span class="li-normal">ip</span></li>
+            <li><span class="li-normal">nic</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_ociregionlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">oci-region-list</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_route:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">route</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_routetable:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
             <li><span class="li-normal">route-table</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector_routetable_route:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sdn-connector</span></li>
-            <li><span class="li-normal">route-table</span></li>
             <li><span class="li-normal">route</span></li>
+            <li><span class="li-normal">route-table</span></li>
+            <li><span class="li-normal">sdn-connector</span></li>
         </ul>
         <li><span class="li-normal">params for user_deviceaccesslist_devicelist:</span></li>
         <ul class="ul-self">
@@ -990,20 +1006,20 @@ Parameters
         <li><span class="li-normal">params for videofilter_profile_filters:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">filters</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for videofilter_profile_fortiguardcategory_filters:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">filters</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for videofilter_youtubechannelfilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">youtube-channel-filter</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">youtube-channel-filter</span></li>
         </ul>
         <li><span class="li-normal">params for vpn_ipsec_fec_mappings:</span></li>
         <ul class="ul-self">
@@ -1013,22 +1029,22 @@ Parameters
         </ul>
         <li><span class="li-normal">params for vpn_ssl_settings_authenticationrule:</span></li>
         <ul class="ul-self">
+            <li><span class="li-normal">authentication-rule</span></li>
             <li><span class="li-normal">device</span></li>
             <li><span class="li-normal">vdom</span></li>
-            <li><span class="li-normal">authentication-rule</span></li>
         </ul>
         <li><span class="li-normal">params for vpnsslweb_portal_bookmarkgroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">portal</span></li>
             <li><span class="li-normal">bookmark-group</span></li>
+            <li><span class="li-normal">portal</span></li>
         </ul>
         <li><span class="li-normal">params for vpnsslweb_portal_bookmarkgroup_bookmarks:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">portal</span></li>
             <li><span class="li-normal">bookmark-group</span></li>
             <li><span class="li-normal">bookmarks</span></li>
+            <li><span class="li-normal">portal</span></li>
         </ul>
         <li><span class="li-normal">params for vpnsslweb_portal_splitdns:</span></li>
         <ul class="ul-self">
@@ -1039,21 +1055,21 @@ Parameters
         <li><span class="li-normal">params for wanprof_system_sdwan_members:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wanprof</span></li>
             <li><span class="li-normal">members</span></li>
+            <li><span class="li-normal">wanprof</span></li>
         </ul>
         <li><span class="li-normal">params for wanprof_system_sdwan_service:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wanprof</span></li>
             <li><span class="li-normal">service</span></li>
+            <li><span class="li-normal">wanprof</span></li>
         </ul>
         <li><span class="li-normal">params for wanprof_system_sdwan_service_sla:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wanprof</span></li>
             <li><span class="li-normal">service</span></li>
             <li><span class="li-normal">sla</span></li>
+            <li><span class="li-normal">wanprof</span></li>
         </ul>
         <li><span class="li-normal">params for wanprof_system_sdwan_zone:</span></li>
         <ul class="ul-self">
@@ -1064,21 +1080,21 @@ Parameters
         <li><span class="li-normal">params for wanprof_system_virtualwanlink_members:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wanprof</span></li>
             <li><span class="li-normal">members</span></li>
+            <li><span class="li-normal">wanprof</span></li>
         </ul>
         <li><span class="li-normal">params for wanprof_system_virtualwanlink_service:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wanprof</span></li>
             <li><span class="li-normal">service</span></li>
+            <li><span class="li-normal">wanprof</span></li>
         </ul>
         <li><span class="li-normal">params for wanprof_system_virtualwanlink_service_sla:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wanprof</span></li>
             <li><span class="li-normal">service</span></li>
             <li><span class="li-normal">sla</span></li>
+            <li><span class="li-normal">wanprof</span></li>
         </ul>
         <li><span class="li-normal">params for webfilter_contentheader_entries:</span></li>
         <ul class="ul-self">
@@ -1089,25 +1105,25 @@ Parameters
         <li><span class="li-normal">params for webfilter_profile_filefilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for webfilter_urlfilter_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">urlfilter</span></li>
             <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">urlfilter</span></li>
         </ul>
         <li><span class="li-normal">params for wireless_accesscontrollist_layer3ipv4rules:</span></li>
         <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">access-control-list</span></li>
+            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">layer3-ipv4-rules</span></li>
         </ul>
         <li><span class="li-normal">params for wireless_accesscontrollist_layer3ipv6rules:</span></li>
         <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">access-control-list</span></li>
+            <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">layer3-ipv6-rules</span></li>
         </ul>
     </ul>

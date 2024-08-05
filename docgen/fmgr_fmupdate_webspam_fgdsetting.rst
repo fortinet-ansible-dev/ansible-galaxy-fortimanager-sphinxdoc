@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -212,46 +212,43 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_override</span> <b>(Alias name: server-override)</b>  <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">servlist</span> Servlist. <span class="li-normal">type: list</span>
+ <li><span class="li-head">server_override</span> <b>(Alias name: server-override)</b>  Server override. <span class="li-normal">type: dict</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">id</span> Override server id (1 - 10). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <li><span class="li-head">servlist</span> Servlist. <span class="li-normal">type: list</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">ip</span> Ipv4 address of the override server. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">id</span> Override server id (1 - 10). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip6</span> Ipv6 address of the override server. <span class="li-normal">type: str</span> <span class="li-normal">default: ::</span> 
+ <li><span class="li-head">ip</span> Ipv4 address of the override server. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Port number to use when contacting fortiguard (1 - 65535, default = 443). <span class="li-normal">type: int</span> <span class="li-normal">default: 443</span> 
+ <li><span class="li-head">ip6</span> Ipv6 address of the override server. <span class="li-normal">type: str</span> <span class="li-normal">default: ::</span> 
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fgd, fgc, fsa, fgfq, geoip, iot-collect]</span> 
+ <li><span class="li-head">port</span> Port number to use when contacting fortiguard (1 - 65535, default = 443). <span class="li-normal">type: int</span> <span class="li-normal">default: 443</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fgd, fgc, fsa, fgfq, geoip, iot-collect]</span> 
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -259,93 +256,101 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">stat_log_interval</span> <b>(Alias name: stat-log-interval)</b>  Statistic log interval setting, in minutes (1 - 1440, default = 60). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
+ <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">stat_sync_interval</span> <b>(Alias name: stat-sync-interval)</b>  Synchronization interval for statistic of unrated site in minutes (1 - 60, default = 60). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
+ </ul>
+ </li>
+ <li><span class="li-head">stat_log_interval</span> <b>(Alias name: stat-log-interval)</b>  Statistic log interval setting, in minutes (1 - 1440, default = 60). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_interval</span> <b>(Alias name: update-interval)</b>  Fortiguard database update wait time if not enough delta files, in hours (2 - 24, default = 6). <span class="li-normal">type: int</span> <span class="li-normal">default: 6</span> 
+ <li><span class="li-head">stat_sync_interval</span> <b>(Alias name: stat-sync-interval)</b>  Synchronization interval for statistic of unrated site in minutes (1 - 60, default = 60). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_log</span> <b>(Alias name: update-log)</b>  Enable/disable update log setting (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">update_interval</span> <b>(Alias name: update-interval)</b>  Fortiguard database update wait time if not enough delta files, in hours (2 - 24, default = 6). <span class="li-normal">type: int</span> <span class="li-normal">default: 6</span> 
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_cache</span> <b>(Alias name: wf-cache)</b>  Web filter service maximum memory usage, in megabytes (maximum = physical memory-1024, 0 = no limit, default = 600). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <li><span class="li-head">update_log</span> <b>(Alias name: update-log)</b>  Enable/disable update log setting (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_dn_cache_expire_time</span> <b>(Alias name: wf-dn-cache-expire-time)</b>  Web filter dn cache expire time, in minutes (1 - 1440, 0 = never, default = 30). <span class="li-normal">type: int</span> <span class="li-normal">default: 30</span> 
+ <li><span class="li-head">wf_cache</span> <b>(Alias name: wf-cache)</b>  Web filter service maximum memory usage, in megabytes (maximum = physical memory-1024, 0 = no limit, default = 600). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_dn_cache_max_number</span> <b>(Alias name: wf-dn-cache-max-number)</b>  Maximum number of web filter dn cache (0 = disable, default = 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 10000</span> 
+ <li><span class="li-head">wf_dn_cache_expire_time</span> <b>(Alias name: wf-dn-cache-expire-time)</b>  Web filter dn cache expire time, in minutes (1 - 1440, 0 = never, default = 30). <span class="li-normal">type: int</span> <span class="li-normal">default: 30</span> 
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_log</span> <b>(Alias name: wf-log)</b>  Web filter log setting (default = nour1) <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nourl, all]</span>  <span class="li-normal">default: nourl</span> 
+ <li><span class="li-head">wf_dn_cache_max_number</span> <b>(Alias name: wf-dn-cache-max-number)</b>  Maximum number of web filter dn cache (0 = disable, default = 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 10000</span> 
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_preload</span> <b>(Alias name: wf-preload)</b>  Enable/disable preloading the web filter database into memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">wf_log</span> <b>(Alias name: wf-log)</b>  Web filter log setting (default = nour1) <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nourl, all]</span>  <span class="li-normal">default: nourl</span> 
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">iot_cache</span> <b>(Alias name: iot-cache)</b>  Iot service maximum memory usage, in megabytes (100 - 500, default = 300). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span> 
+ <li><span class="li-head">wf_preload</span> <b>(Alias name: wf-preload)</b>  Enable/disable preloading the web filter database into memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">iot_log</span> <b>(Alias name: iot-log)</b>  Iot log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all]</span>  <span class="li-normal">default: nofilequery</span> 
+ <li><span class="li-head">iot_cache</span> <b>(Alias name: iot-cache)</b>  Iot service maximum memory usage, in megabytes (100 - 500, default = 300). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">iot_preload</span> <b>(Alias name: iot-preload)</b>  Enable/disable preloading iot database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">iot_log</span> <b>(Alias name: iot-log)</b>  Iot log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all]</span>  <span class="li-normal">default: nofilequery</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restrict_iots_dbver</span> <b>(Alias name: restrict-iots-dbver)</b>  Restrict system update to indicated file query database version (character limit = 127). <span class="li-normal">type: str</span>
+ <li><span class="li-head">iot_preload</span> <b>(Alias name: iot-preload)</b>  Enable/disable preloading iot database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">stat_log</span> <b>(Alias name: stat-log)</b>  Stat log setting (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">restrict_iots_dbver</span> <b>(Alias name: restrict-iots-dbver)</b>  Restrict system update to indicated file query database version (character limit = 127). <span class="li-normal">type: str</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">stat_log</span> <b>(Alias name: stat-log)</b>  Stat log setting (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">iotv_preload</span> <b>(Alias name: iotv-preload)</b>  Enable/disable preloading iot-vulnerability database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
- <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
- <div id="label93" style="display:none">
+ <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
+ <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>

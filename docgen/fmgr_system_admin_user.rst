@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -77,7 +77,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">adom_exclude</span> <b>(Alias name: adom-exclude)</b>  Adom-exclude. <span class="li-normal">type: list</span>
+ <li><span class="li-head">adom_exclude</span> <b>(Alias name: adom-exclude)</b>  Adom exclude. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.2</code></p>
@@ -91,7 +91,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">app_filter</span> <b>(Alias name: app-filter)</b>  App-filter. <span class="li-normal">type: list</span>
+ <li><span class="li-head">app_filter</span> <b>(Alias name: app-filter)</b>  App filter. <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -233,7 +233,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">dashboard_tabs</span> <b>(Alias name: dashboard-tabs)</b>  Dashboard-tabs. <span class="li-normal">type: list</span>
+ <li><span class="li-head">dashboard_tabs</span> <b>(Alias name: dashboard-tabs)</b>  Dashboard tabs. <span class="li-normal">type: list</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -313,7 +313,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ips_filter</span> <b>(Alias name: ips-filter)</b>  Ips-filter. <span class="li-normal">type: list</span>
+ <li><span class="li-head">ips_filter</span> <b>(Alias name: ips-filter)</b>  Ips filter. <span class="li-normal">type: list</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -399,7 +399,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">meta_data</span> <b>(Alias name: meta-data)</b>  Meta-data. <span class="li-normal">type: list</span>
+ <li><span class="li-head">meta_data</span> <b>(Alias name: meta-data)</b>  Meta data. <span class="li-normal">type: list</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -467,7 +467,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">policy_package</span> <b>(Alias name: policy-package)</b>  Policy-package. <span class="li-normal">type: list</span>
+ <li><span class="li-head">policy_package</span> <b>(Alias name: policy-package)</b>  Policy package. <span class="li-normal">type: list</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -499,7 +499,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.3</code>, <code class="docutils literal notranslate">v6.4.0 -> v6.4.0</code></p>
  </div>
  </li>
- <li><span class="li-head">restrict_dev_vdom</span> <b>(Alias name: restrict-dev-vdom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">restrict_dev_vdom</span> <b>(Alias name: restrict-dev-vdom)</b>  Restrict dev vdom. <span class="li-normal">type: list</span>
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.3</code>, <code class="docutils literal notranslate">v6.4.0 -> v6.4.0</code></p>
@@ -627,7 +627,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">web_filter</span> <b>(Alias name: web-filter)</b>  Web-filter. <span class="li-normal">type: list</span>
+ <li><span class="li-head">web_filter</span> <b>(Alias name: web-filter)</b>  Web filter. <span class="li-normal">type: list</span>
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

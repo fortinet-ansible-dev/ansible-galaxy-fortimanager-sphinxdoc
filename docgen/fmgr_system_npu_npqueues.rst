@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_npu_npqueues</span> - Configure queue assignment on NP7. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ethernet_type</span> <b>(Alias name: ethernet-type)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ethernet_type</span> <b>(Alias name: ethernet-type)</b>  Ethernet type. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -95,7 +95,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">ip_protocol</span> <b>(Alias name: ip-protocol)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ip_protocol</span> <b>(Alias name: ip-protocol)</b>  Ip protocol. <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -127,7 +127,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">ip_service</span> <b>(Alias name: ip-service)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ip_service</span> <b>(Alias name: ip-service)</b>  Ip service. <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -171,7 +171,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">profile</span> Profile. <span class="li-normal">type: list</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -629,7 +629,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">scheduler</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">scheduler</span> Scheduler. <span class="li-normal">type: list</span>
  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -185,7 +185,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_app_ctrl</span> <b>(Alias name: internet-service-app-ctrl)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_app_ctrl</span> <b>(Alias name: internet-service-app-ctrl)</b>  Application control based internet service id list. <span class="li-normal">type: list</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -299,7 +299,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sla</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">sla</span> Sla. <span class="li-normal">type: list</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -391,13 +391,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">input_zone</span> <b>(Alias name: input-zone)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">input_zone</span> <b>(Alias name: input-zone)</b>  Source input-zone name. <span class="li-normal">type: list</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_app_ctrl_category</span> <b>(Alias name: internet-service-app-ctrl-category)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_app_ctrl_category</span> <b>(Alias name: internet-service-app-ctrl-category)</b>  Ids of one or more application control categories. <span class="li-normal">type: list</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -409,7 +409,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">priority_zone</span> <b>(Alias name: priority-zone)</b>  <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">priority_zone</span> <b>(Alias name: priority-zone)</b>  Priority zone name list. <span class="li-normal">type: list or str</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>

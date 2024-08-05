@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -70,7 +70,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">ports</span> Ports to use for scanning (1 - 65535, default = 443). <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -106,13 +106,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">block</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [x11-filter, ssh-shell, exec, port-forward]</span> 
+ <li><span class="li-head">block</span> Ssh blocking options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [x11-filter, ssh-shell, exec, port-forward]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
  </div>
  </li>
- <li><span class="li-head">log</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [x11-filter, ssh-shell, exec, port-forward]</span> 
+ <li><span class="li-head">log</span> Ssh logging options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [x11-filter, ssh-shell, exec, port-forward]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>

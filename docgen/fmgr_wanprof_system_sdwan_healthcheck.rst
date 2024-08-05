@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">wanprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">wanprof_system_sdwan_healthcheck</span> - SD-WAN status checking or health checking. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">_dynamic_server</span> <b>(Alias name: _dynamic-server)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">_dynamic_server</span> <b>(Alias name: _dynamic-server)</b>  Dynamic server. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v6.4.14</code></p>
@@ -161,7 +161,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">password</span> Twamp controller password in authentication mode <span class="li-normal">type: list</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -215,13 +215,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">server</span> Ip address or fqdn name of the server. <span class="li-normal">type: list</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sla</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">sla</span> Sla. <span class="li-normal">type: list</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -245,7 +245,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos]</span> 
+ <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos]</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>

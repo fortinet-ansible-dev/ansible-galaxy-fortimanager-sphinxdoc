@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -82,7 +82,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_keytab</span> <b>(Alias name: server-keytab)</b>  Server-keytab. <span class="li-normal">type: list</span>
+ <li><span class="li-head">server_keytab</span> <b>(Alias name: server-keytab)</b>  Server keytab. <span class="li-normal">type: list</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -108,60 +108,65 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">file_filter</span> <b>(Alias name: file-filter)</b>  <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">entries</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">file_filter</span> <b>(Alias name: file-filter)</b>  File filter. <span class="li-normal">type: dict</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log]</span> 
+ <li><span class="li-head">entries</span> Entries. <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">direction</span> Match files transmitted in the sessions originating or reply direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [incoming, outgoing, any]</span> 
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select file type. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">direction</span> Match files transmitted in the sessions originating or reply direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [incoming, outgoing, any]</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter</span> Add a file filter. <span class="li-normal">type: str</span>
+ <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select file type. <span class="li-normal">type: list or str</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [cifs]</span> 
+ <li><span class="li-head">filter</span> Add a file filter. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">protocol</span> Protocols to apply with. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cifs]</span> 
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">log</span> Enable/disable file filter logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
- <div id="label29" style="display:none">
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable file filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
- <div id="label31" style="display:none">
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>

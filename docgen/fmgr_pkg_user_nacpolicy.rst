@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_user_nacpolicy</span> - Configure NAC policy matching pattern to identify matching NAC devices. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">category</span> Category of nac policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [device, firewall-user, ems-tag, vulnerability]</span> 
+ <li><span class="li-head">category</span> Category of nac policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [device, firewall-user, ems-tag, vulnerability, fortivoice-tag]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -167,10 +167,70 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">severity</span> Nac policy matching devices vulnerability severity lists. <span class="li-normal">type: list</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">firewall_address</span> <b>(Alias name: firewall-address)</b>  Dynamic firewall address to associate mac which match this policy. <span class="li-normal">type: list</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortivoice_tag</span> <b>(Alias name: fortivoice-tag)</b>  Nac policy matching fortivoice tag. <span class="li-normal">type: list</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">match_period</span> <b>(Alias name: match-period)</b>  Number of days the matched devices will be retained (0 - always retain) <span class="li-normal">type: int</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">match_type</span> <b>(Alias name: match-type)</b>  Match and retain the devices based on the type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dynamic, override]</span> 
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_fortilink</span> <b>(Alias name: switch-fortilink)</b>  Support meta variable <span class="li-normal">type: list</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_group</span> <b>(Alias name: switch-group)</b>  Support meta variable <span class="li-normal">type: list</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_mac_policy</span> <b>(Alias name: switch-mac-policy)</b>  Switch mac policy action to be applied on the matched nac policy. <span class="li-normal">type: list</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_scope</span> <b>(Alias name: switch-scope)</b>  List of managed fortiswitches on which nac policy can be applied. <span class="li-normal">type: list</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_port_policy</span> <b>(Alias name: switch-port-policy)</b>  Switch-port-policy to be applied on the matched nac policy. <span class="li-normal">type: list</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_auto_auth</span> <b>(Alias name: switch-auto-auth)</b>  Nac device auto authorization when discovered and nac-policy matched. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, global]</span> 
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -228,6 +288,16 @@ Examples
             user: <string>
             user_group: <string>
             severity: <list or integer>
+            firewall_address: <list or string>
+            fortivoice_tag: <list or string>
+            match_period: <integer>
+            match_type: <value in [dynamic, override]>
+            switch_fortilink: <list or string>
+            switch_group: <list or string>
+            switch_mac_policy: <list or string>
+            switch_scope: <list or string>
+            switch_port_policy: <list or string>
+            switch_auto_auth: <value in [disable, enable, global]>
 
 
 Return Values

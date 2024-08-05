@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -61,13 +61,13 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">dvm_cmd_add_devlist</span> - Add multiple devices to the Device Manager database. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">add_dev_list</span> <b>(Alias name: add-dev-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">add_dev_list</span> <b>(Alias name: add-dev-list)</b>  A list of device objects to be added. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">adm_pass</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">adm_pass</span> Add real and promote device. <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -177,7 +177,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flags</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> 
+ <li><span class="li-head">flags</span> Create_task - create a new task in task manager database. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, create_task, nonblocking, log_dev]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

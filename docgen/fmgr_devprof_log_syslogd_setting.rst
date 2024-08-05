@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -154,13 +154,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">syslog_type</span> <b>(Alias name: syslog-type)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">syslog_type</span> <b>(Alias name: syslog-type)</b>  Syslog type. <span class="li-normal">type: int</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></p>
  </div>
  </li>
- <li><span class="li-head">custom_field_name</span> <b>(Alias name: custom-field-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">custom_field_name</span> <b>(Alias name: custom-field-name)</b>  Custom field name. <span class="li-normal">type: list</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -185,6 +185,12 @@ Parameters
  </div>
  </li>
  </ul>
+ </li>
+ <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip address of syslog. <span class="li-normal">type: str</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
  </li>
  </ul>
  </ul>
@@ -243,6 +249,7 @@ Examples
                 custom: <string>
                 id: <integer>
                 name: <string>
+            source_ip: <string>
 
 
 Return Values

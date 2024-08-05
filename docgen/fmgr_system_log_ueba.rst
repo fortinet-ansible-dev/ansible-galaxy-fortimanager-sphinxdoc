@@ -1,13 +1,13 @@
-:source: fmgr_switchcontroller_managedswitch_igmpsnooping.py
+:source: fmgr_system_log_ueba.py
 
 :orphan:
 
-.. _fmgr_switchcontroller_managedswitch_igmpsnooping:
+.. _fmgr_system_log_ueba:
 
-fmgr_switchcontroller_managedswitch_igmpsnooping -- Configure FortiSwitch IGMP snooping global settings.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_log_ueba -- UEBAsettings.
++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.0.0
+.. versionadded:: 2.6.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -60,9 +60,21 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">system_log_ueba</span> - UEBAsettings. <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self">
+ <li><span class="li-head">ip_only_ep</span> <b>(Alias name: ip-only-ep)</b>  Disable/enable ip-only endpoint identification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip_unique_scope</span> <b>(Alias name: ip-unique-scope)</b>  Set ip-unique-scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [adom, vdom]</span>  <span class="li-normal">default: vdom</span> 
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
  </ul>
 
 
@@ -88,16 +100,16 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Configure FortiSwitch IGMP snooping global settings.
-        fortinet.fortimanager.fmgr_switchcontroller_managedswitch_igmpsnooping:
+      - name: UEBAsettings.
+        fortinet.fortimanager.fmgr_system_log_ueba:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          device: <your own value>
-          vdom: <your own value>
-          managed_switch: <your own value>
+          system_log_ueba:
+            ip_only_ep: <value in [disable, enable]>
+            ip_unique_scope: <value in [adom, vdom]>
 
 
 Return Values

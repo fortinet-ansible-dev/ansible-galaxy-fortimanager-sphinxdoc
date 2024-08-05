@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -108,7 +108,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.4.0</code></p>
  </div>
  </li>
- <li><span class="li-head">monitor</span> <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">monitor</span> Name of the health check monitor to use when polling to determine a virtual servers connectivity status. <span class="li-normal">type: list or str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.4.0</code></p>

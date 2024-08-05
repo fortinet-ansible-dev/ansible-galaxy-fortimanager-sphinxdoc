@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -65,31 +65,31 @@ Parameters
  <li><span class="li-head">interface</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dynamic_interface_platformmapping</span> - Dynamic interface platform mapping <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">egress_shaping_profile</span> <b>(Alias name: egress-shaping-profile)</b>  <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">egress_shaping_profile</span> <b>(Alias name: egress-shaping-profile)</b>  Egress shaping profile. <span class="li-normal">type: list or str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ingress_shaping_profile</span> <b>(Alias name: ingress-shaping-profile)</b>  <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">ingress_shaping_profile</span> <b>(Alias name: ingress-shaping-profile)</b>  Ingress shaping profile. <span class="li-normal">type: list or str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">intf_zone</span> <b>(Alias name: intf-zone)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">intf_zone</span> <b>(Alias name: intf-zone)</b>  Intf zone. <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">intrazone_deny</span> <b>(Alias name: intrazone-deny)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">intrazone_deny</span> <b>(Alias name: intrazone-deny)</b>  Intrazone deny. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">name</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>

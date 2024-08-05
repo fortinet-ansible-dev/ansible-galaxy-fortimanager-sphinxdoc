@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,25 +64,25 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">cloud_orchestaws</span> - Cloud orchest aws <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">connector</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">connector</span> Connector. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">name</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">region_name</span> <b>(Alias name: region-name)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1, eu-west-2, eu-west-3, eu-north-1, eu-south-1, eu-south-2, eu-central-1, eu-central-2, ca-central-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-south-1, ap-south-2, ap-northeast-1, ap-northeast-2, ap-northeast-3, af-south-1, me-central-1, me-south-1, sa-east-1, ap-east-1, us-gov-east-1, us-gov-west-1]</span>  <span class="li-normal">default: us-east-1</span> 
+ <li><span class="li-head">region_name</span> <b>(Alias name: region-name)</b>  Region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1, eu-west-2, eu-west-3, eu-north-1, eu-south-1, eu-south-2, eu-central-1, eu-central-2, ca-central-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-south-1, ap-south-2, ap-northeast-1, ap-northeast-2, ap-northeast-3, af-south-1, me-central-1, me-south-1, sa-east-1, ap-east-1, us-gov-east-1, us-gov-west-1]</span>  <span class="li-normal">default: us-east-1</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">template_configuration</span> <b>(Alias name: template-configuration)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">template_configuration</span> <b>(Alias name: template-configuration)</b>  Template configuration. <span class="li-normal">type: str</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -136,7 +136,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">min_allowed_ssl_version</span> <b>(Alias name: min-allowed-ssl-version)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> 
+ <li><span class="li-head">min_allowed_ssl_version</span> <b>(Alias name: min-allowed-ssl-version)</b>  Min allowed ssl version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ssl-3.0, tls-1.0, tls-1.1, tls-1.2, tls-1.3]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>

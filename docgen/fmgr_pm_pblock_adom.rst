@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -63,72 +63,77 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pm_pblock_adom</span> - Policy block adom <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">name</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oid</span> <span class="li-normal">type: int</span>
+ <li><span class="li-head">oid</span> Oid. <span class="li-normal">type: int</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">package_settings</span> <b>(Alias name: package settings)</b>  <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">central_nat</span> <b>(Alias name: central-nat)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">package_settings</span> <b>(Alias name: package settings)</b>  Package settings. <span class="li-normal">type: dict</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">consolidated_firewall_mode</span> <b>(Alias name: consolidated-firewall-mode)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">central_nat</span> <b>(Alias name: central-nat)</b>  Central nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fwpolicy_implicit_log</span> <b>(Alias name: fwpolicy-implicit-log)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">consolidated_firewall_mode</span> <b>(Alias name: consolidated-firewall-mode)</b>  Consolidated firewall mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fwpolicy6_implicit_log</span> <b>(Alias name: fwpolicy6-implicit-log)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">fwpolicy_implicit_log</span> <b>(Alias name: fwpolicy-implicit-log)</b>  Fwpolicy implicit log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">inspection_mode</span> <b>(Alias name: inspection-mode)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [proxy, flow]</span> 
+ <li><span class="li-head">fwpolicy6_implicit_log</span> <b>(Alias name: fwpolicy6-implicit-log)</b>  Fwpolicy6 implicit log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ngfw_mode</span> <b>(Alias name: ngfw-mode)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [profile-based, policy-based]</span> 
+ <li><span class="li-head">inspection_mode</span> <b>(Alias name: inspection-mode)</b>  Inspection mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [proxy, flow]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">policy_offload_level</span> <b>(Alias name: policy-offload-level)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, default, dos-offload, full-offload]</span> 
+ <li><span class="li-head">ngfw_mode</span> <b>(Alias name: ngfw-mode)</b>  Ngfw mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [profile-based, policy-based]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_ssh_profile</span> <b>(Alias name: ssl-ssh-profile)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">policy_offload_level</span> <b>(Alias name: policy-offload-level)</b>  Policy offload level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, default, dos-offload, full-offload]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">type</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [pblock]</span> 
+ <li><span class="li-head">ssl_ssh_profile</span> <b>(Alias name: ssl-ssh-profile)</b>  Ssl ssh profile. <span class="li-normal">type: str</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [pblock]</span> 
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>

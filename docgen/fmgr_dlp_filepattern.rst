@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -76,7 +76,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select a file type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, ignored, exe, elf, bat, javascript, html, hta, msoffice, gzip, rar, tar, lzh, upx, zip, cab, bzip2, bzip, activemime, mime, hlp, arj, base64, binhex, uue, fsg, aspack, msc, petite, jpeg, gif, tiff, png, bmp, msi, mpeg, mov, mp3, wma, wav, pdf, avi, rm, torrent, hibun, 7z, xz, msofficex, mach-o, dmg, .net, xar, chm, iso, crx, sis, prc, class, jad, cod, flac]</span> 
+ <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select a file type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, ignored, exe, elf, bat, javascript, html, hta, msoffice, gzip, rar, tar, lzh, upx, zip, cab, bzip2, bzip, activemime, mime, hlp, arj, base64, binhex, uue, fsg, aspack, msc, petite, jpeg, gif, tiff, png, bmp, msi, mpeg, mov, mp3, wma, wav, pdf, avi, rm, torrent, hibun, 7z, xz, msofficex, mach-o, dmg, .net, xar, chm, iso, crx, sis, prc, class, jad, cod, flac, registry, hwp, rpm, c/cpp]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

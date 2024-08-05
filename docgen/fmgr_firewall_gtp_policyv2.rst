@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">apn_sel_mode</span> <b>(Alias name: apn-sel-mode)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [ms, net, vrf]</span> 
+ <li><span class="li-head">apn_sel_mode</span> <b>(Alias name: apn-sel-mode)</b>  Apn selection mode. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ms, net, vrf]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -107,7 +107,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">messages</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [create-ses-req, create-ses-res, modify-bearer-req, modify-bearer-res]</span> 
+ <li><span class="li-head">messages</span> Gtp messages. <span class="li-normal">type: list</span> <span class="li-normal">choices: [create-ses-req, create-ses-res, modify-bearer-req, modify-bearer-res]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -119,13 +119,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rat_type</span> <b>(Alias name: rat-type)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span> 
+ <li><span class="li-head">rat_type</span> <b>(Alias name: rat-type)</b>  Rat type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uli</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">uli</span> Gtpv2 uli patterns (in order of cgi sai rai tai ecgi lai). <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>

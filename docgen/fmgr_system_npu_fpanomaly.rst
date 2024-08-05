@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -393,61 +393,61 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gtpu_plen_err</span> <b>(Alias name: gtpu-plen-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">gtpu_plen_err</span> <b>(Alias name: gtpu-plen-err)</b>  Gtpu plen err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vxlan_minlen_err</span> <b>(Alias name: vxlan-minlen-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">vxlan_minlen_err</span> <b>(Alias name: vxlan-minlen-err)</b>  Vxlan minlen err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">capwap_minlen_err</span> <b>(Alias name: capwap-minlen-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">capwap_minlen_err</span> <b>(Alias name: capwap-minlen-err)</b>  Capwap minlen err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gre_csum_err</span> <b>(Alias name: gre-csum-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">gre_csum_err</span> <b>(Alias name: gre-csum-err)</b>  Gre csum err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nvgre_minlen_err</span> <b>(Alias name: nvgre-minlen-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">nvgre_minlen_err</span> <b>(Alias name: nvgre-minlen-err)</b>  Nvgre minlen err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sctp_l4len_err</span> <b>(Alias name: sctp-l4len-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">sctp_l4len_err</span> <b>(Alias name: sctp-l4len-err)</b>  Sctp l4len err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tcp_hlenvsl4len_err</span> <b>(Alias name: tcp-hlenvsl4len-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">tcp_hlenvsl4len_err</span> <b>(Alias name: tcp-hlenvsl4len-err)</b>  Tcp hlenvsl4len err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sctp_crc_err</span> <b>(Alias name: sctp-crc-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">sctp_crc_err</span> <b>(Alias name: sctp-crc-err)</b>  Sctp crc err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sctp_clen_err</span> <b>(Alias name: sctp-clen-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">sctp_clen_err</span> <b>(Alias name: sctp-clen-err)</b>  Sctp clen err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uesp_minlen_err</span> <b>(Alias name: uesp-minlen-err)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
+ <li><span class="li-head">uesp_minlen_err</span> <b>(Alias name: uesp-minlen-err)</b>  Uesp minlen err. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span> 
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -456,7 +456,7 @@ Parameters
  <li><span class="li-head">sctp_csum_err</span> <b>(Alias name: sctp-csum-err)</b>  Invalid ipv4 sctp checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, drop, trap-to-host]</span> 
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -77,19 +77,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">app_category</span> <b>(Alias name: app-category)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">app_category</span> <b>(Alias name: app-category)</b>  Application category id list. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">app_group</span> <b>(Alias name: app-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">app_group</span> <b>(Alias name: app-group)</b>  Application group names. <span class="li-normal">type: list</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">application</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">application</span> Application id list. <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -131,7 +131,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dstaddr</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">dstaddr</span> Destination ipv4 address name and address group names. <span class="li-normal">type: list</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -143,13 +143,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dstaddr6</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">dstaddr6</span> Destination ipv6 address name and address group names. <span class="li-normal">type: list</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dstintf</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">dstintf</span> Outgoing (egress) interface. <span class="li-normal">type: list</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -173,7 +173,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fsso_groups</span> <b>(Alias name: fsso-groups)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">fsso_groups</span> <b>(Alias name: fsso-groups)</b>  Names of fsso groups. <span class="li-normal">type: list</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -185,7 +185,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">groups</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">groups</span> Names of user groups that can authenticate with this policy. <span class="li-normal">type: list</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -203,25 +203,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_custom</span> <b>(Alias name: internet-service-custom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_custom</span> <b>(Alias name: internet-service-custom)</b>  Custom internet service name. <span class="li-normal">type: list</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_custom_group</span> <b>(Alias name: internet-service-custom-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_custom_group</span> <b>(Alias name: internet-service-custom-group)</b>  Custom internet service group name. <span class="li-normal">type: list</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_group</span> <b>(Alias name: internet-service-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_group</span> <b>(Alias name: internet-service-group)</b>  Internet service group name. <span class="li-normal">type: list</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_name</span> <b>(Alias name: internet-service-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_name</span> <b>(Alias name: internet-service-name)</b>  Internet service name. <span class="li-normal">type: list</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -239,25 +239,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_src_custom</span> <b>(Alias name: internet-service-src-custom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_src_custom</span> <b>(Alias name: internet-service-src-custom)</b>  Custom internet service source name. <span class="li-normal">type: list</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_src_custom_group</span> <b>(Alias name: internet-service-src-custom-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_src_custom_group</span> <b>(Alias name: internet-service-src-custom-group)</b>  Custom internet service source group name. <span class="li-normal">type: list</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_src_group</span> <b>(Alias name: internet-service-src-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_src_group</span> <b>(Alias name: internet-service-src-group)</b>  Internet service source group name. <span class="li-normal">type: list</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_src_name</span> <b>(Alias name: internet-service-src-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_src_name</span> <b>(Alias name: internet-service-src-name)</b>  Internet service source name. <span class="li-normal">type: list</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -347,7 +347,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">service</span> Service and service group names. <span class="li-normal">type: list</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -359,7 +359,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcaddr</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">srcaddr</span> Source ipv4 address name and address group names. <span class="li-normal">type: list</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -371,13 +371,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.2</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcaddr6</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">srcaddr6</span> Source ipv6 address name and address group names. <span class="li-normal">type: list</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcintf</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">srcintf</span> Incoming (ingress) interface. <span class="li-normal">type: list</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -401,13 +401,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">url_category</span> <b>(Alias name: url-category)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">url_category</span> <b>(Alias name: url-category)</b>  Url categories or groups. <span class="li-normal">type: list</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">users</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">users</span> Names of individual users that can authenticate with this policy. <span class="li-normal">type: list</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -452,10 +452,10 @@ Parameters
  <li><span class="li-head">mms_profile</span> <b>(Alias name: mms-profile)</b>  Name of an existing mms profile. <span class="li-normal">type: str</span>
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_id</span> <b>(Alias name: internet-service-id)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_id</span> <b>(Alias name: internet-service-id)</b>  Internet service id. <span class="li-normal">type: list</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -467,19 +467,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcaddr4</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">srcaddr4</span> Source ipv4 address name and address group names. <span class="li-normal">type: list</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dstaddr4</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">dstaddr4</span> Destination ipv4 address name and address group names. <span class="li-normal">type: list</span>
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service_src_id</span> <b>(Alias name: internet-service-src-id)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service_src_id</span> <b>(Alias name: internet-service-src-id)</b>  Internet service source id. <span class="li-normal">type: list</span>
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -491,25 +491,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_custom</span> <b>(Alias name: internet-service6-custom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_custom</span> <b>(Alias name: internet-service6-custom)</b>  Custom ipv6 internet service name. <span class="li-normal">type: list</span>
  <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
  <div id="label143" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_custom_group</span> <b>(Alias name: internet-service6-custom-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_custom_group</span> <b>(Alias name: internet-service6-custom-group)</b>  Custom ipv6 internet service group name. <span class="li-normal">type: list</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_group</span> <b>(Alias name: internet-service6-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_group</span> <b>(Alias name: internet-service6-group)</b>  Internet service group name. <span class="li-normal">type: list</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_name</span> <b>(Alias name: internet-service6-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_name</span> <b>(Alias name: internet-service6-name)</b>  Ipv6 internet service name. <span class="li-normal">type: list</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -527,25 +527,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_custom</span> <b>(Alias name: internet-service6-src-custom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_custom</span> <b>(Alias name: internet-service6-src-custom)</b>  Custom ipv6 internet service source name. <span class="li-normal">type: list</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_custom_group</span> <b>(Alias name: internet-service6-src-custom-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_custom_group</span> <b>(Alias name: internet-service6-src-custom-group)</b>  Custom internet service6 source group name. <span class="li-normal">type: list</span>
  <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
  <div id="label157" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_group</span> <b>(Alias name: internet-service6-src-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_group</span> <b>(Alias name: internet-service6-src-group)</b>  Internet service6 source group name. <span class="li-normal">type: list</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_name</span> <b>(Alias name: internet-service6-src-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_name</span> <b>(Alias name: internet-service6-src-name)</b>  Ipv6 internet service source name. <span class="li-normal">type: list</span>
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>

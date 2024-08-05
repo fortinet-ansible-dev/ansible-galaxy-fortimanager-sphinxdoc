@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_sdnconnector</span> - Configure connection to SDN Connector. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">_local_cert</span> _local_cert. <span class="li-normal">type: str</span>
+ <li><span class="li-head">_local_cert</span> Local cert. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -100,7 +100,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">external_ip</span> <b>(Alias name: external-ip)</b>  External-ip. <span class="li-normal">type: list</span>
+ <li><span class="li-head">external_ip</span> <b>(Alias name: external-ip)</b>  External ip. <span class="li-normal">type: list</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -190,7 +190,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oci_fingerprint</span> <b>(Alias name: oci-fingerprint)</b>  Oci-fingerprint. <span class="li-normal">type: str</span>
+ <li><span class="li-head">oci_fingerprint</span> <b>(Alias name: oci-fingerprint)</b>  Oci fingerprint. <span class="li-normal">type: str</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -250,7 +250,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rest_ssl</span> <b>(Alias name: rest-ssl)</b>  Rest-ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">rest_ssl</span> <b>(Alias name: rest-ssl)</b>  Rest ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -270,7 +270,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">route_table</span> <b>(Alias name: route-table)</b>  Route-table. <span class="li-normal">type: list</span>
+ <li><span class="li-head">route_table</span> <b>(Alias name: route-table)</b>  Route table. <span class="li-normal">type: list</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -316,7 +316,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">secret_key</span> <b>(Alias name: secret-key)</b>  Aws / acs secret access key. <span class="li-normal">type: list</span>
+ <li><span class="li-head">secret_key</span> <b>(Alias name: secret-key)</b>  Aws secret access key. <span class="li-normal">type: list</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -418,7 +418,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">last_update</span> <b>(Alias name: last-update)</b>  Last-update. <span class="li-normal">type: int</span>
+ <li><span class="li-head">last_update</span> <b>(Alias name: last-update)</b>  Last update. <span class="li-normal">type: int</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.0</code></p>
@@ -472,13 +472,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ibm_region_gen1</span> <b>(Alias name: ibm-region-gen1)</b>  Ibm-region-gen1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia]</span> 
+ <li><span class="li-head">ibm_region_gen1</span> <b>(Alias name: ibm-region-gen1)</b>  Ibm region gen1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia]</span> 
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ibm_region_gen2</span> <b>(Alias name: ibm-region-gen2)</b>  Ibm-region-gen2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, great-britain]</span> 
+ <li><span class="li-head">ibm_region_gen2</span> <b>(Alias name: ibm-region-gen2)</b>  Ibm region gen2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, great-britain]</span> 
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -508,13 +508,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">external_account_list</span> <b>(Alias name: external-account-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">external_account_list</span> <b>(Alias name: external-account-list)</b>  External account list. <span class="li-normal">type: list</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">region_list</span> <b>(Alias name: region-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">region_list</span> <b>(Alias name: region-list)</b>  Aws region name list. <span class="li-normal">type: list</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -534,7 +534,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">forwarding_rule</span> <b>(Alias name: forwarding-rule)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">forwarding_rule</span> <b>(Alias name: forwarding-rule)</b>  Forwarding rule. <span class="li-normal">type: list</span>
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -554,13 +554,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">gcp_project_list</span> <b>(Alias name: gcp-project-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">gcp_project_list</span> <b>(Alias name: gcp-project-list)</b>  Gcp project list. <span class="li-normal">type: list</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">gcp_zone_list</span> <b>(Alias name: gcp-zone-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">gcp_zone_list</span> <b>(Alias name: gcp-zone-list)</b>  Configure gcp zone list. <span class="li-normal">type: list</span>
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -598,7 +598,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">compartment_list</span> <b>(Alias name: compartment-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">compartment_list</span> <b>(Alias name: compartment-list)</b>  Compartment list. <span class="li-normal">type: list</span>
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -612,7 +612,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">oci_region_list</span> <b>(Alias name: oci-region-list)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">oci_region_list</span> <b>(Alias name: oci-region-list)</b>  Oci region list. <span class="li-normal">type: list</span>
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -136,7 +136,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">icap_headers</span> <b>(Alias name: icap-headers)</b>  Icap-headers. <span class="li-normal">type: list</span>
+ <li><span class="li-head">icap_headers</span> <b>(Alias name: icap-headers)</b>  Icap headers. <span class="li-normal">type: list</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -192,7 +192,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">respmod_forward_rules</span> <b>(Alias name: respmod-forward-rules)</b>  Respmod-forward-rules. <span class="li-normal">type: list</span>
+ <li><span class="li-head">respmod_forward_rules</span> <b>(Alias name: respmod-forward-rules)</b>  Respmod forward rules. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -204,7 +204,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header_group</span> <b>(Alias name: header-group)</b>  Header-group. <span class="li-normal">type: list</span>
+ <li><span class="li-head">header_group</span> <b>(Alias name: header-group)</b>  Header group. <span class="li-normal">type: list</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -274,13 +274,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">extension_feature</span> <b>(Alias name: extension-feature)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan-progress]</span> 
+ <li><span class="li-head">extension_feature</span> <b>(Alias name: extension-feature)</b>  Enable/disable icap extension features. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan-progress]</span> 
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">file_transfer</span> <b>(Alias name: file-transfer)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [ssh, ftp]</span> 
+ <li><span class="li-head">file_transfer</span> <b>(Alias name: file-transfer)</b>  Configure the file transfer protocols to pass transferred files to an icap server as reqmod. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ssh, ftp]</span> 
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -67,7 +67,7 @@ Parameters
  <li><span class="li-head">fortilink</span> Fortilink interface to which this fortilink-setting belongs. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.3</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.3</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">inactive_timer</span> <b>(Alias name: inactive-timer)</b>  Time interval(minutes) to be included in the inactive devices expiry calculation (mac age-out + inactive-time + periodic scan interval). <span class="li-normal">type: int</span>
@@ -82,60 +82,65 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nac_ports</span> <b>(Alias name: nac-ports)</b>  <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">lan_segment</span> <b>(Alias name: lan-segment)</b>  Enable/disable lan segment feature on the fortilink interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span> 
+ <li><span class="li-head">nac_ports</span> <b>(Alias name: nac-ports)</b>  Nac ports. <span class="li-normal">type: dict</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">member_change</span> <b>(Alias name: member-change)</b>  <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">lan_segment</span> <b>(Alias name: lan-segment)</b>  Enable/disable lan segment feature on the fortilink interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nac_lan_interface</span> <b>(Alias name: nac-lan-interface)</b>  Configure nac lan interface. <span class="li-normal">type: str</span>
+ <li><span class="li-head">member_change</span> <b>(Alias name: member-change)</b>  Member change. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nac_segment_vlans</span> <b>(Alias name: nac-segment-vlans)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">nac_lan_interface</span> <b>(Alias name: nac-lan-interface)</b>  Configure nac lan interface. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">onboarding_vlan</span> <b>(Alias name: onboarding-vlan)</b>  Default nac onboarding vlan when nac devices are discovered. <span class="li-normal">type: str</span>
+ <li><span class="li-head">nac_segment_vlans</span> <b>(Alias name: nac-segment-vlans)</b>  Configure nac segment vlans. <span class="li-normal">type: list</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">parent_key</span> <b>(Alias name: parent-key)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">onboarding_vlan</span> <b>(Alias name: onboarding-vlan)</b>  Default nac onboarding vlan when nac devices are discovered. <span class="li-normal">type: str</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bounce_nac_port</span> <b>(Alias name: bounce-nac-port)</b>  Enable/disable bouncing (administratively bring the link down, up) of a switch port when nac mode is configured on the port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">parent_key</span> <b>(Alias name: parent-key)</b>  Parent key. <span class="li-normal">type: str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">bounce_nac_port</span> <b>(Alias name: bounce-nac-port)</b>  Enable/disable bouncing (administratively bring the link down, up) of a switch port when nac mode is configured on the port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">name</span> Fortilink settings name. <span class="li-normal">type: str</span>
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">access_vlan_mode</span> <b>(Alias name: access-vlan-mode)</b>  Intra vlan traffic behavior with loss of connection to the fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, fail-open, fail-close]</span> 
- <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
- <div id="label23" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>

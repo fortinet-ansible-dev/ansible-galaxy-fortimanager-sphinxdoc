@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -260,7 +260,7 @@ Parameters
  <li><span class="li-head">mms_profile</span> <b>(Alias name: mms-profile)</b>  Name of an existing mms profile. <span class="li-normal">type: str</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">name</span> Policy name. <span class="li-normal">type: str</span>
@@ -491,25 +491,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_custom</span> <b>(Alias name: internet-service6-custom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_custom</span> <b>(Alias name: internet-service6-custom)</b>  Custom ipv6 internet service name. <span class="li-normal">type: list</span>
  <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
  <div id="label143" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_custom_group</span> <b>(Alias name: internet-service6-custom-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_custom_group</span> <b>(Alias name: internet-service6-custom-group)</b>  Custom ipv6 internet service group name. <span class="li-normal">type: list</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_group</span> <b>(Alias name: internet-service6-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_group</span> <b>(Alias name: internet-service6-group)</b>  Internet service group name. <span class="li-normal">type: list</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_name</span> <b>(Alias name: internet-service6-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_name</span> <b>(Alias name: internet-service6-name)</b>  Ipv6 internet service name. <span class="li-normal">type: list</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -527,25 +527,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_custom</span> <b>(Alias name: internet-service6-src-custom)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_custom</span> <b>(Alias name: internet-service6-src-custom)</b>  Custom ipv6 internet service source name. <span class="li-normal">type: list</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_custom_group</span> <b>(Alias name: internet-service6-src-custom-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_custom_group</span> <b>(Alias name: internet-service6-src-custom-group)</b>  Custom internet service6 source group name. <span class="li-normal">type: list</span>
  <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
  <div id="label157" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_group</span> <b>(Alias name: internet-service6-src-group)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_group</span> <b>(Alias name: internet-service6-src-group)</b>  Internet service6 source group name. <span class="li-normal">type: list</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internet_service6_src_name</span> <b>(Alias name: internet-service6-src-name)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">internet_service6_src_name</span> <b>(Alias name: internet-service6-src-name)</b>  Ipv6 internet service source name. <span class="li-normal">type: list</span>
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>

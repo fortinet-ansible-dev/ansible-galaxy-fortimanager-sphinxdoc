@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -184,6 +184,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">authserver_timeout_tagged</span> <b>(Alias name: authserver-timeout-tagged)</b>  Configure timeout option for the tagged vlan which allows limited access when the authentication server is unavailable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, disable, lldp-voice]</span> 
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">authserver_timeout_tagged_vlanid</span> <b>(Alias name: authserver-timeout-tagged-vlanid)</b>  Tagged vlan name for which the timeout option is applied to (only one vlan id). <span class="li-normal">type: list</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dacl</span> Enable/disable dynamic access control list on this interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -240,6 +258,9 @@ Examples
             authserver_timeout_period: <integer>
             authserver_timeout_vlan: <value in [disable, enable]>
             authserver_timeout_vlanid: <string>
+            authserver_timeout_tagged: <value in [static, disable, lldp-voice]>
+            authserver_timeout_tagged_vlanid: <list or string>
+            dacl: <value in [disable, enable]>
 
 
 Return Values

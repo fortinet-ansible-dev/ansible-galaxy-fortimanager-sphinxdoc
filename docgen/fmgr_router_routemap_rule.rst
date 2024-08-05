@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">match_flags</span> <b>(Alias name: match-flags)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">match_flags</span> <b>(Alias name: match-flags)</b>  Match flags. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -173,7 +173,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_aspath</span> <b>(Alias name: set-aspath)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">set_aspath</span> <b>(Alias name: set-aspath)</b>  Prepend bgp as path attribute. <span class="li-normal">type: list</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -191,7 +191,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_community</span> <b>(Alias name: set-community)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">set_community</span> <b>(Alias name: set-community)</b>  Bgp community attribute. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -239,19 +239,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_extcommunity_rt</span> <b>(Alias name: set-extcommunity-rt)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">set_extcommunity_rt</span> <b>(Alias name: set-extcommunity-rt)</b>  Route target extended community. <span class="li-normal">type: list</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_extcommunity_soo</span> <b>(Alias name: set-extcommunity-soo)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">set_extcommunity_soo</span> <b>(Alias name: set-extcommunity-soo)</b>  Site-of-origin extended community. <span class="li-normal">type: list</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_flags</span> <b>(Alias name: set-flags)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">set_flags</span> <b>(Alias name: set-flags)</b>  Set flags. <span class="li-normal">type: int</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>

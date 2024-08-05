@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -71,13 +71,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">diffserv</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [CS0, CS1, AF11, AF12, AF13, CS2, AF21, AF22, AF23, CS3, AF31, AF32, AF33, CS4, AF41, AF42, AF43, CS5, EF, CS6, CS7]</span> 
+ <li><span class="li-head">diffserv</span> Differentiated service. <span class="li-normal">type: list</span> <span class="li-normal">choices: [CS0, CS1, AF11, AF12, AF13, CS2, AF21, AF22, AF23, CS3, AF31, AF32, AF33, CS4, AF41, AF42, AF43, CS5, EF, CS6, CS7]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_precedence</span> <b>(Alias name: ip-precedence)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [network-control, internetwork-control, critic-ecp, flashoverride, flash, immediate, priority, routine]</span> 
+ <li><span class="li-head">ip_precedence</span> <b>(Alias name: ip-precedence)</b>  Ip precedence. <span class="li-normal">type: list</span> <span class="li-normal">choices: [network-control, internetwork-control, critic-ecp, flashoverride, flash, immediate, priority, routine]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

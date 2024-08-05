@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -67,7 +67,7 @@ Parameters
  <li><span class="li-head">algorithm</span> Force the ssl vpn security level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, high, low, medium]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">auth_session_check_source_ip</span> <b>(Alias name: auth-session-check-source-ip)</b>  Enable/disable checking of source ip for authentication session. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -82,7 +82,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authentication_rule</span> <b>(Alias name: authentication-rule)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">authentication_rule</span> <b>(Alias name: authentication-rule)</b>  Authentication rule. <span class="li-normal">type: list</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -180,7 +180,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">banned_cipher</span> <b>(Alias name: banned-cipher)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [RSA, DH, DHE, ECDH, ECDHE, DSS, ECDSA, AES, AESGCM, CAMELLIA, 3DES, SHA1, SHA256, SHA384, STATIC, CHACHA20, ARIA, AESCCM]</span> 
+ <li><span class="li-head">banned_cipher</span> <b>(Alias name: banned-cipher)</b>  Select one or more cipher technologies that cannot be used in ssl vpn negotiations. <span class="li-normal">type: list</span> <span class="li-normal">choices: [RSA, DH, DHE, ECDH, ECDHE, DSS, ECDSA, AES, AESGCM, CAMELLIA, 3DES, SHA1, SHA256, SHA384, STATIC, CHACHA20, ARIA, AESCCM]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -462,7 +462,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">tlsv1_3</span> <b>(Alias name: tlsv1-3)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">tlsv1_3</span> <b>(Alias name: tlsv1-3)</b>  Tlsv1 3. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code></p>
@@ -534,7 +534,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslv3</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslv3</span> Sslv3. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
  <div id="label157" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> v6.4.14</code></p>
@@ -552,7 +552,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ciphersuite</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [TLS-AES-128-GCM-SHA256, TLS-AES-256-GCM-SHA384, TLS-CHACHA20-POLY1305-SHA256, TLS-AES-128-CCM-SHA256, TLS-AES-128-CCM-8-SHA256]</span> 
+ <li><span class="li-head">ciphersuite</span> Select one or more tls 1. <span class="li-normal">type: list</span> <span class="li-normal">choices: [TLS-AES-128-GCM-SHA256, TLS-AES-256-GCM-SHA384, TLS-CHACHA20-POLY1305-SHA256, TLS-AES-128-CCM-SHA256, TLS-AES-128-CCM-8-SHA256]</span> 
  <a id='label162' href="javascript:ContentClick('label163', 'label162');" onmouseover="ContentPreview('label163');" onmouseout="ContentUnpreview('label163');" title="click to collapse or expand..."> more... </a>
  <div id="label163" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> latest</code></p>
@@ -591,7 +591,7 @@ Parameters
  <li><span class="li-head">web_mode_snat</span> <b>(Alias name: web-mode-snat)</b>  Enable/disable use of ip pools defined in firewall policy while using web-mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.2.3</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.2.3</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ztna_trusted_client</span> <b>(Alias name: ztna-trusted-client)</b>  Enable/disable verification of device certificate for sslvpn ztna session. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 

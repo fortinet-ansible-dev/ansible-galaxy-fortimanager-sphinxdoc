@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_managedswitch_ipsourceguard</span> - IP source guard. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">binding_entry</span> <b>(Alias name: binding-entry)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">binding_entry</span> <b>(Alias name: binding-entry)</b>  Binding entry. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v6.4.1</code></p>

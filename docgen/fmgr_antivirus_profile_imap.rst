@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,13 +64,13 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">antivirus_profile_imap</span> - Configure IMAP AntiVirus options. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">archive_block</span> <b>(Alias name: archive-block)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> 
+ <li><span class="li-head">archive_block</span> <b>(Alias name: archive-block)</b>  Select the archive types to block. <span class="li-normal">type: list</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">archive_log</span> <b>(Alias name: archive-log)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> 
+ <li><span class="li-head">archive_log</span> <b>(Alias name: archive-log)</b>  Select the archive types to log. <span class="li-normal">type: list</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, fileslimit, timeout]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -94,7 +94,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">options</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> 
+ <li><span class="li-head">options</span> Enable/disable imap antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

@@ -19,7 +19,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -751,6 +751,9 @@ Parameters
         <li><span class="li-required">firewall_sslsshprofile</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">firewall_sslsshprofile_echoutersni</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
         <li><span class="li-required">firewall_sslsshprofile_sslexempt</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1049,13 +1052,13 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">ips_sensor</span> - available versions:
-            <span class="li-normal">v7.0.3->latest</span>
+            <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">ips_sensor_entries</span> - available versions:
-            <span class="li-normal">v7.0.3->latest</span>
+            <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">ips_sensor_entries_exemptip</span> - available versions:
-            <span class="li-normal">v7.0.3->latest</span>
+            <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">log_customfield</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1086,10 +1089,12 @@ Parameters
             <span class="li-normal">v6.4.2->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
-            <span class="li-normal">v7.2.0->v7.2.0</span>
+            <span class="li-normal">v7.2.0->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
-            <span class="li-normal">v7.2.0->v7.2.0</span>
+            <span class="li-normal">v7.2.0->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1117,25 +1122,31 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
-            <span class="li-normal">v6.0.0->v7.2.2</span>
+            <span class="li-normal">v6.0.0->v7.2.2</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
-            <span class="li-normal">v6.0.0->v7.2.2</span>
+            <span class="li-normal">v6.0.0->v7.2.2</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1788,13 +1799,13 @@ Parameters
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">user_device</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v7.4.2</span>
         </li>
         <li><span class="li-required">user_device_dynamicmapping</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v7.4.2</span>
         </li>
         <li><span class="li-required">user_device_tagging</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v7.4.2</span>
         </li>
         <li><span class="li-required">user_deviceaccesslist</span> - available versions:
             <span class="li-normal">v6.2.2->v7.2.1</span>
@@ -1822,6 +1833,9 @@ Parameters
         </li>
         <li><span class="li-required">user_exchange</span> - available versions:
             <span class="li-normal">v6.2.0->latest</span>
+        </li>
+        <li><span class="li-required">user_externalidentityprovider</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">user_flexvm</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
@@ -3497,6 +3511,12 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">ssl-ssh-profile</span></li>
+        </ul>
+        <li><span class="li-normal">params for firewall_sslsshprofile_echoutersni:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">ssl-ssh-profile</span></li>
+            <li><span class="li-normal">ech-outer-sni</span></li>
         </ul>
         <li><span class="li-normal">params for firewall_sslsshprofile_sslexempt:</span></li>
         <ul class="ul-self">
@@ -5403,6 +5423,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">exchange</span></li>
+        </ul>
+        <li><span class="li-normal">params for user_externalidentityprovider:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">external-identity-provider</span></li>
         </ul>
         <li><span class="li-normal">params for user_flexvm:</span></li>
         <ul class="ul-self">
@@ -7498,6 +7523,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_sslsshprofile.html#parameters">fmgr_firewall_sslsshprofile</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for firewall_sslsshprofile_echoutersni:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_sslsshprofile_echoutersni.html#parameters">fmgr_firewall_sslsshprofile_echoutersni</a> </span></li>
         </ul>
         <li><span class="li-normal">params for firewall_sslsshprofile_sslexempt:</span></li>
         <ul class="ul-self">
@@ -9604,6 +9635,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_exchange.html#parameters">fmgr_user_exchange</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for user_externalidentityprovider:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_externalidentityprovider.html#parameters">fmgr_user_externalidentityprovider</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_flexvm:</span></li>
         <ul class="ul-self">

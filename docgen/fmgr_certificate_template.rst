@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -76,7 +76,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">digest_type</span> <b>(Alias name: digest-type)</b>  Digest-type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span>  <span class="li-normal">default: sha1</span> 
+ <li><span class="li-head">digest_type</span> <b>(Alias name: digest-type)</b>  Digest type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span>  <span class="li-normal">default: sha1</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -88,19 +88,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id_type</span> <b>(Alias name: id-type)</b>  Id-type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-ip, domain-name, email]</span>  <span class="li-normal">default: host-ip</span> 
+ <li><span class="li-head">id_type</span> <b>(Alias name: id-type)</b>  Id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-ip, domain-name, email]</span>  <span class="li-normal">default: host-ip</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_size</span> <b>(Alias name: key-size)</b>  Key-size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [512, 1024, 1536, 2048, 4096]</span>  <span class="li-normal">default: 2048</span> 
+ <li><span class="li-head">key_size</span> <b>(Alias name: key-size)</b>  Key size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [512, 1024, 1536, 2048, 4096]</span>  <span class="li-normal">default: 2048</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Key-type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa, ec]</span>  <span class="li-normal">default: rsa</span> 
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Key type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa, ec]</span>  <span class="li-normal">default: rsa</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -118,19 +118,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">organization_unit</span> <b>(Alias name: organization-unit)</b>  Organization-unit. <span class="li-normal">type: list</span>
+ <li><span class="li-head">organization_unit</span> <b>(Alias name: organization-unit)</b>  Organization unit. <span class="li-normal">type: list</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scep_password</span> <b>(Alias name: scep-password)</b>  Scep-password. <span class="li-normal">type: list</span>
+ <li><span class="li-head">scep_password</span> <b>(Alias name: scep-password)</b>  Scep password. <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scep_server</span> <b>(Alias name: scep-server)</b>  Scep-server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">scep_server</span> <b>(Alias name: scep-server)</b>  Scep server. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -142,7 +142,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">subject_name</span> <b>(Alias name: subject-name)</b>  Subject-name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">subject_name</span> <b>(Alias name: subject-name)</b>  Subject name. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -154,13 +154,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">curve_name</span> <b>(Alias name: curve-name)</b>  Curve-name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [secp256r1, secp384r1, secp521r1]</span>  <span class="li-normal">default: secp256r1</span> 
+ <li><span class="li-head">curve_name</span> <b>(Alias name: curve-name)</b>  Curve name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [secp256r1, secp384r1, secp521r1]</span>  <span class="li-normal">default: secp256r1</span> 
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scep_ca_identifier</span> <b>(Alias name: scep-ca-identifier)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">scep_ca_identifier</span> <b>(Alias name: scep-ca-identifier)</b>  Scep ca identifier. <span class="li-normal">type: str</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>

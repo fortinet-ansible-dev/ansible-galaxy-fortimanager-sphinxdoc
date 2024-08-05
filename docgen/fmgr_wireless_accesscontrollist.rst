@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -70,7 +70,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">layer3_ipv4_rules</span> <b>(Alias name: layer3-ipv4-rules)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">layer3_ipv4_rules</span> <b>(Alias name: layer3-ipv4-rules)</b>  Layer3 ipv4 rules. <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -126,7 +126,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">layer3_ipv6_rules</span> <b>(Alias name: layer3-ipv6-rules)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">layer3_ipv6_rules</span> <b>(Alias name: layer3-ipv6-rules)</b>  Layer3 ipv6 rules. <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -70,13 +70,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">saas_application</span> <b>(Alias name: saas-application)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">saas_application</span> <b>(Alias name: saas-application)</b>  Saas application. <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">access_rule</span> <b>(Alias name: access-rule)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">access_rule</span> <b>(Alias name: access-rule)</b>  Access rule. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -88,7 +88,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bypass</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [av, dlp, web-filter, file-filter, video-filter]</span> 
+ <li><span class="li-head">bypass</span> Casb bypass options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [av, dlp, web-filter, file-filter, video-filter]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -102,7 +102,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">custom_control</span> <b>(Alias name: custom-control)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">custom_control</span> <b>(Alias name: custom-control)</b>  Custom control. <span class="li-normal">type: list</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -114,7 +114,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">option</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">option</span> Option. <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -126,7 +126,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_input</span> <b>(Alias name: user-input)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">user_input</span> <b>(Alias name: user-input)</b>  Casb custom control user input. <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -142,7 +142,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">domain_control_domains</span> <b>(Alias name: domain-control-domains)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">domain_control_domains</span> <b>(Alias name: domain-control-domains)</b>  Casb profile domain control domains. <span class="li-normal">type: list</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -166,7 +166,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">safe_search_control</span> <b>(Alias name: safe-search-control)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">safe_search_control</span> <b>(Alias name: safe-search-control)</b>  Casb profile safe search control. <span class="li-normal">type: list</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -178,7 +178,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tenant_control_tenants</span> <b>(Alias name: tenant-control-tenants)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">tenant_control_tenants</span> <b>(Alias name: tenant-control-tenants)</b>  Casb profile tenant control tenants. <span class="li-normal">type: list</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -191,6 +191,12 @@ Parameters
  </div>
  </li>
  </ul>
+ </li>
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
  </li>
  </ul>
  </ul>
@@ -257,6 +263,7 @@ Examples
                 tenant_control: <value in [disable, enable]>
                 tenant_control_tenants: <list or string>
                 status: <value in [disable, enable]>
+            comment: <string>
 
 
 Return Values

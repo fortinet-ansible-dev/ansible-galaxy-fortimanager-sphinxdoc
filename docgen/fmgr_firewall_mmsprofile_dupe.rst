@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,19 +64,19 @@ Parameters
  <li><span class="li-head">mms-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_mmsprofile_dupe</span> - Duplicate configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action1</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, archive, intercept, block, archive-first, alert-notif]</span> 
+ <li><span class="li-head">action1</span> Action to take when threshold reached. <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, archive, intercept, block, archive-first, alert-notif]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">action2</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, archive, intercept, block, archive-first, alert-notif]</span> 
+ <li><span class="li-head">action2</span> Action to take when threshold reached. <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, archive, intercept, block, archive-first, alert-notif]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">action3</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, archive, intercept, block, archive-first, alert-notif]</span> 
+ <li><span class="li-head">action3</span> Action to take when threshold reached. <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, archive, intercept, block, archive-first, alert-notif]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

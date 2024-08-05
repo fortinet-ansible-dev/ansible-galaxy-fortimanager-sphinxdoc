@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -112,43 +112,43 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_id</span> <b>(Alias name: service-id)</b>  Service-id. <span class="li-normal">type: list</span>
+ <li><span class="li-head">service_id</span> <b>(Alias name: service-id)</b>  Service id. <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">if_allgroup</span> <b>(Alias name: if-allgroup)</b>  <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">if_allgroup</span> <b>(Alias name: if-allgroup)</b>  If allgroup. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">service</span> Service. <span class="li-normal">type: list</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">id</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">integration</span> <span class="li-normal">type: str</span> <span class="li-normal">choices: [east-west, north-south]</span> 
+ <li><span class="li-head">integration</span> Integration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [east-west, north-south]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">name</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ref_id</span> <b>(Alias name: ref-id)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">ref_id</span> <b>(Alias name: ref-id)</b>  Ref id. <span class="li-normal">type: str</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
@@ -156,13 +156,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">service_manager_id</span> <b>(Alias name: service-manager-id)</b>  <span class="li-normal">type: str</span>
+ <li><span class="li-head">service_manager_id</span> <b>(Alias name: service-manager-id)</b>  Service manager id. <span class="li-normal">type: str</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_manager_rev</span> <b>(Alias name: service-manager-rev)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">service_manager_rev</span> <b>(Alias name: service-manager-rev)</b>  Service manager rev. <span class="li-normal">type: int</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>

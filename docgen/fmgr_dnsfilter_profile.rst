@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -124,13 +124,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">youtube_restrict</span> <b>(Alias name: youtube-restrict)</b>  Set safe search for youtube restriction level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, moderate]</span> 
+ <li><span class="li-head">youtube_restrict</span> <b>(Alias name: youtube-restrict)</b>  Set safe search for youtube restriction level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, moderate, none]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dns_translation</span> <b>(Alias name: dns-translation)</b>  Dns-translation. <span class="li-normal">type: list</span>
+ <li><span class="li-head">dns_translation</span> <b>(Alias name: dns-translation)</b>  Dns translation. <span class="li-normal">type: list</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -210,69 +210,90 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">domain_filter</span> <b>(Alias name: domain-filter)</b>  <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">domain_filter_table</span> <b>(Alias name: domain-filter-table)</b>  Dns domain filter table id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">domain_filter</span> <b>(Alias name: domain-filter)</b>  Domain filter. <span class="li-normal">type: dict</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">domain_filter_table</span> <b>(Alias name: domain-filter-table)</b>  Dns domain filter table id. <span class="li-normal">type: int</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
- <li><span class="li-head">ftgd_dns</span> <b>(Alias name: ftgd-dns)</b>  <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">filters</span> Filters. <span class="li-normal">type: list</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">action</span> Action to take for dns requests matching the category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [monitor, block]</span> 
+ <li><span class="li-head">ftgd_dns</span> <b>(Alias name: ftgd-dns)</b>  Ftgd dns. <span class="li-normal">type: dict</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">category</span> Category number. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">filters</span> Filters. <span class="li-normal">type: list</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">id</span> Id number. <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> Action to take for dns requests matching the category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [monitor, block]</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log</span> Enable/disable dns filter logging for this dns profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">category</span> Category number. <span class="li-normal">type: str</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">id</span> Id number. <span class="li-normal">type: int</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log</span> Enable/disable dns filter logging for this dns profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">options</span> Fortiguard dns filter options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [error-allow, ftgd-disable]</span> 
- <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
- <li><span class="li-head">urlfilter</span> <span class="li-normal">type: dict</span> <ul class="ul-self">
+ <li><span class="li-head">urlfilter</span> Urlfilter. <span class="li-normal">type: dict</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code></p>
+ </div>
+ <ul class="ul-self">
  <li><span class="li-head">urlfilter_table</span> <b>(Alias name: urlfilter-table)</b>  Dns url filter table id. <span class="li-normal">type: int</span>
- <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
- <div id="label63" style="display:none">
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code></p>
  </div>
  </li>
  </ul>
  </li>
- <li><span class="li-head">transparent_dns_database</span> <b>(Alias name: transparent-dns-database)</b>  <span class="li-normal">type: list</span>
- <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
- <div id="label65" style="display:none">
+ <li><span class="li-head">transparent_dns_database</span> <b>(Alias name: transparent-dns-database)</b>  Transparent dns database zones. <span class="li-normal">type: list</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">strip_ech</span> <b>(Alias name: strip-ech)</b>  Enable/disable removal of the encrypted client hello service parameter from supporting dns rrs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>

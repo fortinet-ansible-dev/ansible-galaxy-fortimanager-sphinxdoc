@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -94,7 +94,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tag_type</span> <b>(Alias name: tag-type)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [subject, header, spaminfo]</span> 
+ <li><span class="li-head">tag_type</span> <b>(Alias name: tag-type)</b>  Tag subject or header for spam email. <span class="li-normal">type: list</span> <span class="li-normal">choices: [subject, header, spaminfo]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>

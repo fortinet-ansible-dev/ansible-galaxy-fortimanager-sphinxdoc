@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -107,7 +107,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface_tags</span> <b>(Alias name: interface-tags)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">interface_tags</span> <b>(Alias name: interface-tags)</b>  Match policy based on the fortiswitch interface object tags. <span class="li-normal">type: list</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -153,6 +153,18 @@ Parameters
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">match_period</span> <b>(Alias name: match-period)</b>  Number of days the matched devices will be retained (0 - 120, 0 = always retain). <span class="li-normal">type: int</span>
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">match_type</span> <b>(Alias name: match-type)</b>  Match and retain the devices based on the type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dynamic, override]</span> 
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -207,6 +219,8 @@ Examples
             status: <value in [disable, enable]>
             type: <string>
             vlan_policy: <string>
+            match_period: <integer>
+            match_type: <value in [dynamic, override]>
 
 
 Return Values

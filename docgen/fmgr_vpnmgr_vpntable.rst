@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -70,7 +70,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_zone_policy</span> <b>(Alias name: auto-zone-policy)</b>  Auto-zone-policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">auto_zone_policy</span> <b>(Alias name: auto-zone-policy)</b>  Auto zone policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -94,31 +94,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dpd_retrycount</span> <b>(Alias name: dpd-retrycount)</b>  Dpd-retrycount. <span class="li-normal">type: int</span>
+ <li><span class="li-head">dpd_retrycount</span> <b>(Alias name: dpd-retrycount)</b>  Dpd retrycount. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dpd_retryinterval</span> <b>(Alias name: dpd-retryinterval)</b>  Dpd-retryinterval. <span class="li-normal">type: list</span>
+ <li><span class="li-head">dpd_retryinterval</span> <b>(Alias name: dpd-retryinterval)</b>  Dpd retryinterval. <span class="li-normal">type: list</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fcc_enforcement</span> <b>(Alias name: fcc-enforcement)</b>  Fcc-enforcement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">fcc_enforcement</span> <b>(Alias name: fcc-enforcement)</b>  Fcc enforcement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">hub2spoke_zone</span> <b>(Alias name: hub2spoke-zone)</b>  Hub2spoke-zone. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">hub2spoke_zone</span> <b>(Alias name: hub2spoke-zone)</b>  Hub2spoke zone. <span class="li-normal">type: list or str</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ike_version</span> <b>(Alias name: ike-version)</b>  Ike-version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2]</span> 
+ <li><span class="li-head">ike_version</span> <b>(Alias name: ike-version)</b>  Ike version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -214,19 +214,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">inter_vdom</span> <b>(Alias name: inter-vdom)</b>  Inter-vdom. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">inter_vdom</span> <b>(Alias name: inter-vdom)</b>  Inter vdom. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">intf_mode</span> <b>(Alias name: intf-mode)</b>  Intf-mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [off, on]</span> 
+ <li><span class="li-head">intf_mode</span> <b>(Alias name: intf-mode)</b>  Intf mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [off, on]</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">localid_type</span> <b>(Alias name: localid-type)</b>  Localid-type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, fqdn, user-fqdn, keyid, address, asn1dn]</span> 
+ <li><span class="li-head">localid_type</span> <b>(Alias name: localid-type)</b>  Localid type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, fqdn, user-fqdn, keyid, address, asn1dn]</span> 
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -238,13 +238,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">negotiate_timeout</span> <b>(Alias name: negotiate-timeout)</b>  Negotiate-timeout. <span class="li-normal">type: int</span> <span class="li-normal">default: 30</span> 
+ <li><span class="li-head">negotiate_timeout</span> <b>(Alias name: negotiate-timeout)</b>  Negotiate timeout. <span class="li-normal">type: int</span> <span class="li-normal">default: 30</span> 
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">npu_offload</span> <b>(Alias name: npu-offload)</b>  Npu-offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">npu_offload</span> <b>(Alias name: npu-offload)</b>  Npu offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -256,7 +256,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">psk_auto_generate</span> <b>(Alias name: psk-auto-generate)</b>  Psk-auto-generate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">psk_auto_generate</span> <b>(Alias name: psk-auto-generate)</b>  Psk auto generate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -274,13 +274,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsa_certificate</span> <b>(Alias name: rsa-certificate)</b>  Rsa-certificate. <span class="li-normal">type: str</span>
+ <li><span class="li-head">rsa_certificate</span> <b>(Alias name: rsa-certificate)</b>  Rsa certificate. <span class="li-normal">type: str</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">spoke2hub_zone</span> <b>(Alias name: spoke2hub-zone)</b>  Spoke2hub-zone. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">spoke2hub_zone</span> <b>(Alias name: spoke2hub-zone)</b>  Spoke2hub zone. <span class="li-normal">type: list or str</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -292,19 +292,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vpn_zone</span> <b>(Alias name: vpn-zone)</b>  Vpn-zone. <span class="li-normal">type: list or str</span>
+ <li><span class="li-head">vpn_zone</span> <b>(Alias name: vpn-zone)</b>  Vpn zone. <span class="li-normal">type: list or str</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">network_id</span> <b>(Alias name: network-id)</b>  Network-id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">network_id</span> <b>(Alias name: network-id)</b>  Network id. <span class="li-normal">type: int</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">network_overlay</span> <b>(Alias name: network-overlay)</b>  Network-overlay. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">network_overlay</span> <b>(Alias name: network-overlay)</b>  Network overlay. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>

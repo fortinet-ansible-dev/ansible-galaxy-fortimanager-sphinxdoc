@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">services</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https]</span> 
+ <li><span class="li-head">services</span> Network protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -148,7 +148,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">band</span> Wifi band that radio 3 operates on. <span class="li-normal">type: str</span> <span class="li-normal">choices: [802.11b, 802.11a, 802.11g, 802.11n, 802.11ac, 802.11n-5G, 802.11ax-5G, 802.11ax, 802.11g-only, 802.11n-only, 802.11n,g-only, 802.11ac-only, 802.11ac,n-only, 802.11n-5G-only, 802.11ax-5G-only, 802.11ax,ac-only, 802.11ax,ac,n-only, 802.11ax-only, 802.11ax,n-only, 802.11ax,n,g-only, 802.11ac-2G, 802.11ax-6G]</span> 
+ <li><span class="li-head">band</span> Wifi band that radio 3 operates on. <span class="li-normal">type: str</span> <span class="li-normal">choices: [802.11b, 802.11a, 802.11g, 802.11n, 802.11ac, 802.11n-5G, 802.11ax-5G, 802.11ax, 802.11g-only, 802.11n-only, 802.11n,g-only, 802.11ac-only, 802.11ac,n-only, 802.11n-5G-only, 802.11ax-5G-only, 802.11ax,ac-only, 802.11ax,ac,n-only, 802.11ax-only, 802.11ax,n-only, 802.11ax,n,g-only, 802.11ac-2G, 802.11ax-6G, 802.11n-2G, 802.11ac-5G, 802.11ax-2G, 802.11be-2G, 802.11be-5G, 802.11be-6G]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
@@ -190,13 +190,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">channel</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">channel</span> Selected list of wireless radio channels. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">channel_bonding</span> <b>(Alias name: channel-bonding)</b>  Channel bandwidth: 160,80, 40, or 20mhz. <span class="li-normal">type: str</span> <span class="li-normal">choices: [80MHz, 40MHz, 20MHz, 160MHz]</span> 
+ <li><span class="li-head">channel_bonding</span> <b>(Alias name: channel-bonding)</b>  Channel bandwidth: 160,80, 40, or 20mhz. <span class="li-normal">type: str</span> <span class="li-normal">choices: [80MHz, 40MHz, 20MHz, 160MHz, 320MHz, 240MHz]</span> 
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
@@ -262,7 +262,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">powersave_optimize</span> <b>(Alias name: powersave-optimize)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [tim, ac-vo, no-obss-scan, no-11b-rate, client-rate-follow]</span> 
+ <li><span class="li-head">powersave_optimize</span> <b>(Alias name: powersave-optimize)</b>  Enable client power-saving features such as tim, ac vo, and obss etc. <span class="li-normal">type: list</span> <span class="li-normal">choices: [tim, ac-vo, no-obss-scan, no-11b-rate, client-rate-follow]</span> 
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
@@ -274,7 +274,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">radio_id</span> <b>(Alias name: radio-id)</b>  <span class="li-normal">type: int</span>
+ <li><span class="li-head">radio_id</span> <b>(Alias name: radio-id)</b>  Radio id. <span class="li-normal">type: int</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
@@ -298,7 +298,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">transmit_optimize</span> <b>(Alias name: transmit-optimize)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [disable, power-save, aggr-limit, retry-limit, send-bar]</span> 
+ <li><span class="li-head">transmit_optimize</span> <b>(Alias name: transmit-optimize)</b>  Packet transmission optimization options including power saving, aggregation limiting, retry limiting, etc. <span class="li-normal">type: list</span> <span class="li-normal">choices: [disable, power-save, aggr-limit, retry-limit, send-bar]</span> 
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
@@ -436,7 +436,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sam_password</span> <b>(Alias name: sam-password)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">sam_password</span> <b>(Alias name: sam-password)</b>  Passphrase for wifi network connection. <span class="li-normal">type: list</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -502,7 +502,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sam_cwp_password</span> <b>(Alias name: sam-cwp-password)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">sam_cwp_password</span> <b>(Alias name: sam-cwp-password)</b>  Password for captive portal authentication. <span class="li-normal">type: list</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -592,10 +592,16 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sam_private_key_password</span> <b>(Alias name: sam-private-key-password)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">sam_private_key_password</span> <b>(Alias name: sam-private-key-password)</b>  Password for private key file for wpa2/wpa3-enterprise. <span class="li-normal">type: list</span>
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">channel_bonding_ext</span> <b>(Alias name: channel-bonding-ext)</b>  Channel bandwidth extension: 320 mhz-1 and 320 mhz-2 (default = 320 mhz-2). <span class="li-normal">type: str</span> <span class="li-normal">choices: [320MHz-1, 320MHz-2]</span> 
+ <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
+ <div id="label179" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -733,6 +739,7 @@ Examples
             sam_eap_method: <value in [tls, peap, both]>
             sam_private_key: <string>
             sam_private_key_password: <list or string>
+            channel_bonding_ext: <value in [320MHz-1, 320MHz-2]>
 
 
 Return Values

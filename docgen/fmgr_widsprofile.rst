@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -70,7 +70,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ap_bgscan_disable_day</span> <b>(Alias name: ap-bgscan-disable-day)</b>  Ap-bgscan-disable-day. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
+ <li><span class="li-head">ap_bgscan_disable_day</span> <b>(Alias name: ap-bgscan-disable-day)</b>  Optionally turn off scanning for one or more days of the week. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -376,13 +376,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ap_scan_channel_list_2G_5G</span> <b>(Alias name: ap-scan-channel-list-2G-5G)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ap_scan_channel_list_2G_5G</span> <b>(Alias name: ap-scan-channel-list-2G-5G)</b>  Selected ap scan channel list for 2. <span class="li-normal">type: list</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ap_scan_channel_list_6G</span> <b>(Alias name: ap-scan-channel-list-6G)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ap_scan_channel_list_6G</span> <b>(Alias name: ap-scan-channel-list-6G)</b>  Selected ap scan channel list for 6g band. <span class="li-normal">type: list</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>

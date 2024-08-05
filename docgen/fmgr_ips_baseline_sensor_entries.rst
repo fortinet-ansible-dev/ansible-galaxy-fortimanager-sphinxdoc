@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -71,19 +71,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">application</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">application</span> Applications to be protected. <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">cve</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">cve</span> List of cve ids of the signatures to add to the sensor <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">exempt_ip</span> <b>(Alias name: exempt-ip)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">exempt_ip</span> <b>(Alias name: exempt-ip)</b>  Exempt ip. <span class="li-normal">type: list</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -115,7 +115,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">location</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">location</span> Protect client or server traffic. <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -139,13 +139,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">os</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">os</span> Operating systems to be protected. <span class="li-normal">type: list</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">protocol</span> Protocols to be examined. <span class="li-normal">type: list</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -199,7 +199,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">severity</span> Relative severity of the signature, from info to critical. <span class="li-normal">type: list</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -211,7 +211,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">tags</span> <span class="li-normal">type: str</span>
+ <li><span class="li-head">tags</span> Tags. <span class="li-normal">type: str</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>

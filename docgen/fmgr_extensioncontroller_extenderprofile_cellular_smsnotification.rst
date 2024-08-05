@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -64,86 +64,91 @@ Parameters
  <li><span class="li-head">extender-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">extensioncontroller_extenderprofile_cellular_smsnotification</span> - FortiExtender cellular SMS notification configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">alert</span> <span class="li-normal">type: dict</span> <ul class="ul-self">
- <li><span class="li-head">data_exhausted</span> <b>(Alias name: data-exhausted)</b>  Display string when data exhausted. <span class="li-normal">type: str</span>
+ <li><span class="li-head">alert</span> Alert. <span class="li-normal">type: dict</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">fgt_backup_mode_switch</span> <b>(Alias name: fgt-backup-mode-switch)</b>  Display string when fortigate backup mode switched. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">data_exhausted</span> <b>(Alias name: data-exhausted)</b>  Display string when data exhausted. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">low_signal_strength</span> <b>(Alias name: low-signal-strength)</b>  Display string when signal strength is low. <span class="li-normal">type: str</span>
+ <li><span class="li-head">fgt_backup_mode_switch</span> <b>(Alias name: fgt-backup-mode-switch)</b>  Display string when fortigate backup mode switched. <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode_switch</span> <b>(Alias name: mode-switch)</b>  Display string when mode is switched. <span class="li-normal">type: str</span>
+ <li><span class="li-head">low_signal_strength</span> <b>(Alias name: low-signal-strength)</b>  Display string when signal strength is low. <span class="li-normal">type: str</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">os_image_fallback</span> <b>(Alias name: os-image-fallback)</b>  Display string when falling back to a previous os image. <span class="li-normal">type: str</span>
+ <li><span class="li-head">mode_switch</span> <b>(Alias name: mode-switch)</b>  Display string when mode is switched. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">session_disconnect</span> <b>(Alias name: session-disconnect)</b>  Display string when session disconnected. <span class="li-normal">type: str</span>
+ <li><span class="li-head">os_image_fallback</span> <b>(Alias name: os-image-fallback)</b>  Display string when falling back to a previous os image. <span class="li-normal">type: str</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_reboot</span> <b>(Alias name: system-reboot)</b>  Display string when system rebooted. <span class="li-normal">type: str</span>
+ <li><span class="li-head">session_disconnect</span> <b>(Alias name: session-disconnect)</b>  Display string when session disconnected. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">receiver</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">system_reboot</span> <b>(Alias name: system-reboot)</b>  Display string when system rebooted. <span class="li-normal">type: str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">alert</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [system-reboot, data-exhausted, session-disconnect, low-signal-strength, mode-switch, os-image-fallback, fgt-backup-mode-switch]</span> 
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">receiver</span> Receiver. <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">name</span> Fortiextender sms notification receiver name. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">alert</span> Alert multi-options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [system-reboot, data-exhausted, session-disconnect, low-signal-strength, mode-switch, os-image-fallback, fgt-backup-mode-switch]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">phone_number</span> <b>(Alias name: phone-number)</b>  Receiver phone number. <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Fortiextender sms notification receiver name. <span class="li-normal">type: str</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Sms notification receiver status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">phone_number</span> <b>(Alias name: phone-number)</b>  Receiver phone number. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Sms notification receiver status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">status</span> Fortiextender sms notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
- <div id="label25" style="display:none">
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>

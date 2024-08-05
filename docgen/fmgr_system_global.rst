@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -440,7 +440,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mc_policy_disabled_adoms</span> <b>(Alias name: mc-policy-disabled-adoms)</b>  Mc-policy-disabled-adoms. <span class="li-normal">type: list</span>
+ <li><span class="li-head">mc_policy_disabled_adoms</span> <b>(Alias name: mc-policy-disabled-adoms)</b>  Mc policy disabled adoms. <span class="li-normal">type: list</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
@@ -508,7 +508,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_cipher_suites</span> <b>(Alias name: ssl-cipher-suites)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">ssl_cipher_suites</span> <b>(Alias name: ssl-cipher-suites)</b>  Ssl cipher suites. <span class="li-normal">type: list</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -564,25 +564,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssh_enc_algo</span> <b>(Alias name: ssh-enc-algo)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, arcfour256, arcfour128, aes128-cbc, 3des-cbc, blowfish-cbc, cast128-cbc, aes192-cbc, aes256-cbc, arcfour, rijndael-cbc@lysator.liu.se, aes128-gcm@openssh.com, aes256-gcm@openssh.com]</span> 
+ <li><span class="li-head">ssh_enc_algo</span> <b>(Alias name: ssh-enc-algo)</b>  Select one or more ssh ciphers. <span class="li-normal">type: list</span> <span class="li-normal">choices: [chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, arcfour256, arcfour128, aes128-cbc, 3des-cbc, blowfish-cbc, cast128-cbc, aes192-cbc, aes256-cbc, arcfour, rijndael-cbc@lysator.liu.se, aes128-gcm@openssh.com, aes256-gcm@openssh.com]</span> 
  <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
  <div id="label167" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssh_hostkey_algo</span> <b>(Alias name: ssh-hostkey-algo)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [ssh-rsa, ecdsa-sha2-nistp521, rsa-sha2-256, rsa-sha2-512, ssh-ed25519]</span> 
+ <li><span class="li-head">ssh_hostkey_algo</span> <b>(Alias name: ssh-hostkey-algo)</b>  Select one or more ssh hostkey algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ssh-rsa, ecdsa-sha2-nistp521, rsa-sha2-256, rsa-sha2-512, ssh-ed25519]</span> 
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssh_kex_algo</span> <b>(Alias name: ssh-kex-algo)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group-exchange-sha1, diffie-hellman-group-exchange-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521]</span> 
+ <li><span class="li-head">ssh_kex_algo</span> <b>(Alias name: ssh-kex-algo)</b>  Select one or more ssh kex algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group-exchange-sha1, diffie-hellman-group-exchange-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521]</span> 
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssh_mac_algo</span> <b>(Alias name: ssh-mac-algo)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [hmac-md5, hmac-md5-etm@openssh.com, hmac-md5-96, hmac-md5-96-etm@openssh.com, hmac-sha1, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-256-etm@openssh.com, hmac-sha2-512, hmac-sha2-512-etm@openssh.com, hmac-ripemd160, hmac-ripemd160@openssh.com, hmac-ripemd160-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, umac-64-etm@openssh.com, umac-128-etm@openssh.com]</span> 
+ <li><span class="li-head">ssh_mac_algo</span> <b>(Alias name: ssh-mac-algo)</b>  Select one or more ssh mac algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [hmac-md5, hmac-md5-etm@openssh.com, hmac-md5-96, hmac-md5-96-etm@openssh.com, hmac-sha1, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-256-etm@openssh.com, hmac-sha2-512, hmac-sha2-512-etm@openssh.com, hmac-ripemd160, hmac-ripemd160@openssh.com, hmac-ripemd160-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, umac-64-etm@openssh.com, umac-128-etm@openssh.com]</span> 
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -603,13 +603,13 @@ Parameters
  <li><span class="li-head">fgfm_deny_unknown</span> <b>(Alias name: fgfm-deny-unknown)</b>  Set if allow devices with unknown sn actively register as an unauthorized device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fgfm_peercert_withoutsn</span> <b>(Alias name: fgfm-peercert-withoutsn)</b>  Set if the subject cn or san of peer&apos;s ssl certificate sent in fgfm should include the serial number of the device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">admin_lockout_method</span> <b>(Alias name: admin-lockout-method)</b>  Lockout method for administration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ip, user]</span>  <span class="li-normal">default: ip</span> 

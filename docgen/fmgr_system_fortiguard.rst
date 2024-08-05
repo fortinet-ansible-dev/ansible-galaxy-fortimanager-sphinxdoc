@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -81,7 +81,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">antispam_expiration</span> <b>(Alias name: antispam-expiration)</b>  Antispam-expiration. <span class="li-normal">type: int</span>
+ <li><span class="li-head">antispam_expiration</span> <b>(Alias name: antispam-expiration)</b>  Antispam expiration. <span class="li-normal">type: int</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -93,7 +93,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">antispam_license</span> <b>(Alias name: antispam-license)</b>  Antispam-license. <span class="li-normal">type: int</span>
+ <li><span class="li-head">antispam_license</span> <b>(Alias name: antispam-license)</b>  Antispam license. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -147,7 +147,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">outbreak_prevention_expiration</span> <b>(Alias name: outbreak-prevention-expiration)</b>  Outbreak-prevention-expiration. <span class="li-normal">type: int</span>
+ <li><span class="li-head">outbreak_prevention_expiration</span> <b>(Alias name: outbreak-prevention-expiration)</b>  Outbreak prevention expiration. <span class="li-normal">type: int</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -159,7 +159,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">outbreak_prevention_license</span> <b>(Alias name: outbreak-prevention-license)</b>  Outbreak-prevention-license. <span class="li-normal">type: int</span>
+ <li><span class="li-head">outbreak_prevention_license</span> <b>(Alias name: outbreak-prevention-license)</b>  Outbreak prevention license. <span class="li-normal">type: int</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -225,7 +225,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">webfilter_expiration</span> <b>(Alias name: webfilter-expiration)</b>  Webfilter-expiration. <span class="li-normal">type: int</span>
+ <li><span class="li-head">webfilter_expiration</span> <b>(Alias name: webfilter-expiration)</b>  Webfilter expiration. <span class="li-normal">type: int</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -237,7 +237,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">webfilter_license</span> <b>(Alias name: webfilter-license)</b>  Webfilter-license. <span class="li-normal">type: int</span>
+ <li><span class="li-head">webfilter_license</span> <b>(Alias name: webfilter-license)</b>  Webfilter license. <span class="li-normal">type: int</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -393,13 +393,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">videofilter_expiration</span> <b>(Alias name: videofilter-expiration)</b>  Videofilter-expiration. <span class="li-normal">type: int</span>
+ <li><span class="li-head">videofilter_expiration</span> <b>(Alias name: videofilter-expiration)</b>  Videofilter expiration. <span class="li-normal">type: int</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">videofilter_license</span> <b>(Alias name: videofilter-license)</b>  Videofilter-license. <span class="li-normal">type: int</span>
+ <li><span class="li-head">videofilter_license</span> <b>(Alias name: videofilter-license)</b>  Videofilter license. <span class="li-normal">type: int</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -423,7 +423,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_firmware_upgrade_day</span> <b>(Alias name: auto-firmware-upgrade-day)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
+ <li><span class="li-head">auto_firmware_upgrade_day</span> <b>(Alias name: auto-firmware-upgrade-day)</b>  Allowed day(s) of the week to start automatic patch-level firmware upgrade from fortiguard. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>

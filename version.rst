@@ -12,31 +12,31 @@ The ``unified`` collections cover FMG releases ranging from ``v6.x`` to ``v7.x``
 +===============+=====================+================+======================================================================+
 | v6.x          | 2.0.0               | 2020/10/12     | ``ansible-galaxy collection install fortinet.fortimanager:2.0.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| v6.x          | 2.0.1               | 2020/11/5      | ``ansible-galaxy collection install fortinet.fortimanager:2.0.1``    |
+| v6.x          | 2.0.1               | 2020/11/05     | ``ansible-galaxy collection install fortinet.fortimanager:2.0.1``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| v6.x          | 2.0.2               | 2021/4/20      | ``ansible-galaxy collection install fortinet.fortimanager:2.0.2``    |
+| v6.x          | 2.0.2               | 2021/04/20     | ``ansible-galaxy collection install fortinet.fortimanager:2.0.2``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| v6.x          | 2.0.3               | 2021/5/10      | ``ansible-galaxy collection install fortinet.fortimanager:2.0.3``    |
+| v6.x          | 2.0.3               | 2021/05/10     | ``ansible-galaxy collection install fortinet.fortimanager:2.0.3``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.1.0               | 2021/6/25      | ``ansible-galaxy collection install fortinet.fortimanager:2.1.0``    |
+| unified       | 2.1.0               | 2021/06/25     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.1.1               | 2021/6/26      | ``ansible-galaxy collection install fortinet.fortimanager:2.1.1``    |
+| unified       | 2.1.1               | 2021/06/26     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.1``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.1.2               | 2021/6/28      | ``ansible-galaxy collection install fortinet.fortimanager:2.1.2``    |
+| unified       | 2.1.2               | 2021/06/28     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.2``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.1.3               | 2021/7/12      | ``ansible-galaxy collection install fortinet.fortimanager:2.1.3``    |
+| unified       | 2.1.3               | 2021/07/12     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.3``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.1.4               | 2021/11/8      | ``ansible-galaxy collection install fortinet.fortimanager:2.1.4``    |
+| unified       | 2.1.4               | 2021/11/08     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.4``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.1.5               | 2022/4/8       | ``ansible-galaxy collection install fortinet.fortimanager:2.1.5``    |
+| unified       | 2.1.5               | 2022/04/08     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.5``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 | unified       | 2.1.6               | 2022/10/31     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.6``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 | unified       | 2.1.7               | 2022/11/15     | ``ansible-galaxy collection install fortinet.fortimanager:2.1.7``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.2.0               | 2023/6/21      | ``ansible-galaxy collection install fortinet.fortimanager:2.2.0``    |
+| unified       | 2.2.0               | 2023/06/21     | ``ansible-galaxy collection install fortinet.fortimanager:2.2.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.2.1               | 2023/8/2       | ``ansible-galaxy collection install fortinet.fortimanager:2.2.1``    |
+| unified       | 2.2.1               | 2023/08/02     | ``ansible-galaxy collection install fortinet.fortimanager:2.2.1``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 | unified       | 2.3.0               | 2023/10/13     | ``ansible-galaxy collection install fortinet.fortimanager:2.3.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
@@ -44,7 +44,9 @@ The ``unified`` collections cover FMG releases ranging from ``v6.x`` to ``v7.x``
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 | unified       | 2.4.0               | 2024/02/06     | ``ansible-galaxy collection install fortinet.fortimanager:2.4.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 2.5.0 ``latest``    | 2024/04/30     | ``ansible-galaxy collection install fortinet.fortimanager:2.5.0``    |
+| unified       | 2.5.0               | 2024/04/30     | ``ansible-galaxy collection install fortinet.fortimanager:2.5.0``    |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| unified       | 2.6.0 ``latest``    | 2024/07/31     | ``ansible-galaxy collection install fortinet.fortimanager:2.6.0``    |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 
 

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -88,7 +88,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">full_archive_proto</span> <b>(Alias name: full-archive-proto)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">full_archive_proto</span> <b>(Alias name: full-archive-proto)</b>  Protocols to always content archive. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -112,7 +112,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rule</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">rule</span> Rule. <span class="li-normal">type: list</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -178,19 +178,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proto</span> <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sensitivity</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">sensitivity</span> Select a dlp file pattern sensitivity to match. <span class="li-normal">type: list</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sensor</span> <span class="li-normal">type: list</span>
+ <li><span class="li-head">sensor</span> Select dlp sensors. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -210,7 +210,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">summary_proto</span> <b>(Alias name: summary-proto)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">summary_proto</span> <b>(Alias name: summary-proto)</b>  Protocols to always log summary. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
