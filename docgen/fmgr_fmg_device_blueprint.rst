@@ -178,6 +178,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">port_provisioning</span> <b>(Alias name: port-provisioning)</b>  Port provisioning. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span> 
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">sdwan_management</span> <b>(Alias name: sdwan-management)</b>  Sdwan management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">split_switch_port</span> <b>(Alias name: split-switch-port)</b>  Split switch port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -233,6 +251,9 @@ Examples
             ha_monitor: <list or string>
             ha_password: <list or string>
             linked_to_model: <value in [disable, enable]>
+            port_provisioning: <integer>
+            sdwan_management: <value in [disable, enable]>
+            split_switch_port: <value in [disable, enable]>
 
 
 Return Values

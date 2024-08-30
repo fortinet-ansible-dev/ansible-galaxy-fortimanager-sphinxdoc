@@ -233,7 +233,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proxy</span> Type of explicit proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [explicit-web, transparent-web, ftp, wanopt, ssh, ssh-tunnel, access-proxy]</span> 
+ <li><span class="li-head">proxy</span> Type of explicit proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [explicit-web, transparent-web, ftp, wanopt, ssh, ssh-tunnel, access-proxy, ztna-proxy]</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -573,6 +573,30 @@ Parameters
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">_policy_block</span> Assigned policy block. <span class="li-normal">type: int</span>
+ <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
+ <div id="label171" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dnsfilter_profile</span> <b>(Alias name: dnsfilter-profile)</b>  Name of an existing dns filter profile. <span class="li-normal">type: list</span>
+ <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
+ <div id="label173" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log_http_transaction</span> <b>(Alias name: log-http-transaction)</b>  Enable/disable http transaction log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
+ <div id="label175" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ztna_proxy</span> <b>(Alias name: ztna-proxy)</b>  Ipv4 ztna traffic forward proxy. <span class="li-normal">type: list</span>
+ <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
+ <div id="label177" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

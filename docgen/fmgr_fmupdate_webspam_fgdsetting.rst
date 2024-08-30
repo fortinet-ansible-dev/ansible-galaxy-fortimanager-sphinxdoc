@@ -324,7 +324,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">iot_log</span> <b>(Alias name: iot-log)</b>  Iot log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all]</span>  <span class="li-normal">default: nofilequery</span> 
+ <li><span class="li-head">iot_log</span> <b>(Alias name: iot-log)</b>  Iot log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all, noiot]</span>  <span class="li-normal">default: nofilequery</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -438,7 +438,7 @@ Examples
             wf_log: <value in [disable, nourl, all]>
             wf_preload: <value in [disable, enable]>
             iot_cache: <integer>
-            iot_log: <value in [disable, nofilequery, all]>
+            iot_log: <value in [disable, nofilequery, all, ...]>
             iot_preload: <value in [disable, enable]>
             restrict_iots_dbver: <string>
             stat_log: <value in [emergency, alert, critical, ...]>

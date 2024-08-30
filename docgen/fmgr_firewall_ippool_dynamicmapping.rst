@@ -277,6 +277,42 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">client_prefix_length</span> <b>(Alias name: client-prefix-length)</b>  Subnet length of a single deterministic nat64 client (1 - 128, default = 64). <span class="li-normal">type: int</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">icmp_session_quota</span> <b>(Alias name: icmp-session-quota)</b>  Maximum number of concurrent icmp sessions allowed per client (0 - 2097000, default = 0 which means no limit). <span class="li-normal">type: int</span>
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">privileged_port_use_pba</span> <b>(Alias name: privileged-port-use-pba)</b>  Enable/disable selection of the external port from the port block allocation for nating privileged ports (deafult = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">source_prefix6</span> <b>(Alias name: source-prefix6)</b>  Source ipv6 network to be translated (format = xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx/xxx, default = ::/0). <span class="li-normal">type: str</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">tcp_session_quota</span> <b>(Alias name: tcp-session-quota)</b>  Maximum number of concurrent tcp sessions allowed per client (0 - 2097000, default = 0 which means no limit). <span class="li-normal">type: int</span>
+ <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
+ <div id="label79" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">udp_session_quota</span> <b>(Alias name: udp-session-quota)</b>  Maximum number of concurrent udp sessions allowed per client (0 - 2097000, default = 0 which means no limit). <span class="li-normal">type: int</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

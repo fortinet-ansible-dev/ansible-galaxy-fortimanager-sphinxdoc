@@ -264,7 +264,7 @@ FortiManager can be managed by forticloud. Example of a fortimanager cloud host:
 It's possible to authenticate Ansible client with forticloud API access token.
 ``forticloud_access_token`` is the module option to enable forticloud access token based authentication. 
 
-To obatin access token, it's required to register an API user in https://support.fortinet.com/iam/#/api-user and download the crendentials which contains
+To obtain access token, it's required to register an API user in https://support.fortinet.com/iam/#/api-user and download the crendentials which contains
 needed API user ID and password. it's strongly recommended that you keep it safe!
 
 below is an example to obtain access token:

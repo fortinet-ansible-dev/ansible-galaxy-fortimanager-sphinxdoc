@@ -112,6 +112,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">option</span> Option. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sdwan-overlay, sdwan-manager]</span> 
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -156,6 +162,9 @@ Examples
             type: <value in [cli, jinja]>
             variables: <list or string>
             position: <value in [post-vdom-copy, prep-vdom-copy]>
+            option:
+              - sdwan-overlay
+              - sdwan-manager
 
 
 Return Values

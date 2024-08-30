@@ -83,7 +83,7 @@ Parameters
  <li><span class="li-head">configuration_sync</span> <b>(Alias name: configuration-sync)</b>  Configuration sync mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, local]</span>  <span class="li-normal">default: default</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">downstream_access</span> <b>(Alias name: downstream-access)</b>  Enable/disable downstream device access to this device&apos;s configuration and data. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
@@ -127,7 +127,7 @@ Parameters
  <li><span class="li-head">fabric_object_unification</span> <b>(Alias name: fabric-object-unification)</b>  Fabric cmdb object unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, default]</span>  <span class="li-normal">default: default</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">fabric_workers</span> <b>(Alias name: fabric-workers)</b>  Number of worker processes for security fabric daemon. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span> 
@@ -139,19 +139,19 @@ Parameters
  <li><span class="li-head">file_mgmt</span> <b>(Alias name: file-mgmt)</b>  Enable/disable security fabric daemon file management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">file_quota</span> <b>(Alias name: file-quota)</b>  Maximum amount of memory that can be used by the daemon files (in bytes). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">file_quota_warning</span> <b>(Alias name: file-quota-warning)</b>  Warn when the set percentage of quota has been used. <span class="li-normal">type: int</span> <span class="li-normal">default: 90</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">fixed_key</span> <b>(Alias name: fixed-key)</b>  Auto-generated fixed key used when this device is the root. <span class="li-normal">type: list</span>
@@ -187,7 +187,7 @@ Parameters
  <li><span class="li-head">saml_configuration_sync</span> <b>(Alias name: saml-configuration-sync)</b>  Saml setting configuration synchronization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, default]</span>  <span class="li-normal">default: default</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable security fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
@@ -264,6 +264,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">upstream_confirm</span> <b>(Alias name: upstream-confirm)</b>  Upstream authorization confirm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [discover, confirm]</span>  <span class="li-normal">default: discover</span> 
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -333,6 +339,7 @@ Examples
                 serial: <string>
             upstream: <string>
             upstream_port: <integer>
+            upstream_confirm: <value in [discover, confirm]>
 
 
 Return Values

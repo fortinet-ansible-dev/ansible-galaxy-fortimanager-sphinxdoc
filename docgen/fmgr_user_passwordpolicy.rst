@@ -136,6 +136,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">reuse_password_limit</span> <b>(Alias name: reuse-password-limit)</b>  Number of times passwords can be reused (0 - 20, default = 0. <span class="li-normal">type: int</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -184,6 +190,7 @@ Examples
             min_upper_case_letter: <integer>
             minimum_length: <integer>
             reuse_password: <value in [disable, enable]>
+            reuse_password_limit: <integer>
 
 
 Return Values

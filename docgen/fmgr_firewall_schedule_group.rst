@@ -94,6 +94,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">uuid</span> Universally unique identifier (uuid; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

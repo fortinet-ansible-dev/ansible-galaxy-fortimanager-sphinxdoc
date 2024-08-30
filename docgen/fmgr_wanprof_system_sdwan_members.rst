@@ -179,6 +179,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">priority_in_sla</span> <b>(Alias name: priority-in-sla)</b>  Preferred priority of routes to this member when this member is in-sla (0 - 65535, default = 0). <span class="li-normal">type: int</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">priority_out_sla</span> <b>(Alias name: priority-out-sla)</b>  Preferred priority of routes to this member when this member is out-of-sla (0 - 65535, default = 0). <span class="li-normal">type: int</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -235,6 +247,8 @@ Examples
             priority6: <integer>
             preferred_source: <string>
             transport_group: <integer>
+            priority_in_sla: <integer>
+            priority_out_sla: <integer>
 
 
 Return Values

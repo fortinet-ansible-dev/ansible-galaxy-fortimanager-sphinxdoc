@@ -1414,6 +1414,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">cgn_sw_eif_ctrl</span> <b>(Alias name: cgn-sw-eif-ctrl)</b>  Enable/disable software endpoint independent filtering control. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label448' href="javascript:ContentClick('label449', 'label448');" onmouseover="ContentPreview('label449');" onmouseout="ContentUnpreview('label449');" title="click to collapse or expand..."> more... </a>
+ <div id="label449" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">eif_check</span> <b>(Alias name: eif-check)</b>  Enable/disable check endpoint-independent-filtering pinhole. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label450' href="javascript:ContentClick('label451', 'label450');" onmouseover="ContentPreview('label451');" onmouseout="ContentUnpreview('label451');" title="click to collapse or expand..."> more... </a>
+ <div id="label451" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">eif_learn</span> <b>(Alias name: eif-learn)</b>  Enable/disable learning of end-point-independent filtering pinhole. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label452' href="javascript:ContentClick('label453', 'label452');" onmouseover="ContentPreview('label453');" onmouseout="ContentUnpreview('label453');" title="click to collapse or expand..."> more... </a>
+ <div id="label453" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log_http_transaction</span> <b>(Alias name: log-http-transaction)</b>  Enable/disable http transaction log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, all, utm]</span> 
+ <a id='label454' href="javascript:ContentClick('label455', 'label454');" onmouseover="ContentPreview('label455');" onmouseout="ContentUnpreview('label455');" title="click to collapse or expand..."> more... </a>
+ <div id="label455" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">radius_ip_auth_bypass</span> <b>(Alias name: radius-ip-auth-bypass)</b>  Enable ip authentication bypass. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label456' href="javascript:ContentClick('label457', 'label456');" onmouseover="ContentPreview('label457');" onmouseout="ContentUnpreview('label457');" title="click to collapse or expand..."> more... </a>
+ <div id="label457" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  <li><span class="li-head">object_position</span> <b>(Alias name: object position)</b>  Object position. <span class="li-normal">type: list</span> </li>
  </ul>
  </ul>

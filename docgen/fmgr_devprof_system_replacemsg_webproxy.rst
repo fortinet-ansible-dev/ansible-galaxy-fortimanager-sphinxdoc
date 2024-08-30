@@ -70,13 +70,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml, opt:none]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit, opt:none]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -126,7 +126,7 @@ Examples
           devprof_system_replacemsg_webproxy:
             buffer: <string>
             format: <value in [none, text, html, ...]>
-            header: <value in [none, http, 8bit]>
+            header: <value in [none, http, 8bit, ...]>
             msg_type: <string>
 
 

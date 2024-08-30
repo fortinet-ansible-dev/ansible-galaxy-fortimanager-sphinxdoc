@@ -106,7 +106,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -325,6 +325,7 @@ Examples
                   - rating
                   - iot-query
                   - iot-collect
+                  - vpatch-query
             ltefw_upgrade_time: <string>
             vdom: <list or string>
             allow_remote_firmware_upgrade: <value in [disable, enable]>

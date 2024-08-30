@@ -202,6 +202,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">auth_order</span> <b>(Alias name: auth-order)</b>  Configure authentication order. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dot1x-mab, mab-dot1x, mab]</span> 
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">auth_priority</span> <b>(Alias name: auth-priority)</b>  Configure authentication priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dot1x-mab, mab-dot1x, legacy]</span> 
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -261,6 +273,8 @@ Examples
             authserver_timeout_tagged: <value in [static, disable, lldp-voice]>
             authserver_timeout_tagged_vlanid: <list or string>
             dacl: <value in [disable, enable]>
+            auth_order: <value in [dot1x-mab, mab-dot1x, mab]>
+            auth_priority: <value in [dot1x-mab, mab-dot1x, legacy]>
 
 
 Return Values

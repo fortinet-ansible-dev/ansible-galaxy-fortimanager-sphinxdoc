@@ -136,6 +136,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">non_mgmt_vdom_query</span> <b>(Alias name: non-mgmt-vdom-query)</b>  Enable/disable allowance of snmpv3 query from non-management vdoms. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -184,6 +190,7 @@ Examples
             trap_free_memory_threshold: <integer>
             trap_low_memory_threshold: <integer>
             location: <string>
+            non_mgmt_vdom_query: <value in [disable, enable]>
 
 
 Return Values

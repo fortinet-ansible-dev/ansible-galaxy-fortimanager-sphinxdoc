@@ -278,6 +278,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fgd_id</span> <b>(Alias name: fgd-id)</b>  Id of object in fortiguard database. <span class="li-normal">type: int</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -405,6 +411,7 @@ Examples
                 status: <value in [disable, enable]>
             eval: <string>
             match_type: <value in [match-all, match-any, match-eval]>
+            fgd_id: <integer>
 
 
 Return Values

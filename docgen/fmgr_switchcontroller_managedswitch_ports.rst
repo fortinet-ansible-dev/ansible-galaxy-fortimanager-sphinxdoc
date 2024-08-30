@@ -757,6 +757,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">log_mac_event</span> <b>(Alias name: log-mac-event)</b>  Enable/disable logging for dynamic mac address events. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
+ <div id="label231" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pd_capable</span> <b>(Alias name: pd-capable)</b>  Powered device capable. <span class="li-normal">type: int</span>
+ <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
+ <div id="label233" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">qnq</span> 802. <span class="li-normal">type: list</span>
+ <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
+ <div id="label235" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -910,6 +928,9 @@ Examples
             switch_id: <string>
             virtual_port: <integer>
             export_tags: <list or string>
+            log_mac_event: <value in [disable, enable]>
+            pd_capable: <integer>
+            qnq: <list or string>
 
 
 Return Values

@@ -616,431 +616,437 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">domain_fronting</span> <b>(Alias name: domain-fronting)</b>  Configure http domain fronting (default = block). <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, allow]</span> 
+ <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
+ <div id="label181" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">imap</span> Imap. <span class="li-normal">type: dict</span>
- <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
- <div id="label181" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, fragmail, no-content-summary]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, fragmail, no-content-summary]</span> 
  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 143). <span class="li-normal">type: list</span>
+ <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 143). <span class="li-normal">type: list</span>
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
- <div id="label193" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
+ <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
  <div id="label199" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">mail_signature</span> <b>(Alias name: mail-signature)</b>  Mail signature. <span class="li-normal">type: dict</span>
- <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
- <div id="label203" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">signature</span> Email signature to be added to outgoing email (if the signature contains spaces, enclose with quotation marks). <span class="li-normal">type: str</span>
  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
  <div id="label205" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">status</span> Enable/disable adding an email signature to smtp email messages as they pass through the fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">signature</span> Email signature to be added to outgoing email (if the signature contains spaces, enclose with quotation marks). <span class="li-normal">type: str</span>
  <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
  <div id="label207" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Enable/disable adding an email signature to smtp email messages as they pass through the fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
+ <div id="label209" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">mapi</span> Mapi. <span class="li-normal">type: dict</span>
- <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
- <div id="label209" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fragmail, oversize, no-content-summary]</span> 
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fragmail, oversize, no-content-summary]</span> 
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 135). <span class="li-normal">type: list</span>
+ <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 135). <span class="li-normal">type: list</span>
  <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
  <div id="label217" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
  <div id="label219" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
+ <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
  <div id="label221" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
  <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
  <div id="label223" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
+ <div id="label225" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">nntp</span> Nntp. <span class="li-normal">type: dict</span>
- <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
- <div id="label225" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
  <div id="label227" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, no-content-summary, splice]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
  <div id="label229" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, no-content-summary, splice]</span> 
  <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
  <div id="label231" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 119). <span class="li-normal">type: list</span>
+ <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
  <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
  <div id="label233" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 119). <span class="li-normal">type: list</span>
  <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
  <div id="label235" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
+ <div id="label237" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
- <div id="label237" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
  <div id="label239" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
+ <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
  <div id="label241" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
  <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
  <div id="label243" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
+ <div id="label245" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">pop3</span> Pop3. <span class="li-normal">type: dict</span>
- <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
- <div id="label245" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
  <div id="label247" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, fragmail, no-content-summary]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
  <div id="label249" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, fragmail, no-content-summary]</span> 
  <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
  <div id="label251" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 110). <span class="li-normal">type: list</span>
+ <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
  <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
  <div id="label253" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 110). <span class="li-normal">type: list</span>
  <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
  <div id="label255" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
+ <div id="label257" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
- <div id="label257" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
  <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
  <div id="label259" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
  <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
  <div id="label261" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
+ <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
  <div id="label263" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
  <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
  <div id="label265" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
+ <div id="label267" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">smtp</span> Smtp. <span class="li-normal">type: dict</span>
- <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
- <div id="label267" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
  <div id="label269" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, fragmail, no-content-summary, splice]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">inspect_all</span> <b>(Alias name: inspect-all)</b>  Enable/disable the inspection of all ports for the protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
  <div id="label271" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, fragmail, no-content-summary, splice]</span> 
  <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
  <div id="label273" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 25). <span class="li-normal">type: list</span>
+ <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
  <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
  <div id="label275" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 25). <span class="li-normal">type: list</span>
  <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
  <div id="label277" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
+ <div id="label279" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
- <div id="label279" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">server_busy</span> <b>(Alias name: server-busy)</b>  Enable/disable smtp server busy when server not available. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
  <div id="label281" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
+ <li><span class="li-head">server_busy</span> <b>(Alias name: server-busy)</b>  Enable/disable smtp server busy when server not available. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
  <div id="label283" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
+ <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
  <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
  <div id="label289" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
+ <div id="label291" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">ssh</span> Ssh. <span class="li-normal">type: dict</span>
- <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
- <div id="label291" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">comfort_amount</span> <b>(Alias name: comfort-amount)</b>  Amount of data to send in a transmission for client comforting (1 - 65535 bytes, default = 1). <span class="li-normal">type: int</span>
  <a id='label292' href="javascript:ContentClick('label293', 'label292');" onmouseover="ContentPreview('label293');" onmouseout="ContentUnpreview('label293');" title="click to collapse or expand..."> more... </a>
  <div id="label293" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">comfort_interval</span> <b>(Alias name: comfort-interval)</b>  Period of time between start, or last transmission, and the next client comfort transmission of data (1 - 900 sec, default = 10). <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">comfort_amount</span> <b>(Alias name: comfort-amount)</b>  Amount of data to send in a transmission for client comforting (1 - 65535 bytes, default = 1). <span class="li-normal">type: int</span>
  <a id='label294' href="javascript:ContentClick('label295', 'label294');" onmouseover="ContentPreview('label295');" onmouseout="ContentUnpreview('label295');" title="click to collapse or expand..."> more... </a>
  <div id="label295" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, clientcomfort, servercomfort]</span> 
+ <li><span class="li-head">comfort_interval</span> <b>(Alias name: comfort-interval)</b>  Period of time between start, or last transmission, and the next client comfort transmission of data (1 - 900 sec, default = 10). <span class="li-normal">type: int</span>
  <a id='label296' href="javascript:ContentClick('label297', 'label296');" onmouseover="ContentPreview('label297');" onmouseout="ContentUnpreview('label297');" title="click to collapse or expand..."> more... </a>
  <div id="label297" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">options</span> One or more options that can be applied to the session. <span class="li-normal">type: list</span> <span class="li-normal">choices: [oversize, clientcomfort, servercomfort]</span> 
  <a id='label298' href="javascript:ContentClick('label299', 'label298');" onmouseover="ContentPreview('label299');" onmouseout="ContentUnpreview('label299');" title="click to collapse or expand..."> more... </a>
  <div id="label299" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">oversize_limit</span> <b>(Alias name: oversize-limit)</b>  Maximum in-memory file size that can be scanned (1 - 383 mb, default = 10). <span class="li-normal">type: int</span>
  <a id='label300' href="javascript:ContentClick('label301', 'label300');" onmouseover="ContentPreview('label301');" onmouseout="ContentUnpreview('label301');" title="click to collapse or expand..."> more... </a>
  <div id="label301" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
+ <li><span class="li-head">scan_bzip2</span> <b>(Alias name: scan-bzip2)</b>  Enable/disable scanning of bzip2 compressed files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label302' href="javascript:ContentClick('label303', 'label302');" onmouseover="ContentPreview('label303');" onmouseout="ContentUnpreview('label303');" title="click to collapse or expand..."> more... </a>
  <div id="label303" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">uncompressed_nest_limit</span> <b>(Alias name: uncompressed-nest-limit)</b>  Maximum nested levels of compression that can be uncompressed and scanned (2 - 100, default = 12). <span class="li-normal">type: int</span>
  <a id='label304' href="javascript:ContentClick('label305', 'label304');" onmouseover="ContentPreview('label305');" onmouseout="ContentUnpreview('label305');" title="click to collapse or expand..."> more... </a>
  <div id="label305" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
+ <li><span class="li-head">uncompressed_oversize_limit</span> <b>(Alias name: uncompressed-oversize-limit)</b>  Maximum in-memory uncompressed file size that can be scanned (0 - 383 mb, 0 = unlimited, default = 10). <span class="li-normal">type: int</span>
  <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
  <div id="label307" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">stream_based_uncompressed_limit</span> <b>(Alias name: stream-based-uncompressed-limit)</b>  Maximum stream-based uncompressed data size that will be scanned (mb, 0 = unlimited (default). <span class="li-normal">type: int</span>
+ <li><span class="li-head">ssl_offloaded</span> <b>(Alias name: ssl-offloaded)</b>  Ssl decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> 
  <a id='label308' href="javascript:ContentClick('label309', 'label308');" onmouseover="ContentPreview('label309');" onmouseout="ContentUnpreview('label309');" title="click to collapse or expand..."> more... </a>
  <div id="label309" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tcp_window_maximum</span> <b>(Alias name: tcp-window-maximum)</b>  Maximum dynamic tcp window size. <span class="li-normal">type: int</span>
+ <li><span class="li-head">stream_based_uncompressed_limit</span> <b>(Alias name: stream-based-uncompressed-limit)</b>  Maximum stream-based uncompressed data size that will be scanned (mb, 0 = unlimited (default). <span class="li-normal">type: int</span>
  <a id='label310' href="javascript:ContentClick('label311', 'label310');" onmouseover="ContentPreview('label311');" onmouseout="ContentUnpreview('label311');" title="click to collapse or expand..."> more... </a>
  <div id="label311" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tcp_window_minimum</span> <b>(Alias name: tcp-window-minimum)</b>  Minimum dynamic tcp window size. <span class="li-normal">type: int</span>
+ <li><span class="li-head">tcp_window_maximum</span> <b>(Alias name: tcp-window-maximum)</b>  Maximum dynamic tcp window size. <span class="li-normal">type: int</span>
  <a id='label312' href="javascript:ContentClick('label313', 'label312');" onmouseover="ContentPreview('label313');" onmouseout="ContentUnpreview('label313');" title="click to collapse or expand..."> more... </a>
  <div id="label313" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tcp_window_size</span> <b>(Alias name: tcp-window-size)</b>  Set tcp static window size. <span class="li-normal">type: int</span>
+ <li><span class="li-head">tcp_window_minimum</span> <b>(Alias name: tcp-window-minimum)</b>  Minimum dynamic tcp window size. <span class="li-normal">type: int</span>
  <a id='label314' href="javascript:ContentClick('label315', 'label314');" onmouseover="ContentPreview('label315');" onmouseout="ContentUnpreview('label315');" title="click to collapse or expand..."> more... </a>
  <div id="label315" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tcp_window_type</span> <b>(Alias name: tcp-window-type)</b>  Tcp window type to use for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [system, static, dynamic, auto-tuning]</span> 
+ <li><span class="li-head">tcp_window_size</span> <b>(Alias name: tcp-window-size)</b>  Set tcp static window size. <span class="li-normal">type: int</span>
  <a id='label316' href="javascript:ContentClick('label317', 'label316');" onmouseover="ContentPreview('label317');" onmouseout="ContentUnpreview('label317');" title="click to collapse or expand..."> more... </a>
  <div id="label317" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">tcp_window_type</span> <b>(Alias name: tcp-window-type)</b>  Tcp window type to use for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [system, static, dynamic, auto-tuning]</span> 
+ <a id='label318' href="javascript:ContentClick('label319', 'label318');" onmouseover="ContentPreview('label319');" onmouseout="ContentUnpreview('label319');" title="click to collapse or expand..."> more... </a>
+ <div id="label319" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>

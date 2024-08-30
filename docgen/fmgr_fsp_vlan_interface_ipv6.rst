@@ -460,65 +460,71 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrdst_priority</span> <b>(Alias name: vrdst-priority)</b>  Priority of the virtual router when the virtual router destination becomes unreachable (0 - 254). <span class="li-normal">type: int</span>
+ <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
+ <div id="label131" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">interface_identifier</span> <b>(Alias name: interface-identifier)</b>  Interface identifier. <span class="li-normal">type: str</span>
- <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
- <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">unique_autoconf_addr</span> <b>(Alias name: unique-autoconf-addr)</b>  Unique autoconf addr. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">icmp6_send_redirect</span> <b>(Alias name: icmp6-send-redirect)</b>  Enable/disable sending of icmpv6 redirects. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">unique_autoconf_addr</span> <b>(Alias name: unique-autoconf-addr)</b>  Unique autoconf addr. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">icmp6_send_redirect</span> <b>(Alias name: icmp6-send-redirect)</b>  Enable/disable sending of icmpv6 redirects. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">cli_conn6_status</span> <b>(Alias name: cli-conn6-status)</b>  Cli conn6 status. <span class="li-normal">type: int</span>
- <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
- <div id="label137" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ip6_prefix_mode</span> <b>(Alias name: ip6-prefix-mode)</b>  Assigning a prefix from dhcp or ra. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dhcp6, ra]</span> 
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ra_send_mtu</span> <b>(Alias name: ra-send-mtu)</b>  Enable/disable sending link mtu in ra packet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ip6_prefix_mode</span> <b>(Alias name: ip6-prefix-mode)</b>  Assigning a prefix from dhcp or ra. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dhcp6, ra]</span> 
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ra_send_mtu</span> <b>(Alias name: ra-send-mtu)</b>  Enable/disable sending link mtu in ra packet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
+ <div id="label143" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ip6_delegated_prefix_iaid</span> <b>(Alias name: ip6-delegated-prefix-iaid)</b>  Iaid of obtained delegated-prefix from the upstream interface. <span class="li-normal">type: int</span>
- <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
- <div id="label143" style="display:none">
+ <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
+ <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dhcp6_relay_source_interface</span> <b>(Alias name: dhcp6-relay-source-interface)</b>  Enable/disable use of address on this interface as the source address of the relay message. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
- <div id="label145" style="display:none">
+ <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
+ <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dhcp6_relay_interface_id</span> <b>(Alias name: dhcp6-relay-interface-id)</b>  Dhcp6 relay interface id. <span class="li-normal">type: str</span>
- <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
- <div id="label147" style="display:none">
+ <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
+ <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dhcp6_relay_source_ip</span> <b>(Alias name: dhcp6-relay-source-ip)</b>  Ipv6 address used by the dhcp6 relay as its source ip. <span class="li-normal">type: str</span>
- <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
- <div id="label149" style="display:none">
+ <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
+ <div id="label151" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
@@ -641,6 +647,7 @@ Examples
                 vrid: <integer>
                 vrip6: <string>
                 ignore_default_route: <value in [disable, enable]>
+                vrdst_priority: <integer>
             interface_identifier: <string>
             unique_autoconf_addr: <value in [disable, enable]>
             icmp6_send_redirect: <value in [disable, enable]>

@@ -396,234 +396,246 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the ldap server. <span class="li-normal">type: list</span>
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">group_filter</span> <b>(Alias name: group-filter)</b>  Filter used for group matching. <span class="li-normal">type: str</span>
- <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
- <div id="label111" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">group_member_check</span> <b>(Alias name: group-member-check)</b>  Group member checking methods. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user-attr, group-object, posix-group-object]</span> 
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_object_filter</span> <b>(Alias name: group-object-filter)</b>  Filter used for group searching. <span class="li-normal">type: str</span>
+ <li><span class="li-head">group_member_check</span> <b>(Alias name: group-member-check)</b>  Group member checking methods. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user-attr, group-object, posix-group-object]</span> 
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_search_base</span> <b>(Alias name: group-search-base)</b>  Search base used for group searching. <span class="li-normal">type: str</span>
+ <li><span class="li-head">group_object_filter</span> <b>(Alias name: group-object-filter)</b>  Filter used for group searching. <span class="li-normal">type: str</span>
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">member_attr</span> <b>(Alias name: member-attr)</b>  Name of attribute from which to get group membership. <span class="li-normal">type: str</span>
+ <li><span class="li-head">group_search_base</span> <b>(Alias name: group-search-base)</b>  Search base used for group searching. <span class="li-normal">type: str</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">name</span> Ldap server entry name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">member_attr</span> <b>(Alias name: member-attr)</b>  Name of attribute from which to get group membership. <span class="li-normal">type: str</span>
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password</span> Password for initial binding. <span class="li-normal">type: list</span>
+ <li><span class="li-head">name</span> Ldap server entry name. <span class="li-normal">type: str</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_expiry_warning</span> <b>(Alias name: password-expiry-warning)</b>  Enable/disable password expiry warnings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">password</span> Password for initial binding. <span class="li-normal">type: list</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_renewal</span> <b>(Alias name: password-renewal)</b>  Enable/disable online password renewal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">password_expiry_warning</span> <b>(Alias name: password-expiry-warning)</b>  Enable/disable password expiry warnings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Port to be used for communication with the ldap server (default = 389). <span class="li-normal">type: int</span>
+ <li><span class="li-head">password_renewal</span> <b>(Alias name: password-renewal)</b>  Enable/disable online password renewal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secondary_server</span> <b>(Alias name: secondary-server)</b>  Secondary ldap server cn domain name or ip. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port</span> Port to be used for communication with the ldap server (default = 389). <span class="li-normal">type: int</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secure</span> Port to be used for authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, starttls, ldaps]</span> 
+ <li><span class="li-head">secondary_server</span> <b>(Alias name: secondary-server)</b>  Secondary ldap server cn domain name or ip. <span class="li-normal">type: str</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server</span> Ldap server cn domain name or ip. <span class="li-normal">type: str</span>
+ <li><span class="li-head">secure</span> Port to be used for authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, starttls, ldaps]</span> 
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Enable/disable ldap server identity check (verify server domain name/ip address against the server certificate). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">server</span> Ldap server cn domain name or ip. <span class="li-normal">type: str</span>
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip for communications to ldap server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Enable/disable ldap server identity check (verify server domain name/ip address against the server certificate). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_min_proto_version</span> <b>(Alias name: ssl-min-proto-version)</b>  Minimum supported protocol version for ssl/tls connections (default is to follow system global setting). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3, TLSv1-3]</span> 
+ <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip for communications to ldap server. <span class="li-normal">type: str</span>
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tertiary_server</span> <b>(Alias name: tertiary-server)</b>  Tertiary ldap server cn domain name or ip. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ssl_min_proto_version</span> <b>(Alias name: ssl-min-proto-version)</b>  Minimum supported protocol version for ssl/tls connections (default is to follow system global setting). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3, TLSv1-3]</span> 
  <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
  <div id="label143" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Authentication type for ldap searches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, anonymous, regular]</span> 
+ <li><span class="li-head">tertiary_server</span> <b>(Alias name: tertiary-server)</b>  Tertiary ldap server cn domain name or ip. <span class="li-normal">type: str</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">username</span> Username (full dn) for initial binding. <span class="li-normal">type: str</span>
+ <li><span class="li-head">type</span> Authentication type for ldap searches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, anonymous, regular]</span> 
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">obtain_user_info</span> <b>(Alias name: obtain-user-info)</b>  Enable/disable obtaining of user information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">username</span> Username (full dn) for initial binding. <span class="li-normal">type: str</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">search_type</span> <b>(Alias name: search-type)</b>  Search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [nested, recursive]</span> 
+ <li><span class="li-head">obtain_user_info</span> <b>(Alias name: obtain-user-info)</b>  Enable/disable obtaining of user information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
  <div id="label151" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_info_exchange_server</span> <b>(Alias name: user-info-exchange-server)</b>  Ms exchange server from which to fetch user information. <span class="li-normal">type: str</span>
+ <li><span class="li-head">search_type</span> <b>(Alias name: search-type)</b>  Search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [nested, recursive]</span> 
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">account_key_name</span> <b>(Alias name: account-key-name)</b>  Account key name, using the upn as the search filter. <span class="li-normal">type: str</span>
+ <li><span class="li-head">user_info_exchange_server</span> <b>(Alias name: user-info-exchange-server)</b>  Ms exchange server from which to fetch user information. <span class="li-normal">type: str</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">account_key_name</span> <b>(Alias name: account-key-name)</b>  Account key name, using the upn as the search filter. <span class="li-normal">type: str</span>
+ <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
+ <div id="label157" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
  </div>
  </li>
  <li><span class="li-head">group_object_search_base</span> <b>(Alias name: group-object-search-base)</b>  Search base used for group searching. <span class="li-normal">type: str</span>
- <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
- <div id="label157" style="display:none">
+ <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
+ <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
  </div>
  </li>
  <li><span class="li-head">two_factor</span> <b>(Alias name: two-factor)</b>  Enable/disable two-factor authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, fortitoken-cloud]</span> 
- <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
- <div id="label159" style="display:none">
+ <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
+ <div id="label161" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
- <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
- <div id="label161" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label162' href="javascript:ContentClick('label163', 'label162');" onmouseover="ContentPreview('label163');" onmouseout="ContentUnpreview('label163');" title="click to collapse or expand..."> more... </a>
  <div id="label163" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor_authentication</span> <b>(Alias name: two-factor-authentication)</b>  Authentication method by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortitoken, email, sms]</span> 
+ <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
  <div id="label165" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor_notification</span> <b>(Alias name: two-factor-notification)</b>  Notification method for user activation by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, sms]</span> 
+ <li><span class="li-head">two_factor_authentication</span> <b>(Alias name: two-factor-authentication)</b>  Authentication method by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortitoken, email, sms]</span> 
  <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
  <div id="label167" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">antiphish</span> Enable/disable antiphishing credential backend. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">two_factor_notification</span> <b>(Alias name: two-factor-notification)</b>  Notification method for user activation by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, sms]</span> 
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_attr</span> <b>(Alias name: password-attr)</b>  Name of attribute to get password hash. <span class="li-normal">type: str</span>
+ <li><span class="li-head">antiphish</span> Enable/disable antiphishing credential backend. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_port</span> <b>(Alias name: source-port)</b>  Source port to be used for communication with the ldap server. <span class="li-normal">type: int</span>
+ <li><span class="li-head">password_attr</span> <b>(Alias name: password-attr)</b>  Name of attribute to get password hash. <span class="li-normal">type: str</span>
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Client certificate name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">source_port</span> <b>(Alias name: source-port)</b>  Source port to be used for communication with the ldap server. <span class="li-normal">type: int</span>
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_cert_auth</span> <b>(Alias name: client-cert-auth)</b>  Enable/disable using client certificate for tls authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Client certificate name. <span class="li-normal">type: str</span>
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor_filter</span> <b>(Alias name: two-factor-filter)</b>  Filter used to synchronize users to fortitoken cloud. <span class="li-normal">type: str</span>
+ <li><span class="li-head">client_cert_auth</span> <b>(Alias name: client-cert-auth)</b>  Enable/disable using client certificate for tls authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">two_factor_filter</span> <b>(Alias name: two-factor-filter)</b>  Filter used to synchronize users to fortitoken cloud. <span class="li-normal">type: str</span>
+ <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
+ <div id="label181" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">account_key_upn_san</span> <b>(Alias name: account-key-upn-san)</b>  Define san in certificate for user principle name matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [othername, rfc822name, dnsname]</span> 
- <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
- <div id="label181" style="display:none">
+ <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
+ <div id="label183" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">account_key_cert_field</span> <b>(Alias name: account-key-cert-field)</b>  Define subject identity field in certificate for user access right checking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [othername, rfc822name, dnsname, cn]</span> 
- <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
- <div id="label183" style="display:none">
+ <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
+ <div id="label185" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
- <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
- <div id="label185" style="display:none">
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the ldap server. <span class="li-normal">type: list</span>
+ <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
+ <div id="label189" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

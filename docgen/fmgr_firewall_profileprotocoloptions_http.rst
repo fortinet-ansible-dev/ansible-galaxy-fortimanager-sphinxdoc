@@ -262,6 +262,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">domain_fronting</span> <b>(Alias name: domain-fronting)</b>  Configure http domain fronting (default = block). <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, allow]</span> 
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -357,6 +363,7 @@ Examples
             h2c: <value in [disable, enable]>
             verify_dns_for_policy_matching: <value in [disable, enable]>
             unknown_content_encoding: <value in [block, inspect, bypass]>
+            domain_fronting: <value in [block, monitor, allow]>
 
 
 Return Values

@@ -189,7 +189,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: list</span> <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync, need_reset, backup_mode, azure_vwan_nva, fgsp_configured, cnf_mode, sase_managed, override_management_intf]</span> 
+ <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: list</span> <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync, need_reset, backup_mode, azure_vwan_nva, fgsp_configured, cnf_mode, sase_managed, override_management_intf, sdwan_management, deny_api_access]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -449,7 +449,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">os_type</span> Os type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fpa, fca, ftc]</span>  <span class="li-normal">default: unknown</span> 
+ <li><span class="li-head">os_type</span> Os type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fpa, fca, ftc, fss]</span>  <span class="li-normal">default: unknown</span> 
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -665,6 +665,24 @@ Parameters
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cluster_worker</span> Cluster worker. <span class="li-normal">type: str</span>
+ <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ha_vsn</span> <b>(Alias name: ha.vsn)</b>  Ha. <span class="li-normal">type: str</span>
+ <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ha_upgrade_mode</span> Ha upgrade mode. <span class="li-normal">type: int</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

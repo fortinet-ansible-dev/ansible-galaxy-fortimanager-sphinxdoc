@@ -88,6 +88,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">minor_version</span> <b>(Alias name: minor-version)</b>  Minor version number. <span class="li-normal">type: int</span>
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -128,6 +134,7 @@ Examples
             latest_patch_level: <string>
             name: <string>
             tolerance: <integer>
+            minor_version: <integer>
 
 
 Return Values

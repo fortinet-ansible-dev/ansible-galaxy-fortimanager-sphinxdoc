@@ -128,6 +128,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">query_ioc</span> <b>(Alias name: query-ioc)</b>  Enable/disable the built-in fortiguard to provide ioc query (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -173,6 +179,7 @@ Examples
             query_iot: <value in [disable, enable]>
             query_iot_collection: <value in [disable, enable]>
             query_iot_vulnerability: <value in [disable, enable]>
+            query_ioc: <value in [disable, enable]>
 
 
 Return Values

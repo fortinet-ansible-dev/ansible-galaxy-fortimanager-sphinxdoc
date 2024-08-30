@@ -250,6 +250,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">http_transaction</span> <b>(Alias name: http-transaction)</b>  Enable/disable log http transaction messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -319,6 +325,7 @@ Examples
             netscan_discovery: <value in [disable, enable]>
             netscan_vulnerability: <value in [disable, enable]>
             forti_switch: <value in [disable, enable]>
+            http_transaction: <value in [disable, enable]>
 
 
 Return Values

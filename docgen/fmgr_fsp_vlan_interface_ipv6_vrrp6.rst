@@ -131,6 +131,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrdst_priority</span> <b>(Alias name: vrdst-priority)</b>  Priority of the virtual router when the virtual router destination becomes unreachable (0 - 254). <span class="li-normal">type: int</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -179,6 +185,7 @@ Examples
             vrid: <integer>
             vrip6: <string>
             ignore_default_route: <value in [disable, enable]>
+            vrdst_priority: <integer>
 
 
 Return Values

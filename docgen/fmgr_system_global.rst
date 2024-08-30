@@ -672,6 +672,42 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">admin_host</span> <b>(Alias name: admin-host)</b>  Administrative host for http and https. <span class="li-normal">type: str</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">admin_ssh_grace_time</span> <b>(Alias name: admin-ssh-grace-time)</b>  Maximum time in seconds permitted between making an ssh connection to the fortimanager unit and authenticating (10 - 3600 sec (1 hour), default 120). <span class="li-normal">type: int</span> <span class="li-normal">default: 120</span> 
+ <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <div id="label205" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_storage_pool_quota</span> <b>(Alias name: fabric-storage-pool-quota)</b>  Disk quota for fabric (mb). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_storage_pool_size</span> <b>(Alias name: fabric-storage-pool-size)</b>  Max storage pooll size <span class="li-normal">type: int</span> <span class="li-normal">default: 20</span> 
+ <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
+ <div id="label209" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fcp_cfg_service</span> <b>(Alias name: fcp-cfg-service)</b>  Enable/disable fcp service processing configuration requests <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
+ <div id="label211" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">jsonapi_log</span> <b>(Alias name: jsonapi-log)</b>  Enable jsonapi log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, request, response, all]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
+ <div id="label213" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

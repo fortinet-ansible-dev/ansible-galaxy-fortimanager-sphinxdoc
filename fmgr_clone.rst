@@ -1318,6 +1318,9 @@ Parameters
         <li><span class="li-required">pm_config_pblock_firewall_policy6</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
+        <li><span class="li-required">pm_config_pblock_firewall_proxypolicy</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">pm_config_pblock_firewall_securitypolicy</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
@@ -4604,6 +4607,12 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pblock</span></li>
             <li><span class="li-normal">policy6</span></li>
+        </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_proxypolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">pblock</span></li>
+            <li><span class="li-normal">proxy-policy</span></li>
         </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_securitypolicy:</span></li>
         <ul class="ul-self">
@@ -8705,6 +8714,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pm_config_pblock_firewall_policy6.html#parameters">fmgr_pm_config_pblock_firewall_policy6</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_proxypolicy:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pm_config_pblock_firewall_proxypolicy.html#parameters">fmgr_pm_config_pblock_firewall_proxypolicy</a> </span></li>
         </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_securitypolicy:</span></li>
         <ul class="ul-self">

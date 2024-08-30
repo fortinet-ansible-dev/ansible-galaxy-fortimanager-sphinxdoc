@@ -191,13 +191,13 @@ Parameters
  <li><span class="li-head">shell_access</span> <b>(Alias name: shell-access)</b>  Enable/disable shell access. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">shell_password</span> <b>(Alias name: shell-password)</b>  Password for shell access. <span class="li-normal">type: list</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">show_add_multiple</span> <b>(Alias name: show-add-multiple)</b>  Show add multiple button. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 

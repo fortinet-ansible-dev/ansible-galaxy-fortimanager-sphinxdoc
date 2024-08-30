@@ -1381,6 +1381,12 @@ Parameters
         <li><span class="li-required">fmg_fabric_authorization_template_platforms</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
         </li>
+        <li><span class="li-required">fmg_sasemanager_settings</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
+        <li><span class="li-required">fmg_sasemanager_status</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">fmg_variable</span> - available versions:
         <span class="li-normal">v7.2.0->latest</span>
         </li>
@@ -2037,6 +2043,9 @@ Parameters
         <li><span class="li-required">pm_config_pblock_firewall_policy6</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
+        <li><span class="li-required">pm_config_pblock_firewall_proxypolicy</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">pm_config_pblock_firewall_securitypolicy</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
@@ -2385,6 +2394,9 @@ Parameters
         <li><span class="li-required">system_admin_user_metadata</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">system_admin_user_policyblock</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">system_admin_user_policypackage</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -2487,6 +2499,12 @@ Parameters
         </li>
         <li><span class="li-required">system_fips</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">system_fmgcluster</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
+        <li><span class="li-required">system_fmgcluster_peer</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
         </li>
         <li><span class="li-required">system_fortiguard</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -6962,6 +6980,16 @@ Parameters
             <li><span class="li-normal">template</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for fmg_sasemanager_settings:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for fmg_sasemanager_status:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for fmg_variable:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -8524,6 +8552,15 @@ Parameters
             <li><span class="li-normal">policy6</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_proxypolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">pblock</span>
+            </li>
+            <li><span class="li-normal">proxy-policy</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_securitypolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -9365,6 +9402,13 @@ Parameters
             <li><span class="li-normal">user</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for system_admin_user_policyblock:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">policy-block</span>
+            </li>
+            <li><span class="li-normal">user</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for system_admin_user_policypackage:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">policy-package</span>
@@ -9534,6 +9578,14 @@ Parameters
         </ul>
         <li><span class="li-normal">params for system_fips:</span></li>
         <ul class="ul-self">
+        </ul>
+        <li><span class="li-normal">params for system_fmgcluster:</span></li>
+        <ul class="ul-self">
+        </ul>
+        <li><span class="li-normal">params for system_fmgcluster_peer:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">peer</span>
+            </li>
         </ul>
         <li><span class="li-normal">params for system_fortiguard:</span></li>
         <ul class="ul-self">

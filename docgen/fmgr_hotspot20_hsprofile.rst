@@ -292,6 +292,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">wba_charging_currency</span> <b>(Alias name: wba-charging-currency)</b>  Three letter currency code. <span class="li-normal">type: str</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wba_charging_rate</span> <b>(Alias name: wba-charging-rate)</b>  Number of currency units per kilobyte. <span class="li-normal">type: int</span>
+ <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
+ <div id="label79" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wba_data_clearing_provider</span> <b>(Alias name: wba-data-clearing-provider)</b>  Wba id of data clearing provider. <span class="li-normal">type: str</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wba_financial_clearing_provider</span> <b>(Alias name: wba-financial-clearing-provider)</b>  Wba id of financial clearing provider. <span class="li-normal">type: str</span>
+ <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
+ <div id="label83" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wba_open_roaming</span> <b>(Alias name: wba-open-roaming)</b>  Enable/disable wba open roaming support. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
+ <div id="label85" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -366,6 +396,11 @@ Examples
             release: <integer>
             terms_and_conditions: <string>
             venue_url: <string>
+            wba_charging_currency: <string>
+            wba_charging_rate: <integer>
+            wba_data_clearing_provider: <string>
+            wba_financial_clearing_provider: <string>
+            wba_open_roaming: <value in [disable, enable]>
 
 
 Return Values

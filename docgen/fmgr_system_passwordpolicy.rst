@@ -92,6 +92,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">password_history</span> <b>(Alias name: password-history)</b>  Number of unique new passwords that must be used before old password can be reused (0 - 20). <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -135,6 +141,7 @@ Examples
               - number
               - non-alphanumeric
             status: <value in [disable, enable]>
+            password_history: <integer>
 
 
 Return Values

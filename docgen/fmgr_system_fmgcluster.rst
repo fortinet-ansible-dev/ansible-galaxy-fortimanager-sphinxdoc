@@ -1,13 +1,13 @@
-:source: fmgr_firewall_ippool6_dynamicmapping.py
+:source: fmgr_system_fmgcluster.py
 
 :orphan:
 
-.. _fmgr_firewall_ippool6_dynamicmapping:
+.. _fmgr_system_fmgcluster:
 
-fmgr_firewall_ippool6_dynamicmapping -- Configure IPv6 IP pools.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_fmgcluster -- fmg clsuter.
+++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.0.0
+.. versionadded:: 2.7.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -58,80 +58,59 @@ Parameters
  <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">ippool6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_ippool6_dynamicmapping</span> - Configure IPv6 IP pools. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_fmgcluster</span> - fmg clsuter. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">_scope</span> Scope. <span class="li-normal">type: list</span>
+ <li><span class="li-head">fqdn</span> Local fqdn. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
- <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
- <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ip</span> Local address. <span class="li-normal">type: str</span>
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">mode</span> Mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [standalone, primary, worker]</span>  <span class="li-normal">default: standalone</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">peer</span> Peer. <span class="li-normal">type: list</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">addr</span> Address of peer. <span class="li-normal">type: str</span>
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fqdn</span> Fqdn of peer. <span class="li-normal">type: str</span>
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">name</span> Name of peer. <span class="li-normal">type: str</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">sn</span> Serial number of peer. <span class="li-normal">type: str</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
- </li>
- <li><span class="li-head">comments</span> Comments. <span class="li-normal">type: str</span>
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">endip</span> Endip. <span class="li-normal">type: str</span>
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">startip</span> Startip. <span class="li-normal">type: str</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">add_nat46_route</span> <b>(Alias name: add-nat46-route)</b>  Enable/disable adding nat46 route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">nat46</span> Enable/disable nat46. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">external_prefix</span> <b>(Alias name: external-prefix)</b>  Support meta variable <span class="li-normal">type: str</span>
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">internal_prefix</span> <b>(Alias name: internal-prefix)</b>  Support meta variable <span class="li-normal">type: str</span>
- <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
- <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">type</span> Configure ipv6 pool type (overload or nptv6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [overload, nptv6]</span> 
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
- </div>
  </li>
  </ul>
  </ul>
@@ -151,7 +130,7 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook
+  - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
     vars:
@@ -159,37 +138,23 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Configure dynamic mappings of IPv6 IP pool
-        fortinet.fortimanager.fmgr_firewall_ippool6_dynamicmapping:
-          bypass_validation: true
-          adom: ansible
-          ippool6: "ansible-test"
-          state: present
-          firewall_ippool6_dynamicmapping:
-            _scope:
-              - name: FGT_AWS # need a valid device name
-                vdom: root # need a valid vdom name under the device
-            comments: "ansible-test"
-            endip: "2001::101"
-            startip: "2001::0"
-  
-  - name: Gathering fortimanager facts
-    hosts: fortimanagers
-    gather_facts: false
-    connection: httpapi
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
-    tasks:
-      - name: Retrieve all the dynamic mappings of IPv6 IP pool
-        fortinet.fortimanager.fmgr_fact:
-          facts:
-            selector: "firewall_ippool6_dynamicmapping"
-            params:
-              adom: "ansible"
-              ippool6: "ansible-test" # name
-              dynamic_mapping: "your_value"
+      - name: Fmg clsuter.
+        fortinet.fortimanager.fmgr_system_fmgcluster:
+          # bypass_validation: false
+          workspace_locking_adom: <value in [global, custom adom including root]>
+          workspace_locking_timeout: 300
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
+          system_fmgcluster:
+            fqdn: <string>
+            ip: <string>
+            mode: <value in [standalone, primary, worker]>
+            peer:
+              -
+                addr: <string>
+                fqdn: <string>
+                name: <string>
+                sn: <string>
 
 
 Return Values

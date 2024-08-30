@@ -147,7 +147,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc]</span> 
+ <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc, fss]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -342,6 +342,7 @@ Examples
               - fpa
               - fca
               - ftc
+              - fss
             state: <integer>
             uuid: <string>
             create_time: <integer>

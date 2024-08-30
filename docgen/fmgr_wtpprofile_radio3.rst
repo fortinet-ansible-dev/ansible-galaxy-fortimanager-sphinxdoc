@@ -604,6 +604,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">d80211mc</span> <b>(Alias name: 80211mc)</b>  Enable/disable 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
+ <div id="label181" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ap_sniffer_chan_width</span> <b>(Alias name: ap-sniffer-chan-width)</b>  Channel bandwidth for sniffer. <span class="li-normal">type: str</span> <span class="li-normal">choices: [320MHz, 240MHz, 160MHz, 80MHz, 40MHz, 20MHz]</span> 
+ <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
+ <div id="label183" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -740,6 +752,8 @@ Examples
             sam_private_key: <string>
             sam_private_key_password: <list or string>
             channel_bonding_ext: <value in [320MHz-1, 320MHz-2]>
+            d80211mc: <value in [disable, enable]>
+            ap_sniffer_chan_width: <value in [320MHz, 240MHz, 160MHz, ...]>
 
 
 Return Values

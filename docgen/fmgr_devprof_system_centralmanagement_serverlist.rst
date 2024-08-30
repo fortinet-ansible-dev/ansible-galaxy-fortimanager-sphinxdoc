@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>

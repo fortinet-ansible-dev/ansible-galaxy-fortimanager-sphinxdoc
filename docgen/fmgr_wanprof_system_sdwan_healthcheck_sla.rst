@@ -84,7 +84,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos]</span> 
+ <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos, remote]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -160,6 +160,7 @@ Examples
               - jitter
               - packet-loss
               - mos
+              - remote
             packetloss_threshold: <integer>
             mos_threshold: <string>
             priority_in_sla: <integer>

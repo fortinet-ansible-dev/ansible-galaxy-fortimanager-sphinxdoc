@@ -192,6 +192,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface of syslog. <span class="li-normal">type: list</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -250,6 +256,7 @@ Examples
                 id: <integer>
                 name: <string>
             source_ip: <string>
+            source_ip_interface: <list or string>
 
 
 Return Values

@@ -469,6 +469,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">comment</span> Comments. <span class="li-normal">type: str</span>
+ <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
+ <div id="label135" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -574,6 +580,7 @@ Examples
             start_src_port: <integer>
             zone_mode: <value in [disable, enable]>
             shortcut_priority: <value in [disable, enable, auto]>
+            comment: <string>
 
 
 Return Values

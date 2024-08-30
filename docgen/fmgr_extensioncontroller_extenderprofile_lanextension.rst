@@ -120,6 +120,44 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">downlinks</span> Downlinks. <span class="li-normal">type: list</span>
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">name</span> Fortiextender lan extension downlink config entry name. <span class="li-normal">type: str</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">port</span> Fortiextender lan extension downlink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [port1, port2, port3, port4, port5, lan1, lan2]</span> 
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pvid</span> Fortiextender lan extension downlink pvid. <span class="li-normal">type: int</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">type</span> Fortiextender lan extension downlink type [port/vap]. <span class="li-normal">type: str</span> <span class="li-normal">choices: [port, vap]</span> 
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap</span> Fortiextender lan extension downlink vap. <span class="li-normal">type: list</span>
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
  </ul>
  </ul>
 
@@ -166,6 +204,13 @@ Examples
             backhaul_ip: <string>
             ipsec_tunnel: <string>
             link_loadbalance: <value in [activebackup, loadbalance]>
+            downlinks:
+              -
+                name: <string>
+                port: <value in [port1, port2, port3, ...]>
+                pvid: <integer>
+                type: <value in [port, vap]>
+                vap: <list or string>
 
 
 Return Values

@@ -772,324 +772,336 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the radius server. <span class="li-normal">type: list</span>
+ <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
+ <div id="label235" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">h3c_compatibility</span> <b>(Alias name: h3c-compatibility)</b>  Enable/disable compatibility with the h3c, a mechanism that performs security checking for authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
- <div id="label235" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">name</span> Radius server entry name. <span class="li-normal">type: str</span>
  <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
  <div id="label237" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nas_ip</span> <b>(Alias name: nas-ip)</b>  Ip address used to communicate with the radius server and used as nas-ip-address and called-station-id attributes. <span class="li-normal">type: str</span>
+ <li><span class="li-head">name</span> Radius server entry name. <span class="li-normal">type: str</span>
  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
  <div id="label239" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_encoding</span> <b>(Alias name: password-encoding)</b>  Password encoding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ISO-8859-1, auto]</span> 
+ <li><span class="li-head">nas_ip</span> <b>(Alias name: nas-ip)</b>  Ip address used to communicate with the radius server and used as nas-ip-address and called-station-id attributes. <span class="li-normal">type: str</span>
  <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
  <div id="label241" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_renewal</span> <b>(Alias name: password-renewal)</b>  Enable/disable password renewal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">password_encoding</span> <b>(Alias name: password-encoding)</b>  Password encoding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ISO-8859-1, auto]</span> 
  <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
  <div id="label243" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">radius_coa</span> <b>(Alias name: radius-coa)</b>  Enable to allow a mechanism to change the attributes of an authentication, authorization, and accounting session after it is authenticated. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">password_renewal</span> <b>(Alias name: password-renewal)</b>  Enable/disable password renewal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
  <div id="label245" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">radius_port</span> <b>(Alias name: radius-port)</b>  Radius service port number. <span class="li-normal">type: int</span>
+ <li><span class="li-head">radius_coa</span> <b>(Alias name: radius-coa)</b>  Enable to allow a mechanism to change the attributes of an authentication, authorization, and accounting session after it is authenticated. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
  <div id="label247" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso</span> Enable/disable radius based single sign on feature. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">radius_port</span> <b>(Alias name: radius-port)</b>  Radius service port number. <span class="li-normal">type: int</span>
  <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
  <div id="label249" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_context_timeout</span> <b>(Alias name: rsso-context-timeout)</b>  Time in seconds before the logged out user is removed from the user context list of logged on users. <span class="li-normal">type: int</span>
+ <li><span class="li-head">rsso</span> Enable/disable radius based single sign on feature. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
  <div id="label251" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_endpoint_attribute</span> <b>(Alias name: rsso-endpoint-attribute)</b>  Radius attributes used to extract the user end point identifer from the radius start record. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
+ <li><span class="li-head">rsso_context_timeout</span> <b>(Alias name: rsso-context-timeout)</b>  Time in seconds before the logged out user is removed from the user context list of logged on users. <span class="li-normal">type: int</span>
  <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
  <div id="label253" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_endpoint_block_attribute</span> <b>(Alias name: rsso-endpoint-block-attribute)</b>  Radius attributes used to block a user. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
+ <li><span class="li-head">rsso_endpoint_attribute</span> <b>(Alias name: rsso-endpoint-attribute)</b>  Radius attributes used to extract the user end point identifer from the radius start record. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
  <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
  <div id="label255" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_ep_one_ip_only</span> <b>(Alias name: rsso-ep-one-ip-only)</b>  Enable/disable the replacement of old ip addresses with new ones for the same endpoint on radius accounting start messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">rsso_endpoint_block_attribute</span> <b>(Alias name: rsso-endpoint-block-attribute)</b>  Radius attributes used to block a user. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
  <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
  <div id="label257" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_flush_ip_session</span> <b>(Alias name: rsso-flush-ip-session)</b>  Enable/disable flushing user ip sessions on radius accounting stop messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">rsso_ep_one_ip_only</span> <b>(Alias name: rsso-ep-one-ip-only)</b>  Enable/disable the replacement of old ip addresses with new ones for the same endpoint on radius accounting start messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
  <div id="label259" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_log_flags</span> <b>(Alias name: rsso-log-flags)</b>  Events to log. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> 
+ <li><span class="li-head">rsso_flush_ip_session</span> <b>(Alias name: rsso-flush-ip-session)</b>  Enable/disable flushing user ip sessions on radius accounting stop messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
  <div id="label261" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_log_period</span> <b>(Alias name: rsso-log-period)</b>  Time interval in seconds that group event log messages will be generated for dynamic profile events. <span class="li-normal">type: int</span>
+ <li><span class="li-head">rsso_log_flags</span> <b>(Alias name: rsso-log-flags)</b>  Events to log. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, protocol-error, profile-missing, context-missing, accounting-stop-missed, accounting-event, radiusd-other, endpoint-block]</span> 
  <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
  <div id="label263" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_radius_response</span> <b>(Alias name: rsso-radius-response)</b>  Enable/disable sending radius response packets after receiving start and stop records. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">rsso_log_period</span> <b>(Alias name: rsso-log-period)</b>  Time interval in seconds that group event log messages will be generated for dynamic profile events. <span class="li-normal">type: int</span>
  <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
  <div id="label265" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_radius_server_port</span> <b>(Alias name: rsso-radius-server-port)</b>  Udp port to listen on for radius start and stop records. <span class="li-normal">type: int</span>
+ <li><span class="li-head">rsso_radius_response</span> <b>(Alias name: rsso-radius-response)</b>  Enable/disable sending radius response packets after receiving start and stop records. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_secret</span> <b>(Alias name: rsso-secret)</b>  Radius secret used by the radius accounting server. <span class="li-normal">type: list</span>
+ <li><span class="li-head">rsso_radius_server_port</span> <b>(Alias name: rsso-radius-server-port)</b>  Udp port to listen on for radius start and stop records. <span class="li-normal">type: int</span>
  <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
  <div id="label269" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rsso_validate_request_secret</span> <b>(Alias name: rsso-validate-request-secret)</b>  Enable/disable validating the radius request shared secret in the start or end record. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">rsso_secret</span> <b>(Alias name: rsso-secret)</b>  Radius secret used by the radius accounting server. <span class="li-normal">type: list</span>
  <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
  <div id="label271" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secondary_secret</span> <b>(Alias name: secondary-secret)</b>  Secret key to access the secondary server. <span class="li-normal">type: list</span>
+ <li><span class="li-head">rsso_validate_request_secret</span> <b>(Alias name: rsso-validate-request-secret)</b>  Enable/disable validating the radius request shared secret in the start or end record. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
  <div id="label273" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secondary_server</span> <b>(Alias name: secondary-server)</b>  {<name_str|ip_str>} secondary radius cn domain name or ip. <span class="li-normal">type: str</span>
+ <li><span class="li-head">secondary_secret</span> <b>(Alias name: secondary-secret)</b>  Secret key to access the secondary server. <span class="li-normal">type: list</span>
  <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
  <div id="label275" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secret</span> Pre-shared secret key used to access the primary radius server. <span class="li-normal">type: list</span>
+ <li><span class="li-head">secondary_server</span> <b>(Alias name: secondary-server)</b>  {<name_str|ip_str>} secondary radius cn domain name or ip. <span class="li-normal">type: str</span>
  <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
  <div id="label277" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server</span> Primary radius server cn domain name or ip address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">secret</span> Pre-shared secret key used to access the primary radius server. <span class="li-normal">type: list</span>
  <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
  <div id="label279" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip address for communications to the radius server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server</span> Primary radius server cn domain name or ip address. <span class="li-normal">type: str</span>
  <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
  <div id="label281" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sso_attribute</span> <b>(Alias name: sso-attribute)</b>  Radius attribute that contains the profile group name to be extracted from the radius start record. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
+ <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip address for communications to the radius server. <span class="li-normal">type: str</span>
  <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
  <div id="label283" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sso_attribute_key</span> <b>(Alias name: sso-attribute-key)</b>  Key prefix for sso group value in the sso attribute. <span class="li-normal">type: str</span>
+ <li><span class="li-head">sso_attribute</span> <b>(Alias name: sso-attribute)</b>  Radius attribute that contains the profile group name to be extracted from the radius start record. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sso_attribute_value_override</span> <b>(Alias name: sso-attribute-value-override)</b>  Enable/disable override old attribute value with new value for the same endpoint. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sso_attribute_key</span> <b>(Alias name: sso-attribute-key)</b>  Key prefix for sso group value in the sso attribute. <span class="li-normal">type: str</span>
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tertiary_secret</span> <b>(Alias name: tertiary-secret)</b>  Secret key to access the tertiary server. <span class="li-normal">type: list</span>
+ <li><span class="li-head">sso_attribute_value_override</span> <b>(Alias name: sso-attribute-value-override)</b>  Enable/disable override old attribute value with new value for the same endpoint. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
  <div id="label289" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tertiary_server</span> <b>(Alias name: tertiary-server)</b>  {<name_str|ip_str>} tertiary radius cn domain name or ip. <span class="li-normal">type: str</span>
+ <li><span class="li-head">tertiary_secret</span> <b>(Alias name: tertiary-secret)</b>  Secret key to access the tertiary server. <span class="li-normal">type: list</span>
  <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
  <div id="label291" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">timeout</span> Time in seconds between re-sending authentication requests. <span class="li-normal">type: int</span>
+ <li><span class="li-head">tertiary_server</span> <b>(Alias name: tertiary-server)</b>  {<name_str|ip_str>} tertiary radius cn domain name or ip. <span class="li-normal">type: str</span>
  <a id='label292' href="javascript:ContentClick('label293', 'label292');" onmouseover="ContentPreview('label293');" onmouseout="ContentUnpreview('label293');" title="click to collapse or expand..."> more... </a>
  <div id="label293" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">use_management_vdom</span> <b>(Alias name: use-management-vdom)</b>  Enable/disable using management vdom to send requests. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">timeout</span> Time in seconds between re-sending authentication requests. <span class="li-normal">type: int</span>
  <a id='label294' href="javascript:ContentClick('label295', 'label294');" onmouseover="ContentPreview('label295');" onmouseout="ContentUnpreview('label295');" title="click to collapse or expand..."> more... </a>
  <div id="label295" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">username_case_sensitive</span> <b>(Alias name: username-case-sensitive)</b>  Enable/disable case sensitive user names. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">use_management_vdom</span> <b>(Alias name: use-management-vdom)</b>  Enable/disable using management vdom to send requests. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label296' href="javascript:ContentClick('label297', 'label296');" onmouseover="ContentPreview('label297');" onmouseout="ContentUnpreview('label297');" title="click to collapse or expand..."> more... </a>
  <div id="label297" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">username_case_sensitive</span> <b>(Alias name: username-case-sensitive)</b>  Enable/disable case sensitive user names. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label298' href="javascript:ContentClick('label299', 'label298');" onmouseover="ContentPreview('label299');" onmouseout="ContentUnpreview('label299');" title="click to collapse or expand..."> more... </a>
  <div id="label299" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
+ <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
  <a id='label300' href="javascript:ContentClick('label301', 'label300');" onmouseover="ContentPreview('label301');" onmouseout="ContentUnpreview('label301');" title="click to collapse or expand..."> more... </a>
  <div id="label301" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_override_attr_type</span> <b>(Alias name: group-override-attr-type)</b>  Radius attribute type to override user group information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [filter-Id, class]</span> 
+ <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label302' href="javascript:ContentClick('label303', 'label302');" onmouseover="ContentPreview('label303');" onmouseout="ContentUnpreview('label303');" title="click to collapse or expand..."> more... </a>
  <div id="label303" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">switch_controller_acct_fast_framedip_detect</span> <b>(Alias name: switch-controller-acct-fast-framedip-detect)</b>  Switch controller accounting message framed-ip detection from dhcp snooping (seconds, default=2). <span class="li-normal">type: int</span>
+ <li><span class="li-head">group_override_attr_type</span> <b>(Alias name: group-override-attr-type)</b>  Radius attribute type to override user group information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [filter-Id, class]</span> 
  <a id='label304' href="javascript:ContentClick('label305', 'label304');" onmouseover="ContentPreview('label305');" onmouseout="ContentUnpreview('label305');" title="click to collapse or expand..."> more... </a>
  <div id="label305" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">switch_controller_service_type</span> <b>(Alias name: switch-controller-service-type)</b>  Radius service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [login, framed, callback-login, callback-framed, outbound, administrative, nas-prompt, authenticate-only, callback-nas-prompt, call-check, callback-administrative]</span> 
+ <li><span class="li-head">switch_controller_acct_fast_framedip_detect</span> <b>(Alias name: switch-controller-acct-fast-framedip-detect)</b>  Switch controller accounting message framed-ip detection from dhcp snooping (seconds, default=2). <span class="li-normal">type: int</span>
  <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
  <div id="label307" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_controller_service_type</span> <b>(Alias name: switch-controller-service-type)</b>  Radius service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [login, framed, callback-login, callback-framed, outbound, administrative, nas-prompt, authenticate-only, callback-nas-prompt, call-check, callback-administrative]</span> 
+ <a id='label308' href="javascript:ContentClick('label309', 'label308');" onmouseover="ContentPreview('label309');" onmouseout="ContentUnpreview('label309');" title="click to collapse or expand..."> more... </a>
+ <div id="label309" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">delimiter</span> Configure delimiter to be used for separating profile group names in the sso attribute (default = plus character +). <span class="li-normal">type: str</span> <span class="li-normal">choices: [plus, comma]</span> 
- <a id='label308' href="javascript:ContentClick('label309', 'label308');" onmouseover="ContentPreview('label309');" onmouseout="ContentUnpreview('label309');" title="click to collapse or expand..."> more... </a>
- <div id="label309" style="display:none">
+ <a id='label310' href="javascript:ContentClick('label311', 'label310');" onmouseover="ContentPreview('label311');" onmouseout="ContentUnpreview('label311');" title="click to collapse or expand..."> more... </a>
+ <div id="label311" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mac_case</span> <b>(Alias name: mac-case)</b>  Mac authentication case (default = lowercase). <span class="li-normal">type: str</span> <span class="li-normal">choices: [uppercase, lowercase]</span> 
- <a id='label310' href="javascript:ContentClick('label311', 'label310');" onmouseover="ContentPreview('label311');" onmouseout="ContentUnpreview('label311');" title="click to collapse or expand..."> more... </a>
- <div id="label311" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">mac_password_delimiter</span> <b>(Alias name: mac-password-delimiter)</b>  Mac authentication password delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
  <a id='label312' href="javascript:ContentClick('label313', 'label312');" onmouseover="ContentPreview('label313');" onmouseout="ContentUnpreview('label313');" title="click to collapse or expand..."> more... </a>
  <div id="label313" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mac_username_delimiter</span> <b>(Alias name: mac-username-delimiter)</b>  Mac authentication username delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
+ <li><span class="li-head">mac_password_delimiter</span> <b>(Alias name: mac-password-delimiter)</b>  Mac authentication password delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
  <a id='label314' href="javascript:ContentClick('label315', 'label314');" onmouseover="ContentPreview('label315');" onmouseout="ContentUnpreview('label315');" title="click to collapse or expand..."> more... </a>
  <div id="label315" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nas_id</span> <b>(Alias name: nas-id)</b>  Custom nas identifier. <span class="li-normal">type: str</span>
+ <li><span class="li-head">mac_username_delimiter</span> <b>(Alias name: mac-username-delimiter)</b>  Mac authentication username delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
  <a id='label316' href="javascript:ContentClick('label317', 'label316');" onmouseover="ContentPreview('label317');" onmouseout="ContentUnpreview('label317');" title="click to collapse or expand..."> more... </a>
  <div id="label317" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nas_id_type</span> <b>(Alias name: nas-id-type)</b>  Nas identifier type configuration (default = legacy). <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, custom, hostname]</span> 
+ <li><span class="li-head">nas_id</span> <b>(Alias name: nas-id)</b>  Custom nas identifier. <span class="li-normal">type: str</span>
  <a id='label318' href="javascript:ContentClick('label319', 'label318');" onmouseover="ContentPreview('label319');" onmouseout="ContentUnpreview('label319');" title="click to collapse or expand..."> more... </a>
  <div id="label319" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ca_cert</span> <b>(Alias name: ca-cert)</b>  Ca of server to trust under tls. <span class="li-normal">type: str</span>
+ <li><span class="li-head">nas_id_type</span> <b>(Alias name: nas-id-type)</b>  Nas identifier type configuration (default = legacy). <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, custom, hostname]</span> 
  <a id='label320' href="javascript:ContentClick('label321', 'label320');" onmouseover="ContentPreview('label321');" onmouseout="ContentUnpreview('label321');" title="click to collapse or expand..."> more... </a>
  <div id="label321" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Client certificate to use under tls. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ca_cert</span> <b>(Alias name: ca-cert)</b>  Ca of server to trust under tls. <span class="li-normal">type: str</span>
  <a id='label322' href="javascript:ContentClick('label323', 'label322');" onmouseover="ContentPreview('label323');" onmouseout="ContentUnpreview('label323');" title="click to collapse or expand..."> more... </a>
  <div id="label323" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Enable/disable radius server identity check (verify server domain name/ip address against the server certificate). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Client certificate to use under tls. <span class="li-normal">type: str</span>
  <a id='label324' href="javascript:ContentClick('label325', 'label324');" onmouseover="ContentPreview('label325');" onmouseout="ContentUnpreview('label325');" title="click to collapse or expand..."> more... </a>
  <div id="label325" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
+ <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Enable/disable radius server identity check (verify server domain name/ip address against the server certificate). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label326' href="javascript:ContentClick('label327', 'label326');" onmouseover="ContentPreview('label327');" onmouseout="ContentUnpreview('label327');" title="click to collapse or expand..."> more... </a>
  <div id="label327" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tls_min_proto_version</span> <b>(Alias name: tls-min-proto-version)</b>  Minimum supported protocol version for tls connections (default is to follow system global setting). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3, TLSv1-3]</span> 
+ <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
  <a id='label328' href="javascript:ContentClick('label329', 'label328');" onmouseover="ContentPreview('label329');" onmouseout="ContentUnpreview('label329');" title="click to collapse or expand..."> more... </a>
  <div id="label329" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">transport_protocol</span> <b>(Alias name: transport-protocol)</b>  Transport protocol to be used (default = udp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp, tls]</span> 
+ <li><span class="li-head">tls_min_proto_version</span> <b>(Alias name: tls-min-proto-version)</b>  Minimum supported protocol version for tls connections (default is to follow system global setting). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3, TLSv1-3]</span> 
  <a id='label330' href="javascript:ContentClick('label331', 'label330');" onmouseover="ContentPreview('label331');" onmouseout="ContentUnpreview('label331');" title="click to collapse or expand..."> more... </a>
  <div id="label331" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">account_key_cert_field</span> <b>(Alias name: account-key-cert-field)</b>  Define subject identity field in certificate for user access right checking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [othername, rfc822name, dnsname, cn]</span> 
+ <li><span class="li-head">transport_protocol</span> <b>(Alias name: transport-protocol)</b>  Transport protocol to be used (default = udp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp, tls]</span> 
  <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
  <div id="label333" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">account_key_processing</span> <b>(Alias name: account-key-processing)</b>  Account key processing operation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [same, strip]</span> 
+ <li><span class="li-head">account_key_cert_field</span> <b>(Alias name: account-key-cert-field)</b>  Define subject identity field in certificate for user access right checking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [othername, rfc822name, dnsname, cn]</span> 
  <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
  <div id="label335" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">call_station_id_type</span> <b>(Alias name: call-station-id-type)</b>  Calling & called station identifier type configuration (default = legacy), this option is not available for 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, IP, MAC]</span> 
+ <li><span class="li-head">account_key_processing</span> <b>(Alias name: account-key-processing)</b>  Account key processing operation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [same, strip]</span> 
  <a id='label336' href="javascript:ContentClick('label337', 'label336');" onmouseover="ContentPreview('label337');" onmouseout="ContentUnpreview('label337');" title="click to collapse or expand..."> more... </a>
  <div id="label337" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">switch_controller_nas_ip_dynamic</span> <b>(Alias name: switch-controller-nas-ip-dynamic)</b>  Enable/disable switch-controller nas-ip dynamic to dynamically set nas-ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">call_station_id_type</span> <b>(Alias name: call-station-id-type)</b>  Calling & called station identifier type configuration (default = legacy), this option is not available for 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, IP, MAC]</span> 
  <a id='label338' href="javascript:ContentClick('label339', 'label338');" onmouseover="ContentPreview('label339');" onmouseout="ContentUnpreview('label339');" title="click to collapse or expand..."> more... </a>
  <div id="label339" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_controller_nas_ip_dynamic</span> <b>(Alias name: switch-controller-nas-ip-dynamic)</b>  Enable/disable switch-controller nas-ip dynamic to dynamically set nas-ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label340' href="javascript:ContentClick('label341', 'label340');" onmouseover="ContentPreview('label341');" onmouseout="ContentUnpreview('label341');" title="click to collapse or expand..."> more... </a>
+ <div id="label341" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the radius server. <span class="li-normal">type: list</span>
+ <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
+ <div id="label343" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

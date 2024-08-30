@@ -1640,6 +1640,12 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">gtpv0</span> Gtpv0 traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, deny]</span> 
+ <a id='label516' href="javascript:ContentClick('label517', 'label516');" onmouseover="ContentPreview('label517');" onmouseout="ContentUnpreview('label517');" title="click to collapse or expand..."> more... </a>
+ <div id="label517" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

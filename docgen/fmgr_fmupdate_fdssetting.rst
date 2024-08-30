@@ -218,7 +218,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fds, fct]</span> 
+ <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fds, fct, fai]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -240,7 +240,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_support_fgt</span> <b>(Alias name: system-support-fgt)</b>  Supported fortios versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 7.2, 7.4]</span> 
+ <li><span class="li-head">system_support_fgt</span> <b>(Alias name: system-support-fgt)</b>  Supported fortios versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 7.2, 7.4, 7.6]</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -350,6 +350,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">system_support_fai</span> <b>(Alias name: system-support-fai)</b>  Supported fortindr versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [7.x]</span> 
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -414,6 +420,7 @@ Examples
                   service_type: # <list or string>
                     - fds
                     - fct
+                    - fai
               status: <value in [disable, enable]>
             system_support_fct:
               - 4.x
@@ -435,6 +442,7 @@ Examples
               - 7.0
               - 7.2
               - 7.4
+              - 7.6
             system_support_fml:
               - 4.x
               - 5.x
@@ -485,6 +493,8 @@ Examples
             system_support_fis:
               - 1.x
               - 2.x
+            system_support_fai:
+              - 7.x
 
 
 Return Values

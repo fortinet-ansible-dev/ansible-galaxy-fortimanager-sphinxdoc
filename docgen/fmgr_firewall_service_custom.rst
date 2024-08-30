@@ -137,7 +137,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol type based on iana numbers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ICMP, IP, TCP/UDP/SCTP, ICMP6, HTTP, FTP, CONNECT, SOCKS, ALL, SOCKS-TCP, SOCKS-UDP]</span> 
+ <li><span class="li-head">protocol</span> Protocol type based on iana numbers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ICMP, IP, TCP/UDP/SCTP, ICMP6, HTTP, FTP, CONNECT, SOCKS, ALL, SOCKS-TCP, SOCKS-UDP, TCP/UDP/UDP-Lite/SCTP]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -237,6 +237,12 @@ Parameters
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">udplite_portrange</span> <b>(Alias name: udplite-portrange)</b>  Multiple udp-lite port ranges. <span class="li-normal">type: str</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

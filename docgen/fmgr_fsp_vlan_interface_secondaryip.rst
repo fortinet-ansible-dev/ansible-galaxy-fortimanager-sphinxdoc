@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">vlan</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">fsp_vlan_interface_secondaryip</span> - Second IP address of interface. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">allowaccess</span> Allowaccess. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test, icond]</span> 
+ <li><span class="li-head">allowaccess</span> Allowaccess. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test, icond, scim]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -179,6 +179,7 @@ Examples
               - fabric
               - speed-test
               - icond
+              - scim
             detectprotocol:
               - ping
               - tcp-echo

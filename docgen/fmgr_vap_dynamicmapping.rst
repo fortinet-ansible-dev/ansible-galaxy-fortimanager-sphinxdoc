@@ -1285,6 +1285,30 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">_intf_ip_managed_by_fortiipam</span> <b>(Alias name: _intf_ip-managed-by-fortiipam)</b>  Intf ip managed by fortiipam. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, inherit-global]</span> 
+ <a id='label406' href="javascript:ContentClick('label407', 'label406');" onmouseover="ContentPreview('label407');" onmouseout="ContentUnpreview('label407');" title="click to collapse or expand..."> more... </a>
+ <div id="label407" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">_intf_managed_subnetwork_size</span> <b>(Alias name: _intf_managed-subnetwork-size)</b>  Intf managed subnetwork size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]</span>  <span class="li-normal">default: 256</span> 
+ <a id='label408' href="javascript:ContentClick('label409', 'label408');" onmouseover="ContentPreview('label409');" onmouseout="ContentUnpreview('label409');" title="click to collapse or expand..."> more... </a>
+ <div id="label409" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">domain_name_stripping</span> <b>(Alias name: domain-name-stripping)</b>  Enable/disable stripping domain name from identity (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label410' href="javascript:ContentClick('label411', 'label410');" onmouseover="ContentPreview('label411');" onmouseout="ContentUnpreview('label411');" title="click to collapse or expand..."> more... </a>
+ <div id="label411" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">local_lan_partition</span> <b>(Alias name: local-lan-partition)</b>  Enable/disable segregating client traffic to local lan side (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label412' href="javascript:ContentClick('label413', 'label412');" onmouseover="ContentPreview('label413');" onmouseout="ContentUnpreview('label413');" title="click to collapse or expand..."> more... </a>
+ <div id="label413" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1778,6 +1802,10 @@ Examples
             rates_11be_mcs_map: <string>
             rates_11be_mcs_map_160: <string>
             rates_11be_mcs_map_320: <string>
+            _intf_ip_managed_by_fortiipam: <value in [disable, enable, inherit-global]>
+            _intf_managed_subnetwork_size: <value in [32, 64, 128, ...]>
+            domain_name_stripping: <value in [disable, enable]>
+            local_lan_partition: <value in [disable, enable]>
 
 
 Return Values

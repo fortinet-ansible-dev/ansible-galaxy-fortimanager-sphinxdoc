@@ -2,6 +2,27 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.7.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+
+Minor Changes
+-------------
+
+- Supported FortiManager 7.6.0. Added 7 new modules.
+- Supported check mode for all modules except "fmgr_generic". You can use "ansible-playbook -i <your-host-file> <your-playbook> --check" to validate whether your playbook will make any changes to the FortiManager.
+
+Bugfixes
+--------
+
+- Fixed Bug in "fmgr_fact"
+- Improved documentation.
+
 Release Galaxy 2.6.0
 ~~~~~~~~~~~~~~~~~~~~
 

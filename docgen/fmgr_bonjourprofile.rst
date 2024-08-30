@@ -114,6 +114,12 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">micro_location</span> <b>(Alias name: micro-location)</b>  Enable/disable micro location for bonjour profile (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -172,6 +178,7 @@ Examples
                   - all
                   - miracast
                 to_vlan: <string>
+            micro_location: <value in [disable, enable]>
 
 
 Return Values

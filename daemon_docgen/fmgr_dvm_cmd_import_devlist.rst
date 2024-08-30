@@ -189,7 +189,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc]</span> 
+ <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc, fss]</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -419,7 +419,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: list</span> <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync, need_reset, backup_mode, azure_vwan_nva, fgsp_configured, cnf_mode, sase_managed, override_management_intf]</span> 
+ <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: list</span> <span class="li-normal">choices: [has_hdd, vdom_enabled, discover, reload, interim_build, offline_mode, is_model, fips_mode, linked_to_model, ip-conflict, faz-autosync, need_reset, backup_mode, azure_vwan_nva, fgsp_configured, cnf_mode, sase_managed, override_management_intf, sdwan_management, deny_api_access]</span> 
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -679,7 +679,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">os_type</span> Os type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fpa, fca, ftc]</span>  <span class="li-normal">default: unknown</span> 
+ <li><span class="li-head">os_type</span> Os type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fpa, fca, ftc, fss]</span>  <span class="li-normal">default: unknown</span> 
  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
  <div id="label205" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -897,35 +897,53 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">cluster_worker</span> Cluster worker. <span class="li-normal">type: str</span>
+ <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
+ <div id="label277" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ha_vsn</span> <b>(Alias name: ha.vsn)</b>  Ha. <span class="li-normal">type: str</span>
+ <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
+ <div id="label279" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ha_upgrade_mode</span> Ha upgrade mode. <span class="li-normal">type: int</span>
+ <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
+ <div id="label281" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">import_group_members</span> <b>(Alias name: import-group-members)</b>  Associations between devices and device groups. <span class="li-normal">type: list</span>
- <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
- <div id="label277" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">adom</span> Adom where the device group is located. <span class="li-normal">type: str</span>
- <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
- <div id="label279" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">dev</span> Dev. <span class="li-normal">type: str</span>
- <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
- <div id="label281" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">grp</span> Target device group to associate device vdom with. <span class="li-normal">type: str</span>
  <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
  <div id="label283" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">adom</span> Adom where the device group is located. <span class="li-normal">type: str</span>
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dev</span> Dev. <span class="li-normal">type: str</span>
+ <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
+ <div id="label287" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">grp</span> Target device group to associate device vdom with. <span class="li-normal">type: str</span>
+ <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
+ <div id="label289" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
+ <div id="label291" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
@@ -1036,6 +1054,7 @@ Examples
                   - fpa
                   - fca
                   - ftc
+                  - fss
                 state: <integer>
                 uuid: <string>
                 create_time: <integer>
@@ -1093,6 +1112,8 @@ Examples
                   - cnf_mode
                   - sase_managed
                   - override_management_intf
+                  - sdwan_management
+                  - deny_api_access
                 foslic_cpu: <integer>
                 foslic_dr_site: <value in [disable, enable]>
                 foslic_inst_time: <integer>
@@ -1180,6 +1201,9 @@ Examples
                 mgmt_uuid: <string>
                 hw_generation: <integer>
                 relver_info: <string>
+                cluster_worker: <string>
+                ha_vsn: <string>
+                ha_upgrade_mode: <integer>
             import_group_members:
               -
                 adom: <string>

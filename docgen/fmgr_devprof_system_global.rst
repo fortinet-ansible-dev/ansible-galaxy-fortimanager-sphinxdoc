@@ -184,7 +184,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">admin_restrict_local</span> <b>(Alias name: admin-restrict-local)</b>  Enable/disable local admin authentication restriction when remote authenticator is up and running (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">admin_restrict_local</span> <b>(Alias name: admin-restrict-local)</b>  Enable/disable local admin authentication restriction when remote authenticator is up and running (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, all, non-console-only]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -1902,6 +1902,78 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">user_history_password_threshold</span> <b>(Alias name: user-history-password-threshold)</b>  Maximum number of previous passwords saved per admin/user (3 - 15, default = 3). <span class="li-normal">type: int</span>
+ <a id='label612' href="javascript:ContentClick('label613', 'label612');" onmouseover="ContentPreview('label613');" onmouseout="ContentUnpreview('label613');" title="click to collapse or expand..."> more... </a>
+ <div id="label613" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">delay_tcp_npu_session</span> <b>(Alias name: delay-tcp-npu-session)</b>  Enable tcp npu session delay to guarantee packet order of 3-way handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label614' href="javascript:ContentClick('label615', 'label614');" onmouseover="ContentPreview('label615');" onmouseout="ContentUnpreview('label615');" title="click to collapse or expand..."> more... </a>
+ <div id="label615" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">auth_session_auto_backup_interval</span> <b>(Alias name: auth-session-auto-backup-interval)</b>  Configure automatic authentication session backup interval in minutes (default = 15). <span class="li-normal">type: str</span> <span class="li-normal">choices: [1min, 5min, 15min, 30min, 1hr]</span> 
+ <a id='label616' href="javascript:ContentClick('label617', 'label616');" onmouseover="ContentPreview('label617');" onmouseout="ContentUnpreview('label617');" title="click to collapse or expand..."> more... </a>
+ <div id="label617" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip_conflict_detection</span> <b>(Alias name: ip-conflict-detection)</b>  Enable/disable logging of ipv4 address conflict detection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label618' href="javascript:ContentClick('label619', 'label618');" onmouseover="ContentPreview('label619');" onmouseout="ContentUnpreview('label619');" title="click to collapse or expand..."> more... </a>
+ <div id="label619" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gtpu_dynamic_source_port</span> <b>(Alias name: gtpu-dynamic-source-port)</b>  Enable/disable gtp-u dynamic source port support. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label620' href="javascript:ContentClick('label621', 'label620');" onmouseover="ContentPreview('label621');" onmouseout="ContentUnpreview('label621');" title="click to collapse or expand..."> more... </a>
+ <div id="label621" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip_fragment_timeout</span> <b>(Alias name: ip-fragment-timeout)</b>  Timeout value in seconds for any fragment not being reassembled <span class="li-normal">type: int</span>
+ <a id='label622' href="javascript:ContentClick('label623', 'label622');" onmouseover="ContentPreview('label623');" onmouseout="ContentUnpreview('label623');" title="click to collapse or expand..."> more... </a>
+ <div id="label623" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ipv6_fragment_timeout</span> <b>(Alias name: ipv6-fragment-timeout)</b>  Timeout value in seconds for any ipv6 fragment not being reassembled <span class="li-normal">type: int</span>
+ <a id='label624' href="javascript:ContentClick('label625', 'label624');" onmouseover="ContentPreview('label625');" onmouseout="ContentUnpreview('label625');" title="click to collapse or expand..."> more... </a>
+ <div id="label625" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scim_server_cert</span> <b>(Alias name: scim-server-cert)</b>  Server certificate that the fortigate uses for scim connections. <span class="li-normal">type: list</span>
+ <a id='label626' href="javascript:ContentClick('label627', 'label626');" onmouseover="ContentPreview('label627');" onmouseout="ContentUnpreview('label627');" title="click to collapse or expand..."> more... </a>
+ <div id="label627" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scim_http_port</span> <b>(Alias name: scim-http-port)</b>  Scim http port (0 - 65535, default = 44558). <span class="li-normal">type: int</span>
+ <a id='label628' href="javascript:ContentClick('label629', 'label628');" onmouseover="ContentPreview('label629');" onmouseout="ContentUnpreview('label629');" title="click to collapse or expand..."> more... </a>
+ <div id="label629" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">auth_session_auto_backup</span> <b>(Alias name: auth-session-auto-backup)</b>  Enable/disable automatic and periodic backup of authentication sessions (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label630' href="javascript:ContentClick('label631', 'label630');" onmouseover="ContentPreview('label631');" onmouseout="ContentUnpreview('label631');" title="click to collapse or expand..."> more... </a>
+ <div id="label631" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scim_https_port</span> <b>(Alias name: scim-https-port)</b>  Scim port (0 - 65535, default = 44559). <span class="li-normal">type: int</span>
+ <a id='label632' href="javascript:ContentClick('label633', 'label632');" onmouseover="ContentPreview('label633');" onmouseout="ContentUnpreview('label633');" title="click to collapse or expand..."> more... </a>
+ <div id="label633" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">httpd_max_worker_count</span> <b>(Alias name: httpd-max-worker-count)</b>  Maximum number of simultaneous http requests that will be served. <span class="li-normal">type: int</span>
+ <a id='label634' href="javascript:ContentClick('label635', 'label634');" onmouseover="ContentPreview('label635');" onmouseout="ContentUnpreview('label635');" title="click to collapse or expand..."> more... </a>
+ <div id="label635" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1958,7 +2030,7 @@ Examples
             check_reset_range: <value in [disable, strict]>
             pmtu_discovery: <value in [disable, enable]>
             gui_allow_incompatible_fabric_fgt: <value in [disable, enable]>
-            admin_restrict_local: <value in [disable, enable]>
+            admin_restrict_local: <value in [disable, enable, all, ...]>
             gui_workflow_management: <value in [disable, enable]>
             send_pmtu_icmp: <value in [disable, enable]>
             tcp_halfclose_timer: <integer>
@@ -2335,6 +2407,18 @@ Examples
             proxy_cipher_hardware_acceleration: <value in [disable, enable]>
             proxy_kxp_hardware_acceleration: <value in [disable, enable]>
             virtual_server_hardware_acceleration: <value in [disable, enable]>
+            user_history_password_threshold: <integer>
+            delay_tcp_npu_session: <value in [disable, enable]>
+            auth_session_auto_backup_interval: <value in [1min, 5min, 15min, ...]>
+            ip_conflict_detection: <value in [disable, enable]>
+            gtpu_dynamic_source_port: <value in [disable, enable]>
+            ip_fragment_timeout: <integer>
+            ipv6_fragment_timeout: <integer>
+            scim_server_cert: <list or string>
+            scim_http_port: <integer>
+            auth_session_auto_backup: <value in [disable, enable]>
+            scim_https_port: <integer>
+            httpd_max_worker_count: <integer>
 
 
 Return Values
