@@ -229,8 +229,8 @@ Examples
               disconnect_threshold: <integer>
               signal: <value in [disable, enable]>
               switch_back:
-                - time
-                - timer
+                - "time"
+                - "timer"
               switch_back_time: <string>
               switch_back_timer: <integer>
             conn_status: <integer>

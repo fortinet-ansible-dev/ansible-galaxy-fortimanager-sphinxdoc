@@ -143,9 +143,9 @@ Examples
           profile_protocol_options: <your own value>
           firewall_profileprotocoloptions_mapi:
             options:
-              - fragmail
-              - oversize
-              - no-content-summary
+              - "fragmail"
+              - "oversize"
+              - "no-content-summary"
             oversize_limit: <integer>
             ports: <list or integer>
             scan_bzip2: <value in [disable, enable]>

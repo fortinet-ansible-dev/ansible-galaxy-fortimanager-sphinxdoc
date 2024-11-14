@@ -101,7 +101,7 @@ Parameters
  <li><span class="li-head">name</span> Name of peer. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> v7.6.0</code></p>
  </div>
  </li>
  <li><span class="li-head">sn</span> Serial number of peer. <span class="li-normal">type: str</span>

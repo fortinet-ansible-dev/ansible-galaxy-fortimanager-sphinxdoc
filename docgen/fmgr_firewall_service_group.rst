@@ -92,7 +92,7 @@ Parameters
  <li><span class="li-head">explicit_proxy</span> <b>(Alias name: explicit-proxy)</b>  Enable/disable explicit web proxy service group. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.13</code></p>
  </div>
  </li>
  <li><span class="li-head">global_object</span> <b>(Alias name: global-object)</b>  Global object. <span class="li-normal">type: int</span>

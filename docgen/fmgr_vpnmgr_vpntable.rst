@@ -357,23 +357,23 @@ Examples
             hub2spoke_zone: <list or string>
             ike_version: <value in [1, 2]>
             ike1dhgroup:
-              - 1
-              - 2
-              - 5
-              - 14
-              - 15
-              - 16
-              - 17
-              - 18
-              - 19
-              - 20
-              - 21
-              - 27
-              - 28
-              - 29
-              - 30
-              - 31
-              - 32
+              - "1"
+              - "2"
+              - "5"
+              - "14"
+              - "15"
+              - "16"
+              - "17"
+              - "18"
+              - "19"
+              - "20"
+              - "21"
+              - "27"
+              - "28"
+              - "29"
+              - "30"
+              - "31"
+              - "32"
             ike1dpd: <value in [disable, enable]>
             ike1keylifesec: <integer>
             ike1localid: <string>
@@ -383,23 +383,23 @@ Examples
             ike1proposal: <value in [des-md5, des-sha1, 3des-md5, ...]>
             ike2autonego: <value in [disable, enable]>
             ike2dhgroup:
-              - 1
-              - 2
-              - 5
-              - 14
-              - 15
-              - 16
-              - 17
-              - 18
-              - 19
-              - 20
-              - 21
-              - 27
-              - 28
-              - 29
-              - 30
-              - 31
-              - 32
+              - "1"
+              - "2"
+              - "5"
+              - "14"
+              - "15"
+              - "16"
+              - "17"
+              - "18"
+              - "19"
+              - "20"
+              - "21"
+              - "27"
+              - "28"
+              - "29"
+              - "30"
+              - "31"
+              - "32"
             ike2keepalive: <value in [disable, enable]>
             ike2keylifekbs: <integer>
             ike2keylifesec: <integer>

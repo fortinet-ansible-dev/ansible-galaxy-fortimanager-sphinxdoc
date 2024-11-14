@@ -190,9 +190,9 @@ Examples
             icon: <string>
             name: <string>
             osu_method:
-              - oma-dm
-              - soap-xml-spp
-              - reserved
+              - "oma-dm"
+              - "soap-xml-spp"
+              - "reserved"
             osu_nai: <string>
             server_uri: <string>
             service_description:

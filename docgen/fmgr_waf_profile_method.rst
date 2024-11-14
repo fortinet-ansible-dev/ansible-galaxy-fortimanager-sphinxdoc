@@ -163,29 +163,29 @@ Examples
           profile: <your own value>
           waf_profile_method:
             default_allowed_methods:
-              - delete
-              - get
-              - head
-              - options
-              - post
-              - put
-              - trace
-              - others
-              - connect
+              - "delete"
+              - "get"
+              - "head"
+              - "options"
+              - "post"
+              - "put"
+              - "trace"
+              - "others"
+              - "connect"
             log: <value in [disable, enable]>
             method_policy:
               -
                 address: <string>
                 allowed_methods:
-                  - delete
-                  - get
-                  - head
-                  - options
-                  - post
-                  - put
-                  - trace
-                  - others
-                  - connect
+                  - "delete"
+                  - "get"
+                  - "head"
+                  - "options"
+                  - "post"
+                  - "put"
+                  - "trace"
+                  - "others"
+                  - "connect"
                 id: <integer>
                 pattern: <string>
                 regex: <value in [disable, enable]>

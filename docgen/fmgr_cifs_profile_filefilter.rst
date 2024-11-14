@@ -164,7 +164,7 @@ Examples
                 file_type: <list or string>
                 filter: <string>
                 protocol:
-                  - cifs
+                  - "cifs"
             log: <value in [disable, enable]>
             status: <value in [disable, enable]>
 

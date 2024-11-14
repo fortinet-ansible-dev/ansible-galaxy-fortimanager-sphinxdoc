@@ -227,7 +227,7 @@ Parameters
  <li><span class="li-head">category_override</span> <b>(Alias name: category-override)</b>  Local categories take precedence over fortiguard categories. <span class="li-normal">type: str</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  </ul>
@@ -280,15 +280,15 @@ Examples
                 warning_prompt: <value in [per-domain, per-category]>
             max_quota_timeout: <integer>
             options:
-              - error-allow
-              - http-err-detail
-              - rate-image-urls
-              - strict-blocking
-              - rate-server-ip
-              - redir-block
-              - connect-request-bypass
-              - log-all-url
-              - ftgd-disable
+              - "error-allow"
+              - "http-err-detail"
+              - "rate-image-urls"
+              - "strict-blocking"
+              - "rate-server-ip"
+              - "redir-block"
+              - "connect-request-bypass"
+              - "log-all-url"
+              - "ftgd-disable"
             ovrd: <list or string>
             quota:
               -

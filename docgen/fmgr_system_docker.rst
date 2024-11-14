@@ -77,7 +77,7 @@ Parameters
  <li><span class="li-head">sdwancontroller</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.0.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.0.13</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable and set registry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, qa, dev]</span>  <span class="li-normal">default: disable</span> 

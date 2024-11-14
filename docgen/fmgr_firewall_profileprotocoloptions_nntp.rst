@@ -156,9 +156,9 @@ Examples
           firewall_profileprotocoloptions_nntp:
             inspect_all: <value in [disable, enable]>
             options:
-              - oversize
-              - no-content-summary
-              - splice
+              - "oversize"
+              - "no-content-summary"
+              - "splice"
             oversize_limit: <integer>
             ports: <list or integer>
             scan_bzip2: <value in [disable, enable]>

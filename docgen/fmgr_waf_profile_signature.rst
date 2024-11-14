@@ -230,19 +230,19 @@ Examples
                 severity: <value in [low, medium, high]>
                 status: <value in [disable, enable]>
                 target:
-                  - arg
-                  - arg-name
-                  - req-body
-                  - req-cookie
-                  - req-cookie-name
-                  - req-filename
-                  - req-header
-                  - req-header-name
-                  - req-raw-uri
-                  - req-uri
-                  - resp-body
-                  - resp-hdr
-                  - resp-status
+                  - "arg"
+                  - "arg-name"
+                  - "req-body"
+                  - "req-cookie"
+                  - "req-cookie-name"
+                  - "req-filename"
+                  - "req-header"
+                  - "req-header-name"
+                  - "req-raw-uri"
+                  - "req-uri"
+                  - "resp-body"
+                  - "resp-hdr"
+                  - "resp-status"
             disabled_signature: <list or string>
             disabled_sub_class: <list or string>
             main_class:

@@ -184,7 +184,7 @@ Parameters
  <li><span class="li-head">srcintf_filter</span> <b>(Alias name: srcintf-filter)</b>  Interfaces to which the vip46 applies. <span class="li-normal">type: list or str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
  </ul>

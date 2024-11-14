@@ -203,16 +203,16 @@ Examples
             match_percentage: <integer>
             name: <string>
             proto:
-              - smtp
-              - pop3
-              - imap
-              - http-post
-              - http-get
-              - ftp
-              - nntp
-              - mapi
-              - ssh
-              - cifs
+              - "smtp"
+              - "pop3"
+              - "imap"
+              - "http-post"
+              - "http-get"
+              - "ftp"
+              - "nntp"
+              - "mapi"
+              - "ssh"
+              - "cifs"
             sensitivity: <list or string>
             sensor: <list or string>
             severity: <value in [info, low, medium, ...]>

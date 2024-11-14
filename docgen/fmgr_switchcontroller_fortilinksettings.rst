@@ -67,7 +67,7 @@ Parameters
  <li><span class="li-head">fortilink</span> Fortilink interface to which this fortilink-setting belongs. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.3</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.3</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.4.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">inactive_timer</span> <b>(Alias name: inactive-timer)</b>  Time interval(minutes) to be included in the inactive devices expiry calculation (mac age-out + inactive-time + periodic scan interval). <span class="li-normal">type: int</span>

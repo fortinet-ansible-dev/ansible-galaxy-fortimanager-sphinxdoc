@@ -288,37 +288,37 @@ Parameters
  <li><span class="li-head">avquery_cache_ttl</span> <b>(Alias name: avquery-cache-ttl)</b>  Time-to-live for antivirus cache entries (300 - 86400 sec, default = 1800). <span class="li-normal">type: int</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">avquery_timeout</span> <b>(Alias name: avquery-timeout)</b>  Antivirus query time out (1 - 30 sec, default = 7). <span class="li-normal">type: int</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">avquery_cache</span> <b>(Alias name: avquery-cache)</b>  Enable/disable the fortiguard antivirus cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">avquery_cache_mpercent</span> <b>(Alias name: avquery-cache-mpercent)</b>  Maximum percent of memory the antivirus cache can use (1 - 15%, default = 2). <span class="li-normal">type: int</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">avquery_license</span> <b>(Alias name: avquery-license)</b>  Interval of time between license checks for the fortiguard antivirus contract. <span class="li-normal">type: int</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">avquery_force_off</span> <b>(Alias name: avquery-force-off)</b>  Turn off the fortiguard antivirus service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">fortiguard_anycast</span> <b>(Alias name: fortiguard-anycast)</b>  Enable/disable use of fortiguards anycast network. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -336,13 +336,13 @@ Parameters
  <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sdns_options</span> <b>(Alias name: sdns-options)</b>  Customization options for the fortiguard dns service. <span class="li-normal">type: list</span> <span class="li-normal">choices: [include-question-section]</span> 
@@ -456,7 +456,7 @@ Parameters
  <li><span class="li-head">gui_prompt_auto_upgrade</span> <b>(Alias name: gui-prompt-auto-upgrade)</b>  Enable/disable prompting of automatic patch-level firmware upgrade recommendation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">FDS_license_expiring_days</span> <b>(Alias name: FDS-license-expiring-days)</b>  Threshold for number of days before fortiguard license expiration to generate license expiring event log (1 - 100 days, default = 15). <span class="li-normal">type: int</span>
@@ -566,7 +566,7 @@ Examples
             interface: <string>
             interface_select_method: <value in [auto, sdwan, specify]>
             sdns_options:
-              - include-question-section
+              - "include-question-section"
             anycast_sdns_server_ip: <string>
             anycast_sdns_server_port: <integer>
             persistent_connection: <value in [disable, enable]>
@@ -580,13 +580,13 @@ Examples
             vdom: <string>
             auto_firmware_upgrade: <value in [disable, enable]>
             auto_firmware_upgrade_day:
-              - sunday
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
+              - "sunday"
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
             auto_firmware_upgrade_end_hour: <integer>
             auto_firmware_upgrade_start_hour: <integer>
             sandbox_inline_scan: <value in [disable, enable]>

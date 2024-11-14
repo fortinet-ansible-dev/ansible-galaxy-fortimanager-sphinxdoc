@@ -191,7 +191,7 @@ Parameters
  <li><span class="li-head">max_log_file_num</span> <b>(Alias name: max-log-file-num)</b>  Maximum number of log files before rolling. <span class="li-normal">type: int</span> <span class="li-normal">default: 10000</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -232,13 +232,13 @@ Examples
             log_disk_full_percentage: <integer>
             max_log_file_size: <integer>
             roll_day:
-              - sunday
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
+              - "sunday"
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
             roll_schedule: <value in [none, daily, weekly]>
             roll_time: <list or string>
             server_type: <value in [FTP, SFTP, SCP]>
@@ -253,7 +253,7 @@ Examples
             uploadport: <integer>
             uploadsched: <value in [disable, enable]>
             uploadtype:
-              - event
+              - "event"
             uploaduser: <string>
             uploadzip: <value in [disable, enable]>
             log_disk_quota: <integer>

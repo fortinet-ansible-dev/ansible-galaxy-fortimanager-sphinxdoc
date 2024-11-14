@@ -110,14 +110,14 @@ Examples
           system_alertconsole:
             period: <value in [1, 2, 3, ...]>
             severity_level:
-              - debug
-              - information
-              - notify
-              - warning
-              - error
-              - critical
-              - alert
-              - emergency
+              - "debug"
+              - "information"
+              - "notify"
+              - "warning"
+              - "error"
+              - "critical"
+              - "alert"
+              - "emergency"
 
 
 Return Values

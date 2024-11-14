@@ -103,9 +103,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           fmupdate_customurllist:
             db_selection:
-              - both
-              - custom-url
-              - fortiguard-db
+              - "both"
+              - "custom-url"
+              - "fortiguard-db"
 
 
 Return Values

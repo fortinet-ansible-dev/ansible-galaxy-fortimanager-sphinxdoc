@@ -85,7 +85,7 @@ Parameters
  <li><span class="li-head">polling_id</span> <b>(Alias name: polling-id)</b>  Fsso polling id. <span class="li-normal">type: str</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.13</code></p>
  </div>
  </li>
  <li><span class="li-head">connector_source</span> <b>(Alias name: connector-source)</b>  Fsso connector source. <span class="li-normal">type: str</span>

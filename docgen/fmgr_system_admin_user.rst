@@ -674,7 +674,7 @@ Parameters
  <li><span class="li-head">fingerprint</span> Pki user certificate fingerprint (md5, sha1, sha256) constraints. <span class="li-normal">type: str</span>
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">th_from_profile</span> <b>(Alias name: th-from-profile)</b>  Internal use only: trusthostx from-profile flag <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 

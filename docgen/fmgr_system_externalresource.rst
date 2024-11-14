@@ -151,7 +151,7 @@ Parameters
  <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Certificate verification option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, basic, full]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">update_method</span> <b>(Alias name: update-method)</b>  External resource update method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [feed, push]</span> 

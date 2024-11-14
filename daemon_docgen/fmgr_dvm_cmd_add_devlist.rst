@@ -238,10 +238,10 @@ Examples
                 authorization_template: <string>
             adom: <string>
             flags:
-              - none
-              - create_task
-              - nonblocking
-              - log_dev
+              - "none"
+              - "create_task"
+              - "nonblocking"
+              - "log_dev"
 
 
 Return Values

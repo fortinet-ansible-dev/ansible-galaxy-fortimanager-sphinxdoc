@@ -145,8 +145,8 @@ Examples
                 id: <integer>
                 log: <value in [disable, enable]>
             options:
-              - error-allow
-              - ftgd-disable
+              - "error-allow"
+              - "ftgd-disable"
 
 
 Return Values

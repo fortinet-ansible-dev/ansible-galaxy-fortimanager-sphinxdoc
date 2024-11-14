@@ -179,34 +179,34 @@ Examples
           profile: <your own value>
           antivirus_profile_smtp:
             archive_block:
-              - encrypted
-              - corrupted
-              - multipart
-              - nested
-              - mailbomb
-              - unhandled
-              - partiallycorrupted
-              - fileslimit
-              - timeout
+              - "encrypted"
+              - "corrupted"
+              - "multipart"
+              - "nested"
+              - "mailbomb"
+              - "unhandled"
+              - "partiallycorrupted"
+              - "fileslimit"
+              - "timeout"
             archive_log:
-              - encrypted
-              - corrupted
-              - multipart
-              - nested
-              - mailbomb
-              - unhandled
-              - partiallycorrupted
-              - fileslimit
-              - timeout
+              - "encrypted"
+              - "corrupted"
+              - "multipart"
+              - "nested"
+              - "mailbomb"
+              - "unhandled"
+              - "partiallycorrupted"
+              - "fileslimit"
+              - "timeout"
             content_disarm: <value in [disable, enable]>
             emulator: <value in [disable, enable]>
             executables: <value in [default, virus]>
             options:
-              - scan
-              - file-filter
-              - quarantine
-              - avquery
-              - avmonitor
+              - "scan"
+              - "file-filter"
+              - "quarantine"
+              - "avquery"
+              - "avmonitor"
             outbreak_prevention: <value in [disabled, files, full-archive, ...]>
             av_scan: <value in [disable, monitor, block]>
             external_blocklist: <value in [disable, monitor, block]>

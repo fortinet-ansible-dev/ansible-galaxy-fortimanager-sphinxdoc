@@ -129,11 +129,11 @@ Examples
             cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
             id: <integer>
             versions:
-              - ssl-3.0
-              - tls-1.0
-              - tls-1.1
-              - tls-1.2
-              - tls-1.3
+              - "ssl-3.0"
+              - "tls-1.0"
+              - "tls-1.1"
+              - "tls-1.2"
+              - "tls-1.3"
             priority: <integer>
 
 

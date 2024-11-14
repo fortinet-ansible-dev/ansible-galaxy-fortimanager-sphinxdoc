@@ -971,10 +971,10 @@ Examples
                     cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
                     priority: <integer>
                     versions:
-                      - tls-1.0
-                      - tls-1.1
-                      - tls-1.2
-                      - tls-1.3
+                      - "tls-1.0"
+                      - "tls-1.1"
+                      - "tls-1.2"
+                      - "tls-1.3"
                 ssl_dh_bits: <value in [768, 1024, 1536, ...]>
                 ssl_max_version: <value in [tls-1.0, tls-1.1, tls-1.2, ...]>
                 ssl_min_version: <value in [tls-1.0, tls-1.1, tls-1.2, ...]>
@@ -1038,10 +1038,10 @@ Examples
                     cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
                     priority: <integer>
                     versions:
-                      - tls-1.0
-                      - tls-1.1
-                      - tls-1.2
-                      - tls-1.3
+                      - "tls-1.0"
+                      - "tls-1.1"
+                      - "tls-1.2"
+                      - "tls-1.3"
                 ssl_dh_bits: <value in [768, 1024, 1536, ...]>
                 ssl_max_version: <value in [tls-1.0, tls-1.1, tls-1.2, ...]>
                 ssl_min_version: <value in [tls-1.0, tls-1.1, tls-1.2, ...]>

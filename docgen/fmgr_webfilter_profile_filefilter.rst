@@ -184,8 +184,8 @@ Examples
                 filter: <string>
                 password_protected: <value in [any, yes]>
                 protocol:
-                  - http
-                  - ftp
+                  - "http"
+                  - "ftp"
             log: <value in [disable, enable]>
             scan_archive_contents: <value in [disable, enable]>
             status: <value in [disable, enable]>

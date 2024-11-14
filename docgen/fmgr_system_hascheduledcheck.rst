@@ -117,13 +117,13 @@ Examples
             status: <value in [disable, enable]>
             time: <string>
             week_days:
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
-              - sunday
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
+              - "sunday"
 
 
 Return Values

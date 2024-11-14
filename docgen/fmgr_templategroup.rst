@@ -142,8 +142,8 @@ Examples
             name: <string>
             variables: <list or string>
             option:
-              - sdwan-overlay
-              - sdwan-manager
+              - "sdwan-overlay"
+              - "sdwan-manager"
 
 
 Return Values

@@ -134,10 +134,10 @@ Examples
           # rc_failed: [-2, -3, ...]
           securityconsole_assign_package:
             flags:
-              - none
-              - cp_all_objs
-              - copy_assigned_pkg
-              - unassign
+              - "none"
+              - "cp_all_objs"
+              - "copy_assigned_pkg"
+              - "unassign"
             pkg: <string>
             target:
               -

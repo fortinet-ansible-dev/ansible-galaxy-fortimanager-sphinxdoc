@@ -189,18 +189,18 @@ Examples
             fsso_guest: <value in [disable, enable]>
             kerberos_keytab: <string>
             method:
-              - ntlm
-              - basic
-              - digest
-              - form
-              - negotiate
-              - fsso
-              - rsso
-              - ssh-publickey
-              - saml
-              - cert
-              - x-auth-user
-              - saml-sp
+              - "ntlm"
+              - "basic"
+              - "digest"
+              - "form"
+              - "negotiate"
+              - "fsso"
+              - "rsso"
+              - "ssh-publickey"
+              - "saml"
+              - "cert"
+              - "x-auth-user"
+              - "saml-sp"
             name: <string>
             negotiate_ntlm: <value in [disable, enable]>
             require_tfa: <value in [disable, enable]>

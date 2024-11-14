@@ -208,7 +208,7 @@ Parameters
  <li><span class="li-head">tags</span> Assign a custom tag filter to the ips sensor. <span class="li-normal">type: str</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">cve</span> List of cve ids of the signatures to add to the sensor <span class="li-normal">type: list</span>

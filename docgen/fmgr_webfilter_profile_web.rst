@@ -185,27 +185,27 @@ Examples
             keyword_match: <list or string>
             log_search: <value in [disable, enable]>
             safe_search:
-              - google
-              - yahoo
-              - bing
-              - url
-              - header
+              - "google"
+              - "yahoo"
+              - "bing"
+              - "url"
+              - "header"
             urlfilter_table: <string>
             whitelist:
-              - exempt-av
-              - exempt-webcontent
-              - exempt-activex-java-cookie
-              - exempt-dlp
-              - exempt-rangeblock
-              - extended-log-others
+              - "exempt-av"
+              - "exempt-webcontent"
+              - "exempt-activex-java-cookie"
+              - "exempt-dlp"
+              - "exempt-rangeblock"
+              - "extended-log-others"
             youtube_restrict: <value in [strict, none, moderate]>
             allowlist:
-              - exempt-av
-              - exempt-webcontent
-              - exempt-activex-java-cookie
-              - exempt-dlp
-              - exempt-rangeblock
-              - extended-log-others
+              - "exempt-av"
+              - "exempt-webcontent"
+              - "exempt-activex-java-cookie"
+              - "exempt-dlp"
+              - "exempt-rangeblock"
+              - "extended-log-others"
             blocklist: <value in [disable, enable]>
             vimeo_restrict: <string>
 

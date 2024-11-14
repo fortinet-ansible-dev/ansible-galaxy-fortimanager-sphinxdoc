@@ -238,7 +238,7 @@ Parameters
  <li><span class="li-head">color_depth</span> <b>(Alias name: color-depth)</b>  Color depth per pixel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [8, 16, 32]</span> 
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">height</span> Screen height (range from 0 - 65535, default = 0). <span class="li-normal">type: int</span>
@@ -250,19 +250,19 @@ Parameters
  <li><span class="li-head">keyboard_layout</span> <b>(Alias name: keyboard-layout)</b>  Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ar, da, de, de-ch, en-gb, en-uk, en-us, es, fi, fr, fr-be, fr-ca, fr-ch, hr, hu, it, ja, lt, lv, mk, no, pl, pt, pt-br, ru, sl, sv, tk, tr, fr-ca-m, wg, ar-101, ar-102, ar-102-azerty, can-mul, cz, cz-qwerty, cz-pr, nl, de-ibm, en-uk-ext, en-us-dvorak, es-var, fi-sami, hu-101, it-142, ko, lt-ibm, lt-std, lav-std, lav-leg, mk-std, no-sami, pol-214, pol-pr, pt-br-abnt2, ru-mne, ru-t, sv-sami, tuk, tur-f, tur-q, zh-sym-sg-us, zh-sym-us, zh-tr-hk, zh-tr-mo, zh-tr-us, fr-apple, la-am, ja-106]</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">restricted_admin</span> <b>(Alias name: restricted-admin)</b>  Enable/disable restricted admin mode for rdp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">send_preconnection_id</span> <b>(Alias name: send-preconnection-id)</b>  Enable/disable sending of preconnection id. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">width</span> Screen width (range from 0 - 65535, default = 0). <span class="li-normal">type: int</span>

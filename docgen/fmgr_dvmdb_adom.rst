@@ -286,19 +286,19 @@ Examples
           dvmdb_adom:
             desc: <string>
             flags:
-              - migration
-              - db_export
-              - no_vpn_console
-              - backup
-              - other_devices
-              - central_sdwan
-              - is_autosync
-              - per_device_wtp
-              - policy_check_on_install
-              - install_on_policy_check_fail
-              - auto_push_cfg
-              - per_device_fsw
-              - install_deselect_all
+              - "migration"
+              - "db_export"
+              - "no_vpn_console"
+              - "backup"
+              - "other_devices"
+              - "central_sdwan"
+              - "is_autosync"
+              - "per_device_wtp"
+              - "policy_check_on_install"
+              - "install_on_policy_check_fail"
+              - "auto_push_cfg"
+              - "per_device_fsw"
+              - "install_deselect_all"
             log_db_retention_hours: <integer>
             log_disk_quota: <integer>
             log_disk_quota_alert_thres: <integer>
@@ -312,37 +312,37 @@ Examples
             name: <string>
             os_ver: <value in [unknown, 0.0, 1.0, ...]>
             restricted_prds: # <list or string>
-              - fos
-              - foc
-              - fml
-              - fch
-              - fwb
-              - log
-              - fct
-              - faz
-              - fsa
-              - fsw
-              - fmg
-              - fdd
-              - fac
-              - fpx
-              - fna
-              - fdc
-              - ffw
-              - fsr
-              - fad
-              - fap
-              - fxt
-              - fts
-              - fai
-              - fwc
-              - fis
-              - fed
-              - fabric
-              - fpa
-              - fca
-              - ftc
-              - fss
+              - "fos"
+              - "foc"
+              - "fml"
+              - "fch"
+              - "fwb"
+              - "log"
+              - "fct"
+              - "faz"
+              - "fsa"
+              - "fsw"
+              - "fmg"
+              - "fdd"
+              - "fac"
+              - "fpx"
+              - "fna"
+              - "fdc"
+              - "ffw"
+              - "fsr"
+              - "fad"
+              - "fap"
+              - "fxt"
+              - "fts"
+              - "fai"
+              - "fwc"
+              - "fis"
+              - "fed"
+              - "fabric"
+              - "fpa"
+              - "fca"
+              - "ftc"
+              - "fss"
             state: <integer>
             uuid: <string>
             create_time: <integer>

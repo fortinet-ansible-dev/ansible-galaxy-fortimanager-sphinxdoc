@@ -257,16 +257,16 @@ Examples
             extended_log: <value in [disable, enable]>
             feature_set: <value in [flow, proxy]>
             full_archive_proto:
-              - smtp
-              - pop3
-              - imap
-              - http-post
-              - http-get
-              - ftp
-              - nntp
-              - mapi
-              - ssh
-              - cifs
+              - "smtp"
+              - "pop3"
+              - "imap"
+              - "http-post"
+              - "http-get"
+              - "ftp"
+              - "nntp"
+              - "mapi"
+              - "ssh"
+              - "cifs"
             nac_quar_log: <value in [disable, enable]>
             name: <string>
             replacemsg_group: <string>
@@ -283,31 +283,31 @@ Examples
                 match_percentage: <integer>
                 name: <string>
                 proto:
-                  - smtp
-                  - pop3
-                  - imap
-                  - http-post
-                  - http-get
-                  - ftp
-                  - nntp
-                  - mapi
-                  - ssh
-                  - cifs
+                  - "smtp"
+                  - "pop3"
+                  - "imap"
+                  - "http-post"
+                  - "http-get"
+                  - "ftp"
+                  - "nntp"
+                  - "mapi"
+                  - "ssh"
+                  - "cifs"
                 sensitivity: <list or string>
                 sensor: <list or string>
                 severity: <value in [info, low, medium, ...]>
                 type: <value in [file, message]>
             summary_proto:
-              - smtp
-              - pop3
-              - imap
-              - http-post
-              - http-get
-              - ftp
-              - nntp
-              - mapi
-              - ssh
-              - cifs
+              - "smtp"
+              - "pop3"
+              - "imap"
+              - "http-post"
+              - "http-get"
+              - "ftp"
+              - "nntp"
+              - "mapi"
+              - "ssh"
+              - "cifs"
 
 
 Return Values

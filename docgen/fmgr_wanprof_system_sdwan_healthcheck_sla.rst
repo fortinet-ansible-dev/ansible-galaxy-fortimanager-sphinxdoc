@@ -156,11 +156,11 @@ Examples
             jitter_threshold: <integer>
             latency_threshold: <integer>
             link_cost_factor:
-              - latency
-              - jitter
-              - packet-loss
-              - mos
-              - remote
+              - "latency"
+              - "jitter"
+              - "packet-loss"
+              - "mos"
+              - "remote"
             packetloss_threshold: <integer>
             mos_threshold: <string>
             priority_in_sla: <integer>

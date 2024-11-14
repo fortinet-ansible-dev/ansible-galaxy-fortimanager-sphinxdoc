@@ -200,31 +200,31 @@ Parameters
  <li><span class="li-head">city</span> City sequence number list. <span class="li-normal">type: list</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">country</span> Country sequence number list. <span class="li-normal">type: list</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">region</span> Region sequence number list. <span class="li-normal">type: list</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">city6</span> Ipv6 city sequence number list. <span class="li-normal">type: list</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">country6</span> Ipv6 country sequence number list. <span class="li-normal">type: list</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">extra_ip6_range_number</span> <b>(Alias name: extra-ip6-range-number)</b>  Extra ip6 range number. <span class="li-normal">type: int</span>
@@ -242,7 +242,7 @@ Parameters
  <li><span class="li-head">region6</span> Ipv6 region sequence number list. <span class="li-normal">type: list</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
  </div>
  </li>
  </ul>

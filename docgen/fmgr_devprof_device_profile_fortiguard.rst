@@ -146,13 +146,13 @@ Examples
             target_ip: <string>
             auto_firmware_upgrade: <value in [disable, enable]>
             auto_firmware_upgrade_day:
-              - sunday
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
+              - "sunday"
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
             auto_firmware_upgrade_delay: <integer>
             auto_firmware_upgrade_end_hour: <integer>
             auto_firmware_upgrade_start_hour: <integer>

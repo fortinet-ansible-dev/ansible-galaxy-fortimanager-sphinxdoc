@@ -271,7 +271,7 @@ Examples
             ports: <list or integer>
             status: <value in [disable, enable]>
             options:
-              - oversize
+              - "oversize"
             oversize_limit: <integer>
             scan_bzip2: <value in [disable, enable]>
             tcp_window_maximum: <integer>
@@ -290,7 +290,7 @@ Examples
                   file_type: <list or string>
                   filter: <string>
                   protocol:
-                    - cifs
+                    - "cifs"
               log: <value in [disable, enable]>
               status: <value in [disable, enable]>
             server_credential_type: <value in [none, credential-replication, credential-keytab]>

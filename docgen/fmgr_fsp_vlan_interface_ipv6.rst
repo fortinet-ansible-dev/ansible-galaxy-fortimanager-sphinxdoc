@@ -566,11 +566,11 @@ Examples
           fsp_vlan_interface_ipv6:
             autoconf: <value in [disable, enable]>
             dhcp6_client_options:
-              - rapid
-              - iapd
-              - iana
-              - dns
-              - dnsname
+              - "rapid"
+              - "iapd"
+              - "iana"
+              - "dns"
+              - "dnsname"
             dhcp6_information_request: <value in [disable, enable]>
             dhcp6_prefix_delegation: <value in [disable, enable]>
             dhcp6_prefix_hint: <string>
@@ -581,15 +581,15 @@ Examples
             dhcp6_relay_type: <value in [regular]>
             ip6_address: <string>
             ip6_allowaccess:
-              - https
-              - ping
-              - ssh
-              - snmp
-              - http
-              - telnet
-              - fgfm
-              - capwap
-              - fabric
+              - "https"
+              - "ping"
+              - "ssh"
+              - "snmp"
+              - "http"
+              - "telnet"
+              - "fgfm"
+              - "capwap"
+              - "fabric"
             ip6_default_life: <integer>
             ip6_dns_server_override: <value in [disable, enable]>
             ip6_hop_limit: <integer>

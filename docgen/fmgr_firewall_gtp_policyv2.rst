@@ -170,32 +170,32 @@ Examples
           firewall_gtp_policyv2:
             action: <value in [deny, allow]>
             apn_sel_mode:
-              - ms
-              - net
-              - vrf
+              - "ms"
+              - "net"
+              - "vrf"
             apnmember: <list or string>
             id: <integer>
             imsi_prefix: <string>
             max_apn_restriction: <value in [all, public-1, public-2, ...]>
             mei: <string>
             messages:
-              - create-ses-req
-              - create-ses-res
-              - modify-bearer-req
-              - modify-bearer-res
+              - "create-ses-req"
+              - "create-ses-res"
+              - "modify-bearer-req"
+              - "modify-bearer-res"
             msisdn_prefix: <string>
             rat_type:
-              - any
-              - utran
-              - geran
-              - wlan
-              - gan
-              - hspa
-              - eutran
-              - virtual
-              - nbiot
-              - ltem
-              - nr
+              - "any"
+              - "utran"
+              - "geran"
+              - "wlan"
+              - "gan"
+              - "hspa"
+              - "eutran"
+              - "virtual"
+              - "nbiot"
+              - "ltem"
+              - "nr"
             uli: <list or string>
 
 

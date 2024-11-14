@@ -613,7 +613,7 @@ Parameters
  <li><span class="li-head">ap_sniffer_chan_width</span> <b>(Alias name: ap-sniffer-chan-width)</b>  Channel bandwidth for sniffer. <span class="li-normal">type: str</span> <span class="li-normal">choices: [320MHz, 240MHz, 160MHz, 80MHz, 40MHz, 20MHz]</span> 
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -684,22 +684,22 @@ Examples
             mode: <value in [disabled, ap, monitor, ...]>
             power_level: <integer>
             powersave_optimize:
-              - tim
-              - ac-vo
-              - no-obss-scan
-              - no-11b-rate
-              - client-rate-follow
+              - "tim"
+              - "ac-vo"
+              - "no-obss-scan"
+              - "no-11b-rate"
+              - "client-rate-follow"
             protection_mode: <value in [rtscts, ctsonly, disable]>
             radio_id: <integer>
             rts_threshold: <integer>
             short_guard_interval: <value in [disable, enable]>
             spectrum_analysis: <value in [disable, enable, scan-only]>
             transmit_optimize:
-              - disable
-              - power-save
-              - aggr-limit
-              - retry-limit
-              - send-bar
+              - "disable"
+              - "power-save"
+              - "aggr-limit"
+              - "retry-limit"
+              - "send-bar"
             vap_all: <value in [disable, enable, tunnel, ...]>
             vaps: <list or string>
             wids_profile: <string>

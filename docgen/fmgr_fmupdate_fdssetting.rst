@@ -326,22 +326,22 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_support_fdc</span> <b>(Alias name: system-support-fdc)</b>  Supported fortideceptor versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [3.x, 4.x]</span> 
+ <li><span class="li-head">system_support_fdc</span> <b>(Alias name: system-support-fdc)</b>  Supported fortideceptor versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [3.x, 4.x, 5.x, 6.x]</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_support_fts</span> <b>(Alias name: system-support-fts)</b>  Supported fortitester versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [3.x, 4.x, 7.x]</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_support_faz</span> <b>(Alias name: system-support-faz)</b>  Supported fortianalyzer versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [6.x, 7.x]</span> 
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_support_fis</span> <b>(Alias name: system-support-fis)</b>  Supported fortiisolator versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [1.x, 2.x]</span> 
@@ -418,58 +418,58 @@ Examples
                   ip6: <string>
                   port: <integer>
                   service_type: # <list or string>
-                    - fds
-                    - fct
-                    - fai
+                    - "fds"
+                    - "fct"
+                    - "fai"
               status: <value in [disable, enable]>
             system_support_fct:
-              - 4.x
-              - 5.0
-              - 5.2
-              - 5.4
-              - 5.6
-              - 6.0
-              - 6.2
-              - 6.4
-              - 7.0
-              - 7.2
+              - "4.x"
+              - "5.0"
+              - "5.2"
+              - "5.4"
+              - "5.6"
+              - "6.0"
+              - "6.2"
+              - "6.4"
+              - "7.0"
+              - "7.2"
             system_support_fgt:
-              - 5.4
-              - 5.6
-              - 6.0
-              - 6.2
-              - 6.4
-              - 7.0
-              - 7.2
-              - 7.4
-              - 7.6
+              - "5.4"
+              - "5.6"
+              - "6.0"
+              - "6.2"
+              - "6.4"
+              - "7.0"
+              - "7.2"
+              - "7.4"
+              - "7.6"
             system_support_fml:
-              - 4.x
-              - 5.x
-              - 6.x
-              - 6.0
-              - 6.2
-              - 6.4
-              - 7.0
-              - 7.2
-              - 7.x
+              - "4.x"
+              - "5.x"
+              - "6.x"
+              - "6.0"
+              - "6.2"
+              - "6.4"
+              - "7.0"
+              - "7.2"
+              - "7.x"
             system_support_fsa:
-              - 1.x
-              - 2.x
-              - 3.x
-              - 4.x
-              - 3.0
-              - 3.1
-              - 3.2
+              - "1.x"
+              - "2.x"
+              - "3.x"
+              - "4.x"
+              - "3.0"
+              - "3.1"
+              - "3.2"
             system_support_fsw:
-              - 5.4
-              - 5.6
-              - 6.0
-              - 6.2
-              - 4.x
-              - 5.0
-              - 5.2
-              - 6.4
+              - "5.4"
+              - "5.6"
+              - "6.0"
+              - "6.2"
+              - "4.x"
+              - "5.0"
+              - "5.2"
+              - "6.4"
             umsvc_log: <value in [emergency, alert, critical, ...]>
             unreg_dev_option: <value in [ignore, svc-only, add-service]>
             update_schedule:
@@ -481,20 +481,22 @@ Examples
             fortiguard_anycast: <value in [disable, enable]>
             fortiguard_anycast_source: <value in [fortinet, aws]>
             system_support_fdc:
-              - 3.x
-              - 4.x
+              - "3.x"
+              - "4.x"
+              - "5.x"
+              - "6.x"
             system_support_fts:
-              - 3.x
-              - 4.x
-              - 7.x
+              - "3.x"
+              - "4.x"
+              - "7.x"
             system_support_faz:
-              - 6.x
-              - 7.x
+              - "6.x"
+              - "7.x"
             system_support_fis:
-              - 1.x
-              - 2.x
+              - "1.x"
+              - "2.x"
             system_support_fai:
-              - 7.x
+              - "7.x"
 
 
 Return Values

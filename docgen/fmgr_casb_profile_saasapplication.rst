@@ -220,11 +220,11 @@ Examples
               -
                 action: <value in [block, bypass, monitor]>
                 bypass:
-                  - av
-                  - dlp
-                  - web-filter
-                  - file-filter
-                  - video-filter
+                  - "av"
+                  - "dlp"
+                  - "web-filter"
+                  - "file-filter"
+                  - "video-filter"
                 name: <string>
             custom_control:
               -

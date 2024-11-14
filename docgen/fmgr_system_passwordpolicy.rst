@@ -136,10 +136,10 @@ Examples
             expire: <integer>
             minimum_length: <integer>
             must_contain:
-              - upper-case-letter
-              - lower-case-letter
-              - number
-              - non-alphanumeric
+              - "upper-case-letter"
+              - "lower-case-letter"
+              - "number"
+              - "non-alphanumeric"
             status: <value in [disable, enable]>
             password_history: <integer>
 

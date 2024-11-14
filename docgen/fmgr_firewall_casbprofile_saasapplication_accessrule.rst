@@ -124,11 +124,11 @@ Examples
           firewall_casbprofile_saasapplication_accessrule:
             action: <value in [block, monitor, bypass]>
             bypass:
-              - av
-              - dlp
-              - web-filter
-              - file-filter
-              - video-filter
+              - "av"
+              - "dlp"
+              - "web-filter"
+              - "file-filter"
+              - "video-filter"
             name: <string>
 
 

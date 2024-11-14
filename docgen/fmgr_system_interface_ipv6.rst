@@ -118,14 +118,14 @@ Examples
           system_interface_ipv6:
             ip6_address: <string>
             ip6_allowaccess:
-              - ping
-              - https
-              - ssh
-              - snmp
-              - http
-              - webservice
-              - https-logging
-              - fabric
+              - "ping"
+              - "https"
+              - "ssh"
+              - "snmp"
+              - "http"
+              - "webservice"
+              - "https-logging"
+              - "fabric"
             ip6_autoconf: <value in [disable, enable]>
 
 

@@ -109,13 +109,13 @@ Parameters
  <li><span class="li-head">block</span> Ssh blocking options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [x11-filter, ssh-shell, exec, port-forward]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">log</span> Ssh logging options. <span class="li-normal">type: list</span> <span class="li-normal">choices: [x11-filter, ssh-shell, exec, port-forward]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">proxy_after_tcp_handshake</span> <b>(Alias name: proxy-after-tcp-handshake)</b>  Proxy traffic after the tcp 3-way handshake has been established (not before). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -168,15 +168,15 @@ Examples
             status: <value in [disable, deep-inspection]>
             unsupported_version: <value in [block, bypass]>
             block:
-              - x11-filter
-              - ssh-shell
-              - exec
-              - port-forward
+              - "x11-filter"
+              - "ssh-shell"
+              - "exec"
+              - "port-forward"
             log:
-              - x11-filter
-              - ssh-shell
-              - exec
-              - port-forward
+              - "x11-filter"
+              - "ssh-shell"
+              - "exec"
+              - "port-forward"
             proxy_after_tcp_handshake: <value in [disable, enable]>
 
 

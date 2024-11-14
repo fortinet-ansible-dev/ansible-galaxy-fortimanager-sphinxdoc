@@ -246,8 +246,8 @@ Examples
                 dstaddr: <list or string>
                 dstaddr6: <list or string>
                 protocol:
-                  - https
-                  - http
+                  - "https"
+                  - "http"
             log_header_change: <value in [disable, enable]>
             name: <string>
             strip_encoding: <value in [disable, enable]>

@@ -136,19 +136,19 @@ Examples
             from_vlan: <string>
             policy_id: <integer>
             services:
-              - airplay
-              - afp
-              - bit-torrent
-              - ftp
-              - ichat
-              - itunes
-              - printers
-              - samba
-              - scanners
-              - ssh
-              - chromecast
-              - all
-              - miracast
+              - "airplay"
+              - "afp"
+              - "bit-torrent"
+              - "ftp"
+              - "ichat"
+              - "itunes"
+              - "printers"
+              - "samba"
+              - "scanners"
+              - "ssh"
+              - "chromecast"
+              - "all"
+              - "miracast"
             to_vlan: <string>
 
 

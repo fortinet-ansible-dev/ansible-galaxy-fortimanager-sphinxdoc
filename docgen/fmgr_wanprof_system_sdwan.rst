@@ -165,7 +165,7 @@ Parameters
  <li><span class="li-head">_dynamic_server</span> <b>(Alias name: _dynamic-server)</b>  Dynamic server. <span class="li-normal">type: str</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">addr_mode</span> <b>(Alias name: addr-mode)</b>  Address mode (ipv4 or ipv6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4, ipv6]</span> 
@@ -511,7 +511,7 @@ Parameters
  <li><span class="li-head">_dynamic_member</span> <b>(Alias name: _dynamic-member)</b>  Dynamic member. <span class="li-normal">type: str</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">comment</span> Comments. <span class="li-normal">type: str</span>
@@ -1616,11 +1616,11 @@ Examples
                     jitter_threshold: <integer>
                     latency_threshold: <integer>
                     link_cost_factor:
-                      - latency
-                      - jitter
-                      - packet-loss
-                      - mos
-                      - remote
+                      - "latency"
+                      - "jitter"
+                      - "packet-loss"
+                      - "mos"
+                      - "remote"
                     packetloss_threshold: <integer>
                     mos_threshold: <string>
                     priority_in_sla: <integer>
@@ -1800,11 +1800,11 @@ Examples
                     jitter_threshold: <integer>
                     latency_threshold: <integer>
                     link_cost_factor:
-                      - latency
-                      - jitter
-                      - packet-loss
-                      - mos
-                      - remote
+                      - "latency"
+                      - "jitter"
+                      - "packet-loss"
+                      - "mos"
+                      - "remote"
                     mos_threshold: <string>
                     packetloss_threshold: <integer>
                     priority_in_sla: <integer>
@@ -1827,8 +1827,8 @@ Examples
                 user: <string>
                 vrf: <integer>
             option:
-              - sdwan-overlay
-              - sdwan-manager
+              - "sdwan-overlay"
+              - "sdwan-manager"
 
 
 Return Values

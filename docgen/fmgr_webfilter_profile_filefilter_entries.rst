@@ -158,8 +158,8 @@ Examples
             filter: <string>
             password_protected: <value in [any, yes]>
             protocol:
-              - http
-              - ftp
+              - "http"
+              - "ftp"
 
 
 Return Values

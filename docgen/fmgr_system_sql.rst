@@ -314,34 +314,34 @@ Examples
             event_table_partition_time: <integer>
             fct_table_partition_time: <integer>
             logtype:
-              - none
-              - app-ctrl
-              - attack
-              - content
-              - dlp
-              - emailfilter
-              - event
-              - generic
-              - history
-              - traffic
-              - virus
-              - voip
-              - webfilter
-              - netscan
-              - fct-event
-              - fct-traffic
-              - fct-netscan
-              - waf
-              - gtp
-              - dns
-              - ssh
-              - ssl
-              - file-filter
-              - asset
-              - protocol
-              - siem
-              - ztna
-              - security
+              - "none"
+              - "app-ctrl"
+              - "attack"
+              - "content"
+              - "dlp"
+              - "emailfilter"
+              - "event"
+              - "generic"
+              - "history"
+              - "traffic"
+              - "virus"
+              - "voip"
+              - "webfilter"
+              - "netscan"
+              - "fct-event"
+              - "fct-traffic"
+              - "fct-netscan"
+              - "waf"
+              - "gtp"
+              - "dns"
+              - "ssh"
+              - "ssl"
+              - "file-filter"
+              - "asset"
+              - "protocol"
+              - "siem"
+              - "ztna"
+              - "security"
             password: <list or string>
             prompt_sql_upgrade: <value in [disable, enable]>
             rebuild_event: <value in [disable, enable]>

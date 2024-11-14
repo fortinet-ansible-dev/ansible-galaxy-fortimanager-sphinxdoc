@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">application_real)</span> <b>(Alias name: application(real))</b>  Application(real). <span class="li-normal">type: str</span>
+ <li><span class="li-head">application_real</span> <b>(Alias name: application(real))</b>  Application(real). <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">location_real)</span> <b>(Alias name: location(real))</b>  Location(real). <span class="li-normal">type: str</span>
+ <li><span class="li-head">location_real</span> <b>(Alias name: location(real))</b>  Location(real). <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -119,7 +119,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">os_real)</span> <b>(Alias name: os(real))</b>  Os(real). <span class="li-normal">type: str</span>
+ <li><span class="li-head">os_real</span> <b>(Alias name: os(real))</b>  Os(real). <span class="li-normal">type: str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -131,7 +131,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol_real)</span> <b>(Alias name: protocol(real))</b>  Protocol(real). <span class="li-normal">type: str</span>
+ <li><span class="li-head">protocol_real</span> <b>(Alias name: protocol(real))</b>  Protocol(real). <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -161,7 +161,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">severity_real)</span> <b>(Alias name: severity(real))</b>  Severity(real). <span class="li-normal">type: str</span>
+ <li><span class="li-head">severity_real</span> <b>(Alias name: severity(real))</b>  Severity(real). <span class="li-normal">type: str</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -212,21 +212,21 @@ Examples
           ips_baseline_sensor_filter:
             action: <value in [pass, block, default, ...]>
             application: <list or string>
-            application_real): <string>
+            application_real: <string>
             location: <list or string>
-            location_real): <string>
+            location_real: <string>
             log: <value in [disable, enable, default]>
             log_packet: <value in [disable, enable, default]>
             name: <string>
             os: <list or string>
-            os_real): <string>
+            os_real: <string>
             protocol: <list or string>
-            protocol_real): <string>
+            protocol_real: <string>
             quarantine: <value in [none, attacker, both, ...]>
             quarantine_expiry: <integer>
             quarantine_log: <value in [disable, enable]>
             severity: <list or string>
-            severity_real): <string>
+            severity_real: <string>
             status: <value in [disable, enable, default]>
 
 

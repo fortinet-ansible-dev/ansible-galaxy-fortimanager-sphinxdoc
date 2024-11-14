@@ -173,11 +173,11 @@ Examples
             log: <value in [disable, enable]>
             name: <string>
             severity:
-              - low
-              - medium
-              - high
-              - critical
-              - info
+              - "low"
+              - "medium"
+              - "high"
+              - "critical"
+              - "info"
 
 
 Return Values

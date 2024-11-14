@@ -144,7 +144,7 @@ Examples
             file_type: <list or string>
             filter: <string>
             protocol:
-              - cifs
+              - "cifs"
 
 
 Return Values

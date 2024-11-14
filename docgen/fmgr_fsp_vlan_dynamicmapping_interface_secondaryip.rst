@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
 
 
 
@@ -69,7 +69,7 @@ Parameters
  <li><span class="li-head">allowaccess</span> Allowaccess. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
  </div>
  </li>
  <li><span class="li-head">detectprotocol</span> Detectprotocol. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ping, tcp-echo, udp-echo]</span> 
@@ -99,13 +99,13 @@ Parameters
  <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
  </div>
  </li>
  <li><span class="li-head">ip</span> Ip. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
  </div>
  </li>
  <li><span class="li-head">ping_serv_status</span> <b>(Alias name: ping-serv-status)</b>  Ping serv status. <span class="li-normal">type: int</span>
@@ -117,7 +117,7 @@ Parameters
  <li><span class="li-head">seq</span> Seq. <span class="li-normal">type: int</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
  </div>
  </li>
  <li><span class="li-head">secip_relay_ip</span> <b>(Alias name: secip-relay-ip)</b>  Dhcp relay ip address. <span class="li-normal">type: str</span>
@@ -165,25 +165,25 @@ Examples
           state: present # <value in [present, absent]>
           fsp_vlan_dynamicmapping_interface_secondaryip:
             allowaccess:
-              - https
-              - ping
-              - ssh
-              - snmp
-              - http
-              - telnet
-              - fgfm
-              - auto-ipsec
-              - radius-acct
-              - probe-response
-              - capwap
-              - dnp
-              - ftm
-              - fabric
-              - speed-test
+              - "https"
+              - "ping"
+              - "ssh"
+              - "snmp"
+              - "http"
+              - "telnet"
+              - "fgfm"
+              - "auto-ipsec"
+              - "radius-acct"
+              - "probe-response"
+              - "capwap"
+              - "dnp"
+              - "ftm"
+              - "fabric"
+              - "speed-test"
             detectprotocol:
-              - ping
-              - tcp-echo
-              - udp-echo
+              - "ping"
+              - "tcp-echo"
+              - "udp-echo"
             detectserver: <string>
             gwdetect: <value in [disable, enable]>
             ha_priority: <integer>

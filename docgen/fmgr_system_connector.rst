@@ -110,6 +110,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">conn_ssl_protocol</span> <b>(Alias name: conn-ssl-protocol)</b>  Set the lowest ssl protocol version for connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span> 
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -152,6 +158,7 @@ Examples
             cloud_orchest_refresh_interval: <integer>
             faznotify_msg_queue_max: <integer>
             faznotify_msg_timeout: <integer>
+            conn_ssl_protocol: <value in [follow-global-ssl-protocol, sslv3, tlsv1.0, ...]>
 
 
 Return Values

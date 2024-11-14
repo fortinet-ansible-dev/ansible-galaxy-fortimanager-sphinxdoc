@@ -2231,19 +2231,19 @@ Parameters
  <li><span class="li-head">dhcp_relay_interface</span> <b>(Alias name: dhcp-relay-interface)</b>  Dhcp relay interface. <span class="li-normal">type: str</span>
  <a id='label716' href="javascript:ContentClick('label717', 'label716');" onmouseover="ContentPreview('label717');" onmouseout="ContentUnpreview('label717');" title="click to collapse or expand..."> more... </a>
  <div id="label717" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dhcp_relay_interface_select_method</span> <b>(Alias name: dhcp-relay-interface-select-method)</b>  Dhcp relay interface select method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label718' href="javascript:ContentClick('label719', 'label718');" onmouseover="ContentPreview('label719');" onmouseout="ContentUnpreview('label719');" title="click to collapse or expand..."> more... </a>
  <div id="label719" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">np_qos_profile</span> <b>(Alias name: np-qos-profile)</b>  Np qos profile id. <span class="li-normal">type: int</span>
  <a id='label720' href="javascript:ContentClick('label721', 'label720');" onmouseover="ContentPreview('label721');" onmouseout="ContentUnpreview('label721');" title="click to collapse or expand..."> more... </a>
  <div id="label721" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">swc_first_create</span> <b>(Alias name: swc-first-create)</b>  Initial create for switch-controller vlans. <span class="li-normal">type: int</span>
@@ -2267,7 +2267,7 @@ Parameters
  <li><span class="li-head">dhcp_relay_request_all_server</span> <b>(Alias name: dhcp-relay-request-all-server)</b>  Enable/disable sending of dhcp requests to all servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label728' href="javascript:ContentClick('label729', 'label728');" onmouseover="ContentPreview('label729');" onmouseout="ContentUnpreview('label729');" title="click to collapse or expand..."> more... </a>
  <div id="label729" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">stp_ha_secondary</span> <b>(Alias name: stp-ha-secondary)</b>  Control stp behaviour on ha secondary. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, priority-adjust]</span> 
@@ -2363,61 +2363,61 @@ Parameters
  <li><span class="li-head">pvc_atm_qos</span> <b>(Alias name: pvc-atm-qos)</b>  Sfp-dsl adsl fallback pvc atm qos. <span class="li-normal">type: str</span> <span class="li-normal">choices: [cbr, rt-vbr, nrt-vbr, ubr]</span> 
  <a id='label760' href="javascript:ContentClick('label761', 'label760');" onmouseover="ContentPreview('label761');" onmouseout="ContentUnpreview('label761');" title="click to collapse or expand..."> more... </a>
  <div id="label761" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_chan</span> <b>(Alias name: pvc-chan)</b>  Sfp-dsl adsl fallback pvc channel. <span class="li-normal">type: int</span>
  <a id='label762' href="javascript:ContentClick('label763', 'label762');" onmouseover="ContentPreview('label763');" onmouseout="ContentUnpreview('label763');" title="click to collapse or expand..."> more... </a>
  <div id="label763" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_crc</span> <b>(Alias name: pvc-crc)</b>  Sfp-dsl adsl fallback pvc crc option:  bit0: sar llc preserve, bit1: ream llc preserve, bit2: ream vc-mux has crc. <span class="li-normal">type: int</span>
  <a id='label764' href="javascript:ContentClick('label765', 'label764');" onmouseover="ContentPreview('label765');" onmouseout="ContentUnpreview('label765');" title="click to collapse or expand..."> more... </a>
  <div id="label765" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_pcr</span> <b>(Alias name: pvc-pcr)</b>  Sfp-dsl adsl fallback pvc packet cell rate in cells (0 - 5500). <span class="li-normal">type: int</span>
  <a id='label766' href="javascript:ContentClick('label767', 'label766');" onmouseover="ContentPreview('label767');" onmouseout="ContentUnpreview('label767');" title="click to collapse or expand..."> more... </a>
  <div id="label767" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_scr</span> <b>(Alias name: pvc-scr)</b>  Sfp-dsl adsl fallback pvc sustainable cell rate in cells (0 - 5500). <span class="li-normal">type: int</span>
  <a id='label768' href="javascript:ContentClick('label769', 'label768');" onmouseover="ContentPreview('label769');" onmouseout="ContentUnpreview('label769');" title="click to collapse or expand..."> more... </a>
  <div id="label769" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_vlan_id</span> <b>(Alias name: pvc-vlan-id)</b>  Sfp-dsl adsl fallback pvc vlan id. <span class="li-normal">type: int</span>
  <a id='label770' href="javascript:ContentClick('label771', 'label770');" onmouseover="ContentPreview('label771');" onmouseout="ContentUnpreview('label771');" title="click to collapse or expand..."> more... </a>
  <div id="label771" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_vlan_rx_id</span> <b>(Alias name: pvc-vlan-rx-id)</b>  Sfp-dsl adsl fallback pvc vlanid rx. <span class="li-normal">type: int</span>
  <a id='label772' href="javascript:ContentClick('label773', 'label772');" onmouseover="ContentPreview('label773');" onmouseout="ContentUnpreview('label773');" title="click to collapse or expand..."> more... </a>
  <div id="label773" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_vlan_rx_op</span> <b>(Alias name: pvc-vlan-rx-op)</b>  Sfp-dsl adsl fallback pvc vlan rx op. <span class="li-normal">type: str</span> <span class="li-normal">choices: [pass-through, replace, remove]</span> 
  <a id='label774' href="javascript:ContentClick('label775', 'label774');" onmouseover="ContentPreview('label775');" onmouseout="ContentUnpreview('label775');" title="click to collapse or expand..."> more... </a>
  <div id="label775" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_vlan_tx_id</span> <b>(Alias name: pvc-vlan-tx-id)</b>  Sfp-dsl adsl fallback pvc vlan id tx. <span class="li-normal">type: int</span>
  <a id='label776' href="javascript:ContentClick('label777', 'label776');" onmouseover="ContentPreview('label777');" onmouseout="ContentUnpreview('label777');" title="click to collapse or expand..."> more... </a>
  <div id="label777" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">pvc_vlan_tx_op</span> <b>(Alias name: pvc-vlan-tx-op)</b>  Sfp-dsl adsl fallback pvc vlan tx op. <span class="li-normal">type: str</span> <span class="li-normal">choices: [pass-through, replace, remove]</span> 
  <a id='label778' href="javascript:ContentClick('label779', 'label778');" onmouseover="ContentPreview('label779');" onmouseout="ContentUnpreview('label779');" title="click to collapse or expand..."> more... </a>
  <div id="label779" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">reachable_time</span> <b>(Alias name: reachable-time)</b>  Ipv4 reachable time in milliseconds (30000 - 3600000, default = 30000). <span class="li-normal">type: int</span>
@@ -2429,31 +2429,31 @@ Parameters
  <li><span class="li-head">select_profile_30a_35b</span> <b>(Alias name: select-profile-30a-35b)</b>  Select vdsl profile 30a or 35b. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30A, 35B]</span> 
  <a id='label782' href="javascript:ContentClick('label783', 'label782');" onmouseover="ContentPreview('label783');" onmouseout="ContentUnpreview('label783');" title="click to collapse or expand..."> more... </a>
  <div id="label783" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sfp_dsl</span> <b>(Alias name: sfp-dsl)</b>  Enable/disable sfp dsl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label784' href="javascript:ContentClick('label785', 'label784');" onmouseover="ContentPreview('label785');" onmouseout="ContentUnpreview('label785');" title="click to collapse or expand..."> more... </a>
  <div id="label785" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sfp_dsl_adsl_fallback</span> <b>(Alias name: sfp-dsl-adsl-fallback)</b>  Enable/disable sfp dsl adsl fallback. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label786' href="javascript:ContentClick('label787', 'label786');" onmouseover="ContentPreview('label787');" onmouseout="ContentUnpreview('label787');" title="click to collapse or expand..."> more... </a>
  <div id="label787" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sfp_dsl_autodetect</span> <b>(Alias name: sfp-dsl-autodetect)</b>  Enable/disable sfp dsl mac address autodetect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label788' href="javascript:ContentClick('label789', 'label788');" onmouseover="ContentPreview('label789');" onmouseout="ContentUnpreview('label789');" title="click to collapse or expand..."> more... </a>
  <div id="label789" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sfp_dsl_mac</span> <b>(Alias name: sfp-dsl-mac)</b>  Sfp dsl mac address. <span class="li-normal">type: str</span>
  <a id='label790' href="javascript:ContentClick('label791', 'label790');" onmouseover="ContentPreview('label791');" onmouseout="ContentUnpreview('label791');" title="click to collapse or expand..."> more... </a>
  <div id="label791" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sw_algorithm</span> <b>(Alias name: sw-algorithm)</b>  Frame distribution algorithm for switch. <span class="li-normal">type: str</span> <span class="li-normal">choices: [l2, l3, eh, default]</span> 
@@ -2465,49 +2465,49 @@ Parameters
  <li><span class="li-head">system_id</span> <b>(Alias name: system-id)</b>  Define a system id for the aggregate interface. <span class="li-normal">type: str</span>
  <a id='label794' href="javascript:ContentClick('label795', 'label794');" onmouseover="ContentPreview('label795');" onmouseout="ContentUnpreview('label795');" title="click to collapse or expand..."> more... </a>
  <div id="label795" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_id_type</span> <b>(Alias name: system-id-type)</b>  Method in which system id is generated. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, user]</span> 
  <a id='label796' href="javascript:ContentClick('label797', 'label796');" onmouseover="ContentPreview('label797');" onmouseout="ContentUnpreview('label797');" title="click to collapse or expand..."> more... </a>
  <div id="label797" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vlan_id</span> <b>(Alias name: vlan-id)</b>  Vlan id <span class="li-normal">type: int</span>
  <a id='label798' href="javascript:ContentClick('label799', 'label798');" onmouseover="ContentPreview('label799');" onmouseout="ContentUnpreview('label799');" title="click to collapse or expand..."> more... </a>
  <div id="label799" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vlan_op_mode</span> <b>(Alias name: vlan-op-mode)</b>  Configure dsl 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tag, untag, passthrough]</span> 
  <a id='label800' href="javascript:ContentClick('label801', 'label800');" onmouseover="ContentPreview('label801');" onmouseout="ContentUnpreview('label801');" title="click to collapse or expand..."> more... </a>
  <div id="label801" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">generic_receive_offload</span> <b>(Alias name: generic-receive-offload)</b>  Generic receive offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label802' href="javascript:ContentClick('label803', 'label802');" onmouseover="ContentPreview('label803');" onmouseout="ContentUnpreview('label803');" title="click to collapse or expand..."> more... </a>
  <div id="label803" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">interconnect_profile</span> <b>(Alias name: interconnect-profile)</b>  Set interconnect profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, profile1, profile2]</span> 
  <a id='label804' href="javascript:ContentClick('label805', 'label804');" onmouseover="ContentPreview('label805');" onmouseout="ContentUnpreview('label805');" title="click to collapse or expand..."> more... </a>
  <div id="label805" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">large_receive_offload</span> <b>(Alias name: large-receive-offload)</b>  Large receive offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label806' href="javascript:ContentClick('label807', 'label806');" onmouseover="ContentPreview('label807');" onmouseout="ContentUnpreview('label807');" title="click to collapse or expand..."> more... </a>
  <div id="label807" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">annex</span> Set xdsl annex type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [a, b, j, bjm, i, al, m, aijlm, bj]</span> 
  <a id='label808' href="javascript:ContentClick('label809', 'label808');" onmouseover="ContentPreview('label809');" onmouseout="ContentUnpreview('label809');" title="click to collapse or expand..."> more... </a>
  <div id="label809" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">aggregate_type</span> <b>(Alias name: aggregate-type)</b>  Type of aggregation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [physical, vxlan]</span> 
@@ -2657,7 +2657,7 @@ Parameters
  <li><span class="li-head">pppoe_egress_cos</span> <b>(Alias name: pppoe-egress-cos)</b>  Cos in vlan tag for outgoing pppoe/ppp packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [cos0, cos1, cos2, cos3, cos4, cos5, cos6, cos7]</span> 
  <a id='label858' href="javascript:ContentClick('label859', 'label858');" onmouseover="ContentPreview('label859');" onmouseout="ContentUnpreview('label859');" title="click to collapse or expand..."> more... </a>
  <div id="label859" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">security_ip_auth_bypass</span> <b>(Alias name: security-ip-auth-bypass)</b>  Enable/disable ip authentication bypass. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -2713,21 +2713,21 @@ Examples
             algorithm: <value in [L2, L3, L4, ...]>
             alias: <string>
             allowaccess:
-              - https
-              - ping
-              - ssh
-              - snmp
-              - http
-              - telnet
-              - fgfm
-              - auto-ipsec
-              - radius-acct
-              - probe-response
-              - capwap
-              - dnp
-              - ftm
-              - fabric
-              - speed-test
+              - "https"
+              - "ping"
+              - "ssh"
+              - "snmp"
+              - "http"
+              - "telnet"
+              - "fgfm"
+              - "auto-ipsec"
+              - "radius-acct"
+              - "probe-response"
+              - "capwap"
+              - "dnp"
+              - "ftm"
+              - "fabric"
+              - "speed-test"
             ap_discover: <value in [disable, enable]>
             arpforward: <value in [disable, enable]>
             atm_protocol: <value in [none, ipoa]>
@@ -2759,9 +2759,9 @@ Examples
             description: <string>
             detected_peer_mtu: <integer>
             detectprotocol:
-              - ping
-              - tcp-echo
-              - udp-echo
+              - "ping"
+              - "tcp-echo"
+              - "udp-echo"
             detectserver: <string>
             device_access_list: <list or string>
             device_identification: <value in [disable, enable]>
@@ -2795,8 +2795,8 @@ Examples
             fail_alert_method: <value in [link-failed-signal, link-down]>
             fail_detect: <value in [disable, enable]>
             fail_detect_option:
-              - detectserver
-              - link-down
+              - "detectserver"
+              - "link-down"
             fdp: <value in [disable, enable]>
             fortiheartbeat: <value in [disable, enable]>
             fortilink: <value in [disable, enable]>
@@ -2806,42 +2806,42 @@ Examples
             forward_domain: <integer>
             forward_error_correction: <value in [disable, enable, rs-fec, ...]>
             fp_anomaly:
-              - drop_tcp_fin_noack
-              - pass_winnuke
-              - pass_tcpland
-              - pass_udpland
-              - pass_icmpland
-              - pass_ipland
-              - pass_iprr
-              - pass_ipssrr
-              - pass_iplsrr
-              - pass_ipstream
-              - pass_ipsecurity
-              - pass_iptimestamp
-              - pass_ipunknown_option
-              - pass_ipunknown_prot
-              - pass_icmp_frag
-              - pass_tcp_no_flag
-              - pass_tcp_fin_noack
-              - drop_winnuke
-              - drop_tcpland
-              - drop_udpland
-              - drop_icmpland
-              - drop_ipland
-              - drop_iprr
-              - drop_ipssrr
-              - drop_iplsrr
-              - drop_ipstream
-              - drop_ipsecurity
-              - drop_iptimestamp
-              - drop_ipunknown_option
-              - drop_ipunknown_prot
-              - drop_icmp_frag
-              - drop_tcp_no_flag
+              - "drop_tcp_fin_noack"
+              - "pass_winnuke"
+              - "pass_tcpland"
+              - "pass_udpland"
+              - "pass_icmpland"
+              - "pass_ipland"
+              - "pass_iprr"
+              - "pass_ipssrr"
+              - "pass_iplsrr"
+              - "pass_ipstream"
+              - "pass_ipsecurity"
+              - "pass_iptimestamp"
+              - "pass_ipunknown_option"
+              - "pass_ipunknown_prot"
+              - "pass_icmp_frag"
+              - "pass_tcp_no_flag"
+              - "pass_tcp_fin_noack"
+              - "drop_winnuke"
+              - "drop_tcpland"
+              - "drop_udpland"
+              - "drop_icmpland"
+              - "drop_ipland"
+              - "drop_iprr"
+              - "drop_ipssrr"
+              - "drop_iplsrr"
+              - "drop_ipstream"
+              - "drop_ipsecurity"
+              - "drop_iptimestamp"
+              - "drop_ipunknown_option"
+              - "drop_ipunknown_prot"
+              - "drop_icmp_frag"
+              - "drop_tcp_no_flag"
             fp_disable:
-              - all
-              - ipsec
-              - none
+              - "all"
+              - "ipsec"
+              - "none"
             gateway_address: <string>
             gi_gk: <value in [disable, enable]>
             gwaddr: <string>
@@ -2866,11 +2866,11 @@ Examples
             ipv6:
               autoconf: <value in [disable, enable]>
               dhcp6_client_options:
-                - rapid
-                - iapd
-                - iana
-                - dns
-                - dnsname
+                - "rapid"
+                - "iapd"
+                - "iana"
+                - "dns"
+                - "dnsname"
               dhcp6_information_request: <value in [disable, enable]>
               dhcp6_prefix_delegation: <value in [disable, enable]>
               dhcp6_prefix_hint: <string>
@@ -2881,15 +2881,15 @@ Examples
               dhcp6_relay_type: <value in [regular]>
               ip6_address: <string>
               ip6_allowaccess:
-                - https
-                - ping
-                - ssh
-                - snmp
-                - http
-                - telnet
-                - fgfm
-                - capwap
-                - fabric
+                - "https"
+                - "ping"
+                - "ssh"
+                - "snmp"
+                - "http"
+                - "telnet"
+                - "fgfm"
+                - "capwap"
+                - "fabric"
               ip6_default_life: <integer>
               ip6_dns_server_override: <value in [disable, enable]>
               ip6_hop_limit: <integer>
@@ -3021,27 +3021,27 @@ Examples
             secondaryip:
               -
                 allowaccess:
-                  - https
-                  - ping
-                  - ssh
-                  - snmp
-                  - http
-                  - telnet
-                  - fgfm
-                  - auto-ipsec
-                  - radius-acct
-                  - probe-response
-                  - capwap
-                  - dnp
-                  - ftm
-                  - fabric
-                  - speed-test
-                  - icond
-                  - scim
+                  - "https"
+                  - "ping"
+                  - "ssh"
+                  - "snmp"
+                  - "http"
+                  - "telnet"
+                  - "fgfm"
+                  - "auto-ipsec"
+                  - "radius-acct"
+                  - "probe-response"
+                  - "capwap"
+                  - "dnp"
+                  - "ftm"
+                  - "fabric"
+                  - "speed-test"
+                  - "icond"
+                  - "scim"
                 detectprotocol:
-                  - ping
-                  - tcp-echo
-                  - udp-echo
+                  - "ping"
+                  - "tcp-echo"
+                  - "udp-echo"
                 detectserver: <string>
                 gwdetect: <value in [disable, enable]>
                 ha_priority: <integer>
@@ -3176,9 +3176,9 @@ Examples
             dhcp_classless_route_addition: <value in [disable, enable]>
             dhcp_relay_link_selection: <string>
             dns_server_protocol:
-              - cleartext
-              - dot
-              - doh
+              - "cleartext"
+              - "dot"
+              - "doh"
             eap_ca_cert: <string>
             eap_identity: <string>
             eap_method: <value in [tls, peap]>

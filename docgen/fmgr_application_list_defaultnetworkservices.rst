@@ -129,17 +129,17 @@ Examples
             id: <integer>
             port: <integer>
             services:
-              - http
-              - ssh
-              - telnet
-              - ftp
-              - dns
-              - smtp
-              - pop3
-              - imap
-              - snmp
-              - nntp
-              - https
+              - "http"
+              - "ssh"
+              - "telnet"
+              - "ftp"
+              - "dns"
+              - "smtp"
+              - "pop3"
+              - "imap"
+              - "snmp"
+              - "nntp"
+              - "https"
             violation_action: <value in [block, monitor, pass]>
 
 

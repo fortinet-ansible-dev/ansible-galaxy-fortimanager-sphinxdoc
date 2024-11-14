@@ -147,12 +147,12 @@ Examples
                 ip6: <string>
                 port: <integer>
                 service_type: # <list or string>
-                  - fgd
-                  - fgc
-                  - fsa
-                  - fgfq
-                  - geoip
-                  - iot-collect
+                  - "fgd"
+                  - "fgc"
+                  - "fsa"
+                  - "fgfq"
+                  - "geoip"
+                  - "iot-collect"
             status: <value in [disable, enable]>
 
 

@@ -571,11 +571,11 @@ Examples
             sslvpn_bookmarks_group: <list or string>
             sslvpn_cache_cleaner: <value in [disable, enable]>
             sslvpn_client_check:
-              - forticlient
-              - forticlient-av
-              - forticlient-fw
-              - 3rdAV
-              - 3rdFW
+              - "forticlient"
+              - "forticlient-av"
+              - "forticlient-fw"
+              - "3rdAV"
+              - "3rdFW"
             sslvpn_ftp: <value in [disable, enable]>
             sslvpn_http: <value in [disable, enable]>
             sslvpn_os_check: <value in [disable, enable]>

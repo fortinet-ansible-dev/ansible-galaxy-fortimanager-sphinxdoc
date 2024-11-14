@@ -138,9 +138,9 @@ Examples
             jitter_threshold: <integer>
             latency_threshold: <integer>
             link_cost_factor:
-              - latency
-              - jitter
-              - packet-loss
+              - "latency"
+              - "jitter"
+              - "packet-loss"
             packetloss_threshold: <integer>
 
 

@@ -104,8 +104,8 @@ Examples
           device_name: <your own value>
           exec_fgfm_reclaimdevtunnel:
             flags:
-              - force
-              - get_info
+              - "force"
+              - "get_info"
 
 
 Return Values

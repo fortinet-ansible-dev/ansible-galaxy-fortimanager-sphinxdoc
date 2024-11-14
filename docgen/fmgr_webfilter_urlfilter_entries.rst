@@ -165,16 +165,16 @@ Examples
             action: <value in [exempt, block, allow, ...]>
             dns_address_family: <value in [ipv4, ipv6, both]>
             exempt:
-              - av
-              - web-content
-              - activex-java-cookie
-              - dlp
-              - fortiguard
-              - all
-              - filepattern
-              - pass
-              - range-block
-              - antiphish
+              - "av"
+              - "web-content"
+              - "activex-java-cookie"
+              - "dlp"
+              - "fortiguard"
+              - "all"
+              - "filepattern"
+              - "pass"
+              - "range-block"
+              - "antiphish"
             id: <integer>
             referrer_host: <string>
             status: <value in [disable, enable]>

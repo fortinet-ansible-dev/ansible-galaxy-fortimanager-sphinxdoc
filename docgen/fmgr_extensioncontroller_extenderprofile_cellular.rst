@@ -501,8 +501,8 @@ Examples
                 disconnect_threshold: <integer>
                 signal: <value in [disable, enable]>
                 switch_back:
-                  - time
-                  - timer
+                  - "time"
+                  - "timer"
                 switch_back_time: <string>
                 switch_back_timer: <integer>
               conn_status: <integer>
@@ -524,8 +524,8 @@ Examples
                 disconnect_threshold: <integer>
                 signal: <value in [disable, enable]>
                 switch_back:
-                  - time
-                  - timer
+                  - "time"
+                  - "timer"
                 switch_back_time: <string>
                 switch_back_timer: <integer>
               conn_status: <integer>
@@ -551,13 +551,13 @@ Examples
               receiver:
                 -
                   alert:
-                    - system-reboot
-                    - data-exhausted
-                    - session-disconnect
-                    - low-signal-strength
-                    - mode-switch
-                    - os-image-fallback
-                    - fgt-backup-mode-switch
+                    - "system-reboot"
+                    - "data-exhausted"
+                    - "session-disconnect"
+                    - "low-signal-strength"
+                    - "mode-switch"
+                    - "os-image-fallback"
+                    - "fgt-backup-mode-switch"
                   name: <string>
                   phone_number: <string>
                   status: <value in [disable, enable]>

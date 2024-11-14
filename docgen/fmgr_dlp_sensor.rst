@@ -337,71 +337,71 @@ Examples
                 match_percentage: <integer>
                 name: <string>
                 proto:
-                  - imap
-                  - smtp
-                  - pop3
-                  - ftp
-                  - nntp
-                  - mm1
-                  - mm3
-                  - mm4
-                  - mm7
-                  - mapi
-                  - aim
-                  - icq
-                  - msn
-                  - yahoo
-                  - http-get
-                  - http-post
-                  - ssh
-                  - cifs
+                  - "imap"
+                  - "smtp"
+                  - "pop3"
+                  - "ftp"
+                  - "nntp"
+                  - "mm1"
+                  - "mm3"
+                  - "mm4"
+                  - "mm7"
+                  - "mapi"
+                  - "aim"
+                  - "icq"
+                  - "msn"
+                  - "yahoo"
+                  - "http-get"
+                  - "http-post"
+                  - "ssh"
+                  - "cifs"
                 regexp: <string>
                 severity: <value in [info, low, medium, ...]>
                 type: <value in [file, message]>
                 sensitivity: <list or string>
             flow_based: <value in [disable, enable]>
             full_archive_proto:
-              - imap
-              - smtp
-              - pop3
-              - ftp
-              - nntp
-              - mm1
-              - mm3
-              - mm4
-              - mm7
-              - mapi
-              - aim
-              - icq
-              - msn
-              - yahoo
-              - http-get
-              - http-post
-              - ssh
-              - cifs
+              - "imap"
+              - "smtp"
+              - "pop3"
+              - "ftp"
+              - "nntp"
+              - "mm1"
+              - "mm3"
+              - "mm4"
+              - "mm7"
+              - "mapi"
+              - "aim"
+              - "icq"
+              - "msn"
+              - "yahoo"
+              - "http-get"
+              - "http-post"
+              - "ssh"
+              - "cifs"
             nac_quar_log: <value in [disable, enable]>
             name: <string>
             options: <value in [strict-file]>
             replacemsg_group: <string>
             summary_proto:
-              - imap
-              - smtp
-              - pop3
-              - ftp
-              - nntp
-              - mm1
-              - mm3
-              - mm4
-              - mm7
-              - mapi
-              - aim
-              - icq
-              - msn
-              - yahoo
-              - http-get
-              - http-post
-              - ssh
-              - cifs
+              - "imap"
+              - "smtp"
+              - "pop3"
+              - "ftp"
+              - "nntp"
+              - "mm1"
+              - "mm3"
+              - "mm4"
+              - "mm7"
+              - "mapi"
+              - "aim"
+              - "icq"
+              - "msn"
+              - "yahoo"
+              - "http-get"
+              - "http-post"
+              - "ssh"
+              - "cifs"
             feature_set: <value in [proxy, flow]>
             entries:
               -

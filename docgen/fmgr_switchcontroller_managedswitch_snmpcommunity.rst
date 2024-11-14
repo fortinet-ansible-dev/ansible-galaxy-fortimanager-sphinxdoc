@@ -207,11 +207,11 @@ Examples
           state: present # <value in [present, absent]>
           switchcontroller_managedswitch_snmpcommunity:
             events:
-              - cpu-high
-              - mem-low
-              - log-full
-              - intf-ip
-              - ent-conf-change
+              - "cpu-high"
+              - "mem-low"
+              - "log-full"
+              - "intf-ip"
+              - "ent-conf-change"
             hosts:
               -
                 id: <integer>

@@ -151,7 +151,7 @@ Examples
             filter: <string>
             password_protected: <value in [any, yes]>
             protocol:
-              - ssh
+              - "ssh"
 
 
 Return Values

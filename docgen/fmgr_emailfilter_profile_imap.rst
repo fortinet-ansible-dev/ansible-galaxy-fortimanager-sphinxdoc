@@ -134,9 +134,9 @@ Examples
             log: <value in [disable, enable]>
             tag_msg: <string>
             tag_type:
-              - subject
-              - header
-              - spaminfo
+              - "subject"
+              - "header"
+              - "spaminfo"
             log_all: <value in [disable, enable]>
 
 

@@ -199,13 +199,13 @@ Examples
             receiver:
               -
                 alert:
-                  - system-reboot
-                  - data-exhausted
-                  - session-disconnect
-                  - low-signal-strength
-                  - mode-switch
-                  - os-image-fallback
-                  - fgt-backup-mode-switch
+                  - "system-reboot"
+                  - "data-exhausted"
+                  - "session-disconnect"
+                  - "low-signal-strength"
+                  - "mode-switch"
+                  - "os-image-fallback"
+                  - "fgt-backup-mode-switch"
                 name: <string>
                 phone_number: <string>
                 status: <value in [disable, enable]>

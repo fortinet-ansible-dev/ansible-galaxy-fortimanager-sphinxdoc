@@ -210,24 +210,24 @@ Examples
             match_percentage: <integer>
             name: <string>
             proto:
-              - imap
-              - smtp
-              - pop3
-              - ftp
-              - nntp
-              - mm1
-              - mm3
-              - mm4
-              - mm7
-              - mapi
-              - aim
-              - icq
-              - msn
-              - yahoo
-              - http-get
-              - http-post
-              - ssh
-              - cifs
+              - "imap"
+              - "smtp"
+              - "pop3"
+              - "ftp"
+              - "nntp"
+              - "mm1"
+              - "mm3"
+              - "mm4"
+              - "mm7"
+              - "mapi"
+              - "aim"
+              - "icq"
+              - "msn"
+              - "yahoo"
+              - "http-get"
+              - "http-post"
+              - "ssh"
+              - "cifs"
             regexp: <string>
             severity: <value in [info, low, medium, ...]>
             type: <value in [file, message]>

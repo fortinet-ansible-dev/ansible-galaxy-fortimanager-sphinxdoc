@@ -312,35 +312,35 @@ Examples
             http_policy: <value in [disable, enable]>
             inspect_all: <value in [disable, enable]>
             options:
-              - oversize
-              - chunkedbypass
-              - clientcomfort
-              - no-content-summary
-              - servercomfort
+              - "oversize"
+              - "chunkedbypass"
+              - "clientcomfort"
+              - "no-content-summary"
+              - "servercomfort"
             oversize_limit: <integer>
             ports: <list or integer>
             post_lang:
-              - jisx0201
-              - jisx0208
-              - jisx0212
-              - gb2312
-              - ksc5601-ex
-              - euc-jp
-              - sjis
-              - iso2022-jp
-              - iso2022-jp-1
-              - iso2022-jp-2
-              - euc-cn
-              - ces-gbk
-              - hz
-              - ces-big5
-              - euc-kr
-              - iso2022-jp-3
-              - iso8859-1
-              - tis620
-              - cp874
-              - cp1252
-              - cp1251
+              - "jisx0201"
+              - "jisx0208"
+              - "jisx0212"
+              - "gb2312"
+              - "ksc5601-ex"
+              - "euc-jp"
+              - "sjis"
+              - "iso2022-jp"
+              - "iso2022-jp-1"
+              - "iso2022-jp-2"
+              - "euc-cn"
+              - "ces-gbk"
+              - "hz"
+              - "ces-big5"
+              - "euc-kr"
+              - "iso2022-jp-3"
+              - "iso8859-1"
+              - "tis620"
+              - "cp874"
+              - "cp1252"
+              - "cp1251"
             range_block: <value in [disable, enable]>
             retry_count: <integer>
             scan_bzip2: <value in [disable, enable]>

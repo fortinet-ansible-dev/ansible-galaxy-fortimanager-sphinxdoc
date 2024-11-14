@@ -162,9 +162,9 @@ Examples
           firewall_profileprotocoloptions_imap:
             inspect_all: <value in [disable, enable]>
             options:
-              - oversize
-              - fragmail
-              - no-content-summary
+              - "oversize"
+              - "fragmail"
+              - "no-content-summary"
             oversize_limit: <integer>
             ports: <list or integer>
             scan_bzip2: <value in [disable, enable]>

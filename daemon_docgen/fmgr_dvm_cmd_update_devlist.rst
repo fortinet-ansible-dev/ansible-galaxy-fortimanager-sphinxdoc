@@ -129,10 +129,10 @@ Examples
           dvm_cmd_update_devlist:
             adom: <string>
             flags:
-              - none
-              - create_task
-              - nonblocking
-              - log_dev
+              - "none"
+              - "create_task"
+              - "nonblocking"
+              - "log_dev"
             update_dev_member_list:
               -
                 name: <string>

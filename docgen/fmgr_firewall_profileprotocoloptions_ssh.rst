@@ -181,9 +181,9 @@ Examples
             comfort_amount: <integer>
             comfort_interval: <integer>
             options:
-              - oversize
-              - clientcomfort
-              - servercomfort
+              - "oversize"
+              - "clientcomfort"
+              - "servercomfort"
             oversize_limit: <integer>
             scan_bzip2: <value in [disable, enable]>
             uncompressed_nest_limit: <integer>

@@ -133,9 +133,9 @@ Examples
             ip6: <string>
             port: <integer>
             service_type: # <list or string>
-              - fds
-              - fct
-              - fai
+              - "fds"
+              - "fct"
+              - "fai"
 
 
 Return Values

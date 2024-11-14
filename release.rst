@@ -2,6 +2,33 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.8.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+
+Minor Changes
+-------------
+
+- Supported FortiManager 6.2.13, 6.4.15, 7.0.13, 7.2.8, 7.4.5, 7.6.1. Added 1 new module.
+- Supported check diff for some modules except "fmgr_generic". You can use "ansible-playbook -i <your-host-file> <your-playbook> --check --diff" to check what changes your playbook will make to the FortiManager.
+
+Bugfixes
+--------
+
+- Changed all input argument name in ansible built-in documentation to the underscore format. E.g., changed "var-name" to "var_name".
+- Improved code logic, reduced redundant requests for system information.
+
+New Modules
+-----------
+
+- fortinet.fortimanager.fmgr_pkg_videofilter_youtubekey - Configure YouTube API keys.
+
+
 Release Galaxy 2.7.0
 ~~~~~~~~~~~~~~~~~~~~
 

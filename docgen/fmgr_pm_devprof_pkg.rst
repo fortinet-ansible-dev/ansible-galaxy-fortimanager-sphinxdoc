@@ -154,15 +154,15 @@ Examples
           pm_devprof_pkg:
             description: <string>
             enabled_options:
-              - none
-              - dns
-              - ntp
-              - email
-              - admin
-              - snmp
-              - repmsg
-              - ftgd
-              - log
+              - "none"
+              - "dns"
+              - "ntp"
+              - "email"
+              - "admin"
+              - "snmp"
+              - "repmsg"
+              - "ftgd"
+              - "log"
             name: <string>
             oid: <integer>
             scope_member:

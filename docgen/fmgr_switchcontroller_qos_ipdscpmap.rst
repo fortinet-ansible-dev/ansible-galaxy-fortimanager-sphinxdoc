@@ -155,36 +155,36 @@ Examples
               -
                 cos_queue: <integer>
                 diffserv:
-                  - CS0
-                  - CS1
-                  - AF11
-                  - AF12
-                  - AF13
-                  - CS2
-                  - AF21
-                  - AF22
-                  - AF23
-                  - CS3
-                  - AF31
-                  - AF32
-                  - AF33
-                  - CS4
-                  - AF41
-                  - AF42
-                  - AF43
-                  - CS5
-                  - EF
-                  - CS6
-                  - CS7
+                  - "CS0"
+                  - "CS1"
+                  - "AF11"
+                  - "AF12"
+                  - "AF13"
+                  - "CS2"
+                  - "AF21"
+                  - "AF22"
+                  - "AF23"
+                  - "CS3"
+                  - "AF31"
+                  - "AF32"
+                  - "AF33"
+                  - "CS4"
+                  - "AF41"
+                  - "AF42"
+                  - "AF43"
+                  - "CS5"
+                  - "EF"
+                  - "CS6"
+                  - "CS7"
                 ip_precedence:
-                  - network-control
-                  - internetwork-control
-                  - critic-ecp
-                  - flashoverride
-                  - flash
-                  - immediate
-                  - priority
-                  - routine
+                  - "network-control"
+                  - "internetwork-control"
+                  - "critic-ecp"
+                  - "flashoverride"
+                  - "flash"
+                  - "immediate"
+                  - "priority"
+                  - "routine"
                 name: <string>
                 value: <string>
             name: <string>

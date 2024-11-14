@@ -135,8 +135,8 @@ Examples
             name: <string>
             traffic_source: <value in [client, server, both]>
             traffic_type:
-              - ssl
-              - ssh
+              - "ssl"
+              - "ssh"
 
 
 Return Values

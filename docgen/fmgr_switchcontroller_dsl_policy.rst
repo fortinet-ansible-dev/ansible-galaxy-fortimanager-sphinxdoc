@@ -164,10 +164,10 @@ Examples
             cpe_aele: <value in [disable, enable]>
             cpe_aele_mode: <value in [ELE_M0, ELE_DS, ELE_PB, ...]>
             cs:
-              - A43
-              - B43
-              - A43C
-              - V43
+              - "A43"
+              - "B43"
+              - "A43C"
+              - "V43"
             ds_bitswap: <value in [disable, enable]>
             name: <string>
             pause_frame: <value in [disable, enable]>

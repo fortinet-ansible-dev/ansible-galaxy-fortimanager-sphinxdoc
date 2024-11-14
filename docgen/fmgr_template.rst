@@ -163,8 +163,8 @@ Examples
             variables: <list or string>
             position: <value in [post-vdom-copy, prep-vdom-copy]>
             option:
-              - sdwan-overlay
-              - sdwan-manager
+              - "sdwan-overlay"
+              - "sdwan-manager"
 
 
 Return Values

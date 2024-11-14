@@ -536,7 +536,7 @@ Parameters
  <li><span class="li-head">conf_status</span> Conf status. <span class="li-normal">type: int</span>
  <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
  <div id="label157" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -840,7 +840,7 @@ Parameters
  <li><span class="li-head">hyperscale</span> Hyperscale. <span class="li-normal">type: int</span>
  <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
  <div id="label257" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">nsxt_service_name</span> Nsxt service name. <span class="li-normal">type: str</span>
@@ -852,25 +852,25 @@ Parameters
  <li><span class="li-head">private_key</span> Private key. <span class="li-normal">type: str</span>
  <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
  <div id="label261" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">private_key_status</span> Private key status. <span class="li-normal">type: int</span>
  <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
  <div id="label263" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vm_lic_overdue_since</span> Vm lic overdue since. <span class="li-normal">type: int</span>
  <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
  <div id="label265" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.8 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">first_tunnel_up</span> First tunnel up. <span class="li-normal">type: int</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">eip</span> Eip. <span class="li-normal">type: str</span>
@@ -888,7 +888,7 @@ Parameters
  <li><span class="li-head">hw_generation</span> Hw generation. <span class="li-normal">type: int</span>
  <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
  <div id="label273" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">relver_info</span> Relver info. <span class="li-normal">type: str</span>
@@ -906,44 +906,50 @@ Parameters
  <li><span class="li-head">ha_vsn</span> <b>(Alias name: ha.vsn)</b>  Ha. <span class="li-normal">type: str</span>
  <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
  <div id="label279" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ha_upgrade_mode</span> Ha upgrade mode. <span class="li-normal">type: int</span>
  <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
  <div id="label281" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vm_payg_status</span> Vm payg status. <span class="li-normal">type: int</span>
+ <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
+ <div id="label283" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">import_group_members</span> <b>(Alias name: import-group-members)</b>  Associations between devices and device groups. <span class="li-normal">type: list</span>
- <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
- <div id="label283" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">adom</span> Adom where the device group is located. <span class="li-normal">type: str</span>
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">dev</span> Dev. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">adom</span> Adom where the device group is located. <span class="li-normal">type: str</span>
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">grp</span> Target device group to associate device vdom with. <span class="li-normal">type: str</span>
+ <li><span class="li-head">dev</span> Dev. <span class="li-normal">type: str</span>
  <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
  <div id="label289" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <li><span class="li-head">grp</span> Target device group to associate device vdom with. <span class="li-normal">type: str</span>
  <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
  <div id="label291" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <a id='label292' href="javascript:ContentClick('label293', 'label292');" onmouseover="ContentPreview('label293');" onmouseout="ContentUnpreview('label293');" title="click to collapse or expand..."> more... </a>
+ <div id="label293" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
@@ -985,10 +991,10 @@ Examples
           dvm_cmd_import_devlist:
             adom: <string>
             flags:
-              - none
-              - create_task
-              - nonblocking
-              - log_dev
+              - "none"
+              - "create_task"
+              - "nonblocking"
+              - "log_dev"
             import_adom_members:
               -
                 adom: <string>
@@ -998,19 +1004,19 @@ Examples
               -
                 desc: <string>
                 flags:
-                  - migration
-                  - db_export
-                  - no_vpn_console
-                  - backup
-                  - other_devices
-                  - central_sdwan
-                  - is_autosync
-                  - per_device_wtp
-                  - policy_check_on_install
-                  - install_on_policy_check_fail
-                  - auto_push_cfg
-                  - per_device_fsw
-                  - install_deselect_all
+                  - "migration"
+                  - "db_export"
+                  - "no_vpn_console"
+                  - "backup"
+                  - "other_devices"
+                  - "central_sdwan"
+                  - "is_autosync"
+                  - "per_device_wtp"
+                  - "policy_check_on_install"
+                  - "install_on_policy_check_fail"
+                  - "auto_push_cfg"
+                  - "per_device_fsw"
+                  - "install_deselect_all"
                 log_db_retention_hours: <integer>
                 log_disk_quota: <integer>
                 log_disk_quota_alert_thres: <integer>
@@ -1024,37 +1030,37 @@ Examples
                 name: <string>
                 os_ver: <value in [unknown, 0.0, 1.0, ...]>
                 restricted_prds: # <list or string>
-                  - fos
-                  - foc
-                  - fml
-                  - fch
-                  - fwb
-                  - log
-                  - fct
-                  - faz
-                  - fsa
-                  - fsw
-                  - fmg
-                  - fdd
-                  - fac
-                  - fpx
-                  - fna
-                  - fdc
-                  - ffw
-                  - fsr
-                  - fad
-                  - fap
-                  - fxt
-                  - fts
-                  - fai
-                  - fwc
-                  - fis
-                  - fed
-                  - fabric
-                  - fpa
-                  - fca
-                  - ftc
-                  - fss
+                  - "fos"
+                  - "foc"
+                  - "fml"
+                  - "fch"
+                  - "fwb"
+                  - "log"
+                  - "fct"
+                  - "faz"
+                  - "fsa"
+                  - "fsw"
+                  - "fmg"
+                  - "fdd"
+                  - "fac"
+                  - "fpx"
+                  - "fna"
+                  - "fdc"
+                  - "ffw"
+                  - "fsr"
+                  - "fad"
+                  - "fap"
+                  - "fxt"
+                  - "fts"
+                  - "fai"
+                  - "fwc"
+                  - "fis"
+                  - "fed"
+                  - "fabric"
+                  - "fpa"
+                  - "fca"
+                  - "ftc"
+                  - "fss"
                 state: <integer>
                 uuid: <string>
                 create_time: <integer>
@@ -1094,26 +1100,26 @@ Examples
                 faz_used: <integer>
                 fex_cnt: <integer>
                 flags:
-                  - has_hdd
-                  - vdom_enabled
-                  - discover
-                  - reload
-                  - interim_build
-                  - offline_mode
-                  - is_model
-                  - fips_mode
-                  - linked_to_model
-                  - ip-conflict
-                  - faz-autosync
-                  - need_reset
-                  - backup_mode
-                  - azure_vwan_nva
-                  - fgsp_configured
-                  - cnf_mode
-                  - sase_managed
-                  - override_management_intf
-                  - sdwan_management
-                  - deny_api_access
+                  - "has_hdd"
+                  - "vdom_enabled"
+                  - "discover"
+                  - "reload"
+                  - "interim_build"
+                  - "offline_mode"
+                  - "is_model"
+                  - "fips_mode"
+                  - "linked_to_model"
+                  - "ip-conflict"
+                  - "faz-autosync"
+                  - "need_reset"
+                  - "backup_mode"
+                  - "azure_vwan_nva"
+                  - "fgsp_configured"
+                  - "cnf_mode"
+                  - "sase_managed"
+                  - "override_management_intf"
+                  - "sdwan_management"
+                  - "deny_api_access"
                 foslic_cpu: <integer>
                 foslic_dr_site: <value in [disable, enable]>
                 foslic_inst_time: <integer>
@@ -1121,13 +1127,13 @@ Examples
                 foslic_ram: <integer>
                 foslic_type: <value in [temporary, trial, regular, ...]>
                 foslic_utm:
-                  - fw
-                  - av
-                  - ips
-                  - app
-                  - url
-                  - utm
-                  - fwb
+                  - "fw"
+                  - "av"
+                  - "ips"
+                  - "app"
+                  - "url"
+                  - "utm"
+                  - "fwb"
                 fsw_cnt: <integer>
                 ha_group_id: <integer>
                 ha_group_name: <string>
@@ -1204,6 +1210,7 @@ Examples
                 cluster_worker: <string>
                 ha_vsn: <string>
                 ha_upgrade_mode: <integer>
+                vm_payg_status: <integer>
             import_group_members:
               -
                 adom: <string>

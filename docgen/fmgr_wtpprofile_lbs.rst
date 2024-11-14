@@ -286,6 +286,84 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ble_rtls</span> <b>(Alias name: ble-rtls)</b>  Set ble real time location service (rtls) support (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, polestar, evresys]</span> 
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_accumulation_interval</span> <b>(Alias name: ble-rtls-accumulation-interval)</b>  Time that measurements should be accumulated in seconds (default = 2). <span class="li-normal">type: int</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_asset_addrgrp_list</span> <b>(Alias name: ble-rtls-asset-addrgrp-list)</b>  Tags and asset addrgrp list to be reported. <span class="li-normal">type: list</span>
+ <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
+ <div id="label79" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_asset_uuid_list1</span> <b>(Alias name: ble-rtls-asset-uuid-list1)</b>  Tags and asset uuid list 1 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_asset_uuid_list2</span> <b>(Alias name: ble-rtls-asset-uuid-list2)</b>  Tags and asset uuid list 2 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
+ <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
+ <div id="label83" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_asset_uuid_list3</span> <b>(Alias name: ble-rtls-asset-uuid-list3)</b>  Tags and asset uuid list 3 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
+ <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
+ <div id="label85" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_asset_uuid_list4</span> <b>(Alias name: ble-rtls-asset-uuid-list4)</b>  Tags and asset uuid list 4 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
+ <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
+ <div id="label87" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_protocol</span> <b>(Alias name: ble-rtls-protocol)</b>  Select the protocol to report measurements, advertising data, or location data to cloud server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [WSS]</span> 
+ <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
+ <div id="label89" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_reporting_interval</span> <b>(Alias name: ble-rtls-reporting-interval)</b>  Time between reporting accumulated measurements in seconds (default = 2). <span class="li-normal">type: int</span>
+ <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
+ <div id="label91" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_server_fqdn</span> <b>(Alias name: ble-rtls-server-fqdn)</b>  Fqdn of ble real time location service (rtls) server. <span class="li-normal">type: str</span>
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_server_path</span> <b>(Alias name: ble-rtls-server-path)</b>  Path of ble real time location service (rtls) server. <span class="li-normal">type: str</span>
+ <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
+ <div id="label95" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_server_port</span> <b>(Alias name: ble-rtls-server-port)</b>  Port of ble real time location service (rtls) server (default = 443). <span class="li-normal">type: int</span>
+ <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <div id="label97" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ble_rtls_server_token</span> <b>(Alias name: ble-rtls-server-token)</b>  Access token of ble real time location service (rtls) server. <span class="li-normal">type: str</span>
+ <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
+ <div id="label99" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -359,6 +437,19 @@ Examples
             polestar_server_path: <string>
             polestar_server_port: <integer>
             polestar_server_token: <string>
+            ble_rtls: <value in [none, polestar, evresys]>
+            ble_rtls_accumulation_interval: <integer>
+            ble_rtls_asset_addrgrp_list: <list or string>
+            ble_rtls_asset_uuid_list1: <string>
+            ble_rtls_asset_uuid_list2: <string>
+            ble_rtls_asset_uuid_list3: <string>
+            ble_rtls_asset_uuid_list4: <string>
+            ble_rtls_protocol: <value in [WSS]>
+            ble_rtls_reporting_interval: <integer>
+            ble_rtls_server_fqdn: <string>
+            ble_rtls_server_path: <string>
+            ble_rtls_server_port: <integer>
+            ble_rtls_server_token: <string>
 
 
 Return Values

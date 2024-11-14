@@ -134,15 +134,15 @@ Examples
           waf_profile_method_methodpolicy:
             address: <string>
             allowed_methods:
-              - delete
-              - get
-              - head
-              - options
-              - post
-              - put
-              - trace
-              - others
-              - connect
+              - "delete"
+              - "get"
+              - "head"
+              - "options"
+              - "post"
+              - "put"
+              - "trace"
+              - "others"
+              - "connect"
             id: <integer>
             pattern: <string>
             regex: <value in [disable, enable]>

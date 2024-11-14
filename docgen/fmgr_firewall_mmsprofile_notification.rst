@@ -369,13 +369,13 @@ Examples
             carrier_endpoint_bwl_int_mode: <value in [hours, minutes]>
             carrier_endpoint_bwl_status: <value in [disable, enable]>
             days_allowed:
-              - sunday
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
+              - "sunday"
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
             detect_server: <value in [disable, enable]>
             dupe_int: <integer>
             dupe_int_mode: <value in [hours, minutes]>

@@ -166,13 +166,13 @@ Examples
             time: <string>
             user: <string>
             week_days:
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
-              - sunday
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
+              - "sunday"
 
 
 Return Values

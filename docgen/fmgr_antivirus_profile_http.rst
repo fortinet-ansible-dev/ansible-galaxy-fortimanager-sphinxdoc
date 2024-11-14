@@ -145,7 +145,7 @@ Parameters
  <li><span class="li-head">unknown_content_encoding</span> <b>(Alias name: unknown-content-encoding)</b>  Configure the action the fortigate unit will take on unknown content-encoding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, inspect, bypass]</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -185,34 +185,34 @@ Examples
           profile: <your own value>
           antivirus_profile_http:
             archive_block:
-              - encrypted
-              - corrupted
-              - multipart
-              - nested
-              - mailbomb
-              - unhandled
-              - partiallycorrupted
-              - fileslimit
-              - timeout
+              - "encrypted"
+              - "corrupted"
+              - "multipart"
+              - "nested"
+              - "mailbomb"
+              - "unhandled"
+              - "partiallycorrupted"
+              - "fileslimit"
+              - "timeout"
             archive_log:
-              - encrypted
-              - corrupted
-              - multipart
-              - nested
-              - mailbomb
-              - unhandled
-              - partiallycorrupted
-              - fileslimit
-              - timeout
+              - "encrypted"
+              - "corrupted"
+              - "multipart"
+              - "nested"
+              - "mailbomb"
+              - "unhandled"
+              - "partiallycorrupted"
+              - "fileslimit"
+              - "timeout"
             content_disarm: <value in [disable, enable]>
             emulator: <value in [disable, enable]>
             options:
-              - scan
-              - file-filter
-              - quarantine
-              - avquery
-              - avmonitor
-              - strict-file
+              - "scan"
+              - "file-filter"
+              - "quarantine"
+              - "avquery"
+              - "avmonitor"
+              - "strict-file"
             outbreak_prevention: <value in [disabled, files, full-archive, ...]>
             av_optimize: <value in [disable, enable]>
             av_scan: <value in [disable, monitor, block]>

@@ -151,9 +151,9 @@ Examples
             filter: <string>
             password_protected: <value in [any, yes]>
             protocol:
-              - smtp
-              - imap
-              - pop3
+              - "smtp"
+              - "imap"
+              - "pop3"
 
 
 Return Values

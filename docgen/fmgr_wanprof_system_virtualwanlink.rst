@@ -79,7 +79,7 @@ Parameters
  <li><span class="li-head">_dynamic_server</span> <b>(Alias name: _dynamic-server)</b>  Dynamic server. <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">addr_mode</span> <b>(Alias name: addr-mode)</b>  Address mode (ipv4 or ipv6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4, ipv6]</span> 
@@ -285,7 +285,7 @@ Parameters
  <li><span class="li-head">timeout</span> How long to wait before not receiving a reply from the server to consider the connetion attempt a failure (1 - 255 sec, default = 1). <span class="li-normal">type: int</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">ha_priority</span> <b>(Alias name: ha-priority)</b>  Ha election priority (1 - 50). <span class="li-normal">type: int</span>
@@ -341,7 +341,7 @@ Parameters
  <li><span class="li-head">_dynamic_member</span> <b>(Alias name: _dynamic-member)</b>  Dynamic member. <span class="li-normal">type: str</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">comment</span> Comments. <span class="li-normal">type: str</span>
@@ -893,9 +893,9 @@ Examples
                     jitter_threshold: <integer>
                     latency_threshold: <integer>
                     link_cost_factor:
-                      - latency
-                      - jitter
-                      - packet-loss
+                      - "latency"
+                      - "jitter"
+                      - "packet-loss"
                     packetloss_threshold: <integer>
                 threshold_alert_jitter: <integer>
                 threshold_alert_latency: <integer>

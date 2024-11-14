@@ -289,7 +289,7 @@ Parameters
  <li><span class="li-head">create_aa_pdp|init_pdp_ctx</span> <b>(Alias name: create-aa-pdp|init-pdp-ctx)</b>  Gtpv0 create aa pdp context (req 22, resp 23). <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, deny]</span> 
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.14</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
  <li><span class="li-head">ue_registration_query</span> <b>(Alias name: ue-registration-query)</b>  Ue registration query (req 61, resp ack 62). <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, deny]</span> 

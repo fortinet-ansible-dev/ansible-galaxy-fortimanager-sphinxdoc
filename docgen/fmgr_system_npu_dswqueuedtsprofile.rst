@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
 
 
 
@@ -67,31 +67,31 @@ Parameters
  <li><span class="li-head">iport</span> Set npu dsw dts in port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [EIF0, eif0, EIF1, eif1, EIF2, eif2, EIF3, eif3, EIF4, eif4, EIF5, eif5, EIF6, eif6, EIF7, eif7, HTX0, htx0, HTX1, htx1, SSE0, sse0, SSE1, sse1, SSE2, sse2, SSE3, sse3, RLT, rlt, DFR, dfr, IPSECI, ipseci, IPSECO, ipseco, IPTI, ipti, IPTO, ipto, VEP0, vep0, VEP2, vep2, VEP4, vep4, VEP6, vep6, IVS, ivs, L2TI1, l2ti1, L2TO, l2to, L2TI0, l2ti0, PLE, ple, SPATH, spath, QTM, qtm]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">oport</span> Set npu dsw dts out port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [EIF0, eif0, EIF1, eif1, EIF2, eif2, EIF3, eif3, EIF4, eif4, EIF5, eif5, EIF6, eif6, EIF7, eif7, HRX, hrx, SSE0, sse0, SSE1, sse1, SSE2, sse2, SSE3, sse3, RLT, rlt, DFR, dfr, IPSECI, ipseci, IPSECO, ipseco, IPTI, ipti, IPTO, ipto, VEP0, vep0, VEP2, vep2, VEP4, vep4, VEP6, vep6, IVS, ivs, L2TI1, l2ti1, L2TO, l2to, L2TI0, l2ti0, PLE, ple, SYNK, sync, NSS, nss, TSK, tsk, QTM, qtm, l2tO]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">profile_id</span> <b>(Alias name: profile-id)</b>  Set npu dsw dts profile id. <span class="li-normal">type: int</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">queue_select</span> <b>(Alias name: queue-select)</b>  Set npu dsw dts queue id select (0 - reset to default). <span class="li-normal">type: int</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>

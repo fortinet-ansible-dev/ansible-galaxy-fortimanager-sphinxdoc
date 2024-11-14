@@ -197,26 +197,26 @@ Examples
           mms_profile: <your own value>
           firewall_mmsprofile_flood:
             action1:
-              - log
-              - archive
-              - intercept
-              - block
-              - archive-first
-              - alert-notif
+              - "log"
+              - "archive"
+              - "intercept"
+              - "block"
+              - "archive-first"
+              - "alert-notif"
             action2:
-              - log
-              - archive
-              - intercept
-              - block
-              - archive-first
-              - alert-notif
+              - "log"
+              - "archive"
+              - "intercept"
+              - "block"
+              - "archive-first"
+              - "alert-notif"
             action3:
-              - log
-              - archive
-              - intercept
-              - block
-              - archive-first
-              - alert-notif
+              - "log"
+              - "archive"
+              - "intercept"
+              - "block"
+              - "archive-first"
+              - "alert-notif"
             block_time1: <integer>
             block_time2: <integer>
             block_time3: <integer>

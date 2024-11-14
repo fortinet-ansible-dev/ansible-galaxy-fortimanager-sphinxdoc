@@ -299,10 +299,10 @@ Examples
           state: present # <value in [present, absent]>
           switchcontroller_lldpprofile:
             802_1_tlvs:
-              - port-vlan-id
+              - "port-vlan-id"
             802_3_tlvs:
-              - max-frame-size
-              - power-negotiation
+              - "max-frame-size"
+              - "power-negotiation"
             auto_isl: <value in [disable, enable]>
             auto_isl_hello_timer: <integer>
             auto_isl_port_group: <integer>
@@ -323,10 +323,10 @@ Examples
                 vlan_intf: <string>
                 assign_vlan: <value in [disable, enable]>
             med_tlvs:
-              - inventory-management
-              - network-policy
-              - power-management
-              - location-identification
+              - "inventory-management"
+              - "network-policy"
+              - "power-management"
+              - "location-identification"
             name: <string>
             med_location_service:
               -

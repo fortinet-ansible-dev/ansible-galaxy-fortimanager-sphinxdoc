@@ -910,19 +910,19 @@ Parameters
  <li><span class="li-head">port_macauth</span> <b>(Alias name: port-macauth)</b>  Enable/disable lan port mac authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, radius, address-group]</span> 
  <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
  <div id="label281" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">port_macauth_reauth_timeout</span> <b>(Alias name: port-macauth-reauth-timeout)</b>  Lan port mac authentication re-authentication timeout value (default = 7200 sec). <span class="li-normal">type: int</span>
  <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
  <div id="label283" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">port_macauth_timeout</span> <b>(Alias name: port-macauth-timeout)</b>  Lan port mac authentication idle timeout value (default = 600 sec). <span class="li-normal">type: int</span>
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.12</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">additional_akms</span> <b>(Alias name: additional-akms)</b>  Additional akms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [akm6, akm24]</span> 
@@ -1156,25 +1156,25 @@ Parameters
  <li><span class="li-head">sae_h2e_only</span> <b>(Alias name: sae-h2e-only)</b>  Use hash-to-element-only mechanism for pwe derivation (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label362' href="javascript:ContentClick('label363', 'label362');" onmouseover="ContentPreview('label363');" onmouseout="ContentUnpreview('label363');" title="click to collapse or expand..."> more... </a>
  <div id="label363" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sae_pk</span> <b>(Alias name: sae-pk)</b>  Enable/disable wpa3 sae-pk (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label364' href="javascript:ContentClick('label365', 'label364');" onmouseover="ContentPreview('label365');" onmouseout="ContentUnpreview('label365');" title="click to collapse or expand..."> more... </a>
  <div id="label365" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sae_private_key</span> <b>(Alias name: sae-private-key)</b>  Private key used for wpa3 sae-pk authentication. <span class="li-normal">type: str</span>
  <a id='label366' href="javascript:ContentClick('label367', 'label366');" onmouseover="ContentPreview('label367');" onmouseout="ContentUnpreview('label367');" title="click to collapse or expand..."> more... </a>
  <div id="label367" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sticky_client_threshold_6g</span> <b>(Alias name: sticky-client-threshold-6g)</b>  Minimum signal level/threshold in dbm required for the 6g client to be serviced by the ap (-95 to -20, default = -76). <span class="li-normal">type: str</span>
  <a id='label368' href="javascript:ContentClick('label369', 'label368');" onmouseover="ContentPreview('label369');" onmouseout="ContentUnpreview('label369');" title="click to collapse or expand..."> more... </a>
  <div id="label369" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">application_dscp_marking</span> <b>(Alias name: application-dscp-marking)</b>  Enable/disable application attribute based dscp marking (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -1349,21 +1349,21 @@ Examples
             _centmgmt: <value in [disable, enable]>
             _dhcp_svr_id: <string>
             _intf_allowaccess:
-              - https
-              - ping
-              - ssh
-              - snmp
-              - http
-              - telnet
-              - fgfm
-              - auto-ipsec
-              - radius-acct
-              - probe-response
-              - capwap
-              - dnp
-              - ftm
-              - fabric
-              - speed-test
+              - "https"
+              - "ping"
+              - "ssh"
+              - "snmp"
+              - "http"
+              - "telnet"
+              - "fgfm"
+              - "auto-ipsec"
+              - "radius-acct"
+              - "probe-response"
+              - "capwap"
+              - "dnp"
+              - "ftm"
+              - "fabric"
+              - "speed-test"
             _intf_device_identification: <value in [disable, enable]>
             _intf_device_netscan: <value in [disable, enable]>
             _intf_dhcp_relay_ip: <list or string>
@@ -1375,15 +1375,15 @@ Examples
             _intf_ip: <string>
             _intf_ip6_address: <string>
             _intf_ip6_allowaccess:
-              - https
-              - ping
-              - ssh
-              - snmp
-              - http
-              - telnet
-              - any
-              - fgfm
-              - capwap
+              - "https"
+              - "ping"
+              - "ssh"
+              - "snmp"
+              - "http"
+              - "telnet"
+              - "any"
+              - "fgfm"
+              - "capwap"
             _intf_listen_forticlient_connection: <value in [disable, enable]>
             _scope:
               -
@@ -1396,25 +1396,25 @@ Examples
             auth: <value in [PSK, psk, RADIUS, ...]>
             broadcast_ssid: <value in [disable, enable]>
             broadcast_suppression:
-              - dhcp
-              - arp
-              - dhcp2
-              - arp2
-              - netbios-ns
-              - netbios-ds
-              - arp3
-              - dhcp-up
-              - dhcp-down
-              - arp-known
-              - arp-unknown
-              - arp-reply
-              - ipv6
-              - dhcp-starvation
-              - arp-poison
-              - all-other-mc
-              - all-other-bc
-              - arp-proxy
-              - dhcp-ucast
+              - "dhcp"
+              - "arp"
+              - "dhcp2"
+              - "arp2"
+              - "netbios-ns"
+              - "netbios-ds"
+              - "arp3"
+              - "dhcp-up"
+              - "dhcp-down"
+              - "arp-known"
+              - "arp-unknown"
+              - "arp-reply"
+              - "ipv6"
+              - "dhcp-starvation"
+              - "arp-poison"
+              - "all-other-mc"
+              - "all-other-bc"
+              - "arp-proxy"
+              - "dhcp-ucast"
             captive_portal_ac_name: <string>
             captive_portal_macauth_radius_secret: <list or string>
             captive_portal_macauth_radius_server: <string>
@@ -1466,9 +1466,9 @@ Examples
             multicast_rate: <value in [0, 6000, 12000, ...]>
             okc: <value in [disable, enable]>
             owe_groups:
-              - 19
-              - 20
-              - 21
+              - "19"
+              - "20"
+              - "21"
             owe_transition: <value in [disable, enable]>
             owe_transition_ssid: <string>
             passphrase: <list or string>
@@ -1491,156 +1491,156 @@ Examples
             radius_mac_auth_usergroups: <list or string>
             radius_server: <string>
             rates_11a:
-              - 1
-              - 1-basic
-              - 2
-              - 2-basic
-              - 5.5
-              - 5.5-basic
-              - 6
-              - 6-basic
-              - 9
-              - 9-basic
-              - 12
-              - 12-basic
-              - 18
-              - 18-basic
-              - 24
-              - 24-basic
-              - 36
-              - 36-basic
-              - 48
-              - 48-basic
-              - 54
-              - 54-basic
-              - 11
-              - 11-basic
+              - "1"
+              - "1-basic"
+              - "2"
+              - "2-basic"
+              - "5.5"
+              - "5.5-basic"
+              - "6"
+              - "6-basic"
+              - "9"
+              - "9-basic"
+              - "12"
+              - "12-basic"
+              - "18"
+              - "18-basic"
+              - "24"
+              - "24-basic"
+              - "36"
+              - "36-basic"
+              - "48"
+              - "48-basic"
+              - "54"
+              - "54-basic"
+              - "11"
+              - "11-basic"
             rates_11ac_ss12:
-              - mcs0/1
-              - mcs1/1
-              - mcs2/1
-              - mcs3/1
-              - mcs4/1
-              - mcs5/1
-              - mcs6/1
-              - mcs7/1
-              - mcs8/1
-              - mcs9/1
-              - mcs0/2
-              - mcs1/2
-              - mcs2/2
-              - mcs3/2
-              - mcs4/2
-              - mcs5/2
-              - mcs6/2
-              - mcs7/2
-              - mcs8/2
-              - mcs9/2
-              - mcs10/1
-              - mcs11/1
-              - mcs10/2
-              - mcs11/2
+              - "mcs0/1"
+              - "mcs1/1"
+              - "mcs2/1"
+              - "mcs3/1"
+              - "mcs4/1"
+              - "mcs5/1"
+              - "mcs6/1"
+              - "mcs7/1"
+              - "mcs8/1"
+              - "mcs9/1"
+              - "mcs0/2"
+              - "mcs1/2"
+              - "mcs2/2"
+              - "mcs3/2"
+              - "mcs4/2"
+              - "mcs5/2"
+              - "mcs6/2"
+              - "mcs7/2"
+              - "mcs8/2"
+              - "mcs9/2"
+              - "mcs10/1"
+              - "mcs11/1"
+              - "mcs10/2"
+              - "mcs11/2"
             rates_11ac_ss34:
-              - mcs0/3
-              - mcs1/3
-              - mcs2/3
-              - mcs3/3
-              - mcs4/3
-              - mcs5/3
-              - mcs6/3
-              - mcs7/3
-              - mcs8/3
-              - mcs9/3
-              - mcs0/4
-              - mcs1/4
-              - mcs2/4
-              - mcs3/4
-              - mcs4/4
-              - mcs5/4
-              - mcs6/4
-              - mcs7/4
-              - mcs8/4
-              - mcs9/4
-              - mcs10/3
-              - mcs11/3
-              - mcs10/4
-              - mcs11/4
+              - "mcs0/3"
+              - "mcs1/3"
+              - "mcs2/3"
+              - "mcs3/3"
+              - "mcs4/3"
+              - "mcs5/3"
+              - "mcs6/3"
+              - "mcs7/3"
+              - "mcs8/3"
+              - "mcs9/3"
+              - "mcs0/4"
+              - "mcs1/4"
+              - "mcs2/4"
+              - "mcs3/4"
+              - "mcs4/4"
+              - "mcs5/4"
+              - "mcs6/4"
+              - "mcs7/4"
+              - "mcs8/4"
+              - "mcs9/4"
+              - "mcs10/3"
+              - "mcs11/3"
+              - "mcs10/4"
+              - "mcs11/4"
             rates_11bg:
-              - 1
-              - 1-basic
-              - 2
-              - 2-basic
-              - 5.5
-              - 5.5-basic
-              - 6
-              - 6-basic
-              - 9
-              - 9-basic
-              - 12
-              - 12-basic
-              - 18
-              - 18-basic
-              - 24
-              - 24-basic
-              - 36
-              - 36-basic
-              - 48
-              - 48-basic
-              - 54
-              - 54-basic
-              - 11
-              - 11-basic
+              - "1"
+              - "1-basic"
+              - "2"
+              - "2-basic"
+              - "5.5"
+              - "5.5-basic"
+              - "6"
+              - "6-basic"
+              - "9"
+              - "9-basic"
+              - "12"
+              - "12-basic"
+              - "18"
+              - "18-basic"
+              - "24"
+              - "24-basic"
+              - "36"
+              - "36-basic"
+              - "48"
+              - "48-basic"
+              - "54"
+              - "54-basic"
+              - "11"
+              - "11-basic"
             rates_11n_ss12:
-              - mcs0/1
-              - mcs1/1
-              - mcs2/1
-              - mcs3/1
-              - mcs4/1
-              - mcs5/1
-              - mcs6/1
-              - mcs7/1
-              - mcs8/2
-              - mcs9/2
-              - mcs10/2
-              - mcs11/2
-              - mcs12/2
-              - mcs13/2
-              - mcs14/2
-              - mcs15/2
+              - "mcs0/1"
+              - "mcs1/1"
+              - "mcs2/1"
+              - "mcs3/1"
+              - "mcs4/1"
+              - "mcs5/1"
+              - "mcs6/1"
+              - "mcs7/1"
+              - "mcs8/2"
+              - "mcs9/2"
+              - "mcs10/2"
+              - "mcs11/2"
+              - "mcs12/2"
+              - "mcs13/2"
+              - "mcs14/2"
+              - "mcs15/2"
             rates_11n_ss34:
-              - mcs16/3
-              - mcs17/3
-              - mcs18/3
-              - mcs19/3
-              - mcs20/3
-              - mcs21/3
-              - mcs22/3
-              - mcs23/3
-              - mcs24/4
-              - mcs25/4
-              - mcs26/4
-              - mcs27/4
-              - mcs28/4
-              - mcs29/4
-              - mcs30/4
-              - mcs31/4
+              - "mcs16/3"
+              - "mcs17/3"
+              - "mcs18/3"
+              - "mcs19/3"
+              - "mcs20/3"
+              - "mcs21/3"
+              - "mcs22/3"
+              - "mcs23/3"
+              - "mcs24/4"
+              - "mcs25/4"
+              - "mcs26/4"
+              - "mcs27/4"
+              - "mcs28/4"
+              - "mcs29/4"
+              - "mcs30/4"
+              - "mcs31/4"
             sae_groups:
-              - 1
-              - 2
-              - 5
-              - 14
-              - 15
-              - 16
-              - 17
-              - 18
-              - 19
-              - 20
-              - 21
-              - 27
-              - 28
-              - 29
-              - 30
-              - 31
+              - "1"
+              - "2"
+              - "5"
+              - "14"
+              - "15"
+              - "16"
+              - "17"
+              - "18"
+              - "19"
+              - "20"
+              - "21"
+              - "27"
+              - "28"
+              - "29"
+              - "30"
+              - "31"
             sae_password: <list or string>
             schedule: <list or string>
             security: <value in [None, WEP64, wep64, ...]>
@@ -1670,15 +1670,15 @@ Examples
             access_control_list: <string>
             captive_portal_auth_timeout: <integer>
             ipv6_rules:
-              - drop-icmp6ra
-              - drop-icmp6rs
-              - drop-llmnr6
-              - drop-icmp6mld2
-              - drop-dhcp6s
-              - drop-dhcp6c
-              - ndp-proxy
-              - drop-ns-dad
-              - drop-ns-nondad
+              - "drop-icmp6ra"
+              - "drop-icmp6rs"
+              - "drop-llmnr6"
+              - "drop-icmp6mld2"
+              - "drop-dhcp6s"
+              - "drop-dhcp6c"
+              - "ndp-proxy"
+              - "drop-ns-dad"
+              - "drop-ns-nondad"
             sticky_client_remove: <value in [disable, enable]>
             sticky_client_threshold_2g: <string>
             sticky_client_threshold_5g: <string>
@@ -1690,8 +1690,8 @@ Examples
             port_macauth_reauth_timeout: <integer>
             port_macauth_timeout: <integer>
             additional_akms:
-              - akm6
-              - akm24
+              - "akm6"
+              - "akm24"
             bstm_disassociation_imminent: <value in [disable, enable]>
             bstm_load_balancing_disassoc_timer: <integer>
             bstm_rssi_disassoc_timer: <integer>
@@ -1716,9 +1716,9 @@ Examples
             auth_cert: <string>
             auth_portal_addr: <string>
             beacon_advertising:
-              - name
-              - model
-              - serial-number
+              - "name"
+              - "model"
+              - "serial-number"
             ips_sensor: <string>
             l3_roaming: <value in [disable, enable]>
             local_standalone_dns: <value in [disable, enable]>
@@ -1727,55 +1727,55 @@ Examples
             radius_mac_mpsk_auth: <value in [disable, enable]>
             radius_mac_mpsk_timeout: <integer>
             rates_11ax_ss12:
-              - mcs0/1
-              - mcs1/1
-              - mcs2/1
-              - mcs3/1
-              - mcs4/1
-              - mcs5/1
-              - mcs6/1
-              - mcs7/1
-              - mcs8/1
-              - mcs9/1
-              - mcs10/1
-              - mcs11/1
-              - mcs0/2
-              - mcs1/2
-              - mcs2/2
-              - mcs3/2
-              - mcs4/2
-              - mcs5/2
-              - mcs6/2
-              - mcs7/2
-              - mcs8/2
-              - mcs9/2
-              - mcs10/2
-              - mcs11/2
+              - "mcs0/1"
+              - "mcs1/1"
+              - "mcs2/1"
+              - "mcs3/1"
+              - "mcs4/1"
+              - "mcs5/1"
+              - "mcs6/1"
+              - "mcs7/1"
+              - "mcs8/1"
+              - "mcs9/1"
+              - "mcs10/1"
+              - "mcs11/1"
+              - "mcs0/2"
+              - "mcs1/2"
+              - "mcs2/2"
+              - "mcs3/2"
+              - "mcs4/2"
+              - "mcs5/2"
+              - "mcs6/2"
+              - "mcs7/2"
+              - "mcs8/2"
+              - "mcs9/2"
+              - "mcs10/2"
+              - "mcs11/2"
             rates_11ax_ss34:
-              - mcs0/3
-              - mcs1/3
-              - mcs2/3
-              - mcs3/3
-              - mcs4/3
-              - mcs5/3
-              - mcs6/3
-              - mcs7/3
-              - mcs8/3
-              - mcs9/3
-              - mcs10/3
-              - mcs11/3
-              - mcs0/4
-              - mcs1/4
-              - mcs2/4
-              - mcs3/4
-              - mcs4/4
-              - mcs5/4
-              - mcs6/4
-              - mcs7/4
-              - mcs8/4
-              - mcs9/4
-              - mcs10/4
-              - mcs11/4
+              - "mcs0/3"
+              - "mcs1/3"
+              - "mcs2/3"
+              - "mcs3/3"
+              - "mcs4/3"
+              - "mcs5/3"
+              - "mcs6/3"
+              - "mcs7/3"
+              - "mcs8/3"
+              - "mcs9/3"
+              - "mcs10/3"
+              - "mcs11/3"
+              - "mcs0/4"
+              - "mcs1/4"
+              - "mcs2/4"
+              - "mcs3/4"
+              - "mcs4/4"
+              - "mcs5/4"
+              - "mcs6/4"
+              - "mcs7/4"
+              - "mcs8/4"
+              - "mcs9/4"
+              - "mcs10/4"
+              - "mcs11/4"
             scan_botnet_connections: <value in [disable, block, monitor]>
             utm_log: <value in [disable, enable]>
             utm_status: <value in [disable, enable]>

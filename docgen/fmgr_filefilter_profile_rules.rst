@@ -151,14 +151,14 @@ Examples
             name: <string>
             password_protected: <value in [any, yes]>
             protocol:
-              - imap
-              - smtp
-              - pop3
-              - http
-              - ftp
-              - mapi
-              - cifs
-              - ssh
+              - "imap"
+              - "smtp"
+              - "pop3"
+              - "http"
+              - "ftp"
+              - "mapi"
+              - "cifs"
+              - "ssh"
 
 
 Return Values

@@ -141,10 +141,10 @@ Examples
           dvm_cmd_reload_devlist:
             adom: <string>
             flags:
-              - none
-              - create_task
-              - nonblocking
-              - log_dev
+              - "none"
+              - "create_task"
+              - "nonblocking"
+              - "log_dev"
             from: <value in [um, fgfm, apache, ...]>
             reload_dev_member_list:
               -

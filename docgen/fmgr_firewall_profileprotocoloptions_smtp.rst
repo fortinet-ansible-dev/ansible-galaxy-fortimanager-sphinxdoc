@@ -168,10 +168,10 @@ Examples
           firewall_profileprotocoloptions_smtp:
             inspect_all: <value in [disable, enable]>
             options:
-              - oversize
-              - fragmail
-              - no-content-summary
-              - splice
+              - "oversize"
+              - "fragmail"
+              - "no-content-summary"
+              - "splice"
             oversize_limit: <integer>
             ports: <list or integer>
             scan_bzip2: <value in [disable, enable]>

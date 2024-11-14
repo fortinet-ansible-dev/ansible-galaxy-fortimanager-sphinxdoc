@@ -365,15 +365,15 @@ Examples
           state: present # <value in [present, absent]>
           icap_profile:
             methods:
-              - delete
-              - get
-              - head
-              - options
-              - post
-              - put
-              - trace
-              - other
-              - connect
+              - "delete"
+              - "get"
+              - "head"
+              - "options"
+              - "post"
+              - "put"
+              - "trace"
+              - "other"
+              - "connect"
             name: <string>
             replacemsg_group: <string>
             request: <value in [disable, enable]>
@@ -411,10 +411,10 @@ Examples
             204_size_limit: <integer>
             chunk_encap: <value in [disable, enable]>
             extension_feature:
-              - scan-progress
+              - "scan-progress"
             file_transfer:
-              - ssh
-              - ftp
+              - "ssh"
+              - "ftp"
             file_transfer_failure: <value in [error, bypass]>
             file_transfer_path: <string>
             file_transfer_server: <string>

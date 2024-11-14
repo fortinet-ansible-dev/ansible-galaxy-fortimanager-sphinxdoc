@@ -59,7 +59,7 @@ Parameters
           <span class="li-normal">v6.4.6->latest</span>
         </li>
         <li><span class="li-required">application_casi_profile_entries</span> - available versions:
-          <span class="li-normal">v6.2.0->v6.2.12</span>
+          <span class="li-normal">v6.2.0->v6.2.13</span>
         </li>
         <li><span class="li-required">application_list_defaultnetworkservices</span> - available versions:
           <span class="li-normal">v6.2.0->latest</span>
@@ -104,7 +104,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">dnsfilter_urlfilter_entries</span> - available versions:
-          <span class="li-normal">v6.2.0->v6.2.12</span>
+          <span class="li-normal">v6.2.0->v6.2.13</span>
         </li>
         <li><span class="li-required">emailfilter_blockallowlist_entries</span> - available versions:
           <span class="li-normal">v7.0.0->latest</span>
@@ -198,10 +198,12 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
@@ -217,37 +219,43 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_explicitproxypolicy</span> - available versions:
-          <span class="li-normal">v6.2.0->v6.2.12</span>
+          <span class="li-normal">v6.2.0->v6.2.13</span>
         </li>
         <li><span class="li-required">pkg_firewall_explicitproxypolicy_identitybasedpolicy</span> - available versions:
-          <span class="li-normal">v6.2.0->v6.2.12</span>
+          <span class="li-normal">v6.2.0->v6.2.13</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>,
+          <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>,
+          <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>,
+          <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>,
+          <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
+          <span class="li-normal">v7.2.6->v7.2.8</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
@@ -335,7 +343,7 @@ Parameters
           <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_gcpprojectlist</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>,
+          <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_nic</span> - available versions:
@@ -375,7 +383,7 @@ Parameters
           <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">vpn_ssl_settings_authenticationrule</span> - available versions:
-          <span class="li-normal">v6.2.6->v6.2.12</span>,
+          <span class="li-normal">v6.2.6->v6.2.13</span>,
           <span class="li-normal">v6.4.2->latest</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_bookmarkgroup</span> - available versions:

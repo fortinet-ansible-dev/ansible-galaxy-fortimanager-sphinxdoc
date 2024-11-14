@@ -209,17 +209,17 @@ Examples
             bss_color: <integer>
             bss_color_mode: <value in [auto, static]>
             channel:
-              - CH1
-              - CH2
-              - CH3
-              - CH4
-              - CH5
-              - CH6
-              - CH7
-              - CH8
-              - CH9
-              - CH10
-              - CH11
+              - "CH1"
+              - "CH2"
+              - "CH3"
+              - "CH4"
+              - "CH5"
+              - "CH6"
+              - "CH7"
+              - "CH8"
+              - "CH9"
+              - "CH10"
+              - "CH11"
             extension_channel: <value in [auto, higher, lower]>
             guard_interval: <value in [auto, 400ns, 800ns]>
             lan_ext_vap: <list or string>

@@ -215,9 +215,9 @@ Examples
           state: present # <value in [present, absent]>
           bleprofile:
             advertising:
-              - ibeacon
-              - eddystone-uid
-              - eddystone-url
+              - "ibeacon"
+              - "eddystone-uid"
+              - "eddystone-url"
             beacon_interval: <integer>
             ble_scanning: <value in [disable, enable]>
             comment: <string>

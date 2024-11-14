@@ -367,7 +367,7 @@ Parameters
  <li><span class="li-head">rogue_scan</span> <b>(Alias name: rogue-scan)</b>  Enable/disable rogue ap on-wire scan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.13</code></p>
  </div>
  </li>
  <li><span class="li-head">ap_scan_threshold</span> <b>(Alias name: ap-scan-threshold)</b>  Minimum signal level/threshold in dbm required for the ap to report detected rogue ap (-95 to -20, default = -90). <span class="li-normal">type: str</span>
@@ -426,13 +426,13 @@ Examples
           widsprofile:
             ap_auto_suppress: <value in [disable, enable]>
             ap_bgscan_disable_day:
-              - sunday
-              - monday
-              - tuesday
-              - wednesday
-              - thursday
-              - friday
-              - saturday
+              - "sunday"
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+              - "saturday"
             ap_bgscan_disable_end: <string>
             ap_bgscan_disable_start: <string>
             ap_bgscan_duration: <integer>

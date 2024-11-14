@@ -191,13 +191,13 @@ Parameters
  <li><span class="li-head">shell_access</span> <b>(Alias name: shell-access)</b>  Enable/disable shell access. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">shell_password</span> <b>(Alias name: shell-password)</b>  Password for shell access. <span class="li-normal">type: list</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">show_add_multiple</span> <b>(Alias name: show-add-multiple)</b>  Show add multiple button. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
@@ -305,7 +305,7 @@ Parameters
  <li><span class="li-head">central_ftgd_local_cat_id</span> <b>(Alias name: central-ftgd-local-cat-id)</b>  Central fortiguard local category id management, and do not auto assign id during installation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">idle_timeout_sso</span> Idle timeout for sso sessions (60 - 28800 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 900</span> 
@@ -329,7 +329,7 @@ Parameters
  <li><span class="li-head">fsw_ignore_platform_check</span> <b>(Alias name: fsw-ignore-platform-check)</b>  Enable/disable fortiswitch manager switch platform support check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.12</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">rtm_max_monitor_by_days</span> <b>(Alias name: rtm-max-monitor-by-days)</b>  Maximum rtm monitor (sdwan, traffic shaping, etc) history by days (1 - 180). <span class="li-normal">type: int</span> <span class="li-normal">default: 180</span> 

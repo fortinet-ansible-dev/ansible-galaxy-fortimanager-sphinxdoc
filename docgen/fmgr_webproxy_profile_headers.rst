@@ -165,8 +165,8 @@ Examples
             dstaddr: <list or string>
             dstaddr6: <list or string>
             protocol:
-              - https
-              - http
+              - "https"
+              - "http"
 
 
 Return Values
