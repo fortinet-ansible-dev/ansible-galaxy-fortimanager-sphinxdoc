@@ -2,7 +2,7 @@
 Release Notes
 ==============================
 
-Release Galaxy 2.8.0
+Release Galaxy 2.8.1
 ~~~~~~~~~~~~~~~~~~~~
 
 Release Target
@@ -10,6 +10,20 @@ Release Target
 
 FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
 
+
+Bugfixes
+-------------
+
+- Fixed a bug where rc_failed and rc_succeeded did not work.
+
+
+Release Galaxy 2.8.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
 
 Minor Changes
 -------------
