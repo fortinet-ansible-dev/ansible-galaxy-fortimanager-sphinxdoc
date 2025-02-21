@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Select the protocol to use for authentication (default = http). <span class="li-normal">type: str</span> <span class="li-normal">choices: [http, ftp, socks, ssh]</span> 
+ <li><span class="li-head">protocol</span> Select the protocol to use for authentication (default = http). <span class="li-normal">type: str</span> <span class="li-normal">choices: [http, ftp, socks, ssh, ztna-portal]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>

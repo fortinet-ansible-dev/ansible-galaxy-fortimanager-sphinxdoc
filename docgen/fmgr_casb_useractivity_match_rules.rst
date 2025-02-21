@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user-activity</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">user_activity</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">match</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">casb_useractivity_match_rules</span> - CASB user activity rules. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -114,10 +114,22 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Casb user activity rule type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [domains, host, path, header, header-value, method]</span> 
+ <li><span class="li-head">type</span> Casb user activity rule type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [domains, host, path, header, header-value, method, body]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb user activity match rule body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span> 
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">jq</span> Casb user activity rule match jq script. <span class="li-normal">type: str</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -167,6 +179,8 @@ Examples
             methods: <list or string>
             negate: <value in [disable, enable]>
             type: <value in [domains, host, path, ...]>
+            body_type: <value in [json]>
+            jq: <string>
 
 
 Return Values

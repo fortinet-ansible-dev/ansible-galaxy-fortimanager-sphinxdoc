@@ -88,7 +88,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">method</span> Authentication methods (default = basic). <span class="li-normal">type: list</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, x-auth-user, saml-sp]</span> 
+ <li><span class="li-head">method</span> Authentication methods (default = basic). <span class="li-normal">type: list</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, x-auth-user, saml-sp, entra-sso]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -148,6 +148,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">external_idp</span> <b>(Alias name: external-idp)</b>  External identity provider configuration. <span class="li-normal">type: list</span>
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -201,6 +207,7 @@ Examples
               - "cert"
               - "x-auth-user"
               - "saml-sp"
+              - "entra-sso"
             name: <string>
             negotiate_ntlm: <value in [disable, enable]>
             require_tfa: <value in [disable, enable]>
@@ -210,6 +217,7 @@ Examples
             saml_server: <string>
             saml_timeout: <integer>
             user_cert: <value in [disable, enable]>
+            external_idp: <list or string>
 
 
 Return Values

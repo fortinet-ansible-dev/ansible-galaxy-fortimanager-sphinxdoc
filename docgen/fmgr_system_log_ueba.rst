@@ -74,6 +74,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">hostname_ep_unifier</span> <b>(Alias name: hostname-ep-unifier)</b>  Hostname ep unifier. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -110,6 +116,7 @@ Examples
           system_log_ueba:
             ip_only_ep: <value in [disable, enable]>
             ip_unique_scope: <value in [adom, vdom]>
+            hostname_ep_unifier: <value in [disable, enable]>
 
 
 Return Values

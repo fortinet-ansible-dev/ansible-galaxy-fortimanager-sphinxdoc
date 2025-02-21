@@ -647,6 +647,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Enable/disable requesting client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">empty_cert_action</span> <b>(Alias name: empty-cert-action)</b>  Action for an empty client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [accept, block, accept-unmanageable]</span> 
+ <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">user_agent_detect</span> <b>(Alias name: user-agent-detect)</b>  Enable/disable detecting device type by http user-agent if no client certificate is provided. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

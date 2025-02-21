@@ -112,7 +112,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">direction</span> Casb operation direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request]</span> 
+ <li><span class="li-head">direction</span> Casb operation direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request, response]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -142,7 +142,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">target</span> Casb operation target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path]</span> 
+ <li><span class="li-head">target</span> Casb operation target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path, body]</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -242,49 +242,125 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Casb user activity rule type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [domains, host, path, header, header-value, method]</span> 
+ <li><span class="li-head">type</span> Casb user activity rule type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [domains, host, path, header, header-value, method, body]</span> 
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb user activity match rule body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span> 
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">jq</span> Casb user activity rule match jq script. <span class="li-normal">type: str</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">strategy</span> Casb user activity rules strategy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span> 
- <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
- </div>
- </li>
- </ul>
- </li>
- <li><span class="li-head">match_strategy</span> <b>(Alias name: match-strategy)</b>  Casb user activity match strategy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span> 
- <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
- <div id="label63" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">name</span> Casb user activity name. <span class="li-normal">type: str</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Casb user activity type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [built-in, customized]</span> 
+ <li><span class="li-head">tenant_extraction</span> <b>(Alias name: tenant-extraction)</b>  Tenant extraction. <span class="li-normal">type: dict</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">filters</span> Filters. <span class="li-normal">type: list</span>
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span> 
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">direction</span> Casb tenant extraction filter direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request, response]</span> 
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">header_name</span> <b>(Alias name: header-name)</b>  Casb tenant extraction filter header name. <span class="li-normal">type: str</span>
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">id</span> Casb tenant extraction filter id. <span class="li-normal">type: int</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">place</span> Casb tenant extraction filter place type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [path, header, body]</span> 
+ <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
+ <div id="label79" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">jq</span> Casb user activity tenant extraction jq script. <span class="li-normal">type: str</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Enable/disable casb tenant extraction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
+ <div id="label83" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">type</span> Casb user activity tenant extraction type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json-query]</span> 
+ <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
+ <div id="label85" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">match_strategy</span> <b>(Alias name: match-strategy)</b>  Casb user activity match strategy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span> 
+ <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
+ <div id="label87" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">name</span> Casb user activity name. <span class="li-normal">type: str</span>
+ <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
+ <div id="label89" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">type</span> Casb user activity type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [built-in, customized]</span> 
+ <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
+ <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">uuid</span> Universally unique identifier (uuid; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
- <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
- <div id="label69" style="display:none">
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Casb user activity status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
- <div id="label71" style="display:none">
+ <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
+ <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
@@ -334,12 +410,12 @@ Examples
                   -
                     action: <value in [append, prepend, replace, ...]>
                     case_sensitive: <value in [disable, enable]>
-                    direction: <value in [request]>
+                    direction: <value in [request, response]>
                     header_name: <string>
                     name: <string>
                     search_key: <string>
                     search_pattern: <value in [simple, substr, regexp]>
-                    target: <value in [header, path]>
+                    target: <value in [header, path, body]>
                     value_from_input: <value in [disable, enable]>
                     values: <list or string>
                 status: <value in [disable, enable]>
@@ -358,7 +434,20 @@ Examples
                     methods: <list or string>
                     negate: <value in [disable, enable]>
                     type: <value in [domains, host, path, ...]>
+                    body_type: <value in [json]>
+                    jq: <string>
                 strategy: <value in [or, and]>
+                tenant_extraction:
+                  filters:
+                    -
+                      body_type: <value in [json]>
+                      direction: <value in [request, response]>
+                      header_name: <string>
+                      id: <integer>
+                      place: <value in [path, header, body]>
+                  jq: <string>
+                  status: <value in [disable, enable]>
+                  type: <value in [json-query]>
             match_strategy: <value in [or, and]>
             name: <string>
             type: <value in [built-in, customized]>

@@ -397,6 +397,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fortiguard</span> Enable/disable use of fortiguard predefined server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortiguard_name</span> <b>(Alias name: fortiguard-name)</b>  Predefined health-check target name. <span class="li-normal">type: list</span>
+ <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -495,6 +507,8 @@ Examples
             sla_id_redistribute: <integer>
             class_id: <string>
             source6: <string>
+            fortiguard: <value in [disable, enable]>
+            fortiguard_name: <list or string>
 
 
 Return Values

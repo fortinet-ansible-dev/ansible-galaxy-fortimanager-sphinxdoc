@@ -68,6 +68,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">update_server_location</span> <b>(Alias name: update-server-location)</b>  Update server location. <span class="li-normal">type: str</span> <span class="li-normal">choices: [global, usa, eu]</span>  <span class="li-normal">default: global</span> 
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -103,6 +109,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           fmupdate_publicnetwork:
             status: <value in [disable, enable]>
+            update_server_location: <value in [global, usa, eu]>
 
 
 Return Values

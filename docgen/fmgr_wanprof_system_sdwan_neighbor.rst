@@ -113,6 +113,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">route_metric</span> <b>(Alias name: route-metric)</b>  Route-metric of neighbor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [preferable, priority]</span> 
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -158,6 +164,7 @@ Examples
             minimum_sla_meet_members: <integer>
             mode: <value in [sla, speedtest]>
             service_id: <string>
+            route_metric: <value in [preferable, priority]>
 
 
 Return Values

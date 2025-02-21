@@ -112,6 +112,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Configure syslog server type (default = standard). <span class="li-normal">type: str</span> <span class="li-normal">choices: [standard, fortianalyzer]</span> 
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -156,6 +162,7 @@ Examples
             server_ip: <string>
             server_port: <integer>
             server_status: <value in [disable, enable]>
+            server_type: <value in [standard, fortianalyzer]>
 
 
 Return Values

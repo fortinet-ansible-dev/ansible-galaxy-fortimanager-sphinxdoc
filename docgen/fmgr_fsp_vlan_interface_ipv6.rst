@@ -528,6 +528,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ip6_adv_rio</span> <b>(Alias name: ip6-adv-rio)</b>  Enable/disable sending advertisements with route information option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
+ <div id="label153" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip6_route_pref</span> <b>(Alias name: ip6-route-pref)</b>  Set route preference to the interface (default = medium). <span class="li-normal">type: str</span> <span class="li-normal">choices: [medium, high, low]</span> 
+ <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
+ <div id="label155" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -658,6 +670,8 @@ Examples
             dhcp6_relay_source_interface: <value in [disable, enable]>
             dhcp6_relay_interface_id: <string>
             dhcp6_relay_source_ip: <string>
+            ip6_adv_rio: <value in [disable, enable]>
+            ip6_route_pref: <value in [medium, high, low]>
 
 
 Return Values

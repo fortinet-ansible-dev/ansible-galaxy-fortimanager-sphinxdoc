@@ -192,14 +192,32 @@ Parameters
       <li><span class="li-required">casb_profile_saasapplication_accessrule</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
       </li>
+      <li><span class="li-required">casb_profile_saasapplication_accessrule_attributefilter</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
+      <li><span class="li-required">casb_profile_saasapplication_advancedtenantcontrol</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
+      <li><span class="li-required">casb_profile_saasapplication_advancedtenantcontrol_attribute</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
       <li><span class="li-required">casb_profile_saasapplication_customcontrol</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
+      </li>
+      <li><span class="li-required">casb_profile_saasapplication_customcontrol_attributefilter</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">casb_profile_saasapplication_customcontrol_option</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
       </li>
       <li><span class="li-required">casb_saasapplication</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
+      </li>
+      <li><span class="li-required">casb_saasapplication_inputattributes</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
+      <li><span class="li-required">casb_saasapplication_outputattributes</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">casb_useractivity</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
@@ -215,6 +233,12 @@ Parameters
       </li>
       <li><span class="li-required">casb_useractivity_match_rules</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
+      </li>
+      <li><span class="li-required">casb_useractivity_match_tenantextraction</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
+      <li><span class="li-required">casb_useractivity_match_tenantextraction_filters</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">certificate_template</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -820,6 +844,9 @@ Parameters
       <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_backhaul</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
       </li>
+      <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_trafficsplitservices</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
       <li><span class="li-required">extensioncontroller_extenderprofile_wifi</span> - available versions:
           <span class="li-normal">v7.4.3->latest</span>
       </li>
@@ -1282,7 +1309,7 @@ Parameters
           <span class="li-normal">v6.2.2->latest</span>
       </li>
       <li><span class="li-required">firewall_vendormac</span> - available versions:
-          <span class="li-normal">v7.2.4->v7.2.8</span>,
+          <span class="li-normal">v7.2.4->v7.2.9</span>,
           <span class="li-normal">v7.4.1->latest</span>
       </li>
       <li><span class="li-required">firewall_vip</span> - available versions:
@@ -1389,10 +1416,10 @@ Parameters
           <span class="li-normal">v7.2.1->latest</span>
       </li>
       <li><span class="li-required">fmg_sasemanager_settings</span> - available versions:
-          <span class="li-normal">v7.6.0->latest</span>
+          <span class="li-normal">v7.6.0->v7.6.1</span>
       </li>
       <li><span class="li-required">fmg_sasemanager_status</span> - available versions:
-          <span class="li-normal">v7.6.0->latest</span>
+          <span class="li-normal">v7.6.0->v7.6.1</span>
       </li>
       <li><span class="li-required">fmg_variable</span> - available versions:
           <span class="li-normal">v7.2.0->latest</span>
@@ -1605,6 +1632,14 @@ Parameters
       </li>
       <li><span class="li-required">gtp_apngrp</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
+      </li>
+      <li><span class="li-required">gtp_ieallowlist</span> - available versions:
+          <span class="li-normal">v7.2.9->v7.2.9</span>,
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
+      <li><span class="li-required">gtp_ieallowlist_entries</span> - available versions:
+          <span class="li-normal">v7.2.9->v7.2.9</span>,
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">gtp_iewhitelist</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -1840,12 +1875,12 @@ Parameters
       </li>
       <li><span class="li-required">pkg_firewall_acl</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
@@ -1875,35 +1910,35 @@ Parameters
       <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
@@ -1993,7 +2028,8 @@ Parameters
           <span class="li-normal">v7.2.1->latest</span>
       </li>
       <li><span class="li-required">pkg_videofilter_youtubekey</span> - available versions:
-          <span class="li-normal">v7.4.4->v7.4.5</span>
+          <span class="li-normal">v7.4.4->v7.4.5</span>,
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">pm_config_adom_options</span> - available versions:
           <span class="li-normal">v6.2.0->v6.2.5</span>,
@@ -2007,7 +2043,7 @@ Parameters
           <span class="li-normal">v6.2.0->latest</span>
       </li>
       <li><span class="li-required">pm_config_data_defaultsslvpnoschecklist</span> - available versions:
-          <span class="li-normal">v7.2.5->v7.2.8</span>,
+          <span class="li-normal">v7.2.5->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">pm_config_data_tablesize</span> - available versions:
@@ -2162,11 +2198,11 @@ Parameters
           <span class="li-normal">v7.0.2->latest</span>
       </li>
       <li><span class="li-required">sctpfilter_profile</span> - available versions:
-          <span class="li-normal">v7.2.5->v7.2.8</span>,
+          <span class="li-normal">v7.2.5->v7.2.9</span>,
           <span class="li-normal">v7.4.2->latest</span>
       </li>
       <li><span class="li-required">sctpfilter_profile_ppidfilters</span> - available versions:
-          <span class="li-normal">v7.2.5->v7.2.8</span>,
+          <span class="li-normal">v7.2.5->v7.2.9</span>,
           <span class="li-normal">v7.4.2->latest</span>
       </li>
       <li><span class="li-required">spamfilter_bwl</span> - available versions:
@@ -2526,6 +2562,9 @@ Parameters
       </li>
       <li><span class="li-required">system_externalresource</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
+      </li>
+      <li><span class="li-required">system_externalresource_dynamicmapping</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">system_fips</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -3087,6 +3126,9 @@ Parameters
       <li><span class="li-required">templategroup</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
+      <li><span class="li-required">ums_setting</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
       <li><span class="li-required">user_adgrp</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
@@ -3140,7 +3182,7 @@ Parameters
           <span class="li-normal">v6.2.0->latest</span>
       </li>
       <li><span class="li-required">user_externalidentityprovider</span> - available versions:
-          <span class="li-normal">v7.2.6->v7.2.8</span>,
+          <span class="li-normal">v7.2.6->v7.2.9</span>,
           <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">user_flexvm</span> - available versions:
@@ -3313,7 +3355,7 @@ Parameters
       </li>
       <li><span class="li-required">videofilter_youtubekey</span> - available versions:
           <span class="li-normal">v7.4.2->v7.4.3</span>,
-          <span class="li-normal">v7.6.0->latest</span>
+          <span class="li-normal">v7.6.0->v7.6.1</span>
       </li>
       <li><span class="li-required">virtualpatch_profile</span> - available versions:
           <span class="li-normal">v7.4.1->latest</span>
@@ -3620,6 +3662,9 @@ Parameters
       <li><span class="li-required">webfilter_profile_ftgdwf_quota</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
+      <li><span class="li-required">webfilter_profile_ftgdwf_risk</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
+      </li>
       <li><span class="li-required">webfilter_profile_override</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
@@ -3646,6 +3691,9 @@ Parameters
       </li>
       <li><span class="li-required">webproxy_forwardservergroup_serverlist</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
+      </li>
+      <li><span class="li-required">webproxy_isolatorserver</span> - available versions:
+          <span class="li-normal">v7.6.2->latest</span>
       </li>
       <li><span class="li-required">webproxy_profile</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -3978,9 +4026,40 @@ Parameters
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">saas-application</span></li>
         </ul>
+        <li><span class="li-normal">params for casb_profile_saasapplication_accessrule_attributefilter:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">access-rule</span></li>
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">attribute-filter</span></li>
+            <li><span class="li-normal">profile</span></li>
+            <li><span class="li-normal">saas-application</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">advanced-tenant-control</span></li>
+            <li><span class="li-normal">profile</span></li>
+            <li><span class="li-normal">saas-application</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol_attribute:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">advanced-tenant-control</span></li>
+            <li><span class="li-normal">attribute</span></li>
+            <li><span class="li-normal">profile</span></li>
+            <li><span class="li-normal">saas-application</span></li>
+        </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">custom-control</span></li>
+            <li><span class="li-normal">profile</span></li>
+            <li><span class="li-normal">saas-application</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_attributefilter:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">attribute-filter</span></li>
             <li><span class="li-normal">custom-control</span></li>
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">saas-application</span></li>
@@ -3996,6 +4075,18 @@ Parameters
         <li><span class="li-normal">params for casb_saasapplication:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">saas-application</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_saasapplication_inputattributes:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">input-attributes</span></li>
+            <li><span class="li-normal">saas-application</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_saasapplication_outputattributes:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">output-attributes</span></li>
             <li><span class="li-normal">saas-application</span></li>
         </ul>
         <li><span class="li-normal">params for casb_useractivity:</span></li>
@@ -4027,6 +4118,19 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">match</span></li>
             <li><span class="li-normal">rules</span></li>
+            <li><span class="li-normal">user-activity</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_useractivity_match_tenantextraction:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">match</span></li>
+            <li><span class="li-normal">user-activity</span></li>
+        </ul>
+        <li><span class="li-normal">params for casb_useractivity_match_tenantextraction_filters:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">filters</span></li>
+            <li><span class="li-normal">match</span></li>
             <li><span class="li-normal">user-activity</span></li>
         </ul>
         <li><span class="li-normal">params for certificate_template:</span></li>
@@ -4959,6 +5063,12 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">backhaul</span></li>
             <li><span class="li-normal">extender-profile</span></li>
+        </ul>
+        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_trafficsplitservices:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">extender-profile</span></li>
+            <li><span class="li-normal">traffic-split-services</span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile_wifi:</span></li>
         <ul class="ul-self">
@@ -6332,6 +6442,17 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">apngrp</span></li>
+        </ul>
+        <li><span class="li-normal">params for gtp_ieallowlist:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">ie-allow-list</span></li>
+        </ul>
+        <li><span class="li-normal">params for gtp_ieallowlist_entries:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">ie-allow-list</span></li>
         </ul>
         <li><span class="li-normal">params for gtp_iewhitelist:</span></li>
         <ul class="ul-self">
@@ -7839,6 +7960,11 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">external-resource</span></li>
         </ul>
+        <li><span class="li-normal">params for system_externalresource_dynamicmapping:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">external-resource</span></li>
+        </ul>
         <li><span class="li-normal">params for system_fips:</span></li>
         <ul class="ul-self">
         </ul>
@@ -8618,6 +8744,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">template-group</span></li>
+        </ul>
+        <li><span class="li-normal">params for ums_setting:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">setting</span></li>
         </ul>
         <li><span class="li-normal">params for user_adgrp:</span></li>
         <ul class="ul-self">
@@ -9568,6 +9699,12 @@ Parameters
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">quota</span></li>
         </ul>
+        <li><span class="li-normal">params for webfilter_profile_ftgdwf_risk:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">profile</span></li>
+            <li><span class="li-normal">risk</span></li>
+        </ul>
         <li><span class="li-normal">params for webfilter_profile_override:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -9615,6 +9752,11 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">forward-server-group</span></li>
             <li><span class="li-normal">server-list</span></li>
+        </ul>
+        <li><span class="li-normal">params for webproxy_isolatorserver:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">isolator-server</span></li>
         </ul>
         <li><span class="li-normal">params for webproxy_profile:</span></li>
         <ul class="ul-self">

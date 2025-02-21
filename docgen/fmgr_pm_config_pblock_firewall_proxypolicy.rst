@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">action</span> Accept or deny traffic matching the policy parameters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [accept, deny, redirect]</span> 
+ <li><span class="li-head">action</span> Accept or deny traffic matching the policy parameters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [accept, deny, redirect, isolate]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -581,6 +581,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">isolator_server</span> <b>(Alias name: isolator-server)</b>  Isolator server name. <span class="li-normal">type: list</span>
+ <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
+ <div id="label173" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">url_risk</span> <b>(Alias name: url-risk)</b>  Url risk level name. <span class="li-normal">type: list</span>
+ <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
+ <div id="label175" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ztna_ems_tag_negate</span> <b>(Alias name: ztna-ems-tag-negate)</b>  When enabled, ztna ems tags match against any tag except the specified ztna ems tags. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
+ <div id="label177" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -621,7 +639,7 @@ Examples
             _policy_block: <integer>
             access_proxy: <list or string>
             access_proxy6: <list or string>
-            action: <value in [accept, deny, redirect]>
+            action: <value in [accept, deny, redirect, ...]>
             application_list: <list or string>
             av_profile: <list or string>
             block_notification: <value in [disable, enable]>
@@ -704,6 +722,9 @@ Examples
             cifs_profile: <list or string>
             internet_service_id: <list or string>
             mms_profile: <list or string>
+            isolator_server: <list or string>
+            url_risk: <list or string>
+            ztna_ems_tag_negate: <value in [disable, enable]>
 
 
 Return Values

@@ -187,13 +187,13 @@ Parameters
  <li><span class="li-head">authserver_timeout_tagged</span> <b>(Alias name: authserver-timeout-tagged)</b>  Configure timeout option for the tagged vlan which allows limited access when the authentication server is unavailable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, disable, lldp-voice]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">authserver_timeout_tagged_vlanid</span> <b>(Alias name: authserver-timeout-tagged-vlanid)</b>  Tagged vlan name for which the timeout option is applied to (only one vlan id). <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dacl</span> Enable/disable dynamic access control list on this interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 

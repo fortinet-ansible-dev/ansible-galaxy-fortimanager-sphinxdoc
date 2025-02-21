@@ -299,13 +299,13 @@ Parameters
  <li><span class="li-head">filter</span> Match criteria filter. <span class="li-normal">type: str</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sdn_addr_type</span> <b>(Alias name: sdn-addr-type)</b>  Type of addresses to collect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, private, public]</span> 
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -555,13 +555,13 @@ Parameters
  <li><span class="li-head">filter</span> Match criteria filter. <span class="li-normal">type: str</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sdn_addr_type</span> <b>(Alias name: sdn-addr-type)</b>  Type of addresses to collect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, private, public]</span> 
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

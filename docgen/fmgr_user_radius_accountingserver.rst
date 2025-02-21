@@ -113,6 +113,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

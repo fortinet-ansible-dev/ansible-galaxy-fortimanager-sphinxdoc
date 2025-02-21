@@ -171,7 +171,7 @@ Parameters
  <li><span class="li-head">private_ip</span> <b>(Alias name: private-ip)</b>  Private ip address. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -185,7 +185,7 @@ Parameters
  <li><span class="li-head">peer_nic</span> <b>(Alias name: peer-nic)</b>  Peer network interface name. <span class="li-normal">type: str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -478,7 +478,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ibm_region</span> <b>(Alias name: ibm-region)</b>  Ibm cloud region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia, dallas, washington-dc, london, frankfurt, sydney, tokyo, osaka, toronto, sao-paulo, dallas-private, washington-dc-private, london-private, frankfurt-private, sydney-private, tokyo-private, osaka-private, toronto-private, sao-paulo-private]</span> 
+ <li><span class="li-head">ibm_region</span> <b>(Alias name: ibm-region)</b>  Ibm cloud region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia, dallas, washington-dc, london, frankfurt, sydney, tokyo, osaka, toronto, sao-paulo, dallas-private, washington-dc-private, london-private, frankfurt-private, sydney-private, tokyo-private, osaka-private, toronto-private, sao-paulo-private, madrid, madrid-private]</span> 
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -642,6 +642,12 @@ Parameters
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">message_server_port</span> <b>(Alias name: message-server-port)</b>  Http port number of the sap message server. <span class="li-normal">type: int</span>
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

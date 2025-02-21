@@ -328,6 +328,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ocr_only</span> <b>(Alias name: ocr-only)</b>  Enable/disable this fortigate unit to submit only ocr interested content to the icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
+ <div id="label87" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -422,6 +428,7 @@ Examples
             scan_progress_interval: <integer>
             timeout: <integer>
             comment: <string>
+            ocr_only: <value in [disable, enable]>
 
 
 Return Values

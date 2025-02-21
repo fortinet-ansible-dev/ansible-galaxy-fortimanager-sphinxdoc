@@ -456,7 +456,7 @@ Parameters
  <li><span class="li-head">gui_prompt_auto_upgrade</span> <b>(Alias name: gui-prompt-auto-upgrade)</b>  Enable/disable prompting of automatic patch-level firmware upgrade recommendation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">FDS_license_expiring_days</span> <b>(Alias name: FDS-license-expiring-days)</b>  Threshold for number of days before fortiguard license expiration to generate license expiring event log (1 - 100 days, default = 15). <span class="li-normal">type: int</span>
@@ -481,6 +481,12 @@ Parameters
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
+ <div id="label141" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -596,6 +602,7 @@ Examples
             antispam_cache_mpermille: <integer>
             outbreak_prevention_cache_mpermille: <integer>
             update_dldb: <value in [disable, enable]>
+            vrf_select: <integer>
 
 
 Return Values

@@ -449,7 +449,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">os_type</span> Os type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fpa, fca, ftc, fss]</span>  <span class="li-normal">default: unknown</span> 
+ <li><span class="li-head">os_type</span> Os type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos, fsw, foc, fml, faz, fwb, fch, fct, log, fmg, fsa, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fpa, fca, ftc, fss, fra, sim]</span>  <span class="li-normal">default: unknown</span> 
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -658,7 +658,7 @@ Parameters
  <li><span class="li-head">hw_generation</span> Hw generation. <span class="li-normal">type: int</span>
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">relver_info</span> Relver info. <span class="li-normal">type: str</span>
@@ -676,7 +676,7 @@ Parameters
  <li><span class="li-head">ha_vsn</span> <b>(Alias name: ha.vsn)</b>  Ha. <span class="li-normal">type: str</span>
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ha_upgrade_mode</span> Ha upgrade mode. <span class="li-normal">type: int</span>
@@ -688,7 +688,7 @@ Parameters
  <li><span class="li-head">vm_payg_status</span> Vm payg status. <span class="li-normal">type: int</span>
  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
  <div id="label205" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

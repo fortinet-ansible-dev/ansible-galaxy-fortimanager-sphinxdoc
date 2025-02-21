@@ -568,273 +568,305 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v6.4.15</code></p>
  </div>
  </li>
+ <li><span class="li-head">risk</span> Risk. <span class="li-normal">type: list</span>
+ <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
+ <div id="label165" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> Action to take for matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor]</span> 
+ <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
+ <div id="label167" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">id</span> Id number. <span class="li-normal">type: int</span>
+ <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
+ <div id="label169" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log</span> Enable/disable logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
+ <div id="label171" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">risk_level</span> <b>(Alias name: risk-level)</b>  Risk level to be examined. <span class="li-normal">type: list</span>
+ <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
+ <div id="label173" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">override</span> Override. <span class="li-normal">type: dict</span>
- <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
- <div id="label165" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">ovrd_cookie</span> <b>(Alias name: ovrd-cookie)</b>  Allow/deny browser-based (cookie) overrides. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
- <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
- <div id="label167" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ovrd_dur</span> <b>(Alias name: ovrd-dur)</b>  Override duration. <span class="li-normal">type: str</span>
- <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
- <div id="label169" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ovrd_dur_mode</span> <b>(Alias name: ovrd-dur-mode)</b>  Override duration mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [constant, ask]</span> 
- <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
- <div id="label171" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ovrd_scope</span> <b>(Alias name: ovrd-scope)</b>  Override scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user, user-group, ip, ask, browser]</span> 
- <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
- <div id="label173" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ovrd_user_group</span> <b>(Alias name: ovrd-user-group)</b>  User groups with permission to use the override. <span class="li-normal">type: list or str</span>
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">profile</span> Web filter profile with permission to create overrides. <span class="li-normal">type: list or str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">ovrd_cookie</span> <b>(Alias name: ovrd-cookie)</b>  Allow/deny browser-based (cookie) overrides. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">profile_attribute</span> <b>(Alias name: profile-attribute)</b>  Profile attribute to retrieve from the radius server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
+ <li><span class="li-head">ovrd_dur</span> <b>(Alias name: ovrd-dur)</b>  Override duration. <span class="li-normal">type: str</span>
  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">profile_type</span> <b>(Alias name: profile-type)</b>  Override profile type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [list, radius]</span> 
+ <li><span class="li-head">ovrd_dur_mode</span> <b>(Alias name: ovrd-dur-mode)</b>  Override duration mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [constant, ask]</span> 
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ovrd_scope</span> <b>(Alias name: ovrd-scope)</b>  Override scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user, user-group, ip, ask, browser]</span> 
+ <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
+ <div id="label183" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ovrd_user_group</span> <b>(Alias name: ovrd-user-group)</b>  User groups with permission to use the override. <span class="li-normal">type: list or str</span>
+ <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
+ <div id="label185" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">profile</span> Web filter profile with permission to create overrides. <span class="li-normal">type: list or str</span>
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">profile_attribute</span> <b>(Alias name: profile-attribute)</b>  Profile attribute to retrieve from the radius server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [User-Name, User-Password, CHAP-Password, NAS-IP-Address, NAS-Port, Service-Type, Framed-Protocol, Framed-IP-Address, Framed-IP-Netmask, Framed-Routing, Filter-Id, Framed-MTU, Framed-Compression, Login-IP-Host, Login-Service, Login-TCP-Port, Reply-Message, Callback-Number, Callback-Id, Framed-Route, Framed-IPX-Network, State, Class, Vendor-Specific, Session-Timeout, Idle-Timeout, Termination-Action, Called-Station-Id, Calling-Station-Id, NAS-Identifier, Proxy-State, Login-LAT-Service, Login-LAT-Node, Login-LAT-Group, Framed-AppleTalk-Link, Framed-AppleTalk-Network, Framed-AppleTalk-Zone, Acct-Status-Type, Acct-Delay-Time, Acct-Input-Octets, Acct-Output-Octets, Acct-Session-Id, Acct-Authentic, Acct-Session-Time, Acct-Input-Packets, Acct-Output-Packets, Acct-Terminate-Cause, Acct-Multi-Session-Id, Acct-Link-Count, CHAP-Challenge, NAS-Port-Type, Port-Limit, Login-LAT-Port]</span> 
+ <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
+ <div id="label189" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">profile_type</span> <b>(Alias name: profile-type)</b>  Override profile type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [list, radius]</span> 
+ <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
+ <div id="label191" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">url_extraction</span> <b>(Alias name: url-extraction)</b>  Url extraction. <span class="li-normal">type: dict</span>
- <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
- <div id="label183" style="display:none">
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">redirect_header</span> <b>(Alias name: redirect-header)</b>  Http header name to use for client redirect on blocked requests <span class="li-normal">type: str</span>
- <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
- <div id="label185" style="display:none">
+ <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">redirect_no_content</span> <b>(Alias name: redirect-no-content)</b>  Enable / disable empty message-body entity in http response <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
- <div id="label187" style="display:none">
+ <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">redirect_url</span> <b>(Alias name: redirect-url)</b>  Http header value to use for client redirect on blocked requests <span class="li-normal">type: str</span>
- <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
- <div id="label189" style="display:none">
+ <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">server_fqdn</span> <b>(Alias name: server-fqdn)</b>  Url extraction server fqdn (fully qualified domain name) <span class="li-normal">type: str</span>
- <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
- <div id="label191" style="display:none">
+ <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable url extraction <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
- <div id="label193" style="display:none">
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">web</span> Web. <span class="li-normal">type: dict</span>
- <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
- <div id="label195" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">blacklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blacklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
- <div id="label197" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">bword_table</span> <b>(Alias name: bword-table)</b>  Banned word table id. <span class="li-normal">type: str</span>
- <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
- <div id="label199" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">bword_threshold</span> <b>(Alias name: bword-threshold)</b>  Banned word score threshold. <span class="li-normal">type: int</span>
- <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
- <div id="label201" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">content_header_list</span> <b>(Alias name: content-header-list)</b>  Content header list. <span class="li-normal">type: str</span>
- <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
- <div id="label203" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">keyword_match</span> <b>(Alias name: keyword-match)</b>  Search keywords to log when match is found. <span class="li-normal">type: list</span>
  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
  <div id="label205" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">log_search</span> <b>(Alias name: log-search)</b>  Enable/disable logging all search phrases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <ul class="ul-self">
+ <li><span class="li-head">blacklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blacklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
  <div id="label207" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">safe_search</span> <b>(Alias name: safe-search)</b>  Safe search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [google, yahoo, bing, url, header]</span> 
+ <li><span class="li-head">bword_table</span> <b>(Alias name: bword-table)</b>  Banned word table id. <span class="li-normal">type: str</span>
  <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
  <div id="label209" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">urlfilter_table</span> <b>(Alias name: urlfilter-table)</b>  Url filter table id. <span class="li-normal">type: str</span>
+ <li><span class="li-head">bword_threshold</span> <b>(Alias name: bword-threshold)</b>  Banned word score threshold. <span class="li-normal">type: int</span>
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">whitelist</span> Fortiguard whitelist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> 
+ <li><span class="li-head">content_header_list</span> <b>(Alias name: content-header-list)</b>  Content header list. <span class="li-normal">type: str</span>
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">youtube_restrict</span> <b>(Alias name: youtube-restrict)</b>  Youtube edu filter level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span> 
+ <li><span class="li-head">keyword_match</span> <b>(Alias name: keyword-match)</b>  Search keywords to log when match is found. <span class="li-normal">type: list</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allowlist</span> Fortiguard allowlist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> 
+ <li><span class="li-head">log_search</span> <b>(Alias name: log-search)</b>  Enable/disable logging all search phrases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
  <div id="label217" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">safe_search</span> <b>(Alias name: safe-search)</b>  Safe search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [google, yahoo, bing, url, header]</span> 
+ <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
+ <div id="label219" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">urlfilter_table</span> <b>(Alias name: urlfilter-table)</b>  Url filter table id. <span class="li-normal">type: str</span>
+ <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
+ <div id="label221" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">whitelist</span> Fortiguard whitelist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> 
+ <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
+ <div id="label223" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">youtube_restrict</span> <b>(Alias name: youtube-restrict)</b>  Youtube edu filter level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span> 
+ <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
+ <div id="label225" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">allowlist</span> Fortiguard allowlist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> 
+ <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
+ <div id="label227" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">blocklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blocklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
- <div id="label219" style="display:none">
+ <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
+ <div id="label229" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vimeo_restrict</span> <b>(Alias name: vimeo-restrict)</b>  Set vimeo-restrict (7 = dont show mature content, 134 = dont show unrated and mature content). <span class="li-normal">type: str</span>
- <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
- <div id="label221" style="display:none">
+ <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
+ <div id="label231" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">file_filter</span> <b>(Alias name: file-filter)</b>  File filter. <span class="li-normal">type: dict</span>
- <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
- <div id="label223" style="display:none">
+ <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
+ <div id="label233" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">entries</span> Entries. <span class="li-normal">type: list</span>
- <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
- <div id="label225" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log, block]</span> 
- <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
- <div id="label227" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
- <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
- <div id="label229" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">direction</span> Match files transmitted in the sessions originating or reply direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, incoming, outgoing]</span> 
- <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
- <div id="label231" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">encryption</span> Encryption. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, yes]</span> 
- <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
- <div id="label233" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.2.0</code></p>
- </div>
- </li>
- <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select file type. <span class="li-normal">type: list</span>
  <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
  <div id="label235" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">filter</span> Add a file filter. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log, block]</span> 
  <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
  <div id="label237" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_protected</span> <b>(Alias name: password-protected)</b>  Match password-protected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, yes]</span> 
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
  <div id="label239" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocols to apply with. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ftp]</span> 
+ <li><span class="li-head">direction</span> Match files transmitted in the sessions originating or reply direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, incoming, outgoing]</span> 
  <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
  <div id="label241" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">encryption</span> Encryption. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, yes]</span> 
+ <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
+ <div id="label243" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.2.0</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">file_type</span> <b>(Alias name: file-type)</b>  Select file type. <span class="li-normal">type: list</span>
+ <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
+ <div id="label245" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">filter</span> Add a file filter. <span class="li-normal">type: str</span>
+ <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
+ <div id="label247" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">password_protected</span> <b>(Alias name: password-protected)</b>  Match password-protected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, yes]</span> 
+ <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
+ <div id="label249" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">protocol</span> Protocols to apply with. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ftp]</span> 
+ <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
+ <div id="label251" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">log</span> Enable/disable file filter logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
- <div id="label243" style="display:none">
+ <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
+ <div id="label253" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">scan_archive_contents</span> <b>(Alias name: scan-archive-contents)</b>  Enable/disable file filter archive contents scan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
- <div id="label245" style="display:none">
+ <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
+ <div id="label255" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable file filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
- <div id="label247" style="display:none">
+ <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
+ <div id="label257" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">web_flow_log_encoding</span> <b>(Alias name: web-flow-log-encoding)</b>  Log encoding in flow mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [utf-8, punycode]</span> 
- <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
- <div id="label249" style="display:none">
+ <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
+ <div id="label259" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
@@ -991,6 +1023,12 @@ Examples
               rate_image_urls: <value in [disable, enable]>
               rate_javascript_urls: <value in [disable, enable]>
               category_override: <string>
+              risk:
+                -
+                  action: <value in [block, monitor]>
+                  id: <integer>
+                  log: <value in [disable, enable]>
+                  risk_level: <list or string>
             override:
               ovrd_cookie: <value in [deny, allow]>
               ovrd_dur: <string>

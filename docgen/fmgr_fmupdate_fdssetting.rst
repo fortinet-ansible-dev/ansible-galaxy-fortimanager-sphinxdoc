@@ -234,7 +234,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">system_support_fct</span> <b>(Alias name: system-support-fct)</b>  Supported forticlient versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 7.2]</span> 
+ <li><span class="li-head">system_support_fct</span> <b>(Alias name: system-support-fct)</b>  Supported forticlient versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 7.2, 7.4]</span> 
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -433,6 +433,7 @@ Examples
               - "6.4"
               - "7.0"
               - "7.2"
+              - "7.4"
             system_support_fgt:
               - "5.4"
               - "5.6"

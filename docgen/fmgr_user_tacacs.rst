@@ -180,78 +180,90 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">key</span> Key to access the primary server. <span class="li-normal">type: list</span>
- <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">name</span> Tacacs+ server entry name. <span class="li-normal">type: str</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Port number of the tacacs+ server. <span class="li-normal">type: int</span>
+ <li><span class="li-head">name</span> Tacacs+ server entry name. <span class="li-normal">type: str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secondary_key</span> <b>(Alias name: secondary-key)</b>  Key to access the secondary server. <span class="li-normal">type: list</span>
+ <li><span class="li-head">port</span> Port number of the tacacs+ server. <span class="li-normal">type: int</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secondary_server</span> <b>(Alias name: secondary-server)</b>  Secondary tacacs+ server cn domain name or ip address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">secondary_key</span> <b>(Alias name: secondary-key)</b>  Key to access the secondary server. <span class="li-normal">type: list</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server</span> Primary tacacs+ server cn domain name or ip address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">secondary_server</span> <b>(Alias name: secondary-server)</b>  Secondary tacacs+ server cn domain name or ip address. <span class="li-normal">type: str</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip for communications to tacacs+ server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server</span> Primary tacacs+ server cn domain name or ip address. <span class="li-normal">type: str</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tertiary_key</span> <b>(Alias name: tertiary-key)</b>  Key to access the tertiary server. <span class="li-normal">type: list</span>
+ <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip for communications to tacacs+ server. <span class="li-normal">type: str</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tertiary_server</span> <b>(Alias name: tertiary-server)</b>  Tertiary tacacs+ server cn domain name or ip address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">tertiary_key</span> <b>(Alias name: tertiary-key)</b>  Key to access the tertiary server. <span class="li-normal">type: list</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">tertiary_server</span> <b>(Alias name: tertiary-server)</b>  Tertiary tacacs+ server cn domain name or ip address. <span class="li-normal">type: str</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
+ <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
+ <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -311,6 +323,7 @@ Examples
                 interface: <string>
                 interface_select_method: <value in [auto, sdwan, specify]>
                 status_ttl: <integer>
+                vrf_select: <integer>
             key: <list or string>
             name: <string>
             port: <integer>
@@ -323,6 +336,7 @@ Examples
             interface: <string>
             interface_select_method: <value in [auto, sdwan, specify]>
             status_ttl: <integer>
+            vrf_select: <integer>
 
 
 Return Values

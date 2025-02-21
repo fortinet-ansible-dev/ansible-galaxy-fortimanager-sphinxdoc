@@ -230,6 +230,38 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
  </div>
  </li>
+ <li><span class="li-head">risk</span> Risk. <span class="li-normal">type: list</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> Action to take for matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor]</span> 
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">id</span> Id number. <span class="li-normal">type: int</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log</span> Enable/disable logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">risk_level</span> <b>(Alias name: risk-level)</b>  Risk level to be examined. <span class="li-normal">type: list</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
  </ul>
  </ul>
 
@@ -304,6 +336,12 @@ Examples
             rate_image_urls: <value in [disable, enable]>
             rate_javascript_urls: <value in [disable, enable]>
             category_override: <string>
+            risk:
+              -
+                action: <value in [block, monitor]>
+                id: <integer>
+                log: <value in [disable, enable]>
+                risk_level: <list or string>
 
 
 Return Values

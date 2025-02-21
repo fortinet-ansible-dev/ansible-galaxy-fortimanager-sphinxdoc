@@ -362,6 +362,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">object_threshold_limit</span> <b>(Alias name: object-threshold-limit)</b>  Object threshold limit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">object_threshold_limit_value</span> <b>(Alias name: object-threshold-limit-value)</b>  Object threshold limit value. <span class="li-normal">type: int</span> <span class="li-normal">default: 80</span> 
+ <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
+ <div id="label103" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -446,6 +458,8 @@ Examples
             firmware_upgrade_check: <value in [disable, enable]>
             fgt_gui_proxy: <value in [disable, enable]>
             fgt_gui_proxy_port: <integer>
+            object_threshold_limit: <value in [disable, enable]>
+            object_threshold_limit_value: <integer>
 
 
 Return Values

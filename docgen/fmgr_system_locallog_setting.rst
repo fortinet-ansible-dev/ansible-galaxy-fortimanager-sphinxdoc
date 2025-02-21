@@ -89,7 +89,7 @@ Parameters
  <li><span class="li-head">no_log_detection_threshold</span> <b>(Alias name: no-log-detection-threshold)</b>  Time interval in minutes to trigger a local event message if no log data is received. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_interval_adom_perf_stats</span> <b>(Alias name: log-interval-adom-perf-stats)</b>  Interval in minute for logging the event of adom perf stats. <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 

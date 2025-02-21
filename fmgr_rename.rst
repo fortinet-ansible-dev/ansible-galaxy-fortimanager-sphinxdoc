@@ -916,6 +916,14 @@ Parameters
         <li><span class="li-required">gtp_apngrp</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">gtp_ieallowlist</span> - available versions:
+            <span class="li-normal">v7.2.9->v7.2.9</span>,
+            <span class="li-normal">v7.6.2->latest</span>
+        </li>
+        <li><span class="li-required">gtp_ieallowlist_entries</span> - available versions:
+            <span class="li-normal">v7.2.9->v7.2.9</span>,
+            <span class="li-normal">v7.6.2->latest</span>
+        </li>
         <li><span class="li-required">gtp_iewhitelist</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1099,12 +1107,12 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
             <span class="li-normal">v7.2.0->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
             <span class="li-normal">v7.2.0->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
@@ -1134,35 +1142,35 @@ Parameters
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.2</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.2</span>,
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
@@ -1226,7 +1234,8 @@ Parameters
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">pkg_videofilter_youtubekey</span> - available versions:
-            <span class="li-normal">v7.4.4->v7.4.5</span>
+            <span class="li-normal">v7.4.4->v7.4.5</span>,
+            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
             <span class="li-normal">v7.0.3->latest</span>
@@ -1305,11 +1314,11 @@ Parameters
             <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">sctpfilter_profile</span> - available versions:
-            <span class="li-normal">v7.2.5->v7.2.8</span>,
+            <span class="li-normal">v7.2.5->v7.2.9</span>,
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">sctpfilter_profile_ppidfilters</span> - available versions:
-            <span class="li-normal">v7.2.5->v7.2.8</span>,
+            <span class="li-normal">v7.2.5->v7.2.9</span>,
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">spamfilter_bwl</span> - available versions:
@@ -1814,6 +1823,9 @@ Parameters
         <li><span class="li-required">templategroup</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">ums_setting</span> - available versions:
+            <span class="li-normal">v7.6.2->latest</span>
+        </li>
         <li><span class="li-required">user_adgrp</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1867,7 +1879,7 @@ Parameters
             <span class="li-normal">v6.2.0->latest</span>
         </li>
         <li><span class="li-required">user_externalidentityprovider</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.8</span>,
+            <span class="li-normal">v7.2.6->v7.2.9</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">user_flexvm</span> - available versions:
@@ -2026,7 +2038,7 @@ Parameters
         </li>
         <li><span class="li-required">videofilter_youtubekey</span> - available versions:
             <span class="li-normal">v7.4.2->v7.4.3</span>,
-            <span class="li-normal">v7.6.0->latest</span>
+            <span class="li-normal">v7.6.0->v7.6.1</span>
         </li>
         <li><span class="li-required">virtualpatch_profile</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
@@ -3848,6 +3860,17 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">apngrp</span></li>
         </ul>
+        <li><span class="li-normal">params for gtp_ieallowlist:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">ie-allow-list</span></li>
+        </ul>
+        <li><span class="li-normal">params for gtp_ieallowlist_entries:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">ie-allow-list</span></li>
+            <li><span class="li-normal">entries</span></li>
+        </ul>
         <li><span class="li-normal">params for gtp_iewhitelist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5395,6 +5418,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">template-group</span></li>
+        </ul>
+        <li><span class="li-normal">params for ums_setting:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">setting</span></li>
         </ul>
         <li><span class="li-normal">params for user_adgrp:</span></li>
         <ul class="ul-self">
@@ -7894,6 +7922,18 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_gtp_apngrp.html#parameters">fmgr_gtp_apngrp</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for gtp_ieallowlist:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_gtp_ieallowlist.html#parameters">fmgr_gtp_ieallowlist</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for gtp_ieallowlist_entries:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_gtp_ieallowlist_entries.html#parameters">fmgr_gtp_ieallowlist_entries</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for gtp_iewhitelist:</span></li>
         <ul class="ul-self">
             
@@ -9621,6 +9661,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_templategroup.html#parameters">fmgr_templategroup</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for ums_setting:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_ums_setting.html#parameters">fmgr_ums_setting</a> </span></li>
         </ul>
         <li><span class="li-normal">params for user_adgrp:</span></li>
         <ul class="ul-self">

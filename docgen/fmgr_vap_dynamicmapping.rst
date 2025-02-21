@@ -1309,6 +1309,30 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">_intf_role</span> Intf role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [lan, wan, dmz, undefined]</span>  <span class="li-normal">default: lan</span> 
+ <a id='label414' href="javascript:ContentClick('label415', 'label414');" onmouseover="ContentPreview('label415');" onmouseout="ContentUnpreview('label415');" title="click to collapse or expand..."> more... </a>
+ <div id="label415" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">called_station_id_type</span> <b>(Alias name: called-station-id-type)</b>  The format type of radius attribute called-station-id (default = mac). <span class="li-normal">type: str</span> <span class="li-normal">choices: [mac, ip, apname]</span> 
+ <a id='label416' href="javascript:ContentClick('label417', 'label416');" onmouseover="ContentPreview('label417');" onmouseout="ContentUnpreview('label417');" title="click to collapse or expand..."> more... </a>
+ <div id="label417" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">external_pre_auth</span> <b>(Alias name: external-pre-auth)</b>  Enable/disable pre-authentication with external aps not managed by the fortigate (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label418' href="javascript:ContentClick('label419', 'label418');" onmouseover="ContentPreview('label419');" onmouseout="ContentUnpreview('label419');" title="click to collapse or expand..."> more... </a>
+ <div id="label419" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pre_auth</span> <b>(Alias name: pre-auth)</b>  Enable/disable pre-authentication, where supported by clients (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label420' href="javascript:ContentClick('label421', 'label420');" onmouseover="ContentPreview('label421');" onmouseout="ContentUnpreview('label421');" title="click to collapse or expand..."> more... </a>
+ <div id="label421" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1806,6 +1830,10 @@ Examples
             _intf_managed_subnetwork_size: <value in [32, 64, 128, ...]>
             domain_name_stripping: <value in [disable, enable]>
             local_lan_partition: <value in [disable, enable]>
+            _intf_role: <value in [lan, wan, dmz, ...]>
+            called_station_id_type: <value in [mac, ip, apname]>
+            external_pre_auth: <value in [disable, enable]>
+            pre_auth: <value in [disable, enable]>
 
 
 Return Values

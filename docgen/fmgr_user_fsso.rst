@@ -288,198 +288,210 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">ldap_server</span> <b>(Alias name: ldap-server)</b>  Ldap server to get group information. <span class="li-normal">type: str</span>
- <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
- <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password</span> Password of the first fsso collector agent. <span class="li-normal">type: list</span>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password2</span> Password of the second fsso collector agent. <span class="li-normal">type: list</span>
+ <li><span class="li-head">password</span> Password of the first fsso collector agent. <span class="li-normal">type: list</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password3</span> Password of the third fsso collector agent. <span class="li-normal">type: list</span>
+ <li><span class="li-head">password2</span> Password of the second fsso collector agent. <span class="li-normal">type: list</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password4</span> Password of the fourth fsso collector agent. <span class="li-normal">type: list</span>
+ <li><span class="li-head">password3</span> Password of the third fsso collector agent. <span class="li-normal">type: list</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password5</span> Password of the fifth fsso collector agent. <span class="li-normal">type: list</span>
+ <li><span class="li-head">password4</span> Password of the fourth fsso collector agent. <span class="li-normal">type: list</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Port of the first fsso collector agent. <span class="li-normal">type: int</span>
+ <li><span class="li-head">password5</span> Password of the fifth fsso collector agent. <span class="li-normal">type: list</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port2</span> Port of the second fsso collector agent. <span class="li-normal">type: int</span>
+ <li><span class="li-head">port</span> Port of the first fsso collector agent. <span class="li-normal">type: int</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port3</span> Port of the third fsso collector agent. <span class="li-normal">type: int</span>
+ <li><span class="li-head">port2</span> Port of the second fsso collector agent. <span class="li-normal">type: int</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port4</span> Port of the fourth fsso collector agent. <span class="li-normal">type: int</span>
+ <li><span class="li-head">port3</span> Port of the third fsso collector agent. <span class="li-normal">type: int</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port5</span> Port of the fifth fsso collector agent. <span class="li-normal">type: int</span>
+ <li><span class="li-head">port4</span> Port of the fourth fsso collector agent. <span class="li-normal">type: int</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server</span> Domain name or ip address of the first fsso collector agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">port5</span> Port of the fifth fsso collector agent. <span class="li-normal">type: int</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server2</span> Domain name or ip address of the second fsso collector agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server</span> Domain name or ip address of the first fsso collector agent. <span class="li-normal">type: str</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server3</span> Domain name or ip address of the third fsso collector agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server2</span> Domain name or ip address of the second fsso collector agent. <span class="li-normal">type: str</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server4</span> Domain name or ip address of the fourth fsso collector agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server3</span> Domain name or ip address of the third fsso collector agent. <span class="li-normal">type: str</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server5</span> Domain name or ip address of the fifth fsso collector agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server4</span> Domain name or ip address of the fourth fsso collector agent. <span class="li-normal">type: str</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip for communications to fsso agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">server5</span> Domain name or ip address of the fifth fsso collector agent. <span class="li-normal">type: str</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip6</span> <b>(Alias name: source-ip6)</b>  Ipv6 source for communications to fsso agent. <span class="li-normal">type: str</span>
+ <li><span class="li-head">source_ip</span> <b>(Alias name: source-ip)</b>  Source ip for communications to fsso agent. <span class="li-normal">type: str</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ldap_poll</span> <b>(Alias name: ldap-poll)</b>  Enable/disable automatic fetching of groups from ldap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">source_ip6</span> <b>(Alias name: source-ip6)</b>  Ipv6 source for communications to fsso agent. <span class="li-normal">type: str</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ldap_poll_filter</span> <b>(Alias name: ldap-poll-filter)</b>  Filter used to fetch groups. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ldap_poll</span> <b>(Alias name: ldap-poll)</b>  Enable/disable automatic fetching of groups from ldap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ldap_poll_interval</span> <b>(Alias name: ldap-poll-interval)</b>  Interval in minutes within to fetch groups from ldap server. <span class="li-normal">type: int</span>
+ <li><span class="li-head">ldap_poll_filter</span> <b>(Alias name: ldap-poll-filter)</b>  Filter used to fetch groups. <span class="li-normal">type: str</span>
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl</span> Enable/disable use of ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ldap_poll_interval</span> <b>(Alias name: ldap-poll-interval)</b>  Interval in minutes within to fetch groups from ldap server. <span class="li-normal">type: int</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_trusted_cert</span> <b>(Alias name: ssl-trusted-cert)</b>  Trusted server certificate or ca certificate. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ssl</span> Enable/disable use of ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, fortiems, fortinac, fortiems-cloud]</span> 
+ <li><span class="li-head">ssl_trusted_cert</span> <b>(Alias name: ssl-trusted-cert)</b>  Trusted server certificate or ca certificate. <span class="li-normal">type: str</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_info_server</span> <b>(Alias name: user-info-server)</b>  Ldap server to get user information. <span class="li-normal">type: str</span>
+ <li><span class="li-head">type</span> Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, fortiems, fortinac, fortiems-cloud]</span> 
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_poll_interval</span> <b>(Alias name: group-poll-interval)</b>  Interval in minutes within to fetch groups from fsso server, or unset to disable. <span class="li-normal">type: int</span>
+ <li><span class="li-head">user_info_server</span> <b>(Alias name: user-info-server)</b>  Ldap server to get user information. <span class="li-normal">type: str</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">group_poll_interval</span> <b>(Alias name: group-poll-interval)</b>  Interval in minutes within to fetch groups from fsso server, or unset to disable. <span class="li-normal">type: int</span>
+ <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
+ <div id="label129" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
- <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
- <div id="label129" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">logon_timeout</span> <b>(Alias name: logon-timeout)</b>  Interval in minutes to keep logons after fsso server down. <span class="li-normal">type: int</span>
+ <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">logon_timeout</span> <b>(Alias name: logon-timeout)</b>  Interval in minutes to keep logons after fsso server down. <span class="li-normal">type: int</span>
+ <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
+ <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sni</span> Server name indication. <span class="li-normal">type: str</span>
- <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
- <div id="label135" style="display:none">
+ <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ssl_server_host_ip_check</span> <b>(Alias name: ssl-server-host-ip-check)</b>  Enable/disable server host/ip verification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
- <div id="label137" style="display:none">
+ <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
+ <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
+ <div id="label141" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

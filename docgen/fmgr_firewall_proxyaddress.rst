@@ -144,7 +144,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">method</span> Http request methods to be used. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span> 
+ <li><span class="li-head">method</span> Http request methods to be used. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect, other, patch, update]</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

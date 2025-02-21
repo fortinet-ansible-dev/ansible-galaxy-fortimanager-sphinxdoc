@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">respmod-forward-rules</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">respmod_forward_rules</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">icap_profile_respmodforwardrules_headergroup</span> - HTTP header group. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">case_sensitivity</span> <b>(Alias name: case-sensitivity)</b>  Enable/disable case sensitivity when matching header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 

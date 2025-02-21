@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">events</span> Snmp notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, fm-conf-change, ips-signature, ips-anomaly, temperature-high, voltage-alert, av-virus, av-oversize, av-pattern, av-fragmented, ha-hb-failure, fan-failure, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, fm-if-change, power-supply-failure, amc-bypass, faz-disconnect, bgp-established, bgp-backward-transition, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, ips-fail-open, load-balance-real-server-down, device-new, enter-intf-bypass, exit-intf-bypass, per-cpu-high, power-blade-down, confsync_failure, dhcp, pool-usage, power-redundancy-degrade, power-redundancy-failure, ospf-nbr-state-change, ospf-virtnbr-state-change, disk-failure, disk-overload, faz-main-failover, faz-alt-failover, slbc, faz, power-supply, ippool, interface, security_level_change, cert-expiry]</span> 
+ <li><span class="li-head">events</span> Snmp notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, fm-conf-change, ips-signature, ips-anomaly, temperature-high, voltage-alert, av-virus, av-oversize, av-pattern, av-fragmented, ha-hb-failure, fan-failure, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, fm-if-change, power-supply-failure, amc-bypass, faz-disconnect, bgp-established, bgp-backward-transition, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, ips-fail-open, load-balance-real-server-down, device-new, enter-intf-bypass, exit-intf-bypass, per-cpu-high, power-blade-down, confsync_failure, dhcp, pool-usage, power-redundancy-degrade, power-redundancy-failure, ospf-nbr-state-change, ospf-virtnbr-state-change, disk-failure, disk-overload, faz-main-failover, faz-alt-failover, slbc, faz, power-supply, ippool, interface, security_level_change, cert-expiry, dio]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -195,6 +195,12 @@ Parameters
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

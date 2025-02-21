@@ -139,7 +139,7 @@ Parameters
  <li><span class="li-head">enforce_device_config</span> <b>(Alias name: enforce-device-config)</b>  Enforce device config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">auth_template</span> <b>(Alias name: auth-template)</b>  Auth template. <span class="li-normal">type: list</span>
@@ -154,7 +154,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ha_hbdev</span> <b>(Alias name: ha-hbdev)</b>  Ha hbdev. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ha_hbdev</span> <b>(Alias name: ha-hbdev)</b>  Ha hbdev. <span class="li-normal">type: raw</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -194,6 +194,12 @@ Parameters
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vm_log_disk</span> <b>(Alias name: vm-log-disk)</b>  Vm log disk. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -247,13 +253,14 @@ Examples
             enforce_device_config: <value in [disable, enable]>
             auth_template: <list or string>
             ha_config: <value in [disable, enable]>
-            ha_hbdev: <string>
+            ha_hbdev: <any type>
             ha_monitor: <list or string>
             ha_password: <list or string>
             linked_to_model: <value in [disable, enable]>
             port_provisioning: <integer>
             sdwan_management: <value in [disable, enable]>
             split_switch_port: <value in [disable, enable]>
+            vm_log_disk: <value in [disable, enable]>
 
 
 Return Values

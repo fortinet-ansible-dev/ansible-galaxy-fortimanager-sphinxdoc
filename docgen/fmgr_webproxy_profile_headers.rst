@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">add_option</span> <b>(Alias name: add-option)</b>  Configure options to append content to existing http header or add new http header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [append, new-on-not-found, new]</span> 
+ <li><span class="li-head">add_option</span> <b>(Alias name: add-option)</b>  Configure options to append content to existing http header or add new http header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [append, new-on-not-found, new, replace, replace-when-match]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -160,7 +160,7 @@ Examples
             content: <string>
             id: <integer>
             name: <string>
-            add_option: <value in [append, new-on-not-found, new]>
+            add_option: <value in [append, new-on-not-found, new, ...]>
             base64_encoding: <value in [disable, enable]>
             dstaddr: <list or string>
             dstaddr6: <list or string>

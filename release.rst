@@ -3,8 +3,46 @@ Release Notes
 ==============================
 
 
+Release Galaxy 2.9.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.9.0
+
+Minor Changes
+-------------
+
+- Supported FortiManager 7.2.9, 7.4.6, 7.6.2. Added 3 new modules.
+
+Bugfixes
+--------
+
+- Changed parameter type of some parameters.
+
+New Modules
+-----------
+
+- fortinet.fortimanager.fmgr_gtp_ieallowlist - IE allow list.
+- fortinet.fortimanager.fmgr_gtp_ieallowlist_entries - Entries of allow list for unknown or out-of-state IEs.
+- fortinet.fortimanager.fmgr_ums_setting - Ums setting
+
+|
+
+
 Release Galaxy 2.8.2
 ~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
 
 
 Release Summary
@@ -16,6 +54,9 @@ Bugfixes
 --------
 
 - Modified built-in document to support sanity tests in ansible-core 2.18.0. No functionality changed.
+
+
+|
 
 
 Release Galaxy 2.8.1
@@ -31,6 +72,9 @@ Bugfixes
 -------------
 
 - Fixed a bug where rc_failed and rc_succeeded did not work.
+
+
+|
 
 
 Release Galaxy 2.8.0
@@ -59,6 +103,9 @@ New Modules
 - fortinet.fortimanager.fmgr_pkg_videofilter_youtubekey - Configure YouTube API keys.
 
 
+|
+
+
 Release Galaxy 2.7.0
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -79,6 +126,9 @@ Bugfixes
 
 - Fixed Bug in "fmgr_fact"
 - Improved documentation.
+
+
+|
 
 Release Galaxy 2.6.0
 ~~~~~~~~~~~~~~~~~~~~

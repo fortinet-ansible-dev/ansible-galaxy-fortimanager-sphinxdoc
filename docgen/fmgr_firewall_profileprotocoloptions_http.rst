@@ -61,7 +61,7 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">profile-protocol-options</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">profile_protocol_options</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_profileprotocoloptions_http</span> - Configure HTTP protocol options. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">block_page_status_code</span> <b>(Alias name: block-page-status-code)</b>  Code number returned for blocked http pages (non-fortiguard only) (100 - 599, default = 403). <span class="li-normal">type: int</span>
@@ -268,6 +268,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">http_0_9</span> <b>(Alias name: http-0.9)</b>  Configure action to take upon receipt of http 0. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, allow]</span> 
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -364,6 +370,7 @@ Examples
             verify_dns_for_policy_matching: <value in [disable, enable]>
             unknown_content_encoding: <value in [block, inspect, bypass]>
             domain_fronting: <value in [block, monitor, allow]>
+            http_0_9: <value in [block, allow]>
 
 
 Return Values

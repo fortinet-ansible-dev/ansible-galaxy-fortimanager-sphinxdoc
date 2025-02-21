@@ -202,6 +202,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -261,6 +267,7 @@ Examples
             preshared_key: <string>
             certificate_verification: <value in [disable, enable]>
             serial: <list or string>
+            vrf_select: <integer>
 
 
 Return Values

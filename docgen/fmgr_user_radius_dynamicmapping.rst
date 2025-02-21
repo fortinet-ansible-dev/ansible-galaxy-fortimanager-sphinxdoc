@@ -577,114 +577,132 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
+ <div id="label171" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">switch_controller_service_type</span> <b>(Alias name: switch-controller-service-type)</b>  Switch controller service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [login, framed, callback-login, callback-framed, outbound, administrative, nas-prompt, authenticate-only, callback-nas-prompt, call-check, callback-administrative]</span> 
- <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
- <div id="label171" style="display:none">
+ <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
+ <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">delimiter</span> Configure delimiter to be used for separating profile group names in the sso attribute (default = plus character +). <span class="li-normal">type: str</span> <span class="li-normal">choices: [plus, comma]</span> 
- <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
- <div id="label173" style="display:none">
+ <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
+ <div id="label175" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mac_case</span> <b>(Alias name: mac-case)</b>  Mac authentication case (default = lowercase). <span class="li-normal">type: str</span> <span class="li-normal">choices: [uppercase, lowercase]</span> 
- <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
- <div id="label175" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">mac_password_delimiter</span> <b>(Alias name: mac-password-delimiter)</b>  Mac authentication password delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mac_username_delimiter</span> <b>(Alias name: mac-username-delimiter)</b>  Mac authentication username delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
+ <li><span class="li-head">mac_password_delimiter</span> <b>(Alias name: mac-password-delimiter)</b>  Mac authentication password delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nas_id</span> <b>(Alias name: nas-id)</b>  Custom nas identifier. <span class="li-normal">type: str</span>
+ <li><span class="li-head">mac_username_delimiter</span> <b>(Alias name: mac-username-delimiter)</b>  Mac authentication username delimiter (default = hyphen). <span class="li-normal">type: str</span> <span class="li-normal">choices: [hyphen, single-hyphen, colon, none]</span> 
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nas_id_type</span> <b>(Alias name: nas-id-type)</b>  Nas identifier type configuration (default = legacy). <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, custom, hostname]</span> 
+ <li><span class="li-head">nas_id</span> <b>(Alias name: nas-id)</b>  Custom nas identifier. <span class="li-normal">type: str</span>
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ca_cert</span> <b>(Alias name: ca-cert)</b>  Ca of server to trust under tls. <span class="li-normal">type: str</span>
+ <li><span class="li-head">nas_id_type</span> <b>(Alias name: nas-id-type)</b>  Nas identifier type configuration (default = legacy). <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, custom, hostname]</span> 
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Client certificate to use under tls. <span class="li-normal">type: str</span>
+ <li><span class="li-head">ca_cert</span> <b>(Alias name: ca-cert)</b>  Ca of server to trust under tls. <span class="li-normal">type: str</span>
  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Enable/disable radius server identity check (verify server domain name/ip address against the server certificate). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Client certificate to use under tls. <span class="li-normal">type: str</span>
  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
+ <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Enable/disable radius server identity check (verify server domain name/ip address against the server certificate). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tls_min_proto_version</span> <b>(Alias name: tls-min-proto-version)</b>  Minimum supported protocol version for tls connections (default is to follow system global setting). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3, TLSv1-3]</span> 
+ <li><span class="li-head">status_ttl</span> <b>(Alias name: status-ttl)</b>  Time for which server reachability is cached so that when a server is unreachable, it will not be retried for at least this period of time (0 = cache disabled, default = 300). <span class="li-normal">type: int</span>
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">transport_protocol</span> <b>(Alias name: transport-protocol)</b>  Transport protocol to be used (default = udp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp, tls]</span> 
+ <li><span class="li-head">tls_min_proto_version</span> <b>(Alias name: tls-min-proto-version)</b>  Minimum supported protocol version for tls connections (default is to follow system global setting). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, TLSv1, TLSv1-1, TLSv1-2, SSLv3, TLSv1-3]</span> 
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">account_key_cert_field</span> <b>(Alias name: account-key-cert-field)</b>  Define subject identity field in certificate for user access right checking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [othername, rfc822name, dnsname, cn]</span> 
+ <li><span class="li-head">transport_protocol</span> <b>(Alias name: transport-protocol)</b>  Transport protocol to be used (default = udp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp, tls]</span> 
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">account_key_processing</span> <b>(Alias name: account-key-processing)</b>  Account key processing operation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [same, strip]</span> 
+ <li><span class="li-head">account_key_cert_field</span> <b>(Alias name: account-key-cert-field)</b>  Define subject identity field in certificate for user access right checking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [othername, rfc822name, dnsname, cn]</span> 
  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
  <div id="label199" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">call_station_id_type</span> <b>(Alias name: call-station-id-type)</b>  Calling & called station identifier type configuration (default = legacy), this option is not available for 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, IP, MAC]</span> 
+ <li><span class="li-head">account_key_processing</span> <b>(Alias name: account-key-processing)</b>  Account key processing operation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [same, strip]</span> 
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">switch_controller_nas_ip_dynamic</span> <b>(Alias name: switch-controller-nas-ip-dynamic)</b>  Enable/disable switch-controller nas-ip dynamic to dynamically set nas-ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">call_station_id_type</span> <b>(Alias name: call-station-id-type)</b>  Calling & called station identifier type configuration (default = legacy), this option is not available for 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, IP, MAC]</span> 
  <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
  <div id="label203" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_controller_nas_ip_dynamic</span> <b>(Alias name: switch-controller-nas-ip-dynamic)</b>  Enable/disable switch-controller nas-ip dynamic to dynamically set nas-ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <div id="label205" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the radius server. <span class="li-normal">type: list</span>
- <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
- <div id="label205" style="display:none">
+ <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">require_message_authenticator</span> <b>(Alias name: require-message-authenticator)</b>  Require message authenticator in authentication response. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
+ <div id="label209" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
+ <div id="label211" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

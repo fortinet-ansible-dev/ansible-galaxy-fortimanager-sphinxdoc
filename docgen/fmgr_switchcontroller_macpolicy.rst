@@ -109,7 +109,19 @@ Parameters
  <li><span class="li-head">fortilink</span> Fortilink interface for which this mac policy belongs to. <span class="li-normal">type: list</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.8</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">bounce_port_duration</span> <b>(Alias name: bounce-port-duration)</b>  Bounce duration in seconds of a switch port where this mac-policy is applied. <span class="li-normal">type: int</span>
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">poe_reset</span> <b>(Alias name: poe-reset)</b>  Enable/disable poe reset of a switch port where this mac-policy is applied. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -156,6 +168,8 @@ Examples
             vlan: <string>
             drop: <value in [disable, enable]>
             fortilink: <list or string>
+            bounce_port_duration: <integer>
+            poe_reset: <value in [disable, enable]>
 
 
 Return Values

@@ -94,6 +94,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Enable/disable requesting client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">empty_cert_action</span> <b>(Alias name: empty-cert-action)</b>  Action for an empty client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, accept, accept-unmanageable]</span> 
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">user_agent_detect</span> <b>(Alias name: user-agent-detect)</b>  Enable/disable detecting device type by http user-agent if no client certificate is provided. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -135,6 +153,9 @@ Examples
             name: <string>
             ssl_certificate: <string>
             replacemsg_group: <string>
+            client_cert: <value in [disable, enable]>
+            empty_cert_action: <value in [block, accept, accept-unmanageable]>
+            user_agent_detect: <value in [disable, enable]>
 
 
 Return Values
