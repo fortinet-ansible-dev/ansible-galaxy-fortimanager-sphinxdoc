@@ -138,13 +138,12 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           user_deviceaccesslist:
-            default_action: <value in [deny, accept]>
-            device_list:
-              -
-                action: <value in [deny, accept]>
-                device: <string>
-                id: <integer>
-            name: <string>
+            name: "your value" # Required variable, string
+            # default_action: <value in [deny, accept]>
+            # device_list:
+            #   - action: <value in [deny, accept]>
+            #     device: <string>
+            #     id: <integer>
 
 
 Return Values

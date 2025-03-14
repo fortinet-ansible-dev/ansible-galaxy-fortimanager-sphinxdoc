@@ -126,10 +126,10 @@ Examples
           community_list: <your own value>
           state: present # <value in [present, absent]>
           router_communitylist_rule:
-            action: <value in [deny, permit]>
-            id: <integer>
-            match: <string>
-            regexp: <string>
+            id: 0 # Required variable, integer
+            # action: <value in [deny, permit]>
+            # match: <string>
+            # regexp: <string>
 
 
 Return Values

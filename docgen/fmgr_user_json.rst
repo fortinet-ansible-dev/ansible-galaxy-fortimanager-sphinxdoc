@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           user_json:
-            name: <string>
-            status: <value in [disable, enable]>
+            name: "your value" # Required variable, string
+            # status: <value in [disable, enable]>
 
 
 Return Values

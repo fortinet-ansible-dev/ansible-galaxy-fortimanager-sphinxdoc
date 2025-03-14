@@ -116,8 +116,8 @@ Examples
           explicit_proxy_policy: <your own value>
           state: present # <value in [present, absent]>
           pkg_firewall_explicitproxypolicy_sectionvalue:
-            attr: <value in [label, global-label]>
-            name: <string>
+            # attr: <value in [label, global-label]>
+            # name: <string>
 
 
 Return Values

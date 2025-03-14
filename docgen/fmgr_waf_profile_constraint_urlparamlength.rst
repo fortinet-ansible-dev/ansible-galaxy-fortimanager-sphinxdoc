@@ -130,11 +130,11 @@ Examples
           adom: <your own value>
           profile: <your own value>
           waf_profile_constraint_urlparamlength:
-            action: <value in [allow, block]>
-            length: <integer>
-            log: <value in [disable, enable]>
-            severity: <value in [low, medium, high]>
-            status: <value in [disable, enable]>
+            # action: <value in [allow, block]>
+            # length: <integer>
+            # log: <value in [disable, enable]>
+            # severity: <value in [low, medium, high]>
+            # status: <value in [disable, enable]>
 
 
 Return Values

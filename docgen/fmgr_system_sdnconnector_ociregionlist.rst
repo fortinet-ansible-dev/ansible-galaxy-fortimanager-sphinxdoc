@@ -108,7 +108,7 @@ Examples
           sdn_connector: <your own value>
           state: present # <value in [present, absent]>
           system_sdnconnector_ociregionlist:
-            region: <string>
+            # region: <string>
 
 
 Return Values

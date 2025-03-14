@@ -116,9 +116,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           adom_options:
-            assign_excluded: <value in [disable, enable]>
-            specify_assign_pkg_list: <value in [disable, enable]>
-            assign_name: <string>
+            # assign_excluded: <value in [disable, enable]>
+            # specify_assign_pkg_list: <value in [disable, enable]>
+            # assign_name: <string>
 
 
 Return Values

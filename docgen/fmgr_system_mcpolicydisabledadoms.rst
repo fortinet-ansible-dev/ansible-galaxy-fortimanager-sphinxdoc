@@ -104,7 +104,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_mcpolicydisabledadoms:
-            adom_name: <string>
+            # adom_name: <string>
 
 
 Return Values

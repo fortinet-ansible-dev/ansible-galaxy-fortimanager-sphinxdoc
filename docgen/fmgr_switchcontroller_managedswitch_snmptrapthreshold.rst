@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           managed_switch: <your own value>
           switchcontroller_managedswitch_snmptrapthreshold:
-            trap_high_cpu_threshold: <integer>
-            trap_log_full_threshold: <integer>
-            trap_low_memory_threshold: <integer>
+            # trap_high_cpu_threshold: <integer>
+            # trap_log_full_threshold: <integer>
+            # trap_low_memory_threshold: <integer>
 
 
 Return Values

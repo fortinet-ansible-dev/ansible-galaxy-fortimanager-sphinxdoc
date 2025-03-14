@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           wireless_addrgrp:
-            addresses: <list or string>
-            default_policy: <value in [deny, allow]>
-            id: <string>
+            id: "your value" # Required variable, string
+            # addresses: <list or string>
+            # default_policy: <value in [deny, allow]>
 
 
 Return Values

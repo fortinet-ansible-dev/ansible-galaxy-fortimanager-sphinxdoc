@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dvmdb_adom_objectmember:
-            name: <string>
-            vdom: <string>
+            # name: <string>
+            # vdom: <string>
 
 
 Return Values

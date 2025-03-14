@@ -120,9 +120,9 @@ Examples
           node: <your own value>
           state: present # <value in [present, absent]>
           vpnmgr_node_summaryaddr:
-            addr: <string>
-            priority: <integer>
-            seq: <integer>
+            seq: 0 # Required variable, integer
+            # addr: <string>
+            # priority: <integer>
 
 
 Return Values

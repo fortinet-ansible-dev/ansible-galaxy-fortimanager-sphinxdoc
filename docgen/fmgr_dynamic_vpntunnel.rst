@@ -146,15 +146,13 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dynamic_vpntunnel:
-            description: <string>
-            dynamic_mapping:
-              -
-                _scope:
-                  -
-                    name: <string>
-                    vdom: <string>
-                local_ipsec: <string>
-            name: <string>
+            name: "your value" # Required variable, string
+            # description: <string>
+            # dynamic_mapping:
+            #   - _scope:
+            #       - name: <string>
+            #         vdom: <string>
+            #     local_ipsec: <string>
 
 
 Return Values

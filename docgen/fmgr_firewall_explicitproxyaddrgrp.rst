@@ -148,14 +148,14 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           firewall_explicitproxyaddrgrp:
-            color: <integer>
-            comment: <string>
-            member: <string>
-            name: <string>
-            tags: <string>
-            type: <value in [src, dst]>
-            uuid: <string>
-            visibility: <value in [disable, enable]>
+            name: "your value" # Required variable, string
+            # color: <integer>
+            # comment: <string>
+            # member: <string>
+            # tags: <string>
+            # type: <value in [src, dst]>
+            # uuid: <string>
+            # visibility: <value in [disable, enable]>
 
 
 Return Values

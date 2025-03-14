@@ -114,8 +114,8 @@ Examples
           virtual_desktop_app_list: <your own value>
           state: present # <value in [present, absent]>
           vpnsslweb_virtualdesktopapplist_apps:
-            md5s: <list or string>
-            name: <string>
+            name: "your value" # Required variable, string
+            # md5s: <list or string>
 
 
 Return Values

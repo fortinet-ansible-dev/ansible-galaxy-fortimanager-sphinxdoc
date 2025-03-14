@@ -124,10 +124,10 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           system_npu_dswdtsprofile:
-            action: <value in [wait, drop, drop_tmr_0, ...]>
-            min_limit: <integer>
-            profile_id: <integer>
-            step: <integer>
+            # action: <value in [wait, drop, drop_tmr_0, ...]>
+            # min_limit: <integer>
+            # profile_id: <integer>
+            # step: <integer>
 
 
 Return Values

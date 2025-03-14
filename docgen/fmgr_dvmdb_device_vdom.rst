@@ -150,14 +150,14 @@ Examples
           device: <your own value>
           state: present # <value in [present, absent]>
           dvmdb_device_vdom:
-            comments: <string>
-            name: <string>
-            opmode: <value in [nat, transparent]>
-            rtm_prof_id: <integer>
-            status: <string>
-            vpn_id: <integer>
-            meta_fields: <dict>
-            vdom_type: <value in [traffic, admin]>
+            name: "your value" # Required variable, string
+            # comments: <string>
+            # opmode: <value in [nat, transparent]>
+            # rtm_prof_id: <integer>
+            # status: <string>
+            # vpn_id: <integer>
+            # meta_fields: <dict>
+            # vdom_type: <value in [traffic, admin]>
 
 
 Return Values

@@ -116,9 +116,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           fmupdate_fdssetting_pushoverridetoclient_announceip:
-            id: <integer>
-            ip: <string>
-            port: <integer>
+            id: 0 # Required variable, integer
+            # ip: <string>
+            # port: <integer>
 
 
 Return Values

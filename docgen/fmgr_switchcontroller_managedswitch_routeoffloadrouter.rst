@@ -114,8 +114,8 @@ Examples
           managed_switch: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_managedswitch_routeoffloadrouter:
-            router_ip: <string>
-            vlan_name: <string>
+            # router_ip: <string>
+            # vlan_name: <string>
 
 
 Return Values

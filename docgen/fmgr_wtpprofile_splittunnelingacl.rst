@@ -114,8 +114,8 @@ Examples
           wtp_profile: <your own value>
           state: present # <value in [present, absent]>
           wtpprofile_splittunnelingacl:
-            dest_ip: <string>
-            id: <integer>
+            id: 0 # Required variable, integer
+            # dest_ip: <string>
 
 
 Return Values

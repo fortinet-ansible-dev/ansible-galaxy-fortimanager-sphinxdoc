@@ -120,10 +120,10 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           fmupdate_fdssetting_updateschedule:
-            day: <value in [Sunday, Monday, Tuesday, ...]>
-            frequency: <value in [every, daily, weekly]>
-            status: <value in [disable, enable]>
-            time: <list or string>
+            # day: <value in [Sunday, Monday, Tuesday, ...]>
+            # frequency: <value in [every, daily, weekly]>
+            # status: <value in [disable, enable]>
+            # time: <list or string>
 
 
 Return Values

@@ -126,10 +126,10 @@ Examples
           sensor: <your own value>
           state: present # <value in [present, absent]>
           dlp_sensor_entries:
-            count: <integer>
-            dictionary: <string>
-            id: <integer>
-            status: <value in [disable, enable]>
+            id: 0 # Required variable, integer
+            # count: <integer>
+            # dictionary: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

@@ -120,9 +120,9 @@ Examples
           aspath_list: <your own value>
           state: present # <value in [present, absent]>
           router_aspathlist_rule:
-            action: <value in [deny, permit]>
-            id: <integer>
-            regexp: <string>
+            id: 0 # Required variable, integer
+            # action: <value in [deny, permit]>
+            # regexp: <string>
 
 
 Return Values

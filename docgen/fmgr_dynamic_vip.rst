@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dynamic_vip:
-            description: <string>
-            name: <string>
+            name: "your value" # Required variable, string
+            # description: <string>
 
 
 Return Values

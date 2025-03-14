@@ -116,9 +116,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_ha_monitoredips:
-            id: <integer>
-            interface: <string>
-            ip: <string>
+            id: 0 # Required variable, integer
+            # interface: <string>
+            # ip: <string>
 
 
 Return Values

@@ -140,13 +140,12 @@ Examples
           managed_switch: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_managedswitch_ipsourceguard:
-            binding_entry:
-              -
-                entry_name: <string>
-                ip: <string>
-                mac: <string>
-            description: <string>
-            port: <string>
+            # binding_entry:
+            #   - entry_name: <string>
+            #     ip: <string>
+            #     mac: <string>
+            # description: <string>
+            # port: <string>
 
 
 Return Values

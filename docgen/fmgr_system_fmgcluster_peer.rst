@@ -122,10 +122,10 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_fmgcluster_peer:
-            addr: <string>
-            fqdn: <string>
-            name: <string>
-            sn: <string>
+            name: "your value" # Required variable, string
+            # addr: <string>
+            # fqdn: <string>
+            # sn: <string>
 
 
 Return Values

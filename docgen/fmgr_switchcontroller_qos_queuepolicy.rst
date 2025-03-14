@@ -180,20 +180,19 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_qos_queuepolicy:
-            cos_queue:
-              -
-                description: <string>
-                drop_policy: <value in [taildrop, weighted-random-early-detection]>
-                max_rate: <integer>
-                min_rate: <integer>
-                name: <string>
-                weight: <integer>
-                max_rate_percent: <integer>
-                min_rate_percent: <integer>
-                ecn: <value in [disable, enable]>
-            name: <string>
-            schedule: <value in [strict, round-robin, weighted]>
-            rate_by: <value in [kbps, percent]>
+            name: "your value" # Required variable, string
+            # cos_queue:
+            #   - description: <string>
+            #     drop_policy: <value in [taildrop, weighted-random-early-detection]>
+            #     max_rate: <integer>
+            #     min_rate: <integer>
+            #     name: <string>
+            #     weight: <integer>
+            #     max_rate_percent: <integer>
+            #     min_rate_percent: <integer>
+            #     ecn: <value in [disable, enable]>
+            # schedule: <value in [strict, round-robin, weighted]>
+            # rate_by: <value in [kbps, percent]>
 
 
 Return Values

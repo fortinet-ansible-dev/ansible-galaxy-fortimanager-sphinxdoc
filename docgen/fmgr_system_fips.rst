@@ -114,9 +114,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_fips:
-            entropy_token: <value in [enable, disable, dynamic]>
-            re_seed_interval: <integer>
-            status: <value in [disable, enable]>
+            # entropy_token: <value in [enable, disable, dynamic]>
+            # re_seed_interval: <integer>
+            # status: <value in [disable, enable]>
 
 
 Return Values

@@ -116,9 +116,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           system_npu_priorityprotocol:
-            bfd: <value in [disable, enable]>
-            bgp: <value in [disable, enable]>
-            slbc: <value in [disable, enable]>
+            # bfd: <value in [disable, enable]>
+            # bgp: <value in [disable, enable]>
+            # slbc: <value in [disable, enable]>
 
 
 Return Values

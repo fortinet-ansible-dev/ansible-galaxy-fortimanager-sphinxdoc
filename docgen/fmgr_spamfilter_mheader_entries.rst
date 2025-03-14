@@ -138,12 +138,12 @@ Examples
           mheader: <your own value>
           state: present # <value in [present, absent]>
           spamfilter_mheader_entries:
-            action: <value in [spam, clear]>
-            fieldbody: <string>
-            fieldname: <string>
-            id: <integer>
-            pattern_type: <value in [wildcard, regexp]>
-            status: <value in [disable, enable]>
+            id: 0 # Required variable, integer
+            # action: <value in [spam, clear]>
+            # fieldbody: <string>
+            # fieldname: <string>
+            # pattern_type: <value in [wildcard, regexp]>
+            # status: <value in [disable, enable]>
 
 
 Return Values

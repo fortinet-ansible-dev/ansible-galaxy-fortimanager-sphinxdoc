@@ -150,14 +150,14 @@ Examples
           access_control_list: <your own value>
           state: present # <value in [present, absent]>
           wireless_accesscontrollist_layer3ipv6rules:
-            action: <value in [allow, deny]>
-            comment: <string>
-            dstaddr: <string>
-            dstport: <integer>
-            protocol: <integer>
-            rule_id: <integer>
-            srcaddr: <string>
-            srcport: <integer>
+            # action: <value in [allow, deny]>
+            # comment: <string>
+            # dstaddr: <string>
+            # dstport: <integer>
+            # protocol: <integer>
+            # rule_id: <integer>
+            # srcaddr: <string>
+            # srcport: <integer>
 
 
 Return Values

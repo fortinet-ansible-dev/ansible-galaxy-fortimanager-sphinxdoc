@@ -146,14 +146,13 @@ Examples
           internet_service_custom: <your own value>
           state: present # <value in [present, absent]>
           application_internetservicecustom_entry:
-            dst: <string>
-            id: <integer>
-            port_range:
-              -
-                end_port: <integer>
-                id: <integer>
-                start_port: <integer>
-            protocol: <integer>
+            id: 0 # Required variable, integer
+            # dst: <string>
+            # port_range:
+            #   - end_port: <integer>
+            #     id: <integer>
+            #     start_port: <integer>
+            # protocol: <integer>
 
 
 Return Values

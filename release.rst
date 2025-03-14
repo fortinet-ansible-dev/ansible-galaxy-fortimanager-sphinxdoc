@@ -2,6 +2,26 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.9.1
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.9.1
+
+Bugfixes
+--------
+
+- Changed the default playbook examples for each module to pass ansible-lint.
+- Corrected mainkey of some modules.
+
+|
 
 Release Galaxy 2.9.0
 ~~~~~~~~~~~~~~~~~~~~

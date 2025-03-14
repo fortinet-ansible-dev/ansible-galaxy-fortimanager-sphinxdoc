@@ -128,11 +128,10 @@ Examples
           variable: <your own value>
           state: present # <value in [present, absent]>
           fmg_variable_dynamicmapping:
-            _scope:
-              -
-                name: <string>
-                vdom: <string>
-            value: <string>
+            # _scope:
+            #   - name: <string>
+            #     vdom: <string>
+            # value: <string>
 
 
 Return Values

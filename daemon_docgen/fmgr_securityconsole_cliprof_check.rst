@@ -127,12 +127,11 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           securityconsole_cliprof_check:
-            adom: <string>
-            cliprof: <string>
-            scope:
-              -
-                name: <string>
-                vdom: <string>
+            # adom: <string>
+            # cliprof: <string>
+            # scope:
+            #   - name: <string>
+            #     vdom: <string>
 
 
 Return Values

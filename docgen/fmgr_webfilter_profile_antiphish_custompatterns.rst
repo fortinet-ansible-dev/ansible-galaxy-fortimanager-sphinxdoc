@@ -120,9 +120,9 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           webfilter_profile_antiphish_custompatterns:
-            category: <value in [username, password]>
-            pattern: <string>
-            type: <value in [regex, literal]>
+            # category: <value in [username, password]>
+            # pattern: <string>
+            # type: <value in [regex, literal]>
 
 
 Return Values

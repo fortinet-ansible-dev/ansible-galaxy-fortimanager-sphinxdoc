@@ -106,7 +106,7 @@ Examples
           user: <your own value>
           state: present # <value in [present, absent]>
           system_admin_user_webfilter:
-            web_filter_name: <string>
+            web_filter_name: "your value" # Required variable, string
 
 
 Return Values

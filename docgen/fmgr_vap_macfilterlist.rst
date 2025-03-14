@@ -120,9 +120,9 @@ Examples
           vap: <your own value>
           state: present # <value in [present, absent]>
           vap_macfilterlist:
-            id: <integer>
-            mac: <string>
-            mac_filter_policy: <value in [deny, allow]>
+            id: 0 # Required variable, integer
+            # mac: <string>
+            # mac_filter_policy: <value in [deny, allow]>
 
 
 Return Values

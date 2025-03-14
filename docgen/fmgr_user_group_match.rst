@@ -126,10 +126,10 @@ Examples
           group: <your own value>
           state: present # <value in [present, absent]>
           user_group_match:
-            _gui_meta: <string>
-            group_name: <string>
-            id: <integer>
-            server_name: <string>
+            id: 0 # Required variable, integer
+            # _gui_meta: <string>
+            # group_name: <string>
+            # server_name: <string>
 
 
 Return Values

@@ -124,13 +124,13 @@ Examples
           adom: <your own value>
           profile: <your own value>
           spamfilter_profile_pop3:
-            action: <value in [pass, tag]>
-            log: <value in [disable, enable]>
-            tag_msg: <string>
-            tag_type:
-              - "subject"
-              - "header"
-              - "spaminfo"
+            # action: <value in [pass, tag]>
+            # log: <value in [disable, enable]>
+            # tag_msg: <string>
+            # tag_type:
+            #   - "subject"
+            #   - "header"
+            #   - "spaminfo"
 
 
 Return Values

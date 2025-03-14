@@ -116,9 +116,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_csf_fabricconnector:
-            accprofile: <string>
-            configuration_write_access: <value in [disable, enable]>
-            serial: <string>
+            # accprofile: <string>
+            # configuration_write_access: <value in [disable, enable]>
+            # serial: <string>
 
 
 Return Values

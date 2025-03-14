@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           system_npu_portcpumap:
-            cpu_core: <string>
-            interface: <string>
+            # cpu_core: <string>
+            # interface: <string>
 
 
 Return Values

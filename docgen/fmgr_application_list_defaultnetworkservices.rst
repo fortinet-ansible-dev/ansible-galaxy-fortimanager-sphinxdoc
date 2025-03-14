@@ -126,21 +126,21 @@ Examples
           list: <your own value>
           state: present # <value in [present, absent]>
           application_list_defaultnetworkservices:
-            id: <integer>
-            port: <integer>
-            services:
-              - "http"
-              - "ssh"
-              - "telnet"
-              - "ftp"
-              - "dns"
-              - "smtp"
-              - "pop3"
-              - "imap"
-              - "snmp"
-              - "nntp"
-              - "https"
-            violation_action: <value in [block, monitor, pass]>
+            id: 0 # Required variable, integer
+            # port: <integer>
+            # services:
+            #   - "http"
+            #   - "ssh"
+            #   - "telnet"
+            #   - "ftp"
+            #   - "dns"
+            #   - "smtp"
+            #   - "pop3"
+            #   - "imap"
+            #   - "snmp"
+            #   - "nntp"
+            #   - "https"
+            # violation_action: <value in [block, monitor, pass]>
 
 
 Return Values

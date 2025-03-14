@@ -152,16 +152,14 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           fmg_variable:
-            description: <string>
-            dynamic_mapping:
-              -
-                _scope:
-                  -
-                    name: <string>
-                    vdom: <string>
-                value: <string>
-            name: <string>
-            value: <string>
+            name: "your value" # Required variable, string
+            # description: <string>
+            # dynamic_mapping:
+            #   - _scope:
+            #       - name: <string>
+            #         vdom: <string>
+            #     value: <string>
+            # value: <string>
 
 
 Return Values

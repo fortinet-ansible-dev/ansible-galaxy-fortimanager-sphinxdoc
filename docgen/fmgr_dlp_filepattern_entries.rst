@@ -120,9 +120,9 @@ Examples
           filepattern: <your own value>
           state: present # <value in [present, absent]>
           dlp_filepattern_entries:
-            file_type: <value in [unknown, ignored, exe, ...]>
-            filter_type: <value in [pattern, type]>
-            pattern: <string>
+            # file_type: <value in [unknown, ignored, exe, ...]>
+            # filter_type: <value in [pattern, type]>
+            # pattern: <string>
 
 
 Return Values

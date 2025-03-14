@@ -164,18 +164,16 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_qosmap:
-            dscp_except:
-              -
-                dscp: <integer>
-                index: <integer>
-                up: <integer>
-            dscp_range:
-              -
-                high: <integer>
-                index: <integer>
-                low: <integer>
-                up: <integer>
-            name: <string>
+            name: "your value" # Required variable, string
+            # dscp_except:
+            #   - dscp: <integer>
+            #     index: <integer>
+            #     up: <integer>
+            # dscp_range:
+            #   - high: <integer>
+            #     index: <integer>
+            #     low: <integer>
+            #     up: <integer>
 
 
 Return Values

@@ -122,9 +122,9 @@ Examples
           entry: <your own value>
           state: present # <value in [present, absent]>
           application_internetservicecustom_entry_portrange:
-            end_port: <integer>
-            id: <integer>
-            start_port: <integer>
+            id: 0 # Required variable, integer
+            # end_port: <integer>
+            # start_port: <integer>
 
 
 Return Values

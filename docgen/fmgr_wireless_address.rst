@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           wireless_address:
-            id: <string>
-            mac: <string>
-            policy: <value in [deny, allow]>
+            id: "your value" # Required variable, string
+            # mac: <string>
+            # policy: <value in [deny, allow]>
 
 
 Return Values

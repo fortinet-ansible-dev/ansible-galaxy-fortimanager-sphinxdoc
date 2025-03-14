@@ -112,8 +112,8 @@ Examples
           user: <your own value>
           state: present # <value in [present, absent]>
           system_admin_user_dashboardtabs:
-            name: <string>
-            tabid: <integer>
+            name: "your value" # Required variable, string
+            # tabid: <integer>
 
 
 Return Values

@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           vapgroup:
-            comment: <string>
-            name: <string>
-            vaps: <list or string>
+            name: "your value" # Required variable, string
+            # comment: <string>
+            # vaps: <list or string>
 
 
 Return Values

@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           nacprofile:
-            comment: <string>
-            name: <string>
-            onboarding_vlan: <string>
+            name: "your value" # Required variable, string
+            # comment: <string>
+            # onboarding_vlan: <string>
 
 
 Return Values

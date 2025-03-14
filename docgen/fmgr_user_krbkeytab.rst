@@ -136,12 +136,12 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           user_krbkeytab:
-            keytab: <string>
-            ldap_server: <list or string>
-            name: <string>
-            pac_data: <value in [disable, enable]>
-            principal: <string>
-            password: <list or string>
+            name: "your value" # Required variable, string
+            # keytab: <string>
+            # ldap_server: <list or string>
+            # pac_data: <value in [disable, enable]>
+            # principal: <string>
+            # password: <list or string>
 
 
 Return Values

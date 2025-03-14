@@ -112,8 +112,8 @@ Examples
       ansible_httpapi_port: 443
     tasks:
       - name: EAP auth param.
-        fortinet.fortimanager.fmgr_hotspot20_anqpnairealm_nailist_eapmethod_authparam:
-          # bypass_validation: false
+        ? fortinet.fortimanager.fmgr_hotspot20_anqpnairealm_nailist_eapmethod_authparam
+        : # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
@@ -124,9 +124,9 @@ Examples
           eap_method: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_anqpnairealm_nailist_eapmethod_authparam:
-            id: <value in [non-eap-inner-auth, inner-auth-eap, credential, ...]>
-            index: <integer>
-            val: <value in [eap-identity, eap-md5, eap-tls, ...]>
+            index: 0 # Required variable, integer
+            id: "non-eap-inner-auth" # <value in [non-eap-inner-auth, inner-auth-eap, credential, ...]>
+            # val: <value in [eap-identity, eap-md5, eap-tls, ...]>
 
 
 Return Values

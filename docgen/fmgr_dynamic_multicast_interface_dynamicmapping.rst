@@ -128,11 +128,10 @@ Examples
           interface: <your own value>
           state: present # <value in [present, absent]>
           dynamic_multicast_interface_dynamicmapping:
-            _scope:
-              -
-                name: <string>
+            _scope: # Required variable, list of device
+              - name: <string>
                 vdom: <string>
-            local_intf: <string>
+            # local_intf: <string>
 
 
 Return Values

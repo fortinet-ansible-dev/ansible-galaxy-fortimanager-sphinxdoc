@@ -124,9 +124,9 @@ Examples
           parameters: <your own value>
           state: present # <value in [present, absent]>
           application_list_entries_parameters_members:
-            id: <integer>
-            name: <string>
-            value: <string>
+            id: 0 # Required variable, integer
+            # name: <string>
+            # value: <string>
 
 
 Return Values

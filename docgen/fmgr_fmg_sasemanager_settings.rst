@@ -134,12 +134,12 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           fmg_sasemanager_settings:
-            address: <list or string>
-            profile_group: <list or string>
-            sync_address: <value in [disable, specify, all]>
-            sync_profile_group: <value in [disable, specify, all]>
-            sync_user: <value in [disable, specify, all]>
-            user: <list or string>
+            # address: <list or string>
+            # profile_group: <list or string>
+            # sync_address: <value in [disable, specify, all]>
+            # sync_profile_group: <value in [disable, specify, all]>
+            # sync_user: <value in [disable, specify, all]>
+            # user: <list or string>
 
 
 Return Values

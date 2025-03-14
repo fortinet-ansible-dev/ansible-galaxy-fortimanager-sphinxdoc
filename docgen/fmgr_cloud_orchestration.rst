@@ -124,10 +124,10 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           cloud_orchestration:
-            configuration: <string>
-            description: <string>
-            name: <string>
-            type: <value in [aws]>
+            name: "your value" # Required variable, string
+            # configuration: <string>
+            # description: <string>
+            # type: <value in [aws]>
 
 
 Return Values

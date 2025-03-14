@@ -132,11 +132,11 @@ Examples
           access_list6: <your own value>
           state: present # <value in [present, absent]>
           router_accesslist6_rule:
-            action: <value in [permit, deny]>
-            exact_match: <value in [disable, enable]>
-            flags: <integer>
-            id: <integer>
-            prefix6: <string>
+            id: 0 # Required variable, integer
+            # action: <value in [permit, deny]>
+            # exact_match: <value in [disable, enable]>
+            # flags: <integer>
+            # prefix6: <string>
 
 
 Return Values

@@ -124,10 +124,10 @@ Examples
           adom: <your own value>
           profile: <your own value>
           waf_profile_constraint_hostname:
-            action: <value in [allow, block]>
-            log: <value in [disable, enable]>
-            severity: <value in [low, medium, high]>
-            status: <value in [disable, enable]>
+            # action: <value in [allow, block]>
+            # log: <value in [disable, enable]>
+            # severity: <value in [low, medium, high]>
+            # status: <value in [disable, enable]>
 
 
 Return Values

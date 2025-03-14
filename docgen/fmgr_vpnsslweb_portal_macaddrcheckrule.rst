@@ -120,9 +120,9 @@ Examples
           portal: <your own value>
           state: present # <value in [present, absent]>
           vpnsslweb_portal_macaddrcheckrule:
-            mac_addr_list: <list or string>
-            mac_addr_mask: <integer>
-            name: <string>
+            name: "your value" # Required variable, string
+            # mac_addr_list: <list or string>
+            # mac_addr_mask: <integer>
 
 
 Return Values

@@ -114,8 +114,8 @@ Examples
           script: <your own value>
           state: present # <value in [present, absent]>
           dvmdb_script_objectmember:
-            name: <string>
-            vdom: <string>
+            # name: <string>
+            # vdom: <string>
 
 
 Return Values

@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           log_customfield:
-            id: <string>
-            name: <string>
-            value: <string>
+            id: "your value" # Required variable, string
+            # name: <string>
+            # value: <string>
 
 
 Return Values

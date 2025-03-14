@@ -120,9 +120,9 @@ Examples
           lldp_profile: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_lldpprofile_medlocationservice:
-            name: <string>
-            status: <value in [disable, enable]>
-            sys_location_id: <string>
+            name: "your value" # Required variable, string
+            # status: <value in [disable, enable]>
+            # sys_location_id: <string>
 
 
 Return Values

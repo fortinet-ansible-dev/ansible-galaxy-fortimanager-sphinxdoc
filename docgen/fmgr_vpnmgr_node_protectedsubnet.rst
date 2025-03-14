@@ -114,8 +114,8 @@ Examples
           node: <your own value>
           state: present # <value in [present, absent]>
           vpnmgr_node_protectedsubnet:
-            addr: <list or string>
-            seq: <integer>
+            seq: 0 # Required variable, integer
+            # addr: <list or string>
 
 
 Return Values

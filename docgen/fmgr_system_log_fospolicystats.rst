@@ -114,9 +114,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_log_fospolicystats:
-            retention_days: <integer>
-            sampling_interval: <integer>
-            status: <value in [disable, enable]>
+            # retention_days: <integer>
+            # sampling_interval: <integer>
+            # status: <value in [disable, enable]>
 
 
 Return Values

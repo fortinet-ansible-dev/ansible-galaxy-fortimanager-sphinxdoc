@@ -119,10 +119,10 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           sys_cloud_orchest:
-            action: <value in [deploy, undeploy, status]>
-            adom: <string>
-            adom_oid: <integer>
-            name: <string>
+            # action: <value in [deploy, undeploy, status]>
+            # adom: <string>
+            # adom_oid: <integer>
+            # name: <string>
 
 
 Return Values

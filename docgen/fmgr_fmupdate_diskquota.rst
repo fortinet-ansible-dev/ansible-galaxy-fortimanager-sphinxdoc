@@ -102,7 +102,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           fmupdate_diskquota:
-            value: <integer>
+            # value: <integer>
 
 
 Return Values

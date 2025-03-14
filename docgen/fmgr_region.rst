@@ -130,11 +130,11 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           region:
-            comments: <string>
-            grayscale: <value in [disable, enable]>
-            image_type: <value in [gif, jpeg, png]>
-            name: <string>
-            opacity: <integer>
+            name: "your value" # Required variable, string
+            # comments: <string>
+            # grayscale: <value in [disable, enable]>
+            # image_type: <value in [gif, jpeg, png]>
+            # opacity: <integer>
 
 
 Return Values

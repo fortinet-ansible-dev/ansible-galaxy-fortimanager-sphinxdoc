@@ -101,7 +101,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           sys_task_result:
-            taskid: <integer>
+            # taskid: <integer>
 
 
 Return Values

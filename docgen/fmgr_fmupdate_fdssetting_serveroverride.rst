@@ -140,17 +140,16 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           fmupdate_fdssetting_serveroverride:
-            servlist:
-              -
-                id: <integer>
-                ip: <string>
-                ip6: <string>
-                port: <integer>
-                service_type: # <list or string>
-                  - "fds"
-                  - "fct"
-                  - "fai"
-            status: <value in [disable, enable]>
+            # servlist:
+            #   - id: <integer>
+            #     ip: <string>
+            #     ip6: <string>
+            #     port: <integer>
+            #     service_type: # <list or string>
+            #       - "fds"
+            #       - "fct"
+            #       - "fai"
+            # status: <value in [disable, enable]>
 
 
 Return Values

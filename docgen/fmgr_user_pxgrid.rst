@@ -130,11 +130,11 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           user_pxgrid:
-            ca_cert: <string>
-            client_cert: <string>
-            name: <string>
-            server: <string>
-            status: <value in [disable, enable]>
+            name: "your value" # Required variable, string
+            # ca_cert: <string>
+            # client_cert: <string>
+            # server: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

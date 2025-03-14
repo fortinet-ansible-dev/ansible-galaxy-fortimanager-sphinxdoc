@@ -120,9 +120,9 @@ Examples
           anqp_roaming_consortium: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_anqproamingconsortium_oilist:
-            comment: <string>
-            index: <integer>
-            oi: <string>
+            index: 0 # Required variable, integer
+            # comment: <string>
+            # oi: <string>
 
 
 Return Values

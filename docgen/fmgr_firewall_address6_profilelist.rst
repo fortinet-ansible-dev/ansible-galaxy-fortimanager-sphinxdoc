@@ -108,7 +108,7 @@ Examples
           address6: <your own value>
           state: present # <value in [present, absent]>
           firewall_address6_profilelist:
-            profile_id: <integer>
+            # profile_id: <integer>
 
 
 Return Values

@@ -138,12 +138,12 @@ Examples
           content: <your own value>
           state: present # <value in [present, absent]>
           webfilter_content_entries:
-            action: <value in [exempt, block]>
-            lang: <value in [western, simch, trach, ...]>
-            name: <string>
-            pattern_type: <value in [wildcard, regexp]>
-            score: <integer>
-            status: <value in [disable, enable]>
+            name: "your value" # Required variable, string
+            # action: <value in [exempt, block]>
+            # lang: <value in [western, simch, trach, ...]>
+            # pattern_type: <value in [wildcard, regexp]>
+            # score: <integer>
+            # status: <value in [disable, enable]>
 
 
 Return Values

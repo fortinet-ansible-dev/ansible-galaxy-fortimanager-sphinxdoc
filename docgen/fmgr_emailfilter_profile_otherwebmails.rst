@@ -106,7 +106,7 @@ Examples
           adom: <your own value>
           profile: <your own value>
           emailfilter_profile_otherwebmails:
-            log_all: <value in [disable, enable]>
+            # log_all: <value in [disable, enable]>
 
 
 Return Values

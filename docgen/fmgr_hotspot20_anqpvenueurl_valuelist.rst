@@ -120,9 +120,9 @@ Examples
           anqp_venue_url: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_anqpvenueurl_valuelist:
-            index: <integer>
-            number: <integer>
-            value: <string>
+            # index: <integer>
+            # number: <integer>
+            # value: <string>
 
 
 Return Values

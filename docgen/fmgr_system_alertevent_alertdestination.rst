@@ -136,12 +136,12 @@ Examples
           alert_event: <your own value>
           state: present # <value in [present, absent]>
           system_alertevent_alertdestination:
-            from: <string>
-            smtp_name: <string>
-            snmp_name: <string>
-            syslog_name: <string>
-            to: <string>
-            type: <value in [mail, snmp, syslog]>
+            # from: <string>
+            # smtp_name: <string>
+            # snmp_name: <string>
+            # syslog_name: <string>
+            # to: <string>
+            # type: <value in [mail, snmp, syslog]>
 
 
 Return Values

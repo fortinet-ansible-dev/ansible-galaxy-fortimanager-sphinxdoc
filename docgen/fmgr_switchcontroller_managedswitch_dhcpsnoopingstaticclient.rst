@@ -132,11 +132,11 @@ Examples
           managed_switch: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_managedswitch_dhcpsnoopingstaticclient:
-            ip: <string>
-            mac: <string>
-            name: <string>
-            port: <string>
-            vlan: <string>
+            name: "your value" # Required variable, string
+            # ip: <string>
+            # mac: <string>
+            # port: <string>
+            # vlan: <string>
 
 
 Return Values

@@ -113,13 +113,13 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           dvm_cmd_update_device:
-            adom: <string>
-            device: <string>
-            flags:
-              - "none"
-              - "create_task"
-              - "nonblocking"
-              - "log_dev"
+            # adom: <string>
+            # device: <string>
+            # flags:
+            #   - "none"
+            #   - "create_task"
+            #   - "nonblocking"
+            #   - "log_dev"
 
 
 Return Values

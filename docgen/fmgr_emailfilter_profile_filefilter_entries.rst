@@ -144,16 +144,16 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           emailfilter_profile_filefilter_entries:
-            action: <value in [log, block]>
-            comment: <string>
-            encryption: <value in [any, yes]>
-            file_type: <list or string>
-            filter: <string>
-            password_protected: <value in [any, yes]>
-            protocol:
-              - "smtp"
-              - "imap"
-              - "pop3"
+            # action: <value in [log, block]>
+            # comment: <string>
+            # encryption: <value in [any, yes]>
+            # file_type: <list or string>
+            # filter: <string>
+            # password_protected: <value in [any, yes]>
+            # protocol:
+            #   - "smtp"
+            #   - "imap"
+            #   - "pop3"
 
 
 Return Values

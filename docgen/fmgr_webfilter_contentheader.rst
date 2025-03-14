@@ -144,14 +144,13 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           webfilter_contentheader:
-            comment: <string>
-            entries:
-              -
-                action: <value in [exempt, block, allow]>
-                category: <list or string>
-                pattern: <string>
-            id: <integer>
-            name: <string>
+            id: 0 # Required variable, integer
+            # comment: <string>
+            # entries:
+            #   - action: <value in [exempt, block, allow]>
+            #     category: <list or string>
+            #     pattern: <string>
+            # name: <string>
 
 
 Return Values

@@ -107,8 +107,8 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           sys_generate_wsdl:
-            endpoint: <string>
-            target: <string>
+            # endpoint: <string>
+            # target: <string>
 
 
 Return Values

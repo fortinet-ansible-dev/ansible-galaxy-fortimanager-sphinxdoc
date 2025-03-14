@@ -138,12 +138,12 @@ Examples
           prefix_list6: <your own value>
           state: present # <value in [present, absent]>
           router_prefixlist6_rule:
-            action: <value in [permit, deny]>
-            flags: <integer>
-            ge: <integer>
-            id: <integer>
-            le: <integer>
-            prefix6: <string>
+            id: 0 # Required variable, integer
+            # action: <value in [permit, deny]>
+            # flags: <integer>
+            # ge: <integer>
+            # le: <integer>
+            # prefix6: <string>
 
 
 Return Values

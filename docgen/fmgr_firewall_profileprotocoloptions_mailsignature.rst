@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           profile_protocol_options: <your own value>
           firewall_profileprotocoloptions_mailsignature:
-            signature: <string>
-            status: <value in [disable, enable]>
+            # signature: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

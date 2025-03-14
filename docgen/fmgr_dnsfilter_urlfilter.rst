@@ -156,16 +156,15 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dnsfilter_urlfilter:
-            comment: <string>
-            entries:
-              -
-                action: <value in [allow, monitor, block]>
-                id: <integer>
-                status: <value in [disable, enable]>
-                type: <value in [wildcard, regex, simple]>
-                url: <string>
-            id: <integer>
-            name: <string>
+            id: 0 # Required variable, integer
+            # comment: <string>
+            # entries:
+            #   - action: <value in [allow, monitor, block]>
+            #     id: <integer>
+            #     status: <value in [disable, enable]>
+            #     type: <value in [wildcard, regex, simple]>
+            #     url: <string>
+            # name: <string>
 
 
 Return Values

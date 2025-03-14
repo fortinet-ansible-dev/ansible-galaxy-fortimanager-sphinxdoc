@@ -120,9 +120,9 @@ Examples
           pkg: <your own value>
           state: present # <value in [present, absent]>
           pkg_videofilter_youtubekey:
-            id: <integer>
-            key: <string>
-            status: <value in [disable, enable]>
+            id: 0 # Required variable, integer
+            # key: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

@@ -124,10 +124,10 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           vpn_certificate_remote:
-            name: <string>
-            range: <value in [global, vdom]>
-            remote: <string>
-            source: <value in [factory, user, bundle, ...]>
+            name: "your value" # Required variable, string
+            # range: <value in [global, vdom]>
+            # remote: <string>
+            # source: <value in [factory, user, bundle, ...]>
 
 
 Return Values

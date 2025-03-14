@@ -132,11 +132,11 @@ Examples
           vap: <your own value>
           state: present # <value in [present, absent]>
           vap_mpskkey:
-            comment: <string>
-            concurrent_clients: <string>
-            key_name: <string>
-            passphrase: <list or string>
-            mpsk_schedules: <list or string>
+            key_name: "your value" # Required variable, string
+            # comment: <string>
+            # concurrent_clients: <string>
+            # passphrase: <list or string>
+            # mpsk_schedules: <list or string>
 
 
 Return Values

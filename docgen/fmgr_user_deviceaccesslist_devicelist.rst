@@ -120,9 +120,9 @@ Examples
           device_access_list: <your own value>
           state: present # <value in [present, absent]>
           user_deviceaccesslist_devicelist:
-            action: <value in [deny, accept]>
-            device: <string>
-            id: <integer>
+            id: 0 # Required variable, integer
+            # action: <value in [deny, accept]>
+            # device: <string>
 
 
 Return Values

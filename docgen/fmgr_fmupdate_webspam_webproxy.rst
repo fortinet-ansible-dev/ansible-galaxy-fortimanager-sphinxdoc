@@ -144,14 +144,14 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           fmupdate_webspam_webproxy:
-            ip: <string>
-            ip6: <string>
-            mode: <value in [proxy, tunnel]>
-            password: <list or string>
-            port: <integer>
-            status: <value in [disable, enable]>
-            username: <string>
-            address: <string>
+            # ip: <string>
+            # ip6: <string>
+            # mode: <value in [proxy, tunnel]>
+            # password: <list or string>
+            # port: <integer>
+            # status: <value in [disable, enable]>
+            # username: <string>
+            # address: <string>
 
 
 Return Values

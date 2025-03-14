@@ -105,7 +105,7 @@ Examples
           adom: <your own value>
           session_id: <your own value>
           dvmdb_workflow_approve:
-            desc: <string>
+            # desc: <string>
 
 
 Return Values

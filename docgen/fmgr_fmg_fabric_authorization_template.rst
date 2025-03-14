@@ -168,18 +168,17 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           fmg_fabric_authorization_template:
-            description: <string>
-            extender_controller: <value in [disable, enable]>
-            name: <string>
-            platforms:
-              -
-                count: <integer>
-                extension_type: <value in [wan-extension, lan-extension]>
-                fortilink: <string>
-                prefix: <string>
-                type: <value in [ap, extender, switch]>
-            switch_controller: <value in [disable, enable]>
-            wireless_controller: <value in [disable, enable]>
+            name: "your value" # Required variable, string
+            # description: <string>
+            # extender_controller: <value in [disable, enable]>
+            # platforms:
+            #   - count: <integer>
+            #     extension_type: <value in [wan-extension, lan-extension]>
+            #     fortilink: <string>
+            #     prefix: <string>
+            #     type: <value in [ap, extender, switch]>
+            # switch_controller: <value in [disable, enable]>
+            # wireless_controller: <value in [disable, enable]>
 
 
 Return Values

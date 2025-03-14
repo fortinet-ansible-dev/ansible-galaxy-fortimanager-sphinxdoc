@@ -120,9 +120,9 @@ Examples
           h2qp_operator_name: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_h2qpoperatorname_valuelist:
-            index: <integer>
-            lang: <string>
-            value: <string>
+            index: 0 # Required variable, integer
+            # lang: <string>
+            # value: <string>
 
 
 Return Values

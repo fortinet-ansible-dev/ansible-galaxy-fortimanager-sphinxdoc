@@ -102,7 +102,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_log_alert:
-            max_alert_count: <integer>
+            # max_alert_count: <integer>
 
 
 Return Values

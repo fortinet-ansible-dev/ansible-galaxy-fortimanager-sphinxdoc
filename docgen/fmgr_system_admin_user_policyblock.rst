@@ -106,7 +106,7 @@ Examples
           user: <your own value>
           state: present # <value in [present, absent]>
           system_admin_user_policyblock:
-            policy_block_name: <string>
+            # policy_block_name: <string>
 
 
 Return Values

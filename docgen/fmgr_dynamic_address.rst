@@ -138,13 +138,12 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dynamic_address:
-            default: <list or string>
-            description: <string>
-            dynamic_addr_mapping:
-              -
-                addr: <string>
-                id: <integer>
-            name: <string>
+            name: "your value" # Required variable, string
+            # default: <list or string>
+            # description: <string>
+            # dynamic_addr_mapping:
+            #   - addr: <string>
+            #     id: <integer>
 
 
 Return Values

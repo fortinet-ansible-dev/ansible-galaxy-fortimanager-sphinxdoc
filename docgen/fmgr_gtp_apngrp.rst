@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           gtp_apngrp:
-            member: <list or string>
-            name: <string>
+            name: "your value" # Required variable, string
+            # member: <list or string>
 
 
 Return Values

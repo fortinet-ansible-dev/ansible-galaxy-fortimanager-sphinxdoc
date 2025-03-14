@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           gtp: <your own value>
           firewall_gtp_messageratelimitv1:
-            create_pdp_request: <integer>
-            delete_pdp_request: <integer>
-            echo_request: <integer>
+            # create_pdp_request: <integer>
+            # delete_pdp_request: <integer>
+            # echo_request: <integer>
 
 
 Return Values

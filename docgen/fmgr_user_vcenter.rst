@@ -156,16 +156,15 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           user_vcenter:
-            name: <string>
-            password: <list or string>
-            rule:
-              -
-                name: <string>
-                rule: <string>
-            server: <string>
-            status: <value in [disable, enable]>
-            upd_interval: <integer>
-            user: <string>
+            name: "your value" # Required variable, string
+            # password: <list or string>
+            # rule:
+            #   - name: <string>
+            #     rule: <string>
+            # server: <string>
+            # status: <value in [disable, enable]>
+            # upd_interval: <integer>
+            # user: <string>
 
 
 Return Values

@@ -122,9 +122,9 @@ Examples
           disable_entry: <your own value>
           state: present # <value in [present, absent]>
           application_internetservicecustom_disableentry_iprange:
-            end_ip: <string>
-            id: <integer>
-            start_ip: <string>
+            id: 0 # Required variable, integer
+            # end_ip: <string>
+            # start_ip: <string>
 
 
 Return Values

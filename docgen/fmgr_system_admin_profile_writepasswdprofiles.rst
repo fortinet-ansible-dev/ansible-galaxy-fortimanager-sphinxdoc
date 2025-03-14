@@ -106,7 +106,7 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           system_admin_profile_writepasswdprofiles:
-            profileid: <string>
+            # profileid: <string>
 
 
 Return Values

@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           ingress: <your own value>
           switchcontroller_acl_ingress_action:
-            count: <value in [disable, enable]>
-            drop: <value in [disable, enable]>
+            # count: <value in [disable, enable]>
+            # drop: <value in [disable, enable]>
 
 
 Return Values

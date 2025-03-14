@@ -156,15 +156,15 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           dnsfilter_profile_dnstranslation:
-            dst: <string>
-            id: <integer>
-            netmask: <string>
-            src: <string>
-            status: <value in [disable, enable]>
-            addr_type: <value in [ipv4, ipv6]>
-            dst6: <string>
-            prefix: <integer>
-            src6: <string>
+            id: 0 # Required variable, integer
+            # dst: <string>
+            # netmask: <string>
+            # src: <string>
+            # status: <value in [disable, enable]>
+            # addr_type: <value in [ipv4, ipv6]>
+            # dst6: <string>
+            # prefix: <integer>
+            # src6: <string>
 
 
 Return Values

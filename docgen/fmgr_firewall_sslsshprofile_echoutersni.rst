@@ -114,8 +114,8 @@ Examples
           ssl_ssh_profile: <your own value>
           state: present # <value in [present, absent]>
           firewall_sslsshprofile_echoutersni:
-            name: <string>
-            sni: <string>
+            name: "your value" # Required variable, string
+            # sni: <string>
 
 
 Return Values

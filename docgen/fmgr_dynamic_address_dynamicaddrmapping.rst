@@ -114,8 +114,8 @@ Examples
           address: <your own value>
           state: present # <value in [present, absent]>
           dynamic_address_dynamicaddrmapping:
-            addr: <string>
-            id: <integer>
+            id: 0 # Required variable, integer
+            # addr: <string>
 
 
 Return Values

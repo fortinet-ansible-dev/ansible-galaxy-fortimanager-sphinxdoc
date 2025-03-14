@@ -119,14 +119,14 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           dvm_cmd_changehaseq:
-            adom: <string>
-            device: <string>
-            flags:
-              - "none"
-              - "create_task"
-              - "nonblocking"
-              - "log_dev"
-            new_master: <string>
+            # adom: <string>
+            # device: <string>
+            # flags:
+            #   - "none"
+            #   - "create_task"
+            #   - "nonblocking"
+            #   - "log_dev"
+            # new_master: <string>
 
 
 Return Values

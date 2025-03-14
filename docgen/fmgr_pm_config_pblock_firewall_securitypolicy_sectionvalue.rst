@@ -116,8 +116,8 @@ Examples
           security_policy: <your own value>
           state: present # <value in [present, absent]>
           pm_config_pblock_firewall_securitypolicy_sectionvalue:
-            attr: <value in [label, global-label]>
-            name: <string>
+            # attr: <value in [label, global-label]>
+            # name: <string>
 
 
 Return Values

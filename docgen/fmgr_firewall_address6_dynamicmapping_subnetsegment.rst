@@ -122,9 +122,9 @@ Examples
           dynamic_mapping: <your own value>
           state: present # <value in [present, absent]>
           firewall_address6_dynamicmapping_subnetsegment:
-            name: <string>
-            type: <value in [any, specific]>
-            value: <string>
+            name: "your value" # Required variable, string
+            # type: <value in [any, specific]>
+            # value: <string>
 
 
 Return Values

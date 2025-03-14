@@ -142,13 +142,13 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           vpn_certificate_ocspserver:
-            cert: <string>
-            name: <string>
-            secondary_cert: <string>
-            secondary_url: <string>
-            source_ip: <string>
-            unavail_action: <value in [revoke, ignore]>
-            url: <string>
+            name: "your value" # Required variable, string
+            # cert: <string>
+            # secondary_cert: <string>
+            # secondary_url: <string>
+            # source_ip: <string>
+            # unavail_action: <value in [revoke, ignore]>
+            # url: <string>
 
 
 Return Values

@@ -148,16 +148,16 @@ Examples
           adom: <your own value>
           extender_profile: <your own value>
           extensioncontroller_extenderprofile_cellular_modem1_autoswitch:
-            dataplan: <value in [disable, enable]>
-            disconnect: <value in [disable, enable]>
-            disconnect_period: <integer>
-            disconnect_threshold: <integer>
-            signal: <value in [disable, enable]>
-            switch_back:
-              - "time"
-              - "timer"
-            switch_back_time: <string>
-            switch_back_timer: <integer>
+            # dataplan: <value in [disable, enable]>
+            # disconnect: <value in [disable, enable]>
+            # disconnect_period: <integer>
+            # disconnect_threshold: <integer>
+            # signal: <value in [disable, enable]>
+            # switch_back:
+            #   - "time"
+            #   - "timer"
+            # switch_back_time: <string>
+            # switch_back_timer: <integer>
 
 
 Return Values

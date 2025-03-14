@@ -109,8 +109,8 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           devprof_import:
-            device: <string>
-            devprof: <string>
+            # device: <string>
+            # devprof: <string>
 
 
 Return Values

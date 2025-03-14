@@ -116,9 +116,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_sslciphersuites:
-            cipher: <string>
-            priority: <integer>
-            version: <value in [tls1.2-or-below, tls1.3]>
+            # cipher: <string>
+            # priority: <integer>
+            # version: <value in [tls1.2-or-below, tls1.3]>
 
 
 Return Values

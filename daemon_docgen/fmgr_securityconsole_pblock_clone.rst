@@ -113,9 +113,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           securityconsole_pblock_clone:
-            adom: <string>
-            dst_name: <string>
-            pblock: <string>
+            # adom: <string>
+            # dst_name: <string>
+            # pblock: <string>
 
 
 Return Values

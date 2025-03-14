@@ -150,14 +150,14 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           videofilter_profile_filters:
-            action: <value in [block, monitor, allow]>
-            category: <string>
-            channel: <string>
-            comment: <string>
-            id: <integer>
-            keyword: <string>
-            log: <value in [disable, enable]>
-            type: <value in [category, channel, title, ...]>
+            id: 0 # Required variable, integer
+            # action: <value in [block, monitor, allow]>
+            # category: <string>
+            # channel: <string>
+            # comment: <string>
+            # keyword: <string>
+            # log: <value in [disable, enable]>
+            # type: <value in [category, channel, title, ...]>
 
 
 Return Values

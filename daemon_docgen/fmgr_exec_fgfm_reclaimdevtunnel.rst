@@ -103,9 +103,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           device_name: <your own value>
           exec_fgfm_reclaimdevtunnel:
-            flags:
-              - "force"
-              - "get_info"
+            # flags:
+            #   - "force"
+            #   - "get_info"
 
 
 Return Values

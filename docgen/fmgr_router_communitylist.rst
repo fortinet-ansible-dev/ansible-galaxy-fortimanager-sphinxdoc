@@ -144,14 +144,13 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           router_communitylist:
-            name: <string>
-            rule:
-              -
-                action: <value in [deny, permit]>
-                id: <integer>
-                match: <string>
-                regexp: <string>
-            type: <value in [standard, expanded]>
+            name: "your value" # Required variable, string
+            # rule:
+            #   - action: <value in [deny, permit]>
+            #     id: <integer>
+            #     match: <string>
+            #     regexp: <string>
+            # type: <value in [standard, expanded]>
 
 
 Return Values

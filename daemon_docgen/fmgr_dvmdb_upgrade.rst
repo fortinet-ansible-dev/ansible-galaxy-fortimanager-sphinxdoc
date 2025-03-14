@@ -115,10 +115,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           dvmdb_upgrade:
-            scope_member:
-              -
-                name: <string>
-                vdom: <string>
+            # scope_member:
+            #   - name: <string>
+            #     vdom: <string>
 
 
 Return Values

@@ -120,9 +120,9 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           cifs_profile_serverkeytab:
-            keytab: <string>
-            principal: <string>
-            password: <list or string>
+            # keytab: <string>
+            # principal: <string>
+            # password: <list or string>
 
 
 Return Values

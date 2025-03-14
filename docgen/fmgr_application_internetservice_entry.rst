@@ -130,11 +130,11 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           application_internetservice_entry:
-            id: <integer>
-            ip_number: <integer>
-            ip_range_number: <integer>
-            port: <list or integer>
-            protocol: <integer>
+            id: 0 # Required variable, integer
+            # ip_number: <integer>
+            # ip_range_number: <integer>
+            # port: <list or integer>
+            # protocol: <integer>
 
 
 Return Values

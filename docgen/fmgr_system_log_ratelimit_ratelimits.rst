@@ -122,10 +122,10 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_log_ratelimit_ratelimits:
-            filter: <string>
-            filter_type: <value in [devid, adom]>
-            id: <integer>
-            ratelimit: <integer>
+            id: 0 # Required variable, integer
+            # filter: <string>
+            # filter_type: <value in [devid, adom]>
+            # ratelimit: <integer>
 
 
 Return Values

@@ -152,14 +152,14 @@ Examples
           dynamic_mapping: <your own value>
           state: present # <value in [present, absent]>
           user_radius_dynamicmapping_accountingserver:
-            id: <integer>
-            interface: <string>
-            interface_select_method: <value in [auto, sdwan, specify]>
-            port: <integer>
-            secret: <list or string>
-            server: <string>
-            source_ip: <string>
-            status: <value in [disable, enable]>
+            id: 0 # Required variable, integer
+            # interface: <string>
+            # interface_select_method: <value in [auto, sdwan, specify]>
+            # port: <integer>
+            # secret: <list or string>
+            # server: <string>
+            # source_ip: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

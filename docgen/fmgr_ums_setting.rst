@@ -130,11 +130,11 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           ums_setting:
-            connector: <list or string>
-            description: <string>
-            flags: <integer>
-            name: <string>
-            type: <value in [aws, azure, gcp]>
+            name: "your value" # Required variable, string
+            # connector: <list or string>
+            # description: <string>
+            # flags: <integer>
+            # type: <value in [aws, azure, gcp]>
 
 
 Return Values

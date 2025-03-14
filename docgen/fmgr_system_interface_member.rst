@@ -106,7 +106,7 @@ Examples
           interface: <your own value>
           state: present # <value in [present, absent]>
           system_interface_member:
-            interface_name: <string>
+            interface_name: "your value" # Required variable, string
 
 
 Return Values

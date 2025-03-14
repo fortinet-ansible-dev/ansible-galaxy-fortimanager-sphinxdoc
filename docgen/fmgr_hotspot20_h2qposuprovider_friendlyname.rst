@@ -120,9 +120,9 @@ Examples
           h2qp_osu_provider: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_h2qposuprovider_friendlyname:
-            friendly_name: <string>
-            index: <integer>
-            lang: <string>
+            index: 0 # Required variable, integer
+            # friendly_name: <string>
+            # lang: <string>
 
 
 Return Values

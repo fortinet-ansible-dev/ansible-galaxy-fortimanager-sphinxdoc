@@ -120,9 +120,9 @@ Examples
           content_header: <your own value>
           state: present # <value in [present, absent]>
           webfilter_contentheader_entries:
-            action: <value in [exempt, block, allow]>
-            category: <list or string>
-            pattern: <string>
+            # action: <value in [exempt, block, allow]>
+            # category: <list or string>
+            # pattern: <string>
 
 
 Return Values

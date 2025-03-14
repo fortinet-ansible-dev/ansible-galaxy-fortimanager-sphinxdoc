@@ -120,10 +120,10 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           metafields_system_admin_user:
-            importance: <value in [optional, required]>
-            length: <integer>
-            name: <string>
-            status: <value in [disable, enable]>
+            # importance: <value in [optional, required]>
+            # length: <integer>
+            # name: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

@@ -126,10 +126,10 @@ Examples
           explicit_proxy_address: <your own value>
           state: present # <value in [present, absent]>
           firewall_explicitproxyaddress_headergroup:
-            case_sensitivity: <value in [disable, enable]>
-            header: <string>
-            header_name: <string>
-            id: <integer>
+            id: 0 # Required variable, integer
+            # case_sensitivity: <value in [disable, enable]>
+            # header: <string>
+            # header_name: <string>
 
 
 Return Values

@@ -156,29 +156,28 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           bonjourprofile:
-            comment: <string>
-            name: <string>
-            policy_list:
-              -
-                description: <string>
-                from_vlan: <string>
-                policy_id: <integer>
-                services:
-                  - "airplay"
-                  - "afp"
-                  - "bit-torrent"
-                  - "ftp"
-                  - "ichat"
-                  - "itunes"
-                  - "printers"
-                  - "samba"
-                  - "scanners"
-                  - "ssh"
-                  - "chromecast"
-                  - "all"
-                  - "miracast"
-                to_vlan: <string>
-            micro_location: <value in [disable, enable]>
+            name: "your value" # Required variable, string
+            # comment: <string>
+            # policy_list:
+            #   - description: <string>
+            #     from_vlan: <string>
+            #     policy_id: <integer>
+            #     services:
+            #       - "airplay"
+            #       - "afp"
+            #       - "bit-torrent"
+            #       - "ftp"
+            #       - "ichat"
+            #       - "itunes"
+            #       - "printers"
+            #       - "samba"
+            #       - "scanners"
+            #       - "ssh"
+            #       - "chromecast"
+            #       - "all"
+            #       - "miracast"
+            #     to_vlan: <string>
+            # micro_location: <value in [disable, enable]>
 
 
 Return Values

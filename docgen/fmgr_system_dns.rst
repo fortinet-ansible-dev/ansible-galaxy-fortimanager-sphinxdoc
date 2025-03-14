@@ -120,10 +120,10 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_dns:
-            ip6_primary: <string>
-            ip6_secondary: <string>
-            primary: <string>
-            secondary: <string>
+            # ip6_primary: <string>
+            # ip6_secondary: <string>
+            # primary: <string>
+            # secondary: <string>
 
 
 Return Values

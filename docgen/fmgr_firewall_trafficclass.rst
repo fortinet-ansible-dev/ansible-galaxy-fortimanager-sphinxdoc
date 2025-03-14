@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           firewall_trafficclass:
-            class_id: <integer>
-            class_name: <string>
+            # class_id: <integer>
+            # class_name: <string>
 
 
 Return Values

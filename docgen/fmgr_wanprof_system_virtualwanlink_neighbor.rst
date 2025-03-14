@@ -132,11 +132,11 @@ Examples
           wanprof: <your own value>
           state: present # <value in [present, absent]>
           wanprof_system_virtualwanlink_neighbor:
-            health_check: <string>
-            ip: <string>
-            member: <string>
-            role: <value in [primary, secondary, standalone]>
-            sla_id: <integer>
+            # health_check: <string>
+            # ip: <string>
+            # member: <string>
+            # role: <value in [primary, secondary, standalone]>
+            # sla_id: <integer>
 
 
 Return Values

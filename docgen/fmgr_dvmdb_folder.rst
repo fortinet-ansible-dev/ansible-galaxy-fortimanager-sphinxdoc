@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dvmdb_folder:
-            desc: <string>
-            name: <string>
-            parent: <integer>
+            name: "your value" # Required variable, string
+            # desc: <string>
+            # parent: <integer>
 
 
 Return Values

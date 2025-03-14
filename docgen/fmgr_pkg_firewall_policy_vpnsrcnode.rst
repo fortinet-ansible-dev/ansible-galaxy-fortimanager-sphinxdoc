@@ -122,9 +122,9 @@ Examples
           policy: <your own value>
           state: present # <value in [present, absent]>
           pkg_firewall_policy_vpnsrcnode:
-            host: <string>
-            seq: <integer>
-            subnet: <string>
+            seq: 0 # Required variable, integer
+            # host: <string>
+            # subnet: <string>
 
 
 Return Values

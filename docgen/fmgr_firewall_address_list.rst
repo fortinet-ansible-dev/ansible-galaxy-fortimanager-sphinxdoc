@@ -120,9 +120,9 @@ Examples
           address: <your own value>
           state: present # <value in [present, absent]>
           firewall_address_list:
-            ip: <string>
-            net_id: <string>
-            obj_id: <string>
+            ip: "your value" # Required variable, string
+            # net_id: <string>
+            # obj_id: <string>
 
 
 Return Values

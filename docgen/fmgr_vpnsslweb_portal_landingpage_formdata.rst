@@ -114,8 +114,8 @@ Examples
           portal: <your own value>
           state: present # <value in [present, absent]>
           vpnsslweb_portal_landingpage_formdata:
-            name: <string>
-            value: <string>
+            name: "your value" # Required variable, string
+            # value: <string>
 
 
 Return Values

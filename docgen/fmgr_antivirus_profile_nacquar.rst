@@ -118,9 +118,9 @@ Examples
           adom: <your own value>
           profile: <your own value>
           antivirus_profile_nacquar:
-            expiry: <string>
-            infected: <value in [none, quar-src-ip, quar-interface]>
-            log: <value in [disable, enable]>
+            # expiry: <string>
+            # infected: <value in [none, quar-src-ip, quar-interface]>
+            # log: <value in [disable, enable]>
 
 
 Return Values

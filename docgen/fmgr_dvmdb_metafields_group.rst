@@ -120,10 +120,10 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           dvmdb_metafields_group:
-            importance: <value in [optional, required]>
-            length: <integer>
-            name: <string>
-            status: <value in [disable, enable]>
+            # importance: <value in [optional, required]>
+            # length: <integer>
+            # name: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

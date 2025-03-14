@@ -126,10 +126,10 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           icap_profile_icapheaders:
-            base64_encoding: <value in [disable, enable]>
-            content: <string>
-            id: <integer>
-            name: <string>
+            id: 0 # Required variable, integer
+            # base64_encoding: <value in [disable, enable]>
+            # content: <string>
+            # name: <string>
 
 
 Return Values

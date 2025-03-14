@@ -102,7 +102,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           fmupdate_serveroverridestatus:
-            mode: <value in [strict, loose]>
+            # mode: <value in [strict, loose]>
 
 
 Return Values

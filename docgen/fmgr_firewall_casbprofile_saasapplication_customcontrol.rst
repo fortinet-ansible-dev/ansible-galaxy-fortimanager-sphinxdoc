@@ -130,11 +130,10 @@ Examples
           saas_application: <your own value>
           state: present # <value in [present, absent]>
           firewall_casbprofile_saasapplication_customcontrol:
-            name: <string>
-            option:
-              -
-                name: <string>
-                user_input: <list or string>
+            name: "your value" # Required variable, string
+            # option:
+            #   - name: <string>
+            #     user_input: <list or string>
 
 
 Return Values

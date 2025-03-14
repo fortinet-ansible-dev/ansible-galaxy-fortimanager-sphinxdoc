@@ -114,8 +114,8 @@ Examples
           sdn_connector: <your own value>
           state: present # <value in [present, absent]>
           system_sdnconnector_forwardingrule:
-            rule_name: <string>
-            target: <string>
+            # rule_name: <string>
+            # target: <string>
 
 
 Return Values

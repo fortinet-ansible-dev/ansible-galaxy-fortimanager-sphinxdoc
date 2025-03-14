@@ -126,10 +126,10 @@ Examples
           extender_profile: <your own value>
           state: present # <value in [present, absent]>
           extensioncontroller_extenderprofile_lanextension_backhaul:
-            name: <string>
-            port: <value in [wan, lte1, lte2, ...]>
-            role: <value in [primary, secondary]>
-            weight: <integer>
+            name: "your value" # Required variable, string
+            # port: <value in [wan, lte1, lte2, ...]>
+            # role: <value in [primary, secondary]>
+            # weight: <integer>
 
 
 Return Values

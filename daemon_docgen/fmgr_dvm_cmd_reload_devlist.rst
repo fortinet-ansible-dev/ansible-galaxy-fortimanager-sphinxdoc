@@ -139,18 +139,17 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           dvm_cmd_reload_devlist:
-            adom: <string>
-            flags:
-              - "none"
-              - "create_task"
-              - "nonblocking"
-              - "log_dev"
-            from: <value in [um, fgfm, apache, ...]>
-            reload_dev_member_list:
-              -
-                name: <string>
-                vdom: <string>
-            tag: <string>
+            # adom: <string>
+            # flags:
+            #   - "none"
+            #   - "create_task"
+            #   - "nonblocking"
+            #   - "log_dev"
+            # from: <value in [um, fgfm, apache, ...]>
+            # reload_dev_member_list:
+            #   - name: <string>
+            #     vdom: <string>
+            # tag: <string>
 
 
 Return Values

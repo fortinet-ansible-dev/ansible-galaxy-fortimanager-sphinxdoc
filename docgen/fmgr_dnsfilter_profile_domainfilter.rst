@@ -106,7 +106,7 @@ Examples
           adom: <your own value>
           profile: <your own value>
           dnsfilter_profile_domainfilter:
-            domain_filter_table: <integer>
+            # domain_filter_table: <integer>
 
 
 Return Values

@@ -132,12 +132,11 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           router_aspathlist:
-            name: <string>
-            rule:
-              -
-                action: <value in [deny, permit]>
-                id: <integer>
-                regexp: <string>
+            name: "your value" # Required variable, string
+            # rule:
+            #   - action: <value in [deny, permit]>
+            #     id: <integer>
+            #     regexp: <string>
 
 
 Return Values

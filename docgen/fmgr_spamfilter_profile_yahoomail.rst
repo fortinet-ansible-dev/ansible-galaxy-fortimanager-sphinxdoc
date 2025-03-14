@@ -106,7 +106,7 @@ Examples
           adom: <your own value>
           profile: <your own value>
           spamfilter_profile_yahoomail:
-            log: <value in [disable, enable]>
+            # log: <value in [disable, enable]>
 
 
 Return Values

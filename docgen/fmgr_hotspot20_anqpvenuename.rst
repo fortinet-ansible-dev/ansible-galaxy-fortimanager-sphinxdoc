@@ -132,12 +132,11 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           hotspot20_anqpvenuename:
-            name: <string>
-            value_list:
-              -
-                index: <integer>
-                lang: <string>
-                value: <string>
+            name: "your value" # Required variable, string
+            # value_list:
+            #   - index: <integer>
+            #     lang: <string>
+            #     value: <string>
 
 
 Return Values

@@ -112,8 +112,8 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           system_npu_npqueues_scheduler:
-            mode: <value in [none, priority, round-robin]>
-            name: <string>
+            name: "your value" # Required variable, string
+            # mode: <value in [none, priority, round-robin]>
 
 
 Return Values

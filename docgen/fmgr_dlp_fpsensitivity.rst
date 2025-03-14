@@ -106,7 +106,7 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dlp_fpsensitivity:
-            name: <string>
+            name: "your value" # Required variable, string
 
 
 Return Values

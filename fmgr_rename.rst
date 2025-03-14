@@ -8003,7 +8003,7 @@ Parameters
         <li><span class="li-normal">params for hotspot20_anqpnairealm_nailist_eapmethod_authparam:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>index</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_hotspot20_anqpnairealm_nailist_eapmethod_authparam.html#parameters">fmgr_hotspot20_anqpnairealm_nailist_eapmethod_authparam</a> </span></li>
         </ul>
         <li><span class="li-normal">params for hotspot20_anqpnetworkauthtype:</span></li>

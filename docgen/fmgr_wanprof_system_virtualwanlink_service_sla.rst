@@ -116,8 +116,8 @@ Examples
           service: <your own value>
           state: present # <value in [present, absent]>
           wanprof_system_virtualwanlink_service_sla:
-            health_check: <string>
-            id: <integer>
+            id: 0 # Required variable, integer
+            # health_check: <string>
 
 
 Return Values

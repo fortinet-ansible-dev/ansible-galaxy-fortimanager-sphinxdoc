@@ -122,10 +122,10 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           firewall_vendormac:
-            id: <integer>
-            mac_number: <integer>
-            name: <string>
-            obsolete: <integer>
+            # id: <integer>
+            # mac_number: <integer>
+            # name: <string>
+            # obsolete: <integer>
 
 
 Return Values

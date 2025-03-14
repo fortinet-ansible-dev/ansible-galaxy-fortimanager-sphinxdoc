@@ -132,11 +132,11 @@ Examples
           domain_controller: <your own value>
           state: present # <value in [present, absent]>
           user_domaincontroller_extraserver:
-            id: <integer>
-            ip_address: <string>
-            port: <integer>
-            source_ip_address: <string>
-            source_port: <integer>
+            id: 0 # Required variable, integer
+            # ip_address: <string>
+            # port: <integer>
+            # source_ip_address: <string>
+            # source_port: <integer>
 
 
 Return Values

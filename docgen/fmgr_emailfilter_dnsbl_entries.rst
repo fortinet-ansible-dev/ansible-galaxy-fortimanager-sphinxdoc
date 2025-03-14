@@ -126,10 +126,10 @@ Examples
           dnsbl: <your own value>
           state: present # <value in [present, absent]>
           emailfilter_dnsbl_entries:
-            action: <value in [spam, reject]>
-            id: <integer>
-            server: <string>
-            status: <value in [disable, enable]>
+            id: 0 # Required variable, integer
+            # action: <value in [spam, reject]>
+            # server: <string>
+            # status: <value in [disable, enable]>
 
 
 Return Values

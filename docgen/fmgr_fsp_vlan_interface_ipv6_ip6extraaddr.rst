@@ -108,7 +108,7 @@ Examples
           vlan: <your own value>
           state: present # <value in [present, absent]>
           fsp_vlan_interface_ipv6_ip6extraaddr:
-            prefix: <string>
+            # prefix: <string>
 
 
 Return Values

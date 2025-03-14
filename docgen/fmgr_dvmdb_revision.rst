@@ -136,12 +136,12 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           dvmdb_revision:
-            created_by: <string>
-            created_time: <integer>
-            desc: <string>
-            locked: <integer>
-            name: <string>
-            version: <integer>
+            name: "your value" # Required variable, string
+            # created_by: <string>
+            # created_time: <integer>
+            # desc: <string>
+            # locked: <integer>
+            # version: <integer>
 
 
 Return Values

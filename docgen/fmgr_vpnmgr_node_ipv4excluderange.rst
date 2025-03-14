@@ -120,9 +120,9 @@ Examples
           node: <your own value>
           state: present # <value in [present, absent]>
           vpnmgr_node_ipv4excluderange:
-            end_ip: <string>
-            id: <integer>
-            start_ip: <string>
+            id: 0 # Required variable, integer
+            # end_ip: <string>
+            # start_ip: <string>
 
 
 Return Values
