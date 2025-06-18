@@ -68,13 +68,13 @@ Parameters
  <li><span class="li-head">ftps_client_cert_request</span> <b>(Alias name: ftps-client-cert-request)</b>  Action based on client certificate request during the ftps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">https_client_cert_request</span> <b>(Alias name: https-client-cert-request)</b>  Action based on client certificate request during the https handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">id</span> Ssl server id. <span class="li-normal">type: int</span>
@@ -86,7 +86,7 @@ Parameters
  <li><span class="li-head">imaps_client_cert_request</span> <b>(Alias name: imaps-client-cert-request)</b>  Action based on client certificate request during the imaps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ip</span> Ipv4 address of the ssl server. <span class="li-normal">type: str</span>
@@ -98,19 +98,19 @@ Parameters
  <li><span class="li-head">pop3s_client_cert_request</span> <b>(Alias name: pop3s-client-cert-request)</b>  Action based on client certificate request during the pop3s handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">smtps_client_cert_request</span> <b>(Alias name: smtps-client-cert-request)</b>  Action based on client certificate request during the smtps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ssl_other_client_cert_request</span> <b>(Alias name: ssl-other-client-cert-request)</b>  Action based on client certificate request during an ssl protocol handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ftps_client_certificate</span> <b>(Alias name: ftps-client-certificate)</b>  Action based on received client certificate during the ftps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
@@ -169,6 +169,7 @@ Examples
 
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true

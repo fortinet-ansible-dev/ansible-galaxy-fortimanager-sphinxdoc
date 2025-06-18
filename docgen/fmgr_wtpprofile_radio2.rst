@@ -73,7 +73,7 @@ Parameters
  <li><span class="li-head">ap_handoff</span> <b>(Alias name: ap-handoff)</b>  Enable/disable ap handoff of clients to other aps (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ap_sniffer_addr</span> <b>(Alias name: ap-sniffer-addr)</b>  Mac address to monitor. <span class="li-normal">type: str</span>
@@ -223,7 +223,7 @@ Parameters
  <li><span class="li-head">frequency_handoff</span> <b>(Alias name: frequency-handoff)</b>  Enable/disable frequency handoff of clients to other channels (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">max_clients</span> <b>(Alias name: max-clients)</b>  Maximum number of stations (stas) or wifi clients supported by the radio. <span class="li-normal">type: int</span>
@@ -637,6 +637,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

@@ -83,13 +83,20 @@ Parameters
           <span class="li-normal">v7.4.1->latest</span>
         </li>
         <li><span class="li-required">cifs_profile_filefilter_entries</span> - available versions:
-          <span class="li-normal">v6.2.0->latest</span>
+          <span class="li-normal">v6.2.0->v7.6.2</span>
         </li>
         <li><span class="li-required">dlp_dictionary_entries</span> - available versions:
           <span class="li-normal">v7.2.0->latest</span>
         </li>
+        <li><span class="li-required">dlp_exactdatamatch_columns</span> - available versions:
+          <span class="li-normal">v7.4.7->v7.4.7</span>,
+          <span class="li-normal">v7.6.3->latest</span>
+        </li>
         <li><span class="li-required">dlp_filepattern_entries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">dlp_label_entries</span> - available versions:
+          <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">dlp_profile_rule</span> - available versions:
           <span class="li-normal">v7.2.0->latest</span>
@@ -116,7 +123,7 @@ Parameters
           <span class="li-normal">v6.2.0->latest</span>
         </li>
         <li><span class="li-required">emailfilter_profile_filefilter_entries</span> - available versions:
-          <span class="li-normal">v6.2.0->latest</span>
+          <span class="li-normal">v6.2.0->v7.6.2</span>
         </li>
         <li><span class="li-required">endpointcontrol_fctems</span> - available versions:
           <span class="li-normal">v7.0.2->latest</span>
@@ -149,7 +156,7 @@ Parameters
           <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">firewall_carrierendpointbwl_entries</span> - available versions:
-          <span class="li-normal">v6.0.0->latest</span>
+          <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
         <li><span class="li-required">firewall_casbprofile</span> - available versions:
           <span class="li-normal">v7.4.1->v7.4.1</span>
@@ -210,7 +217,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_consolidated_policy</span> - available versions:
-          <span class="li-normal">v6.2.0->latest</span>
+          <span class="li-normal">v6.2.0->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_dospolicy</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -240,7 +247,7 @@ Parameters
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
           <span class="li-normal">v7.2.6->v7.2.9</span>,
-          <span class="li-normal">v7.4.3->latest</span>
+          <span class="li-normal">v7.4.3->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
@@ -277,7 +284,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy6</span> - available versions:
-          <span class="li-normal">v6.0.0->latest</span>
+          <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_policy64</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -295,13 +302,13 @@ Parameters
           <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
-          <span class="li-normal">v7.0.3->latest</span>
+          <span class="li-normal">v7.0.3->v7.6.2</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_policy</span> - available versions:
           <span class="li-normal">v7.0.3->latest</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_policy6</span> - available versions:
-          <span class="li-normal">v7.0.3->latest</span>
+          <span class="li-normal">v7.0.3->v7.6.2</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_proxypolicy</span> - available versions:
           <span class="li-normal">v7.6.0->latest</span>
@@ -316,7 +323,7 @@ Parameters
           <span class="li-normal">v6.0.0->v7.2.1</span>
         </li>
         <li><span class="li-required">sshfilter_profile_filefilter_entries</span> - available versions:
-          <span class="li-normal">v6.2.2->latest</span>
+          <span class="li-normal">v6.2.2->v7.6.2</span>
         </li>
         <li><span class="li-required">sshfilter_profile_shellcommands</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -408,19 +415,19 @@ Parameters
           <span class="li-normal">v6.4.1->latest</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_members</span> - available versions:
-          <span class="li-normal">v6.0.0->latest</span>
+          <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_service</span> - available versions:
-          <span class="li-normal">v6.0.0->latest</span>
+          <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
         <li><span class="li-required">wanprof_system_virtualwanlink_service_sla</span> - available versions:
-          <span class="li-normal">v6.0.0->latest</span>
+          <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
         <li><span class="li-required">webfilter_contentheader_entries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">webfilter_profile_filefilter_entries</span> - available versions:
-          <span class="li-normal">v6.2.0->latest</span>
+          <span class="li-normal">v6.2.0->v7.6.2</span>
         </li>
         <li><span class="li-required">webfilter_urlfilter_entries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -507,11 +514,23 @@ Parameters
             <li><span class="li-normal">dictionary</span></li>
             <li><span class="li-normal">entries</span></li>
         </ul>
+        <li><span class="li-normal">params for dlp_exactdatamatch_columns:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">columns</span></li>
+            <li><span class="li-normal">exact-data-match</span></li>
+        </ul>
         <li><span class="li-normal">params for dlp_filepattern_entries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">entries</span></li>
             <li><span class="li-normal">filepattern</span></li>
+        </ul>
+        <li><span class="li-normal">params for dlp_label_entries:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">label</span></li>
         </ul>
         <li><span class="li-normal">params for dlp_profile_rule:</span></li>
         <ul class="ul-self">

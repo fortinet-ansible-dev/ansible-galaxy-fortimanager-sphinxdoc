@@ -1646,6 +1646,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">echo_requires_path_in_use</span> <b>(Alias name: echo-requires-path-in-use)</b>  Block gtp echo request if no active tunnel over the associated gtp path. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label518' href="javascript:ContentClick('label519', 'label518');" onmouseover="ContentPreview('label519');" onmouseout="ContentUnpreview('label519');" title="click to collapse or expand..."> more... </a>
+ <div id="label519" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1666,6 +1672,7 @@ Examples
 
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true

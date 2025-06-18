@@ -76,7 +76,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">region_name</span> <b>(Alias name: region-name)</b>  Region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1, eu-west-2, eu-west-3, eu-north-1, eu-south-1, eu-south-2, eu-central-1, eu-central-2, ca-central-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-south-1, ap-south-2, ap-northeast-1, ap-northeast-2, ap-northeast-3, af-south-1, me-central-1, me-south-1, sa-east-1, ap-east-1, us-gov-east-1, us-gov-west-1]</span>  <span class="li-normal">default: us-east-1</span> 
+ <li><span class="li-head">region_name</span> <b>(Alias name: region-name)</b>  Region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1, eu-west-2, eu-west-3, eu-north-1, eu-south-1, eu-south-2, eu-central-1, eu-central-2, ca-central-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-south-1, ap-south-2, ap-northeast-1, ap-northeast-2, ap-northeast-3, af-south-1, me-central-1, me-south-1, sa-east-1, ap-east-1, us-gov-east-1, us-gov-west-1, ca-west-1, il-central-1, ap-southeast-5, ap-southeast-7, mx-central-1]</span>  <span class="li-normal">default: us-east-1</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -109,6 +109,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

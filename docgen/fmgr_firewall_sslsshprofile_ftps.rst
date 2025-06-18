@@ -73,7 +73,7 @@ Parameters
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ports</span> Ports to use for scanning (1 - 65535, default = 443). <span class="li-normal">type: list</span>
@@ -91,7 +91,7 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">untrusted_cert</span> <b>(Alias name: untrusted-cert)</b>  Allow, ignore, or block the untrusted ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block, ignore]</span> 
@@ -103,7 +103,7 @@ Parameters
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">sni_server_cert_check</span> <b>(Alias name: sni-server-cert-check)</b>  Check the sni in the client hello message with the cn or san fields in the returned server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, strict]</span> 
@@ -193,6 +193,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

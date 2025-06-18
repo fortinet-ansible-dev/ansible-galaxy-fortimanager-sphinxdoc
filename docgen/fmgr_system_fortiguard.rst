@@ -489,6 +489,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">subscribe_update_notification</span> <b>(Alias name: subscribe-update-notification)</b>  Enable/disable subscription to receive update notification from fortiguard. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
+ <div id="label143" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -510,6 +516,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -603,6 +610,7 @@ Examples
             # outbreak_prevention_cache_mpermille: <integer>
             # update_dldb: <value in [disable, enable]>
             # vrf_select: <integer>
+            # subscribe_update_notification: <value in [disable, enable]>
 
 
 Return Values

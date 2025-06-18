@@ -199,6 +199,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">scim_group_attr_type</span> <b>(Alias name: scim-group-attr-type)</b>  Group attribute type used to match scim groups (default = display-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id]</span> 
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -220,6 +226,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -258,6 +265,7 @@ Examples
             # auth_url: <string>
             # reauth: <value in [disable, enable]>
             # scim_client: <list or string>
+            # scim_group_attr_type: <value in [display-name, external-id]>
 
 
 Return Values

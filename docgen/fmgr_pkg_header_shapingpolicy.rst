@@ -352,6 +352,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">http_response_match</span> <b>(Alias name: http-response-match)</b>  Http response match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <div id="label97" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -373,6 +379,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -436,6 +443,7 @@ Examples
             # cos: <string>
             # cos_mask: <string>
             # traffic_type: <value in [forwarding, local-in, local-out]>
+            # http_response_match: <value in [disable, enable]>
 
 
 Return Values

@@ -1377,6 +1377,18 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">allowaccess</span> Allowaccess. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, radius-acct, probe-response, dnp, ftm, fabric, speed-test, icond, scim]</span> 
+ <a id='label428' href="javascript:ContentClick('label429', 'label428');" onmouseover="ContentPreview('label429');" onmouseout="ContentUnpreview('label429');" title="click to collapse or expand..."> more... </a>
+ <div id="label429" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dhcp_relay_request_all_server</span> <b>(Alias name: dhcp-relay-request-all-server)</b>  Dhcp relay request all server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label430' href="javascript:ContentClick('label431', 'label430');" onmouseover="ContentPreview('label431');" onmouseout="ContentUnpreview('label431');" title="click to collapse or expand..."> more... </a>
+ <div id="label431" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  </ul>
@@ -1400,6 +1412,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -1664,6 +1677,23 @@ Examples
             #       vrgrp: <integer>
             #       vrid: <integer>
             #       vrip: <string>
+            #   allowaccess:
+            #     - "https"
+            #     - "ping"
+            #     - "ssh"
+            #     - "snmp"
+            #     - "http"
+            #     - "telnet"
+            #     - "fgfm"
+            #     - "radius-acct"
+            #     - "probe-response"
+            #     - "dnp"
+            #     - "ftm"
+            #     - "fabric"
+            #     - "speed-test"
+            #     - "icond"
+            #     - "scim"
+            #   dhcp_relay_request_all_server: <value in [disable, enable]>
 
 
 Return Values

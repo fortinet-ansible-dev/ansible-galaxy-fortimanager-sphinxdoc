@@ -696,7 +696,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">model</span> Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FX201E, FX211E, FX200F, FXA11F, FXE11F, FXA21F, FXE21F, FXA22F, FXE22F, FX212F, FX311F, FX312F, FX511F, FVG21F, FVA21F, FVG22F, FVA22F, FX04DA, FX04DN, FX04DI, FXR51G, FG, BS10FW, BS20GW, BS20GN, FXN51G, FXW51G, FVG51G]</span> 
+ <li><span class="li-head">model</span> Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FX201E, FX211E, FX200F, FXA11F, FXE11F, FXA21F, FXE21F, FXA22F, FXE22F, FX212F, FX311F, FX312F, FX511F, FVG21F, FVA21F, FVG22F, FVA22F, FX04DA, FX04DN, FX04DI, FXR51G, FG, BS10FW, BS20GW, BS20GN, FXN51G, FXW51G, FVG51G, FXE11G]</span> 
  <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
  <div id="label203" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -726,7 +726,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">country</span> Country in which this fex will operate (default = na). <span class="li-normal">type: str</span> <span class="li-normal">choices: [AL, DZ, AR, AM, AU, AT, AZ, BH, BD, BY, BE, BZ, BO, BA, BR, BN, BG, CA, CL, CN, CO, CR, HR, CY, CZ, DK, DO, EC, EG, SV, EE, FI, FR, GE, DE, GR, GT, HN, HK, HU, IS, IN, ID, IE, IL, IT, JM, JP, JO, KZ, KE, KR, KW, LV, LB, LI, LT, LU, MO, MK, MY, MT, MX, MC, MA, NP, NL, AN, NZ, NO, OM, PK, PA, PG, PE, PH, PL, PT, PR, QA, RO, RU, SA, SG, SK, SI, ZA, ES, LK, SE, CH, TW, TH, TT, TN, TR, AE, UA, GB, US, PS, UY, UZ, VE, VN, YE, ZW, NA, BS, VC, KH, MV, AF, NG, TZ, ZM, SN, CI, GH, CM, MW, AO, GA, ML, BJ, MG, TD, BW, LY, RW, MZ, GM, LS, MU, CG, UG, BF, SL, SO, CD, NE, CF, SZ, TG, LR, MR, DJ, RE, RS, ME, IQ, MD, KY, BB, BM, TC, VI, PM, MF, GD, IM, FO, GI, GL, TM, MN, VU, FJ, LA, GU, WF, MH, BT, FM, PF, NI, PY, HT, GY, AW, KN, GF, AS, MP, PW, MM, LC, GP, ET, SR, CX, DM, MQ, YT, BL, --]</span> 
+ <li><span class="li-head">country</span> Country in which this fex will operate (default = na). <span class="li-normal">type: str</span> <span class="li-normal">choices: [AL, DZ, AR, AM, AU, AT, AZ, BH, BD, BY, BE, BZ, BO, BA, BR, BN, BG, CA, CL, CN, CO, CR, HR, CY, CZ, DK, DO, EC, EG, SV, EE, FI, FR, GE, DE, GR, GT, HN, HK, HU, IS, IN, ID, IE, IL, IT, JM, JP, JO, KZ, KE, KR, KW, LV, LB, LI, LT, LU, MO, MK, MY, MT, MX, MC, MA, NP, NL, AN, NZ, NO, OM, PK, PA, PG, PE, PH, PL, PT, PR, QA, RO, RU, SA, SG, SK, SI, ZA, ES, LK, SE, CH, TW, TH, TT, TN, TR, AE, UA, GB, US, PS, UY, UZ, VE, VN, YE, ZW, NA, BS, VC, KH, MV, AF, NG, TZ, ZM, SN, CI, GH, CM, MW, AO, GA, ML, BJ, MG, TD, BW, LY, RW, MZ, GM, LS, MU, CG, UG, BF, SL, SO, CD, NE, CF, SZ, TG, LR, MR, DJ, RE, RS, ME, IQ, MD, KY, BB, BM, TC, VI, PM, MF, GD, IM, FO, GI, GL, TM, MN, VU, FJ, LA, GU, WF, MH, BT, FM, PF, NI, PY, HT, GY, AW, KN, GF, AS, MP, PW, MM, LC, GP, ET, SR, CX, DM, MQ, YT, BL, --, TL]</span> 
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -975,6 +975,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

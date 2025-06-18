@@ -13,6 +13,7 @@ Frequently Asked Questions (FAQ)
  - `How To Monitor FortiManager Task?`_
  - `How To Use FortiManager Ansible without Providing Username and Password?`_
  - `How To Use FortiManager Ansible With FortiManager Cloud?`_
+ - `Error: No fact modules available and we could not find a fact module for your network OS`_
 
 |
 
@@ -315,6 +316,54 @@ then in subsequent tasks, we can reference returned token:
 Access token usually expires in hours, you should always renew one in case of failure.
 
 
+Error: No fact modules available and we could not find a fact module for your network OS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Solution 1 (Recommended): Add vars "ansible_facts_modules: setup" to the inventory file to avoid this error.
+`What is inventory file?`_
+
+::
+
+   [fortimanagers]
+   fortimanager01 ansible_host=192.168.190.1 ansible_user="admin" ansible_password="password"
+   fortimanager02 ansible_host=192.168.190.2 ansible_user="admin" ansible_password="password"
+
+   [fortimanagers:vars]
+   ansible_connection=httpapi
+   ansible_network_os=fortinet.fortimanager.fortimanager
+   ansible_facts_modules=setup # add here
+   ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   ansible_httpapi_validate_certs=false
+
+
+Solution 2: Add vars "ansible_facts_modules: setup" to your playbook.
+
+::
+
+  - name: Your task
+    hosts: fortimanagers
+    vars:
+      ansible_facts_modules: setup # add here
+    tasks:
+      - name: Your task
+        fortinet.fortimanager.fmgr_<module>:
+          <param>: <value>
+
+
+Solution 3: Add "gather_facts: false" to your playbook.
+
+::
+
+  - name: Your task
+    hosts: fortimanagers
+    gather_facts: false # add here
+    tasks:
+      - name: Your task
+        fortinet.fortimanager.fmgr_<module>:
+          <param>: <value>
+
+
 .. _Search Playbooks: example.html
 .. _full playbook: https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/discover_and_add_device.yml
 .. _fortiapi spec page: https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/#
@@ -326,4 +375,4 @@ Access token usually expires in hours, you should always renew one in case of fa
 .. _When to Use Parameter bypass_validation?: #when-to-use-parameter-bypass-validation
 .. _How To Monitor FortiManager Task?: #how-to-monitor-fortimanager-task
 .. _How To Use FortiManager Ansible With FortiCloud?: #how-to-use-fortimanager-ansible-with-forticloud
-
+.. _What is inventory file?: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html

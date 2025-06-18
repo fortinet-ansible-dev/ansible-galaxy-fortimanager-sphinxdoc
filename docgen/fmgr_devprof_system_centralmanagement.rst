@@ -282,6 +282,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fmg_update_http_header</span> <b>(Alias name: fmg-update-http-header)</b>  Enable/disable inclusion of http header in update request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -303,6 +309,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -359,6 +366,7 @@ Examples
             # modem_upgrade_frequency: <value in [everyHour, every12hour, everyDay, ...]>
             # modem_upgrade_time: <string>
             # vrf_select: <integer>
+            # fmg_update_http_header: <value in [disable, enable]>
 
 
 Return Values

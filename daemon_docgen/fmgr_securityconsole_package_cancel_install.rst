@@ -86,7 +86,8 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: INSTALL PREVIEW - POLICY PACKAGE
-    hosts: fmg
+    hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       adom: demo

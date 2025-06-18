@@ -283,7 +283,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource]</span> 
+ <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete]</span> 
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -411,6 +411,7 @@ Examples
 
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true

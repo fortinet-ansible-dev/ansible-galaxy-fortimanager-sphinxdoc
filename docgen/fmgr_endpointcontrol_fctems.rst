@@ -181,7 +181,7 @@ Parameters
  <li><span class="li-head">admin_username</span> <b>(Alias name: admin-username)</b>  Forticlient ems admin username. <span class="li-normal">type: str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">serial_number</span> <b>(Alias name: serial-number)</b>  Forticlient ems serial number. <span class="li-normal">type: str</span>
@@ -193,7 +193,7 @@ Parameters
  <li><span class="li-head">admin_password</span> <b>(Alias name: admin-password)</b>  Forticlient ems admin password. <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">interface</span> Specify outgoing interface to reach server. <span class="li-normal">type: str</span>
@@ -289,6 +289,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

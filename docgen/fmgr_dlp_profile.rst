@@ -148,7 +148,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter_by</span> <b>(Alias name: filter-by)</b>  Select the type of content to match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fingerprint, sensor, encrypted, none, mip]</span> 
+ <li><span class="li-head">filter_by</span> <b>(Alias name: filter-by)</b>  Select the type of content to match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fingerprint, sensor, encrypted, none, mip, label]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -237,6 +237,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

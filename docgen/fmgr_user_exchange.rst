@@ -154,6 +154,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">validate_server_certificate</span> <b>(Alias name: validate-server-certificate)</b>  Enable/disable exchange server certificate validation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -175,6 +181,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -205,6 +212,7 @@ Examples
             # ssl_min_proto_version: <value in [default, TLSv1-1, TLSv1-2, ...]>
             # username: <string>
             # auto_discover_kdc: <value in [disable, enable]>
+            # validate_server_certificate: <value in [disable, enable]>
 
 
 Return Values

@@ -134,7 +134,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">category</span> Log category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, event, virus, webfilter, attack, spam, voip, dlp, app-ctrl, anomaly, waf, gtp, dns, ssh, ssl, file-filter, icap, ztna, virtual-patch]</span> 
+ <li><span class="li-head">category</span> Log category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, event, virus, webfilter, attack, spam, voip, dlp, app-ctrl, anomaly, waf, gtp, dns, ssh, ssl, file-filter, icap, ztna, virtual-patch, debug]</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -256,6 +256,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">debug</span> Enable/disable debug logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -277,6 +283,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -323,6 +330,7 @@ Examples
             # netscan_vulnerability: <value in [disable, enable]>
             # forti_switch: <value in [disable, enable]>
             # http_transaction: <value in [disable, enable]>
+            # debug: <value in [disable, enable]>
 
 
 Return Values

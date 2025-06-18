@@ -105,6 +105,7 @@ Examples
 
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true

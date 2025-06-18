@@ -19,11 +19,16 @@ in our case we create a file named ``hosts``:
 ::
 
    [fortimanagers]
-   fortimanager01 ansible_host=192.168.190.130 ansible_user="admin" ansible_password="password"
-   fortimanager02 ansible_host=192.168.190.131 ansible_user="admin" ansible_password="password"
+   fortimanager01 ansible_host=192.168.190.1 ansible_user="admin" ansible_password="password"
+   fortimanager02 ansible_host=192.168.190.2 ansible_user="admin" ansible_password="password"
 
    [fortimanagers:vars]
+   ansible_connection=httpapi
    ansible_network_os=fortinet.fortimanager.fortimanager
+   ansible_facts_modules=setup
+   ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   ansible_httpapi_validate_certs=false
 
 Write the playbook
 ~~~~~~~~~~~~~~~~~~
@@ -35,17 +40,19 @@ in the example: ``test.yml`` we are going to create a script on FortiManager:
 
 ::
 
-   - hosts: fortimanagers
-     connection: httpapi
-     collections:
-     - fortinet.fortimanager
+   - name: Example playbook
+     hosts: fortimanagers
      vars:
-      ansible_httpapi_use_ssl: yes
-      ansible_httpapi_validate_certs: no
-      ansible_httpapi_port: 443
+       # You don't need to specify the following vars if you specified them in the host file.
+       # ansible_connection: httpapi
+       # ansible_network_os: fortinet.fortimanager.fortimanager
+       # ansible_facts_modules: setup
+       # ansible_httpapi_port: 443
+       # ansible_httpapi_use_ssl: true
+       # ansible_httpapi_validate_certs: false
      tasks:
       - name: Create a script on FortiManager.
-        fmgr_dvmdb_script:
+        fortinet.fortimanager.fmgr_dvmdb_script:
            adom: 'adom'
            state: 'present'
            dvmdb_script:

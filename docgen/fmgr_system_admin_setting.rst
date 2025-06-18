@@ -374,6 +374,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">rtm_max_monitor_by_size</span> <b>(Alias name: rtm-max-monitor-by-size)</b>  Maximum rtm monitor (sdwan, traffic shaping, etc) history by size in mb per device per data type (10 - 200000). <span class="li-normal">type: int</span> <span class="li-normal">default: 1000</span> 
+ <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
+ <div id="label105" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">show_sdwan_manager</span> <b>(Alias name: show-sdwan-manager)</b>  Show sdwan manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
+ <div id="label107" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -395,6 +407,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -460,6 +473,8 @@ Examples
             # fgt_gui_proxy_port: <integer>
             # object_threshold_limit: <value in [disable, enable]>
             # object_threshold_limit_value: <integer>
+            # rtm_max_monitor_by_size: <integer>
+            # show_sdwan_manager: <value in [disable, enable]>
 
 
 Return Values

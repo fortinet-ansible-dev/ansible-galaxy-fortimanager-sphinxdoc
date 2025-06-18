@@ -79,7 +79,7 @@ Parameters
  <li><span class="li-head">port</span> Single port number or port number range for mapi. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">secure_tunnel</span> <b>(Alias name: secure-tunnel)</b>  Enable/disable securing the wan opt tunnel using ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -121,6 +121,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

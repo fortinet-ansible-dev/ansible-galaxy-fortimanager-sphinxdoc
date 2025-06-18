@@ -177,13 +177,13 @@ Parameters
  <li><span class="li-head">ftps_client_cert_request</span> <b>(Alias name: ftps-client-cert-request)</b>  Action based on client certificate request during the ftps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">https_client_cert_request</span> <b>(Alias name: https-client-cert-request)</b>  Action based on client certificate request during the https handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">id</span> Ssl server id. <span class="li-normal">type: int</span>
@@ -195,7 +195,7 @@ Parameters
  <li><span class="li-head">imaps_client_cert_request</span> <b>(Alias name: imaps-client-cert-request)</b>  Action based on client certificate request during the imaps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ip</span> Ipv4 address of the ssl server. <span class="li-normal">type: str</span>
@@ -207,19 +207,19 @@ Parameters
  <li><span class="li-head">pop3s_client_cert_request</span> <b>(Alias name: pop3s-client-cert-request)</b>  Action based on client certificate request during the pop3s handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">smtps_client_cert_request</span> <b>(Alias name: smtps-client-cert-request)</b>  Action based on client certificate request during the smtps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ssl_other_client_cert_request</span> <b>(Alias name: ssl-other-client-cert-request)</b>  Action based on client certificate request during an ssl protocol handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ftps_client_certificate</span> <b>(Alias name: ftps-client-certificate)</b>  Action based on received client certificate during the ftps handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
@@ -377,19 +377,19 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -499,19 +499,19 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
  <div id="label143" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -645,19 +645,19 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -767,19 +767,19 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
  <div id="label231" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
  <div id="label233" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
  <div id="label235" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -889,19 +889,19 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
  <div id="label271" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
  <div id="label273" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
  <div id="label275" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -1067,19 +1067,19 @@ Parameters
  <li><span class="li-head">unsupported_ssl</span> <b>(Alias name: unsupported-ssl)</b>  Action based on the ssl encryption used being unsupported. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label328' href="javascript:ContentClick('label329', 'label328');" onmouseover="ContentPreview('label329');" onmouseout="ContentUnpreview('label329');" title="click to collapse or expand..."> more... </a>
  <div id="label329" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
  <a id='label330' href="javascript:ContentClick('label331', 'label330');" onmouseover="ContentPreview('label331');" onmouseout="ContentUnpreview('label331');" title="click to collapse or expand..."> more... </a>
  <div id="label331" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
  <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
  <div id="label333" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -1306,6 +1306,7 @@ Examples
 
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true

@@ -2,6 +2,27 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.10.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.9.0
+
+Minor Changes
+-------------
+
+- Supported new modules in FortiManager 7.4.6, 7.4.7, 7.6.3.
+
+Bugfixes
+--------
+
+- Added "gather_facts" to all example playbooks.
+- Fixed a BUG that occurred when username/password and access token were used at the same time.
+
+|
+
 Release Galaxy 2.9.1
 ~~~~~~~~~~~~~~~~~~~~
 

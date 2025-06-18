@@ -324,7 +324,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource]</span> 
+ <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete]</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -585,7 +585,7 @@ Parameters
  <li><span class="li-head">visibility</span> Enable/disable address visibility in the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">wildcard</span> Ip address and wildcard netmask. <span class="li-normal">type: str</span>
@@ -662,7 +662,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub-type of address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource]</span> 
+ <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub-type of address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete]</span> 
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -778,6 +778,7 @@ Examples
 
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true
@@ -814,6 +815,7 @@ Examples
   
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true
@@ -848,6 +850,7 @@ Examples
   
   - name: Example playbook
     hosts: fortimanagers
+    gather_facts: false
     connection: httpapi
     vars:
       ansible_httpapi_use_ssl: true

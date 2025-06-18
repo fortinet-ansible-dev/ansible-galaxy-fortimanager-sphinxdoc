@@ -475,6 +475,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fib_best_match_force</span> <b>(Alias name: fib-best-match-force)</b>  Enable/disable force using fib-best-match oif as outgoing interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -496,6 +502,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -580,6 +587,7 @@ Examples
             # zone_mode: <value in [disable, enable]>
             # shortcut_priority: <value in [disable, enable, auto]>
             # comment: <string>
+            # fib_best_match_force: <value in [disable, enable]>
 
 
 Return Values

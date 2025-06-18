@@ -520,7 +520,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">forward_error_correction</span> <b>(Alias name: forward-error-correction)</b>  Forward error correction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, rs-fec, base-r-fec, fec-cl91, fec-cl74, rs-544, none, cl91-rs-fec, cl74-fc-fec, auto]</span> 
+ <li><span class="li-head">forward_error_correction</span> <b>(Alias name: forward-error-correction)</b>  Forward error correction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, rs-fec, base-r-fec, fec-cl91, fec-cl74, rs-544, none, cl91-rs-fec, cl74-fc-fec, auto, rs-fec544]</span> 
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -2186,7 +2186,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">managed_subnetwork_size</span> <b>(Alias name: managed-subnetwork-size)</b>  Managed subnetwork size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 32, 64, 128]</span> 
+ <li><span class="li-head">managed_subnetwork_size</span> <b>(Alias name: managed-subnetwork-size)</b>  Managed subnetwork size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 32, 64, 128, 4, 8, 16, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216]</span> 
  <a id='label702' href="javascript:ContentClick('label703', 'label702');" onmouseover="ContentPreview('label703');" onmouseout="ContentUnpreview('label703');" title="click to collapse or expand..."> more... </a>
  <div id="label703" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -2438,7 +2438,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">select_profile_30a_35b</span> <b>(Alias name: select-profile-30a-35b)</b>  Select vdsl profile 30a or 35b. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30A, 35B]</span> 
+ <li><span class="li-head">select_profile_30a_35b</span> <b>(Alias name: select-profile-30a-35b)</b>  Select vdsl profile 30a or 35b. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30A, 35B, 30a, 35b]</span> 
  <a id='label786' href="javascript:ContentClick('label787', 'label786');" onmouseover="ContentPreview('label787');" onmouseout="ContentUnpreview('label787');" title="click to collapse or expand..."> more... </a>
  <div id="label787" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -2696,6 +2696,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">profiles</span> Set allowed vdsl profiles. <span class="li-normal">type: list</span> <span class="li-normal">choices: [8a, 8b, 8c, 8d, 12a, 12b, 17a, 30a, 35b]</span> 
+ <a id='label872' href="javascript:ContentClick('label873', 'label872');" onmouseover="ContentPreview('label873');" onmouseout="ContentUnpreview('label873');" title="click to collapse or expand..."> more... </a>
+ <div id="label873" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">telemetry_discover</span> <b>(Alias name: telemetry-discover)</b>  Enable/disable automatic registration of unknown fortitelemetry agents. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label874' href="javascript:ContentClick('label875', 'label874');" onmouseover="ContentPreview('label875');" onmouseout="ContentUnpreview('label875');" title="click to collapse or expand..."> more... </a>
+ <div id="label875" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -2717,6 +2729,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -3217,7 +3230,7 @@ Examples
             # pvc_vlan_tx_id: <integer>
             # pvc_vlan_tx_op: <value in [pass-through, replace, remove]>
             # reachable_time: <integer>
-            # select_profile_30a_35b: <value in [30A, 35B]>
+            # select_profile_30a_35b: <value in [30A, 35B, 30a, ...]>
             # sfp_dsl: <value in [disable, enable]>
             # sfp_dsl_adsl_fallback: <value in [disable, enable]>
             # sfp_dsl_autodetect: <value in [disable, enable]>
@@ -3262,6 +3275,17 @@ Examples
             # exclude_signatures:
             #   - "iot"
             #   - "ot"
+            # profiles:
+            #   - "8a"
+            #   - "8b"
+            #   - "8c"
+            #   - "8d"
+            #   - "12a"
+            #   - "12b"
+            #   - "17a"
+            #   - "30a"
+            #   - "35b"
+            # telemetry_discover: <value in [disable, enable]>
 
 
 Return Values

@@ -409,6 +409,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">agent_probe_timeout</span> <b>(Alias name: agent-probe-timeout)</b>  Time to wait before a probe packet is considered lost when detect-mode is agent (5000 - 3600*1000 msec, default = 60000). <span class="li-normal">type: int</span>
+ <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
+ <div id="label115" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">remote_probe_timeout</span> <b>(Alias name: remote-probe-timeout)</b>  Time to wait before a probe packet is considered lost when detect-mode is remote (20 - 3600*1000 msec, default = 5000). <span class="li-normal">type: int</span>
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -430,6 +442,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -508,6 +521,8 @@ Examples
             # source6: <string>
             # fortiguard: <value in [disable, enable]>
             # fortiguard_name: <list or string>
+            # agent_probe_timeout: <integer>
+            # remote_probe_timeout: <integer>
 
 
 Return Values

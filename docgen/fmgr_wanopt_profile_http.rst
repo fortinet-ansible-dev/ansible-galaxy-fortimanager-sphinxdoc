@@ -79,7 +79,7 @@ Parameters
  <li><span class="li-head">port</span> Single port number or port number range for http. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">prefer_chunking</span> <b>(Alias name: prefer-chunking)</b>  Select dynamic or fixed-size data chunking for http wan optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dynamic, fix]</span> 
@@ -103,7 +103,7 @@ Parameters
  <li><span class="li-head">ssl_port</span> <b>(Alias name: ssl-port)</b>  Port on which to expect https traffic for ssl/tls offloading. <span class="li-normal">type: list</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable http wan optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -115,7 +115,7 @@ Parameters
  <li><span class="li-head">tunnel_non_http</span> <b>(Alias name: tunnel-non-http)</b>  Configure how to process non-http traffic when a profile configured for http traffic accepts a non-http session. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">tunnel_sharing</span> <b>(Alias name: tunnel-sharing)</b>  Tunnel sharing mode for aggressive/non-aggressive and/or interactive/non-interactive protocols. <span class="li-normal">type: str</span> <span class="li-normal">choices: [private, shared, express-shared]</span> 
@@ -127,7 +127,7 @@ Parameters
  <li><span class="li-head">unknown_http_version</span> <b>(Alias name: unknown-http-version)</b>  How to handle http sessions that do not comply with http 0. <span class="li-normal">type: str</span> <span class="li-normal">choices: [best-effort, reject, tunnel]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">protocol_opt</span> <b>(Alias name: protocol-opt)</b>  Select protocol specific optimitation or generic tcp optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [protocol, tcp]</span> 
@@ -157,6 +157,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

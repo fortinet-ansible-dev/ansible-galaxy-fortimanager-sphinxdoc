@@ -761,7 +761,7 @@ Parameters
  <li><span class="li-head">transform_backward_slashes</span> <b>(Alias name: transform-backward-slashes)</b>  Transform backward slashes to forward slashes in urls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
  <div id="label229" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ipv6_split_tunneling_routing_negate</span> <b>(Alias name: ipv6-split-tunneling-routing-negate)</b>  Enable to negate ipv6 split tunneling routing address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -809,7 +809,7 @@ Parameters
  <li><span class="li-head">minor_version</span> <b>(Alias name: minor-version)</b>  Minor version number. <span class="li-normal">type: int</span>
  <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
  <div id="label245" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -983,6 +983,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

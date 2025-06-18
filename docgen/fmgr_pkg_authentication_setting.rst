@@ -121,7 +121,7 @@ Parameters
  <li><span class="li-head">rewrite_https_port</span> <b>(Alias name: rewrite-https-port)</b>  Rewrite to https port (0 - 65535, default = 0). <span class="li-normal">type: int</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">sso_auth_scheme</span> <b>(Alias name: sso-auth-scheme)</b>  Single-sign-on authentication method (scheme name). <span class="li-normal">type: str</span>
@@ -217,6 +217,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
