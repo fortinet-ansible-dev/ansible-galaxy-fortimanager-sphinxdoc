@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_address</span> - Configure IPv4 addresses. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -788,13 +789,12 @@ Examples
       - name: Configure IPv4 addresses.
         fortinet.fortimanager.fmgr_firewall_address:
           bypass_validation: false
-          adom: ansible
+          adom: root
           state: present
           firewall_address:
-            allow-routing: disable
-            associated-interface: any
             name: "ansible-test1"
-            visibility: disable
+            allow_routing: disable
+            associated_interface: any
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -828,8 +828,8 @@ Examples
           adom: root
           state: present
           firewall_address:
-            allow-routing: disable
-            associated-interface: any
+            allow_routing: disable
+            associated_interface: any
             name: "address-orignal"
             # visibility: enable
       - name: Rename the firewall addressobject
@@ -847,44 +847,6 @@ Examples
           state: absent
           firewall_address:
             name: "address-new"
-  
-  - name: Example playbook
-    hosts: fortimanagers
-    gather_facts: false
-    connection: httpapi
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
-    tasks:
-      - name: Create IPv4 addresses.
-        fortinet.fortimanager.fmgr_firewall_address:
-          adom: root
-          state: present
-          firewall_address:
-            allow-routing: disable
-            associated-interface: any
-            name: "fooaddress"
-            visibility: disable
-        register: info
-        failed_when: info.rc != 0
-      - name: Create IPv4 addresses.
-        fortinet.fortimanager.fmgr_firewall_address:
-          adom: root
-          state: present
-          firewall_address:
-            allow-routing: disable
-            associated-interface: any
-            name: "fooaddress"
-            visibility: disable
-        register: info
-        failed_when: info.message != 'Object update skipped!'
-      - name: Delete created address
-        fortinet.fortimanager.fmgr_firewall_address:
-          adom: root
-          state: absent
-          firewall_address:
-            name: "fooaddress"
 
 
 Return Values

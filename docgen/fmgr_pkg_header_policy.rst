@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_header_policy</span> - Configure IPv4/IPv6 policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -1737,19 +1738,19 @@ Parameters
  <li><span class="li-head">device_ownership</span> <b>(Alias name: device-ownership)</b>  Device ownership. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label556' href="javascript:ContentClick('label557', 'label556');" onmouseover="ContentPreview('label557');" onmouseout="ContentUnpreview('label557');" title="click to collapse or expand..."> more... </a>
  <div id="label557" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ssh_policy_check</span> <b>(Alias name: ssh-policy-check)</b>  Ssh policy check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label558' href="javascript:ContentClick('label559', 'label558');" onmouseover="ContentPreview('label559');" onmouseout="ContentUnpreview('label559');" title="click to collapse or expand..."> more... </a>
  <div id="label559" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">extended_log</span> <b>(Alias name: extended-log)</b>  Extended log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label560' href="javascript:ContentClick('label561', 'label560');" onmouseover="ContentPreview('label561');" onmouseout="ContentUnpreview('label561');" title="click to collapse or expand..."> more... </a>
  <div id="label561" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">diffserv_copy</span> <b>(Alias name: diffserv-copy)</b>  Enable to copy packets diffserv values from sessions original direction to its reply direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 

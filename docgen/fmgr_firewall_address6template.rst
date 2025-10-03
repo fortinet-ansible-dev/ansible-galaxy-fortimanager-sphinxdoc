@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_address6template</span> - Configure IPv6 address templates. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -187,7 +188,7 @@ Examples
           firewall_address6template:
             ip6: "::33/128"
             name: "ansible-name"
-            subnet-segment:
+            subnet_segment:
               - bits: 1
                 exclusive: enable
                 id: 1
@@ -195,7 +196,7 @@ Examples
                 values:
                   - name: "ansible-name-val"
                     value: "ansible"
-            subnet-segment-count: 2
+            subnet_segment_count: 2
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -212,7 +213,7 @@ Examples
             selector: "firewall_address6template"
             params:
               adom: "ansible"
-              address6-template: "your_value"
+              address6_template: "your_value"
 
 
 Return Values

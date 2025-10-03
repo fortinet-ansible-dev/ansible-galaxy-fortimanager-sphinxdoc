@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_proxyaddress</span> - Web proxy address configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -287,7 +288,7 @@ Examples
           adom: ansible
           state: present
           firewall_proxyaddress:
-            case-sensitivity: disable
+            case_sensitivity: disable
             color: 1
             comment: "ansible-comment"
             name: "ansible-test"
@@ -307,7 +308,7 @@ Examples
             selector: "firewall_proxyaddress"
             params:
               adom: "ansible"
-              proxy-address: "your_value"
+              proxy_address: "your_value"
 
 
 Return Values

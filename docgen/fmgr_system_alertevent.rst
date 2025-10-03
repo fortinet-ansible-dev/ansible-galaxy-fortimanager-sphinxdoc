@@ -193,19 +193,19 @@ Examples
           bypass_validation: false
           state: present
           system_alertevent:
-            enable-generic-text:
+            enable_generic_text:
               - enable
               - disable
-            enable-severity-filter:
+            enable_severity_filter:
               - enable
               - disable
-            event-time-period: 1 # <value in [0.5, 1, 3, ...]>
+            event_time_period: 1 # <value in [0.5, 1, 3, ...]>
             name: ansible-test-sysalert
-            num-events: 1 # <value in [1, 5, 10, ...]>
-            severity-filter: high # <value in [high, medium-high, medium, ...]>
-            # severity-level-comp:
+            num_events: 1 # <value in [1, 5, 10, ...]>
+            severity_filter: high # <value in [high, medium-high, medium, ...]>
+            # severity_level_comp:
             #  - <=
-            severity-level-logs:
+            severity_level_logs:
               - no-check
               - information
               - notify
@@ -229,7 +229,7 @@ Examples
           facts:
             selector: "system_alertevent"
             params:
-              alert-event: "your_value"
+              alert_event: "your_value"
 
 
 Return Values

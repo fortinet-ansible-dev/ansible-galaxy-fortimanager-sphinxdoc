@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_sdnconnector</span> - Configure connection to SDN Connector. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -541,7 +542,7 @@ Parameters
  <li><span class="li-head">external_id</span> <b>(Alias name: external-id)</b>  Aws external id. <span class="li-normal">type: str</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -695,8 +696,8 @@ Examples
           adom: ansible
           state: present
           system_sdnconnector:
-            azure-region: global # <value in [global, china, germany, ...]>
-            # compartment-id: 1
+            azure_region: global # <value in [global, china, germany, ...]>
+            # compartment_id: 1
             name: ansible-test-sdn
             password: fortinet
             server: ALL
@@ -718,7 +719,7 @@ Examples
             selector: "system_sdnconnector"
             params:
               adom: "ansible"
-              sdn-connector: "your_value"
+              sdn_connector: "your_value"
 
 
 Return Values

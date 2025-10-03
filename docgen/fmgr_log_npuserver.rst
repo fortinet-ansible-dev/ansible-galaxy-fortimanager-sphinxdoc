@@ -60,6 +60,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">log_npuserver</span> - Configure all the log servers and create the server groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -132,13 +133,13 @@ Parameters
  <li><span class="li-head">log_gen_event</span> <b>(Alias name: log-gen-event)</b>  Enable/disbale generating event for per-mapping log <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_user_info</span> <b>(Alias name: log-user-info)</b>  Enable/disbale logging user information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -194,7 +195,7 @@ Parameters
  <li><span class="li-head">vdom</span> Interface connected to the log server is in this virtual domain (vdom). <span class="li-normal">type: str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_transport</span> <b>(Alias name: log-transport)</b>  Set transport protocol <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp]</span> 
@@ -203,23 +204,29 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vdom_</span> Vdom. <span class="li-normal">type: str</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">fmgr_syslog_facility</span> <b>(Alias name: syslog-facility)</b>  Configure the syslog facility. <span class="li-normal">type: int</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">syslog_severity</span> <b>(Alias name: syslog-severity)</b>  Configure the syslog severity. <span class="li-normal">type: int</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">enforce_seq_order</span> <b>(Alias name: enforce-seq-order)</b>  Sw session netflow logs will be delivered in strict order if the option is enabled. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">syslog_severity</span> <b>(Alias name: syslog-severity)</b>  Configure the syslog severity. <span class="li-normal">type: int</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">enforce_seq_order</span> <b>(Alias name: enforce-seq-order)</b>  Sw session netflow logs will be delivered in strict order if the option is enabled. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
@@ -253,8 +260,8 @@ Examples
       - name: Configure all the log servers and create the server groups.
         fortinet.fortimanager.fmgr_log_npuserver:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
@@ -282,6 +289,7 @@ Examples
             #     template_tx_timeout: <integer>
             #     vdom: <string>
             #     log_transport: <value in [udp, tcp]>
+            #     vdom_: <string>
             # fmgr_syslog_facility: <integer>
             # syslog_severity: <integer>
             # enforce_seq_order: <value in [disable, enable]>

@@ -110,7 +110,7 @@ Parameters
  <li><span class="li-head">auto_asic_offload</span> <b>(Alias name: auto-asic-offload)</b>  Enable/disable policy traffic asic offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">av_profile</span> <b>(Alias name: av-profile)</b>  Name of an existing antivirus profile. <span class="li-normal">type: str</span>
@@ -296,7 +296,7 @@ Parameters
  <li><span class="li-head">mms_profile</span> <b>(Alias name: mms-profile)</b>  Name of an existing mms profile. <span class="li-normal">type: str</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">name</span> Policy name. <span class="li-normal">type: str</span>
@@ -326,7 +326,7 @@ Parameters
  <li><span class="li-head">np_acceleration</span> <b>(Alias name: np-acceleration)</b>  Enable/disable utm network processor acceleration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">outbound</span> Policy-based ipsec vpn: only traffic from the internal network can initiate a vpn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -368,7 +368,7 @@ Parameters
  <li><span class="li-head">profile_protocol_options</span> <b>(Alias name: profile-protocol-options)</b>  Name of an existing protocol options profile. <span class="li-normal">type: str</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">profile_type</span> <b>(Alias name: profile-type)</b>  Determine whether the firewall policy allows security profile groups or single profiles only. <span class="li-normal">type: str</span> <span class="li-normal">choices: [single, group]</span> 
@@ -440,7 +440,7 @@ Parameters
  <li><span class="li-head">ssh_filter_profile</span> <b>(Alias name: ssh-filter-profile)</b>  Name of an existing ssh filter profile. <span class="li-normal">type: str</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ssh_policy_redirect</span> <b>(Alias name: ssh-policy-redirect)</b>  Redirect ssh traffic to matching transparent proxy policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -464,7 +464,7 @@ Parameters
  <li><span class="li-head">ssl_ssh_profile</span> <b>(Alias name: ssl-ssh-profile)</b>  Name of an existing ssl ssh profile. <span class="li-normal">type: str</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable or disable this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -590,13 +590,13 @@ Parameters
  <li><span class="li-head">webcache</span> Enable/disable web cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">webcache_https</span> <b>(Alias name: webcache-https)</b>  Enable/disable web cache for https. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">webfilter_profile</span> <b>(Alias name: webfilter-profile)</b>  Name of an existing web filter profile. <span class="li-normal">type: str</span>
@@ -677,8 +677,8 @@ Examples
       - name: Configure IPv6 policies.
         fortinet.fortimanager.fmgr_pm_config_pblock_firewall_policy6:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>

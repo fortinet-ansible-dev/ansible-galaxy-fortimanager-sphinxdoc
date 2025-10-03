@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vpnmgr_node</span> - VPN node for VPN Manager. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -533,31 +534,31 @@ Parameters
  <li><span class="li-head">auto_discovery_receiver</span> <b>(Alias name: auto-discovery-receiver)</b>  Auto discovery receiver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">auto_discovery_sender</span> <b>(Alias name: auto-discovery-sender)</b>  Auto discovery sender. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">network_id</span> <b>(Alias name: network-id)</b>  Network id. <span class="li-normal">type: int</span>
  <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
  <div id="label157" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">network_overlay</span> <b>(Alias name: network-overlay)</b>  Network overlay. <span class="li-normal">type: str</span> <span class="li-normal">choices: [enable, disable]</span> 
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: int</span>
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -590,8 +591,8 @@ Examples
       - name: VPN node for VPN Manager.
         fortinet.fortimanager.fmgr_vpnmgr_node:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>

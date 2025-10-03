@@ -132,7 +132,7 @@ Parameters
  <li><span class="li-head">notify_port</span> <b>(Alias name: notify-port)</b>  Notify port. <span class="li-normal">type: int</span> <span class="li-normal">default: 162</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.6 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -167,8 +167,8 @@ Examples
           bypass_validation: false
           state: present
           system_snmp_user:
-            auth-proto: md5 # <value in [md5, sha]>
-            auth-pwd: fortinet
+            auth_proto: md5 # <value in [md5, sha]>
+            auth_pwd: fortinet
             events:
               - disk_low
               - ha_switch
@@ -184,7 +184,7 @@ Examples
               - cpu-high-exclude-nice
             name: ansible-test-snmpuser
             queries: disable
-            security-level: no-auth-no-priv # <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
+            security_level: no-auth-no-priv # <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

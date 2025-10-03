@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ldap</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_ldap_dynamicmapping</span> - Configure LDAP server entries. <span class="li-normal">type: dict</span></li>
@@ -334,7 +335,7 @@ Parameters
  <li><span class="li-head">max_connections</span> <b>(Alias name: max-connections)</b>  Max connections. <span class="li-normal">type: int</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.11 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">two_factor_filter</span> <b>(Alias name: two-factor-filter)</b>  Filter used to synchronize users to fortitoken cloud. <span class="li-normal">type: str</span>
@@ -370,7 +371,7 @@ Parameters
  <li><span class="li-head">ssl_max_proto_version</span> <b>(Alias name: ssl-max-proto-version)</b>  Ssl max proto version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TLSv1-1, TLSv1-2, SSLv3, TLSv1, TLSv1-3]</span> 
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>

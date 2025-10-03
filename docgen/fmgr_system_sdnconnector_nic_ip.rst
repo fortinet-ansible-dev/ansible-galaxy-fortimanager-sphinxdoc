@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">sdn_connector</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">nic</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
@@ -121,12 +122,12 @@ Examples
         fortinet.fortimanager.fmgr_system_sdnconnector_nic_ip:
           bypass_validation: false
           adom: ansible
-          sdn-connector: ansible-test-sdn # name
+          sdn_connector: ansible-test-sdn # name
           nic: ansible-test-nic # name
           state: present
           system_sdnconnector_nic_ip:
             name: ansible-test-nicip
-            public-ip: 222.222.222.2
+            public_ip: 222.222.222.2
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -143,7 +144,7 @@ Examples
             selector: "system_sdnconnector_nic_ip"
             params:
               adom: "ansible"
-              sdn-connector: "ansible-test-sdn" # name
+              sdn_connector: "ansible-test-sdn" # name
               nic: "ansible-test-nic" # name
               ip: "your_value"
 

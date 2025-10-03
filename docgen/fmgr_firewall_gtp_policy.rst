@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">gtp</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_gtp_policy</span> - Policy. <span class="li-normal">type: dict</span></li>
@@ -190,18 +191,18 @@ Examples
           state: present
           firewall_gtp_policy:
             action: allow # <value in [allow, deny]>
-            apn-sel-mode:
+            apn_sel_mode:
               - ms
               - net
               - vrf
             id: 1
-            max-apn-restriction: public-1 # <value in [all, public-1, public-2, ...]>
+            max_apn_restriction: public-1 # <value in [all, public-1, public-2, ...]>
             messages:
               - create-req
               - create-res
               - update-req
               - update-res
-            rat-type:
+            rat_type:
               - any
               - utran
               - geran

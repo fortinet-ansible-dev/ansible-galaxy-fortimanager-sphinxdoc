@@ -137,7 +137,7 @@ Examples
           facts:
             selector: "system_log_maildomain"
             params:
-              mail-domain: "your_value"
+              mail_domain: "your_value"
 
 
 Return Values

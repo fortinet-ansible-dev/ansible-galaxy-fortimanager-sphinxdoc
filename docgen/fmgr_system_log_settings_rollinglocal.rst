@@ -101,19 +101,19 @@ Parameters
  <li><span class="li-head">ip</span> Upload server ip address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip2</span> Upload server ip2 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip3</span> Upload server ip3 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Format of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> 
@@ -272,8 +272,8 @@ Examples
       - name: Log rolling policy for local logs.
         fortinet.fortimanager.fmgr_system_log_settings_rollinglocal:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_log_settings_rollinglocal:

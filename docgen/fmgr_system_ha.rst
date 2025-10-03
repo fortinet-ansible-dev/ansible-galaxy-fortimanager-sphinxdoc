@@ -221,7 +221,7 @@ Parameters
  <li><span class="li-head">vip_interface</span> <b>(Alias name: vip-interface)</b>  Vip interface. <span class="li-normal">type: str</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -254,8 +254,8 @@ Examples
       - name: HA configuration.
         fortinet.fortimanager.fmgr_system_ha:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_ha:

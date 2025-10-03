@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
 
 
 
@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">fortiportal</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.4</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.0</code></p>
  </div>
  </li>
  <li><span class="li-head">fortiwlm</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">sdwancontroller</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
@@ -83,73 +83,73 @@ Parameters
  <li><span class="li-head">status</span> Enable and set registry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, qa, dev]</span>  <span class="li-normal">default: disable</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">cpu</span> Cpu. <span class="li-normal">type: int</span> <span class="li-normal">default: 50</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">default_address_pool_base</span> <b>(Alias name: default-address-pool_base)</b>  Set default-address-pool cidr. <span class="li-normal">type: str</span> <span class="li-normal">default: 172.17.0.0 255.255.0.0</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">default_address_pool_size</span> <b>(Alias name: default-address-pool_size)</b>  Set default-address-pool size. <span class="li-normal">type: int</span> <span class="li-normal">default: 24</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fortiauthenticator</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.2.0</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></p>
  </div>
  </li>
  <li><span class="li-head">fortisigconverter</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mem</span> Max % ram usage. <span class="li-normal">type: int</span> <span class="li-normal">default: 50</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">docker_user_login_max</span> <b>(Alias name: docker-user-login-max)</b>  Max login session for docker users. <span class="li-normal">type: int</span> <span class="li-normal">default: 32</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fortisoar</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">fortiaiops</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">policyanalyzer</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">universalconnector</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fsmcollector</span> Enable/disable container. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
@@ -188,8 +188,8 @@ Examples
       - name: Docker host.
         fortinet.fortimanager.fmgr_system_docker:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_docker:

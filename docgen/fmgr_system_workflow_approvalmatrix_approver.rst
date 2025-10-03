@@ -106,7 +106,7 @@ Examples
       - name: Approver.
         fortinet.fortimanager.fmgr_system_workflow_approvalmatrix_approver:
           bypass_validation: false
-          approval-matrix: ansible
+          approval_matrix: ansible
           state: present
           system_workflow_approvalmatrix_approver:
             member: ansible-test-member
@@ -126,7 +126,7 @@ Examples
           facts:
             selector: "system_workflow_approvalmatrix_approver"
             params:
-              approval-matrix: "ansible"
+              approval_matrix: "ansible"
               approver: "your_value"
 
 

@@ -115,9 +115,9 @@ Examples
           group: 1 # group-id
           state: present
           system_report_group_groupby:
-            var-expression: "ansible"
-            var-name: vd
-            var-type: string # <value in [integer, string, enum, ...]>
+            var_expression: "ansible"
+            var_name: vd
+            var_type: string # <value in [integer, string, enum, ...]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -134,7 +134,7 @@ Examples
             selector: "system_report_group_groupby"
             params:
               group: "1" # group-id
-              group-by: "your_value"
+              group_by: "your_value"
 
 
 Return Values

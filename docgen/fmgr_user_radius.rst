@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_radius</span> - Configure RADIUS server entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -781,7 +782,7 @@ Parameters
  <li><span class="li-head">switch_controller_nas_ip_dynamic</span> <b>(Alias name: switch-controller-nas-ip-dynamic)</b>  Enable/disable switch-controller nas-ip dynamic to dynamically set nas-ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
  <div id="label237" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the radius server. <span class="li-normal">type: list</span>
@@ -793,7 +794,7 @@ Parameters
  <li><span class="li-head">require_message_authenticator</span> <b>(Alias name: require-message-authenticator)</b>  Require message authenticator in authentication response. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
  <div id="label241" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.6 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
@@ -1119,7 +1120,7 @@ Parameters
  <li><span class="li-head">switch_controller_nas_ip_dynamic</span> <b>(Alias name: switch-controller-nas-ip-dynamic)</b>  Enable/disable switch-controller nas-ip dynamic to dynamically set nas-ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label348' href="javascript:ContentClick('label349', 'label348');" onmouseover="ContentPreview('label349');" onmouseout="ContentUnpreview('label349');" title="click to collapse or expand..."> more... </a>
  <div id="label349" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source interface for communication with the radius server. <span class="li-normal">type: list</span>
@@ -1131,7 +1132,7 @@ Parameters
  <li><span class="li-head">require_message_authenticator</span> <b>(Alias name: require-message-authenticator)</b>  Require message authenticator in authentication response. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label352' href="javascript:ContentClick('label353', 'label352');" onmouseover="ContentPreview('label353');" onmouseout="ContentUnpreview('label353');" title="click to collapse or expand..."> more... </a>
  <div id="label353" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.6 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>

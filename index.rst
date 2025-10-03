@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Fortinet FortiManager Ansible Collection documentation v2.10.0!
+Welcome to Fortinet FortiManager Ansible Collection documentation v2.11.0!
 =========================================================================
 
 The FortiManager Ansible Collection provides Ansible modules for configuring FortiManager devices.

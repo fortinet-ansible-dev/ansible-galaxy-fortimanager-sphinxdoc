@@ -120,7 +120,7 @@ Parameters
  <li><span class="li-head">from</span> Username for mail from. <span class="li-normal">type: str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to mail server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span> 
@@ -165,7 +165,7 @@ Examples
             id: 1
             passwd: fortinet
             port: 1
-            secure-option: none # <value in [default, none, smtps, ...]>
+            secure_option: none # <value in [default, none, smtps, ...]>
             server: ALL
             user: ansible
   

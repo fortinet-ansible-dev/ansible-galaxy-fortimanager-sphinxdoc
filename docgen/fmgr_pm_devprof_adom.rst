@@ -145,7 +145,7 @@ Examples
           adom: ansible
           pm_devprof_adom:
             description: "ansible-test"
-            enabled options:
+            enabled_options:
               - none
               - dns
               - ntp

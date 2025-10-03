@@ -101,7 +101,7 @@ Parameters
  <li><span class="li-head">login_lockout_upon_downgrade</span> <b>(Alias name: login-lockout-upon-downgrade)</b>  Enable/disable administrative user login lockout upon downgrade (defaut = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -134,8 +134,8 @@ Examples
       - name: Password policy.
         fortinet.fortimanager.fmgr_system_passwordpolicy:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_passwordpolicy:

@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">DoS_policy6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
@@ -165,43 +166,43 @@ Parameters
  <li><span class="li-head">synproxy_tos</span> <b>(Alias name: synproxy-tos)</b>  Determine tcp differentiated services code point value (type of service). <span class="li-normal">type: str</span> <span class="li-normal">choices: [0, 10, 12, 14, 18, 20, 22, 26, 28, 30, 34, 36, 38, 40, 46, 255]</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">synproxy_tcp_window</span> <b>(Alias name: synproxy-tcp-window)</b>  Determine tcp window size for packets replied by syn proxy module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [4096, 8192, 16384, 32768]</span> 
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">synproxy_tcp_windowscale</span> <b>(Alias name: synproxy-tcp-windowscale)</b>  Determine tcp window scale option value for packets replied by syn proxy module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]</span> 
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">synproxy_tcp_timestamp</span> <b>(Alias name: synproxy-tcp-timestamp)</b>  Enable/disable tcp timestamp option for packets replied by syn proxy module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">synproxy_ttl</span> <b>(Alias name: synproxy-ttl)</b>  Determine time to live (ttl) value for packets replied by syn proxy module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [32, 64, 128, 255]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">synproxy_tcp_mss</span> <b>(Alias name: synproxy-tcp-mss)</b>  Determine tcp maximum segment size (mss) value for packets replied by syn proxy module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [0, 256, 512, 1024, 1300, 1360, 1460, 1500]</span> 
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">synproxy_tcp_sack</span> <b>(Alias name: synproxy-tcp-sack)</b>  Enable/disable tcp selective acknowledage (sack) for packets replied by syn proxy module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -236,7 +237,7 @@ Examples
           bypass_validation: false
           adom: ansible
           pkg: ansible # package name
-          DoS-policy6: 1 # policyid
+          DoS_policy6: 1 # policyid
           state: present
           pkg_firewall_dospolicy6_anomaly:
             action: pass # <value in [pass, block, proxy]>
@@ -261,7 +262,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              DoS-policy6: "1" # policyid
+              DoS_policy6: "1" # policyid
               anomaly: "your_value"
 
 

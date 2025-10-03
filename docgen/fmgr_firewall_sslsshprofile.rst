@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_sslsshprofile</span> - Configure SSL/SSH protocol options. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -1320,9 +1321,9 @@ Examples
           state: present
           firewall_sslsshprofile:
             comment: "ansible-comment1"
-            mapi-over-https: disable # <value in [disable, enable]>
+            mapi_over_https: disable # <value in [disable, enable]>
             name: "ansible-test"
-            use-ssl-server: disable # <value in [disable, enable]>
+            use_ssl_server: disable # <value in [disable, enable]>
             whitelist: enable # <value in [disable, enable]>
   
   - name: Gathering fortimanager facts
@@ -1340,7 +1341,7 @@ Examples
             selector: "firewall_sslsshprofile"
             params:
               adom: "ansible"
-              ssl-ssh-profile: "your_value"
+              ssl_ssh_profile: "your_value"
 
 
 Return Values

@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ips_custom</span> - Configure IPS custom signature. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -181,7 +182,7 @@ Examples
           adom: ansible
           state: present
           ips_custom:
-            rule-id: 1 # Required, no less than 1000;
+            rule_id: 1 # Required, no less than 1000;
             signature: "F-SBID(--name: [string]; --service: [string]; --flow: [string])" # Required; Need follow signature syntax,
             # check 'https://docs.fortinet.com/document/ipsengine/3.6.0/custom-ips-and-application-control-signature-syntax-guide/
             # 274110/creating-ips-and-application-control-signatures' for more information;

@@ -305,19 +305,19 @@ Parameters
  <li><span class="li-head">aid</span> Log aid messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v7.2.9</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v7.2.11</code></p>
  </div>
  </li>
  <li><span class="li-head">docker</span> Docker application generic messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">controller</span> Controller application generic messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -350,8 +350,8 @@ Examples
       - name: Filter for syslog logging.
         fortinet.fortimanager.fmgr_system_locallog_syslogd_filter:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_locallog_syslogd_filter:

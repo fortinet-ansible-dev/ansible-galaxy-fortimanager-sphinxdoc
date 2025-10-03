@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">antivirus_profile</span> - Configure AntiVirus profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -529,7 +530,7 @@ Parameters
  <li><span class="li-head">unknown_content_encoding</span> <b>(Alias name: unknown-content-encoding)</b>  Configure the action the fortigate unit will take on unknown content-encoding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, inspect, bypass]</span> 
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">malware_stream</span> <b>(Alias name: malware-stream)</b>  Enable 0-day malware-stream scanning. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, monitor, block]</span> 
@@ -1268,17 +1269,17 @@ Examples
           adom: ansible
           state: present
           antivirus_profile:
-            analytics-db: disable
-            analytics-max-upload: 20
-            av-block-log: disable
-            av-virus-log: disable
+            analytics_db: disable
+            analytics_max_upload: 20
+            av_block_log: disable
+            av_virus_log: disable
             comment: "test comment"
-            extended-log: disable
-            ftgd-analytics: disable
-            inspection-mode: proxy
-            mobile-malware-db: disable
+            extended_log: disable
+            ftgd_analytics: disable
+            inspection_mode: proxy
+            mobile_malware_db: disable
             name: "antivirus-profile"
-            scan-mode: quick
+            scan_mode: quick
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

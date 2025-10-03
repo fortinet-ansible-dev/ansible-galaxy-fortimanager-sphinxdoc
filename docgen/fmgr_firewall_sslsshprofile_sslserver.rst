@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ssl_ssh_profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_sslsshprofile_sslserver</span> - SSL servers. <span class="li-normal">type: dict</span></li>
@@ -180,13 +181,13 @@ Examples
         fortinet.fortimanager.fmgr_firewall_sslsshprofile_sslserver:
           bypass_validation: false
           adom: ansible
-          ssl-ssh-profile: "ansible-test" # name
+          ssl_ssh_profile: "ansible-test" # name
           state: present
           firewall_sslsshprofile_sslserver:
-            ftps-client-cert-request: block # <value in [bypass, inspect, block]>
-            https-client-cert-request: bypass # <value in [bypass, inspect, block]>
+            ftps_client_cert_request: block # <value in [bypass, inspect, block]>
+            https_client_cert_request: bypass # <value in [bypass, inspect, block]>
             id: 1
-            imaps-client-cert-request: bypass # <value in [bypass, inspect, block]>
+            imaps_client_cert_request: bypass # <value in [bypass, inspect, block]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -203,8 +204,8 @@ Examples
             selector: "firewall_sslsshprofile_sslserver"
             params:
               adom: "ansible"
-              ssl-ssh-profile: "ansible-test" # name
-              ssl-server: "your_value"
+              ssl_ssh_profile: "ansible-test" # name
+              ssl_server: "your_value"
 
 
 Return Values

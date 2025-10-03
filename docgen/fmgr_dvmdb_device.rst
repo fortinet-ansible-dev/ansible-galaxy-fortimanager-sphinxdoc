@@ -306,7 +306,7 @@ Parameters
  <li><span class="li-head">conf_status</span> Conf status. <span class="li-normal">type: int</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -634,13 +634,13 @@ Parameters
  <li><span class="li-head">vm_lic_overdue_since</span> Vm lic overdue since. <span class="li-normal">type: int</span>
  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">first_tunnel_up</span> First tunnel up. <span class="li-normal">type: int</span>
  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">eip</span> Eip. <span class="li-normal">type: str</span>
@@ -658,7 +658,7 @@ Parameters
  <li><span class="li-head">hw_generation</span> Hw generation. <span class="li-normal">type: int</span>
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">relver_info</span> Relver info. <span class="li-normal">type: str</span>
@@ -676,7 +676,7 @@ Parameters
  <li><span class="li-head">ha_vsn</span> <b>(Alias name: ha.vsn)</b>  Ha. <span class="li-normal">type: str</span>
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ha_upgrade_mode</span> Ha upgrade mode. <span class="li-normal">type: int</span>
@@ -749,7 +749,7 @@ Examples
               - "create_task"
               - "nonblocking"
         register: uninstalling_task
-      - name: Poll the task
+      - name: Poll the task of deleting device
         when: alldevices.meta.response_data != [] and False
         fortinet.fortimanager.fmgr_fact:
           facts:

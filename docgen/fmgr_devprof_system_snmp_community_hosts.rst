@@ -149,8 +149,8 @@ Examples
           community: "1" # id
           state: present
           devprof_system_snmp_community_hosts:
-            ha-direct: enable
-            host-type: query
+            ha_direct: enable
+            host_type: query
             id: 1
   
   - name: Gathering fortimanager facts

@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_externalresource</span> - Configure external resource. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -151,7 +152,7 @@ Parameters
  <li><span class="li-head">server_identity_check</span> <b>(Alias name: server-identity-check)</b>  Certificate verification option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, basic, full]</span> 
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">update_method</span> <b>(Alias name: update-method)</b>  External resource update method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [feed, push]</span> 
@@ -278,7 +279,7 @@ Examples
             category: 0
             comments: string
             name: string
-            refresh-rate: 1
+            refresh_rate: 1
             resource: string
             status: disable
             type: category # <value in [category, address, domain, ...]>
@@ -298,7 +299,7 @@ Examples
             selector: "system_externalresource"
             params:
               adom: "ansible"
-              external-resource: "your_value"
+              external_resource: "your_value"
 
 
 Return Values

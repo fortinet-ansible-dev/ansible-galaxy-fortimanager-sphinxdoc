@@ -110,7 +110,7 @@ Parameters
  <li><span class="li-head">auto_asic_offload</span> <b>(Alias name: auto-asic-offload)</b>  Enable/disable policy traffic asic offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">av_profile</span> <b>(Alias name: av-profile)</b>  Name of an existing antivirus profile. <span class="li-normal">type: str</span>
@@ -134,7 +134,7 @@ Parameters
  <li><span class="li-head">capture_packet</span> <b>(Alias name: capture-packet)</b>  Enable/disable capture packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">cifs_profile</span> <b>(Alias name: cifs-profile)</b>  Name of an existing cifs profile. <span class="li-normal">type: str</span>
@@ -320,7 +320,7 @@ Parameters
  <li><span class="li-head">gtp_profile</span> <b>(Alias name: gtp-profile)</b>  Gtp profile. <span class="li-normal">type: str</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">http_policy_redirect</span> <b>(Alias name: http-policy-redirect)</b>  Redirect http(s) traffic to matching transparent web proxy policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, legacy]</span> 
@@ -512,7 +512,7 @@ Parameters
  <li><span class="li-head">np_acceleration</span> <b>(Alias name: np-acceleration)</b>  Enable/disable utm network processor acceleration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ntlm</span> Enable/disable ntlm authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -566,7 +566,7 @@ Parameters
  <li><span class="li-head">pfcp_profile</span> <b>(Alias name: pfcp-profile)</b>  Pfcp profile. <span class="li-normal">type: str</span>
  <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
  <div id="label167" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">policy_expiry</span> <b>(Alias name: policy-expiry)</b>  Enable/disable policy expiry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -884,31 +884,31 @@ Parameters
  <li><span class="li-head">wanopt</span> Enable/disable wan optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
  <div id="label273" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">wanopt_detection</span> <b>(Alias name: wanopt-detection)</b>  Wan optimization auto-detection mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive, off]</span> 
  <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
  <div id="label275" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">wanopt_passive_opt</span> <b>(Alias name: wanopt-passive-opt)</b>  Wan optimization passive mode options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, transparent, non-transparent]</span> 
  <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
  <div id="label277" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">wanopt_peer</span> <b>(Alias name: wanopt-peer)</b>  Wan optimization peer. <span class="li-normal">type: str</span>
  <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
  <div id="label279" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">wanopt_profile</span> <b>(Alias name: wanopt-profile)</b>  Wan optimization profile. <span class="li-normal">type: str</span>
  <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
  <div id="label281" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">wccp</span> Enable/disable forwarding traffic matching this policy to a configured wccp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -920,13 +920,13 @@ Parameters
  <li><span class="li-head">webcache</span> Enable/disable web cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">webcache_https</span> <b>(Alias name: webcache-https)</b>  Enable/disable web cache for https. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, ssl-server, any, enable]</span> 
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">webfilter_profile</span> <b>(Alias name: webfilter-profile)</b>  Name of an existing web filter profile. <span class="li-normal">type: str</span>
@@ -980,13 +980,13 @@ Parameters
  <li><span class="li-head">tcp_timeout_pid</span> <b>(Alias name: tcp-timeout-pid)</b>  Tcp timeout profile id <span class="li-normal">type: str</span>
  <a id='label304' href="javascript:ContentClick('label305', 'label304');" onmouseover="ContentPreview('label305');" onmouseout="ContentUnpreview('label305');" title="click to collapse or expand..."> more... </a>
  <div id="label305" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">udp_timeout_pid</span> <b>(Alias name: udp-timeout-pid)</b>  Udp timeout profile id <span class="li-normal">type: str</span>
  <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
  <div id="label307" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dlp_sensor</span> <b>(Alias name: dlp-sensor)</b>  Name of an existing dlp sensor. <span class="li-normal">type: str</span>
@@ -1022,7 +1022,7 @@ Parameters
  <li><span class="li-head">mms_profile</span> <b>(Alias name: mms-profile)</b>  Name of an existing mms profile. <span class="li-normal">type: str</span>
  <a id='label318' href="javascript:ContentClick('label319', 'label318');" onmouseover="ContentPreview('label319');" onmouseout="ContentUnpreview('label319');" title="click to collapse or expand..."> more... </a>
  <div id="label319" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">app_category</span> <b>(Alias name: app-category)</b>  Application category id list. <span class="li-normal">type: list</span>
@@ -1427,8 +1427,8 @@ Examples
       - name: Configure IPv4/IPv6 policies.
         fortinet.fortimanager.fmgr_pm_config_pblock_firewall_policy:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>

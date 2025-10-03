@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">proxy_address</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_proxyaddress_headergroup</span> - HTTP header group. <span class="li-normal">type: dict</span></li>
@@ -120,12 +121,12 @@ Examples
         fortinet.fortimanager.fmgr_firewall_proxyaddress_headergroup:
           bypass_validation: false
           adom: ansible
-          proxy-address: "ansible-test" # name
+          proxy_address: "ansible-test" # name
           state: present
           firewall_proxyaddress_headergroup: # available only when type is set to "Advanced(Source)" in prox-address
-            case-sensitivity: disable
+            case_sensitivity: disable
             header: ansible-test-header
-            header-name: ansible-test-header
+            header_name: ansible-test-header
             id: 1
   
   - name: Gathering fortimanager facts
@@ -143,8 +144,8 @@ Examples
             selector: "firewall_proxyaddress_headergroup" # available only when type is set to "Advanced(Source)" in prox-address
             params:
               adom: "ansible"
-              proxy-address: "ansible-test" # name
-              header-group: "your_value"
+              proxy_address: "ansible-test" # name
+              header_group: "your_value"
 
 
 Return Values

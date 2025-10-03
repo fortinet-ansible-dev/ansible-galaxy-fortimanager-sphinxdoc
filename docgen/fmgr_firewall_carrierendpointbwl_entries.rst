@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">carrier_endpoint_bwl</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_carrierendpointbwl_entries</span> - Carrier end point black/white list. <span class="li-normal">type: dict</span></li>
@@ -126,18 +127,18 @@ Examples
         fortinet.fortimanager.fmgr_firewall_carrierendpointbwl_entries:
           bypass_validation: false
           adom: FortiCarrier # This is FOC-only object, need a FortiCarrier adom
-          carrier-endpoint-bwl: "1" # id
+          carrier_endpoint_bwl: "1" # id
           state: present
           firewall_carrierendpointbwl_entries:
             action:
               - block
               - exempt
               - exempt-mass-mms
-            carrier-endpoint: "string"
-            log-action:
+            carrier_endpoint: "string"
+            log_action:
               - archive
               - intercept
-            pattern-type: wildcard # <value in [wildcard, regexp, simple]>
+            pattern_type: wildcard # <value in [wildcard, regexp, simple]>
             status: enable
   
   - name: Gathering fortimanager facts
@@ -155,7 +156,7 @@ Examples
             selector: "firewall_carrierendpointbwl_entries"
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
-              carrier-endpoint-bwl: "1" # id
+              carrier_endpoint_bwl: "1" # id
               entries: "your_value"
 
 

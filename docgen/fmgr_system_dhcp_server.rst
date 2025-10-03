@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_dhcp_server</span> - Configure DHCP servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -627,18 +628,18 @@ Examples
           adom: ansible
           state: present
           system_dhcp_server:
-            auto-configuration: enable # <value in [disable, enable]>
-            default-gateway: "222.222.222.1"
+            auto_configuration: enable # <value in [disable, enable]>
+            default_gateway: "222.222.222.1"
             filename: ansible-file
             id: 1
             interface: any
-            ip-mode: range # <value in [range, usrgrp]>
-            ip-range:
-              - end-ip: 222.222.222.22
+            ip_mode: range # <value in [range, usrgrp]>
+            ip_range:
+              - end_ip: 222.222.222.22
                 id: 1
-                start-ip: 222.222.222.2
+                start_ip: 222.222.222.2
             netmask: 255.255.255.0
-            server-type: regular # <value in [regular, ipsec]>
+            server_type: regular # <value in [regular, ipsec]>
             status: disable # <value in [disable, enable]>
   
   - name: Gathering fortimanager facts

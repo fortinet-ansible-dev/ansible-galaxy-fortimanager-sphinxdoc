@@ -6,12 +6,13 @@ Frequently Asked Questions (FAQ)
 
 **TABLE OF CONTENTS:**
  - `Modules For Policy Package.`_
+ - `How To Specify Gereral Variables In One Place?`_
  - `What You Need To Know About Logging.`_
  - `What Is Workspace Locking?`_
- -  `How To Deal With Task Result?`_
- - `When to Use Parameter bypass_validation?`_
+ - `How To Deal With Task Result?`_
+ - `When To Use Parameter bypass_validation?`_
  - `How To Monitor FortiManager Task?`_
- - `How To Use FortiManager Ansible without Providing Username and Password?`_
+ - `How To Use FortiManager Ansible Without Providing Username And Password?`_
  - `How To Use FortiManager Ansible With FortiManager Cloud?`_
  - `Error: No fact modules available and we could not find a fact module for your network OS`_
 
@@ -100,6 +101,75 @@ Remove A Policy Package
         pm_pkg:
             name: 'global.package0'
 
+How To Specify Gereral Variables In One Place?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can specify general variables in one place by using module_defaults.
+
+By using "group/fortinet.fortimanager.all", you can specify the general variables for all modules.
+By using "group/fortinet.fortimanager.adom", you can specify the adom value for all modules that support adom.
+
+::
+
+   - name: Your playbook.
+     hosts: fortimanagers
+     module_defaults:
+       group/fortinet.fortimanager.all:
+         enable_log: true
+         # access_token: "YOUR ACCESS TOKEN"
+         # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
+         # rc_succeeded: [0, -2, -3]
+         # rc_failed: [-2, -3]
+         # workspace_locking_adom: "ADOM NAME"
+         # workspace_locking_timeout: 300
+       group/fortinet.fortimanager.adom:
+         adom: "root"
+     tasks:
+       - name: Your task
+         fortinet.fortimanager.fmgr_<module>:
+           <param>: <value>
+
+Here is an example:
+
+::
+
+   - name: Set module defaults.
+     hosts: fortimanagers
+     module_defaults:
+       group/fortinet.fortimanager.all:
+         enable_log: true
+         # access_token: "YOUR ACCESS TOKEN"
+         # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
+         # rc_succeeded: [0, -2, -3]
+         # rc_failed: [-2, -3]
+         # workspace_locking_adom: "ADOM NAME"
+         # workspace_locking_timeout: 300
+       group/fortinet.fortimanager.adom:
+         adom: "root"
+     tasks:
+       - name: Get fact.
+         fortinet.fortimanager.fmgr_fact:
+           enable_log: false # You can override module default settings
+           facts:
+             selector: "firewall_ippool"
+             params:
+               adom: "root"
+               ippool: ""
+       - name: Configure IPv4 policies.
+         fortinet.fortimanager.fmgr_firewall_address:
+           state: present
+           # adom: root        # Already set in module_defaults
+           # enable_log: true  # Already set in module_defaults
+           firewall_address:
+             name: Win11
+             comment: from Ansible.
+             organization: Fortinet
+             start_ip: 192.168.1.5
+             end_ip: 192.168.1.11
+             type: iprange
+             associated_interface: any
+
+
 What You Need To Know About Logging. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -160,7 +230,7 @@ How To Deal With Task Result?
 
 See `Error Handling`_ for more. 
 
-When to Use Parameter bypass_validation?
+When To Use Parameter bypass_validation?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You are not encouraged to use ``bypass_validation`` except that you are sure something is wrong with the parameter definition and you want to fix them on you own immediately.
@@ -196,7 +266,7 @@ the snippet is very straightforward:
 - ``failed_when`` - failing condition in which you regard the task a failure, this is the condition to quit abnormally
 
 
-How To Use FortiManager Ansible without Providing Username and Password?
+How To Use FortiManager Ansible Without Providing Username And Password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 FortiManager Ansible collection supports three different ways to login.
@@ -368,11 +438,4 @@ Solution 3: Add "gather_facts: false" to your playbook.
 .. _full playbook: https://raw.githubusercontent.com/fortinet-ansible-dev/fortimanager-playbook-example/2.0.0/output/discover_and_add_device.yml
 .. _fortiapi spec page: https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/#
 .. _Error Handling: errors.html
-.. _Modules For Policy Package.: #modules-for-policy-package
-.. _What You Need To Know About Logging.: #what-you-need-to-know-about-logging
-.. _What Is Workspace Locking?: #what-is-workspace-locking
-.. _How To Deal With Task Result?: #how-to-deal-with-task-result
-.. _When to Use Parameter bypass_validation?: #when-to-use-parameter-bypass-validation
-.. _How To Monitor FortiManager Task?: #how-to-monitor-fortimanager-task
-.. _How To Use FortiManager Ansible With FortiCloud?: #how-to-use-fortimanager-ansible-with-forticloud
 .. _What is inventory file?: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html

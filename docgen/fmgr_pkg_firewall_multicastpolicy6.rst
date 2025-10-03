@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg_firewall_multicastpolicy6</span> - Configure IPv6 multicast NAT policies. <span class="li-normal">type: dict</span></li>
@@ -74,7 +75,7 @@ Parameters
  <li><span class="li-head">auto_asic_offload</span> <b>(Alias name: auto-asic-offload)</b>  Enable/disable offloading policy traffic for hardware acceleration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dstaddr</span> Ipv6 destination address name. <span class="li-normal">type: list or str</span>
@@ -202,7 +203,7 @@ Examples
           state: present
           pkg_firewall_multicastpolicy6:
             action: accept # <value in [deny, accept]>
-            auto-asic-offload: enable
+            auto_asic_offload: enable
             dstaddr: all
             dstintf: any
             id: 1
@@ -227,7 +228,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              multicast-policy6: "your_value"
+              multicast_policy6: "your_value"
 
 
 Return Values

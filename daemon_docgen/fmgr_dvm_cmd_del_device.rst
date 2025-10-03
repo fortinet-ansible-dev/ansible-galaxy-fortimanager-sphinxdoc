@@ -131,7 +131,7 @@ Examples
               - "create_task"
               - "nonblocking"
         register: uninstalling_task
-      - name: Poll the task
+      - name: Poll the task of deleting device
         when: alldevices.meta.response_data != [] and False
         fortinet.fortimanager.fmgr_fact:
           facts:

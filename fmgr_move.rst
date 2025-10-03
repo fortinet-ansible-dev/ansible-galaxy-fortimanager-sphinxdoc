@@ -205,12 +205,12 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
@@ -234,35 +234,35 @@ Parameters
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
-          <span class="li-normal">v7.2.6->v7.2.9</span>,
+          <span class="li-normal">v7.2.6->v7.2.11</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:

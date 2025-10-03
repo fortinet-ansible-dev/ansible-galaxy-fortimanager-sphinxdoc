@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">fsp_vlan</span> - FortiSwitch VLAN template. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -4487,25 +4488,25 @@ Parameters
  <li><span class="li-head">generic_receive_offload</span> <b>(Alias name: generic-receive-offload)</b>  Generic receive offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label1454' href="javascript:ContentClick('label1455', 'label1454');" onmouseover="ContentPreview('label1455');" onmouseout="ContentUnpreview('label1455');" title="click to collapse or expand..."> more... </a>
  <div id="label1455" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">interconnect_profile</span> <b>(Alias name: interconnect-profile)</b>  Set interconnect profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, profile1, profile2]</span> 
  <a id='label1456' href="javascript:ContentClick('label1457', 'label1456');" onmouseover="ContentPreview('label1457');" onmouseout="ContentUnpreview('label1457');" title="click to collapse or expand..."> more... </a>
  <div id="label1457" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">large_receive_offload</span> <b>(Alias name: large-receive-offload)</b>  Large receive offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label1458' href="javascript:ContentClick('label1459', 'label1458');" onmouseover="ContentPreview('label1459');" onmouseout="ContentUnpreview('label1459');" title="click to collapse or expand..."> more... </a>
  <div id="label1459" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">annex</span> Set xdsl annex type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [a, b, j, bjm, i, al, m, aijlm, bj]</span> 
  <a id='label1460' href="javascript:ContentClick('label1461', 'label1460');" onmouseover="ContentPreview('label1461');" onmouseout="ContentUnpreview('label1461');" title="click to collapse or expand..."> more... </a>
  <div id="label1461" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">aggregate_type</span> <b>(Alias name: aggregate-type)</b>  Type of aggregation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [physical, vxlan]</span> 
@@ -4685,7 +4686,7 @@ Parameters
  <li><span class="li-head">profiles</span> Set allowed vdsl profiles. <span class="li-normal">type: list</span> <span class="li-normal">choices: [8a, 8b, 8c, 8d, 12a, 12b, 17a, 30a, 35b]</span> 
  <a id='label1520' href="javascript:ContentClick('label1521', 'label1520');" onmouseover="ContentPreview('label1521');" onmouseout="ContentUnpreview('label1521');" title="click to collapse or expand..."> more... </a>
  <div id="label1521" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.14 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">telemetry_discover</span> <b>(Alias name: telemetry-discover)</b>  Enable/disable automatic registration of unknown fortitelemetry agents. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -4726,8 +4727,8 @@ Examples
       - name: FortiSwitch VLAN template.
         fortinet.fortimanager.fmgr_fsp_vlan:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>

@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">replacemsg_group</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_replacemsggroup_nntp</span> - Replacement message table entries. <span class="li-normal">type: dict</span></li>
@@ -120,13 +121,13 @@ Examples
         fortinet.fortimanager.fmgr_system_replacemsggroup_nntp:
           bypass_validation: false
           adom: ansible
-          replacemsg-group: ansible-test # name
+          replacemsg_group: ansible-test # name
           state: present
           system_replacemsggroup_nntp:
             buffer: ansible-buffer
             format: text # <value in [none, text, html, ...]>
             header: none # <value in [none, http, 8bit]>
-            msg-type: ansible-msgtype # required
+            msg_type: ansible-msgtype # required
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -143,7 +144,7 @@ Examples
             selector: "system_replacemsggroup_nntp"
             params:
               adom: "ansible"
-              replacemsg-group: "ansible-test" # name
+              replacemsg_group: "ansible-test" # name
               nntp: "your_value"
 
 

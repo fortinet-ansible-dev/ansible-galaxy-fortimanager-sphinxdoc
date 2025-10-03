@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">mms_profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_mmsprofile_notifmsisdn</span> - Notification for MSISDNs. <span class="li-normal">type: dict</span></li>
@@ -108,7 +109,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_mmsprofile_notifmsisdn:
           bypass_validation: false
           adom: FortiCarrier # This is FOC-only object, need a FortiCarrier adom
-          mms-profile: "ansible-test" # name
+          mms_profile: "ansible-test" # name
           state: present
           firewall_mmsprofile_notifmsisdn:
             msisdn: "ansible"
@@ -135,8 +136,8 @@ Examples
             selector: "firewall_mmsprofile_notifmsisdn"
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
-              mms-profile: "ansible-test" # name
-              notif-msisdn: "your_value"
+              mms_profile: "ansible-test" # name
+              notif_msisdn: "your_value"
 
 
 Return Values

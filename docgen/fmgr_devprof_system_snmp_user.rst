@@ -237,8 +237,8 @@ Examples
           devprof: "ansible-test" # system template name, could find it in FortiManager UI: Device Manager --> Provisioning Templates --> System Templates
           state: present
           devprof_system_snmp_user:
-            auth-proto: md5
-            auth-pwd: "fortinet"
+            auth_proto: md5
+            auth_pwd: "fortinet"
             events:
               - cpu-high
               - mem-low
@@ -284,7 +284,7 @@ Examples
               - per-cpu-high
               - power-blade-down
               - confsync_failure
-            ha-direct: disable
+            ha_direct: disable
             name: "ansible-test"
   
   - name: Gathering fortimanager facts

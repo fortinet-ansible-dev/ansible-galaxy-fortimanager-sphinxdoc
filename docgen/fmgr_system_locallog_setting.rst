@@ -89,7 +89,7 @@ Parameters
  <li><span class="li-head">no_log_detection_threshold</span> <b>(Alias name: no-log-detection-threshold)</b>  Time interval in minutes to trigger a local event message if no log data is received. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_interval_adom_perf_stats</span> <b>(Alias name: log-interval-adom-perf-stats)</b>  Interval in minute for logging the event of adom perf stats. <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
@@ -128,8 +128,8 @@ Examples
       - name: Settings for locallog logging.
         fortinet.fortimanager.fmgr_system_locallog_setting:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_locallog_setting:

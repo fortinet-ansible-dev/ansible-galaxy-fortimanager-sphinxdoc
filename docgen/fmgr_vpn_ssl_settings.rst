@@ -67,7 +67,7 @@ Parameters
  <li><span class="li-head">algorithm</span> Force the ssl vpn security level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, high, low, medium]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">auth_session_check_source_ip</span> <b>(Alias name: auth-session-check-source-ip)</b>  Enable/disable checking of source ip for authentication session. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -654,8 +654,8 @@ Examples
       - name: Configure SSL VPN.
         fortinet.fortimanager.fmgr_vpn_ssl_settings:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

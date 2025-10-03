@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">internet_service_custom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">disable_entry</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
@@ -115,13 +116,13 @@ Examples
         fortinet.fortimanager.fmgr_firewall_internetservicecustom_disableentry_iprange:
           bypass_validation: false
           adom: ansible
-          internet-service-custom: "ansible-test" # name
-          disable-entry: "1" # id
+          internet_service_custom: "ansible-test" # name
+          disable_entry: "1" # id
           state: present
           firewall_internetservicecustom_disableentry_iprange:
-            end-ip: "0.0.0.20"
+            end_ip: "0.0.0.20"
             id: 1
-            start-ip: "0.0.0.0"
+            start_ip: "0.0.0.0"
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -138,9 +139,9 @@ Examples
             selector: "firewall_internetservicecustom_disableentry_iprange"
             params:
               adom: "ansible"
-              internet-service-custom: "ansible-test" # name
-              disable-entry: "1" # id
-              ip-range: "your_value"
+              internet_service_custom: "ansible-test" # name
+              disable_entry: "1" # id
+              ip_range: "your_value"
 
 
 Return Values

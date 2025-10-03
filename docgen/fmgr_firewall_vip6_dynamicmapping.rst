@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vip6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_vip6_dynamicmapping</span> - Configure virtual IP for IPv6. <span class="li-normal">type: dict</span></li>
@@ -620,7 +621,7 @@ Parameters
  <li><span class="li-head">ndp_reply</span> <b>(Alias name: ndp-reply)</b>  Enable/disable this fortigate units ability to respond to ndp requests for this virtual ip address (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ssl_server_renegotiation</span> <b>(Alias name: ssl-server-renegotiation)</b>  Enable/disable secure renegotiation to comply with rfc 5746. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -702,7 +703,7 @@ Examples
             _scope:
               - name: FGT_AWS # need a valid device name
                 vdom: root # need a valid vdom name under the device
-            arp-reply: disable
+            arp_reply: disable
             color: 1
             comment: "ansible-comment"
             id: 1

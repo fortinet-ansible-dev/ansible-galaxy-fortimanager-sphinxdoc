@@ -209,19 +209,19 @@ Parameters
  <li><span class="li-head">ip</span> Upload server ip address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip2</span> Upload server ip2 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip3</span> Upload server ip3 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Format of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> 
@@ -397,19 +397,19 @@ Parameters
  <li><span class="li-head">ip</span> Upload server ip address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip2</span> Upload server ip2 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip3</span> Upload server ip3 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Format of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> 
@@ -585,19 +585,19 @@ Parameters
  <li><span class="li-head">ip</span> Upload server ip address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip2</span> Upload server ip2 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">ip3</span> Upload server ip3 address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.13</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.14</code></p>
  </div>
  </li>
  <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Format of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span> 
@@ -743,31 +743,31 @@ Parameters
  <li><span class="li-head">device_auto_detect</span> <b>(Alias name: device-auto-detect)</b>  Enable/disable looking up device id in syslog received with no encryption. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
  <div id="label225" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">unencrypted_logging</span> <b>(Alias name: unencrypted-logging)</b>  Enable/disable receiving syslog through udp(514) or tcp(514) un-encrypted. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
  <div id="label227" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.1 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">log_interval_dev_no_logging</span> <b>(Alias name: log-interval-dev-no-logging)</b>  Interval in minute of no log received from a device when considering the device down. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span> 
  <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
  <div id="label229" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_upload_interval_dev_no_logging</span> <b>(Alias name: log-upload-interval-dev-no-logging)</b>  Interval in minute of no log uploaded from a device when considering the device down. <span class="li-normal">type: int</span> <span class="li-normal">default: 360</span> 
  <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
  <div id="label231" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">legacy_auth_mode</span> <b>(Alias name: legacy-auth-mode)</b>  Enable/disable legacy mode of device authentication by username/password. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
  <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
  <div id="label233" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.14 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_process_fast_mode</span> <b>(Alias name: log-process-fast-mode)</b>  Enable/disable log process fast mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
@@ -824,8 +824,8 @@ Examples
       - name: Log settings.
         fortinet.fortimanager.fmgr_system_log_settings:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_log_settings:

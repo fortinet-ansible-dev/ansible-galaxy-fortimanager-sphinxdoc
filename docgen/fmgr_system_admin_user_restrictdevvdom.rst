@@ -103,7 +103,7 @@ Examples
           user: ansible-test # userid
           state: present
           system_admin_user_restrictdevvdom:
-            dev-vdom: FGT_AWS
+            dev_vdom: FGT_AWS
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -120,7 +120,7 @@ Examples
             selector: "system_admin_user_restrictdevvdom"
             params:
               user: "ansible-test" # userid
-              restrict-dev-vdom: "your_value"
+              restrict_dev_vdom: "your_value"
 
 
 Return Values

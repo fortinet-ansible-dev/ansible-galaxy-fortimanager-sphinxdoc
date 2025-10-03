@@ -61,6 +61,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
+ <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_shapingprofile</span> - Configure shaping profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
@@ -165,7 +166,7 @@ Parameters
  <li><span class="li-head">npu_offloading</span> <b>(Alias name: npu-offloading)</b>  Enable/disable npu offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -202,7 +203,7 @@ Examples
           state: present
           firewall_shapingprofile:
             comment: "ansible-comment"
-            profile-name: "ansible-test"
+            profile_name: "ansible-test"
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -219,7 +220,7 @@ Examples
             selector: "firewall_shapingprofile"
             params:
               adom: "ansible"
-              shaping-profile: "your_value"
+              shaping_profile: "your_value"
 
 
 Return Values

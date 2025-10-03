@@ -77,7 +77,7 @@ Parameters
  <li><span class="li-head">psk</span> Fabric auth pwd. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.2.9</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.2.11</code></p>
  </div>
  </li>
  <li><span class="li-head">role</span> Enable or disable soc fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [member, supervisor]</span>  <span class="li-normal">default: member</span> 
@@ -154,8 +154,8 @@ Examples
       - name: SOC Fabric.
         fortinet.fortimanager.fmgr_system_socfabric:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           system_socfabric:
