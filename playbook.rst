@@ -16,6 +16,9 @@ Prepare host inventory
 
 in our case we create a file named ``hosts``:
 
+With Standard User/password authentication
+----------
+
 ::
 
    [fortimanagers]
@@ -25,15 +28,36 @@ in our case we create a file named ``hosts``:
    [fortimanagers:vars]
    ansible_connection=httpapi
    ansible_network_os=fortinet.fortimanager.fortimanager
-   ansible_facts_modules=setup
    ansible_httpapi_port=443
    ansible_httpapi_use_ssl=true
+   #  Disabling TLS certificate verification is a bad idea on security point of view, 
+   #  but if you use default certificates that are self-signed, you nedd to disable it.
+   #  Please use valid certificates for your production environments and keep certificate validation ON.
+   ansible_httpapi_validate_certs=false
+
+With REST API user token based authentication
+----------
+
+::
+
+   [fortimanagers]
+   fortimanager01 ansible_host=192.168.190.1 api_bearer_token="YOUR_GENERATED_API_KEY"
+   fortimanager02 ansible_host=192.168.190.2 api_bearer_token="YOUR_GENERATED_API_KEY"
+
+   [fortimanagers:vars]
+   ansible_connection=httpapi
+   ansible_network_os=fortinet.fortimanager.fortimanager
+   ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   #  Disabling TLS certificate verification is a bad idea on security point of view, 
+   #  but if you use default certificates that are self-signed, you nedd to disable it.
+   #  Please use valid certificates for your production environments and keep certificate validation ON.
    ansible_httpapi_validate_certs=false
 
 Write the playbook
 ~~~~~~~~~~~~~~~~~~
 
-An Example
+An Example with User/Password authentication
 ----------
 
 in the example: ``test.yml`` we are going to create a script on FortiManager:
@@ -49,7 +73,48 @@ in the example: ``test.yml`` we are going to create a script on FortiManager:
        # ansible_facts_modules: setup
        # ansible_httpapi_port: 443
        # ansible_httpapi_use_ssl: true
-       # ansible_httpapi_validate_certs: false
+       #
+       #  Disabling TLS certificate verification is a bad idea on security point of view, 
+       #  but if you use default certificates that are self-signed, you nedd to disable it.
+       #  Please use valid certificates for your production environments and keep certificate validation ON.
+       # ansible_httpapi_validate_certs=false
+     tasks:
+      - name: Create a script on FortiManager.
+        fortinet.fortimanager.fmgr_dvmdb_script:
+           adom: 'adom'
+           state: 'present'
+           dvmdb_script:
+              desc: 'The script create via Ansible'
+              type: 'cli'
+              name: 'fooscript'
+              content: |
+                         config system global
+                            set timezone 04
+                         end
+
+An Example with REST API user token based authentication
+----------
+
+in the example: ``test.yml`` we are going to create a script on FortiManager:
+
+::
+
+   - name: Example playbook
+     hosts: fortimanagers
+     vars:
+       # You don't need to specify the following vars if you specified them in the host file.
+       # ansible_connection: httpapi
+       # ansible_network_os: fortinet.fortimanager.fortimanager
+       # ansible_facts_modules: setup
+       # ansible_httpapi_port: 443
+       # ansible_httpapi_use_ssl: true
+       #
+       #  Disabling TLS certificate verification is a bad idea on security point of view, 
+       #  but if you use default certificates that are self-signed, you nedd to disable it.
+       #  Please use valid certificates for your production environments and keep certificate validation ON.
+       # ansible_httpapi_validate_certs=false
+       ansible_httpapi_session_key:
+         authorization: "bearer {{ api_bearer_token }}"
      tasks:
       - name: Create a script on FortiManager.
         fortinet.fortimanager.fmgr_dvmdb_script:
