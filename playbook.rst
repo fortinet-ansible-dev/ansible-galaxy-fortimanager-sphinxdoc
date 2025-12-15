@@ -22,6 +22,8 @@ With Standard User/password authentication
 ::
 
    [fortimanagers]
+   # Storing authentication token in plain text file is a bad idea on a security point of view
+   # Please prefer ansible-vault or any encrypted mean to store sensitive data
    fortimanager01 ansible_host=192.168.190.1 ansible_user="admin" ansible_password="password"
    fortimanager02 ansible_host=192.168.190.2 ansible_user="admin" ansible_password="password"
 
@@ -41,6 +43,8 @@ With REST API user token based authentication
 ::
 
    [fortimanagers]
+   # Storing authentication token in plain text file is a bad idea on a security point of view
+   # Please prefer ansible-vault or any encrypted mean to store sensitive data
    fortimanager01 ansible_host=192.168.190.1 api_bearer_token="YOUR_GENERATED_API_KEY"
    fortimanager02 ansible_host=192.168.190.2 api_bearer_token="YOUR_GENERATED_API_KEY"
 
