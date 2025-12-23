@@ -379,7 +379,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tie_break</span> <b>(Alias name: tie-break)</b>  Method of selecting member if more than one meets the sla. <span class="li-normal">type: str</span> <span class="li-normal">choices: [zone, cfg-order, fib-best-match, input-device]</span> 
+ <li><span class="li-head">tie_break</span> <b>(Alias name: tie-break)</b>  Method of selecting member if more than one meets the sla. <span class="li-normal">type: str</span> <span class="li-normal">choices: [zone, cfg-order, fib-best-match, input-device, priority]</span> 
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -479,6 +479,12 @@ Parameters
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">internet_service_fortiguard</span> <b>(Alias name: internet-service-fortiguard)</b>  Fortiguard internet service name list. <span class="li-normal">type: list</span>
+ <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
+ <div id="label139" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -588,6 +594,7 @@ Examples
             # shortcut_priority: <value in [disable, enable, auto]>
             # comment: <string>
             # fib_best_match_force: <value in [disable, enable]>
+            # internet_service_fortiguard: <list or string>
 
 
 Return Values

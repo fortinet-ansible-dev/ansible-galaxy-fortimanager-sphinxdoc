@@ -263,16 +263,34 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">domain_fronting</span> <b>(Alias name: domain-fronting)</b>  Configure http domain fronting (default = block). <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, allow]</span> 
+ <li><span class="li-head">domain_fronting</span> <b>(Alias name: domain-fronting)</b>  Configure http domain fronting (default = block). <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, monitor, allow, disable, enable, strict]</span> 
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">http_0_9</span> <b>(Alias name: http-0.9)</b>  Configure action to take upon receipt of http 0. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, allow]</span> 
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dns_protection</span> <b>(Alias name: dns-protection)</b>  Enable/disable dns protection for http/https traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">encrypted_file</span> <b>(Alias name: encrypted-file)</b>  Encrypted file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, pass, inspect]</span> 
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">encrypted_file_log</span> <b>(Alias name: encrypted-file-log)</b>  Encrypted file log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -371,8 +389,11 @@ Examples
             # h2c: <value in [disable, enable]>
             # verify_dns_for_policy_matching: <value in [disable, enable]>
             # unknown_content_encoding: <value in [block, inspect, bypass]>
-            # domain_fronting: <value in [block, monitor, allow]>
+            # domain_fronting: <value in [block, monitor, allow, ...]>
             # http_0_9: <value in [block, allow]>
+            # dns_protection: <value in [disable, enable]>
+            # encrypted_file: <value in [block, pass, inspect]>
+            # encrypted_file_log: <value in [disable, enable]>
 
 
 Return Values

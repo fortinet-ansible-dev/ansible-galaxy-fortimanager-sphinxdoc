@@ -644,79 +644,79 @@ Parameters
  <li><span class="li-head">ble_rtls</span> <b>(Alias name: ble-rtls)</b>  Set ble real time location service (rtls) support (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, polestar, evresys]</span> 
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_accumulation_interval</span> <b>(Alias name: ble-rtls-accumulation-interval)</b>  Time that measurements should be accumulated in seconds (default = 2). <span class="li-normal">type: int</span>
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_asset_addrgrp_list</span> <b>(Alias name: ble-rtls-asset-addrgrp-list)</b>  Tags and asset addrgrp list to be reported. <span class="li-normal">type: list</span>
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_asset_uuid_list1</span> <b>(Alias name: ble-rtls-asset-uuid-list1)</b>  Tags and asset uuid list 1 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_asset_uuid_list2</span> <b>(Alias name: ble-rtls-asset-uuid-list2)</b>  Tags and asset uuid list 2 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
  <div id="label199" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_asset_uuid_list3</span> <b>(Alias name: ble-rtls-asset-uuid-list3)</b>  Tags and asset uuid list 3 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_asset_uuid_list4</span> <b>(Alias name: ble-rtls-asset-uuid-list4)</b>  Tags and asset uuid list 4 to be reported (string in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). <span class="li-normal">type: str</span>
  <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
  <div id="label203" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_protocol</span> <b>(Alias name: ble-rtls-protocol)</b>  Select the protocol to report measurements, advertising data, or location data to cloud server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [WSS]</span> 
  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
  <div id="label205" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_reporting_interval</span> <b>(Alias name: ble-rtls-reporting-interval)</b>  Time between reporting accumulated measurements in seconds (default = 2). <span class="li-normal">type: int</span>
  <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
  <div id="label207" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_server_fqdn</span> <b>(Alias name: ble-rtls-server-fqdn)</b>  Fqdn of ble real time location service (rtls) server. <span class="li-normal">type: str</span>
  <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
  <div id="label209" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_server_path</span> <b>(Alias name: ble-rtls-server-path)</b>  Path of ble real time location service (rtls) server. <span class="li-normal">type: str</span>
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_server_port</span> <b>(Alias name: ble-rtls-server-port)</b>  Port of ble real time location service (rtls) server (default = 443). <span class="li-normal">type: int</span>
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ble_rtls_server_token</span> <b>(Alias name: ble-rtls-server-token)</b>  Access token of ble real time location service (rtls) server. <span class="li-normal">type: str</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -739,7 +739,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Wtp, fortiap or ap platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30B-50B, 60B, 80CM-81CM, 220A, 220B, 210B, 60C, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, S321C, S323C, FWF, S311C, S313C, AP-11N, S322C, S321CR, S322CR, S323CR, S421E, S422E, S423E, 421E, 423E, C221E, C226E, C23JD, C24JE, C21D, U421E, U423E, 221E, 222E, 223E, S221E, S223E, U221EV, U223EV, U321EV, U323EV, 224E, U422EV, U24JEV, 321E, U431F, U433F, 231E, 431F, 433F, 231F, 432F, 234F, 23JF, U231F, 831F, U234F, U432F, 431FL, 432FR, 433FL, 231FL, 231G, 233G, 431G, 433G, U231G, U441G, 234G, 432G, 441K, 443K, 241K, 243K, 231K, 23JK]</span> 
+ <li><span class="li-head">type</span> Wtp, fortiap or ap platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30B-50B, 60B, 80CM-81CM, 220A, 220B, 210B, 60C, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, S321C, S323C, FWF, S311C, S313C, AP-11N, S322C, S321CR, S322CR, S323CR, S421E, S422E, S423E, 421E, 423E, C221E, C226E, C23JD, C24JE, C21D, U421E, U423E, 221E, 222E, 223E, S221E, S223E, U221EV, U223EV, U321EV, U323EV, 224E, U422EV, U24JEV, 321E, U431F, U433F, 231E, 431F, 433F, 231F, 432F, 234F, 23JF, U231F, 831F, U234F, U432F, 431FL, 432FR, 433FL, 231FL, 231G, 233G, 431G, 433G, U231G, U441G, 234G, 432G, 441K, 443K, 241K, 243K, 231K, 23JK, 222KL, 244K]</span> 
  <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
  <div id="label223" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
@@ -1245,7 +1245,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom]</span> 
+ <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom, FANT-04BEAX-0606-P-R]</span> 
  <a id='label390' href="javascript:ContentClick('label391', 'label390');" onmouseover="ContentPreview('label391');" onmouseout="ContentUnpreview('label391');" title="click to collapse or expand..."> more... </a>
  <div id="label391" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -1805,7 +1805,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom]</span> 
+ <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom, FANT-04BEAX-0606-P-R]</span> 
  <a id='label576' href="javascript:ContentClick('label577', 'label576');" onmouseover="ContentPreview('label577');" onmouseout="ContentUnpreview('label577');" title="click to collapse or expand..."> more... </a>
  <div id="label577" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -2365,7 +2365,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom]</span> 
+ <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom, FANT-04BEAX-0606-P-R]</span> 
  <a id='label762' href="javascript:ContentClick('label763', 'label762');" onmouseover="ContentPreview('label763');" onmouseout="ContentUnpreview('label763');" title="click to collapse or expand..."> more... </a>
  <div id="label763" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -2925,7 +2925,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom]</span> 
+ <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom, FANT-04BEAX-0606-P-R]</span> 
  <a id='label948' href="javascript:ContentClick('label949', 'label948');" onmouseover="ContentPreview('label949');" onmouseout="ContentUnpreview('label949');" title="click to collapse or expand..."> more... </a>
  <div id="label949" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -3149,6 +3149,42 @@ Parameters
  <a id='label1020' href="javascript:ContentClick('label1021', 'label1020');" onmouseover="ContentPreview('label1021');" onmouseout="ContentUnpreview('label1021');" title="click to collapse or expand..."> more... </a>
  <div id="label1021" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">apcfg_mesh</span> <b>(Alias name: apcfg-mesh)</b>  Enable/disable ap local mesh configuration (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1022' href="javascript:ContentClick('label1023', 'label1022');" onmouseover="ContentPreview('label1023');" onmouseout="ContentUnpreview('label1023');" title="click to collapse or expand..."> more... </a>
+ <div id="label1023" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">apcfg_mesh_ap_type</span> <b>(Alias name: apcfg-mesh-ap-type)</b>  Mesh ap type (default = ethernet). <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, ethernet, mesh]</span> 
+ <a id='label1024' href="javascript:ContentClick('label1025', 'label1024');" onmouseover="ContentPreview('label1025');" onmouseout="ContentUnpreview('label1025');" title="click to collapse or expand..."> more... </a>
+ <div id="label1025" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">apcfg_mesh_eth_bridge</span> <b>(Alias name: apcfg-mesh-eth-bridge)</b>  Enable/disable mesh ethernet bridge (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1026' href="javascript:ContentClick('label1027', 'label1026');" onmouseover="ContentPreview('label1027');" onmouseout="ContentUnpreview('label1027');" title="click to collapse or expand..."> more... </a>
+ <div id="label1027" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">apcfg_mesh_passwd</span> <b>(Alias name: apcfg-mesh-passwd)</b>  Apcfg mesh passwd. <span class="li-normal">type: list</span>
+ <a id='label1028' href="javascript:ContentClick('label1029', 'label1028');" onmouseover="ContentPreview('label1029');" onmouseout="ContentUnpreview('label1029');" title="click to collapse or expand..."> more... </a>
+ <div id="label1029" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">apcfg_mesh_ssid</span> <b>(Alias name: apcfg-mesh-ssid)</b>  Mesh ssid (default = none). <span class="li-normal">type: list</span>
+ <a id='label1030' href="javascript:ContentClick('label1031', 'label1030');" onmouseover="ContentPreview('label1031');" onmouseout="ContentUnpreview('label1031');" title="click to collapse or expand..."> more... </a>
+ <div id="label1031" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">default_mesh_root</span> <b>(Alias name: default-mesh-root)</b>  Configure default mesh root ssid when it is not included by radios ssid configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1032' href="javascript:ContentClick('label1033', 'label1032');" onmouseover="ContentPreview('label1033');" onmouseout="ContentUnpreview('label1033');" title="click to collapse or expand..."> more... </a>
+ <div id="label1033" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -3759,6 +3795,12 @@ Examples
             # usb_port: <value in [disable, enable]>
             # admin_auth_tacacs_: <list or string>
             # admin_restrict_local: <value in [disable, enable]>
+            # apcfg_mesh: <value in [disable, enable]>
+            # apcfg_mesh_ap_type: <value in [auto, ethernet, mesh]>
+            # apcfg_mesh_eth_bridge: <value in [disable, enable]>
+            # apcfg_mesh_passwd: <list or string>
+            # apcfg_mesh_ssid: <list or string>
+            # default_mesh_root: <value in [disable, enable]>
 
 
 Return Values

@@ -143,6 +143,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">qwant_restrict</span> <b>(Alias name: qwant-restrict)</b>  Qwant restrict. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span> 
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -210,6 +216,7 @@ Examples
             #   - "extended-log-others"
             # blocklist: <value in [disable, enable]>
             # vimeo_restrict: <string>
+            # qwant_restrict: <value in [strict, none, moderate]>
 
 
 Return Values

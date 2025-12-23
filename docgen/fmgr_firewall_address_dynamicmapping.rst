@@ -284,7 +284,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete]</span> 
+ <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete, telemetry]</span> 
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -390,6 +390,18 @@ Parameters
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">agent_id</span> <b>(Alias name: agent-id)</b>  Telemetry agent id. <span class="li-normal">type: list</span>
+ <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
+ <div id="label109" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">tag_uuid</span> <b>(Alias name: tag-uuid)</b>  Foreign uuid of dynamic address object. <span class="li-normal">type: str</span>
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

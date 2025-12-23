@@ -398,7 +398,7 @@ Parameters
  <li><span class="li-head">extension_access</span> <b>(Alias name: extension-access)</b>  Manage extension access. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">fabric_viewer</span> <b>(Alias name: fabric-viewer)</b>  Fabric viewer. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
@@ -578,7 +578,7 @@ Parameters
  <li><span class="li-head">device_fortiextender</span> <b>(Alias name: device-fortiextender)</b>  Manage fortiextender. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ips_lock</span> <b>(Alias name: ips-lock)</b>  Ips locking <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
@@ -642,7 +642,19 @@ Parameters
  <li><span class="li-head">device_fwm_profile</span> <b>(Alias name: device-fwm-profile)</b>  Device firmware profile permission. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">device_assignment</span> <b>(Alias name: device-assignment)</b>  Device assignment. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">script_run</span> <b>(Alias name: script-run)</b>  Script run. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
+ <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

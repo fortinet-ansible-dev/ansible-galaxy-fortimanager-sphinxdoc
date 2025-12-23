@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_certificate</span> <b>(Alias name: client-certificate)</b>  Action based on received client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
+ <li><span class="li-head">client_certificate</span> <b>(Alias name: client-certificate)</b>  Action based on received client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block, bypass-on-cert-req]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -194,7 +194,7 @@ Examples
           firewall_sslsshprofile_dot:
             # cert_validation_failure: <value in [allow, block, ignore]>
             # cert_validation_timeout: <value in [allow, block, ignore]>
-            # client_certificate: <value in [bypass, inspect, block]>
+            # client_certificate: <value in [bypass, inspect, block, ...]>
             # expired_server_cert: <value in [allow, block, ignore]>
             # proxy_after_tcp_handshake: <value in [disable, enable]>
             # revoked_server_cert: <value in [allow, block, ignore]>

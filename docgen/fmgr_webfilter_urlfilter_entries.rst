@@ -126,6 +126,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -184,6 +190,7 @@ Examples
             # url: <string>
             # web_proxy_profile: <string>
             # antiphish_action: <value in [block, log]>
+            # comment: <string>
 
 
 Return Values

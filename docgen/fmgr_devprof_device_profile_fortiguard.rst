@@ -106,6 +106,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">vrf_select</span> <b>(Alias name: vrf-select)</b>  Vrf select. <span class="li-normal">type: int</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -157,6 +163,7 @@ Examples
             # auto_firmware_upgrade_delay: <integer>
             # auto_firmware_upgrade_end_hour: <integer>
             # auto_firmware_upgrade_start_hour: <integer>
+            # vrf_select: <integer>
 
 
 Return Values

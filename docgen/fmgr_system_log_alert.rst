@@ -68,6 +68,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">min_severity_to_raise_incident_by_grouping</span> <b>(Alias name: min-severity-to-raise-incident-by-grouping)</b>  Min severity to raise incident by grouping. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, critical, high]</span>  <span class="li-normal">default: critical</span> 
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -104,6 +110,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           system_log_alert:
             # max_alert_count: <integer>
+            # min_severity_to_raise_incident_by_grouping: <value in [none, critical, high]>
 
 
 Return Values

@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">algorithm</span> Algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [L2, L3, L4, LB, Source-MAC]</span> 
+ <li><span class="li-head">algorithm</span> Algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [L2, L3, L4, LB, Source-MAC, NPU-GRE]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -1251,7 +1251,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mediatype</span> Mediatype. <span class="li-normal">type: str</span> <span class="li-normal">choices: [serdes-sfp, sgmii-sfp, cfp2-sr10, cfp2-lr4, serdes-copper-sfp, sr, cr, lr, qsfp28-sr4, qsfp28-lr4, qsfp28-cr4, sr4, cr4, lr4, none, gmii, sgmii, sr2, lr2, cr2, sr8, lr8, cr8, dr]</span> 
+ <li><span class="li-head">mediatype</span> Mediatype. <span class="li-normal">type: str</span> <span class="li-normal">choices: [serdes-sfp, sgmii-sfp, cfp2-sr10, cfp2-lr4, serdes-copper-sfp, sr, cr, lr, qsfp28-sr4, qsfp28-lr4, qsfp28-cr4, sr4, cr4, lr4, none, gmii, sgmii, sr2, lr2, cr2, sr8, lr8, cr8, dr, sr-lr, kr]</span> 
  <a id='label392' href="javascript:ContentClick('label393', 'label392');" onmouseover="ContentPreview('label393');" onmouseout="ContentUnpreview('label393');" title="click to collapse or expand..."> more... </a>
  <div id="label393" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -2502,25 +2502,25 @@ Parameters
  <li><span class="li-head">generic_receive_offload</span> <b>(Alias name: generic-receive-offload)</b>  Generic receive offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label806' href="javascript:ContentClick('label807', 'label806');" onmouseover="ContentPreview('label807');" onmouseout="ContentUnpreview('label807');" title="click to collapse or expand..."> more... </a>
  <div id="label807" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">interconnect_profile</span> <b>(Alias name: interconnect-profile)</b>  Set interconnect profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, profile1, profile2]</span> 
  <a id='label808' href="javascript:ContentClick('label809', 'label808');" onmouseover="ContentPreview('label809');" onmouseout="ContentUnpreview('label809');" title="click to collapse or expand..."> more... </a>
  <div id="label809" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">large_receive_offload</span> <b>(Alias name: large-receive-offload)</b>  Large receive offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label810' href="javascript:ContentClick('label811', 'label810');" onmouseover="ContentPreview('label811');" onmouseout="ContentUnpreview('label811');" title="click to collapse or expand..."> more... </a>
  <div id="label811" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">annex</span> Set xdsl annex type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [a, b, j, bjm, i, al, m, aijlm, bj]</span> 
  <a id='label812' href="javascript:ContentClick('label813', 'label812');" onmouseover="ContentPreview('label813');" onmouseout="ContentUnpreview('label813');" title="click to collapse or expand..."> more... </a>
  <div id="label813" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">aggregate_type</span> <b>(Alias name: aggregate-type)</b>  Type of aggregation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [physical, vxlan]</span> 
@@ -2700,7 +2700,7 @@ Parameters
  <li><span class="li-head">profiles</span> Set allowed vdsl profiles. <span class="li-normal">type: list</span> <span class="li-normal">choices: [8a, 8b, 8c, 8d, 12a, 12b, 17a, 30a, 35b]</span> 
  <a id='label872' href="javascript:ContentClick('label873', 'label872');" onmouseover="ContentPreview('label873');" onmouseout="ContentUnpreview('label873');" title="click to collapse or expand..."> more... </a>
  <div id="label873" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.14 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.14 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">telemetry_discover</span> <b>(Alias name: telemetry-discover)</b>  Enable/disable automatic registration of unknown fortitelemetry agents. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 

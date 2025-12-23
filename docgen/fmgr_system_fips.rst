@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">entropy_token</span> <b>(Alias name: entropy-token)</b>  Enable/disable entropy token when switching to fips mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [enable, disable, dynamic]</span>  <span class="li-normal">default: enable</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">re_seed_interval</span> <b>(Alias name: re-seed-interval)</b>  Kernel fips-compliant prng re-seed interval (0 to 1440 minutes) <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable fips-cc mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 

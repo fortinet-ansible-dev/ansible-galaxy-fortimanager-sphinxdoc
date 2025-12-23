@@ -125,6 +125,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">address_ip_rating</span> <b>(Alias name: address-ip-rating)</b>  Address ip rating. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -175,6 +181,7 @@ Examples
             # uncompressed_oversize_limit: <integer>
             # ssl_offloaded: <value in [no, yes]>
             # proxy_after_tcp_handshake: <value in [disable, enable]>
+            # address_ip_rating: <value in [disable, enable]>
 
 
 Return Values

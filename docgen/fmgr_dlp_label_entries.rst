@@ -84,6 +84,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fortidata_label_name</span> <b>(Alias name: fortidata-label-name)</b>  Name of fortidata label <span class="li-normal">type: str</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -125,6 +131,7 @@ Examples
             id: 0 # Required variable, integer
             # guid: <string>
             # mpip_label_name: <string>
+            # fortidata_label_name: <string>
 
 
 Return Values

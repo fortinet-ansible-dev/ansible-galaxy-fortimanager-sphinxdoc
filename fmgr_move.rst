@@ -89,7 +89,7 @@ Parameters
           <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">dlp_exactdatamatch_columns</span> - available versions:
-          <span class="li-normal">v7.4.7->v7.4.7</span>,
+          <span class="li-normal">v7.4.7->v7.4.8</span>,
           <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">dlp_filepattern_entries</span> - available versions:
@@ -173,6 +173,10 @@ Parameters
         <li><span class="li-required">firewall_service_custom</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">firewall_shapingprofile_classes</span> - available versions:
+          <span class="li-normal">v7.4.8->v7.4.8</span>,
+          <span class="li-normal">v7.6.4->latest</span>
+        </li>
         <li><span class="li-required">firewall_shapingprofile_shapingentries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -187,6 +191,9 @@ Parameters
         </li>
         <li><span class="li-required">ips_sensor_filter</span> - available versions:
           <span class="li-normal">v6.0.0->v6.2.0</span>
+        </li>
+        <li><span class="li-required">isolator_profile_entries</span> - available versions:
+          <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">mpskprofile_mpskgroup</span> - available versions:
           <span class="li-normal">v6.4.2->latest</span>
@@ -292,6 +299,10 @@ Parameters
         <li><span class="li-required">pkg_firewall_proxypolicy</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">pkg_firewall_responseshapingpolicy</span> - available versions:
+          <span class="li-normal">v7.4.8->v7.4.8</span>,
+          <span class="li-normal">v7.6.4->latest</span>
+        </li>
         <li><span class="li-required">pkg_firewall_securitypolicy</span> - available versions:
           <span class="li-normal">v6.2.1->latest</span>
         </li>
@@ -317,10 +328,12 @@ Parameters
           <span class="li-normal">v7.0.3->latest</span>
         </li>
         <li><span class="li-required">spamfilter_bwl_entries</span> - available versions:
-          <span class="li-normal">v6.0.0->v7.2.1</span>
+          <span class="li-normal">v6.0.0->v7.2.1</span>,
+          <span class="li-normal">v7.4.8->v7.4.8</span>
         </li>
         <li><span class="li-required">spamfilter_bword_entries</span> - available versions:
-          <span class="li-normal">v6.0.0->v7.2.1</span>
+          <span class="li-normal">v6.0.0->v7.2.1</span>,
+          <span class="li-normal">v7.4.8->v7.4.8</span>
         </li>
         <li><span class="li-required">sshfilter_profile_filefilter_entries</span> - available versions:
           <span class="li-normal">v6.2.2->v7.6.2</span>
@@ -389,6 +402,9 @@ Parameters
         <li><span class="li-required">vpn_ipsec_fec_mappings</span> - available versions:
           <span class="li-normal">v7.2.0->latest</span>
         </li>
+        <li><span class="li-required">vpn_kmipserver_serverlist</span> - available versions:
+          <span class="li-normal">v7.6.4->latest</span>
+        </li>
         <li><span class="li-required">vpn_ssl_settings_authenticationrule</span> - available versions:
           <span class="li-normal">v6.2.6->v6.2.13</span>,
           <span class="li-normal">v6.4.2->latest</span>
@@ -432,11 +448,17 @@ Parameters
         <li><span class="li-required">webfilter_urlfilter_entries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">webproxy_redirectprofile_entries</span> - available versions:
+          <span class="li-normal">v7.6.4->latest</span>
+        </li>
         <li><span class="li-required">wireless_accesscontrollist_layer3ipv4rules</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">wireless_accesscontrollist_layer3ipv6rules</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
+        </li>
+        <li><span class="li-required">ztna_webportalbookmark_bookmarks</span> - available versions:
+          <span class="li-normal">v7.6.4->latest</span>
         </li>
     </ul>
     </div>
@@ -673,6 +695,12 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">custom</span></li>
         </ul>
+        <li><span class="li-normal">params for firewall_shapingprofile_classes:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">classes</span></li>
+            <li><span class="li-normal">shaping-profile</span></li>
+        </ul>
         <li><span class="li-normal">params for firewall_shapingprofile_shapingentries:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -700,6 +728,12 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">filter</span></li>
             <li><span class="li-normal">sensor</span></li>
+        </ul>
+        <li><span class="li-normal">params for isolator_profile_entries:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for mpskprofile_mpskgroup:</span></li>
         <ul class="ul-self">
@@ -870,6 +904,12 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">proxy-policy</span></li>
+        </ul>
+        <li><span class="li-normal">params for pkg_firewall_responseshapingpolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">pkg</span></li>
+            <li><span class="li-normal">response-shaping-policy</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_firewall_securitypolicy:</span></li>
         <ul class="ul-self">
@@ -1063,6 +1103,12 @@ Parameters
             <li><span class="li-normal">fec</span></li>
             <li><span class="li-normal">mappings</span></li>
         </ul>
+        <li><span class="li-normal">params for vpn_kmipserver_serverlist:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">kmip-server</span></li>
+            <li><span class="li-normal">server-list</span></li>
+        </ul>
         <li><span class="li-normal">params for vpn_ssl_settings_authenticationrule:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">authentication-rule</span></li>
@@ -1150,6 +1196,12 @@ Parameters
             <li><span class="li-normal">entries</span></li>
             <li><span class="li-normal">urlfilter</span></li>
         </ul>
+        <li><span class="li-normal">params for webproxy_redirectprofile_entries:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">entries</span></li>
+            <li><span class="li-normal">redirect-profile</span></li>
+        </ul>
         <li><span class="li-normal">params for wireless_accesscontrollist_layer3ipv4rules:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">access-control-list</span></li>
@@ -1161,6 +1213,12 @@ Parameters
             <li><span class="li-normal">access-control-list</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">layer3-ipv6-rules</span></li>
+        </ul>
+        <li><span class="li-normal">params for ztna_webportalbookmark_bookmarks:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">bookmarks</span></li>
+            <li><span class="li-normal">web-portal-bookmark</span></li>
         </ul>
     </ul>
     </div>

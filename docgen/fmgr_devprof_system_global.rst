@@ -1977,7 +1977,7 @@ Parameters
  <li><span class="li-head">rest_api_key_url_query</span> <b>(Alias name: rest-api-key-url-query)</b>  Enable/disable support for passing rest api keys through url query parameters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label636' href="javascript:ContentClick('label637', 'label636');" onmouseover="ContentPreview('label637');" onmouseout="ContentUnpreview('label637');" title="click to collapse or expand..."> more... </a>
  <div id="label637" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">single_vdom_npuvlink</span> <b>(Alias name: single-vdom-npuvlink)</b>  Enable/disable npu vdoms links for single vdom. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -2007,19 +2007,19 @@ Parameters
  <li><span class="li-head">fortitoken_cloud_region</span> <b>(Alias name: fortitoken-cloud-region)</b>  Region domain of fortitoken cloud(unset to non-region). <span class="li-normal">type: str</span>
  <a id='label646' href="javascript:ContentClick('label647', 'label646');" onmouseover="ContentPreview('label647');" onmouseout="ContentUnpreview('label647');" title="click to collapse or expand..."> more... </a>
  <div id="label647" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">black_box_interval</span> <b>(Alias name: black-box-interval)</b>  Black box recording interval (seconds). <span class="li-normal">type: int</span>
  <a id='label648' href="javascript:ContentClick('label649', 'label648');" onmouseover="ContentPreview('label649');" onmouseout="ContentUnpreview('label649');" title="click to collapse or expand..."> more... </a>
  <div id="label649" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">black_box</span> <b>(Alias name: black-box)</b>  Enable/disable the black box. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label650' href="javascript:ContentClick('label651', 'label650');" onmouseover="ContentPreview('label651');" onmouseout="ContentUnpreview('label651');" title="click to collapse or expand..."> more... </a>
  <div id="label651" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">tls_session_cache</span> <b>(Alias name: tls-session-cache)</b>  Enable/disable tls session cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -2049,13 +2049,199 @@ Parameters
  <li><span class="li-head">user_device_store_max_device_mem</span> <b>(Alias name: user-device-store-max-device-mem)</b>  Maximum percentage of total system memory allowed to be used for devices in the user device store. <span class="li-normal">type: int</span>
  <a id='label660' href="javascript:ContentClick('label661', 'label660');" onmouseover="ContentPreview('label661');" onmouseout="ContentUnpreview('label661');" title="click to collapse or expand..."> more... </a>
  <div id="label661" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sslvpn_affinity</span> <b>(Alias name: sslvpn-affinity)</b>  Agentless vpn cpu affinity. <span class="li-normal">type: str</span>
  <a id='label662' href="javascript:ContentClick('label663', 'label662');" onmouseover="ContentPreview('label663');" onmouseout="ContentUnpreview('label663');" title="click to collapse or expand..."> more... </a>
  <div id="label663" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">admin_timeout</span> <b>(Alias name: admin-timeout)</b>  Number of minutes before an idle administrator session times out (5 - 480 minutes (8 hours), default = 5). <span class="li-normal">type: int</span>
+ <a id='label664' href="javascript:ContentClick('label665', 'label664');" onmouseover="ContentPreview('label665');" onmouseout="ContentUnpreview('label665');" title="click to collapse or expand..."> more... </a>
+ <div id="label665" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">username_case_sensitivity</span> <b>(Alias name: username-case-sensitivity)</b>  Username case sensitivity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label666' href="javascript:ContentClick('label667', 'label666');" onmouseover="ContentPreview('label667');" onmouseout="ContentUnpreview('label667');" title="click to collapse or expand..."> more... </a>
+ <div id="label667" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">proxy_auth_machine_timeout</span> <b>(Alias name: proxy-auth-machine-timeout)</b>  Proxy auth machine timeout. <span class="li-normal">type: int</span>
+ <a id='label668' href="javascript:ContentClick('label669', 'label668');" onmouseover="ContentPreview('label669');" onmouseout="ContentUnpreview('label669');" title="click to collapse or expand..."> more... </a>
+ <div id="label669" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fin_wait_timeout</span> <b>(Alias name: fin-wait-timeout)</b>  Default fin-wait timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label670' href="javascript:ContentClick('label671', 'label670');" onmouseover="ContentPreview('label671');" onmouseout="ContentUnpreview('label671');" title="click to collapse or expand..."> more... </a>
+ <div id="label671" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">udp_stream_timeout</span> <b>(Alias name: udp-stream-timeout)</b>  Default last-ack timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label672' href="javascript:ContentClick('label673', 'label672');" onmouseover="ContentPreview('label673');" onmouseout="ContentUnpreview('label673');" title="click to collapse or expand..."> more... </a>
+ <div id="label673" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">license_overlimit</span> <b>(Alias name: license-overlimit)</b>  System behaviour when max licensed proxy user is reached. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, bypass]</span> 
+ <a id='label674' href="javascript:ContentClick('label675', 'label674');" onmouseover="ContentPreview('label675');" onmouseout="ContentUnpreview('label675');" title="click to collapse or expand..."> more... </a>
+ <div id="label675" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">tcp_random_source_port</span> <b>(Alias name: tcp-random-source-port)</b>  Tcp random source port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label676' href="javascript:ContentClick('label677', 'label676');" onmouseover="ContentPreview('label677');" onmouseout="ContentUnpreview('label677');" title="click to collapse or expand..."> more... </a>
+ <div id="label677" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">close_wait_timeout</span> <b>(Alias name: close-wait-timeout)</b>  Default close-wait timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label678' href="javascript:ContentClick('label679', 'label678');" onmouseover="ContentPreview('label679');" onmouseout="ContentUnpreview('label679');" title="click to collapse or expand..."> more... </a>
+ <div id="label679" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">img_cache_mode</span> <b>(Alias name: img-cache-mode)</b>  Img cache mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [stop, rolling]</span> 
+ <a id='label680' href="javascript:ContentClick('label681', 'label680');" onmouseover="ContentPreview('label681');" onmouseout="ContentUnpreview('label681');" title="click to collapse or expand..."> more... </a>
+ <div id="label681" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">max_session_per_user</span> <b>(Alias name: max-session-per-user)</b>  Max utm sessions per user. <span class="li-normal">type: int</span>
+ <a id='label682' href="javascript:ContentClick('label683', 'label682');" onmouseover="ContentPreview('label683');" onmouseout="ContentUnpreview('label683');" title="click to collapse or expand..."> more... </a>
+ <div id="label683" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">update_tls_finger_print</span> <b>(Alias name: update-tls-finger-print)</b>  Update tls finger print. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label684' href="javascript:ContentClick('label685', 'label684');" onmouseover="ContentPreview('label685');" onmouseout="ContentUnpreview('label685');" title="click to collapse or expand..."> more... </a>
+ <div id="label685" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">kernel_panic_debug</span> <b>(Alias name: kernel-panic-debug)</b>  Kernel panic debug. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label686' href="javascript:ContentClick('label687', 'label686');" onmouseover="ContentPreview('label687');" onmouseout="ContentUnpreview('label687');" title="click to collapse or expand..."> more... </a>
+ <div id="label687" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">syn_recv_timeout</span> <b>(Alias name: syn-recv-timeout)</b>  Default syn-recv timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label688' href="javascript:ContentClick('label689', 'label688');" onmouseover="ContentPreview('label689');" onmouseout="ContentUnpreview('label689');" title="click to collapse or expand..."> more... </a>
+ <div id="label689" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">resigned_pkey_period</span> <b>(Alias name: resigned-pkey-period)</b>  Resigned pkey period. <span class="li-normal">type: int</span>
+ <a id='label690' href="javascript:ContentClick('label691', 'label690');" onmouseover="ContentPreview('label691');" onmouseout="ContentUnpreview('label691');" title="click to collapse or expand..."> more... </a>
+ <div id="label691" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">kernel_panic_timeout</span> <b>(Alias name: kernel-panic-timeout)</b>  Kernel panic timeout. <span class="li-normal">type: int</span>
+ <a id='label692' href="javascript:ContentClick('label693', 'label692');" onmouseover="ContentPreview('label693');" onmouseout="ContentUnpreview('label693');" title="click to collapse or expand..."> more... </a>
+ <div id="label693" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">v_tpm</span> <b>(Alias name: v-tpm)</b>  V tpm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label694' href="javascript:ContentClick('label695', 'label694');" onmouseover="ContentPreview('label695');" onmouseout="ContentUnpreview('label695');" title="click to collapse or expand..."> more... </a>
+ <div id="label695" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">time_wait_timeout</span> <b>(Alias name: time-wait-timeout)</b>  Default time-wait timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label696' href="javascript:ContentClick('label697', 'label696');" onmouseover="ContentPreview('label697');" onmouseout="ContentUnpreview('label697');" title="click to collapse or expand..."> more... </a>
+ <div id="label697" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">established_timeout</span> <b>(Alias name: established-timeout)</b>  Default established session timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label698' href="javascript:ContentClick('label699', 'label698');" onmouseover="ContentPreview('label699');" onmouseout="ContentUnpreview('label699');" title="click to collapse or expand..."> more... </a>
+ <div id="label699" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">syn_sent_timeout</span> <b>(Alias name: syn-sent-timeout)</b>  Default syn-sent timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label700' href="javascript:ContentClick('label701', 'label700');" onmouseover="ContentPreview('label701');" onmouseout="ContentUnpreview('label701');" title="click to collapse or expand..."> more... </a>
+ <div id="label701" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">last_ack_timeout</span> <b>(Alias name: last-ack-timeout)</b>  Default last-ack timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label702' href="javascript:ContentClick('label703', 'label702');" onmouseover="ContentPreview('label703');" onmouseout="ContentUnpreview('label703');" title="click to collapse or expand..."> more... </a>
+ <div id="label703" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">max_img_cache_size</span> <b>(Alias name: max-img-cache-size)</b>  Max img cache size. <span class="li-normal">type: int</span>
+ <a id='label704' href="javascript:ContentClick('label705', 'label704');" onmouseover="ContentPreview('label705');" onmouseout="ContentUnpreview('label705');" title="click to collapse or expand..."> more... </a>
+ <div id="label705" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">http_view</span> <b>(Alias name: http-view)</b>  Enable/disable logging and viewing of http/s cache traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label706' href="javascript:ContentClick('label707', 'label706');" onmouseover="ContentPreview('label707');" onmouseout="ContentUnpreview('label707');" title="click to collapse or expand..."> more... </a>
+ <div id="label707" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">conntrack</span> Max numbers of conntrack. <span class="li-normal">type: int</span>
+ <a id='label708' href="javascript:ContentClick('label709', 'label708');" onmouseover="ContentPreview('label709');" onmouseout="ContentUnpreview('label709');" title="click to collapse or expand..."> more... </a>
+ <div id="label709" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">kernel_panic_on_warn</span> <b>(Alias name: kernel-panic-on-warn)</b>  Kernel panic on warn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label710' href="javascript:ContentClick('label711', 'label710');" onmouseover="ContentPreview('label711');" onmouseout="ContentUnpreview('label711');" title="click to collapse or expand..."> more... </a>
+ <div id="label711" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">crwl_log</span> <b>(Alias name: crwl-log)</b>  Enable/disable http transaction log of crawler. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label712' href="javascript:ContentClick('label713', 'label712');" onmouseover="ContentPreview('label713');" onmouseout="ContentUnpreview('label713');" title="click to collapse or expand..."> more... </a>
+ <div id="label713" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">udp_timeout</span> <b>(Alias name: udp-timeout)</b>  Default last-ack timeout (seconds). <span class="li-normal">type: int</span>
+ <a id='label714' href="javascript:ContentClick('label715', 'label714');" onmouseover="ContentPreview('label715');" onmouseout="ContentUnpreview('label715');" title="click to collapse or expand..."> more... </a>
+ <div id="label715" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">geoip_full_db</span> <b>(Alias name: geoip-full-db)</b>  When enabled, the full geographic database will be loaded into the kernel which enables geographic information in traffic logs - required for fortiview countries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label716' href="javascript:ContentClick('label717', 'label716');" onmouseover="ContentPreview('label717');" onmouseout="ContentUnpreview('label717');" title="click to collapse or expand..."> more... </a>
+ <div id="label717" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortiguard_audit_result_submission</span> <b>(Alias name: fortiguard-audit-result-submission)</b>  Enable/disable the submission of security audit results to fortiguard. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label718' href="javascript:ContentClick('label719', 'label718');" onmouseover="ContentPreview('label719');" onmouseout="ContentUnpreview('label719');" title="click to collapse or expand..."> more... </a>
+ <div id="label719" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ldap_server_algorithm</span> <b>(Alias name: ldap-server-algorithm)</b>  Ldap server selection algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [primary-secondary, round-robin]</span> 
+ <a id='label720' href="javascript:ContentClick('label721', 'label720');" onmouseover="ContentPreview('label721');" onmouseout="ContentUnpreview('label721');" title="click to collapse or expand..."> more... </a>
+ <div id="label721" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">router_affinity</span> <b>(Alias name: router-affinity)</b>  Affinity setting for bfd/vrrp/bgp/ospf daemons (hexadecimal value up to 256 bits in the format of xxxxxxxxxxxxxxxx). <span class="li-normal">type: str</span>
+ <a id='label722' href="javascript:ContentClick('label723', 'label722');" onmouseover="ContentPreview('label723');" onmouseout="ContentUnpreview('label723');" title="click to collapse or expand..."> more... </a>
+ <div id="label723" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ipv6_snat_route_change</span> <b>(Alias name: ipv6-snat-route-change)</b>  Enable/disable the ability to change the ipv6 source nat route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label724' href="javascript:ContentClick('label725', 'label724');" onmouseover="ContentPreview('label725');" onmouseout="ContentUnpreview('label725');" title="click to collapse or expand..."> more... </a>
+ <div id="label725" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -2605,6 +2791,37 @@ Examples
             # telemetry_data_port: <integer>
             # user_device_store_max_device_mem: <integer>
             # sslvpn_affinity: <string>
+            # admin_timeout: <integer>
+            # username_case_sensitivity: <value in [disable, enable]>
+            # proxy_auth_machine_timeout: <integer>
+            # fin_wait_timeout: <integer>
+            # udp_stream_timeout: <integer>
+            # license_overlimit: <value in [block, bypass]>
+            # tcp_random_source_port: <value in [disable, enable]>
+            # close_wait_timeout: <integer>
+            # img_cache_mode: <value in [stop, rolling]>
+            # max_session_per_user: <integer>
+            # update_tls_finger_print: <value in [disable, enable]>
+            # kernel_panic_debug: <value in [disable, enable]>
+            # syn_recv_timeout: <integer>
+            # resigned_pkey_period: <integer>
+            # kernel_panic_timeout: <integer>
+            # v_tpm: <value in [disable, enable]>
+            # time_wait_timeout: <integer>
+            # established_timeout: <integer>
+            # syn_sent_timeout: <integer>
+            # last_ack_timeout: <integer>
+            # max_img_cache_size: <integer>
+            # http_view: <value in [disable, enable]>
+            # conntrack: <integer>
+            # kernel_panic_on_warn: <value in [disable, enable]>
+            # crwl_log: <value in [disable, enable]>
+            # udp_timeout: <integer>
+            # geoip_full_db: <value in [disable, enable]>
+            # fortiguard_audit_result_submission: <value in [disable, enable]>
+            # ldap_server_algorithm: <value in [primary-secondary, round-robin]>
+            # router_affinity: <string>
+            # ipv6_snat_route_change: <value in [disable, enable]>
 
 
 Return Values

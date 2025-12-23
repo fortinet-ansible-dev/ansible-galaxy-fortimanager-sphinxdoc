@@ -187,7 +187,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">category</span> Address group category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span> 
+ <li><span class="li-head">category</span> Address group category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag, telemetry]</span> 
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -260,7 +260,7 @@ Parameters
  <li><span class="li-head">tags</span> Name(s) of object-tags applied to address. <span class="li-normal">type: str</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
  </div>
  </li>
  <li><span class="li-head">_image_base64</span> <b>(Alias name: _image-base64)</b>  Image base64. <span class="li-normal">type: str</span>
@@ -287,7 +287,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">category</span> Address group category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag]</span> 
+ <li><span class="li-head">category</span> Address group category. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, ztna-ems-tag, ztna-geo-tag, telemetry]</span> 
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>

@@ -241,6 +241,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">domain_name_src</span> <b>(Alias name: domain-name-src)</b>  Domain name src. <span class="li-normal">type: str</span> <span class="li-normal">choices: [server, client]</span> 
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -307,6 +313,7 @@ Examples
             # username: <string>
             # change_detection: <value in [disable, enable]>
             # change_detection_period: <integer>
+            # domain_name_src: <value in [server, client]>
 
 
 Return Values

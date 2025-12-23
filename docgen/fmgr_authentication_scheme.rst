@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">method</span> Authentication methods (default = basic). <span class="li-normal">type: list</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, x-auth-user, saml-sp, entra-sso]</span> 
+ <li><span class="li-head">method</span> Authentication methods (default = basic). <span class="li-normal">type: list</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, x-auth-user, saml-sp, entra-sso, ztna-relay, oidc]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -167,6 +167,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">search_all_ldap_databases</span> <b>(Alias name: search-all-ldap-databases)</b>  Search all ldap databases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">saml_idp_portal</span> <b>(Alias name: saml-idp-portal)</b>  External saml-idp authentication portal url. <span class="li-normal">type: str</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">oidc_server</span> <b>(Alias name: oidc-server)</b>  Oidc server. <span class="li-normal">type: list</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">oidc_timeout</span> <b>(Alias name: oidc-timeout)</b>  Oidc timeout. <span class="li-normal">type: int</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">digest_rfc2069</span> <b>(Alias name: digest-rfc2069)</b>  Enable/disable support for the deprecated rfc2069 digest client (no cnonce field, default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -223,6 +253,8 @@ Examples
             #   - "x-auth-user"
             #   - "saml-sp"
             #   - "entra-sso"
+            #   - "ztna-relay"
+            #   - "oidc"
             # negotiate_ntlm: <value in [disable, enable]>
             # require_tfa: <value in [disable, enable]>
             # ssh_ca: <string>
@@ -236,6 +268,11 @@ Examples
             #   - "md5"
             #   - "sha-256"
             # group_attr_type: <value in [display-name, external-id]>
+            # search_all_ldap_databases: <value in [disable, enable]>
+            # saml_idp_portal: <string>
+            # oidc_server: <list or string>
+            # oidc_timeout: <integer>
+            # digest_rfc2069: <value in [disable, enable]>
 
 
 Return Values

@@ -193,6 +193,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">max_cache_object_size</span> <b>(Alias name: max-cache-object-size)</b>  Max cache object size. <span class="li-normal">type: int</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -253,6 +259,7 @@ Examples
             # log_header_change: <value in [disable, enable]>
             # strip_encoding: <value in [disable, enable]>
             # header_x_forwarded_client_cert: <value in [pass, add, remove]>
+            # max_cache_object_size: <integer>
 
 
 Return Values

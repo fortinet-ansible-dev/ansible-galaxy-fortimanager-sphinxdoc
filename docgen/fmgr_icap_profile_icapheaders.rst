@@ -90,6 +90,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">http_header</span> <b>(Alias name: http-header)</b>  Http header. <span class="li-normal">type: str</span>
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">sesson_info_type</span> <b>(Alias name: sesson-info-type)</b>  Sesson info type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [client-ip, user, upn, domain, local-grp, remote-grp, proxy-name, auth-user-uri, auth-group-uri]</span> 
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">source</span> Source. <span class="li-normal">type: str</span> <span class="li-normal">choices: [content, http-header, session]</span> 
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -132,6 +150,9 @@ Examples
             # base64_encoding: <value in [disable, enable]>
             # content: <string>
             # name: <string>
+            # http_header: <string>
+            # sesson_info_type: <value in [client-ip, user, upn, ...]>
+            # source: <value in [content, http-header, session]>
 
 
 Return Values

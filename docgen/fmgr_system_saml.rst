@@ -282,6 +282,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">logout_request_signed</span> <b>(Alias name: logout-request-signed)</b>  Enable/disable logout request signed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">logout_response_signed</span> <b>(Alias name: logout-response-signed)</b>  Enable/disable logout response signed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -353,6 +365,8 @@ Examples
             # user_auto_create: <value in [disable, enable]>
             # auth_request_signed: <value in [disable, enable]>
             # want_assertions_signed: <value in [disable, enable]>
+            # logout_request_signed: <value in [disable, enable]>
+            # logout_response_signed: <value in [disable, enable]>
 
 
 Return Values

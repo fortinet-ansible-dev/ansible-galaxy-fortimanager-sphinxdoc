@@ -551,7 +551,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom]</span> 
+ <li><span class="li-head">optional_antenna</span> <b>(Alias name: optional-antenna)</b>  Optional antenna used on fap (default = none). <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, FANT-04ABGN-8065-P-N, FANT-04ABGN-0606-O-R, FANT-04ABGN-0606-P-R, FANT-10ACAX-1213-D-N, FANT-08ABGN-1213-D-R, custom, FANT-04BEAX-0606-P-R]</span> 
  <a id='label162' href="javascript:ContentClick('label163', 'label162');" onmouseover="ContentPreview('label163');" onmouseout="ContentUnpreview('label163');" title="click to collapse or expand..."> more... </a>
  <div id="label163" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>

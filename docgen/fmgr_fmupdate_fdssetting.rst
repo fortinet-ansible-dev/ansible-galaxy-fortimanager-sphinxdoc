@@ -252,7 +252,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_support_fsa</span> <b>(Alias name: system-support-fsa)</b>  Supported fortisandbox versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [1.x, 2.x, 3.x, 4.x, 3.0, 3.1, 3.2]</span> 
+ <li><span class="li-head">system_support_fsa</span> <b>(Alias name: system-support-fsa)</b>  Supported fortisandbox versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [1.x, 2.x, 3.x, 4.x, 3.0, 3.1, 3.2, 5.x]</span> 
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -341,7 +341,7 @@ Parameters
  <li><span class="li-head">system_support_faz</span> <b>(Alias name: system-support-faz)</b>  Supported fortianalyzer versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [6.x, 7.x]</span> 
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_support_fis</span> <b>(Alias name: system-support-fis)</b>  Supported fortiisolator versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [1.x, 2.x]</span> 
@@ -461,6 +461,7 @@ Examples
             #   - "3.0"
             #   - "3.1"
             #   - "3.2"
+            #   - "5.x"
             # system_support_fsw:
             #   - "5.4"
             #   - "5.6"

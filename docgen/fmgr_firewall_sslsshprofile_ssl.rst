@@ -68,7 +68,7 @@ Parameters
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
@@ -92,7 +92,7 @@ Parameters
  <li><span class="li-head">untrusted_cert</span> <b>(Alias name: untrusted-cert)</b>  Allow, ignore, or block the untrusted ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block, ignore]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span> 
@@ -125,7 +125,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_certificate</span> <b>(Alias name: client-certificate)</b>  Action based on received client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span> 
+ <li><span class="li-head">client_certificate</span> <b>(Alias name: client-certificate)</b>  Action based on received client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block, bypass-on-cert-req]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -226,7 +226,7 @@ Examples
             # untrusted_server_cert: <value in [allow, block, ignore]>
             # cert_validation_failure: <value in [allow, block, ignore]>
             # cert_validation_timeout: <value in [allow, block, ignore]>
-            # client_certificate: <value in [bypass, inspect, block]>
+            # client_certificate: <value in [bypass, inspect, block, ...]>
             # expired_server_cert: <value in [allow, block, ignore]>
             # revoked_server_cert: <value in [allow, block, ignore]>
             # unsupported_ssl_cipher: <value in [allow, block]>

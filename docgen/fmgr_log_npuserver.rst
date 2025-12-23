@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -67,79 +67,79 @@ Parameters
  <li><span class="li-head">log_processing</span> <b>(Alias name: log-processing)</b>  Configure log processed by host to drop or no drop. <span class="li-normal">type: str</span> <span class="li-normal">choices: [may-drop, no-drop]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_processor</span> <b>(Alias name: log-processor)</b>  Configure the log module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hardware, host]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">netflow_ver</span> <b>(Alias name: netflow-ver)</b>  Configure the netfow verson. <span class="li-normal">type: str</span> <span class="li-normal">choices: [v9, v10]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">server_group</span> <b>(Alias name: server-group)</b>  Server group. <span class="li-normal">type: list</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">group_name</span> <b>(Alias name: group-name)</b>  Server group name. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Set the log format <span class="li-normal">type: str</span> <span class="li-normal">choices: [syslog, netflow]</span> 
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_mode</span> <b>(Alias name: log-mode)</b>  Set the log mode <span class="li-normal">type: str</span> <span class="li-normal">choices: [per-session, per-nat-mapping, per-session-ending]</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_tx_mode</span> <b>(Alias name: log-tx-mode)</b>  Configure log transmit mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multicast, roundrobin]</span> 
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">server_number</span> <b>(Alias name: server-number)</b>  Server number in this group. <span class="li-normal">type: int</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">server_start_id</span> <b>(Alias name: server-start-id)</b>  The start id of the continuous server series in this group,[1,16]. <span class="li-normal">type: int</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sw_log_flags</span> <b>(Alias name: sw-log-flags)</b>  Set flags for software logging via driver. <span class="li-normal">type: int or str</span> <span class="li-normal">choices: [tcp-udp-only, enable-all-log, disable-all-log]</span> 
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_gen_event</span> <b>(Alias name: log-gen-event)</b>  Enable/disbale generating event for per-mapping log <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_user_info</span> <b>(Alias name: log-user-info)</b>  Enable/disbale logging user information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -147,67 +147,67 @@ Parameters
  <li><span class="li-head">server_info</span> <b>(Alias name: server-info)</b>  Server info. <span class="li-normal">type: list</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">dest_port</span> <b>(Alias name: dest-port)</b>  Set the dest port for the log packet <span class="li-normal">type: int</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">id</span> Server id. <span class="li-normal">type: int</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ip_family</span> <b>(Alias name: ip-family)</b>  Set the version the ip address <span class="li-normal">type: str</span> <span class="li-normal">choices: [v4, v6]</span> 
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipv4_server</span> <b>(Alias name: ipv4-server)</b>  Set the ipv4 address for the log server <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipv6_server</span> <b>(Alias name: ipv6-server)</b>  Set the ipv6 address for the log server <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">source_port</span> <b>(Alias name: source-port)</b>  Set the source port for the log packet <span class="li-normal">type: int</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">template_tx_timeout</span> <b>(Alias name: template-tx-timeout)</b>  Set the template tx timeout <span class="li-normal">type: int</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vdom</span> Interface connected to the log server is in this virtual domain (vdom). <span class="li-normal">type: str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_transport</span> <b>(Alias name: log-transport)</b>  Set transport protocol <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp]</span> 
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vdom_</span> Vdom. <span class="li-normal">type: str</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -215,19 +215,19 @@ Parameters
  <li><span class="li-head">fmgr_syslog_facility</span> <b>(Alias name: syslog-facility)</b>  Configure the syslog facility. <span class="li-normal">type: int</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">syslog_severity</span> <b>(Alias name: syslog-severity)</b>  Configure the syslog severity. <span class="li-normal">type: int</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">enforce_seq_order</span> <b>(Alias name: enforce-seq-order)</b>  Sw session netflow logs will be delivered in strict order if the option is enabled. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

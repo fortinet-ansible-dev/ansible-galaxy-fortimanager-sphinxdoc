@@ -298,7 +298,7 @@ Parameters
  <li><span class="li-head">subnet_broadcast_in_ippool</span> <b>(Alias name: subnet-broadcast-in-ippool)</b>  Enable/disable inclusion of the subnetwork address and broadcast ip address in the nat64 ip pool. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">exclude_ip</span> <b>(Alias name: exclude-ip)</b>  Exclude ips x. <span class="li-normal">type: list</span>
@@ -504,7 +504,7 @@ Parameters
  <li><span class="li-head">subnet_broadcast_in_ippool</span> <b>(Alias name: subnet-broadcast-in-ippool)</b>  Enable/disable inclusion of the subnetwork address and broadcast ip address in the nat64 ip pool. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">exclude_ip</span> <b>(Alias name: exclude-ip)</b>  Exclude ips x. <span class="li-normal">type: list</span>

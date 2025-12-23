@@ -2,6 +2,27 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.12.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.12.0
+
+Minor Changes
+-------------
+
+- Supported new schemas in FortiManager 7.0.15, 7.4.8, 7.6.4.
+- Supported new modules to configure FortiProxy.
+
+Bugfixes
+--------
+
+- Improved the request sending logic in httpapi plugin.
+
+|
+
 Release Galaxy 2.11.0
 ~~~~~~~~~~~~~~~~~~~~
 

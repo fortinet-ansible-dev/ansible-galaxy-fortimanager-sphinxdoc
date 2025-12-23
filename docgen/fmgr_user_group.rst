@@ -733,6 +733,12 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">logic_type</span> <b>(Alias name: logic-type)</b>  Set the logic between members or matching entries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span> 
+ <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
+ <div id="label219" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

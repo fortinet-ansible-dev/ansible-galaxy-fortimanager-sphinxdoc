@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_sla_tie_break</span> <b>(Alias name: service-sla-tie-break)</b>  Method of selecting member if more than one meets the sla. <span class="li-normal">type: str</span> <span class="li-normal">choices: [cfg-order, fib-best-match, input-device]</span> 
+ <li><span class="li-head">service_sla_tie_break</span> <b>(Alias name: service-sla-tie-break)</b>  Method of selecting member if more than one meets the sla. <span class="li-normal">type: str</span> <span class="li-normal">choices: [cfg-order, fib-best-match, input-device, priority]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -134,7 +134,7 @@ Examples
           state: present # <value in [present, absent]>
           wanprof_system_sdwan_zone:
             name: "your value" # Required variable, string
-            # service_sla_tie_break: <value in [cfg-order, fib-best-match, input-device]>
+            # service_sla_tie_break: <value in [cfg-order, fib-best-match, input-device, ...]>
             # minimum_sla_meet_members: <integer>
             # advpn_health_check: <string>
             # advpn_select: <value in [disable, enable]>

@@ -75,31 +75,31 @@ Parameters
  <li><span class="li-head">app_throughput</span> <b>(Alias name: app-throughput)</b>  Application throughput in megabytes (0 - 10,000, default = 2 mb). <span class="li-normal">type: int</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">atdt_threshold</span> <b>(Alias name: atdt-threshold)</b>  Threshold of application total downloading time in milliseconds (0 - 10,000,000, default = 20,000 ms). <span class="li-normal">type: int</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">dns_time_threshold</span> <b>(Alias name: dns-time-threshold)</b>  Threshold of dns resolution time in milliseconds (0 - 10,000,000, default = 20 ms). <span class="li-normal">type: int</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">experience_score_threshold</span> <b>(Alias name: experience-score-threshold)</b>  Threshold of experience score (0 - 10, default = 8). <span class="li-normal">type: int</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">failure_rate_threshold</span> <b>(Alias name: failure-rate-threshold)</b>  Threshold of failure rate (0 - 100, default = 5 percentage). <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
@@ -117,13 +117,13 @@ Parameters
  <li><span class="li-head">jitter_threshold</span> <b>(Alias name: jitter-threshold)</b>  Threshold of jitter in milliseconds (0 - 10,000,000, default = 20 ms). <span class="li-normal">type: int</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">latency_threshold</span> <b>(Alias name: latency-threshold)</b>  Threshold of latency in milliseconds (0 - 10,000,000, default = 20 ms). <span class="li-normal">type: int</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">monitor</span> Enable/disable monitoring of the application. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
@@ -135,7 +135,7 @@ Parameters
  <li><span class="li-head">packet_loss_threshold</span> <b>(Alias name: packet-loss-threshold)</b>  Threshold of packet loss (0 - 100, default = 5 percentage). <span class="li-normal">type: int</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">sla</span> Sla. <span class="li-normal">type: dict</span>
@@ -221,19 +221,19 @@ Parameters
  <li><span class="li-head">tcp_rtt_threshold</span> <b>(Alias name: tcp-rtt-threshold)</b>  Threshold of tcp round-trip time in milliseconds (0 - 10,000,000, default = 20 ms). <span class="li-normal">type: int</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">tls_time_threshold</span> <b>(Alias name: tls-time-threshold)</b>  Threshold of tls handshake time in milliseconds (0 - 10,000,000, default = 20 ms). <span class="li-normal">type: int</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">ttfb_threshold</span> <b>(Alias name: ttfb-threshold)</b>  Threshold of time to first byte in milliseconds (0 - 10,000,000, default = 20 ms). <span class="li-normal">type: int</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
  </ul>

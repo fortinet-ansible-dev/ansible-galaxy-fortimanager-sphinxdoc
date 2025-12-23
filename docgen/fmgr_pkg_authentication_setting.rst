@@ -122,7 +122,7 @@ Parameters
  <li><span class="li-head">rewrite_https_port</span> <b>(Alias name: rewrite-https-port)</b>  Rewrite to https port (0 - 65535, default = 0). <span class="li-normal">type: int</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sso_auth_scheme</span> <b>(Alias name: sso-auth-scheme)</b>  Single-sign-on authentication method (scheme name). <span class="li-normal">type: str</span>
@@ -197,6 +197,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">log_auth_request</span> <b>(Alias name: log-auth-request)</b>  Log auth request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -256,6 +262,7 @@ Examples
             # ip_auth_cookie: <value in [disable, enable]>
             # persistent_cookie: <value in [disable, enable]>
             # update_time: <string>
+            # log_auth_request: <value in [disable, enable]>
 
 
 Return Values

@@ -201,7 +201,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">type</span> Proxy address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced, url-list, saas]</span> 
+ <li><span class="li-head">type</span> Proxy address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced, url-list, saas, response-header]</span> 
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -228,7 +228,7 @@ Parameters
  <li><span class="li-head">tags</span> Names of object-tags (as configured in config system object-tag) applied to address. <span class="li-normal">type: str</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
  </div>
  </li>
  <li><span class="li-head">_image_base64</span> <b>(Alias name: _image-base64)</b>  Image base64. <span class="li-normal">type: str</span>
@@ -253,6 +253,18 @@ Parameters
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">post_arg</span> <b>(Alias name: post-arg)</b>  Post arg. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">url_list</span> <b>(Alias name: url-list)</b>  Url list. <span class="li-normal">type: list</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

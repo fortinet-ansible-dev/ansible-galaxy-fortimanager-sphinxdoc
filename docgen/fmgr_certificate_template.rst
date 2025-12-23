@@ -167,6 +167,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">subject_alt_name</span> <b>(Alias name: subject-alt-name)</b>  Support meta variable <span class="li-normal">type: str</span>
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 

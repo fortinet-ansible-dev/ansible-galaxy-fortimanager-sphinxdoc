@@ -217,6 +217,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fortidata_error_action</span> <b>(Alias name: fortidata-error-action)</b>  Action to take if fortidata query fails. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log-only, ignore]</span> 
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -309,6 +315,7 @@ Examples
             #   - "mapi"
             #   - "ssh"
             #   - "cifs"
+            # fortidata_error_action: <value in [block, log-only, ignore]>
 
 
 Return Values

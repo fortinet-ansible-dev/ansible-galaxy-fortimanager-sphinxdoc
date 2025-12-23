@@ -530,7 +530,7 @@ Parameters
  <li><span class="li-head">unknown_content_encoding</span> <b>(Alias name: unknown-content-encoding)</b>  Configure the action the fortigate unit will take on unknown content-encoding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, inspect, bypass]</span> 
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">malware_stream</span> <b>(Alias name: malware-stream)</b>  Enable 0-day malware-stream scanning. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, monitor, block]</span> 

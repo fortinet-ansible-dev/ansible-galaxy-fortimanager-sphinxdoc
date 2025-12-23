@@ -167,89 +167,87 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">http_header</span> <b>(Alias name: http-header)</b>  Http header. <span class="li-normal">type: str</span>
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">sesson_info_type</span> <b>(Alias name: sesson-info-type)</b>  Sesson info type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [client-ip, user, upn, domain, local-grp, remote-grp, proxy-name, auth-user-uri, auth-group-uri]</span> 
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">source</span> Source. <span class="li-normal">type: str</span> <span class="li-normal">choices: [content, http-header, session]</span> 
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">preview</span> Enable/disable preview of data to icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
- <div id="label35" style="display:none">
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">preview_data_length</span> <b>(Alias name: preview-data-length)</b>  Preview data length to be sent to icap server. <span class="li-normal">type: int</span>
- <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">response_req_hdr</span> <b>(Alias name: response-req-hdr)</b>  Enable/disable addition of req-hdr for icap response modification (respmod) processing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">respmod_default_action</span> <b>(Alias name: respmod-default-action)</b>  Default action to icap response modification (respmod) processing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, forward]</span> 
- <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">respmod_forward_rules</span> <b>(Alias name: respmod-forward-rules)</b>  Respmod forward rules. <span class="li-normal">type: list</span>
- <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
- <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">action</span> Action to be taken for icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, forward]</span> 
- <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">header_group</span> <b>(Alias name: header-group)</b>  Header group. <span class="li-normal">type: list</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">case_sensitivity</span> <b>(Alias name: case-sensitivity)</b>  Enable/disable case sensitivity when matching header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ </li>
+ <li><span class="li-head">respmod_forward_rules</span> <b>(Alias name: respmod-forward-rules)</b>  Respmod forward rules. <span class="li-normal">type: list</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">header</span> Http header regular expression. <span class="li-normal">type: str</span>
+ <ul class="ul-self">
+ <li><span class="li-head">action</span> Action to be taken for icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, forward]</span> 
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header_name</span> <b>(Alias name: header-name)</b>  Http header. <span class="li-normal">type: str</span>
+ <li><span class="li-head">header_group</span> <b>(Alias name: header-group)</b>  Header group. <span class="li-normal">type: list</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">case_sensitivity</span> <b>(Alias name: case-sensitivity)</b>  Enable/disable case sensitivity when matching header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">host</span> Address object for the host. <span class="li-normal">type: str</span>
+ <li><span class="li-head">header</span> Http header regular expression. <span class="li-normal">type: str</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">http_resp_status_code</span> <b>(Alias name: http-resp-status-code)</b>  Http response status code. <span class="li-normal">type: list</span>
+ <li><span class="li-head">header_name</span> <b>(Alias name: header-name)</b>  Http header. <span class="li-normal">type: str</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">name</span> Address name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -257,82 +255,126 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">204_response</span> <b>(Alias name: 204-response)</b>  Enable/disable allowance of 204 response from icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">host</span> Address object for the host. <span class="li-normal">type: str</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">http_resp_status_code</span> <b>(Alias name: http-resp-status-code)</b>  Http response status code. <span class="li-normal">type: list</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">name</span> Address name. <span class="li-normal">type: str</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">204_response</span> <b>(Alias name: 204-response)</b>  Enable/disable allowance of 204 response from icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">204_size_limit</span> <b>(Alias name: 204-size-limit)</b>  204 response size limit to be saved by icap client in megabytes (1 - 10, default = 1 mb). <span class="li-normal">type: int</span>
- <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
- <div id="label65" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">chunk_encap</span> <b>(Alias name: chunk-encap)</b>  Enable/disable chunked encapsulation (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
- <div id="label67" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">extension_feature</span> <b>(Alias name: extension-feature)</b>  Enable/disable icap extension features. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan-progress]</span> 
- <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
- <div id="label69" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">file_transfer</span> <b>(Alias name: file-transfer)</b>  Configure the file transfer protocols to pass transferred files to an icap server as reqmod. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ssh, ftp]</span> 
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">file_transfer_failure</span> <b>(Alias name: file-transfer-failure)</b>  Action to take if the icap server cannot be contacted when processing a file transfer. <span class="li-normal">type: str</span> <span class="li-normal">choices: [error, bypass]</span> 
+ <li><span class="li-head">chunk_encap</span> <b>(Alias name: chunk-encap)</b>  Enable/disable chunked encapsulation (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">file_transfer_path</span> <b>(Alias name: file-transfer-path)</b>  Path component of the icap uri that identifies the file transfer processing service. <span class="li-normal">type: str</span>
+ <li><span class="li-head">extension_feature</span> <b>(Alias name: extension-feature)</b>  Enable/disable icap extension features. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan-progress]</span> 
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">file_transfer_server</span> <b>(Alias name: file-transfer-server)</b>  Icap server to use for a file transfer. <span class="li-normal">type: str</span>
+ <li><span class="li-head">file_transfer</span> <b>(Alias name: file-transfer)</b>  Configure the file transfer protocols to pass transferred files to an icap server as reqmod. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ssh, ftp]</span> 
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">icap_block_log</span> <b>(Alias name: icap-block-log)</b>  Enable/disable utm log when infection found (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">file_transfer_failure</span> <b>(Alias name: file-transfer-failure)</b>  Action to take if the icap server cannot be contacted when processing a file transfer. <span class="li-normal">type: str</span> <span class="li-normal">choices: [error, bypass]</span> 
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scan_progress_interval</span> <b>(Alias name: scan-progress-interval)</b>  Scan progress interval value. <span class="li-normal">type: int</span>
+ <li><span class="li-head">file_transfer_path</span> <b>(Alias name: file-transfer-path)</b>  Path component of the icap uri that identifies the file transfer processing service. <span class="li-normal">type: str</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">timeout</span> Time (in seconds) that icap client waits for the response from icap server. <span class="li-normal">type: int</span>
+ <li><span class="li-head">file_transfer_server</span> <b>(Alias name: file-transfer-server)</b>  Icap server to use for a file transfer. <span class="li-normal">type: str</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
+ <li><span class="li-head">icap_block_log</span> <b>(Alias name: icap-block-log)</b>  Enable/disable utm log when infection found (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scan_progress_interval</span> <b>(Alias name: scan-progress-interval)</b>  Scan progress interval value. <span class="li-normal">type: int</span>
+ <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
+ <div id="label87" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">timeout</span> Time (in seconds) that icap client waits for the response from icap server. <span class="li-normal">type: int</span>
+ <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
+ <div id="label89" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: str</span>
+ <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
+ <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ocr_only</span> <b>(Alias name: ocr-only)</b>  Enable/disable this fortigate unit to submit only ocr interested content to the icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
- <div id="label87" style="display:none">
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ocr_only</span> Ocr only. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
+ <div id="label95" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scan_oversize_log</span> <b>(Alias name: scan-oversize-log)</b>  Scan oversize log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <div id="label97" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scan_size_limit</span> <b>(Alias name: scan-size-limit)</b>  Scan size limit. <span class="li-normal">type: int</span>
+ <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
+ <div id="label99" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">allow_204_response</span> <b>(Alias name: allow-204-response)</b>  Enable/disable allowing of 204 response from icap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -398,6 +440,9 @@ Examples
             #     content: <string>
             #     id: <integer>
             #     name: <string>
+            #     http_header: <string>
+            #     sesson_info_type: <value in [client-ip, user, upn, ...]>
+            #     source: <value in [content, http-header, session]>
             # preview: <value in [disable, enable]>
             # preview_data_length: <integer>
             # response_req_hdr: <value in [disable, enable]>
@@ -428,6 +473,10 @@ Examples
             # timeout: <integer>
             # comment: <string>
             # ocr_only: <value in [disable, enable]>
+            # ocr_only: <value in [disable, enable]>
+            # scan_oversize_log: <value in [disable, enable]>
+            # scan_size_limit: <integer>
+            # allow_204_response: <value in [disable, enable]>
 
 
 Return Values

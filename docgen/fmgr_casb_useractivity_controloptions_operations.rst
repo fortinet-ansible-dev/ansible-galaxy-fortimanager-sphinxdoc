@@ -127,6 +127,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">value_name_from_input</span> <b>(Alias name: value-name-from-input)</b>  Casb operation value name from user input. <span class="li-normal">type: str</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -176,6 +182,7 @@ Examples
             # target: <value in [header, path, body]>
             # value_from_input: <value in [disable, enable]>
             # values: <list or string>
+            # value_name_from_input: <string>
 
 
 Return Values
