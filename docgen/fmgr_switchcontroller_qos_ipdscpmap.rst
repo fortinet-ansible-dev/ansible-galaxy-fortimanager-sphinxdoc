@@ -11,10 +11,10 @@ fmgr_switchcontroller_qos_ipdscpmap -- Configure FortiSwitch QoS IP precedence/D
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -83,13 +83,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">diffserv</span> Differentiated service. <span class="li-normal">type: list</span> <span class="li-normal">choices: [CS0, CS1, AF11, AF12, AF13, CS2, AF21, AF22, AF23, CS3, AF31, AF32, AF33, CS4, AF41, AF42, AF43, CS5, EF, CS6, CS7]</span> 
+ <li><span class="li-head">diffserv</span> Differentiated service. <span class="li-normal">type: list</span> <span class="li-normal">choices: [CS0, CS1, AF11, AF12, AF13, CS2, AF21, AF22, AF23, CS3, AF31, AF32, AF33, CS4, AF41, AF42, AF43, CS5, EF, CS6, CS7]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_precedence</span> <b>(Alias name: ip-precedence)</b>  Ip precedence. <span class="li-normal">type: list</span> <span class="li-normal">choices: [network-control, internetwork-control, critic-ecp, flashoverride, flash, immediate, priority, routine]</span> 
+ <li><span class="li-head">ip_precedence</span> <b>(Alias name: ip-precedence)</b>  Ip precedence. <span class="li-normal">type: list</span> <span class="li-normal">choices: [network-control, internetwork-control, critic-ecp, flashoverride, flash, immediate, priority, routine]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

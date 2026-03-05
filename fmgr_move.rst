@@ -26,7 +26,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 
@@ -53,7 +53,7 @@ Parameters
     <h2 class="handle">
         <label for="handle1"><u>Show full selector list...</u></label>
     </h2>
-    <div class="content"> 
+    <div class="content">
     <ul class="ul-self">
         <li><span class="li-required">apcfgprofile_commandlist</span> - available versions:
           <span class="li-normal">v6.4.6->latest</span>
@@ -89,7 +89,7 @@ Parameters
           <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">dlp_exactdatamatch_columns</span> - available versions:
-          <span class="li-normal">v7.4.7->v7.4.8</span>,
+          <span class="li-normal">v7.4.7->v7.4.10</span>,
           <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">dlp_filepattern_entries</span> - available versions:
@@ -174,7 +174,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_classes</span> - available versions:
-          <span class="li-normal">v7.4.8->v7.4.8</span>,
+          <span class="li-normal">v7.4.8->v7.4.10</span>,
           <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_shapingentries</span> - available versions:
@@ -212,12 +212,12 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
           <span class="li-normal">v7.2.0->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
@@ -241,35 +241,35 @@ Parameters
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
-          <span class="li-normal">v7.2.6->v7.2.11</span>,
+          <span class="li-normal">v7.2.6->v7.2.12</span>,
           <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
@@ -300,7 +300,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_responseshapingpolicy</span> - available versions:
-          <span class="li-normal">v7.4.8->v7.4.8</span>,
+          <span class="li-normal">v7.4.8->v7.4.10</span>,
           <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_securitypolicy</span> - available versions:
@@ -329,11 +329,11 @@ Parameters
         </li>
         <li><span class="li-required">spamfilter_bwl_entries</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.1</span>,
-          <span class="li-normal">v7.4.8->v7.4.8</span>
+          <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_bword_entries</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.1</span>,
-          <span class="li-normal">v7.4.8->v7.4.8</span>
+          <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">sshfilter_profile_filefilter_entries</span> - available versions:
           <span class="li-normal">v6.2.2->v7.6.2</span>
@@ -1224,7 +1224,7 @@ Parameters
     </div>
     </section>
   <li><span class="li-head">target</span> - Key to the target entry. <span class="li-normal">type: str</span> <span class="li-required">required: true</span></li>
- 
+
  </ul>
  </ul>
  </ul>

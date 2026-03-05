@@ -11,10 +11,10 @@ fmgr_webfilter_profile_web -- Web content filtering settings.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_profile_web</span> - Web content filtering settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">blacklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blacklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">blacklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blacklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -95,13 +95,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_search</span> <b>(Alias name: log-search)</b>  Enable/disable logging all search phrases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log_search</span> <b>(Alias name: log-search)</b>  Enable/disable logging all search phrases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">safe_search</span> <b>(Alias name: safe-search)</b>  Safe search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [google, yahoo, bing, url, header]</span> 
+ <li><span class="li-head">safe_search</span> <b>(Alias name: safe-search)</b>  Safe search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [google, yahoo, bing, url, header]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -113,25 +113,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">whitelist</span> Fortiguard whitelist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> 
+ <li><span class="li-head">whitelist</span> Fortiguard whitelist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">youtube_restrict</span> <b>(Alias name: youtube-restrict)</b>  Youtube edu filter level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span> 
+ <li><span class="li-head">youtube_restrict</span> <b>(Alias name: youtube-restrict)</b>  Youtube edu filter level. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allowlist</span> Fortiguard allowlist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span> 
+ <li><span class="li-head">allowlist</span> Fortiguard allowlist settings. <span class="li-normal">type: list</span> <span class="li-normal">choices: [exempt-av, exempt-webcontent, exempt-activex-java-cookie, exempt-dlp, exempt-rangeblock, extended-log-others]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">blocklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blocklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">blocklist</span> Enable/disable automatic addition of urls detected by fortisandbox to blocklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -143,10 +143,10 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">qwant_restrict</span> <b>(Alias name: qwant-restrict)</b>  Qwant restrict. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span> 
+ <li><span class="li-head">qwant_restrict</span> <b>(Alias name: qwant-restrict)</b>  Qwant restrict. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, none, moderate]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

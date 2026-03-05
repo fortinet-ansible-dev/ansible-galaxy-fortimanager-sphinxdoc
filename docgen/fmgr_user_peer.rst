@@ -11,10 +11,10 @@ fmgr_user_peer -- Configure peer users.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,13 +77,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cn_type</span> <b>(Alias name: cn-type)</b>  Peer certificate common name type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [string, email, FQDN, ipv4, ipv6]</span> 
+ <li><span class="li-head">cn_type</span> <b>(Alias name: cn-type)</b>  Peer certificate common name type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [string, email, FQDN, ipv4, ipv6]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ldap_mode</span> <b>(Alias name: ldap-mode)</b>  Mode for ldap peer authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [password, principal-name]</span> 
+ <li><span class="li-head">ldap_mode</span> <b>(Alias name: ldap-mode)</b>  Mode for ldap peer authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [password, principal-name]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -107,7 +107,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mandatory_ca_verify</span> <b>(Alias name: mandatory-ca-verify)</b>  Determine what happens to the peer if the ca certificate is not installed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">mandatory_ca_verify</span> <b>(Alias name: mandatory-ca-verify)</b>  Determine what happens to the peer if the ca certificate is not installed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -137,13 +137,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor</span> <b>(Alias name: two-factor)</b>  Enable/disable two-factor authentication, applying certificate and password-based authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">two_factor</span> <b>(Alias name: two-factor)</b>  Enable/disable two-factor authentication, applying certificate and password-based authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mfa_mode</span> <b>(Alias name: mfa-mode)</b>  Mfa mode for remote peer authentication/authorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, password, subject-identity]</span> 
+ <li><span class="li-head">mfa_mode</span> <b>(Alias name: mfa-mode)</b>  Mfa mode for remote peer authentication/authorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, password, subject-identity]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -203,7 +203,7 @@ Examples
             cn_type: email # <value in [string, email, FQDN, ...]>
             name: ansible-test-peer
             passwd: fortinet
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

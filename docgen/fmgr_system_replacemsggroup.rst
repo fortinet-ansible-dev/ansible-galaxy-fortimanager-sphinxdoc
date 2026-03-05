@@ -11,10 +11,10 @@ fmgr_system_replacemsggroup -- Configure replacement message groups.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,13 +77,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -109,13 +109,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -130,7 +130,7 @@ Parameters
  <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.11 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.6 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.11 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.6 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -147,13 +147,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -185,13 +185,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -217,13 +217,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -240,31 +240,31 @@ Parameters
  <li><span class="li-head">ec</span> Ec. <span class="li-normal">type: list</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">buffer</span> Message string. <span class="li-normal">type: str</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">msg_type</span> <b>(Alias name: msg-type)</b>  Message type. <span class="li-normal">type: str</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  </ul>
@@ -281,13 +281,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -313,13 +313,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -333,7 +333,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">group_type</span> <b>(Alias name: group-type)</b>  Group type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, utm, auth, ec, captive-portal]</span> 
+ <li><span class="li-head">group_type</span> <b>(Alias name: group-type)</b>  Group type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, utm, auth, ec, captive-portal]</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -351,13 +351,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -383,13 +383,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -415,13 +415,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -441,25 +441,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">add_smil</span> <b>(Alias name: add-smil)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">add_smil</span> <b>(Alias name: add-smil)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span> 
+ <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span>
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">class</span> Message class <span class="li-normal">type: str</span> <span class="li-normal">choices: [personal, advertisement, information, automatic, not-included]</span> 
+ <li><span class="li-head">class</span> Message class <span class="li-normal">type: str</span> <span class="li-normal">choices: [personal, advertisement, information, automatic, not-included]</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -471,13 +471,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -501,13 +501,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span> 
+ <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span>
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">rsp_status</span> <b>(Alias name: rsp-status)</b>  Response status code <span class="li-normal">type: str</span> <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-msg-not-found, err-net-prob, err-content-not-accept, err-unsupp-msg]</span> 
+ <li><span class="li-head">rsp_status</span> <b>(Alias name: rsp-status)</b>  Response status code <span class="li-normal">type: str</span> <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-msg-not-found, err-net-prob, err-content-not-accept, err-unsupp-msg]</span>
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -519,7 +519,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">sender_visibility</span> <b>(Alias name: sender-visibility)</b>  Sender visibility <span class="li-normal">type: str</span> <span class="li-normal">choices: [hide, show, not-specified]</span> 
+ <li><span class="li-head">sender_visibility</span> <b>(Alias name: sender-visibility)</b>  Sender visibility <span class="li-normal">type: str</span> <span class="li-normal">choices: [hide, show, not-specified]</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -545,19 +545,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">add_html</span> <b>(Alias name: add-html)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">add_html</span> <b>(Alias name: add-html)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span> 
+ <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
  <div id="label157" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -569,13 +569,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label162' href="javascript:ContentClick('label163', 'label162');" onmouseover="ContentPreview('label163');" onmouseout="ContentUnpreview('label163');" title="click to collapse or expand..."> more... </a>
  <div id="label163" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -605,7 +605,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span> 
+ <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span>
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -625,19 +625,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">add_smil</span> <b>(Alias name: add-smil)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">add_smil</span> <b>(Alias name: add-smil)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span> 
+ <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span>
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">class</span> Message class <span class="li-normal">type: str</span> <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span> 
+ <li><span class="li-head">class</span> Message class <span class="li-normal">type: str</span> <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span>
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -649,7 +649,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -661,13 +661,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -691,13 +691,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span> 
+ <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span>
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">rsp_status</span> <b>(Alias name: rsp-status)</b>  Response status <span class="li-normal">type: str</span> <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-net-prob, err-content-not-accept, err-unsupp-msg]</span> 
+ <li><span class="li-head">rsp_status</span> <b>(Alias name: rsp-status)</b>  Response status <span class="li-normal">type: str</span> <span class="li-normal">choices: [ok, err-unspecified, err-srv-denied, err-msg-fmt-corrupt, err-snd-addr-unresolv, err-net-prob, err-content-not-accept, err-unsupp-msg]</span>
  <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
  <div id="label203" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -723,37 +723,37 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">add_smil</span> <b>(Alias name: add-smil)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">add_smil</span> <b>(Alias name: add-smil)</b>  Add message encapsulation <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">addr_type</span> <b>(Alias name: addr-type)</b>  From address type <span class="li-normal">type: str</span> <span class="li-normal">choices: [rfc2822-addr, number, short-code]</span> 
+ <li><span class="li-head">addr_type</span> <b>(Alias name: addr-type)</b>  From address type <span class="li-normal">type: str</span> <span class="li-normal">choices: [rfc2822-addr, number, short-code]</span>
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_content_adaptation</span> <b>(Alias name: allow-content-adaptation)</b>  Allow content adaptations <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_content_adaptation</span> <b>(Alias name: allow-content-adaptation)</b>  Allow content adaptations <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span> 
+ <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span>
  <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
  <div id="label217" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">class</span> Message class <span class="li-normal">type: str</span> <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span> 
+ <li><span class="li-head">class</span> Message class <span class="li-normal">type: str</span> <span class="li-normal">choices: [personal, advertisement, informational, auto, not-included]</span>
  <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
  <div id="label219" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
  <div id="label221" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -765,13 +765,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">from_sender</span> <b>(Alias name: from-sender)</b>  Notification message sent from recipient <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
  <div id="label225" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
  <div id="label227" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -795,13 +795,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span> 
+ <li><span class="li-head">priority</span> Message priority <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, normal, high, not-included]</span>
  <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
  <div id="label235" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">rsp_status</span> <b>(Alias name: rsp-status)</b>  Response status <span class="li-normal">type: str</span> <span class="li-normal">choices: [success, partial-success, client-err, oper-restrict, addr-err, addr-not-found, content-refused, msg-id-not-found, link-id-not-found, msg-fmt-corrupt, app-id-not-found, repl-app-id-not-found, srv-err, not-possible, msg-rejected, multiple-addr-not-supp, app-addr-not-supp, gen-service-err, improper-ident, unsupp-ver, unsupp-oper, validation-err, service-err, service-unavail, service-denied, app-denied]</span> 
+ <li><span class="li-head">rsp_status</span> <b>(Alias name: rsp-status)</b>  Response status <span class="li-normal">type: str</span> <span class="li-normal">choices: [success, partial-success, client-err, oper-restrict, addr-err, addr-not-found, content-refused, msg-id-not-found, link-id-not-found, msg-fmt-corrupt, app-id-not-found, repl-app-id-not-found, srv-err, not-possible, msg-rejected, multiple-addr-not-supp, app-addr-not-supp, gen-service-err, improper-ident, unsupp-ver, unsupp-oper, validation-err, service-err, service-unavail, service-denied, app-denied]</span>
  <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
  <div id="label237" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -833,19 +833,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span> 
+ <li><span class="li-head">charset</span> Character encoding used for replacement message <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-ascii, utf-8]</span>
  <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
  <div id="label247" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
  <div id="label249" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
  <div id="label251" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -877,13 +877,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
  <div id="label261" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
  <div id="label263" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -898,7 +898,7 @@ Parameters
  <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.11 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.6 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.11 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.6 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -921,13 +921,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
  <div id="label275" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
  <div id="label277" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -953,13 +953,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -985,13 +985,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label294' href="javascript:ContentClick('label295', 'label294');" onmouseover="ContentPreview('label295');" onmouseout="ContentUnpreview('label295');" title="click to collapse or expand..."> more... </a>
  <div id="label295" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label296' href="javascript:ContentClick('label297', 'label296');" onmouseover="ContentPreview('label297');" onmouseout="ContentUnpreview('label297');" title="click to collapse or expand..."> more... </a>
  <div id="label297" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -1017,13 +1017,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label304' href="javascript:ContentClick('label305', 'label304');" onmouseover="ContentPreview('label305');" onmouseout="ContentUnpreview('label305');" title="click to collapse or expand..."> more... </a>
  <div id="label305" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
  <div id="label307" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -1049,13 +1049,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label314' href="javascript:ContentClick('label315', 'label314');" onmouseover="ContentPreview('label315');" onmouseout="ContentUnpreview('label315');" title="click to collapse or expand..."> more... </a>
  <div id="label315" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label316' href="javascript:ContentClick('label317', 'label316');" onmouseover="ContentPreview('label317');" onmouseout="ContentUnpreview('label317');" title="click to collapse or expand..."> more... </a>
  <div id="label317" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -1081,13 +1081,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html, wml]</span>
  <a id='label324' href="javascript:ContentClick('label325', 'label324');" onmouseover="ContentPreview('label325');" onmouseout="ContentUnpreview('label325');" title="click to collapse or expand..."> more... </a>
  <div id="label325" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label326' href="javascript:ContentClick('label327', 'label326');" onmouseover="ContentPreview('label327');" onmouseout="ContentUnpreview('label327');" title="click to collapse or expand..."> more... </a>
  <div id="label327" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -1113,13 +1113,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html]</span> 
+ <li><span class="li-head">format</span> Format flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, text, html]</span>
  <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
  <div id="label335" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span> 
+ <li><span class="li-head">header</span> Header flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, http, 8bit]</span>
  <a id='label336' href="javascript:ContentClick('label337', 'label336');" onmouseover="ContentPreview('label337');" onmouseout="ContentUnpreview('label337');" title="click to collapse or expand..."> more... </a>
  <div id="label337" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -1168,7 +1168,7 @@ Examples
           system_replacemsggroup:
             comment: ansible-comment
             name: ansible-test
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

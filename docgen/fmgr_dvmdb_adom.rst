@@ -11,10 +11,10 @@ fmgr_dvmdb_adom -- ADOM table, most attributes are read-only and can only be cha
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -69,13 +69,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: list</span> <span class="li-normal">choices: [migration, db_export, no_vpn_console, backup, other_devices, central_sdwan, is_autosync, per_device_wtp, policy_check_on_install, install_on_policy_check_fail, auto_push_cfg, per_device_fsw, install_deselect_all]</span> 
+ <li><span class="li-head">flags</span> Flags. <span class="li-normal">type: list</span> <span class="li-normal">choices: [migration, db_export, no_vpn_console, backup, other_devices, central_sdwan, is_autosync, per_device_wtp, policy_check_on_install, install_on_policy_check_fail, auto_push_cfg, per_device_fsw, install_deselect_all]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_db_retention_hours</span> Log db retention hours. <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span> 
+ <li><span class="li-head">log_db_retention_hours</span> Log db retention hours. <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -87,19 +87,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_disk_quota_alert_thres</span> Log disk quota alert thres. <span class="li-normal">type: int</span> <span class="li-normal">default: 90</span> 
+ <li><span class="li-head">log_disk_quota_alert_thres</span> Log disk quota alert thres. <span class="li-normal">type: int</span> <span class="li-normal">default: 90</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_disk_quota_split_ratio</span> Log disk quota split ratio. <span class="li-normal">type: int</span> <span class="li-normal">default: 70</span> 
+ <li><span class="li-head">log_disk_quota_split_ratio</span> Log disk quota split ratio. <span class="li-normal">type: int</span> <span class="li-normal">default: 70</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_file_retention_hours</span> Log file retention hours. <span class="li-normal">type: int</span> <span class="li-normal">default: 8760</span> 
+ <li><span class="li-head">log_file_retention_hours</span> Log file retention hours. <span class="li-normal">type: int</span> <span class="li-normal">default: 8760</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -111,25 +111,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mig_mr</span> Mig mr. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span> 
+ <li><span class="li-head">mig_mr</span> Mig mr. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mig_os_ver</span> Mig os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span>  <span class="li-normal">default: 6.0</span> 
+ <li><span class="li-head">mig_os_ver</span> Mig os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span>  <span class="li-normal">default: 6.0</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Ems - (value no longer used as of 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ems, gms, provider]</span>  <span class="li-normal">default: gms</span> 
+ <li><span class="li-head">mode</span> Ems - (value no longer used as of 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ems, gms, provider]</span>  <span class="li-normal">default: gms</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mr</span> Mr. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span> 
+ <li><span class="li-head">mr</span> Mr. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -141,19 +141,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">os_ver</span> Os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span>  <span class="li-normal">default: 6.0</span> 
+ <li><span class="li-head">os_ver</span> Os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span>  <span class="li-normal">default: 6.0</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc, fss, sim, fra]</span> 
+ <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc, fss, sim, fra]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">state</span> State. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span> 
+ <li><span class="li-head">state</span> State. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

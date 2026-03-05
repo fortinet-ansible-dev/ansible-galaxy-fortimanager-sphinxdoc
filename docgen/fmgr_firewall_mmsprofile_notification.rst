@@ -11,10 +11,10 @@ fmgr_firewall_mmsprofile_notification -- Notification configuration.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">alert_int_mode</span> <b>(Alias name: alert-int-mode)</b>  Alert notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">alert_int_mode</span> <b>(Alias name: alert-int-mode)</b>  Alert notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">alert_status</span> <b>(Alias name: alert-status)</b>  Alert notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">alert_status</span> <b>(Alias name: alert-status)</b>  Alert notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -95,13 +95,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">bword_int_mode</span> <b>(Alias name: bword-int-mode)</b>  Banned word notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">bword_int_mode</span> <b>(Alias name: bword-int-mode)</b>  Banned word notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">bword_status</span> <b>(Alias name: bword-status)</b>  Banned word notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">bword_status</span> <b>(Alias name: bword-status)</b>  Banned word notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -113,25 +113,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">carrier_endpoint_bwl_int_mode</span> <b>(Alias name: carrier-endpoint-bwl-int-mode)</b>  Carrier end point black/white list notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">carrier_endpoint_bwl_int_mode</span> <b>(Alias name: carrier-endpoint-bwl-int-mode)</b>  Carrier end point black/white list notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">carrier_endpoint_bwl_status</span> <b>(Alias name: carrier-endpoint-bwl-status)</b>  Carrier end point black/white list notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">carrier_endpoint_bwl_status</span> <b>(Alias name: carrier-endpoint-bwl-status)</b>  Carrier end point black/white list notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">days_allowed</span> <b>(Alias name: days-allowed)</b>  Weekdays on which notification messages may be sent. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
+ <li><span class="li-head">days_allowed</span> <b>(Alias name: days-allowed)</b>  Weekdays on which notification messages may be sent. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">detect_server</span> <b>(Alias name: detect-server)</b>  Enable/disable automatic server address determination. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">detect_server</span> <b>(Alias name: detect-server)</b>  Enable/disable automatic server address determination. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -143,13 +143,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">dupe_int_mode</span> <b>(Alias name: dupe-int-mode)</b>  Duplicate notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">dupe_int_mode</span> <b>(Alias name: dupe-int-mode)</b>  Duplicate notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">dupe_status</span> <b>(Alias name: dupe-status)</b>  Duplicate notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dupe_status</span> <b>(Alias name: dupe-status)</b>  Duplicate notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -161,13 +161,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">file_block_int_mode</span> <b>(Alias name: file-block-int-mode)</b>  File block notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">file_block_int_mode</span> <b>(Alias name: file-block-int-mode)</b>  File block notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">file_block_status</span> <b>(Alias name: file-block-status)</b>  File block notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">file_block_status</span> <b>(Alias name: file-block-status)</b>  File block notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -179,19 +179,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">flood_int_mode</span> <b>(Alias name: flood-int-mode)</b>  Flood notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">flood_int_mode</span> <b>(Alias name: flood-int-mode)</b>  Flood notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">flood_status</span> <b>(Alias name: flood-status)</b>  Flood notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">flood_status</span> <b>(Alias name: flood-status)</b>  Flood notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">from_in_header</span> <b>(Alias name: from-in-header)</b>  Enable/disable insertion of from address in http header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">from_in_header</span> <b>(Alias name: from-in-header)</b>  Enable/disable insertion of from address in http header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -203,13 +203,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">mms_checksum_int_mode</span> <b>(Alias name: mms-checksum-int-mode)</b>  Mms checksum notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">mms_checksum_int_mode</span> <b>(Alias name: mms-checksum-int-mode)</b>  Mms checksum notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">mms_checksum_status</span> <b>(Alias name: mms-checksum-status)</b>  Mms checksum notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">mms_checksum_status</span> <b>(Alias name: mms-checksum-status)</b>  Mms checksum notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -245,13 +245,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">msg_protocol</span> <b>(Alias name: msg-protocol)</b>  Protocol to use for sending notification messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mm1, mm3, mm4, mm7]</span> 
+ <li><span class="li-head">msg_protocol</span> <b>(Alias name: msg-protocol)</b>  Protocol to use for sending notification messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mm1, mm3, mm4, mm7]</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">msg_type</span> <b>(Alias name: msg-type)</b>  Mm7 message type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [submit-req, deliver-req]</span> 
+ <li><span class="li-head">msg_type</span> <b>(Alias name: msg-type)</b>  Mm7 message type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [submit-req, deliver-req]</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -311,13 +311,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">virus_int_mode</span> <b>(Alias name: virus-int-mode)</b>  Virus notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span> 
+ <li><span class="li-head">virus_int_mode</span> <b>(Alias name: virus-int-mode)</b>  Virus notification interval mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hours, minutes]</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">virus_status</span> <b>(Alias name: virus-status)</b>  Virus notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">virus_status</span> <b>(Alias name: virus-status)</b>  Virus notification status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>

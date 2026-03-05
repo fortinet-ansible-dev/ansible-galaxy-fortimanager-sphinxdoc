@@ -11,10 +11,10 @@ fmgr_system_npu_swehhash -- Configure switch enhanced hashing.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -64,31 +64,31 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_npu_swehhash</span> - Configure switch enhanced hashing. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">computation</span> Set hashing computation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [xor16, xor8, xor4, crc16]</span> 
+ <li><span class="li-head">computation</span> Set hashing computation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [xor16, xor8, xor4, crc16]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">destination_ip_lower_16</span> <b>(Alias name: destination-ip-lower-16)</b>  Include/exclude destination ip address lower 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">destination_ip_lower_16</span> <b>(Alias name: destination-ip-lower-16)</b>  Include/exclude destination ip address lower 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">destination_ip_upper_16</span> <b>(Alias name: destination-ip-upper-16)</b>  Include/exclude destination ip address upper 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">destination_ip_upper_16</span> <b>(Alias name: destination-ip-upper-16)</b>  Include/exclude destination ip address upper 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">destination_port</span> <b>(Alias name: destination-port)</b>  Include/exclude destination port if tcp/udp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">destination_port</span> <b>(Alias name: destination-port)</b>  Include/exclude destination port if tcp/udp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_protocol</span> <b>(Alias name: ip-protocol)</b>  Include/exclude ip protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">ip_protocol</span> <b>(Alias name: ip-protocol)</b>  Include/exclude ip protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -100,19 +100,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip_lower_16</span> <b>(Alias name: source-ip-lower-16)</b>  Include/exclude source ip address lower 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">source_ip_lower_16</span> <b>(Alias name: source-ip-lower-16)</b>  Include/exclude source ip address lower 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_ip_upper_16</span> <b>(Alias name: source-ip-upper-16)</b>  Include/exclude source ip address upper 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">source_ip_upper_16</span> <b>(Alias name: source-ip-upper-16)</b>  Include/exclude source ip address upper 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_port</span> <b>(Alias name: source-port)</b>  Include/exclude source port if tcp/udp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> 
+ <li><span class="li-head">source_port</span> <b>(Alias name: source-port)</b>  Include/exclude source port if tcp/udp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>

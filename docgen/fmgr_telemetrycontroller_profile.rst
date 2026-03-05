@@ -11,10 +11,10 @@ fmgr_telemetrycontroller_profile -- Configure FortiTelemetry profiles.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -131,7 +131,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v7.6.3</code></p>
  </div>
  </li>
- <li><span class="li-head">monitor</span> Enable/disable monitoring of the application. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">monitor</span> Enable/disable monitoring of the application. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -197,7 +197,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sla_factor</span> <b>(Alias name: sla-factor)</b>  Criteria on which metric to sla threshold list. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, experience-score, failure-rate, ttfb, atdt, tcp-rtt, dns-time, tls-time, app-throughput]</span> 
+ <li><span class="li-head">sla_factor</span> <b>(Alias name: sla-factor)</b>  Criteria on which metric to sla threshold list. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, experience-score, failure-rate, ttfb, atdt, tcp-rtt, dns-time, tls-time, app-throughput]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>

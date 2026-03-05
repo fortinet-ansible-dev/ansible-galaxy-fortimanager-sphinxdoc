@@ -11,10 +11,10 @@ fmgr_user_group -- Configure user groups.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_group</span> - Configure user groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_concurrent_override</span> <b>(Alias name: auth-concurrent-override)</b>  Enable/disable overriding the global number of concurrent authentication sessions for this user group. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auth_concurrent_override</span> <b>(Alias name: auth-concurrent-override)</b>  Enable/disable overriding the global number of concurrent authentication sessions for this user group. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -83,13 +83,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">company</span> Set the action for the company guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span> 
+ <li><span class="li-head">company</span> Set the action for the company guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">email</span> Enable/disable the guest user email address field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">email</span> Enable/disable the guest user email address field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -101,13 +101,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">expire_type</span> <b>(Alias name: expire-type)</b>  Determine when the expiration countdown begins. <span class="li-normal">type: str</span> <span class="li-normal">choices: [immediately, first-successful-login]</span> 
+ <li><span class="li-head">expire_type</span> <b>(Alias name: expire-type)</b>  Determine when the expiration countdown begins. <span class="li-normal">type: str</span> <span class="li-normal">choices: [immediately, first-successful-login]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_type</span> <b>(Alias name: group-type)</b>  Set the group to be for firewall authentication, fsso, rsso, or guest users. <span class="li-normal">type: str</span> <span class="li-normal">choices: [firewall, directory-service, fsso-service, guest, rsso]</span> 
+ <li><span class="li-head">group_type</span> <b>(Alias name: group-type)</b>  Set the group to be for firewall authentication, fsso, rsso, or guest users. <span class="li-normal">type: str</span> <span class="li-normal">choices: [firewall, directory-service, fsso-service, guest, rsso]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -243,13 +243,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mobile_phone</span> <b>(Alias name: mobile-phone)</b>  Enable/disable the guest user mobile phone number field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">mobile_phone</span> <b>(Alias name: mobile-phone)</b>  Enable/disable the guest user mobile phone number field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">multiple_guest_add</span> <b>(Alias name: multiple-guest-add)</b>  Enable/disable addition of multiple guests. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">multiple_guest_add</span> <b>(Alias name: multiple-guest-add)</b>  Enable/disable addition of multiple guests. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -261,7 +261,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password</span> Guest user password type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto-generate, specify, disable]</span> 
+ <li><span class="li-head">password</span> Guest user password type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto-generate, specify, disable]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -273,13 +273,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span> 
+ <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sponsor</span> Set the action for the sponsor guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span> 
+ <li><span class="li-head">sponsor</span> Set the action for the sponsor guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -291,13 +291,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_id</span> <b>(Alias name: user-id)</b>  Guest user id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, auto-generate, specify]</span> 
+ <li><span class="li-head">user_id</span> <b>(Alias name: user-id)</b>  Guest user id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, auto-generate, specify]</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_name</span> <b>(Alias name: user-name)</b>  Enable/disable the guest user name entry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">user_name</span> <b>(Alias name: user-name)</b>  Enable/disable the guest user name entry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -329,7 +329,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">auth_concurrent_override</span> <b>(Alias name: auth-concurrent-override)</b>  Enable/disable overriding the global number of concurrent authentication sessions for this user group. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auth_concurrent_override</span> <b>(Alias name: auth-concurrent-override)</b>  Enable/disable overriding the global number of concurrent authentication sessions for this user group. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -347,13 +347,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">company</span> Set the action for the company guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span> 
+ <li><span class="li-head">company</span> Set the action for the company guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">email</span> Enable/disable the guest user email address field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">email</span> Enable/disable the guest user email address field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -365,13 +365,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">expire_type</span> <b>(Alias name: expire-type)</b>  Determine when the expiration countdown begins. <span class="li-normal">type: str</span> <span class="li-normal">choices: [immediately, first-successful-login]</span> 
+ <li><span class="li-head">expire_type</span> <b>(Alias name: expire-type)</b>  Determine when the expiration countdown begins. <span class="li-normal">type: str</span> <span class="li-normal">choices: [immediately, first-successful-login]</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_type</span> <b>(Alias name: group-type)</b>  Set the group to be for firewall authentication, fsso, rsso, or guest users. <span class="li-normal">type: str</span> <span class="li-normal">choices: [firewall, directory-service, fsso-service, guest, rsso]</span> 
+ <li><span class="li-head">group_type</span> <b>(Alias name: group-type)</b>  Set the group to be for firewall authentication, fsso, rsso, or guest users. <span class="li-normal">type: str</span> <span class="li-normal">choices: [firewall, directory-service, fsso-service, guest, rsso]</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -469,7 +469,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">logic_type</span> <b>(Alias name: logic-type)</b>  Logic type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span> 
+ <li><span class="li-head">logic_type</span> <b>(Alias name: logic-type)</b>  Logic type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -519,19 +519,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mobile_phone</span> <b>(Alias name: mobile-phone)</b>  Enable/disable the guest user mobile phone number field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">mobile_phone</span> <b>(Alias name: mobile-phone)</b>  Enable/disable the guest user mobile phone number field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">multiple_guest_add</span> <b>(Alias name: multiple-guest-add)</b>  Enable/disable addition of multiple guests. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">multiple_guest_add</span> <b>(Alias name: multiple-guest-add)</b>  Enable/disable addition of multiple guests. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
  <div id="label151" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password</span> Guest user password type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto-generate, specify, disable]</span> 
+ <li><span class="li-head">password</span> Guest user password type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto-generate, specify, disable]</span>
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -549,13 +549,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span> 
+ <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sponsor</span> Set the action for the sponsor guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span> 
+ <li><span class="li-head">sponsor</span> Set the action for the sponsor guest user field. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, mandatory, disabled]</span>
  <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
  <div id="label161" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -567,31 +567,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_cache_cleaner</span> <b>(Alias name: sslvpn-cache-cleaner)</b>  Sslvpn cache cleaner. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_cache_cleaner</span> <b>(Alias name: sslvpn-cache-cleaner)</b>  Sslvpn cache cleaner. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
  <div id="label165" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_client_check</span> <b>(Alias name: sslvpn-client-check)</b>  Sslvpn client check. <span class="li-normal">type: list</span> <span class="li-normal">choices: [forticlient, forticlient-av, forticlient-fw, 3rdAV, 3rdFW]</span> 
+ <li><span class="li-head">sslvpn_client_check</span> <b>(Alias name: sslvpn-client-check)</b>  Sslvpn client check. <span class="li-normal">type: list</span> <span class="li-normal">choices: [forticlient, forticlient-av, forticlient-fw, 3rdAV, 3rdFW]</span>
  <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
  <div id="label167" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_ftp</span> <b>(Alias name: sslvpn-ftp)</b>  Sslvpn ftp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_ftp</span> <b>(Alias name: sslvpn-ftp)</b>  Sslvpn ftp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_http</span> <b>(Alias name: sslvpn-http)</b>  Sslvpn http. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_http</span> <b>(Alias name: sslvpn-http)</b>  Sslvpn http. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_os_check</span> <b>(Alias name: sslvpn-os-check)</b>  Sslvpn os check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_os_check</span> <b>(Alias name: sslvpn-os-check)</b>  Sslvpn os check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -603,7 +603,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, check-up-to-date, deny]</span> 
+ <li><span class="li-head">action</span> Action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, check-up-to-date, deny]</span>
  <a id='label176' href="javascript:ContentClick('label177', 'label176');" onmouseover="ContentPreview('label177');" onmouseout="ContentUnpreview('label177');" title="click to collapse or expand..."> more... </a>
  <div id="label177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -641,37 +641,37 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_rdp</span> <b>(Alias name: sslvpn-rdp)</b>  Sslvpn rdp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_rdp</span> <b>(Alias name: sslvpn-rdp)</b>  Sslvpn rdp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_samba</span> <b>(Alias name: sslvpn-samba)</b>  Sslvpn samba. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_samba</span> <b>(Alias name: sslvpn-samba)</b>  Sslvpn samba. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_split_tunneling</span> <b>(Alias name: sslvpn-split-tunneling)</b>  Sslvpn split tunneling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_split_tunneling</span> <b>(Alias name: sslvpn-split-tunneling)</b>  Sslvpn split tunneling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_ssh</span> <b>(Alias name: sslvpn-ssh)</b>  Sslvpn ssh. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_ssh</span> <b>(Alias name: sslvpn-ssh)</b>  Sslvpn ssh. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_telnet</span> <b>(Alias name: sslvpn-telnet)</b>  Sslvpn telnet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_telnet</span> <b>(Alias name: sslvpn-telnet)</b>  Sslvpn telnet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_tunnel</span> <b>(Alias name: sslvpn-tunnel)</b>  Sslvpn tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_tunnel</span> <b>(Alias name: sslvpn-tunnel)</b>  Sslvpn tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
  <div id="label199" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -683,7 +683,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_tunnel_ip_mode</span> <b>(Alias name: sslvpn-tunnel-ip-mode)</b>  Sslvpn tunnel ip mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [range, usrgrp]</span> 
+ <li><span class="li-head">sslvpn_tunnel_ip_mode</span> <b>(Alias name: sslvpn-tunnel-ip-mode)</b>  Sslvpn tunnel ip mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [range, usrgrp]</span>
  <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
  <div id="label203" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -695,19 +695,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_virtual_desktop</span> <b>(Alias name: sslvpn-virtual-desktop)</b>  Sslvpn virtual desktop. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_virtual_desktop</span> <b>(Alias name: sslvpn-virtual-desktop)</b>  Sslvpn virtual desktop. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
  <div id="label207" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_vnc</span> <b>(Alias name: sslvpn-vnc)</b>  Sslvpn vnc. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_vnc</span> <b>(Alias name: sslvpn-vnc)</b>  Sslvpn vnc. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
  <div id="label209" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sslvpn_webapp</span> <b>(Alias name: sslvpn-webapp)</b>  Sslvpn webapp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sslvpn_webapp</span> <b>(Alias name: sslvpn-webapp)</b>  Sslvpn webapp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -719,24 +719,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_id</span> <b>(Alias name: user-id)</b>  Guest user id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, auto-generate, specify]</span> 
+ <li><span class="li-head">user_id</span> <b>(Alias name: user-id)</b>  Guest user id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, auto-generate, specify]</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_name</span> <b>(Alias name: user-name)</b>  Enable/disable the guest user name entry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">user_name</span> <b>(Alias name: user-name)</b>  Enable/disable the guest user name entry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
  <div id="label217" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">logic_type</span> <b>(Alias name: logic-type)</b>  Set the logic between members or matching entries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span> 
+ <li><span class="li-head">negate</span> Negate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
  <div id="label219" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">logic_type</span> <b>(Alias name: logic-type)</b>  Set the logic between members or matching entries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span>
+ <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
+ <div id="label221" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">negate</span> Negate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
+ <div id="label223" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -776,7 +788,7 @@ Examples
             name: ansible-test-group
             password: specify # <value in [auto-generate, specify, disable]>
             user_id: email # <value in [email, auto-generate, specify]>
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

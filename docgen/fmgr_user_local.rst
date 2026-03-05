@@ -11,10 +11,10 @@ fmgr_user_local -- Configure local users.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_local</span> - Configure local users. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_concurrent_override</span> <b>(Alias name: auth-concurrent-override)</b>  Enable/disable overriding the policy-auth-concurrent under config system global. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auth_concurrent_override</span> <b>(Alias name: auth-concurrent-override)</b>  Enable/disable overriding the policy-auth-concurrent under config system global. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -155,13 +155,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span> 
+ <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable allowing the local user to authenticate with the fortigate unit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable allowing the local user to authenticate with the fortigate unit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -173,13 +173,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor</span> <b>(Alias name: two-factor)</b>  Enable/disable two-factor authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, fortitoken, email, sms, fortitoken-cloud]</span> 
+ <li><span class="li-head">two_factor</span> <b>(Alias name: two-factor)</b>  Enable/disable two-factor authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, fortitoken, email, sms, fortitoken-cloud]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Authentication method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [password, radius, tacacs+, ldap, saml]</span> 
+ <li><span class="li-head">type</span> Authentication method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [password, radius, tacacs+, ldap, saml]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -191,31 +191,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor_authentication</span> <b>(Alias name: two-factor-authentication)</b>  Authentication method by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortitoken, email, sms]</span> 
+ <li><span class="li-head">two_factor_authentication</span> <b>(Alias name: two-factor-authentication)</b>  Authentication method by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortitoken, email, sms]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">two_factor_notification</span> <b>(Alias name: two-factor-notification)</b>  Notification method for user activation by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, sms]</span> 
+ <li><span class="li-head">two_factor_notification</span> <b>(Alias name: two-factor-notification)</b>  Notification method for user activation by fortitoken cloud. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, sms]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">username_case_sensitivity</span> <b>(Alias name: username-case-sensitivity)</b>  Enable/disable case sensitivity when performing username matching (uppercase and lowercase letters are treated either as distinct or equivalent). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">username_case_sensitivity</span> <b>(Alias name: username-case-sensitivity)</b>  Enable/disable case sensitivity when performing username matching (uppercase and lowercase letters are treated either as distinct or equivalent). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">username_case_insensitivity</span> <b>(Alias name: username-case-insensitivity)</b>  Enable/disable case sensitivity when performing username matching (uppercase and lowercase letters are treated either as distinct or equivalent). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">username_case_insensitivity</span> <b>(Alias name: username-case-insensitivity)</b>  Enable/disable case sensitivity when performing username matching (uppercase and lowercase letters are treated either as distinct or equivalent). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">username_sensitivity</span> <b>(Alias name: username-sensitivity)</b>  Enable/disable case and accent sensitivity when performing username matching (accents are stripped and case is ignored when disabled). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">username_sensitivity</span> <b>(Alias name: username-sensitivity)</b>  Enable/disable case and accent sensitivity when performing username matching (accents are stripped and case is ignored when disabled). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.9 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -390,7 +390,7 @@ Examples
             name: ansible-test-local
             passwd: fortinet
             status: disable
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

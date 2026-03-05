@@ -11,10 +11,10 @@ fmgr_dlp_profile -- Configure DLP profiles.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -71,31 +71,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dlp_log</span> <b>(Alias name: dlp-log)</b>  Enable/disable dlp logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dlp_log</span> <b>(Alias name: dlp-log)</b>  Enable/disable dlp logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">extended_log</span> <b>(Alias name: extended-log)</b>  Enable/disable extended logging for data leak prevention. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">extended_log</span> <b>(Alias name: extended-log)</b>  Enable/disable extended logging for data leak prevention. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">feature_set</span> <b>(Alias name: feature-set)</b>  Flow/proxy feature set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [flow, proxy]</span> 
+ <li><span class="li-head">feature_set</span> <b>(Alias name: feature-set)</b>  Flow/proxy feature set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [flow, proxy]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">full_archive_proto</span> <b>(Alias name: full-archive-proto)</b>  Protocols to always content archive. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">full_archive_proto</span> <b>(Alias name: full-archive-proto)</b>  Protocols to always content archive. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nac_quar_log</span> <b>(Alias name: nac-quar-log)</b>  Enable/disable nac quarantine logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">nac_quar_log</span> <b>(Alias name: nac-quar-log)</b>  Enable/disable nac quarantine logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -119,13 +119,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action to take with content that this dlp profile matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block, quarantine-ip, allow]</span> 
+ <li><span class="li-head">action</span> Action to take with content that this dlp profile matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block, quarantine-ip, allow]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">archive</span> Enable/disable dlp archiving. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">archive</span> Enable/disable dlp archiving. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -149,7 +149,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter_by</span> <b>(Alias name: filter-by)</b>  Select the type of content to match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fingerprint, sensor, encrypted, none, mip, label]</span> 
+ <li><span class="li-head">filter_by</span> <b>(Alias name: filter-by)</b>  Select the type of content to match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fingerprint, sensor, encrypted, none, mip, label]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -179,7 +179,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -197,13 +197,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> Select the severity or threat level that matches this filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [info, low, medium, high, critical]</span> 
+ <li><span class="li-head">severity</span> Select the severity or threat level that matches this filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [info, low, medium, high, critical]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Select whether to check the content of messages (an email message) or files (downloaded files or email attachments). <span class="li-normal">type: str</span> <span class="li-normal">choices: [file, message]</span> 
+ <li><span class="li-head">type</span> Select whether to check the content of messages (an email message) or files (downloaded files or email attachments). <span class="li-normal">type: str</span> <span class="li-normal">choices: [file, message]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -211,13 +211,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">summary_proto</span> <b>(Alias name: summary-proto)</b>  Protocols to always log summary. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">summary_proto</span> <b>(Alias name: summary-proto)</b>  Protocols to always log summary. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fortidata_error_action</span> <b>(Alias name: fortidata-error-action)</b>  Action to take if fortidata query fails. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log-only, ignore]</span> 
+ <li><span class="li-head">fortidata_error_action</span> <b>(Alias name: fortidata-error-action)</b>  Action to take if fortidata query fails. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log-only, ignore]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>

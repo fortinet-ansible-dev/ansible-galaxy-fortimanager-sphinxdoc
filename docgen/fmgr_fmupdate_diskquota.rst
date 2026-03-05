@@ -11,10 +11,10 @@ fmgr_fmupdate_diskquota -- Configure disk space available for use by the Upgrade
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">fmupdate_diskquota</span> - Configure disk space available for use by the Upgrade Manager. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">value</span> Configure the size of the upgrade manager disk quota, in megabytes. <span class="li-normal">type: int</span> <span class="li-normal">default: 51200</span> 
+ <li><span class="li-head">value</span> Configure the size of the upgrade manager disk quota, in megabytes. <span class="li-normal">type: int</span> <span class="li-normal">default: 51200</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

@@ -11,10 +11,10 @@ fmgr_system_locallog_setting -- Settings for locallog logging.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,37 +62,37 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_locallog_setting</span> - Settings for locallog logging. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">log_interval_dev_no_logging</span> <b>(Alias name: log-interval-dev-no-logging)</b>  Interval in minute for logging the event of no logs received from a device. <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span> 
+ <li><span class="li-head">log_interval_dev_no_logging</span> <b>(Alias name: log-interval-dev-no-logging)</b>  Interval in minute for logging the event of no logs received from a device. <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_interval_disk_full</span> <b>(Alias name: log-interval-disk-full)</b>  Interval in minute for logging the event of disk full. <span class="li-normal">type: int</span> <span class="li-normal">default: 5</span> 
+ <li><span class="li-head">log_interval_disk_full</span> <b>(Alias name: log-interval-disk-full)</b>  Interval in minute for logging the event of disk full. <span class="li-normal">type: int</span> <span class="li-normal">default: 5</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_interval_gbday_exceeded</span> <b>(Alias name: log-interval-gbday-exceeded)</b>  Interval in minute for logging the event of the gb/day license exceeded. <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span> 
+ <li><span class="li-head">log_interval_gbday_exceeded</span> <b>(Alias name: log-interval-gbday-exceeded)</b>  Interval in minute for logging the event of the gb/day license exceeded. <span class="li-normal">type: int</span> <span class="li-normal">default: 1440</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_daemon_crash</span> <b>(Alias name: log-daemon-crash)</b>  Send a logmsg when a daemon crashes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">log_daemon_crash</span> <b>(Alias name: log-daemon-crash)</b>  Send a logmsg when a daemon crashes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">no_log_detection_threshold</span> <b>(Alias name: no-log-detection-threshold)</b>  Time interval in minutes to trigger a local event message if no log data is received. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span> 
+ <li><span class="li-head">no_log_detection_threshold</span> <b>(Alias name: no-log-detection-threshold)</b>  Time interval in minutes to trigger a local event message if no log data is received. <span class="li-normal">type: int</span> <span class="li-normal">default: 15</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_interval_adom_perf_stats</span> <b>(Alias name: log-interval-adom-perf-stats)</b>  Interval in minute for logging the event of adom perf stats. <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span> 
+ <li><span class="li-head">log_interval_adom_perf_stats</span> <b>(Alias name: log-interval-adom-perf-stats)</b>  Interval in minute for logging the event of adom perf stats. <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>

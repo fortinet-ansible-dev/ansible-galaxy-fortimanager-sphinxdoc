@@ -11,10 +11,10 @@ fmgr_system_connector -- Configure connector.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,58 +62,58 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_connector</span> - Configure connector. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">fsso_refresh_interval</span> <b>(Alias name: fsso-refresh-interval)</b>  Fsso refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 180</span> 
+ <li><span class="li-head">fsso_refresh_interval</span> <b>(Alias name: fsso-refresh-interval)</b>  Fsso refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 180</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fsso_sess_timeout</span> <b>(Alias name: fsso-sess-timeout)</b>  Fsso session timeout (30 - 600 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span> 
+ <li><span class="li-head">fsso_sess_timeout</span> <b>(Alias name: fsso-sess-timeout)</b>  Fsso session timeout (30 - 600 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">px_refresh_interval</span> <b>(Alias name: px-refresh-interval)</b>  Pxgrid refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span> 
+ <li><span class="li-head">px_refresh_interval</span> <b>(Alias name: px-refresh-interval)</b>  Pxgrid refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.1</code></p>
  </div>
  </li>
- <li><span class="li-head">px_svr_timeout</span> <b>(Alias name: px-svr-timeout)</b>  Pxgrid server timeout (30 - 600 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 900</span> 
+ <li><span class="li-head">px_svr_timeout</span> <b>(Alias name: px-svr-timeout)</b>  Pxgrid server timeout (30 - 600 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 900</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">conn_refresh_interval</span> <b>(Alias name: conn-refresh-interval)</b>  Connector refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span> 
+ <li><span class="li-head">conn_refresh_interval</span> <b>(Alias name: conn-refresh-interval)</b>  Connector refresh interval (60 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cloud_orchest_refresh_interval</span> <b>(Alias name: cloud-orchest-refresh-interval)</b>  Cloud orchestration refresh interval (300 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span> 
+ <li><span class="li-head">cloud_orchest_refresh_interval</span> <b>(Alias name: cloud-orchest-refresh-interval)</b>  Cloud orchestration refresh interval (300 - 1800 seconds). <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">faznotify_msg_queue_max</span> <b>(Alias name: faznotify-msg-queue-max)</b>  Faznotify max queued message per connector (10 - 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 1000</span> 
+ <li><span class="li-head">faznotify_msg_queue_max</span> <b>(Alias name: faznotify-msg-queue-max)</b>  Faznotify max queued message per connector (10 - 10000). <span class="li-normal">type: int</span> <span class="li-normal">default: 1000</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">faznotify_msg_timeout</span> <b>(Alias name: faznotify-msg-timeout)</b>  Faznotify message timeout (1 - 720 hours). <span class="li-normal">type: int</span> <span class="li-normal">default: 72</span> 
+ <li><span class="li-head">faznotify_msg_timeout</span> <b>(Alias name: faznotify-msg-timeout)</b>  Faznotify message timeout (1 - 720 hours). <span class="li-normal">type: int</span> <span class="li-normal">default: 72</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">conn_ssl_protocol</span> <b>(Alias name: conn-ssl-protocol)</b>  Set the lowest ssl protocol version for connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span> 
+ <li><span class="li-head">conn_ssl_protocol</span> <b>(Alias name: conn-ssl-protocol)</b>  Set the lowest ssl protocol version for connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

@@ -2,6 +2,23 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.13.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.13.0
+
+Minor Changes
+-------------
+
+- Supported new environment variable "ANSIBLE_FORTIMANAGER_ENABLE_LOG" to enable/disable logging for FortiManager Ansible Collection.
+- Supported new environment variable "ANSIBLE_FORTIMANAGER_VERSION_CHECK" to enable/disable version checking performed by the FortiManager Ansible Collection.
+- Supported new schemas in FortiManager 7.0.16, 7.2.12, 7.4.9, 7.4.10, 7.6.5, 7.6.6
+
+|
+
 Release Galaxy 2.12.0
 ~~~~~~~~~~~~~~~~~~~~
 

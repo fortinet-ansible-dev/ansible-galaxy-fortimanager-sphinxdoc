@@ -11,10 +11,10 @@ fmgr_firewall_vip46 -- Configure IPv4 to IPv6 virtual IPs.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_vip46</span> - Configure IPv4 to IPv6 virtual IPs. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable arp reply. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable arp reply. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -109,7 +109,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Arp reply. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Arp reply. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -145,7 +145,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ldb_method</span> <b>(Alias name: ldb-method)</b>  Ldb method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, round-robin, weighted, least-session, least-rtt, first-alive]</span> 
+ <li><span class="li-head">ldb_method</span> <b>(Alias name: ldb-method)</b>  Ldb method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, round-robin, weighted, least-session, least-rtt, first-alive]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -169,19 +169,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">portforward</span> Portforward. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">portforward</span> Portforward. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tcp, udp]</span> 
+ <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tcp, udp]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [http, tcp, udp, ip]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [http, tcp, udp, ip]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -193,7 +193,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static-nat, server-load-balance]</span> 
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static-nat, server-load-balance]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -231,7 +231,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ldb_method</span> <b>(Alias name: ldb-method)</b>  Load balance method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, round-robin, weighted, least-session, least-rtt, first-alive]</span> 
+ <li><span class="li-head">ldb_method</span> <b>(Alias name: ldb-method)</b>  Load balance method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, round-robin, weighted, least-session, least-rtt, first-alive]</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -261,13 +261,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">portforward</span> Enable port forwarding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">portforward</span> Enable port forwarding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Mapped port protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tcp, udp]</span> 
+ <li><span class="li-head">protocol</span> Mapped port protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tcp, udp]</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -285,7 +285,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">healthcheck</span> Per server health check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, vip]</span> 
+ <li><span class="li-head">healthcheck</span> Per server health check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, vip]</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -327,7 +327,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Server administrative status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, standby, disable]</span> 
+ <li><span class="li-head">status</span> Server administrative status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, standby, disable]</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -341,7 +341,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [http, tcp, udp, ip]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [http, tcp, udp, ip]</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -353,7 +353,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Vip type: static nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static-nat, server-load-balance]</span> 
+ <li><span class="li-head">type</span> Vip type: static nat. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static-nat, server-load-balance]</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -411,7 +411,7 @@ Examples
             ldb_method: static # <value in [static, round-robin, weighted, ...]>
             name: "ansible-test-vip46"
             protocol: tcp # <value in [tcp, udp]>
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

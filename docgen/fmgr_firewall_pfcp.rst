@@ -11,10 +11,10 @@ fmgr_firewall_pfcp -- Configure PFCP.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,19 +65,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_pfcp</span> - Configure PFCP. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">denied_log</span> <b>(Alias name: denied-log)</b>  Enable/disable logging denied pfcp packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">denied_log</span> <b>(Alias name: denied-log)</b>  Enable/disable logging denied pfcp packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">forwarded_log</span> <b>(Alias name: forwarded-log)</b>  Enable/disable logging forwarded pfcp packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">forwarded_log</span> <b>(Alias name: forwarded-log)</b>  Enable/disable logging forwarded pfcp packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">invalid_reserved_field</span> <b>(Alias name: invalid-reserved-field)</b>  Allow or deny invalid reserved field in pfcp header packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">invalid_reserved_field</span> <b>(Alias name: invalid-reserved-field)</b>  Allow or deny invalid reserved field in pfcp header packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -107,7 +107,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">monitor_mode</span> <b>(Alias name: monitor-mode)</b>  Pfcp monitor mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, vdom]</span> 
+ <li><span class="li-head">monitor_mode</span> <b>(Alias name: monitor-mode)</b>  Pfcp monitor mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, vdom]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -125,13 +125,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">traffic_count_log</span> <b>(Alias name: traffic-count-log)</b>  Enable/disable logging session traffic counter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">traffic_count_log</span> <b>(Alias name: traffic-count-log)</b>  Enable/disable logging session traffic counter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">unknown_version</span> <b>(Alias name: unknown-version)</b>  Allow or deny unknown version packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">unknown_version</span> <b>(Alias name: unknown-version)</b>  Allow or deny unknown version packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>

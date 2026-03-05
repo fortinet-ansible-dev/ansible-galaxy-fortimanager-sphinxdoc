@@ -11,10 +11,10 @@ fmgr_vpn_certificate_hsmlocal -- Local certificates whose keys are stored on HSM
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vpn_certificate_hsmlocal</span> - Local certificates whose keys are stored on HSM. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">api_version</span> <b>(Alias name: api-version)</b>  Api version for communicating with hsm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, gch-default]</span> 
+ <li><span class="li-head">api_version</span> <b>(Alias name: api-version)</b>  Api version for communicating with hsm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, gch-default]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gch_cryptokey_algorithm</span> <b>(Alias name: gch-cryptokey-algorithm)</b>  Google cloud hsm cryptokey algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa-sign-pkcs1-2048-sha256, rsa-sign-pkcs1-3072-sha256, rsa-sign-pkcs1-4096-sha256, rsa-sign-pkcs1-4096-sha512, rsa-sign-pss-2048-sha256, rsa-sign-pss-3072-sha256, rsa-sign-pss-4096-sha256, rsa-sign-pss-4096-sha512, ec-sign-p256-sha256, ec-sign-p384-sha384, ec-sign-secp256k1-sha256, 2048-RSA-PKCS1v1.5-SHA256, 3072-RSA-PKCS1v1.5-SHA256, 4096-RSA-PKCS1v1.5-SHA256, 4096-RSA-PKCS1v1.5-SHA512, EC_P256_SHA256, EC_P384_SHA384, EC_secp256k1_SHA256]</span> 
+ <li><span class="li-head">gch_cryptokey_algorithm</span> <b>(Alias name: gch-cryptokey-algorithm)</b>  Google cloud hsm cryptokey algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa-sign-pkcs1-2048-sha256, rsa-sign-pkcs1-3072-sha256, rsa-sign-pkcs1-4096-sha256, rsa-sign-pkcs1-4096-sha512, rsa-sign-pss-2048-sha256, rsa-sign-pss-3072-sha256, rsa-sign-pss-4096-sha256, rsa-sign-pss-4096-sha512, ec-sign-p256-sha256, ec-sign-p384-sha384, ec-sign-secp256k1-sha256, 2048-RSA-PKCS1v1.5-SHA256, 3072-RSA-PKCS1v1.5-SHA256, 4096-RSA-PKCS1v1.5-SHA256, 4096-RSA-PKCS1v1.5-SHA512, EC_P256_SHA256, EC_P384_SHA384, EC_secp256k1_SHA256]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -137,13 +137,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">range</span> Either a global or vdom ip address range for the certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [global, vdom]</span> 
+ <li><span class="li-head">range</span> Either a global or vdom ip address range for the certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [global, vdom]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source</span> Certificate source type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [factory, user, bundle]</span> 
+ <li><span class="li-head">source</span> Certificate source type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [factory, user, bundle]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -155,7 +155,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vendor</span> Hsm vendor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, gch]</span> 
+ <li><span class="li-head">vendor</span> Hsm vendor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, gch]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>

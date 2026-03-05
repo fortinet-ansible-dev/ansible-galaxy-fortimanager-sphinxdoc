@@ -11,10 +11,10 @@ fmgr_diameterfilter_profile -- Configure Diameter filter profiles.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">diameterfilter_profile</span> - Configure Diameter filter profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">cmd_flags_reserve_set</span> <b>(Alias name: cmd-flags-reserve-set)</b>  Action to be taken for messages with cmd flag reserve bits set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span> 
+ <li><span class="li-head">cmd_flags_reserve_set</span> <b>(Alias name: cmd-flags-reserve-set)</b>  Action to be taken for messages with cmd flag reserve bits set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">command_code_invalid</span> <b>(Alias name: command-code-invalid)</b>  Action to be taken for messages with invalid command code. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span> 
+ <li><span class="li-head">command_code_invalid</span> <b>(Alias name: command-code-invalid)</b>  Action to be taken for messages with invalid command code. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -89,25 +89,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_packet</span> <b>(Alias name: log-packet)</b>  Enable/disable packet log for triggered diameter settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log_packet</span> <b>(Alias name: log-packet)</b>  Enable/disable packet log for triggered diameter settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">message_length_invalid</span> <b>(Alias name: message-length-invalid)</b>  Action to be taken for invalid message length. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span> 
+ <li><span class="li-head">message_length_invalid</span> <b>(Alias name: message-length-invalid)</b>  Action to be taken for invalid message length. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">missing_request_action</span> <b>(Alias name: missing-request-action)</b>  Action to be taken for answers without corresponding request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span> 
+ <li><span class="li-head">missing_request_action</span> <b>(Alias name: missing-request-action)</b>  Action to be taken for answers without corresponding request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">monitor_all_messages</span> <b>(Alias name: monitor-all-messages)</b>  Enable/disable logging for all user name and result code avp messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">monitor_all_messages</span> <b>(Alias name: monitor-all-messages)</b>  Enable/disable logging for all user name and result code avp messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -119,19 +119,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol_version_invalid</span> <b>(Alias name: protocol-version-invalid)</b>  Action to be taken for invalid protocol version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span> 
+ <li><span class="li-head">protocol_version_invalid</span> <b>(Alias name: protocol-version-invalid)</b>  Action to be taken for invalid protocol version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">request_error_flag_set</span> <b>(Alias name: request-error-flag-set)</b>  Action to be taken for request messages with error flag set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span> 
+ <li><span class="li-head">request_error_flag_set</span> <b>(Alias name: request-error-flag-set)</b>  Action to be taken for request messages with error flag set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, reset, monitor, allow]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">track_requests_answers</span> <b>(Alias name: track-requests-answers)</b>  Enable/disable validation that each answer has a corresponding request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">track_requests_answers</span> <b>(Alias name: track-requests-answers)</b>  Enable/disable validation that each answer has a corresponding request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>

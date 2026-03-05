@@ -11,10 +11,10 @@ fmgr_system_admin_ldap -- LDAP server entry configuration.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">attributes</span> Attributes used for group searching. <span class="li-normal">type: str</span> <span class="li-normal">default: member,uniquemember,memberuid</span> 
+ <li><span class="li-head">attributes</span> Attributes used for group searching. <span class="li-normal">type: str</span> <span class="li-normal">default: member,uniquemember,memberuid</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -95,13 +95,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cnid</span> Common name identifier (default = cn). <span class="li-normal">type: str</span> <span class="li-normal">default: cn</span> 
+ <li><span class="li-head">cnid</span> Common name identifier (default = cn). <span class="li-normal">type: str</span> <span class="li-normal">default: cn</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">connect_timeout</span> <b>(Alias name: connect-timeout)</b>  Ldap connection timeout (msec). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span> 
+ <li><span class="li-head">connect_timeout</span> <b>(Alias name: connect-timeout)</b>  Ldap connection timeout (msec). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.2</code></p>
@@ -113,7 +113,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter</span> Filter used for group searching. <span class="li-normal">type: str</span> <span class="li-normal">default: (objectclass=*)</span> 
+ <li><span class="li-head">filter</span> Filter used for group searching. <span class="li-normal">type: str</span> <span class="li-normal">default: (objectclass=*)</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -143,7 +143,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Port number of ldap server (default = 389). <span class="li-normal">type: int</span> <span class="li-normal">default: 389</span> 
+ <li><span class="li-head">port</span> Port number of ldap server (default = 389). <span class="li-normal">type: int</span> <span class="li-normal">default: 389</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -161,7 +161,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secure</span> Ssl connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, starttls, ldaps]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">secure</span> Ssl connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, starttls, ldaps]</span>  <span class="li-normal">default: disable</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -179,7 +179,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type of ldap binding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, anonymous, regular]</span>  <span class="li-normal">default: simple</span> 
+ <li><span class="li-head">type</span> Type of ldap binding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, anonymous, regular]</span>  <span class="li-normal">default: simple</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -191,16 +191,16 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">adom_access</span> <b>(Alias name: adom-access)</b>  Set all or specify adom access type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, specify]</span>  <span class="li-normal">default: all</span> 
+ <li><span class="li-head">adom_access</span> <b>(Alias name: adom-access)</b>  Set all or specify adom access type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, specify]</span>  <span class="li-normal">default: all</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to ldap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span> 
+ <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to ldap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -243,7 +243,7 @@ Examples
             server: ansible
             type: regular # <value in [simple, anonymous, regular]>
             username: ansible-username
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

@@ -11,10 +11,10 @@ fmgr_system_dhcp_server -- Configure DHCP servers.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_dhcp_server</span> - Configure DHCP servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auto_configuration</span> <b>(Alias name: auto-configuration)</b>  Enable/disable auto configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auto_configuration</span> <b>(Alias name: auto-configuration)</b>  Enable/disable auto configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ddns_auth</span> <b>(Alias name: ddns-auth)</b>  Ddns authentication mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, tsig]</span> 
+ <li><span class="li-head">ddns_auth</span> <b>(Alias name: ddns-auth)</b>  Ddns authentication mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, tsig]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -107,13 +107,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ddns_update</span> <b>(Alias name: ddns-update)</b>  Enable/disable ddns update for dhcp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ddns_update</span> <b>(Alias name: ddns-update)</b>  Enable/disable ddns update for dhcp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ddns_update_override</span> <b>(Alias name: ddns-update-override)</b>  Enable/disable ddns update override for dhcp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ddns_update_override</span> <b>(Alias name: ddns-update-override)</b>  Enable/disable ddns update override for dhcp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -149,7 +149,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dns_service</span> <b>(Alias name: dns-service)</b>  Options for assigning dns servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span> 
+ <li><span class="li-head">dns_service</span> <b>(Alias name: dns-service)</b>  Options for assigning dns servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -185,7 +185,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -203,7 +203,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uci_match</span> <b>(Alias name: uci-match)</b>  Enable/disable user class identifier (uci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">uci_match</span> <b>(Alias name: uci-match)</b>  Enable/disable user class identifier (uci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -223,7 +223,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">forticlient_on_net_status</span> <b>(Alias name: forticlient-on-net-status)</b>  Enable/disable forticlient-on-net service for this dhcp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">forticlient_on_net_status</span> <b>(Alias name: forticlient-on-net-status)</b>  Enable/disable forticlient-on-net service for this dhcp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -241,7 +241,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_mode</span> <b>(Alias name: ip-mode)</b>  Method used to assign client ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [range, usrgrp]</span> 
+ <li><span class="li-head">ip_mode</span> <b>(Alias name: ip-mode)</b>  Method used to assign client ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [range, usrgrp]</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -271,7 +271,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -289,7 +289,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uci_match</span> <b>(Alias name: uci-match)</b>  Enable/disable user class identifier (uci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">uci_match</span> <b>(Alias name: uci-match)</b>  Enable/disable user class identifier (uci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -315,7 +315,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mac_acl_default_action</span> <b>(Alias name: mac-acl-default-action)</b>  Mac access control default action (allow or block assigning ip settings). <span class="li-normal">type: str</span> <span class="li-normal">choices: [assign, block]</span> 
+ <li><span class="li-head">mac_acl_default_action</span> <b>(Alias name: mac-acl-default-action)</b>  Mac access control default action (allow or block assigning ip settings). <span class="li-normal">type: str</span> <span class="li-normal">choices: [assign, block]</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -351,7 +351,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ntp_service</span> <b>(Alias name: ntp-service)</b>  Options for assigning network time protocol (ntp) servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span> 
+ <li><span class="li-head">ntp_service</span> <b>(Alias name: ntp-service)</b>  Options for assigning network time protocol (ntp) servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -381,7 +381,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string, ip, fqdn]</span> 
+ <li><span class="li-head">type</span> Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string, ip, fqdn]</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -393,7 +393,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -405,7 +405,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uci_match</span> <b>(Alias name: uci-match)</b>  Enable/disable user class identifier (uci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">uci_match</span> <b>(Alias name: uci-match)</b>  Enable/disable user class identifier (uci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -425,7 +425,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Options for the dhcp server to configure the client with the reserved mac address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [assign, block, reserved]</span> 
+ <li><span class="li-head">action</span> Options for the dhcp server to configure the client with the reserved mac address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [assign, block, reserved]</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -461,7 +461,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">circuit_id_type</span> <b>(Alias name: circuit-id-type)</b>  Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string]</span> 
+ <li><span class="li-head">circuit_id_type</span> <b>(Alias name: circuit-id-type)</b>  Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string]</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -473,13 +473,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">remote_id_type</span> <b>(Alias name: remote-id-type)</b>  Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string]</span> 
+ <li><span class="li-head">remote_id_type</span> <b>(Alias name: remote-id-type)</b>  Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string]</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Dhcp reserved-address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mac, option82]</span> 
+ <li><span class="li-head">type</span> Dhcp reserved-address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mac, option82]</span>
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -487,13 +487,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Dhcp server can be a normal dhcp server or an ipsec dhcp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regular, ipsec]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Dhcp server can be a normal dhcp server or an ipsec dhcp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regular, ipsec]</span>
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable this dhcp configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable this dhcp configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -505,19 +505,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">timezone</span> Select the time zone to be assigned to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87]</span> 
+ <li><span class="li-head">timezone</span> Select the time zone to be assigned to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87]</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">timezone_option</span> <b>(Alias name: timezone-option)</b>  Options for the dhcp server to set the clients time zone. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, default, specify]</span> 
+ <li><span class="li-head">timezone_option</span> <b>(Alias name: timezone-option)</b>  Options for the dhcp server to set the clients time zone. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, default, specify]</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">vci_match</span> <b>(Alias name: vci-match)</b>  Enable/disable vendor class identifier (vci) matching. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -565,19 +565,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wifi_ac_service</span> <b>(Alias name: wifi-ac-service)</b>  Options for assigning wifi access controllers to dhcp clients <span class="li-normal">type: str</span> <span class="li-normal">choices: [specify, local]</span> 
+ <li><span class="li-head">wifi_ac_service</span> <b>(Alias name: wifi-ac-service)</b>  Options for assigning wifi access controllers to dhcp clients <span class="li-normal">type: str</span> <span class="li-normal">choices: [specify, local]</span>
  <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
  <div id="label165" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_managed_status</span> <b>(Alias name: auto-managed-status)</b>  Enable/disable use of this dhcp server once this interface has been assigned an ip address from fortiipam. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auto_managed_status</span> <b>(Alias name: auto-managed-status)</b>  Enable/disable use of this dhcp server once this interface has been assigned an ip address from fortiipam. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label166' href="javascript:ContentClick('label167', 'label166');" onmouseover="ContentPreview('label167');" onmouseout="ContentUnpreview('label167');" title="click to collapse or expand..."> more... </a>
  <div id="label167" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dhcp_settings_from_fortiipam</span> <b>(Alias name: dhcp-settings-from-fortiipam)</b>  Enable/disable populating of dhcp server settings from fortiipam. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dhcp_settings_from_fortiipam</span> <b>(Alias name: dhcp-settings-from-fortiipam)</b>  Enable/disable populating of dhcp server settings from fortiipam. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -589,7 +589,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">shared_subnet</span> <b>(Alias name: shared-subnet)</b>  Enable/disable shared subnet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">shared_subnet</span> <b>(Alias name: shared-subnet)</b>  Enable/disable shared subnet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -641,7 +641,7 @@ Examples
             netmask: 255.255.255.0
             server_type: regular # <value in [regular, ipsec]>
             status: disable # <value in [disable, enable]>
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

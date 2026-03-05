@@ -11,10 +11,10 @@ fmgr_fmupdate_avips_webproxy -- Configure the web proxy for use with FortiGuard 
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,19 +62,19 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">fmupdate_avips_webproxy</span> - Configure the web proxy for use with FortiGuard antivirus and IPS updates. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip</span> Ipv4 address of the web proxy. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
+ <li><span class="li-head">ip</span> Ipv4 address of the web proxy. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">ip6</span> Ipv6 address of the web proxy. <span class="li-normal">type: str</span> <span class="li-normal">default: ::</span> 
+ <li><span class="li-head">ip6</span> Ipv6 address of the web proxy. <span class="li-normal">type: str</span> <span class="li-normal">default: ::</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Web proxy mode: proxy - http proxy, tunnel - http tunnel (default = proxy). <span class="li-normal">type: str</span> <span class="li-normal">choices: [proxy, tunnel]</span>  <span class="li-normal">default: proxy</span> 
+ <li><span class="li-head">mode</span> Web proxy mode: proxy - http proxy, tunnel - http tunnel (default = proxy). <span class="li-normal">type: str</span> <span class="li-normal">choices: [proxy, tunnel]</span>  <span class="li-normal">default: proxy</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.0</code></p>
@@ -86,13 +86,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.0</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> The port number of the web proxy (1 - 65535, default = 80). <span class="li-normal">type: int</span> <span class="li-normal">default: 80</span> 
+ <li><span class="li-head">port</span> The port number of the web proxy (1 - 65535, default = 80). <span class="li-normal">type: int</span> <span class="li-normal">default: 80</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.0</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable connections through the web proxy (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">status</span> Enable/disable connections through the web proxy (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.0</code></p>

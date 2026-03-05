@@ -11,10 +11,10 @@ fmgr_switchcontroller_securitypolicy_8021x -- Configure 802.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_securitypolicy_8021x</span> - Configure 802. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_fail_vlan</span> <b>(Alias name: auth-fail-vlan)</b>  Enable to allow limited access to clients that cannot authenticate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auth_fail_vlan</span> <b>(Alias name: auth-fail-vlan)</b>  Enable to allow limited access to clients that cannot authenticate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">eap_passthru</span> <b>(Alias name: eap-passthru)</b>  Enable/disable eap pass-through mode, allowing protocols (such as lldp) to pass through ports for more flexible authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">eap_passthru</span> <b>(Alias name: eap-passthru)</b>  Enable/disable eap pass-through mode, allowing protocols (such as lldp) to pass through ports for more flexible authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">guest_vlan</span> <b>(Alias name: guest-vlan)</b>  Enable the guest vlan feature to allow limited access to non-802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">guest_vlan</span> <b>(Alias name: guest-vlan)</b>  Enable the guest vlan feature to allow limited access to non-802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -113,7 +113,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mac_auth_bypass</span> <b>(Alias name: mac-auth-bypass)</b>  Enable/disable mab for this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">mac_auth_bypass</span> <b>(Alias name: mac-auth-bypass)</b>  Enable/disable mab for this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -125,25 +125,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">open_auth</span> <b>(Alias name: open-auth)</b>  Enable/disable open authentication for this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">open_auth</span> <b>(Alias name: open-auth)</b>  Enable/disable open authentication for this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">policy_type</span> <b>(Alias name: policy-type)</b>  Policy type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [802.1X]</span> 
+ <li><span class="li-head">policy_type</span> <b>(Alias name: policy-type)</b>  Policy type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [802.1X]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">radius_timeout_overwrite</span> <b>(Alias name: radius-timeout-overwrite)</b>  Enable to override the global radius session timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">radius_timeout_overwrite</span> <b>(Alias name: radius-timeout-overwrite)</b>  Enable to override the global radius session timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">security_mode</span> <b>(Alias name: security-mode)</b>  Port or mac based 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [802.1X, 802.1X-mac-based]</span> 
+ <li><span class="li-head">security_mode</span> <b>(Alias name: security-mode)</b>  Port or mac based 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [802.1X, 802.1X-mac-based]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -155,13 +155,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">framevid_apply</span> <b>(Alias name: framevid-apply)</b>  Enable/disable the capability to apply the eap/mab frame vlan to the port native vlan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">framevid_apply</span> <b>(Alias name: framevid-apply)</b>  Enable/disable the capability to apply the eap/mab frame vlan to the port native vlan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">eap_auto_untagged_vlans</span> <b>(Alias name: eap-auto-untagged-vlans)</b>  Enable/disable automatic inclusion of untagged vlans. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">eap_auto_untagged_vlans</span> <b>(Alias name: eap-auto-untagged-vlans)</b>  Enable/disable automatic inclusion of untagged vlans. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -173,7 +173,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authserver_timeout_vlan</span> <b>(Alias name: authserver-timeout-vlan)</b>  Enable/disable the authentication server timeout vlan to allow limited access when radius is unavailable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">authserver_timeout_vlan</span> <b>(Alias name: authserver-timeout-vlan)</b>  Enable/disable the authentication server timeout vlan to allow limited access when radius is unavailable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -185,31 +185,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authserver_timeout_tagged</span> <b>(Alias name: authserver-timeout-tagged)</b>  Configure timeout option for the tagged vlan which allows limited access when the authentication server is unavailable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, disable, lldp-voice]</span> 
+ <li><span class="li-head">authserver_timeout_tagged</span> <b>(Alias name: authserver-timeout-tagged)</b>  Configure timeout option for the tagged vlan which allows limited access when the authentication server is unavailable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, disable, lldp-voice]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">authserver_timeout_tagged_vlanid</span> <b>(Alias name: authserver-timeout-tagged-vlanid)</b>  Tagged vlan name for which the timeout option is applied to (only one vlan id). <span class="li-normal">type: list</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dacl</span> Enable/disable dynamic access control list on this interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">dacl</span> Enable/disable dynamic access control list on this interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auth_order</span> <b>(Alias name: auth-order)</b>  Configure authentication order. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dot1x-mab, mab-dot1x, mab]</span> 
+ <li><span class="li-head">auth_order</span> <b>(Alias name: auth-order)</b>  Configure authentication order. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dot1x-mab, mab-dot1x, mab]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auth_priority</span> <b>(Alias name: auth-priority)</b>  Configure authentication priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dot1x-mab, mab-dot1x, legacy]</span> 
+ <li><span class="li-head">auth_priority</span> <b>(Alias name: auth-priority)</b>  Configure authentication priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dot1x-mab, mab-dot1x, legacy]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>

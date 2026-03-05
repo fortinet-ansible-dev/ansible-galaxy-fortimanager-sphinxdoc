@@ -11,10 +11,10 @@ fmgr_switchcontroller_managedswitch_snmpcommunity -- Configuration method to edi
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">managed_switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_managedswitch_snmpcommunity</span> - Configuration method to edit Simple Network Management Protocol <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">events</span> Snmp notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, ent-conf-change]</span> 
+ <li><span class="li-head">events</span> Snmp notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, ent-conf-change]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
@@ -110,7 +110,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">query_v1_status</span> <b>(Alias name: query-v1-status)</b>  Enable/disable snmp v1 queries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">query_v1_status</span> <b>(Alias name: query-v1-status)</b>  Enable/disable snmp v1 queries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
@@ -122,13 +122,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">query_v2c_status</span> <b>(Alias name: query-v2c-status)</b>  Enable/disable snmp v2c queries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">query_v2c_status</span> <b>(Alias name: query-v2c-status)</b>  Enable/disable snmp v2c queries. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable this snmp community. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable this snmp community. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
@@ -146,7 +146,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">trap_v1_status</span> <b>(Alias name: trap-v1-status)</b>  Enable/disable snmp v1 traps. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">trap_v1_status</span> <b>(Alias name: trap-v1-status)</b>  Enable/disable snmp v1 traps. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
@@ -164,7 +164,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">trap_v2c_status</span> <b>(Alias name: trap-v2c-status)</b>  Enable/disable snmp v2c traps. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">trap_v2c_status</span> <b>(Alias name: trap-v2c-status)</b>  Enable/disable snmp v2c traps. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>

@@ -11,10 +11,10 @@ fmgr_system_sdnconnector -- Configure connection to SDN Connector.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">azure_region</span> <b>(Alias name: azure-region)</b>  Azure server region. <span class="li-normal">type: str</span> <span class="li-normal">choices: [global, china, germany, usgov, local]</span> 
+ <li><span class="li-head">azure_region</span> <b>(Alias name: azure-region)</b>  Azure server region. <span class="li-normal">type: str</span> <span class="li-normal">choices: [global, china, germany, usgov, local]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -172,7 +172,7 @@ Parameters
  <li><span class="li-head">private_ip</span> <b>(Alias name: private-ip)</b>  Private ip address. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -186,7 +186,7 @@ Parameters
  <li><span class="li-head">peer_nic</span> <b>(Alias name: peer-nic)</b>  Peer network interface name. <span class="li-normal">type: str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -209,7 +209,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">oci_region</span> <b>(Alias name: oci-region)</b>  Oci server region. <span class="li-normal">type: str</span> <span class="li-normal">choices: [phoenix, ashburn, frankfurt, london, toronto]</span> 
+ <li><span class="li-head">oci_region</span> <b>(Alias name: oci-region)</b>  Oci server region. <span class="li-normal">type: str</span> <span class="li-normal">choices: [phoenix, ashburn, frankfurt, london, toronto]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -245,7 +245,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rest_interface</span> <b>(Alias name: rest-interface)</b>  Interface name for rest service to listen on. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mgmt, sync]</span> 
+ <li><span class="li-head">rest_interface</span> <b>(Alias name: rest-interface)</b>  Interface name for rest service to listen on. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mgmt, sync]</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -263,7 +263,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rest_ssl</span> <b>(Alias name: rest-ssl)</b>  Rest ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">rest_ssl</span> <b>(Alias name: rest-ssl)</b>  Rest ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -353,7 +353,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable connection to the remote sdn connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable connection to the remote sdn connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -371,7 +371,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type of sdn connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack, kubernetes, vmware, acs, alicloud, sepm, aci-direct, ibm, nutanix, sap]</span> 
+ <li><span class="li-head">type</span> Type of sdn connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack, kubernetes, vmware, acs, alicloud, sepm, aci-direct, ibm, nutanix, sap]</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -383,7 +383,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">use_metadata_iam</span> <b>(Alias name: use-metadata-iam)</b>  Enable/disable using iam role from metadata to call api. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">use_metadata_iam</span> <b>(Alias name: use-metadata-iam)</b>  Enable/disable using iam role from metadata to call api. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -425,7 +425,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ha_status</span> <b>(Alias name: ha-status)</b>  Enable/disable use for fortigate ha service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ha_status</span> <b>(Alias name: ha-status)</b>  Enable/disable use for fortigate ha service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -437,7 +437,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.0</code></p>
  </div>
  </li>
- <li><span class="li-head">oci_region_type</span> <b>(Alias name: oci-region-type)</b>  Oci region type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [commercial, government]</span> 
+ <li><span class="li-head">oci_region_type</span> <b>(Alias name: oci-region-type)</b>  Oci region type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [commercial, government]</span>
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -458,7 +458,7 @@ Parameters
  <li><span class="li-head">server_ip</span> <b>(Alias name: server-ip)</b>  Ip address of the remote sdn connector. <span class="li-normal">type: str</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">group_name</span> <b>(Alias name: group-name)</b>  Group name of computers. <span class="li-normal">type: str</span>
@@ -479,19 +479,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ibm_region</span> <b>(Alias name: ibm-region)</b>  Ibm cloud region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia, dallas, washington-dc, london, frankfurt, sydney, tokyo, osaka, toronto, sao-paulo, dallas-private, washington-dc-private, london-private, frankfurt-private, sydney-private, tokyo-private, osaka-private, toronto-private, sao-paulo-private, madrid, madrid-private]</span> 
+ <li><span class="li-head">ibm_region</span> <b>(Alias name: ibm-region)</b>  Ibm cloud region name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia, dallas, washington-dc, london, frankfurt, sydney, tokyo, osaka, toronto, sao-paulo, dallas-private, washington-dc-private, london-private, frankfurt-private, sydney-private, tokyo-private, osaka-private, toronto-private, sao-paulo-private, madrid, madrid-private]</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ibm_region_gen1</span> <b>(Alias name: ibm-region-gen1)</b>  Ibm region gen1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia]</span> 
+ <li><span class="li-head">ibm_region_gen1</span> <b>(Alias name: ibm-region-gen1)</b>  Ibm region gen1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, germany, great-britain, japan, australia]</span>
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ibm_region_gen2</span> <b>(Alias name: ibm-region-gen2)</b>  Ibm region gen2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, great-britain]</span> 
+ <li><span class="li-head">ibm_region_gen2</span> <b>(Alias name: ibm-region-gen2)</b>  Ibm region gen2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [us-south, us-east, great-britain]</span>
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -542,7 +542,7 @@ Parameters
  <li><span class="li-head">external_id</span> <b>(Alias name: external-id)</b>  Aws external id. <span class="li-normal">type: str</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -587,13 +587,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">verify_certificate</span> <b>(Alias name: verify-certificate)</b>  Enable/disable server certificate verification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">verify_certificate</span> <b>(Alias name: verify-certificate)</b>  Enable/disable server certificate verification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">alt_resource_ip</span> <b>(Alias name: alt-resource-ip)</b>  Enable/disable aws alternative resource ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">alt_resource_ip</span> <b>(Alias name: alt-resource-ip)</b>  Enable/disable aws alternative resource ip. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -651,7 +651,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">microsoft_365</span> <b>(Alias name: microsoft-365)</b>  Enable to use as microsoft 365 connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">microsoft_365</span> <b>(Alias name: microsoft-365)</b>  Enable to use as microsoft 365 connector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -661,6 +661,12 @@ Parameters
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">par_id</span> <b>(Alias name: par-id)</b>  Public address range id. <span class="li-normal">type: str</span>
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -703,7 +709,7 @@ Examples
             server: ALL
             status: disable
             type: aws # <value in [aci, aws, nsx, ...]>
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

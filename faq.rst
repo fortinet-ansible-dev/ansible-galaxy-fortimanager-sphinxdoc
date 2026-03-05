@@ -173,10 +173,14 @@ Here is an example:
 What You Need To Know About Logging. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-FortiManager Ansible has requests and intermediate data stored in a log file ``/tmp/fortimanager.ansible.log`` to ease troubleshooting. 
 
-Prior to ``2.0.3``, the log file is always created under that path; since ``2.0.3``, logging is only enabled by setting ``enable_log`` option for a task,
-it means you will no longer see the log file by default since ``2.0.3`` unless you turn it on explicitly.
+There are two ways to enable logging for FortiManager Ansible Collection:
+
+- Set environment variable ``ANSIBLE_FORTIMANAGER_ENABLE_LOG`` to True/true. `$export ANSIBLE_FMGDEVICE_ENABLE_LOG=True`
+- Set the input argument ``enable_log`` to True in your playbook. Every module in the FortiManager Device Ansible Collection includes the input argument **enable_log**.
+
+When log is enabled, log data is appended to the file `/tmp/fortimanager.ansible.log`.
+
 
 What Is Workspace Locking?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

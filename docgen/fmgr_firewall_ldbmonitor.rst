@@ -11,10 +11,10 @@ fmgr_firewall_ldbmonitor -- Configure server load balancing health monitors.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -113,7 +113,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Select the monitor type used by the health check monitor to check the health of the server (ping | tcp | http). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ping, tcp, http, passive-sip, https, dns]</span> 
+ <li><span class="li-head">type</span> Select the monitor type used by the health check monitor to check the health of the server (ping | tcp | http). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ping, tcp, http, passive-sip, https, dns]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -131,7 +131,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dns_protocol</span> <b>(Alias name: dns-protocol)</b>  Select the protocol used by the dns health check monitor to check the health of the server (udp | tcp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp]</span> 
+ <li><span class="li-head">dns_protocol</span> <b>(Alias name: dns-protocol)</b>  Select the protocol used by the dns health check monitor to check the health of the server (udp | tcp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -179,7 +179,7 @@ Examples
             name: "ansible-test"
             port: 1
             type: tcp # <value in [ping, tcp, http, ...]>
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

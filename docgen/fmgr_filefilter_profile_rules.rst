@@ -11,10 +11,10 @@ fmgr_filefilter_profile_rules -- File filter rules.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">filefilter_profile_rules</span> - File filter rules. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block]</span> 
+ <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -78,7 +78,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">direction</span> Traffic direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, incoming, outgoing]</span> 
+ <li><span class="li-head">direction</span> Traffic direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, incoming, outgoing]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -96,13 +96,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_protected</span> <b>(Alias name: password-protected)</b>  Match password-protected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, yes]</span> 
+ <li><span class="li-head">password_protected</span> <b>(Alias name: password-protected)</b>  Match password-protected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, yes]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocols to apply rule to. <span class="li-normal">type: list</span> <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, mapi, cifs, ssh]</span> 
+ <li><span class="li-head">protocol</span> Protocols to apply rule to. <span class="li-normal">type: list</span> <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, mapi, cifs, ssh]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>

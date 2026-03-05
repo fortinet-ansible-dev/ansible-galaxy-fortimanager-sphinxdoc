@@ -11,10 +11,10 @@ fmgr_firewall_shaper_peripshaper -- Configure per-IP traffic shaper.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,19 +65,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_shaper_peripshaper</span> - Configure per-IP traffic shaper. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bandwidth_unit</span> <b>(Alias name: bandwidth-unit)</b>  Unit of measurement for maximum bandwidth for this shaper (kbps, mbps or gbps). <span class="li-normal">type: str</span> <span class="li-normal">choices: [kbps, mbps, gbps]</span> 
+ <li><span class="li-head">bandwidth_unit</span> <b>(Alias name: bandwidth-unit)</b>  Unit of measurement for maximum bandwidth for this shaper (kbps, mbps or gbps). <span class="li-normal">type: str</span> <span class="li-normal">choices: [kbps, mbps, gbps]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">diffserv_forward</span> <b>(Alias name: diffserv-forward)</b>  Enable/disable changing the forward (original) diffserv setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">diffserv_forward</span> <b>(Alias name: diffserv-forward)</b>  Enable/disable changing the forward (original) diffserv setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">diffserv_reverse</span> <b>(Alias name: diffserv-reverse)</b>  Enable/disable changing the reverse (reply) diffserv setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">diffserv_reverse</span> <b>(Alias name: diffserv-reverse)</b>  Enable/disable changing the reverse (reply) diffserv setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -162,7 +162,7 @@ Examples
             diffserv_forward: enable
             diffserv_reverse: disable
             name: "ansible-test"
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

@@ -11,10 +11,10 @@ fmgr_vpn_certificate_ocspserver -- OCSP server configuration.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">unavail_action</span> <b>(Alias name: unavail-action)</b>  Action when server is unavailable (revoke the certificate or ignore the result of the check). <span class="li-normal">type: str</span> <span class="li-normal">choices: [revoke, ignore]</span> 
+ <li><span class="li-head">unavail_action</span> <b>(Alias name: unavail-action)</b>  Action when server is unavailable (revoke the certificate or ignore the result of the check). <span class="li-normal">type: str</span> <span class="li-normal">choices: [revoke, ignore]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

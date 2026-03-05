@@ -11,10 +11,10 @@ fmgr_system_npu_dosoptions -- NPU DoS configurations.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -64,19 +64,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_npu_dosoptions</span> - NPU DoS configurations. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">npu_dos_meter_mode</span> <b>(Alias name: npu-dos-meter-mode)</b>  Set dos meter npu offloading mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, global]</span> 
+ <li><span class="li-head">npu_dos_meter_mode</span> <b>(Alias name: npu-dos-meter-mode)</b>  Set dos meter npu offloading mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, global]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">npu_dos_synproxy_mode</span> <b>(Alias name: npu-dos-synproxy-mode)</b>  Set npu dos synproxy mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [synack2ack, pass-synack]</span> 
+ <li><span class="li-head">npu_dos_synproxy_mode</span> <b>(Alias name: npu-dos-synproxy-mode)</b>  Set npu dos synproxy mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [synack2ack, pass-synack]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">npu_dos_tpe_mode</span> <b>(Alias name: npu-dos-tpe-mode)</b>  Enable/disable insertion of dos meter id to session table. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">npu_dos_tpe_mode</span> <b>(Alias name: npu-dos-tpe-mode)</b>  Enable/disable insertion of dos meter id to session table. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>

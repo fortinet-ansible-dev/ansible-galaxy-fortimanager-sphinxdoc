@@ -11,10 +11,10 @@ fmgr_ztna_webportalbookmark -- Configure ztna web-portal bookmark.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -71,13 +71,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">apptype</span> Application type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [web, telnet, ssh, ftp, smb, vnc, rdp, sftp]</span> 
+ <li><span class="li-head">apptype</span> Application type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [web, telnet, ssh, ftp, smb, vnc, rdp, sftp]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">color_depth</span> <b>(Alias name: color-depth)</b>  Color depth per pixel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [8, 16, 32]</span> 
+ <li><span class="li-head">color_depth</span> <b>(Alias name: color-depth)</b>  Color depth per pixel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [8, 16, 32]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -113,7 +113,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">keyboard_layout</span> <b>(Alias name: keyboard-layout)</b>  Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [da, de, de-ch, en-uk, en-us, es, fi, fr, fr-be, fr-ca, fr-ch, hr, hu, it, ja, lt, mk, no, pt, pt-br, ru, sl, sv, ar-101, ar-102, ar-102-azerty, can-mul, cz, cz-qwerty, cz-pr, nl, de-ibm, en-uk-ext, en-us-dvorak, es-var, fi-sami, hu-101, it-142, ko, lt-ibm, lt-std, lav-std, lav-leg, mk-std, no-sami, pol-214, pol-pr, pt-br-abnt2, ru-mne, ru-t, sv-sami, tuk, tur-f, tur-q, zh-sym-sg-us, zh-sym-us, zh-tr-hk, zh-tr-mo, zh-tr-us, fr-apple, la-am, ja-106]</span> 
+ <li><span class="li-head">keyboard_layout</span> <b>(Alias name: keyboard-layout)</b>  Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [da, de, de-ch, en-uk, en-us, es, fi, fr, fr-be, fr-ca, fr-ch, hr, hu, it, ja, lt, mk, no, pt, pt-br, ru, sl, sv, ar-101, ar-102, ar-102-azerty, can-mul, cz, cz-qwerty, cz-pr, nl, de-ibm, en-uk-ext, en-us-dvorak, es-var, fi-sami, hu-101, it-142, ko, lt-ibm, lt-std, lav-std, lav-leg, mk-std, no-sami, pol-214, pol-pr, pt-br-abnt2, ru-mne, ru-t, sv-sami, tuk, tur-f, tur-q, zh-sym-sg-us, zh-sym-us, zh-tr-hk, zh-tr-mo, zh-tr-us, fr-apple, la-am, ja-106]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -161,25 +161,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restricted_admin</span> <b>(Alias name: restricted-admin)</b>  Enable/disable restricted admin mode for rdp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">restricted_admin</span> <b>(Alias name: restricted-admin)</b>  Enable/disable restricted admin mode for rdp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">security</span> Security mode for rdp connection (default = any). <span class="li-normal">type: str</span> <span class="li-normal">choices: [rdp, nla, tls, any]</span> 
+ <li><span class="li-head">security</span> Security mode for rdp connection (default = any). <span class="li-normal">type: str</span> <span class="li-normal">choices: [rdp, nla, tls, any]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">send_preconnection_id</span> <b>(Alias name: send-preconnection-id)</b>  Enable/disable sending of preconnection id. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">send_preconnection_id</span> <b>(Alias name: send-preconnection-id)</b>  Enable/disable sending of preconnection id. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sso</span> Single sign-on. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sso</span> Single sign-on. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -191,7 +191,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vnc_keyboard_layout</span> <b>(Alias name: vnc-keyboard-layout)</b>  Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [da, de, de-ch, en-uk, es, fi, fr, fr-be, it, no, pt, sv, nl, en-uk-ext, it-142, pt-br-abnt2, default, fr-ca-mul, gd, us-intl]</span> 
+ <li><span class="li-head">vnc_keyboard_layout</span> <b>(Alias name: vnc-keyboard-layout)</b>  Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [da, de, de-ch, en-uk, es, fi, fr, fr-be, it, no, pt, sv, nl, en-uk-ext, it-142, pt-br-abnt2, default, fr-ca-mul, gd, us-intl]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -217,7 +217,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user, ldap-dynamic, saml-dynamic]</span> 
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user, ldap-dynamic, saml-dynamic]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -228,6 +228,26 @@ Parameters
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
+ </li>
+ <li><span class="li-head">llm_secure_proxy</span> <b>(Alias name: llm-secure-proxy)</b>  Llm secure proxy. <span class="li-normal">type: dict</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">all_llm_servers</span> <b>(Alias name: all-llm-servers)</b>  All llm servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">llm_servers</span> <b>(Alias name: llm-servers)</b>  Llm servers. <span class="li-normal">type: list</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
  </li>
  </ul>
  </ul>
@@ -293,6 +313,9 @@ Examples
             # groups: <list or string>
             # type: <value in [user, ldap-dynamic, saml-dynamic]>
             # users: <list or string>
+            # llm_secure_proxy:
+            #   all_llm_servers: <value in [disable, enable]>
+            #   llm_servers: <list or string>
 
 
 Return Values

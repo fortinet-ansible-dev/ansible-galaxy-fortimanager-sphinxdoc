@@ -11,10 +11,10 @@ fmgr_hotspot20_anqpipaddresstype -- Configure IP address type availability.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_anqpipaddresstype</span> - Configure IP address type availability. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ipv4_address_type</span> <b>(Alias name: ipv4-address-type)</b>  Ipv4 address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [not-available, not-known, public, port-restricted, single-NATed-private, double-NATed-private, port-restricted-and-single-NATed, port-restricted-and-double-NATed]</span> 
+ <li><span class="li-head">ipv4_address_type</span> <b>(Alias name: ipv4-address-type)</b>  Ipv4 address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [not-available, not-known, public, port-restricted, single-NATed-private, double-NATed-private, port-restricted-and-single-NATed, port-restricted-and-double-NATed]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ipv6_address_type</span> <b>(Alias name: ipv6-address-type)</b>  Ipv6 address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [not-available, available, not-known]</span> 
+ <li><span class="li-head">ipv6_address_type</span> <b>(Alias name: ipv6-address-type)</b>  Ipv6 address type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [not-available, available, not-known]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

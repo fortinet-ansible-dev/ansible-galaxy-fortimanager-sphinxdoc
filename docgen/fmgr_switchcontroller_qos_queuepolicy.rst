@@ -11,10 +11,10 @@ fmgr_switchcontroller_qos_queuepolicy -- Configure FortiSwitch QoS egress queue 
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">drop_policy</span> <b>(Alias name: drop-policy)</b>  Cos queue drop policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [taildrop, weighted-random-early-detection]</span> 
+ <li><span class="li-head">drop_policy</span> <b>(Alias name: drop-policy)</b>  Cos queue drop policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [taildrop, weighted-random-early-detection]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -119,7 +119,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ecn</span> Enable/disable ecn packet marking to drop eligible packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ecn</span> Enable/disable ecn packet marking to drop eligible packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -133,13 +133,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">schedule</span> Cos queue scheduling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, round-robin, weighted]</span> 
+ <li><span class="li-head">schedule</span> Cos queue scheduling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, round-robin, weighted]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rate_by</span> <b>(Alias name: rate-by)</b>  Cos queue rate by kbps or percent. <span class="li-normal">type: str</span> <span class="li-normal">choices: [kbps, percent]</span> 
+ <li><span class="li-head">rate_by</span> <b>(Alias name: rate-by)</b>  Cos queue rate by kbps or percent. <span class="li-normal">type: str</span> <span class="li-normal">choices: [kbps, percent]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>

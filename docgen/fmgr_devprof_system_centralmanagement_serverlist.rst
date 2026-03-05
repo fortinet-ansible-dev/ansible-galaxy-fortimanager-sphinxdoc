@@ -11,10 +11,10 @@ fmgr_devprof_system_centralmanagement_serverlist -- Additional severs that the F
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof_system_centralmanagement_serverlist</span> - Additional severs that the FortiGate can use for updates <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">addr_type</span> <b>(Alias name: addr-type)</b>  Indicate whether the fortigate communicates with the override server using an ipv4 address, an ipv6 address or a fqdn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fqdn, ipv4, ipv6]</span> 
+ <li><span class="li-head">addr_type</span> <b>(Alias name: addr-type)</b>  Indicate whether the fortigate communicates with the override server using an ipv4 address, an ipv6 address or a fqdn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fqdn, ipv4, ipv6]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -140,7 +140,7 @@ Examples
             server_type:
               - update
               - rating
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

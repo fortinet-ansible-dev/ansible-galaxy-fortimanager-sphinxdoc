@@ -11,10 +11,10 @@ fmgr_router_routemap_rule -- Rule.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">route_map</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">router_routemap_rule</span> - Rule. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [permit, deny]</span> 
+ <li><span class="li-head">action</span> Action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [permit, deny]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -90,7 +90,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">match_community_exact</span> <b>(Alias name: match-community-exact)</b>  Enable/disable exact matching of communities. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">match_community_exact</span> <b>(Alias name: match-community-exact)</b>  Enable/disable exact matching of communities. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -138,13 +138,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">match_origin</span> <b>(Alias name: match-origin)</b>  Match bgp origin code. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, egp, igp, incomplete]</span> 
+ <li><span class="li-head">match_origin</span> <b>(Alias name: match-origin)</b>  Match bgp origin code. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, egp, igp, incomplete]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">match_route_type</span> <b>(Alias name: match-route-type)</b>  Match route type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, none, external-type1, external-type2]</span> 
+ <li><span class="li-head">match_route_type</span> <b>(Alias name: match-route-type)</b>  Match route type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, none, external-type1, external-type2]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -180,13 +180,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_aspath_action</span> <b>(Alias name: set-aspath-action)</b>  Specify preferred action of set-aspath. <span class="li-normal">type: str</span> <span class="li-normal">choices: [prepend, replace]</span> 
+ <li><span class="li-head">set_aspath_action</span> <b>(Alias name: set-aspath-action)</b>  Specify preferred action of set-aspath. <span class="li-normal">type: str</span> <span class="li-normal">choices: [prepend, replace]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_atomic_aggregate</span> <b>(Alias name: set-atomic-aggregate)</b>  Enable/disable bgp atomic aggregate attribute. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">set_atomic_aggregate</span> <b>(Alias name: set-atomic-aggregate)</b>  Enable/disable bgp atomic aggregate attribute. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -198,7 +198,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_community_additive</span> <b>(Alias name: set-community-additive)</b>  Enable/disable adding set-community to existing community. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">set_community_additive</span> <b>(Alias name: set-community-additive)</b>  Enable/disable adding set-community to existing community. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -288,13 +288,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_metric_type</span> <b>(Alias name: set-metric-type)</b>  Metric type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, none, external-type1, external-type2]</span> 
+ <li><span class="li-head">set_metric_type</span> <b>(Alias name: set-metric-type)</b>  Metric type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, none, external-type1, external-type2]</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">set_origin</span> <b>(Alias name: set-origin)</b>  Bgp origin code. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, egp, igp, incomplete]</span> 
+ <li><span class="li-head">set_origin</span> <b>(Alias name: set-origin)</b>  Bgp origin code. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, egp, igp, incomplete]</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -336,7 +336,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">match_extcommunity_exact</span> <b>(Alias name: match-extcommunity-exact)</b>  Enable/disable exact matching of extended communities. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">match_extcommunity_exact</span> <b>(Alias name: match-extcommunity-exact)</b>  Enable/disable exact matching of extended communities. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
@@ -364,6 +364,12 @@ Parameters
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">match_suppress</span> <b>(Alias name: match-suppress)</b>  Enable/disable matching of suppressed original neighbor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -454,6 +460,7 @@ Examples
             # set_vpnv4_nexthop: <string>
             # set_vpnv6_nexthop: <string>
             # set_vpnv6_nexthop_local: <string>
+            # match_suppress: <value in [disable, enable]>
 
 
 Return Values

@@ -11,10 +11,10 @@ fmgr_dlp_profile_rule -- Set up DLP rules for this profile.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,13 +66,13 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">dlp_profile_rule</span> - Set up DLP rules for this profile. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action to take with content that this dlp profile matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block, quarantine-ip, allow]</span> 
+ <li><span class="li-head">action</span> Action to take with content that this dlp profile matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block, quarantine-ip, allow]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">archive</span> Enable/disable dlp archiving. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">archive</span> Enable/disable dlp archiving. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -96,7 +96,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter_by</span> <b>(Alias name: filter-by)</b>  Select the type of content to match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fingerprint, sensor, encrypted, none, mip, label]</span> 
+ <li><span class="li-head">filter_by</span> <b>(Alias name: filter-by)</b>  Select the type of content to match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fingerprint, sensor, encrypted, none, mip, label]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -126,7 +126,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span> 
+ <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -144,13 +144,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> Select the severity or threat level that matches this filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [info, low, medium, high, critical]</span> 
+ <li><span class="li-head">severity</span> Select the severity or threat level that matches this filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [info, low, medium, high, critical]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Select whether to check the content of messages (an email message) or files (downloaded files or email attachments). <span class="li-normal">type: str</span> <span class="li-normal">choices: [file, message]</span> 
+ <li><span class="li-head">type</span> Select whether to check the content of messages (an email message) or files (downloaded files or email attachments). <span class="li-normal">type: str</span> <span class="li-normal">choices: [file, message]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>

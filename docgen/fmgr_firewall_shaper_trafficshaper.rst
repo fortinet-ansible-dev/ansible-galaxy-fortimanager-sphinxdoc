@@ -11,10 +11,10 @@ fmgr_firewall_shaper_trafficshaper -- Configure shared traffic shaper.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">firewall_shaper_trafficshaper</span> - Configure shared traffic shaper. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">bandwidth_unit</span> <b>(Alias name: bandwidth-unit)</b>  Unit of measurement for guaranteed and maximum bandwidth for this shaper (kbps, mbps or gbps). <span class="li-normal">type: str</span> <span class="li-normal">choices: [kbps, mbps, gbps]</span> 
+ <li><span class="li-head">bandwidth_unit</span> <b>(Alias name: bandwidth-unit)</b>  Unit of measurement for guaranteed and maximum bandwidth for this shaper (kbps, mbps or gbps). <span class="li-normal">type: str</span> <span class="li-normal">choices: [kbps, mbps, gbps]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">diffserv</span> Enable/disable changing the diffserv setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">diffserv</span> Enable/disable changing the diffserv setting applied to traffic accepted by this shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -101,19 +101,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">per_policy</span> <b>(Alias name: per-policy)</b>  Enable/disable applying a separate shaper for each policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">per_policy</span> <b>(Alias name: per-policy)</b>  Enable/disable applying a separate shaper for each policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Higher priority traffic is more likely to be forwarded without delays and without compromising the guaranteed bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, medium, low]</span> 
+ <li><span class="li-head">priority</span> Higher priority traffic is more likely to be forwarded without delays and without compromising the guaranteed bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, medium, low]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dscp_marking_method</span> <b>(Alias name: dscp-marking-method)</b>  Select dscp marking method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multi-stage, static]</span> 
+ <li><span class="li-head">dscp_marking_method</span> <b>(Alias name: dscp-marking-method)</b>  Select dscp marking method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multi-stage, static]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -155,13 +155,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cos_marking</span> <b>(Alias name: cos-marking)</b>  Enable/disable vlan cos marking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">cos_marking</span> <b>(Alias name: cos-marking)</b>  Enable/disable vlan cos marking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cos_marking_method</span> <b>(Alias name: cos-marking-method)</b>  Select vlan cos marking method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multi-stage, static]</span> 
+ <li><span class="li-head">cos_marking_method</span> <b>(Alias name: cos-marking-method)</b>  Select vlan cos marking method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multi-stage, static]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -217,7 +217,7 @@ Examples
             name: "ansible"
             per_policy: disable
             priority: medium # <value in [high, medium, low]>
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

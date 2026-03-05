@@ -11,10 +11,10 @@ fmgr_switchcontroller_fortilinksettings -- Configure integrated FortiLink settin
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">link_down_flush</span> <b>(Alias name: link-down-flush)</b>  Clear nac and dynamic devices on switch ports on link down event. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">link_down_flush</span> <b>(Alias name: link-down-flush)</b>  Clear nac and dynamic devices on switch ports on link down event. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">lan_segment</span> <b>(Alias name: lan-segment)</b>  Enable/disable lan segment feature on the fortilink interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span> 
+ <li><span class="li-head">lan_segment</span> <b>(Alias name: lan-segment)</b>  Enable/disable lan segment feature on the fortilink interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -125,7 +125,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bounce_nac_port</span> <b>(Alias name: bounce-nac-port)</b>  Enable/disable bouncing (administratively bring the link down, up) of a switch port when nac mode is configured on the port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">bounce_nac_port</span> <b>(Alias name: bounce-nac-port)</b>  Enable/disable bouncing (administratively bring the link down, up) of a switch port when nac mode is configured on the port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -139,7 +139,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">access_vlan_mode</span> <b>(Alias name: access-vlan-mode)</b>  Intra vlan traffic behavior with loss of connection to the fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, fail-open, fail-close]</span> 
+ <li><span class="li-head">access_vlan_mode</span> <b>(Alias name: access-vlan-mode)</b>  Intra vlan traffic behavior with loss of connection to the fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, fail-open, fail-close]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>

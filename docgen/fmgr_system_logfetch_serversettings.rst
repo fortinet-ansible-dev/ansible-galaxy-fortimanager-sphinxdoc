@@ -11,10 +11,10 @@ fmgr_system_logfetch_serversettings -- Log-fetch server settings.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,19 +62,19 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_logfetch_serversettings</span> - Log-fetch server settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">max_conn_per_session</span> <b>(Alias name: max-conn-per-session)</b>  Max concurrent file download connections per session. <span class="li-normal">type: int</span> <span class="li-normal">default: 3</span> 
+ <li><span class="li-head">max_conn_per_session</span> <b>(Alias name: max-conn-per-session)</b>  Max concurrent file download connections per session. <span class="li-normal">type: int</span> <span class="li-normal">default: 3</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">max_sessions</span> <b>(Alias name: max-sessions)</b>  Max concurrent fetch sessions. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span> 
+ <li><span class="li-head">max_sessions</span> <b>(Alias name: max-sessions)</b>  Max concurrent fetch sessions. <span class="li-normal">type: int</span> <span class="li-normal">default: 1</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">session_timeout</span> <b>(Alias name: session-timeout)</b>  Fetch session timeout in minute. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
+ <li><span class="li-head">session_timeout</span> <b>(Alias name: session-timeout)</b>  Fetch session timeout in minute. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>

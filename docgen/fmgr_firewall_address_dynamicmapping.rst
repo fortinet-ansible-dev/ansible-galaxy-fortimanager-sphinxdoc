@@ -11,10 +11,10 @@ fmgr_firewall_address_dynamicmapping -- Configure IPv4 addresses.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -86,7 +86,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">allow_routing</span> <b>(Alias name: allow-routing)</b>  Allow routing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_routing</span> <b>(Alias name: allow-routing)</b>  Allow routing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -176,13 +176,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sdn</span> Sdn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack]</span> 
+ <li><span class="li-head">sdn</span> Sdn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [aci, aws, nsx, nuage, azure, gcp, oci, openstack]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sdn_addr_type</span> <b>(Alias name: sdn-addr-type)</b>  Sdn addr type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [private, public, all]</span> 
+ <li><span class="li-head">sdn_addr_type</span> <b>(Alias name: sdn-addr-type)</b>  Sdn addr type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [private, public, all]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -230,7 +230,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, url, wildcard-fqdn, nsx, aws, dynamic, interface-subnet, mac, fqdn-group, route-tag]</span> 
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipmask, iprange, fqdn, wildcard, geography, url, wildcard-fqdn, nsx, aws, dynamic, interface-subnet, mac, fqdn-group, route-tag]</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -248,7 +248,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">visibility</span> Visibility. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">visibility</span> Visibility. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -272,7 +272,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">clearpass_spt</span> <b>(Alias name: clearpass-spt)</b>  Clearpass spt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, healthy, quarantine, checkup, transition, infected, transient]</span> 
+ <li><span class="li-head">clearpass_spt</span> <b>(Alias name: clearpass-spt)</b>  Clearpass spt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, healthy, quarantine, checkup, transition, infected, transient]</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -284,7 +284,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete, telemetry]</span> 
+ <li><span class="li-head">sub_type</span> <b>(Alias name: sub-type)</b>  Sub type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sdn, clearpass-spt, fsso, ems-tag, swc-tag, fortivoice-tag, fortinac-tag, fortipolicy-tag, device-identification, rsso, external-resource, obsolete, telemetry]</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -302,13 +302,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">obj_type</span> <b>(Alias name: obj-type)</b>  Obj type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ip, mac]</span> 
+ <li><span class="li-head">obj_type</span> <b>(Alias name: obj-type)</b>  Obj type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ip, mac]</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fabric_object</span> <b>(Alias name: fabric-object)</b>  Security fabric global object setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">fabric_object</span> <b>(Alias name: fabric-object)</b>  Security fabric global object setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
@@ -320,13 +320,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">node_ip_only</span> <b>(Alias name: node-ip-only)</b>  Enable/disable collection of node addresses only in kubernetes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">node_ip_only</span> <b>(Alias name: node-ip-only)</b>  Enable/disable collection of node addresses only in kubernetes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dirty</span> To be deleted address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dirty, clean]</span> 
+ <li><span class="li-head">dirty</span> To be deleted address. <span class="li-normal">type: str</span> <span class="li-normal">choices: [dirty, clean]</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
@@ -404,6 +404,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">passive_fqdn_learning</span> <b>(Alias name: passive-fqdn-learning)</b>  Enable/disable passive learning of fqdns. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -449,7 +455,7 @@ Examples
             subnet_name: "ansible-test"
             type: ipmask # <value in [ipmask, iprange, fqdn, ...]>
             visibility: enable
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

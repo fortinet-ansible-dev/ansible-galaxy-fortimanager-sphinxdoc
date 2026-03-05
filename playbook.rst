@@ -29,6 +29,7 @@ With Standard User/password authentication
    [fortimanagers:vars]
    ansible_connection=httpapi
    ansible_network_os=fortinet.fortimanager.fortimanager
+   ansible_facts_modules=setup
    ansible_httpapi_port=443
    ansible_httpapi_use_ssl=true
    #  Disabling TLS certificate verification is a bad idea on security point of view, 
@@ -50,6 +51,7 @@ With REST API user token based authentication
    [fortimanagers:vars]
    ansible_connection=httpapi
    ansible_network_os=fortinet.fortimanager.fortimanager
+   ansible_facts_modules=setup
    ansible_httpapi_port=443
    ansible_httpapi_use_ssl=true
    #  Disabling TLS certificate verification is a bad idea on security point of view, 

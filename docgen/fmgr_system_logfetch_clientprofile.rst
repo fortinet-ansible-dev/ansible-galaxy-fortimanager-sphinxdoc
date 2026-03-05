@@ -11,10 +11,10 @@ fmgr_system_logfetch_clientprofile -- Log-fetch client profile settings.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -69,13 +69,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">data_range</span> <b>(Alias name: data-range)</b>  Data-range for fetched logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [custom]</span>  <span class="li-normal">default: custom</span> 
+ <li><span class="li-head">data_range</span> <b>(Alias name: data-range)</b>  Data-range for fetched logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [custom]</span>  <span class="li-normal">default: custom</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">data_range_value</span> <b>(Alias name: data-range-value)</b>  Last n days or hours. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span> 
+ <li><span class="li-head">data_range_value</span> <b>(Alias name: data-range-value)</b>  Last n days or hours. <span class="li-normal">type: int</span> <span class="li-normal">default: 10</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -87,25 +87,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">adom</span> Adom name. <span class="li-normal">type: str</span> <span class="li-normal">default: *</span> 
+ <li><span class="li-head">adom</span> Adom name. <span class="li-normal">type: str</span> <span class="li-normal">default: *</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">device</span> Device name or serial number. <span class="li-normal">type: str</span> <span class="li-normal">default: *</span> 
+ <li><span class="li-head">device</span> Device name or serial number. <span class="li-normal">type: str</span> <span class="li-normal">default: *</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> Add or edit a device filter. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <li><span class="li-head">id</span> Add or edit a device filter. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom</span> Vdom filters. <span class="li-normal">type: str</span> <span class="li-normal">default: *</span> 
+ <li><span class="li-head">vdom</span> Vdom filters. <span class="li-normal">type: str</span> <span class="li-normal">default: *</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -119,13 +119,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> Log-fetch client profile id. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <li><span class="li-head">id</span> Log-fetch client profile id. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">index_fetch_logs</span> <b>(Alias name: index-fetch-logs)</b>  Enable/disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">index_fetch_logs</span> <b>(Alias name: index-fetch-logs)</b>  Enable/disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -143,13 +143,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> Log filter id. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <li><span class="li-head">id</span> Log filter id. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">oper</span> Field filter operator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span>  <span class="li-normal">default: =</span> 
+ <li><span class="li-head">oper</span> Field filter operator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span>  <span class="li-normal">default: =</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -163,13 +163,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">log_filter_logic</span> <b>(Alias name: log-filter-logic)</b>  And/or logic for log-filters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [and, or]</span>  <span class="li-normal">default: or</span> 
+ <li><span class="li-head">log_filter_logic</span> <b>(Alias name: log-filter-logic)</b>  And/or logic for log-filters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [and, or]</span>  <span class="li-normal">default: or</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">log_filter_status</span> <b>(Alias name: log-filter-status)</b>  Enable/disable log-filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">log_filter_status</span> <b>(Alias name: log-filter-status)</b>  Enable/disable log-filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -187,7 +187,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">secure_connection</span> <b>(Alias name: secure-connection)</b>  Enable/disable protecting log-fetch connection with tls/ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span> 
+ <li><span class="li-head">secure_connection</span> <b>(Alias name: secure-connection)</b>  Enable/disable protecting log-fetch connection with tls/ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -199,7 +199,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">server_ip</span> <b>(Alias name: server-ip)</b>  Log-fetch server ip address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span> 
+ <li><span class="li-head">server_ip</span> <b>(Alias name: server-ip)</b>  Log-fetch server ip address. <span class="li-normal">type: str</span> <span class="li-normal">default: 0.0.0.0</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -211,7 +211,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">sync_adom_config</span> <b>(Alias name: sync-adom-config)</b>  Enable/disable sync adom related config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
+ <li><span class="li-head">sync_adom_config</span> <b>(Alias name: sync-adom-config)</b>  Enable/disable sync adom related config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -269,7 +269,7 @@ Examples
             password: fortinet
             server_ip: "222.222.22.25"
             user: ansible
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

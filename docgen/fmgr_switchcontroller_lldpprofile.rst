@@ -11,10 +11,10 @@ fmgr_switchcontroller_lldpprofile -- Configure FortiSwitch LLDP profiles.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,19 +65,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">switchcontroller_lldpprofile</span> - Configure FortiSwitch LLDP profiles. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">802_1_tlvs</span> <b>(Alias name: 802.1-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [port-vlan-id]</span> 
+ <li><span class="li-head">802_1_tlvs</span> <b>(Alias name: 802.1-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [port-vlan-id]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">802_3_tlvs</span> <b>(Alias name: 802.3-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [max-frame-size, power-negotiation]</span> 
+ <li><span class="li-head">802_3_tlvs</span> <b>(Alias name: 802.3-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [max-frame-size, power-negotiation]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_isl</span> <b>(Alias name: auto-isl)</b>  Enable/disable auto inter-switch lag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auto_isl</span> <b>(Alias name: auto-isl)</b>  Enable/disable auto inter-switch lag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -157,7 +157,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable or disable this tlv. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable or disable this tlv. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -175,7 +175,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">assign_vlan</span> <b>(Alias name: assign-vlan)</b>  Enable/disable vlan assignment when this profile is applied on managed fortiswitch port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">assign_vlan</span> <b>(Alias name: assign-vlan)</b>  Enable/disable vlan assignment when this profile is applied on managed fortiswitch port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -183,7 +183,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">med_tlvs</span> <b>(Alias name: med-tlvs)</b>  Transmitted lldp-med tlvs (type-length-value descriptions): inventory management tlv and/or network policy tlv. <span class="li-normal">type: list</span> <span class="li-normal">choices: [inventory-management, network-policy, power-management, location-identification]</span> 
+ <li><span class="li-head">med_tlvs</span> <b>(Alias name: med-tlvs)</b>  Transmitted lldp-med tlvs (type-length-value descriptions): inventory management tlv and/or network policy tlv. <span class="li-normal">type: list</span> <span class="li-normal">choices: [inventory-management, network-policy, power-management, location-identification]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -207,7 +207,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable or disable this tlv. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable or disable this tlv. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -221,19 +221,19 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">auto_mclag_icl</span> <b>(Alias name: auto-mclag-icl)</b>  Enable/disable mclag inter chassis link. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auto_mclag_icl</span> <b>(Alias name: auto-mclag-icl)</b>  Enable/disable mclag inter chassis link. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_isl_auth</span> <b>(Alias name: auto-isl-auth)</b>  Auto inter-switch lag authentication mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, strict, relax]</span> 
+ <li><span class="li-head">auto_isl_auth</span> <b>(Alias name: auto-isl-auth)</b>  Auto inter-switch lag authentication mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [legacy, strict, relax]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_isl_auth_encrypt</span> <b>(Alias name: auto-isl-auth-encrypt)</b>  Auto inter-switch lag encryption mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, mixed, must]</span> 
+ <li><span class="li-head">auto_isl_auth_encrypt</span> <b>(Alias name: auto-isl-auth-encrypt)</b>  Auto inter-switch lag encryption mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, mixed, must]</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>

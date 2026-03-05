@@ -11,10 +11,10 @@ fmgr_ips_baseline_sensor_filter -- Ips baseline sensor filter.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">sensor</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ips_baseline_sensor_filter</span> - Ips baseline sensor filter <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action of selected rules. <span class="li-normal">type: str</span> <span class="li-normal">choices: [pass, block, default, reset]</span> 
+ <li><span class="li-head">action</span> Action of selected rules. <span class="li-normal">type: str</span> <span class="li-normal">choices: [pass, block, default, reset]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -96,13 +96,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">log</span> Enable/disable logging of selected rules. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, default]</span> 
+ <li><span class="li-head">log</span> Enable/disable logging of selected rules. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, default]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">log_packet</span> <b>(Alias name: log-packet)</b>  Enable/disable packet logging of selected rules. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, default]</span> 
+ <li><span class="li-head">log_packet</span> <b>(Alias name: log-packet)</b>  Enable/disable packet logging of selected rules. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, default]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -138,7 +138,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">quarantine</span> Quarantine ip or interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, attacker, both, interface]</span> 
+ <li><span class="li-head">quarantine</span> Quarantine ip or interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, attacker, both, interface]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -150,7 +150,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">quarantine_log</span> <b>(Alias name: quarantine-log)</b>  Enable/disable logging of selected quarantine. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">quarantine_log</span> <b>(Alias name: quarantine-log)</b>  Enable/disable logging of selected quarantine. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
@@ -168,7 +168,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Selected rules status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, default]</span> 
+ <li><span class="li-head">status</span> Selected rules status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, default]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> v7.0.2</code></p>

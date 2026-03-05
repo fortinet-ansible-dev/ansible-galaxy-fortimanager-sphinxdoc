@@ -11,10 +11,10 @@ fmgr_webfilter_profile_antiphish -- AntiPhishing profile.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_profile_antiphish</span> - AntiPhishing profile. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">check_basic_auth</span> <b>(Alias name: check-basic-auth)</b>  Enable/disable checking of http basic auth field for known credentials. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">check_basic_auth</span> <b>(Alias name: check-basic-auth)</b>  Enable/disable checking of http basic auth field for known credentials. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">check_uri</span> <b>(Alias name: check-uri)</b>  Enable/disable checking of get uri parameters for known credentials. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">check_uri</span> <b>(Alias name: check-uri)</b>  Enable/disable checking of get uri parameters for known credentials. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">category</span> Category that the pattern matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [username, password]</span> 
+ <li><span class="li-head">category</span> Category that the pattern matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [username, password]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -95,7 +95,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Pattern will be treated either as a regex pattern or literal string. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regex, literal]</span> 
+ <li><span class="li-head">type</span> Pattern will be treated either as a regex pattern or literal string. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regex, literal]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -103,7 +103,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">default_action</span> <b>(Alias name: default-action)</b>  Action to be taken when there is no matching rule. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log, block, exempt]</span> 
+ <li><span class="li-head">default_action</span> <b>(Alias name: default-action)</b>  Action to be taken when there is no matching rule. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log, block, exempt]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -121,7 +121,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action to be taken upon an antiphishing match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log, block, exempt]</span> 
+ <li><span class="li-head">action</span> Action to be taken upon an antiphishing match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log, block, exempt]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -147,19 +147,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Toggle antiphishing functionality. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Toggle antiphishing functionality. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">check_username_only</span> <b>(Alias name: check-username-only)</b>  Enable/disable acting only on valid username credentials. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">check_username_only</span> <b>(Alias name: check-username-only)</b>  Enable/disable acting only on valid username credentials. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authentication</span> Authentication methods. <span class="li-normal">type: str</span> <span class="li-normal">choices: [domain-controller, ldap]</span> 
+ <li><span class="li-head">authentication</span> Authentication methods. <span class="li-normal">type: str</span> <span class="li-normal">choices: [domain-controller, ldap]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>

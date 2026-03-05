@@ -11,10 +11,10 @@ fmgr_extensioncontroller_extenderprofile_lanextension_backhaul -- LAN extension 
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -72,13 +72,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Fortiextender uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wan, lte1, lte2, port1, port2, port3, port4, port5, sfp]</span> 
+ <li><span class="li-head">port</span> Fortiextender uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wan, lte1, lte2, port1, port2, port3, port4, port5, sfp]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">role</span> Fortiextender uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [primary, secondary]</span> 
+ <li><span class="li-head">role</span> Fortiextender uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [primary, secondary]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -88,6 +88,36 @@ Parameters
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">health_check_fail_cnt</span> <b>(Alias name: health-check-fail-cnt)</b>  Number of failures before the link is considered dead (1 - 10, default = 5). <span class="li-normal">type: int</span>
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">health_check_interval</span> <b>(Alias name: health-check-interval)</b>  Health monitoring interval in seconds (1 - 3600, default = 5). <span class="li-normal">type: int</span>
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">health_check_probe_cnt</span> <b>(Alias name: health-check-probe-cnt)</b>  Number of health monitoring probes to send within an interval (1 - 10, default = 1). <span class="li-normal">type: int</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">health_check_probe_tm</span> <b>(Alias name: health-check-probe-tm)</b>  Health monitoring probe timeout in seconds (1 - 10, default = 2). <span class="li-normal">type: int</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">health_check_recovery_cnt</span> <b>(Alias name: health-check-recovery-cnt)</b>  Number of successful checks before the link is considered alive (1 - 10, default = 5). <span class="li-normal">type: int</span>
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -132,6 +162,11 @@ Examples
             # port: <value in [wan, lte1, lte2, ...]>
             # role: <value in [primary, secondary]>
             # weight: <integer>
+            # health_check_fail_cnt: <integer>
+            # health_check_interval: <integer>
+            # health_check_probe_cnt: <integer>
+            # health_check_probe_tm: <integer>
+            # health_check_recovery_cnt: <integer>
 
 
 Return Values

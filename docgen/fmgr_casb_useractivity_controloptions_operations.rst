@@ -11,10 +11,10 @@ fmgr_casb_useractivity_controloptions_operations -- CASB control option operatio
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -67,19 +67,19 @@ Parameters
  <li><span class="li-head">control_options</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">casb_useractivity_controloptions_operations</span> - CASB control option operations. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Casb operation action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [append, prepend, replace, new, new-on-not-found, delete]</span> 
+ <li><span class="li-head">action</span> Casb operation action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [append, prepend, replace, new, new-on-not-found, delete]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">case_sensitive</span> <b>(Alias name: case-sensitive)</b>  Casb operation search case sensitive. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">case_sensitive</span> <b>(Alias name: case-sensitive)</b>  Casb operation search case sensitive. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">direction</span> Casb operation direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request, response]</span> 
+ <li><span class="li-head">direction</span> Casb operation direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request, response]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -103,19 +103,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">search_pattern</span> <b>(Alias name: search-pattern)</b>  Casb operation search pattern. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, substr, regexp]</span> 
+ <li><span class="li-head">search_pattern</span> <b>(Alias name: search-pattern)</b>  Casb operation search pattern. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, substr, regexp]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">target</span> Casb operation target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path, body]</span> 
+ <li><span class="li-head">target</span> Casb operation target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path, body]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">value_from_input</span> <b>(Alias name: value-from-input)</b>  Enable/disable value from user input. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">value_from_input</span> <b>(Alias name: value-from-input)</b>  Enable/disable value from user input. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>

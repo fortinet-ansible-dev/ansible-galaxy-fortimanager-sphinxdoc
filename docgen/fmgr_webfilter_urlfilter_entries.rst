@@ -11,10 +11,10 @@ fmgr_webfilter_urlfilter_entries -- URL filter entries.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,19 +66,19 @@ Parameters
  <li><span class="li-head">urlfilter</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">webfilter_urlfilter_entries</span> - URL filter entries. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action to take for url filter matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [exempt, block, allow, monitor, pass]</span> 
+ <li><span class="li-head">action</span> Action to take for url filter matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [exempt, block, allow, monitor, pass]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dns_address_family</span> <b>(Alias name: dns-address-family)</b>  Resolve ipv4 address, ipv6 address, or both from dns server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4, ipv6, both]</span> 
+ <li><span class="li-head">dns_address_family</span> <b>(Alias name: dns-address-family)</b>  Resolve ipv4 address, ipv6 address, or both from dns server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4, ipv6, both]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">exempt</span> If action is set to exempt, select the security profile operations that exempt urls skip. <span class="li-normal">type: list</span> <span class="li-normal">choices: [av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish]</span> 
+ <li><span class="li-head">exempt</span> If action is set to exempt, select the security profile operations that exempt urls skip. <span class="li-normal">type: list</span> <span class="li-normal">choices: [av, web-content, activex-java-cookie, dlp, fortiguard, all, filepattern, pass, range-block, antiphish]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -96,13 +96,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable this url filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable this url filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Filter type (simple, regex, or wildcard). <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, regex, wildcard]</span> 
+ <li><span class="li-head">type</span> Filter type (simple, regex, or wildcard). <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, regex, wildcard]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -120,7 +120,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">antiphish_action</span> <b>(Alias name: antiphish-action)</b>  Action to take for antiphishing matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log]</span> 
+ <li><span class="li-head">antiphish_action</span> <b>(Alias name: antiphish-action)</b>  Action to take for antiphishing matches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>

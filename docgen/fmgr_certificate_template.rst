@@ -11,10 +11,10 @@ fmgr_certificate_template -- Certificate template.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">digest_type</span> <b>(Alias name: digest-type)</b>  Digest type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span>  <span class="li-normal">default: sha1</span> 
+ <li><span class="li-head">digest_type</span> <b>(Alias name: digest-type)</b>  Digest type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span>  <span class="li-normal">default: sha1</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -89,19 +89,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id_type</span> <b>(Alias name: id-type)</b>  Id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-ip, domain-name, email]</span>  <span class="li-normal">default: host-ip</span> 
+ <li><span class="li-head">id_type</span> <b>(Alias name: id-type)</b>  Id type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-ip, domain-name, email]</span>  <span class="li-normal">default: host-ip</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_size</span> <b>(Alias name: key-size)</b>  Key size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [512, 1024, 1536, 2048, 4096]</span>  <span class="li-normal">default: 2048</span> 
+ <li><span class="li-head">key_size</span> <b>(Alias name: key-size)</b>  Key size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [512, 1024, 1536, 2048, 4096]</span>  <span class="li-normal">default: 2048</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Key type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa, ec]</span>  <span class="li-normal">default: rsa</span> 
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Key type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa, ec]</span>  <span class="li-normal">default: rsa</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -149,13 +149,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [external, local]</span>  <span class="li-normal">default: external</span> 
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [external, local]</span>  <span class="li-normal">default: external</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">curve_name</span> <b>(Alias name: curve-name)</b>  Curve name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [secp256r1, secp384r1, secp521r1]</span>  <span class="li-normal">default: secp256r1</span> 
+ <li><span class="li-head">curve_name</span> <b>(Alias name: curve-name)</b>  Curve name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [secp256r1, secp384r1, secp521r1]</span>  <span class="li-normal">default: secp256r1</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -170,7 +170,7 @@ Parameters
  <li><span class="li-head">subject_alt_name</span> <b>(Alias name: subject-alt-name)</b>  Support meta variable <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -212,7 +212,7 @@ Examples
             name: "ansible-test"
             scep_password: "fortinet1"
             type: external
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

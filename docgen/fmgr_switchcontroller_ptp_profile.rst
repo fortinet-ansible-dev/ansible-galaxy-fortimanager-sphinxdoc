@@ -11,10 +11,10 @@ fmgr_switchcontroller_ptp_profile -- Global PTP profile.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Select ptp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [transparent-e2e, transparent-p2p]</span> 
+ <li><span class="li-head">mode</span> Select ptp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [transparent-e2e, transparent-p2p]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -89,19 +89,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pdelay_req_interval</span> <b>(Alias name: pdelay-req-interval)</b>  Configure ptp peer delay request interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1sec, 2sec, 4sec, 8sec, 16sec, 32sec]</span> 
+ <li><span class="li-head">pdelay_req_interval</span> <b>(Alias name: pdelay-req-interval)</b>  Configure ptp peer delay request interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1sec, 2sec, 4sec, 8sec, 16sec, 32sec]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ptp_profile</span> <b>(Alias name: ptp-profile)</b>  Configure ptp power profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [C37.238-2017]</span> 
+ <li><span class="li-head">ptp_profile</span> <b>(Alias name: ptp-profile)</b>  Configure ptp power profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [C37.238-2017]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">transport</span> Configure ptp transport mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [l2-mcast]</span> 
+ <li><span class="li-head">transport</span> Configure ptp transport mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [l2-mcast]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>

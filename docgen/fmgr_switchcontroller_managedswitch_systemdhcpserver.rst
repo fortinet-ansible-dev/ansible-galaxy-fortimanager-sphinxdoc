@@ -11,10 +11,10 @@ fmgr_switchcontroller_managedswitch_systemdhcpserver -- Configure DHCP servers.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -90,7 +90,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dns_service</span> <b>(Alias name: dns-service)</b>  Options for assigning dns servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span> 
+ <li><span class="li-head">dns_service</span> <b>(Alias name: dns-service)</b>  Options for assigning dns servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -164,7 +164,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ntp_service</span> <b>(Alias name: ntp-service)</b>  Options for assigning network time protocol (ntp) servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span> 
+ <li><span class="li-head">ntp_service</span> <b>(Alias name: ntp-service)</b>  Options for assigning network time protocol (ntp) servers to dhcp clients. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, local]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -194,7 +194,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string, ip, fqdn]</span> 
+ <li><span class="li-head">type</span> Dhcp option type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hex, string, ip, fqdn]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -208,7 +208,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Enable/disable this dhcp configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable this dhcp configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>

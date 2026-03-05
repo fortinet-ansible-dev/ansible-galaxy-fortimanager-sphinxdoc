@@ -11,10 +11,10 @@ fmgr_apcfgprofile -- Configure AP local configuration profiles.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ac_type</span> <b>(Alias name: ac-type)</b>  Validation controller type (default = default). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, apcfg]</span> 
+ <li><span class="li-head">ac_type</span> <b>(Alias name: ac-type)</b>  Validation controller type (default = default). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, specify, apcfg]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
@@ -113,7 +113,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> The command type (default = non-password). <span class="li-normal">type: str</span> <span class="li-normal">choices: [non-password, password]</span> 
+ <li><span class="li-head">type</span> The command type (default = non-password). <span class="li-normal">type: str</span> <span class="li-normal">choices: [non-password, password]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
@@ -139,7 +139,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ap_family</span> <b>(Alias name: ap-family)</b>  Fortiap family type (default = fap). <span class="li-normal">type: str</span> <span class="li-normal">choices: [fap, fap-u, fap-c]</span> 
+ <li><span class="li-head">ap_family</span> <b>(Alias name: ap-family)</b>  Fortiap family type (default = fap). <span class="li-normal">type: str</span> <span class="li-normal">choices: [fap, fap-u, fap-c]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>

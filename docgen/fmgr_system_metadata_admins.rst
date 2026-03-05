@@ -11,10 +11,10 @@ fmgr_system_metadata_admins -- Configure admins.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_metadata_admins</span> - Configure admins. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">fieldlength</span> Field length. <span class="li-normal">type: str</span> <span class="li-normal">choices: [20, 50, 255]</span>  <span class="li-normal">default: 50</span> 
+ <li><span class="li-head">fieldlength</span> Field length. <span class="li-normal">type: str</span> <span class="li-normal">choices: [20, 50, 255]</span>  <span class="li-normal">default: 50</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -75,13 +75,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">importance</span> Field importance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, required]</span>  <span class="li-normal">default: required</span> 
+ <li><span class="li-head">importance</span> Field importance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, required]</span>  <span class="li-normal">default: required</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Field status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span>  <span class="li-normal">default: enabled</span> 
+ <li><span class="li-head">status</span> Field status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span>  <span class="li-normal">default: enabled</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -123,7 +123,7 @@ Examples
             fieldname: "ansible test"
             importance: optional # <value in [optional, required]>
             status: enabled
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

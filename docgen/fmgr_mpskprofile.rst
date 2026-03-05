@@ -11,10 +11,10 @@ fmgr_mpskprofile -- Configure MPSK profile.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">concurrent_client_limit_type</span> <b>(Alias name: concurrent-client-limit-type)</b>  Mpsk client limit type options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, unlimited, specified]</span> 
+ <li><span class="li-head">concurrent_client_limit_type</span> <b>(Alias name: concurrent-client-limit-type)</b>  Mpsk client limit type options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, unlimited, specified]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -131,7 +131,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select the type of the key. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wpa2-personal, wpa3-sae]</span> 
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select the type of the key. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wpa2-personal, wpa3-sae]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -143,7 +143,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sae_pk</span> <b>(Alias name: sae-pk)</b>  Enable/disable wpa3 sae-pk (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">sae_pk</span> <b>(Alias name: sae-pk)</b>  Enable/disable wpa3 sae-pk (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -169,7 +169,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vlan_type</span> <b>(Alias name: vlan-type)</b>  Mpsk group vlan options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no-vlan, fixed-vlan]</span> 
+ <li><span class="li-head">vlan_type</span> <b>(Alias name: vlan-type)</b>  Mpsk group vlan options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no-vlan, fixed-vlan]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -195,13 +195,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mpsk_external_server_auth</span> <b>(Alias name: mpsk-external-server-auth)</b>  Enable/disable mpsk external server authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">mpsk_external_server_auth</span> <b>(Alias name: mpsk-external-server-auth)</b>  Enable/disable mpsk external server authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mpsk_type</span> <b>(Alias name: mpsk-type)</b>  Select the security type of keys for this profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wpa2-personal, wpa3-sae, wpa3-sae-transition]</span> 
+ <li><span class="li-head">mpsk_type</span> <b>(Alias name: mpsk-type)</b>  Select the security type of keys for this profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wpa2-personal, wpa3-sae, wpa3-sae-transition]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
