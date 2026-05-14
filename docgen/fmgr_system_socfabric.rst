@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -80,19 +80,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">role</span> Enable or disable soc fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [member, supervisor]</span>  <span class="li-normal">default: member</span>
+ <li><span class="li-head">role</span> Enable or disable soc fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [member, supervisor]</span> <span class="li-normal">default: member</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secure_connection</span> <b>(Alias name: secure-connection)</b>  Enable or disable ssl/tls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">secure_connection</span> <b>(Alias name: secure-connection)</b>  Enable or disable ssl/tls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable or disable soc fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Enable or disable soc fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -146,18 +146,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SOC Fabric.
         fortinet.fortimanager.fmgr_system_socfabric:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_socfabric:
             # name: <string>
             # port: <integer>

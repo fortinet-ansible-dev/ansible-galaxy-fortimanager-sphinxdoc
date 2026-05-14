@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -76,7 +76,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">oper</span> Field filter operator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span>  <span class="li-normal">default: =</span>
+ <li><span class="li-head">oper</span> Field filter operator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span> <span class="li-normal">default: =</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>

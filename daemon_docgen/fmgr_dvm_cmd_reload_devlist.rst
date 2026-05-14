@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -73,7 +73,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">from</span> From. <span class="li-normal">type: str</span> <span class="li-normal">choices: [um, fgfm, apache, dvm, fwm, xml, json]</span>  <span class="li-normal">default: json</span>
+ <li><span class="li-head">from</span> From. <span class="li-normal">type: str</span> <span class="li-normal">choices: [um, fgfm, apache, dvm, fwm, xml, json]</span> <span class="li-normal">default: json</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -127,25 +127,13 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Retrieve a list of devices.
         fortinet.fortimanager.fmgr_dvm_cmd_reload_devlist:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           dvm_cmd_reload_devlist:
             # adom: <string>
-            # flags:
-            #   - "none"
-            #   - "create_task"
-            #   - "nonblocking"
-            #   - "log_dev"
+            # flags: ["none", "create_task", "nonblocking", "log_dev"]
             # from: <value in [um, fgfm, apache, ...]>
             # reload_dev_member_list:
             #   - name: <string>

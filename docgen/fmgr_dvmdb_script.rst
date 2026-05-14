@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -94,13 +94,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter_ostype</span> The value has no effect if target is adom_database. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos]</span>  <span class="li-normal">default: unknown</span>
+ <li><span class="li-head">filter_ostype</span> The value has no effect if target is adom_database. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, fos]</span> <span class="li-normal">default: unknown</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">filter_osver</span> The value will be ignored in add/set/update requests if filter_ostype is not set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 4.00, 5.00, 6.00]</span>  <span class="li-normal">default: unknown</span>
+ <li><span class="li-head">filter_osver</span> The value will be ignored in add/set/update requests if filter_ostype is not set. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 4.00, 5.00, 6.00]</span> <span class="li-normal">default: unknown</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -142,7 +142,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">day_of_week</span> Day of week. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, sun, mon, tue, wed, thu, fri, sat]</span>  <span class="li-normal">default: sun</span>
+ <li><span class="li-head">day_of_week</span> Day of week. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, sun, mon, tue, wed, thu, fri, sat]</span> <span class="li-normal">default: sun</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -160,7 +160,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">run_on_db</span> Indicates if the scheduled script should be executed on device database. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">run_on_db</span> Indicates if the scheduled script should be executed on device database. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -174,7 +174,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">target</span> Target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [device_database, remote_device, adom_database]</span>  <span class="li-normal">default: device_database</span>
+ <li><span class="li-head">target</span> Target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [device_database, remote_device, adom_database]</span> <span class="li-normal">default: device_database</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -204,7 +204,7 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Apply a script to device
+  - name: Apply a script to device (For FMG <= 7.6.4)
     hosts: fortimanagers
     gather_facts: false
     connection: httpapi
@@ -217,6 +217,8 @@ Examples
       device_name: "CustomHostName"
       device_vdom: "root"
     tasks:
+      # For FMG 7.6.4 and earlier, use fmgr_dvmdb_script.
+      # For FMG 7.6.5 and later, use fmgr_fmg_script.
       - name: Create a Script to later execute
         fortinet.fortimanager.fmgr_dvmdb_script:
           adom: "{{ device_adom }}"

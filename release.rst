@@ -2,6 +2,28 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.14.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.14.0
+
+Minor Changes
+-------------
+
+- Added 22 new modules.
+
+Bugfixes
+--------
+
+- Improved the login logic.
+- Reduced the number of requests sent when workspace mode is enabled.
+
+
+|
+
 Release Galaxy 2.13.0
 ~~~~~~~~~~~~~~~~~~~~
 

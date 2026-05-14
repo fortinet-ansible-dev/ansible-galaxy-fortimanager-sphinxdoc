@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -124,7 +124,7 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Apply a script to device
+  - name: Apply a script to device (For FMG <= 7.6.4)
     hosts: fortimanagers
     gather_facts: false
     connection: httpapi
@@ -137,6 +137,8 @@ Examples
       device_name: "CustomHostName"
       device_vdom: "root"
     tasks:
+      # For FMG 7.6.4 and earlier, use fmgr_dvmdb_script.
+      # For FMG 7.6.5 and later, use fmgr_fmg_script.
       - name: Create a Script to later execute
         fortinet.fortimanager.fmgr_dvmdb_script:
           adom: "{{ device_adom }}"
@@ -191,6 +193,54 @@ Examples
               - name: Ansible-test
                 vdom: root
             script: ansible-test
+
+  - name: Create and run script (For FMG 7.6.5+)
+    hosts: fortimanagers
+    gather_facts: false
+    connection: httpapi
+    vars:
+      fmg_adom: "root"
+      script_name: "your_script_name"
+      device_name: "your_device_name"
+      device_vdom: "root"
+      state: "present"
+    tasks:
+      # For FMG 7.6.4 and earlier, use fmgr_dvmdb_script.
+      # For FMG 7.6.5 and later, use fmgr_fmg_script.
+      - name: Create a script (For FMG 7.6.5+)
+        fortinet.fortimanager.fmgr_fmg_script:
+          state: "{{ state }}"
+          adom: "{{ fmg_adom }}"
+          fmg_script:
+            name: "{{ script_name }}"
+            content: |
+              config system global
+                  set remoteauthtimeout 80
+              end
+            type: cli
+            desc: A script created via Ansible
+            target: devdb
+      - name: Run the Script
+        fortinet.fortimanager.fmgr_dvmdb_script_execute:
+          adom: "{{ fmg_adom }}"
+          dvmdb_script_execute:
+            adom: "{{ fmg_adom }}"
+            script: "{{ script_name }}"
+            scope:
+              - name: "{{ device_name }}"
+                vdom: "{{ device_vdom }}"
+        register: running_task
+      - name: Inspect the Task Status
+        fortinet.fortimanager.fmgr_fact:
+          facts:
+            selector: "task_task"
+            params:
+              task: "{{ running_task.meta.response_data.task }}"
+        register: taskinfo
+        until: taskinfo.meta.response_data.percent == 100
+        retries: 30
+        delay: 3
+        failed_when: taskinfo.meta.response_data.state == 'error'
 
 
 Return Values

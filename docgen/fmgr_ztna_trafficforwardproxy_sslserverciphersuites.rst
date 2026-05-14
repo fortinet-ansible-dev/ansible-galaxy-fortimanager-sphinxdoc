@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -106,30 +106,17 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Ztna traffic forward proxy ssl server cipher suites
         fortinet.fortimanager.fmgr_ztna_trafficforwardproxy_sslserverciphersuites:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           traffic_forward_proxy: <your own value>
           state: present # <value in [present, absent]>
           ztna_trafficforwardproxy_sslserverciphersuites:
             # cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
             # priority: <integer>
-            # versions:
-            #   - "ssl-3.0"
-            #   - "tls-1.0"
-            #   - "tls-1.1"
-            #   - "tls-1.2"
-            #   - "tls-1.3"
+            # versions: ["ssl-3.0", "tls-1.0", "tls-1.1", "tls-1.2", "tls-1.3"]
 
 
 Return Values

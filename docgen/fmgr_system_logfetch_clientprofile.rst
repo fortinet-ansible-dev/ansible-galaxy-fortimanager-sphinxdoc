@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -69,7 +69,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">data_range</span> <b>(Alias name: data-range)</b>  Data-range for fetched logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [custom]</span>  <span class="li-normal">default: custom</span>
+ <li><span class="li-head">data_range</span> <b>(Alias name: data-range)</b>  Data-range for fetched logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [custom]</span> <span class="li-normal">default: custom</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -125,7 +125,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">index_fetch_logs</span> <b>(Alias name: index-fetch-logs)</b>  Enable/disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">index_fetch_logs</span> <b>(Alias name: index-fetch-logs)</b>  Enable/disable indexing logs automatically after fetching logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -149,7 +149,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">oper</span> Field filter operator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span>  <span class="li-normal">default: =</span>
+ <li><span class="li-head">oper</span> Field filter operator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [=, !=, <, >, <=, >=, contain, not-contain, match]</span> <span class="li-normal">default: =</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -163,13 +163,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">log_filter_logic</span> <b>(Alias name: log-filter-logic)</b>  And/or logic for log-filters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [and, or]</span>  <span class="li-normal">default: or</span>
+ <li><span class="li-head">log_filter_logic</span> <b>(Alias name: log-filter-logic)</b>  And/or logic for log-filters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [and, or]</span> <span class="li-normal">default: or</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">log_filter_status</span> <b>(Alias name: log-filter-status)</b>  Enable/disable log-filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">log_filter_status</span> <b>(Alias name: log-filter-status)</b>  Enable/disable log-filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -187,7 +187,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">secure_connection</span> <b>(Alias name: secure-connection)</b>  Enable/disable protecting log-fetch connection with tls/ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">secure_connection</span> <b>(Alias name: secure-connection)</b>  Enable/disable protecting log-fetch connection with tls/ssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
@@ -211,7 +211,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">sync_adom_config</span> <b>(Alias name: sync-adom-config)</b>  Enable/disable sync adom related config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">sync_adom_config</span> <b>(Alias name: sync-adom-config)</b>  Enable/disable sync adom related config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>

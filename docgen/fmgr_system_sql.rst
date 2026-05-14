@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_sql</span> - SQL settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">background_rebuild</span> <b>(Alias name: background-rebuild)</b>  Disable/enable rebuild sql database in the background. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">background_rebuild</span> <b>(Alias name: background-rebuild)</b>  Disable/enable rebuild sql database in the background. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -74,13 +74,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">case_sensitive</span> <b>(Alias name: case-sensitive)</b>  Disable/enable case sensitive index. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">case_sensitive</span> <b>(Alias name: case-sensitive)</b>  Disable/enable case sensitive index. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span>
+ <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiCache, FortiSandbox, FortiDDoS, FortiAuthenticator, FortiProxy]</span> <span class="li-normal">default: FortiGate</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -98,7 +98,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_type</span> <b>(Alias name: log-type)</b>  Log type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, ztna, security]</span>  <span class="li-normal">default: traffic</span>
+ <li><span class="li-head">log_type</span> <b>(Alias name: log-type)</b>  Log type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, ztna, security]</span> <span class="li-normal">default: traffic</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -112,13 +112,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">database_type</span> <b>(Alias name: database-type)</b>  Database type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mysql, postgres]</span>  <span class="li-normal">default: postgres</span>
+ <li><span class="li-head">database_type</span> <b>(Alias name: database-type)</b>  Database type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mysql, postgres]</span> <span class="li-normal">default: postgres</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">device_count_high</span> <b>(Alias name: device-count-high)</b>  Must set to enable if the count of registered devices is greater than 8000. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">device_count_high</span> <b>(Alias name: device-count-high)</b>  Must set to enable if the count of registered devices is greater than 8000. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -148,13 +148,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">prompt_sql_upgrade</span> <b>(Alias name: prompt-sql-upgrade)</b>  Prompt to convert log database into sql database at start time on gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">prompt_sql_upgrade</span> <b>(Alias name: prompt-sql-upgrade)</b>  Prompt to convert log database into sql database at start time on gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rebuild_event</span> <b>(Alias name: rebuild-event)</b>  Disable/enable rebuild event during sql database rebuilding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">rebuild_event</span> <b>(Alias name: rebuild-event)</b>  Disable/enable rebuild event during sql database rebuilding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.0</code></p>
@@ -178,13 +178,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Sql database status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, local]</span>  <span class="li-normal">default: local</span>
+ <li><span class="li-head">status</span> Sql database status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, local]</span> <span class="li-normal">default: local</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">text_search_index</span> <b>(Alias name: text-search-index)</b>  Disable/enable text search index. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">text_search_index</span> <b>(Alias name: text-search-index)</b>  Disable/enable text search index. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -234,7 +234,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiSandbox, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span>
+ <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiSandbox, FortiProxy]</span> <span class="li-normal">default: FortiGate</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
@@ -252,7 +252,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_type</span> <b>(Alias name: log-type)</b>  Log type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, ztna, security]</span>  <span class="li-normal">default: app-ctrl</span>
+ <li><span class="li-head">log_type</span> <b>(Alias name: log-type)</b>  Log type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, ztna, security]</span> <span class="li-normal">default: app-ctrl</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
@@ -288,18 +288,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SQL settings.
         fortinet.fortimanager.fmgr_system_sql:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_sql:
             # background_rebuild: <value in [disable, enable]>
             # custom_index:
@@ -313,35 +305,10 @@ Examples
             # device_count_high: <value in [disable, enable]>
             # event_table_partition_time: <integer>
             # fct_table_partition_time: <integer>
-            # logtype:
-            #   - "none"
-            #   - "app-ctrl"
-            #   - "attack"
-            #   - "content"
-            #   - "dlp"
-            #   - "emailfilter"
-            #   - "event"
-            #   - "generic"
-            #   - "history"
-            #   - "traffic"
-            #   - "virus"
-            #   - "voip"
-            #   - "webfilter"
-            #   - "netscan"
-            #   - "fct-event"
-            #   - "fct-traffic"
-            #   - "fct-netscan"
-            #   - "waf"
-            #   - "gtp"
-            #   - "dns"
-            #   - "ssh"
-            #   - "ssl"
-            #   - "file-filter"
-            #   - "asset"
-            #   - "protocol"
-            #   - "siem"
-            #   - "ztna"
-            #   - "security"
+            # logtype: ["none", "app-ctrl", "attack", "content", "dlp", "emailfilter", "event",
+            #           "generic", "history", "traffic", "virus", "voip", "webfilter", "netscan",
+            #           "fct-event", "fct-traffic", "fct-netscan", "waf", "gtp", "dns", "ssh",
+            #           "ssl", "file-filter", "asset", "protocol", "siem", "ztna", "security"]
             # password: <list or string>
             # prompt_sql_upgrade: <value in [disable, enable]>
             # rebuild_event: <value in [disable, enable]>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -65,13 +65,13 @@ Parameters
  <li><span class="li-head">sim_profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">extendercontroller_simprofile_autoswitchprofile</span> - Extender controller sim profile auto switch profile <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">dataplan</span> Dataplan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">dataplan</span> Dataplan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">disconnect</span> Disconnect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">disconnect</span> Disconnect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
@@ -89,13 +89,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">signal</span> Signal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">signal</span> Signal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
@@ -141,18 +141,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Extender controller sim profile auto switch profile
         fortinet.fortimanager.fmgr_extendercontroller_simprofile_autoswitchprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           sim_profile: <your own value>
           extendercontroller_simprofile_autoswitchprofile:
@@ -162,9 +154,7 @@ Examples
             # disconnect_threshold: <integer>
             # signal: <value in [disable, enable]>
             # status: <value in [disable, enable]>
-            # switch_back:
-            #   - "time"
-            #   - "timer"
+            # switch_back: ["time", "timer"]
             # switch_back_time: <string>
             # switch_back_timer: <integer>
 

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -105,7 +105,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip6_autoconf</span> <b>(Alias name: ip6-autoconf)</b>  Enable/disable address auto config (slaac). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">ip6_autoconf</span> <b>(Alias name: ip6-autoconf)</b>  Enable/disable address auto config (slaac). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -131,13 +131,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">speed</span> Speed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1g/full, 2.5g/full, 5g/full, 10g/full, 14g/full, 20g/full, 25g/full, 40g/full, 50g/full, 56g/full, 100g/full, 1g/half, 200g/full, 400g/full]</span>  <span class="li-normal">default: auto</span>
+ <li><span class="li-head">speed</span> Speed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1g/full, 2.5g/full, 5g/full, 10g/full, 14g/full, 20g/full, 25g/full, 40g/full, 50g/full, 56g/full, 100g/full, 1g/half, 200g/full, 400g/full]</span> <span class="li-normal">default: auto</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Interface status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [down, up, disable, enable]</span>  <span class="li-normal">default: up</span>
+ <li><span class="li-head">status</span> Interface status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [down, up, disable, enable]</span> <span class="li-normal">default: up</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -167,13 +167,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">lacp_mode</span> <b>(Alias name: lacp-mode)</b>  Lacp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active]</span>  <span class="li-normal">default: active</span>
+ <li><span class="li-head">lacp_mode</span> <b>(Alias name: lacp-mode)</b>  Lacp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active]</span> <span class="li-normal">default: active</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">lacp_speed</span> <b>(Alias name: lacp-speed)</b>  How often the interface sends lacp messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [slow, fast]</span>  <span class="li-normal">default: slow</span>
+ <li><span class="li-head">lacp_speed</span> <b>(Alias name: lacp-speed)</b>  How often the interface sends lacp messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [slow, fast]</span> <span class="li-normal">default: slow</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -205,19 +205,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">min_links_down</span> <b>(Alias name: min-links-down)</b>  Action to take when less than the configured minimum number of links are active. <span class="li-normal">type: str</span> <span class="li-normal">choices: [operational, administrative]</span>  <span class="li-normal">default: operational</span>
+ <li><span class="li-head">min_links_down</span> <b>(Alias name: min-links-down)</b>  Action to take when less than the configured minimum number of links are active. <span class="li-normal">type: str</span> <span class="li-normal">choices: [operational, administrative]</span> <span class="li-normal">default: operational</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Interface type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [vlan, physical, aggregate]</span>  <span class="li-normal">default: vlan</span>
+ <li><span class="li-head">type</span> Interface type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [vlan, physical, aggregate]</span> <span class="li-normal">default: vlan</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vlan_protocol</span> <b>(Alias name: vlan-protocol)</b>  Ethernet protocol of vlan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [8021q, 8021ad]</span>  <span class="li-normal">default: 8021q</span>
+ <li><span class="li-head">vlan_protocol</span> <b>(Alias name: vlan-protocol)</b>  Ethernet protocol of vlan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [8021q, 8021ad]</span> <span class="li-normal">default: 8021q</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -229,13 +229,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">lldp</span> Enable/disable lldp (link layer discovery protocol). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">lldp</span> Enable/disable lldp (link layer discovery protocol). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">defaultgw</span> Enable/disable default gateway. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">defaultgw</span> Enable/disable default gateway. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -247,19 +247,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">dns_server_override</span> <b>(Alias name: dns-server-override)</b>  Enable/disable use dns acquired by dhcp or pppoe. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">dns_server_override</span> <b>(Alias name: dns-server-override)</b>  Enable/disable use dns acquired by dhcp or pppoe. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Addressing mode (static, dhcp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, dhcp]</span>  <span class="li-normal">default: static</span>
+ <li><span class="li-head">mode</span> Addressing mode (static, dhcp). <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, dhcp]</span> <span class="li-normal">default: static</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mtu_override</span> <b>(Alias name: mtu-override)</b>  Enable/disable use mtu acquired by dhcp or pppoe. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">mtu_override</span> <b>(Alias name: mtu-override)</b>  Enable/disable use mtu acquired by dhcp or pppoe. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>

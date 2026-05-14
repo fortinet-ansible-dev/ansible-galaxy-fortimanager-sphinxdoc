@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -745,7 +745,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_is_factory_setting</span> Is factory setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ext]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_is_factory_setting</span> Is factory setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ext]</span> <span class="li-normal">default: disable</span>
  <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
  <div id="label219" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -1013,29 +1013,15 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiExtender extender profile configuration.
         fortinet.fortimanager.fmgr_extensioncontroller_extenderprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           extensioncontroller_extenderprofile:
             id: 0 # Required variable, integer
-            # allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
+            # allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet"]
             # bandwidth_limit: <integer>
             # cellular:
             #   controller_report:
@@ -1050,9 +1036,7 @@ Examples
             #       disconnect_period: <integer>
             #       disconnect_threshold: <integer>
             #       signal: <value in [disable, enable]>
-            #       switch_back:
-            #         - "time"
-            #         - "timer"
+            #       switch_back: ["time", "timer"]
             #       switch_back_time: <string>
             #       switch_back_timer: <integer>
             #     conn_status: <integer>
@@ -1078,9 +1062,7 @@ Examples
             #       disconnect_period: <integer>
             #       disconnect_threshold: <integer>
             #       signal: <value in [disable, enable]>
-            #       switch_back:
-            #         - "time"
-            #         - "timer"
+            #       switch_back: ["time", "timer"]
             #       switch_back_time: <string>
             #       switch_back_timer: <integer>
             #     conn_status: <integer>
@@ -1109,14 +1091,9 @@ Examples
             #       session_disconnect: <string>
             #       system_reboot: <string>
             #     receiver:
-            #       - alert:
-            #           - "system-reboot"
-            #           - "data-exhausted"
-            #           - "session-disconnect"
-            #           - "low-signal-strength"
-            #           - "mode-switch"
-            #           - "os-image-fallback"
-            #           - "fgt-backup-mode-switch"
+            #       - alert: ["system-reboot", "data-exhausted", "session-disconnect",
+            #                 "low-signal-strength", "mode-switch", "os-image-fallback",
+            #                 "fgt-backup-mode-switch"]
             #         name: <string>
             #         phone_number: <string>
             #         status: <value in [disable, enable]>
@@ -1165,18 +1142,8 @@ Examples
             #     beacon_interval: <integer>
             #     bss_color: <integer>
             #     bss_color_mode: <value in [auto, static]>
-            #     channel:
-            #       - "CH1"
-            #       - "CH2"
-            #       - "CH3"
-            #       - "CH4"
-            #       - "CH5"
-            #       - "CH6"
-            #       - "CH7"
-            #       - "CH8"
-            #       - "CH9"
-            #       - "CH10"
-            #       - "CH11"
+            #     channel: ["CH1", "CH2", "CH3", "CH4", "CH5", "CH6", "CH7", "CH8", "CH9", "CH10",
+            #               "CH11"]
             #     extension_channel: <value in [auto, higher, lower]>
             #     guard_interval: <value in [auto, 400ns, 800ns]>
             #     lan_ext_vap: <list or string>
@@ -1194,32 +1161,9 @@ Examples
             #     beacon_interval: <integer>
             #     bss_color: <integer>
             #     bss_color_mode: <value in [auto, static]>
-            #     channel:
-            #       - "CH36"
-            #       - "CH40"
-            #       - "CH44"
-            #       - "CH48"
-            #       - "CH52"
-            #       - "CH56"
-            #       - "CH60"
-            #       - "CH64"
-            #       - "CH100"
-            #       - "CH104"
-            #       - "CH108"
-            #       - "CH112"
-            #       - "CH116"
-            #       - "CH120"
-            #       - "CH124"
-            #       - "CH128"
-            #       - "CH132"
-            #       - "CH136"
-            #       - "CH140"
-            #       - "CH144"
-            #       - "CH149"
-            #       - "CH153"
-            #       - "CH157"
-            #       - "CH161"
-            #       - "CH165"
+            #     channel: ["CH36", "CH40", "CH44", "CH48", "CH52", "CH56", "CH60", "CH64", "CH100",
+            #               "CH104", "CH108", "CH112", "CH116", "CH120", "CH124", "CH128", "CH132",
+            #               "CH136", "CH140", "CH144", "CH149", "CH153", "CH157", "CH161", "CH165"]
             #     extension_channel: <value in [auto, higher, lower]>
             #     guard_interval: <value in [auto, 400ns, 800ns]>
             #     lan_ext_vap: <list or string>

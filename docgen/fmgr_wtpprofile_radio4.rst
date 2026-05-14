@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -645,18 +645,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configuration options for radio 4.
         fortinet.fortimanager.fmgr_wtpprofile_radio4:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           wtp_profile: <your own value>
           wtpprofile_radio4:
@@ -693,23 +685,14 @@ Examples
             # max_distance: <integer>
             # mode: <value in [ap, monitor, sniffer, ...]>
             # power_level: <integer>
-            # powersave_optimize:
-            #   - "tim"
-            #   - "ac-vo"
-            #   - "no-obss-scan"
-            #   - "no-11b-rate"
-            #   - "client-rate-follow"
+            # powersave_optimize: ["tim", "ac-vo", "no-obss-scan", "no-11b-rate",
+            #                      "client-rate-follow"]
             # protection_mode: <value in [rtscts, ctsonly, disable]>
             # radio_id: <integer>
             # rts_threshold: <integer>
             # short_guard_interval: <value in [disable, enable]>
             # spectrum_analysis: <value in [disable, enable, scan-only]>
-            # transmit_optimize:
-            #   - "disable"
-            #   - "power-save"
-            #   - "aggr-limit"
-            #   - "retry-limit"
-            #   - "send-bar"
+            # transmit_optimize: ["disable", "power-save", "aggr-limit", "retry-limit", "send-bar"]
             # vap_all: <value in [disable, enable, tunnel, ...]>
             # vaps: <list or string>
             # wids_profile: <string>

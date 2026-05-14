@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -82,13 +82,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">importance</span> Importance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, required]</span>  <span class="li-normal">default: optional</span>
+ <li><span class="li-head">importance</span> Importance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, required]</span> <span class="li-normal">default: optional</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span>  <span class="li-normal">default: enabled</span>
+ <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, enabled]</span> <span class="li-normal">default: enabled</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

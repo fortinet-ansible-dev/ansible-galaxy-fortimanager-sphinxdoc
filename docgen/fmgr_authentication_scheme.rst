@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -255,18 +255,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Authentication Schemes.
         fortinet.fortimanager.fmgr_authentication_scheme:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           authentication_scheme:
@@ -275,22 +267,9 @@ Examples
             # fsso_agent_for_ntlm: <string>
             # fsso_guest: <value in [disable, enable]>
             # kerberos_keytab: <string>
-            # method:
-            #   - "ntlm"
-            #   - "basic"
-            #   - "digest"
-            #   - "form"
-            #   - "negotiate"
-            #   - "fsso"
-            #   - "rsso"
-            #   - "ssh-publickey"
-            #   - "saml"
-            #   - "cert"
-            #   - "x-auth-user"
-            #   - "saml-sp"
-            #   - "entra-sso"
-            #   - "ztna-relay"
-            #   - "oidc"
+            # method: ["ntlm", "basic", "digest", "form", "negotiate", "fsso", "rsso",
+            #          "ssh-publickey", "saml", "cert", "x-auth-user", "saml-sp", "entra-sso",
+            #          "ztna-relay", "oidc"]
             # negotiate_ntlm: <value in [disable, enable]>
             # require_tfa: <value in [disable, enable]>
             # ssh_ca: <string>
@@ -300,9 +279,7 @@ Examples
             # saml_timeout: <integer>
             # user_cert: <value in [disable, enable]>
             # external_idp: <list or string>
-            # digest_algo:
-            #   - "md5"
-            #   - "sha-256"
+            # digest_algo: ["md5", "sha-256"]
             # group_attr_type: <value in [display-name, external-id]>
             # search_all_ldap_databases: <value in [disable, enable]>
             # saml_idp_portal: <string>

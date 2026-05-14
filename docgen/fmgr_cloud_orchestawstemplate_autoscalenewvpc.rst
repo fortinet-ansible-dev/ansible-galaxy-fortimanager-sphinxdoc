@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -107,13 +107,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">faz_instance_type</span> <b>(Alias name: faz-instance-type)</b>  Faz instance type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [h1.2xlarge, h1.4xlarge, h1.8xlarge, m5.large, m5.xlarge, m5.2xlarge, m5.4xlarge, m5.12xlarge, t2.medium, t2.large, t2.xlarge]</span>  <span class="li-normal">default: m5.large</span>
+ <li><span class="li-head">faz_instance_type</span> <b>(Alias name: faz-instance-type)</b>  Faz instance type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [h1.2xlarge, h1.4xlarge, h1.8xlarge, m5.large, m5.xlarge, m5.2xlarge, m5.4xlarge, m5.12xlarge, t2.medium, t2.large, t2.xlarge]</span> <span class="li-normal">default: m5.large</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">faz_integration_options</span> <b>(Alias name: faz-integration-options)</b>  Faz integration options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span>  <span class="li-normal">default: no</span>
+ <li><span class="li-head">faz_integration_options</span> <b>(Alias name: faz-integration-options)</b>  Faz integration options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> <span class="li-normal">default: no</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -137,7 +137,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fgt_instance_type</span> <b>(Alias name: fgt-instance-type)</b>  Fgt instance type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [t2.small, c5.large, c5.xlarge, c5.2xlarge, c5.4xlarge, c5.9xlarge]</span>  <span class="li-normal">default: c5.xlarge</span>
+ <li><span class="li-head">fgt_instance_type</span> <b>(Alias name: fgt-instance-type)</b>  Fgt instance type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [t2.small, c5.large, c5.xlarge, c5.2xlarge, c5.4xlarge, c5.9xlarge]</span> <span class="li-normal">default: c5.xlarge</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -245,7 +245,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">internal_balancing_options</span> <b>(Alias name: internal-balancing-options)</b>  Internal balancing options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [add a new internal load balancer, use a load balancer specified below, do not need one]</span>  <span class="li-normal">default: add a new internal load balancer</span>
+ <li><span class="li-head">internal_balancing_options</span> <b>(Alias name: internal-balancing-options)</b>  Internal balancing options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [add a new internal load balancer, use a load balancer specified below, do not need one]</span> <span class="li-normal">default: add a new internal load balancer</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -281,7 +281,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">loadbalancing_traffic_protocol</span> <b>(Alias name: loadbalancing-traffic-protocol)</b>  Loadbalancing traffic protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [HTTPS, HTTP, TCP]</span>  <span class="li-normal">default: HTTPS</span>
+ <li><span class="li-head">loadbalancing_traffic_protocol</span> <b>(Alias name: loadbalancing-traffic-protocol)</b>  Loadbalancing traffic protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [HTTPS, HTTP, TCP]</span> <span class="li-normal">default: HTTPS</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -353,13 +353,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">terminate_unhealthy_vm</span> <b>(Alias name: terminate-unhealthy-vm)</b>  Terminate unhealthy vm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span>  <span class="li-normal">default: no</span>
+ <li><span class="li-head">terminate_unhealthy_vm</span> <b>(Alias name: terminate-unhealthy-vm)</b>  Terminate unhealthy vm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> <span class="li-normal">default: no</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">use_custom_asset_location</span> <b>(Alias name: use-custom-asset-location)</b>  Use custom asset location. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span>  <span class="li-normal">default: no</span>
+ <li><span class="li-head">use_custom_asset_location</span> <b>(Alias name: use-custom-asset-location)</b>  Use custom asset location. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no, yes]</span> <span class="li-normal">default: no</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -393,18 +393,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Cloud orchest awstemplate autoscale new vpc
         fortinet.fortimanager.fmgr_cloud_orchestawstemplate_autoscalenewvpc:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           cloud_orchestawstemplate_autoscalenewvpc:

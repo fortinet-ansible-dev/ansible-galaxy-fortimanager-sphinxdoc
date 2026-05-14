@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_fortiview_autocache</span> - FortiView auto-cache settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aggressive_fortiview</span> <b>(Alias name: aggressive-fortiview)</b>  Enable/disable auto-cache on fortiview aggressively. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">aggressive_fortiview</span> <b>(Alias name: aggressive-fortiview)</b>  Enable/disable auto-cache on fortiview aggressively. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -74,13 +74,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable fortiview auto-cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">status</span> Enable/disable fortiview auto-cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">incr_fortiview</span> <b>(Alias name: incr-fortiview)</b>  Enable/disable fortiview incremental cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">incr_fortiview</span> <b>(Alias name: incr-fortiview)</b>  Enable/disable fortiview incremental cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -108,18 +108,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiView auto-cache settings.
         fortinet.fortimanager.fmgr_system_fortiview_autocache:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_fortiview_autocache:
             # aggressive_fortiview: <value in [disable, enable]>
             # interval: <integer>

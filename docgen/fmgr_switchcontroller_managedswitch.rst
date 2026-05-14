@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -2239,18 +2239,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiSwitch devices that are managed by this FortiGate.
         fortinet.fortimanager.fmgr_switchcontroller_managedswitch:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_managedswitch:
@@ -2391,13 +2383,7 @@ Examples
             #     severity: <value in [emergency, alert, critical, ...]>
             #     status: <value in [disable, enable]>
             # snmp_community:
-            #   - events:
-            #       - "cpu-high"
-            #       - "mem-low"
-            #       - "log-full"
-            #       - "intf-ip"
-            #       - "ent-conf-change"
-            #       - "l2mac"
+            #   - events: ["cpu-high", "mem-low", "log-full", "intf-ip", "ent-conf-change", "l2mac"]
             #     hosts:
             #       - id: <integer>
             #         ip: <string>
@@ -2598,14 +2584,7 @@ Examples
             #     status: <value in [disable, enable]>
             #     switch_id: <list or string>
             # system_interface:
-            #   - allowaccess:
-            #       - "https"
-            #       - "ping"
-            #       - "ssh"
-            #       - "snmp"
-            #       - "http"
-            #       - "telnet"
-            #       - "radius-acct"
+            #   - allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "radius-acct"]
             #     interface: <list or string>
             #     ip: <list or string>
             #     mode: <value in [static, dhcp]>

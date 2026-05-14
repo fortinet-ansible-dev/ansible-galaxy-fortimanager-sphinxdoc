@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,25 +62,25 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_fortiview_setting</span> - FortiView settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">not_scanned_apps</span> <b>(Alias name: not-scanned-apps)</b>  Include/exclude not. <span class="li-normal">type: str</span> <span class="li-normal">choices: [exclude, include]</span>  <span class="li-normal">default: include</span>
+ <li><span class="li-head">not_scanned_apps</span> <b>(Alias name: not-scanned-apps)</b>  Include/exclude not. <span class="li-normal">type: str</span> <span class="li-normal">choices: [exclude, include]</span> <span class="li-normal">default: include</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">resolve_ip</span> <b>(Alias name: resolve-ip)</b>  Enable or disable resolving ip address to hostname in fortiview. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">resolve_ip</span> <b>(Alias name: resolve-ip)</b>  Enable or disable resolving ip address to hostname in fortiview. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">data_source</span> <b>(Alias name: data-source)</b>  Data soure of the fortiview query. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, cache-only, log-and-cache]</span>  <span class="li-normal">default: auto</span>
+ <li><span class="li-head">data_source</span> <b>(Alias name: data-source)</b>  Data soure of the fortiview query. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, cache-only, log-and-cache]</span> <span class="li-normal">default: auto</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">query_run_mode</span> <b>(Alias name: query-run-mode)</b>  Query run mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, boost]</span>  <span class="li-normal">default: auto</span>
+ <li><span class="li-head">query_run_mode</span> <b>(Alias name: query-run-mode)</b>  Query run mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, boost]</span> <span class="li-normal">default: auto</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -108,18 +108,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiView settings.
         fortinet.fortimanager.fmgr_system_fortiview_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_fortiview_setting:
             # not_scanned_apps: <value in [exclude, include]>
             # resolve_ip: <value in [disable, enable]>

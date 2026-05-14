@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -107,18 +107,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SSL/TLS cipher suites to offer to a server, ordered by priority.
         fortinet.fortimanager.fmgr_firewall_accessproxy_apigateway_sslciphersuites:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           access_proxy: <your own value>
           api_gateway: <your own value>
@@ -126,11 +118,7 @@ Examples
           firewall_accessproxy_apigateway_sslciphersuites:
             # cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
             # priority: <integer>
-            # versions:
-            #   - "tls-1.0"
-            #   - "tls-1.1"
-            #   - "tls-1.2"
-            #   - "tls-1.3"
+            # versions: ["tls-1.0", "tls-1.1", "tls-1.2", "tls-1.3"]
 
 
 Return Values

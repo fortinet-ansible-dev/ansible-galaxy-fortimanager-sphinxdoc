@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -854,18 +854,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure redundant internet connections using SD-WAN
         fortinet.fortimanager.fmgr_wanprof_system_virtualwanlink:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           wanprof: <your own value>
           wanprof_system_virtualwanlink:
@@ -891,10 +883,7 @@ Examples
             #       - id: <integer>
             #         jitter_threshold: <integer>
             #         latency_threshold: <integer>
-            #         link_cost_factor:
-            #           - "latency"
-            #           - "jitter"
-            #           - "packet-loss"
+            #         link_cost_factor: ["latency", "jitter", "packet-loss"]
             #         packetloss_threshold: <integer>
             #     threshold_alert_jitter: <integer>
             #     threshold_alert_latency: <integer>

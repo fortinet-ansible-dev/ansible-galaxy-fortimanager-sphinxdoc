@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -77,7 +77,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">opmode</span> Opmode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [nat, transparent]</span>  <span class="li-normal">default: nat</span>
+ <li><span class="li-head">opmode</span> Opmode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [nat, transparent]</span> <span class="li-normal">default: nat</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -107,7 +107,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom_type</span> Vdom type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, admin]</span>  <span class="li-normal">default: traffic</span>
+ <li><span class="li-head">vdom_type</span> Vdom type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, admin]</span> <span class="li-normal">default: traffic</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -135,18 +135,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Device VDOM table.
         fortinet.fortimanager.fmgr_dvmdb_device_vdom:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           device: <your own value>
           state: present # <value in [present, absent]>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_admin_radius</span> - Configure radius. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_type</span> <b>(Alias name: auth-type)</b>  Authentication protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, pap, chap, mschap2]</span>  <span class="li-normal">default: any</span>
+ <li><span class="li-head">auth_type</span> <b>(Alias name: auth-type)</b>  Authentication protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, pap, chap, mschap2]</span> <span class="li-normal">default: any</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -123,13 +123,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">message_authenticator</span> <b>(Alias name: message-authenticator)</b>  Message authenticator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, require]</span>  <span class="li-normal">default: optional</span>
+ <li><span class="li-head">message_authenticator</span> <b>(Alias name: message-authenticator)</b>  Message authenticator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [optional, require]</span> <span class="li-normal">default: optional</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tls]</span>  <span class="li-normal">default: udp</span>
+ <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tls]</span> <span class="li-normal">default: udp</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_mail</span> - Alert emails. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth</span> Enable authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">auth</span> Enable authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -87,7 +87,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secure_option</span> <b>(Alias name: secure-option)</b>  Communication secure option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, none, smtps, starttls]</span>  <span class="li-normal">default: default</span>
+ <li><span class="li-head">secure_option</span> <b>(Alias name: secure-option)</b>  Communication secure option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, none, smtps, starttls]</span> <span class="li-normal">default: default</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -105,7 +105,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auth_type</span> <b>(Alias name: auth-type)</b>  Smtp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [psk, certificate]</span>  <span class="li-normal">default: psk</span>
+ <li><span class="li-head">auth_type</span> <b>(Alias name: auth-type)</b>  Smtp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [psk, certificate]</span> <span class="li-normal">default: psk</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
@@ -123,7 +123,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to mail server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>
+ <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to mail server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span> <span class="li-normal">default: follow-global-ssl-protocol</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>

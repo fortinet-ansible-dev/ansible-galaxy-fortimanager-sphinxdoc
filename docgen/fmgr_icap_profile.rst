@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -399,32 +399,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure ICAP profiles.
         fortinet.fortimanager.fmgr_icap_profile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           icap_profile:
             name: "your value" # Required variable, string
-            # methods:
-            #   - "delete"
-            #   - "get"
-            #   - "head"
-            #   - "options"
-            #   - "post"
-            #   - "put"
-            #   - "trace"
-            #   - "other"
-            #   - "connect"
+            # methods: ["delete", "get", "head", "options", "post", "put", "trace", "other",
+            #           "connect"]
             # replacemsg_group: <string>
             # request: <value in [disable, enable]>
             # request_failure: <value in [error, bypass]>
@@ -460,11 +444,8 @@ Examples
             # 204_response: <value in [disable, enable]>
             # 204_size_limit: <integer>
             # chunk_encap: <value in [disable, enable]>
-            # extension_feature:
-            #   - "scan-progress"
-            # file_transfer:
-            #   - "ssh"
-            #   - "ftp"
+            # extension_feature: ["scan-progress"]
+            # file_transfer: ["ssh", "ftp"]
             # file_transfer_failure: <value in [error, bypass]>
             # file_transfer_path: <string>
             # file_transfer_server: <string>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -171,18 +171,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Web content filtering settings.
         fortinet.fortimanager.fmgr_webfilter_profile_web:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           profile: <your own value>
           webfilter_profile_web:
@@ -192,28 +184,13 @@ Examples
             # content_header_list: <string>
             # keyword_match: <list or string>
             # log_search: <value in [disable, enable]>
-            # safe_search:
-            #   - "google"
-            #   - "yahoo"
-            #   - "bing"
-            #   - "url"
-            #   - "header"
+            # safe_search: ["google", "yahoo", "bing", "url", "header"]
             # urlfilter_table: <string>
-            # whitelist:
-            #   - "exempt-av"
-            #   - "exempt-webcontent"
-            #   - "exempt-activex-java-cookie"
-            #   - "exempt-dlp"
-            #   - "exempt-rangeblock"
-            #   - "extended-log-others"
+            # whitelist: ["exempt-av", "exempt-webcontent", "exempt-activex-java-cookie",
+            #             "exempt-dlp", "exempt-rangeblock", "extended-log-others"]
             # youtube_restrict: <value in [strict, none, moderate]>
-            # allowlist:
-            #   - "exempt-av"
-            #   - "exempt-webcontent"
-            #   - "exempt-activex-java-cookie"
-            #   - "exempt-dlp"
-            #   - "exempt-rangeblock"
-            #   - "extended-log-others"
+            # allowlist: ["exempt-av", "exempt-webcontent", "exempt-activex-java-cookie",
+            #             "exempt-dlp", "exempt-rangeblock", "extended-log-others"]
             # blocklist: <value in [disable, enable]>
             # vimeo_restrict: <string>
             # qwant_restrict: <value in [strict, none, moderate]>

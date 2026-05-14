@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -465,42 +465,20 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Email Filter profiles.
         fortinet.fortimanager.fmgr_emailfilter_profile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           emailfilter_profile:
             name: "your value" # Required variable, string
             # comment: <string>
             # external: <value in [disable, enable]>
-            # options:
-            #   - "bannedword"
-            #   - "spambwl"
-            #   - "spamfsip"
-            #   - "spamfssubmit"
-            #   - "spamfschksum"
-            #   - "spamfsurl"
-            #   - "spamhelodns"
-            #   - "spamraddrdns"
-            #   - "spamrbl"
-            #   - "spamhdrcheck"
-            #   - "spamfsphish"
-            #   - "spambal"
-            #   - "spamfgip"
-            #   - "spamfgsubmit"
-            #   - "spamfgchksum"
-            #   - "spamfgurl"
-            #   - "spamfgphish"
+            # options: ["bannedword", "spambwl", "spamfsip", "spamfssubmit", "spamfschksum",
+            #           "spamfsurl", "spamhelodns", "spamraddrdns", "spamrbl", "spamhdrcheck",
+            #           "spamfsphish", "spambal", "spamfgip", "spamfgsubmit", "spamfgchksum",
+            #           "spamfgurl", "spamfgphish"]
             # replacemsg_group: <string>
             # spam_bwl_table: <string>
             # spam_bword_table: <string>
@@ -520,10 +498,7 @@ Examples
             #   log: <value in [disable, enable]>
             #   log_all: <value in [disable, enable]>
             #   tag_msg: <string>
-            #   tag_type:
-            #     - "subject"
-            #     - "header"
-            #     - "spaminfo"
+            #   tag_type: ["subject", "header", "spaminfo"]
             # mapi:
             #   action: <value in [pass, discard]>
             #   log: <value in [disable, enable]>
@@ -538,10 +513,7 @@ Examples
             #   log: <value in [disable, enable]>
             #   log_all: <value in [disable, enable]>
             #   tag_msg: <string>
-            #   tag_type:
-            #     - "subject"
-            #     - "header"
-            #     - "spaminfo"
+            #   tag_type: ["subject", "header", "spaminfo"]
             # smtp:
             #   action: <value in [pass, tag, discard]>
             #   hdrip: <value in [disable, enable]>
@@ -549,10 +521,7 @@ Examples
             #   log: <value in [disable, enable]>
             #   log_all: <value in [disable, enable]>
             #   tag_msg: <string>
-            #   tag_type:
-            #     - "subject"
-            #     - "header"
-            #     - "spaminfo"
+            #   tag_type: ["subject", "header", "spaminfo"]
             # file_filter:
             #   entries:
             #     - action: <value in [log, block]>
@@ -561,10 +530,7 @@ Examples
             #       file_type: <list or string>
             #       filter: <string>
             #       password_protected: <value in [any, yes]>
-            #       protocol:
-            #         - "smtp"
-            #         - "imap"
-            #         - "pop3"
+            #       protocol: ["smtp", "imap", "pop3"]
             #   log: <value in [disable, enable]>
             #   scan_archive_contents: <value in [disable, enable]>
             #   status: <value in [disable, enable]>

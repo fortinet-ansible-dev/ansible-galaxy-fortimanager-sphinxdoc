@@ -25,7 +25,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 
@@ -878,6 +878,9 @@ Parameters
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_backhaul</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
+        </li>
+        <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_downlinks</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_trafficsplitservices</span> - available versions:
         <span class="li-normal">v7.6.2->latest</span>
@@ -2600,9 +2603,6 @@ Parameters
         <li><span class="li-required">switchcontroller_securitypolicy_localaccess</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
         </li>
-        <li><span class="li-required">switchcontroller_switchgroup</span> - available versions:
-        <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">switchcontroller_switchinterfacetag</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
         </li>
@@ -3053,6 +3053,9 @@ Parameters
         <li><span class="li-required">system_npu_hpe</span> - available versions:
         <span class="li-normal">v6.4.7->v6.4.15</span>,
         <span class="li-normal">v7.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_npu_icmperrorratectrl</span> - available versions:
+        <span class="li-normal">v7.4.4->latest</span>
         </li>
         <li><span class="li-required">system_npu_icmpratectrl</span> - available versions:
         <span class="li-normal">v7.4.3->latest</span>
@@ -3896,6 +3899,12 @@ Parameters
         <li><span class="li-required">wanprof_system_sdwan_healthcheck_sla</span> - available versions:
         <span class="li-normal">v6.4.1->latest</span>
         </li>
+        <li><span class="li-required">wanprof_system_sdwan_healthcheckfortiguard</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
+        <li><span class="li-required">wanprof_system_sdwan_healthcheckfortiguard_sla</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">wanprof_system_sdwan_members</span> - available versions:
         <span class="li-normal">v6.4.1->latest</span>
         </li>
@@ -4140,9 +4149,6 @@ Parameters
         <li><span class="li-required">ztna_webportalbookmark_bookmarks</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
         </li>
-        <li><span class="li-required">ztna_webportalbookmark_llmsecureproxy</span> - available versions:
-        <span class="li-normal">v7.6.5->latest</span>
-        </li>
         <li><span class="li-required">ztna_webproxy</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
         </li>
@@ -4180,7 +4186,6 @@ Parameters
     <label for="handle3"><u>More details about parameter: <b>params</b>...</u></label>
     </h2>
     <div class="content">
-
     <ul class="ul-self">
         <li><span class="li-normal">params for all:</span></li>
         <ul class="ul-self">
@@ -6110,6 +6115,15 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">backhaul</span>
+            </li>
+            <li><span class="li-normal">extender-profile</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_downlinks:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">downlinks</span>
             </li>
             <li><span class="li-normal">extender-profile</span>
             </li>
@@ -10315,13 +10329,6 @@ Parameters
             <li><span class="li-normal">local-access</span>
             </li>
         </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">switch-group</span>
-            </li>
-        </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -11043,6 +11050,11 @@ Parameters
             </li>
         </ul>
         <li><span class="li-normal">params for system_npu_hpe:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_icmperrorratectrl:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
             </li>
@@ -13042,6 +13054,26 @@ Parameters
             <li><span class="li-normal">wanprof</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">health-check-fortiguard</span>
+            </li>
+            <li><span class="li-normal">wanprof</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard_sla:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">health-check-fortiguard</span>
+            </li>
+            <li><span class="li-normal">sla</span>
+            </li>
+            <li><span class="li-normal">wanprof</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for wanprof_system_sdwan_members:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -13667,13 +13699,6 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">bookmarks</span>
-            </li>
-            <li><span class="li-normal">web-portal-bookmark</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for ztna_webportalbookmark_llmsecureproxy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">web-portal-bookmark</span>
             </li>

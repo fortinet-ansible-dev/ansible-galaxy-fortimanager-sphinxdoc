@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -285,27 +285,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiSwitch LLDP profiles.
         fortinet.fortimanager.fmgr_switchcontroller_lldpprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_lldpprofile:
             name: "your value" # Required variable, string
-            # 802_1_tlvs:
-            #   - "port-vlan-id"
-            # 802_3_tlvs:
-            #   - "max-frame-size"
-            #   - "power-negotiation"
+            # 802_1_tlvs: ["port-vlan-id"]
+            # 802_3_tlvs: ["max-frame-size", "power-negotiation"]
             # auto_isl: <value in [disable, enable]>
             # auto_isl_hello_timer: <integer>
             # auto_isl_port_group: <integer>
@@ -323,11 +312,8 @@ Examples
             #     vlan: <integer>
             #     vlan_intf: <string>
             #     assign_vlan: <value in [disable, enable]>
-            # med_tlvs:
-            #   - "inventory-management"
-            #   - "network-policy"
-            #   - "power-management"
-            #   - "location-identification"
+            # med_tlvs: ["inventory-management", "network-policy", "power-management",
+            #            "location-identification"]
             # med_location_service:
             #   - name: <string>
             #     status: <value in [disable, enable]>

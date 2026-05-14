@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,13 +62,13 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_log_settings_clientcertauth</span> - Cli system log settings client cert auth <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">mode</span> Mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [basic, strict]</span>  <span class="li-normal">default: basic</span>
+ <li><span class="li-head">mode</span> Mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [basic, strict]</span> <span class="li-normal">default: basic</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tls_port</span> <b>(Alias name: tls-port)</b>  Tls port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [both, 514, 6514]</span>  <span class="li-normal">default: both</span>
+ <li><span class="li-head">tls_port</span> <b>(Alias name: tls-port)</b>  Tls port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [both, 514, 6514]</span> <span class="li-normal">default: both</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
@@ -104,7 +104,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [certificate, domain]</span>  <span class="li-normal">default: domain</span>
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [certificate, domain]</span> <span class="li-normal">default: domain</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
@@ -134,18 +134,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Cli system log settings client cert auth
         fortinet.fortimanager.fmgr_system_log_settings_clientcertauth:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_log_settings_clientcertauth:
             # mode: <value in [basic, strict]>
             # tls_port: <value in [both, 514, 6514]>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -3133,7 +3133,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_is_factory_setting</span> Is factory setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ext]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_is_factory_setting</span> Is factory setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ext]</span> <span class="li-normal">default: disable</span>
  <a id='label1016' href="javascript:ContentClick('label1017', 'label1016');" onmouseover="ContentPreview('label1017');" onmouseout="ContentUnpreview('label1017');" title="click to collapse or expand..."> more... </a>
  <div id="label1017" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -3359,58 +3359,32 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure WTP profiles or FortiAP profiles that define radio settings for manageable FortiAP platforms.
         fortinet.fortimanager.fmgr_wtpprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           wtpprofile:
             name: "your value" # Required variable, string
-            # allowaccess:
-            #   - "https"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
+            # allowaccess: ["https", "ssh", "snmp", "http", "telnet"]
             # ap_country: <value in [AL, DZ, AR, ...]>
             # ble_profile: <string>
             # comment: <string>
-            # control_message_offload:
-            #   - "ebp-frame"
-            #   - "aeroscout-tag"
-            #   - "ap-list"
-            #   - "sta-list"
-            #   - "sta-cap-list"
-            #   - "stats"
-            #   - "aeroscout-mu"
-            #   - "sta-health"
-            #   - "spectral-analysis"
+            # control_message_offload: ["ebp-frame", "aeroscout-tag", "ap-list", "sta-list",
+            #                           "sta-cap-list", "stats", "aeroscout-mu", "sta-health",
+            #                           "spectral-analysis"]
             # deny_mac_list:
             #   - id: <integer>
             #     mac: <string>
             # dtls_in_kernel: <value in [disable, enable]>
-            # dtls_policy:
-            #   - "clear-text"
-            #   - "dtls-enabled"
-            #   - "ipsec-vpn"
-            #   - "ipsec-sn-vpn"
+            # dtls_policy: ["clear-text", "dtls-enabled", "ipsec-vpn", "ipsec-sn-vpn"]
             # energy_efficient_ethernet: <value in [disable, enable]>
             # ext_info_enable: <value in [disable, enable]>
             # handoff_roaming: <value in [disable, enable]>
             # handoff_rssi: <integer>
             # handoff_sta_thresh: <integer>
-            # ip_fragment_preventing:
-            #   - "tcp-mss-adjust"
-            #   - "icmp-unreachable"
+            # ip_fragment_preventing: ["tcp-mss-adjust", "icmp-unreachable"]
             # led_schedules: <list or string>
             # led_state: <value in [disable, enable]>
             # lldp: <value in [disable, enable]>
@@ -3543,23 +3517,15 @@ Examples
             #   max_distance: <integer>
             #   mode: <value in [disabled, ap, monitor, ...]>
             #   power_level: <integer>
-            #   powersave_optimize:
-            #     - "tim"
-            #     - "ac-vo"
-            #     - "no-obss-scan"
-            #     - "no-11b-rate"
-            #     - "client-rate-follow"
+            #   powersave_optimize: ["tim", "ac-vo", "no-obss-scan", "no-11b-rate",
+            #                        "client-rate-follow"]
             #   protection_mode: <value in [rtscts, ctsonly, disable]>
             #   radio_id: <integer>
             #   rts_threshold: <integer>
             #   short_guard_interval: <value in [disable, enable]>
             #   spectrum_analysis: <value in [disable, enable, scan-only]>
-            #   transmit_optimize:
-            #     - "disable"
-            #     - "power-save"
-            #     - "aggr-limit"
-            #     - "retry-limit"
-            #     - "send-bar"
+            #   transmit_optimize: ["disable", "power-save", "aggr-limit", "retry-limit",
+            #                       "send-bar"]
             #   vap_all: <value in [disable, enable, tunnel, ...]>
             #   vap1: <string>
             #   vap2: <string>
@@ -3647,23 +3613,15 @@ Examples
             #   max_distance: <integer>
             #   mode: <value in [disabled, ap, monitor, ...]>
             #   power_level: <integer>
-            #   powersave_optimize:
-            #     - "tim"
-            #     - "ac-vo"
-            #     - "no-obss-scan"
-            #     - "no-11b-rate"
-            #     - "client-rate-follow"
+            #   powersave_optimize: ["tim", "ac-vo", "no-obss-scan", "no-11b-rate",
+            #                        "client-rate-follow"]
             #   protection_mode: <value in [rtscts, ctsonly, disable]>
             #   radio_id: <integer>
             #   rts_threshold: <integer>
             #   short_guard_interval: <value in [disable, enable]>
             #   spectrum_analysis: <value in [disable, enable, scan-only]>
-            #   transmit_optimize:
-            #     - "disable"
-            #     - "power-save"
-            #     - "aggr-limit"
-            #     - "retry-limit"
-            #     - "send-bar"
+            #   transmit_optimize: ["disable", "power-save", "aggr-limit", "retry-limit",
+            #                       "send-bar"]
             #   vap_all: <value in [disable, enable, tunnel, ...]>
             #   vap1: <string>
             #   vap2: <string>
@@ -3751,23 +3709,15 @@ Examples
             #   max_distance: <integer>
             #   mode: <value in [disabled, ap, monitor, ...]>
             #   power_level: <integer>
-            #   powersave_optimize:
-            #     - "tim"
-            #     - "ac-vo"
-            #     - "no-obss-scan"
-            #     - "no-11b-rate"
-            #     - "client-rate-follow"
+            #   powersave_optimize: ["tim", "ac-vo", "no-obss-scan", "no-11b-rate",
+            #                        "client-rate-follow"]
             #   protection_mode: <value in [rtscts, ctsonly, disable]>
             #   radio_id: <integer>
             #   rts_threshold: <integer>
             #   short_guard_interval: <value in [disable, enable]>
             #   spectrum_analysis: <value in [disable, enable, scan-only]>
-            #   transmit_optimize:
-            #     - "disable"
-            #     - "power-save"
-            #     - "aggr-limit"
-            #     - "retry-limit"
-            #     - "send-bar"
+            #   transmit_optimize: ["disable", "power-save", "aggr-limit", "retry-limit",
+            #                       "send-bar"]
             #   vap_all: <value in [disable, enable, tunnel, ...]>
             #   vap1: <string>
             #   vap2: <string>
@@ -3855,23 +3805,15 @@ Examples
             #   max_distance: <integer>
             #   mode: <value in [ap, monitor, sniffer, ...]>
             #   power_level: <integer>
-            #   powersave_optimize:
-            #     - "tim"
-            #     - "ac-vo"
-            #     - "no-obss-scan"
-            #     - "no-11b-rate"
-            #     - "client-rate-follow"
+            #   powersave_optimize: ["tim", "ac-vo", "no-obss-scan", "no-11b-rate",
+            #                        "client-rate-follow"]
             #   protection_mode: <value in [rtscts, ctsonly, disable]>
             #   radio_id: <integer>
             #   rts_threshold: <integer>
             #   short_guard_interval: <value in [disable, enable]>
             #   spectrum_analysis: <value in [disable, enable, scan-only]>
-            #   transmit_optimize:
-            #     - "disable"
-            #     - "power-save"
-            #     - "aggr-limit"
-            #     - "retry-limit"
-            #     - "send-bar"
+            #   transmit_optimize: ["disable", "power-save", "aggr-limit", "retry-limit",
+            #                       "send-bar"]
             #   vap_all: <value in [disable, enable, tunnel, ...]>
             #   vap1: <string>
             #   vap2: <string>

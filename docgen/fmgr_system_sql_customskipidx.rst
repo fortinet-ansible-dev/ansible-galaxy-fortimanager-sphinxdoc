@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_sql_customskipidx</span> - List of aditional SQL skip index fields. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiSandbox, FortiProxy]</span>  <span class="li-normal">default: FortiGate</span>
+ <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FortiGate, FortiManager, FortiClient, FortiMail, FortiWeb, FortiSandbox, FortiProxy]</span> <span class="li-normal">default: FortiGate</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
@@ -81,7 +81,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_type</span> <b>(Alias name: log-type)</b>  Log type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, ztna, security]</span>  <span class="li-normal">default: app-ctrl</span>
+ <li><span class="li-head">log_type</span> <b>(Alias name: log-type)</b>  Log type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [app-ctrl, attack, content, dlp, emailfilter, event, generic, history, traffic, virus, voip, webfilter, netscan, fct-event, fct-traffic, fct-netscan, waf, gtp, dns, ssh, ssl, file-filter, asset, protocol, siem, ztna, security]</span> <span class="li-normal">default: app-ctrl</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.3 -> latest</code></p>
@@ -109,18 +109,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: List of aditional SQL skip index fields.
         fortinet.fortimanager.fmgr_system_sql_customskipidx:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_sql_customskipidx:
             id: 0 # Required variable, integer

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,13 +62,13 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">fmupdate_avips_advancedlog</span> - Enable/disable logging of FortiGuard antivirus and IPS update packages received by FortiManagers built-in FortiGuard. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">log_fortigate</span> <b>(Alias name: log-fortigate)</b>  Enable/disable logging of fortiguard antivirus and ips service updates of fortigate devices (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">log_fortigate</span> <b>(Alias name: log-fortigate)</b>  Enable/disable logging of fortiguard antivirus and ips service updates of fortigate devices (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_server</span> <b>(Alias name: log-server)</b>  Enable/disable logging of update packages received by the build-in fortiguard server (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">log_server</span> <b>(Alias name: log-server)</b>  Enable/disable logging of update packages received by the build-in fortiguard server (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -96,18 +96,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Enable/disable logging of FortiGuard antivirus and IPS update packages received by FortiManagers built-in FortiGuard.
         fortinet.fortimanager.fmgr_fmupdate_avips_advancedlog:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_avips_advancedlog:
             # log_fortigate: <value in [disable, enable]>
             # log_server: <value in [disable, enable]>

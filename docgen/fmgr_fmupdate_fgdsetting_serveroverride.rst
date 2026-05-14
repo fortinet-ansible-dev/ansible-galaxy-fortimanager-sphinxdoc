@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -92,7 +92,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Service type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fgd, fsa, fgfq, geoip, iot-collect]</span>  <span class="li-normal">default: fgd</span>
+ <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Service type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fgd, fsa, fgfq, geoip, iot-collect]</span> <span class="li-normal">default: fgd</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -100,7 +100,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -128,18 +128,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Cli fmupdate fgd setting server override
         fortinet.fortimanager.fmgr_fmupdate_fgdsetting_serveroverride:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_fgdsetting_serveroverride:
             # servlist:
             #   - id: <integer>

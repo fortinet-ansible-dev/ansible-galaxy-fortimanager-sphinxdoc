@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -154,50 +154,26 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Apply allow or deny action to each GTPv2-c packet.
         fortinet.fortimanager.fmgr_firewall_gtp_policyv2:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           gtp: <your own value>
           state: present # <value in [present, absent]>
           firewall_gtp_policyv2:
             id: 0 # Required variable, integer
             # action: <value in [deny, allow]>
-            # apn_sel_mode:
-            #   - "ms"
-            #   - "net"
-            #   - "vrf"
+            # apn_sel_mode: ["ms", "net", "vrf"]
             # apnmember: <list or string>
             # imsi_prefix: <string>
             # max_apn_restriction: <value in [all, public-1, public-2, ...]>
             # mei: <string>
-            # messages:
-            #   - "create-ses-req"
-            #   - "create-ses-res"
-            #   - "modify-bearer-req"
-            #   - "modify-bearer-res"
+            # messages: ["create-ses-req", "create-ses-res", "modify-bearer-req",
+            #            "modify-bearer-res"]
             # msisdn_prefix: <string>
-            # rat_type:
-            #   - "any"
-            #   - "utran"
-            #   - "geran"
-            #   - "wlan"
-            #   - "gan"
-            #   - "hspa"
-            #   - "eutran"
-            #   - "virtual"
-            #   - "nbiot"
-            #   - "ltem"
-            #   - "nr"
+            # rat_type: ["any", "utran", "geran", "wlan", "gan", "hspa", "eutran", "virtual",
+            #            "nbiot", "ltem", "nr"]
             # uli: <list or string>
 
 

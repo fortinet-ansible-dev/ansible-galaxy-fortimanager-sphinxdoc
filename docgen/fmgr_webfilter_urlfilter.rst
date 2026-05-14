@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -203,18 +203,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure URL filter lists.
         fortinet.fortimanager.fmgr_webfilter_urlfilter:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           webfilter_urlfilter:
@@ -223,17 +215,8 @@ Examples
             # entries:
             #   - action: <value in [exempt, block, allow, ...]>
             #     dns_address_family: <value in [ipv4, ipv6, both]>
-            #     exempt:
-            #       - "av"
-            #       - "web-content"
-            #       - "activex-java-cookie"
-            #       - "dlp"
-            #       - "fortiguard"
-            #       - "all"
-            #       - "filepattern"
-            #       - "pass"
-            #       - "range-block"
-            #       - "antiphish"
+            #     exempt: ["av", "web-content", "activex-java-cookie", "dlp", "fortiguard", "all",
+            #              "filepattern", "pass", "range-block", "antiphish"]
             #     id: <integer>
             #     referrer_host: <string>
             #     status: <value in [disable, enable]>

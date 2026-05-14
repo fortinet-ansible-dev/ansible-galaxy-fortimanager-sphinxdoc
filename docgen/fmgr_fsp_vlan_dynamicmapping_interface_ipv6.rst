@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -528,29 +528,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: IPv6 of interface.
         fortinet.fortimanager.fmgr_fsp_vlan_dynamicmapping_interface_ipv6:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           vlan: <your own value>
           dynamic_mapping: <your own value>
           fsp_vlan_dynamicmapping_interface_ipv6:
             # autoconf: <value in [disable, enable]>
-            # dhcp6_client_options:
-            #   - "rapid"
-            #   - "iapd"
-            #   - "iana"
-            #   - "dns"
-            #   - "dnsname"
+            # dhcp6_client_options: ["rapid", "iapd", "iana", "dns", "dnsname"]
             # dhcp6_information_request: <value in [disable, enable]>
             # dhcp6_prefix_delegation: <value in [disable, enable]>
             # dhcp6_prefix_hint: <string>
@@ -560,16 +547,8 @@ Examples
             # dhcp6_relay_service: <value in [disable, enable]>
             # dhcp6_relay_type: <value in [regular]>
             # ip6_address: <string>
-            # ip6_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "capwap"
-            #   - "fabric"
+            # ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm", "capwap",
+            #                   "fabric"]
             # ip6_default_life: <integer>
             # ip6_delegated_prefix_list:
             #   - autonomous_flag: <value in [disable, enable]>

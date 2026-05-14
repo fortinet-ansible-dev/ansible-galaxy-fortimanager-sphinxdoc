@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -161,7 +161,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secure</span> Ssl connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, starttls, ldaps]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">secure</span> Ssl connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, starttls, ldaps]</span> <span class="li-normal">default: disable</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -179,7 +179,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type of ldap binding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, anonymous, regular]</span>  <span class="li-normal">default: simple</span>
+ <li><span class="li-head">type</span> Type of ldap binding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [simple, anonymous, regular]</span> <span class="li-normal">default: simple</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -191,13 +191,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">adom_access</span> <b>(Alias name: adom-access)</b>  Set all or specify adom access type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, specify]</span>  <span class="li-normal">default: all</span>
+ <li><span class="li-head">adom_access</span> <b>(Alias name: adom-access)</b>  Set all or specify adom access type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, specify]</span> <span class="li-normal">default: all</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to ldap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>
+ <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for connection to ldap server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span> <span class="li-normal">default: follow-global-ssl-protocol</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>

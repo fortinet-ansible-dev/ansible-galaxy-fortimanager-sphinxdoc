@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,13 +62,13 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_admin_setting</span> - Admin setting. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">access_banner</span> <b>(Alias name: access-banner)</b>  Enable/disable access banner. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">access_banner</span> <b>(Alias name: access-banner)</b>  Enable/disable access banner. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">admin_https_redirect</span> <b>(Alias name: admin-https-redirect)</b>  Enable/disable redirection of http admin traffic to https. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">admin_https_redirect</span> <b>(Alias name: admin-https-redirect)</b>  Enable/disable redirection of http admin traffic to https. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -86,13 +86,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_register</span> Enable/disable allowance of register an unregistered device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">allow_register</span> Enable/disable allowance of register an unregistered device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_update</span> <b>(Alias name: auto-update)</b>  Enable/disable fortigate automatic update. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">auto_update</span> <b>(Alias name: auto-update)</b>  Enable/disable fortigate automatic update. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -104,7 +104,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">chassis_mgmt</span> <b>(Alias name: chassis-mgmt)</b>  Enable or disable chassis management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">chassis_mgmt</span> <b>(Alias name: chassis-mgmt)</b>  Enable or disable chassis management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -116,13 +116,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">device_sync_status</span> Enable/disable device synchronization status indication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">device_sync_status</span> Enable/disable device synchronization status indication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gui_theme</span> <b>(Alias name: gui-theme)</b>  Color scheme to use for the administration gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, space, calla-lily, binary-tunnel, diving, dreamy, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, panda, polar-bear, parrot, cave, mountain, zebra, contrast-dark, circuit-board, mars, blue-sea, mariner, jade, neutrino, dark-matter, forest, cat, graphite]</span>  <span class="li-normal">default: blue</span>
+ <li><span class="li-head">gui_theme</span> <b>(Alias name: gui-theme)</b>  Color scheme to use for the administration gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, space, calla-lily, binary-tunnel, diving, dreamy, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, panda, polar-bear, parrot, cave, mountain, zebra, contrast-dark, circuit-board, mars, blue-sea, mariner, jade, neutrino, dark-matter, forest, cat, graphite]</span> <span class="li-normal">default: blue</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -146,7 +146,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">install_ifpolicy_only</span> <b>(Alias name: install-ifpolicy-only)</b>  Allow install interface policy only. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">install_ifpolicy_only</span> <b>(Alias name: install-ifpolicy-only)</b>  Allow install interface policy only. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -164,13 +164,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">objects_force_deletion</span> <b>(Alias name: objects-force-deletion)</b>  Enable/disable used objects force deletion. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">objects_force_deletion</span> <b>(Alias name: objects-force-deletion)</b>  Enable/disable used objects force deletion. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">offline_mode</span> Enable/disable offline mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">offline_mode</span> Enable/disable offline mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -182,13 +182,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sdwan_monitor_history</span> <b>(Alias name: sdwan-monitor-history)</b>  Enable/disable hostname display in the gui login page. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">sdwan_monitor_history</span> <b>(Alias name: sdwan-monitor-history)</b>  Enable/disable hostname display in the gui login page. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">shell_access</span> <b>(Alias name: shell-access)</b>  Enable/disable shell access. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">shell_access</span> <b>(Alias name: shell-access)</b>  Enable/disable shell access. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></p>
@@ -200,79 +200,79 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></p>
  </div>
  </li>
- <li><span class="li-head">show_add_multiple</span> <b>(Alias name: show-add-multiple)</b>  Show add multiple button. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_add_multiple</span> <b>(Alias name: show-add-multiple)</b>  Show add multiple button. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_adom_devman</span> <b>(Alias name: show-adom-devman)</b>  Show adom device manager tools on gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">show_adom_devman</span> <b>(Alias name: show-adom-devman)</b>  Show adom device manager tools on gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_checkbox_in_table</span> <b>(Alias name: show-checkbox-in-table)</b>  Show checkboxs in tables on gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_checkbox_in_table</span> <b>(Alias name: show-checkbox-in-table)</b>  Show checkboxs in tables on gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_device_import_export</span> <b>(Alias name: show-device-import-export)</b>  Enable/disable import/export of adom, device, and group lists. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_device_import_export</span> <b>(Alias name: show-device-import-export)</b>  Enable/disable import/export of adom, device, and group lists. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_hostname</span> <b>(Alias name: show-hostname)</b>  Enable/disable hostname display in the gui login page. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_hostname</span> <b>(Alias name: show-hostname)</b>  Enable/disable hostname display in the gui login page. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_automatic_script</span> Enable/disable automatic script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_automatic_script</span> Enable/disable automatic script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_grouping_script</span> Enable/disable grouping script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">show_grouping_script</span> Enable/disable grouping script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_schedule_script</span> Enable or disable schedule script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_schedule_script</span> Enable or disable schedule script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_tcl_script</span> Enable/disable tcl script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_tcl_script</span> Enable/disable tcl script. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">unreg_dev_opt</span> Action to take when unregistered device connects to fortimanager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [add_no_service, ignore, add_allow_service]</span>  <span class="li-normal">default: add_allow_service</span>
+ <li><span class="li-head">unreg_dev_opt</span> Action to take when unregistered device connects to fortimanager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [add_no_service, ignore, add_allow_service]</span> <span class="li-normal">default: add_allow_service</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">webadmin_language</span> Web admin language. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto_detect, english, simplified_chinese, traditional_chinese, japanese, korean, spanish, french]</span>  <span class="li-normal">default: auto_detect</span>
+ <li><span class="li-head">webadmin_language</span> Web admin language. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto_detect, english, simplified_chinese, traditional_chinese, japanese, korean, spanish, french]</span> <span class="li-normal">default: auto_detect</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_fct_manager</span> <b>(Alias name: show-fct-manager)</b>  Enable/disable fct manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">show_fct_manager</span> <b>(Alias name: show-fct-manager)</b>  Enable/disable fct manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sdwan_skip_unmapped_input_device</span> <b>(Alias name: sdwan-skip-unmapped-input-device)</b>  Skip unmapped interface for sdwan/rule/input-device instead of report mapping error. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">sdwan_skip_unmapped_input_device</span> <b>(Alias name: sdwan-skip-unmapped-input-device)</b>  Skip unmapped interface for sdwan/rule/input-device instead of report mapping error. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -302,7 +302,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">central_ftgd_local_cat_id</span> <b>(Alias name: central-ftgd-local-cat-id)</b>  Central fortiguard local category id management, and do not auto assign id during installation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">central_ftgd_local_cat_id</span> <b>(Alias name: central-ftgd-local-cat-id)</b>  Central fortiguard local category id management, and do not auto assign id during installation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -320,13 +320,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">traffic_shaping_history</span> <b>(Alias name: traffic-shaping-history)</b>  Enable/disable traffic-shaping-history. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">traffic_shaping_history</span> <b>(Alias name: traffic-shaping-history)</b>  Enable/disable traffic-shaping-history. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fsw_ignore_platform_check</span> <b>(Alias name: fsw-ignore-platform-check)</b>  Enable/disable fortiswitch manager switch platform support check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">fsw_ignore_platform_check</span> <b>(Alias name: fsw-ignore-platform-check)</b>  Enable/disable fortiswitch manager switch platform support check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
@@ -344,13 +344,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">firmware_upgrade_check</span> <b>(Alias name: firmware-upgrade-check)</b>  Enable/disable firmware upgrade check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">firmware_upgrade_check</span> <b>(Alias name: firmware-upgrade-check)</b>  Enable/disable firmware upgrade check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fgt_gui_proxy</span> <b>(Alias name: fgt-gui-proxy)</b>  Enable/disable fortigate gui proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">fgt_gui_proxy</span> <b>(Alias name: fgt-gui-proxy)</b>  Enable/disable fortigate gui proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -362,7 +362,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">object_threshold_limit</span> <b>(Alias name: object-threshold-limit)</b>  Object threshold limit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">object_threshold_limit</span> <b>(Alias name: object-threshold-limit)</b>  Object threshold limit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -380,13 +380,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_sdwan_manager</span> <b>(Alias name: show-sdwan-manager)</b>  Show sdwan manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">show_sdwan_manager</span> <b>(Alias name: show-sdwan-manager)</b>  Show sdwan manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">admin_scp</span> <b>(Alias name: admin-scp)</b>  Enable/disable admin scp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">admin_scp</span> <b>(Alias name: admin-scp)</b>  Enable/disable admin scp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
@@ -414,18 +414,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Admin setting.
         fortinet.fortimanager.fmgr_system_admin_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_admin_setting:
             # access_banner: <value in [disable, enable]>
             # admin_https_redirect: <value in [disable, enable]>

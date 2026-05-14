@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_fips</span> - Settings for FIPS-CC mode. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">entropy_token</span> <b>(Alias name: entropy-token)</b>  Enable/disable entropy token when switching to fips mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [enable, disable, dynamic]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">entropy_token</span> <b>(Alias name: entropy-token)</b>  Enable/disable entropy token when switching to fips mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [enable, disable, dynamic]</span> <span class="li-normal">default: enable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></p>
@@ -74,7 +74,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable fips-cc mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Enable/disable fips-cc mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -102,18 +102,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Settings for FIPS-CC mode.
         fortinet.fortimanager.fmgr_system_fips:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_fips:
             # entropy_token: <value in [enable, disable, dynamic]>
             # re_seed_interval: <integer>

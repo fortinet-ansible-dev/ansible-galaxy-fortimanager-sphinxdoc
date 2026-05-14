@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_snmp_user</span> - SNMP user configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_proto</span> <b>(Alias name: auth-proto)</b>  Authentication protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [md5, sha, sha224, sha256, sha384, sha512]</span>  <span class="li-normal">default: sha</span>
+ <li><span class="li-head">auth_proto</span> <b>(Alias name: auth-proto)</b>  Authentication protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [md5, sha, sha224, sha256, sha384, sha512]</span> <span class="li-normal">default: sha</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -99,7 +99,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">priv_proto</span> <b>(Alias name: priv-proto)</b>  Privacy (encryption) protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [aes, des, aes256, aes256cisco]</span>  <span class="li-normal">default: aes</span>
+ <li><span class="li-head">priv_proto</span> <b>(Alias name: priv-proto)</b>  Privacy (encryption) protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [aes, des, aes256, aes256cisco]</span> <span class="li-normal">default: aes</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -111,7 +111,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">queries</span> Enable/disable queries for this user. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">queries</span> Enable/disable queries for this user. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -123,7 +123,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">security_level</span> <b>(Alias name: security-level)</b>  Security level for message authentication and encryption. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span>  <span class="li-normal">default: no-auth-no-priv</span>
+ <li><span class="li-head">security_level</span> <b>(Alias name: security-level)</b>  Security level for message authentication and encryption. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no-auth-no-priv, auth-no-priv, auth-priv]</span> <span class="li-normal">default: no-auth-no-priv</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -189,18 +189,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Radio-1 config for Wi-Fi 2.
         fortinet.fortimanager.fmgr_extensioncontroller_extenderprofile_wifi_radio1:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           extender_profile: <your own value>
           extensioncontroller_extenderprofile_wifi_radio1:
@@ -210,18 +202,8 @@ Examples
             # beacon_interval: <integer>
             # bss_color: <integer>
             # bss_color_mode: <value in [auto, static]>
-            # channel:
-            #   - "CH1"
-            #   - "CH2"
-            #   - "CH3"
-            #   - "CH4"
-            #   - "CH5"
-            #   - "CH6"
-            #   - "CH7"
-            #   - "CH8"
-            #   - "CH9"
-            #   - "CH10"
-            #   - "CH11"
+            # channel: ["CH1", "CH2", "CH3", "CH4", "CH5", "CH6", "CH7", "CH8", "CH9", "CH10",
+            #           "CH11"]
             # extension_channel: <value in [auto, higher, lower]>
             # guard_interval: <value in [auto, 400ns, 800ns]>
             # lan_ext_vap: <list or string>

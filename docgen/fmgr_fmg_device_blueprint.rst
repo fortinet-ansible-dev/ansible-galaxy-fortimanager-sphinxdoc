@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -137,7 +137,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">enforce_device_config</span> <b>(Alias name: enforce-device-config)</b>  Enforce device config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">enforce_device_config</span> <b>(Alias name: enforce-device-config)</b>  Enforce device config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -149,7 +149,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ha_config</span> <b>(Alias name: ha-config)</b>  Ha config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">ha_config</span> <b>(Alias name: ha-config)</b>  Ha config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -173,7 +173,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">linked_to_model</span> <b>(Alias name: linked-to-model)</b>  Linked to model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">linked_to_model</span> <b>(Alias name: linked-to-model)</b>  Linked to model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -185,19 +185,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sdwan_management</span> <b>(Alias name: sdwan-management)</b>  Sdwan management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">sdwan_management</span> <b>(Alias name: sdwan-management)</b>  Sdwan management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">split_switch_port</span> <b>(Alias name: split-switch-port)</b>  Split switch port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">split_switch_port</span> <b>(Alias name: split-switch-port)</b>  Split switch port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vm_log_disk</span> <b>(Alias name: vm-log-disk)</b>  Vm log disk. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">vm_log_disk</span> <b>(Alias name: vm-log-disk)</b>  Vm log disk. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -225,18 +225,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Fmg device blueprint
         fortinet.fortimanager.fmgr_fmg_device_blueprint:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           fmg_device_blueprint:

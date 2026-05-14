@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_log_deviceselector</span> - Accept/reject devices matching specified filter types. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Include or exclude the matching devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>  <span class="li-normal">default: include</span>
+ <li><span class="li-head">action</span> Include or exclude the matching devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> <span class="li-normal">default: include</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -99,13 +99,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcip_mode</span> <b>(Alias name: srcip-mode)</b>  Apply the selector to udp/514, tcp/514 or any mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [UDP514, TCP514, any]</span>  <span class="li-normal">default: UDP514</span>
+ <li><span class="li-head">srcip_mode</span> <b>(Alias name: srcip-mode)</b>  Apply the selector to udp/514, tcp/514 or any mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [UDP514, TCP514, any]</span> <span class="li-normal">default: UDP514</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type of the selector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unspecified, devid, srcip]</span>  <span class="li-normal">default: unspecified</span>
+ <li><span class="li-head">type</span> Type of the selector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unspecified, devid, srcip]</span> <span class="li-normal">default: unspecified</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -133,18 +133,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Accept/reject devices matching specified filter types.
         fortinet.fortimanager.fmgr_system_log_deviceselector:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_log_deviceselector:
             id: 0 # Required variable, integer

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -237,41 +237,18 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SSH filter profile.
         fortinet.fortimanager.fmgr_sshfilter_profile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           sshfilter_profile:
             name: "your value" # Required variable, string
-            # block:
-            #   - "x11"
-            #   - "shell"
-            #   - "exec"
-            #   - "port-forward"
-            #   - "tun-forward"
-            #   - "sftp"
-            #   - "unknown"
-            #   - "scp"
+            # block: ["x11", "shell", "exec", "port-forward", "tun-forward", "sftp", "unknown",
+            #         "scp"]
             # default_command_log: <value in [disable, enable]>
-            # log:
-            #   - "x11"
-            #   - "shell"
-            #   - "exec"
-            #   - "port-forward"
-            #   - "tun-forward"
-            #   - "sftp"
-            #   - "unknown"
-            #   - "scp"
+            # log: ["x11", "shell", "exec", "port-forward", "tun-forward", "sftp", "unknown", "scp"]
             # shell_commands:
             #   - action: <value in [block, allow]>
             #     alert: <value in [disable, enable]>
@@ -288,8 +265,7 @@ Examples
             #       file_type: <list or string>
             #       filter: <string>
             #       password_protected: <value in [any, yes]>
-            #       protocol:
-            #         - "ssh"
+            #       protocol: ["ssh"]
             #   log: <value in [disable, enable]>
             #   scan_archive_contents: <value in [disable, enable]>
             #   status: <value in [disable, enable]>

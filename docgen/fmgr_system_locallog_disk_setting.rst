@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_locallog_disk_setting</span> - Settings for local disk logging. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">diskfull</span> Policy to apply when disk is full. <span class="li-normal">type: str</span> <span class="li-normal">choices: [overwrite, nolog]</span>  <span class="li-normal">default: overwrite</span>
+ <li><span class="li-head">diskfull</span> Policy to apply when disk is full. <span class="li-normal">type: str</span> <span class="li-normal">choices: [overwrite, nolog]</span> <span class="li-normal">default: overwrite</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -86,7 +86,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">roll_schedule</span> <b>(Alias name: roll-schedule)</b>  Frequency to check log file for rolling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span>
+ <li><span class="li-head">roll_schedule</span> <b>(Alias name: roll-schedule)</b>  Frequency to check log file for rolling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, daily, weekly]</span> <span class="li-normal">default: none</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -98,31 +98,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FTP, SFTP, SCP]</span>  <span class="li-normal">default: FTP</span>
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FTP, SFTP, SCP]</span> <span class="li-normal">default: FTP</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">severity</span> Least severity level to log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span>  <span class="li-normal">default: information</span>
+ <li><span class="li-head">severity</span> Least severity level to log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warning, notification, information, debug]</span> <span class="li-normal">default: information</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable local disk log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">status</span> Enable/disable local disk log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upload</span> Upload log file when rolling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">upload</span> Upload log file when rolling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upload_delete_files</span> <b>(Alias name: upload-delete-files)</b>  Delete log files after uploading (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">upload_delete_files</span> <b>(Alias name: upload-delete-files)</b>  Delete log files after uploading (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -158,7 +158,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uploadsched</span> Scheduled upload (disable = upload when rolling). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">uploadsched</span> Scheduled upload (disable = upload when rolling). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -176,7 +176,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uploadzip</span> Compress upload logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">uploadzip</span> Compress upload logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -216,30 +216,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Settings for local disk logging.
         fortinet.fortimanager.fmgr_system_locallog_disk_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_locallog_disk_setting:
             # diskfull: <value in [overwrite, nolog]>
             # log_disk_full_percentage: <integer>
             # max_log_file_size: <integer>
-            # roll_day:
-            #   - "sunday"
-            #   - "monday"
-            #   - "tuesday"
-            #   - "wednesday"
-            #   - "thursday"
-            #   - "friday"
-            #   - "saturday"
+            # roll_day: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday",
+            #            "saturday"]
             # roll_schedule: <value in [none, daily, weekly]>
             # roll_time: <list or string>
             # server_type: <value in [FTP, SFTP, SCP]>
@@ -253,8 +239,7 @@ Examples
             # uploadpass: <list or string>
             # uploadport: <integer>
             # uploadsched: <value in [disable, enable]>
-            # uploadtype:
-            #   - "event"
+            # uploadtype: ["event"]
             # uploaduser: <string>
             # uploadzip: <value in [disable, enable]>
             # log_disk_quota: <integer>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -157,7 +157,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">role</span> Role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [lan, wan, dmz, undefined]</span>  <span class="li-normal">default: lan</span>
+ <li><span class="li-head">role</span> Role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [lan, wan, dmz, undefined]</span> <span class="li-normal">default: lan</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
@@ -221,38 +221,18 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: System template system template interface
         fortinet.fortimanager.fmgr_devprof_system_template_interface:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           devprof: <your own value>
           state: present # <value in [present, absent]>
           devprof_system_template_interface:
             name: "your value" # Required variable, string
             # action: <value in [add-aggregate, add-loopback, add-vlan, ...]>
-            # allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "radius-acct"
-            #   - "probe-response"
-            #   - "dnp"
-            #   - "ftm"
-            #   - "fabric"
-            #   - "speed-test"
+            # allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm", "radius-acct",
+            #               "probe-response", "dnp", "ftm", "fabric", "speed-test"]
             # dhcp_id: <integer>
             # gateway: <string>
             # interface: <string>

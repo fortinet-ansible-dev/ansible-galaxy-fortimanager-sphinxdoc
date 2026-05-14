@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -554,18 +554,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiGuard services.
         fortinet.fortimanager.fmgr_system_fortiguard:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           system_fortiguard:
             # antispam_cache: <value in [disable, enable]>
@@ -615,8 +607,7 @@ Examples
             # fortiguard_anycast_source: <value in [fortinet, aws, debug]>
             # interface: <string>
             # interface_select_method: <value in [auto, sdwan, specify]>
-            # sdns_options:
-            #   - "include-question-section"
+            # sdns_options: ["include-question-section"]
             # anycast_sdns_server_ip: <string>
             # anycast_sdns_server_port: <integer>
             # persistent_connection: <value in [disable, enable]>
@@ -629,14 +620,8 @@ Examples
             # ddns_server_ip6: <string>
             # vdom: <string>
             # auto_firmware_upgrade: <value in [disable, enable]>
-            # auto_firmware_upgrade_day:
-            #   - "sunday"
-            #   - "monday"
-            #   - "tuesday"
-            #   - "wednesday"
-            #   - "thursday"
-            #   - "friday"
-            #   - "saturday"
+            # auto_firmware_upgrade_day: ["sunday", "monday", "tuesday", "wednesday", "thursday",
+            #                             "friday", "saturday"]
             # auto_firmware_upgrade_end_hour: <integer>
             # auto_firmware_upgrade_start_hour: <integer>
             # sandbox_inline_scan: <value in [disable, enable]>

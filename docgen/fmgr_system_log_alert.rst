@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -68,7 +68,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">min_severity_to_raise_incident_by_grouping</span> <b>(Alias name: min-severity-to-raise-incident-by-grouping)</b>  Min severity to raise incident by grouping. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, critical, high]</span>  <span class="li-normal">default: critical</span>
+ <li><span class="li-head">min_severity_to_raise_incident_by_grouping</span> <b>(Alias name: min-severity-to-raise-incident-by-grouping)</b>  Min severity to raise incident by grouping. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, critical, high]</span> <span class="li-normal">default: critical</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -96,18 +96,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Log based alert settings.
         fortinet.fortimanager.fmgr_system_log_alert:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_log_alert:
             # max_alert_count: <integer>
             # min_severity_to_raise_incident_by_grouping: <value in [none, critical, high]>

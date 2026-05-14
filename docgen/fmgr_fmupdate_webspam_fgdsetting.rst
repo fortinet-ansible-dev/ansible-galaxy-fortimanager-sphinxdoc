@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -68,13 +68,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">as_log</span> <b>(Alias name: as-log)</b>  Antispam log setting (default = nospam). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nospam, all]</span>  <span class="li-normal">default: nospam</span>
+ <li><span class="li-head">as_log</span> <b>(Alias name: as-log)</b>  Antispam log setting (default = nospam). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nospam, all]</span> <span class="li-normal">default: nospam</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">as_preload</span> <b>(Alias name: as-preload)</b>  Enable/disable preloading antispam database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">as_preload</span> <b>(Alias name: as-preload)</b>  Enable/disable preloading antispam database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -86,13 +86,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">av_log</span> <b>(Alias name: av-log)</b>  Antivirus log setting (default = novirus). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, novirus, all]</span>  <span class="li-normal">default: novirus</span>
+ <li><span class="li-head">av_log</span> <b>(Alias name: av-log)</b>  Antivirus log setting (default = novirus). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, novirus, all]</span> <span class="li-normal">default: novirus</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">av_preload</span> <b>(Alias name: av-preload)</b>  Enable/disable preloading antivirus database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">av_preload</span> <b>(Alias name: av-preload)</b>  Enable/disable preloading antivirus database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -104,19 +104,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">av2_log</span> <b>(Alias name: av2-log)</b>  Outbreak prevention log setting (default = noav2). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, noav2, all]</span>  <span class="li-normal">default: noav2</span>
+ <li><span class="li-head">av2_log</span> <b>(Alias name: av2-log)</b>  Outbreak prevention log setting (default = noav2). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, noav2, all]</span> <span class="li-normal">default: noav2</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">av2_preload</span> <b>(Alias name: av2-preload)</b>  Enable/disable preloading outbreak prevention database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">av2_preload</span> <b>(Alias name: av2-preload)</b>  Enable/disable preloading outbreak prevention database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">eventlog_query</span> <b>(Alias name: eventlog-query)</b>  Enable/disable record query to event-log besides fgd-log (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">eventlog_query</span> <b>(Alias name: eventlog-query)</b>  Enable/disable record query to event-log besides fgd-log (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -134,19 +134,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">fq_log</span> <b>(Alias name: fq-log)</b>  File query log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all]</span>  <span class="li-normal">default: nofilequery</span>
+ <li><span class="li-head">fq_log</span> <b>(Alias name: fq-log)</b>  File query log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all]</span> <span class="li-normal">default: nofilequery</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">fq_preload</span> <b>(Alias name: fq-preload)</b>  Enable/disable preloading file query database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">fq_preload</span> <b>(Alias name: fq-preload)</b>  Enable/disable preloading file query database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">linkd_log</span> <b>(Alias name: linkd-log)</b>  Linkd log setting (default = debug). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: debug</span>
+ <li><span class="li-head">linkd_log</span> <b>(Alias name: linkd-log)</b>  Linkd log setting (default = debug). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> <span class="li-normal">default: debug</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -256,7 +256,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -282,7 +282,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">update_log</span> <b>(Alias name: update-log)</b>  Enable/disable update log setting (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">update_log</span> <b>(Alias name: update-log)</b>  Enable/disable update log setting (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -306,13 +306,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_log</span> <b>(Alias name: wf-log)</b>  Web filter log setting (default = nour1) <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nourl, all]</span>  <span class="li-normal">default: nourl</span>
+ <li><span class="li-head">wf_log</span> <b>(Alias name: wf-log)</b>  Web filter log setting (default = nour1) <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nourl, all]</span> <span class="li-normal">default: nourl</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">wf_preload</span> <b>(Alias name: wf-preload)</b>  Enable/disable preloading the web filter database into memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">wf_preload</span> <b>(Alias name: wf-preload)</b>  Enable/disable preloading the web filter database into memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></p>
@@ -324,13 +324,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">iot_log</span> <b>(Alias name: iot-log)</b>  Iot log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all, noiot]</span>  <span class="li-normal">default: nofilequery</span>
+ <li><span class="li-head">iot_log</span> <b>(Alias name: iot-log)</b>  Iot log setting (default = nofilequery). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, nofilequery, all, noiot]</span> <span class="li-normal">default: nofilequery</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">iot_preload</span> <b>(Alias name: iot-preload)</b>  Enable/disable preloading iot database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">iot_preload</span> <b>(Alias name: iot-preload)</b>  Enable/disable preloading iot database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.6.2</code></p>
@@ -342,13 +342,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.6 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">stat_log</span> <b>(Alias name: stat-log)</b>  Stat log setting (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">stat_log</span> <b>(Alias name: stat-log)</b>  Stat log setting (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> <span class="li-normal">default: disable</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> v7.6.2</code></p>
  </div>
  </li>
- <li><span class="li-head">iotv_preload</span> <b>(Alias name: iotv-preload)</b>  Enable/disable preloading iot-vulnerability database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">iotv_preload</span> <b>(Alias name: iotv-preload)</b>  Enable/disable preloading iot-vulnerability database to memory (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> v7.6.2</code></p>
@@ -376,18 +376,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure the FortiGuard run parameters.
         fortinet.fortimanager.fmgr_fmupdate_webspam_fgdsetting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_webspam_fgdsetting:
             # as_cache: <integer>
             # as_log: <value in [disable, nospam, all]>
@@ -420,13 +412,7 @@ Examples
             #       ip: <string>
             #       ip6: <string>
             #       port: <integer>
-            #       service_type: # <list or string>
-            #         - "fgd"
-            #         - "fgc"
-            #         - "fsa"
-            #         - "fgfq"
-            #         - "geoip"
-            #         - "iot-collect"
+            #       service_type: ["fgd", "fgc", "fsa", "fgfq", "geoip", "iot-collect"]
             #   status: <value in [disable, enable]>
             # stat_log_interval: <integer>
             # stat_sync_interval: <integer>

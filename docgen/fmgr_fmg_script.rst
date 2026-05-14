@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -211,46 +211,53 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Create and run script (For FMG 7.6.5+)
     hosts: fortimanagers
-    connection: httpapi
     gather_facts: false
+    connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
+      fmg_adom: "root"
+      script_name: "your_script_name"
+      device_name: "your_device_name"
+      device_vdom: "root"
+      state: "present"
     tasks:
-      - name: Fmg script
+      # For FMG 7.6.4 and earlier, use fmgr_dvmdb_script.
+      # For FMG 7.6.5 and later, use fmgr_fmg_script.
+      - name: Create a script (For FMG 7.6.5+)
         fortinet.fortimanager.fmgr_fmg_script:
-          # bypass_validation: false
-          # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          state: "{{ state }}"
+          adom: "{{ fmg_adom }}"
           fmg_script:
-            name: "your value" # Required variable, string
-            # content: <string>
-            # desc: <string>
-            # filter_build: <integer>
-            # filter_device: <integer>
-            # filter_hostname: <string>
-            # filter_ostype: <integer>
-            # filter_osver: <integer>
-            # filter_platform: <string>
-            # filter_serial: <string>
-            # member: <list or string>
-            # schedule:
-            #   - datetime: <string>
-            #     day_of_week: <integer>
-            #     device: <integer>
-            #     run_on_db: <integer>
-            #     timestamp: <integer>
-            #     type: <value in [auto, onetime, daily, ...]>
-            #     user: <string>
-            # target: <value in [devdb, remote, adomdb]>
-            # type: <value in [cli, tcl, cligrp, ...]>
+            name: "{{ script_name }}"
+            content: |
+              config system global
+                  set remoteauthtimeout 80
+              end
+            type: cli
+            desc: A script created via Ansible
+            target: devdb
+      - name: Run the Script
+        fortinet.fortimanager.fmgr_dvmdb_script_execute:
+          adom: "{{ fmg_adom }}"
+          dvmdb_script_execute:
+            adom: "{{ fmg_adom }}"
+            script: "{{ script_name }}"
+            scope:
+              - name: "{{ device_name }}"
+                vdom: "{{ device_vdom }}"
+        register: running_task
+      - name: Inspect the Task Status
+        fortinet.fortimanager.fmgr_fact:
+          facts:
+            selector: "task_task"
+            params:
+              task: "{{ running_task.meta.response_data.task }}"
+        register: taskinfo
+        until: taskinfo.meta.response_data.percent == 100
+        retries: 30
+        delay: 3
+        failed_when: taskinfo.meta.response_data.state == 'error'
 
 
 Return Values

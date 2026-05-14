@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -81,7 +81,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ipv6</span> Enable/disable sniffing ipv6 packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">ipv6</span> Enable/disable sniffing ipv6 packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -93,7 +93,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">non_ip</span> <b>(Alias name: non-ip)</b>  Enable/disable sniffing non-ip packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">non_ip</span> <b>(Alias name: non-ip)</b>  Enable/disable sniffing non-ip packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -139,18 +139,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Interface sniffer.
         fortinet.fortimanager.fmgr_system_sniffer:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_sniffer:
             id: 0 # Required variable, integer

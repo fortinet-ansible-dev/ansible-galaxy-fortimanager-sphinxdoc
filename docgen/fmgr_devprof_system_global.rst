@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -2296,18 +2296,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure global attributes.
         fortinet.fortimanager.fmgr_devprof_system_global:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           devprof: <your own value>
           devprof_system_global:
@@ -2327,95 +2319,14 @@ Examples
             # gui_device_latitude: <string>
             # gui_device_longitude: <string>
             # hostname: <string>
-            # timezone:
-            #   - "00"
-            #   - "01"
-            #   - "02"
-            #   - "03"
-            #   - "04"
-            #   - "05"
-            #   - "06"
-            #   - "07"
-            #   - "08"
-            #   - "09"
-            #   - "10"
-            #   - "11"
-            #   - "12"
-            #   - "13"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "22"
-            #   - "23"
-            #   - "24"
-            #   - "25"
-            #   - "26"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
-            #   - "32"
-            #   - "33"
-            #   - "34"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            #   - "38"
-            #   - "39"
-            #   - "40"
-            #   - "41"
-            #   - "42"
-            #   - "43"
-            #   - "44"
-            #   - "45"
-            #   - "46"
-            #   - "47"
-            #   - "48"
-            #   - "49"
-            #   - "50"
-            #   - "51"
-            #   - "52"
-            #   - "53"
-            #   - "54"
-            #   - "55"
-            #   - "56"
-            #   - "57"
-            #   - "58"
-            #   - "59"
-            #   - "60"
-            #   - "61"
-            #   - "62"
-            #   - "63"
-            #   - "64"
-            #   - "65"
-            #   - "66"
-            #   - "67"
-            #   - "68"
-            #   - "69"
-            #   - "70"
-            #   - "71"
-            #   - "72"
-            #   - "73"
-            #   - "74"
-            #   - "75"
-            #   - "76"
-            #   - "77"
-            #   - "78"
-            #   - "79"
-            #   - "80"
-            #   - "81"
-            #   - "82"
-            #   - "83"
-            #   - "84"
-            #   - "85"
-            #   - "86"
-            #   - "87"
+            # timezone: ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11",
+            #            "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23",
+            #            "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35",
+            #            "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47",
+            #            "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59",
+            #            "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71",
+            #            "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83",
+            #            "84", "85", "86", "87"]
             # check_reset_range: <value in [disable, strict]>
             # pmtu_discovery: <value in [disable, enable]>
             # gui_allow_incompatible_fabric_fgt: <value in [disable, enable]>
@@ -2443,13 +2354,8 @@ Examples
             # wad_worker_count: <integer>
             # ssh_hostkey: <string>
             # wireless_controller_port: <integer>
-            # fgd_alert_subscription:
-            #   - "advisory"
-            #   - "latest-threat"
-            #   - "latest-virus"
-            #   - "latest-attack"
-            #   - "new-antivirus-db"
-            #   - "new-attack-db"
+            # fgd_alert_subscription: ["advisory", "latest-threat", "latest-virus", "latest-attack",
+            #                          "new-antivirus-db", "new-attack-db"]
             # forticontroller_proxy_port: <integer>
             # dh_params: <value in [1024, 1536, 2048, ...]>
             # memory_use_threshold_green: <integer>
@@ -2461,41 +2367,21 @@ Examples
             # udp_idle_timer: <integer>
             # interface_subnet_usage: <value in [disable, enable]>
             # forticontroller_proxy: <value in [disable, enable]>
-            # ssh_enc_algo:
-            #   - "chacha20-poly1305@openssh.com"
-            #   - "aes128-ctr"
-            #   - "aes192-ctr"
-            #   - "aes256-ctr"
-            #   - "arcfour256"
-            #   - "arcfour128"
-            #   - "aes128-cbc"
-            #   - "3des-cbc"
-            #   - "blowfish-cbc"
-            #   - "cast128-cbc"
-            #   - "aes192-cbc"
-            #   - "aes256-cbc"
-            #   - "arcfour"
-            #   - "rijndael-cbc@lysator.liu.se"
-            #   - "aes128-gcm@openssh.com"
-            #   - "aes256-gcm@openssh.com"
+            # ssh_enc_algo: ["chacha20-poly1305@openssh.com", "aes128-ctr", "aes192-ctr",
+            #                "aes256-ctr", "arcfour256", "arcfour128", "aes128-cbc", "3des-cbc",
+            #                "blowfish-cbc", "cast128-cbc", "aes192-cbc", "aes256-cbc", "arcfour",
+            #                "rijndael-cbc@lysator.liu.se", "aes128-gcm@openssh.com",
+            #                "aes256-gcm@openssh.com"]
             # block_session_timer: <integer>
             # quic_pmtud: <value in [disable, enable]>
-            # admin_https_ssl_ciphersuites:
-            #   - "TLS-AES-128-GCM-SHA256"
-            #   - "TLS-AES-256-GCM-SHA384"
-            #   - "TLS-CHACHA20-POLY1305-SHA256"
-            #   - "TLS-AES-128-CCM-SHA256"
-            #   - "TLS-AES-128-CCM-8-SHA256"
+            # admin_https_ssl_ciphersuites: ["TLS-AES-128-GCM-SHA256", "TLS-AES-256-GCM-SHA384",
+            #                                "TLS-CHACHA20-POLY1305-SHA256",
+            #                                "TLS-AES-128-CCM-SHA256", "TLS-AES-128-CCM-8-SHA256"]
             # security_rating_result_submission: <value in [disable, enable]>
             # user_device_store_max_unified_mem: <integer>
             # management_port: <integer>
             # fortigslb_integration: <value in [disable, enable]>
-            # admin_https_ssl_versions:
-            #   - "tlsv1-0"
-            #   - "tlsv1-1"
-            #   - "tlsv1-2"
-            #   - "sslv3"
-            #   - "tlsv1-3"
+            # admin_https_ssl_versions: ["tlsv1-0", "tlsv1-1", "tlsv1-2", "sslv3", "tlsv1-3"]
             # cert_chain_max: <integer>
             # qsfp28_40g_port: <list or string>
             # strong_crypto: <value in [disable, enable]>
@@ -2568,14 +2454,8 @@ Examples
             # strict_dirty_session_check: <value in [disable, enable]>
             # user_device_store_max_devices: <integer>
             # dp_udp_idle_timer: <integer>
-            # internal_switch_speed:
-            #   - "auto"
-            #   - "10full"
-            #   - "10half"
-            #   - "100full"
-            #   - "100half"
-            #   - "1000full"
-            #   - "1000auto"
+            # internal_switch_speed: ["auto", "10full", "10half", "100full", "100half", "1000full",
+            #                         "1000auto"]
             # forticonverter_config_upload: <value in [disable, once]>
             # ipsec_round_robin: <value in [disable, enable]>
             # wad_affinity: <string>
@@ -2583,18 +2463,12 @@ Examples
             # wimax_4g_usb: <value in [disable, enable]>
             # miglog_affinity: <string>
             # faz_disk_buffer_size: <integer>
-            # ssh_kex_algo:
-            #   - "diffie-hellman-group1-sha1"
-            #   - "diffie-hellman-group14-sha1"
-            #   - "diffie-hellman-group-exchange-sha1"
-            #   - "diffie-hellman-group-exchange-sha256"
-            #   - "curve25519-sha256@libssh.org"
-            #   - "ecdh-sha2-nistp256"
-            #   - "ecdh-sha2-nistp384"
-            #   - "ecdh-sha2-nistp521"
-            #   - "diffie-hellman-group14-sha256"
-            #   - "diffie-hellman-group16-sha512"
-            #   - "diffie-hellman-group18-sha512"
+            # ssh_kex_algo: ["diffie-hellman-group1-sha1", "diffie-hellman-group14-sha1",
+            #                "diffie-hellman-group-exchange-sha1",
+            #                "diffie-hellman-group-exchange-sha256", "curve25519-sha256@libssh.org",
+            #                "ecdh-sha2-nistp256", "ecdh-sha2-nistp384", "ecdh-sha2-nistp521",
+            #                "diffie-hellman-group14-sha256", "diffie-hellman-group16-sha512",
+            #                "diffie-hellman-group18-sha512"]
             # auto_auth_extension_device: <value in [disable, enable]>
             # forticarrier_bypass: <value in [disable, enable]>
             # reset_sessionless_tcp: <value in [disable, enable]>
@@ -2664,38 +2538,22 @@ Examples
             # private_data_encryption: <value in [disable, enable]>
             # wireless_mode: <value in [ac, client, wtp, ...]>
             # alias: <string>
-            # ssh_hostkey_algo:
-            #   - "ssh-rsa"
-            #   - "ecdsa-sha2-nistp521"
-            #   - "rsa-sha2-256"
-            #   - "rsa-sha2-512"
-            #   - "ssh-ed25519"
-            #   - "ecdsa-sha2-nistp384"
-            #   - "ecdsa-sha2-nistp256"
+            # ssh_hostkey_algo: ["ssh-rsa", "ecdsa-sha2-nistp521", "rsa-sha2-256", "rsa-sha2-512",
+            #                    "ssh-ed25519", "ecdsa-sha2-nistp384", "ecdsa-sha2-nistp256"]
             # fortitoken_cloud: <value in [disable, enable]>
             # av_affinity: <string>
             # proxy_worker_count: <integer>
             # ipsec_asic_offload: <value in [disable, enable]>
             # miglogd_children: <integer>
             # sslvpn_max_worker_count: <integer>
-            # ssh_mac_algo:
-            #   - "hmac-md5"
-            #   - "hmac-md5-etm@openssh.com"
-            #   - "hmac-md5-96"
-            #   - "hmac-md5-96-etm@openssh.com"
-            #   - "hmac-sha1"
-            #   - "hmac-sha1-etm@openssh.com"
-            #   - "hmac-sha2-256"
-            #   - "hmac-sha2-256-etm@openssh.com"
-            #   - "hmac-sha2-512"
-            #   - "hmac-sha2-512-etm@openssh.com"
-            #   - "hmac-ripemd160"
-            #   - "hmac-ripemd160@openssh.com"
-            #   - "hmac-ripemd160-etm@openssh.com"
-            #   - "umac-64@openssh.com"
-            #   - "umac-128@openssh.com"
-            #   - "umac-64-etm@openssh.com"
-            #   - "umac-128-etm@openssh.com"
+            # ssh_mac_algo: ["hmac-md5", "hmac-md5-etm@openssh.com", "hmac-md5-96",
+            #                "hmac-md5-96-etm@openssh.com", "hmac-sha1",
+            #                "hmac-sha1-etm@openssh.com", "hmac-sha2-256",
+            #                "hmac-sha2-256-etm@openssh.com", "hmac-sha2-512",
+            #                "hmac-sha2-512-etm@openssh.com", "hmac-ripemd160",
+            #                "hmac-ripemd160@openssh.com", "hmac-ripemd160-etm@openssh.com",
+            #                "umac-64@openssh.com", "umac-128@openssh.com",
+            #                "umac-64-etm@openssh.com", "umac-128-etm@openssh.com"]
             # url_filter_count: <integer>
             # wifi_certificate: <list or string>
             # radius_port: <integer>
@@ -2714,23 +2572,9 @@ Examples
             # http_request_limit: <integer>
             # irq_time_accounting: <value in [auto, force]>
             # remoteauthtimeout: <integer>
-            # admin_https_ssl_banned_ciphers:
-            #   - "RSA"
-            #   - "DHE"
-            #   - "ECDHE"
-            #   - "DSS"
-            #   - "ECDSA"
-            #   - "AES"
-            #   - "AESGCM"
-            #   - "CAMELLIA"
-            #   - "3DES"
-            #   - "SHA1"
-            #   - "SHA256"
-            #   - "SHA384"
-            #   - "STATIC"
-            #   - "CHACHA20"
-            #   - "ARIA"
-            #   - "AESCCM"
+            # admin_https_ssl_banned_ciphers: ["RSA", "DHE", "ECDHE", "DSS", "ECDSA", "AES",
+            #                                  "AESGCM", "CAMELLIA", "3DES", "SHA1", "SHA256",
+            #                                  "SHA384", "STATIC", "CHACHA20", "ARIA", "AESCCM"]
             # allow_traffic_redirect: <value in [disable, enable]>
             # legacy_poe_device_support: <value in [disable, enable]>
             # wad_restart_mode: <value in [none, time, memory]>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -1420,18 +1420,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Fsp vlan dynamic mapping
         fortinet.fortimanager.fmgr_fsp_vlan_dynamicmapping:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           vlan: <your own value>
           state: present # <value in [present, absent]>
@@ -1542,12 +1534,7 @@ Examples
             #   ip: <string>
             #   ipv6:
             #     autoconf: <value in [disable, enable]>
-            #     dhcp6_client_options:
-            #       - "rapid"
-            #       - "iapd"
-            #       - "iana"
-            #       - "dns"
-            #       - "dnsname"
+            #     dhcp6_client_options: ["rapid", "iapd", "iana", "dns", "dnsname"]
             #     dhcp6_information_request: <value in [disable, enable]>
             #     dhcp6_prefix_delegation: <value in [disable, enable]>
             #     dhcp6_prefix_hint: <string>
@@ -1559,18 +1546,8 @@ Examples
             #     icmp6_send_redirect: <value in [disable, enable]>
             #     interface_identifier: <string>
             #     ip6_address: <string>
-            #     ip6_allowaccess:
-            #       - "https"
-            #       - "ping"
-            #       - "ssh"
-            #       - "snmp"
-            #       - "http"
-            #       - "telnet"
-            #       - "fgfm"
-            #       - "capwap"
-            #       - "fabric"
-            #       - "scim"
-            #       - "probe-response"
+            #     ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                       "capwap", "fabric", "scim", "probe-response"]
             #     ip6_default_life: <integer>
             #     ip6_delegated_prefix_list:
             #       - autonomous_flag: <value in [disable, enable]>
@@ -1638,28 +1615,10 @@ Examples
             #     ip6_route_pref: <value in [medium, high, low]>
             #   secondary_IP: <value in [disable, enable]>
             #   secondaryip:
-            #     - allowaccess:
-            #         - "https"
-            #         - "ping"
-            #         - "ssh"
-            #         - "snmp"
-            #         - "http"
-            #         - "telnet"
-            #         - "fgfm"
-            #         - "auto-ipsec"
-            #         - "radius-acct"
-            #         - "probe-response"
-            #         - "capwap"
-            #         - "dnp"
-            #         - "ftm"
-            #         - "fabric"
-            #         - "speed-test"
-            #         - "icond"
-            #         - "scim"
-            #       detectprotocol:
-            #         - "ping"
-            #         - "tcp-echo"
-            #         - "udp-echo"
+            #     - allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                     "auto-ipsec", "radius-acct", "probe-response", "capwap", "dnp",
+            #                     "ftm", "fabric", "speed-test", "icond", "scim"]
+            #       detectprotocol: ["ping", "tcp-echo", "udp-echo"]
             #       detectserver: <string>
             #       gwdetect: <value in [disable, enable]>
             #       ha_priority: <integer>
@@ -1687,22 +1646,9 @@ Examples
             #       vrgrp: <integer>
             #       vrid: <integer>
             #       vrip: <string>
-            #   allowaccess:
-            #     - "https"
-            #     - "ping"
-            #     - "ssh"
-            #     - "snmp"
-            #     - "http"
-            #     - "telnet"
-            #     - "fgfm"
-            #     - "radius-acct"
-            #     - "probe-response"
-            #     - "dnp"
-            #     - "ftm"
-            #     - "fabric"
-            #     - "speed-test"
-            #     - "icond"
-            #     - "scim"
+            #   allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                 "radius-acct", "probe-response", "dnp", "ftm", "fabric", "speed-test",
+            #                 "icond", "scim"]
             #   dhcp_relay_request_all_server: <value in [disable, enable]>
 
 

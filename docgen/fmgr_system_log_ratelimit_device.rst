@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -69,7 +69,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v7.0.2</code></p>
  </div>
  </li>
- <li><span class="li-head">filter_type</span> <b>(Alias name: filter-type)</b>  Device filter type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [devid]</span>  <span class="li-normal">default: devid</span>
+ <li><span class="li-head">filter_type</span> <b>(Alias name: filter-type)</b>  Device filter type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [devid]</span> <span class="li-normal">default: devid</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v7.0.2</code></p>
@@ -109,18 +109,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Device log rate limit.
         fortinet.fortimanager.fmgr_system_log_ratelimit_device:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_log_ratelimit_device:
             id: 0 # Required variable, integer

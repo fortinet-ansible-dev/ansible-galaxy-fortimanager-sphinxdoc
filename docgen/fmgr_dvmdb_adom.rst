@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -117,13 +117,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mig_os_ver</span> Mig os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span>  <span class="li-normal">default: 6.0</span>
+ <li><span class="li-head">mig_os_ver</span> Mig os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span> <span class="li-normal">default: 6.0</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Ems - (value no longer used as of 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ems, gms, provider]</span>  <span class="li-normal">default: gms</span>
+ <li><span class="li-head">mode</span> Ems - (value no longer used as of 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ems, gms, provider]</span> <span class="li-normal">default: gms</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -141,7 +141,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">os_ver</span> Os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span>  <span class="li-normal">default: 6.0</span>
+ <li><span class="li-head">os_ver</span> Os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span> <span class="li-normal">default: 6.0</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -271,36 +271,18 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: ADOM table, most attributes are read-only and can only be changed internally.
         fortinet.fortimanager.fmgr_dvmdb_adom:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           dvmdb_adom:
             name: "your value" # Required variable, string
             # desc: <string>
-            # flags:
-            #   - "migration"
-            #   - "db_export"
-            #   - "no_vpn_console"
-            #   - "backup"
-            #   - "other_devices"
-            #   - "central_sdwan"
-            #   - "is_autosync"
-            #   - "per_device_wtp"
-            #   - "policy_check_on_install"
-            #   - "install_on_policy_check_fail"
-            #   - "auto_push_cfg"
-            #   - "per_device_fsw"
-            #   - "install_deselect_all"
+            # flags: ["migration", "db_export", "no_vpn_console", "backup", "other_devices",
+            #         "central_sdwan", "is_autosync", "per_device_wtp", "policy_check_on_install",
+            #         "install_on_policy_check_fail", "auto_push_cfg", "per_device_fsw",
+            #         "install_deselect_all"]
             # log_db_retention_hours: <integer>
             # log_disk_quota: <integer>
             # log_disk_quota_alert_thres: <integer>
@@ -312,40 +294,10 @@ Examples
             # mode: <value in [ems, gms, provider]>
             # mr: <integer>
             # os_ver: <value in [unknown, 0.0, 1.0, ...]>
-            # restricted_prds: # <list or string>
-            #   - "fos"
-            #   - "foc"
-            #   - "fml"
-            #   - "fch"
-            #   - "fwb"
-            #   - "log"
-            #   - "fct"
-            #   - "faz"
-            #   - "fsa"
-            #   - "fsw"
-            #   - "fmg"
-            #   - "fdd"
-            #   - "fac"
-            #   - "fpx"
-            #   - "fna"
-            #   - "fdc"
-            #   - "ffw"
-            #   - "fsr"
-            #   - "fad"
-            #   - "fap"
-            #   - "fxt"
-            #   - "fts"
-            #   - "fai"
-            #   - "fwc"
-            #   - "fis"
-            #   - "fed"
-            #   - "fabric"
-            #   - "fpa"
-            #   - "fca"
-            #   - "ftc"
-            #   - "fss"
-            #   - "sim"
-            #   - "fra"
+            # restricted_prds: ["fos", "foc", "fml", "fch", "fwb", "log", "fct", "faz", "fsa",
+            #                   "fsw", "fmg", "fdd", "fac", "fpx", "fna", "fdc", "ffw", "fsr",
+            #                   "fad", "fap", "fxt", "fts", "fai", "fwc", "fis", "fed", "fabric",
+            #                   "fpa", "fca", "ftc", "fss", "sim", "fra"]
             # state: <integer>
             # uuid: <string>
             # create_time: <integer>

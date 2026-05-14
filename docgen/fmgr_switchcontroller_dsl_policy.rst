@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -147,18 +147,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: DSL policy.
         fortinet.fortimanager.fmgr_switchcontroller_dsl_policy:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_dsl_policy:
@@ -166,11 +158,7 @@ Examples
             # append_padding: <value in [disable, enable]>
             # cpe_aele: <value in [disable, enable]>
             # cpe_aele_mode: <value in [ELE_M0, ELE_DS, ELE_PB, ...]>
-            # cs:
-            #   - "A43"
-            #   - "B43"
-            #   - "A43C"
-            #   - "V43"
+            # cs: ["A43", "B43", "A43C", "V43"]
             # ds_bitswap: <value in [disable, enable]>
             # pause_frame: <value in [disable, enable]>
             # profile: <value in [auto-30a, auto-17a, auto-12ab]>

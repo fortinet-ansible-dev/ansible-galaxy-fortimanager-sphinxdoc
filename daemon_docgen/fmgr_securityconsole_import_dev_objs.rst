@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -61,7 +61,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">securityconsole_import_dev_objs</span> - Import objects from device to ADOM, or from ADOM to Global. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">add_mappings</span> Automatically add required dynamic mappings for the device during the search stages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">add_mappings</span> Automatically add required dynamic mappings for the device during the search stages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -85,19 +85,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">if_all_objs</span> If all objs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, all, filter]</span>  <span class="li-normal">default: none</span>
+ <li><span class="li-head">if_all_objs</span> If all objs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, all, filter]</span> <span class="li-normal">default: none</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">if_all_policy</span> If all policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">if_all_policy</span> If all policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">import_action</span> Do - perform the policy and object import. <span class="li-normal">type: str</span> <span class="li-normal">choices: [do, policy_search, obj_search]</span>  <span class="li-normal">default: do</span>
+ <li><span class="li-head">import_action</span> Do - perform the policy and object import. <span class="li-normal">type: str</span> <span class="li-normal">choices: [do, policy_search, obj_search]</span> <span class="li-normal">default: do</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -109,7 +109,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">position</span> Position. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bottom, top]</span>  <span class="li-normal">default: top</span>
+ <li><span class="li-head">position</span> Position. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bottom, top]</span> <span class="li-normal">default: top</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -143,18 +143,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Import objects from device to ADOM, or from ADOM to Global.
         fortinet.fortimanager.fmgr_securityconsole_import_dev_objs:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           securityconsole_import_dev_objs:
             # add_mappings: <value in [disable, enable]>
             # adom: <string>

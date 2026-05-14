@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -911,18 +911,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Web filter profiles.
         fortinet.fortimanager.fmgr_webfilter_profile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           webfilter_profile:
@@ -932,29 +924,12 @@ Examples
             # https_replacemsg: <value in [disable, enable]>
             # inspection_mode: <value in [proxy, flow-based, dns]>
             # log_all_url: <value in [disable, enable]>
-            # options:
-            #   - "block-invalid-url"
-            #   - "jscript"
-            #   - "js"
-            #   - "vbs"
-            #   - "unknown"
-            #   - "wf-referer"
-            #   - "https-scan"
-            #   - "intrinsic"
-            #   - "wf-cookie"
-            #   - "per-user-bwl"
-            #   - "activexfilter"
-            #   - "cookiefilter"
-            #   - "https-url-scan"
-            #   - "javafilter"
-            #   - "rangeblock"
-            #   - "contenttype-check"
-            #   - "per-user-bal"
-            # ovrd_perm:
-            #   - "bannedword-override"
-            #   - "urlfilter-override"
-            #   - "fortiguard-wf-override"
-            #   - "contenttype-check-override"
+            # options: ["block-invalid-url", "jscript", "js", "vbs", "unknown", "wf-referer",
+            #           "https-scan", "intrinsic", "wf-cookie", "per-user-bwl", "activexfilter",
+            #           "cookiefilter", "https-url-scan", "javafilter", "rangeblock",
+            #           "contenttype-check", "per-user-bal"]
+            # ovrd_perm: ["bannedword-override", "urlfilter-override", "fortiguard-wf-override",
+            #             "contenttype-check-override"]
             # post_action: <value in [normal, comfort, block]>
             # replacemsg_group: <string>
             # web_content_log: <value in [disable, enable]>
@@ -1014,16 +989,9 @@ Examples
             #       warning_duration_type: <value in [session, timeout]>
             #       warning_prompt: <value in [per-domain, per-category]>
             #   max_quota_timeout: <integer>
-            #   options:
-            #     - "error-allow"
-            #     - "http-err-detail"
-            #     - "rate-image-urls"
-            #     - "strict-blocking"
-            #     - "rate-server-ip"
-            #     - "redir-block"
-            #     - "connect-request-bypass"
-            #     - "log-all-url"
-            #     - "ftgd-disable"
+            #   options: ["error-allow", "http-err-detail", "rate-image-urls", "strict-blocking",
+            #             "rate-server-ip", "redir-block", "connect-request-bypass", "log-all-url",
+            #             "ftgd-disable"]
             #   ovrd: <list or string>
             #   quota:
             #     - category: <list or string>
@@ -1066,28 +1034,13 @@ Examples
             #   content_header_list: <string>
             #   keyword_match: <list or string>
             #   log_search: <value in [disable, enable]>
-            #   safe_search:
-            #     - "google"
-            #     - "yahoo"
-            #     - "bing"
-            #     - "url"
-            #     - "header"
+            #   safe_search: ["google", "yahoo", "bing", "url", "header"]
             #   urlfilter_table: <string>
-            #   whitelist:
-            #     - "exempt-av"
-            #     - "exempt-webcontent"
-            #     - "exempt-activex-java-cookie"
-            #     - "exempt-dlp"
-            #     - "exempt-rangeblock"
-            #     - "extended-log-others"
+            #   whitelist: ["exempt-av", "exempt-webcontent", "exempt-activex-java-cookie",
+            #               "exempt-dlp", "exempt-rangeblock", "extended-log-others"]
             #   youtube_restrict: <value in [strict, none, moderate]>
-            #   allowlist:
-            #     - "exempt-av"
-            #     - "exempt-webcontent"
-            #     - "exempt-activex-java-cookie"
-            #     - "exempt-dlp"
-            #     - "exempt-rangeblock"
-            #     - "extended-log-others"
+            #   allowlist: ["exempt-av", "exempt-webcontent", "exempt-activex-java-cookie",
+            #               "exempt-dlp", "exempt-rangeblock", "extended-log-others"]
             #   blocklist: <value in [disable, enable]>
             #   vimeo_restrict: <string>
             #   qwant_restrict: <value in [strict, none, moderate]>
@@ -1100,9 +1053,7 @@ Examples
             #       file_type: <list or string>
             #       filter: <string>
             #       password_protected: <value in [any, yes]>
-            #       protocol:
-            #         - "http"
-            #         - "ftp"
+            #       protocol: ["http", "ftp"]
             #   log: <value in [disable, enable]>
             #   scan_archive_contents: <value in [disable, enable]>
             #   status: <value in [disable, enable]>

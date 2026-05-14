@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -310,18 +310,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure central management.
         fortinet.fortimanager.fmgr_devprof_system_centralmanagement:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           devprof: <your own value>
           devprof_system_centralmanagement:
@@ -332,12 +324,7 @@ Examples
             #     id: <integer>
             #     server_address: <string>
             #     server_address6: <string>
-            #     server_type:
-            #       - "update"
-            #       - "rating"
-            #       - "iot-query"
-            #       - "iot-collect"
-            #       - "vpatch-query"
+            #     server_type: ["update", "rating", "iot-query", "iot-collect", "vpatch-query"]
             # ltefw_upgrade_time: <string>
             # vdom: <list or string>
             # allow_remote_firmware_upgrade: <value in [disable, enable]>

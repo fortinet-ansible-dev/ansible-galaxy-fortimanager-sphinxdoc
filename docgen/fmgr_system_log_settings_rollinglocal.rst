@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -68,7 +68,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">del_files</span> <b>(Alias name: del-files)</b>  Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">del_files</span> <b>(Alias name: del-files)</b>  Enable/disable log file deletion after uploading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -86,7 +86,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gzip_format</span> <b>(Alias name: gzip-format)</b>  Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">gzip_format</span> <b>(Alias name: gzip-format)</b>  Enable/disable compression of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -116,7 +116,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.0.16</code></p>
  </div>
  </li>
- <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Format of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [native, text, csv]</span>  <span class="li-normal">default: native</span>
+ <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Format of uploaded log files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [native, text, csv]</span> <span class="li-normal">default: native</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -146,13 +146,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Upload server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ftp, sftp, scp]</span>  <span class="li-normal">default: ftp</span>
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Upload server type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ftp, sftp, scp]</span> <span class="li-normal">default: ftp</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upload</span> Enable/disable log file uploads. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">upload</span> Enable/disable log file uploads. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -164,13 +164,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upload_mode</span> <b>(Alias name: upload-mode)</b>  Upload mode with multiple servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [backup, mirror]</span>  <span class="li-normal">default: backup</span>
+ <li><span class="li-head">upload_mode</span> <b>(Alias name: upload-mode)</b>  Upload mode with multiple servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [backup, mirror]</span> <span class="li-normal">default: backup</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upload_trigger</span> <b>(Alias name: upload-trigger)</b>  Event triggering log files upload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [on-roll, on-schedule]</span>  <span class="li-normal">default: on-roll</span>
+ <li><span class="li-head">upload_trigger</span> <b>(Alias name: upload-trigger)</b>  Event triggering log files upload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [on-roll, on-schedule]</span> <span class="li-normal">default: on-roll</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -194,7 +194,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">when</span> Roll log files periodically. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, daily, weekly]</span>  <span class="li-normal">default: none</span>
+ <li><span class="li-head">when</span> Roll log files periodically. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, daily, weekly]</span> <span class="li-normal">default: none</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -264,27 +264,12 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Log rolling policy for local logs.
         fortinet.fortimanager.fmgr_system_log_settings_rollinglocal:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_log_settings_rollinglocal:
-            # days:
-            #   - "sun"
-            #   - "mon"
-            #   - "tue"
-            #   - "wed"
-            #   - "thu"
-            #   - "fri"
-            #   - "sat"
+            # days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
             # del_files: <value in [disable, enable]>
             # directory: <string>
             # file_size: <integer>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,13 +62,13 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_csf</span> - Add this device to a Security Fabric or set up a new Security Fabric on this device. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">accept_auth_by_cert</span> <b>(Alias name: accept-auth-by-cert)</b>  Accept connections with unknown certificates and ask admin for approval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">accept_auth_by_cert</span> <b>(Alias name: accept-auth-by-cert)</b>  Accept connections with unknown certificates and ask admin for approval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authorization_request_type</span> <b>(Alias name: authorization-request-type)</b>  Authorization request type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [certificate, serial]</span>  <span class="li-normal">default: certificate</span>
+ <li><span class="li-head">authorization_request_type</span> <b>(Alias name: authorization-request-type)</b>  Authorization request type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [certificate, serial]</span> <span class="li-normal">default: certificate</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -80,13 +80,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">configuration_sync</span> <b>(Alias name: configuration-sync)</b>  Configuration sync mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, local]</span>  <span class="li-normal">default: default</span>
+ <li><span class="li-head">configuration_sync</span> <b>(Alias name: configuration-sync)</b>  Configuration sync mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, local]</span> <span class="li-normal">default: default</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
- <li><span class="li-head">downstream_access</span> <b>(Alias name: downstream-access)</b>  Enable/disable downstream device access to this device&apos;s configuration and data. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">downstream_access</span> <b>(Alias name: downstream-access)</b>  Enable/disable downstream device access to this device&apos;s configuration and data. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -110,7 +110,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">configuration_write_access</span> <b>(Alias name: configuration-write-access)</b>  Enable/disable downstream device write access to configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">configuration_write_access</span> <b>(Alias name: configuration-write-access)</b>  Enable/disable downstream device write access to configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -124,7 +124,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">fabric_object_unification</span> <b>(Alias name: fabric-object-unification)</b>  Fabric cmdb object unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, default]</span>  <span class="li-normal">default: default</span>
+ <li><span class="li-head">fabric_object_unification</span> <b>(Alias name: fabric-object-unification)</b>  Fabric cmdb object unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, default]</span> <span class="li-normal">default: default</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
@@ -136,7 +136,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">file_mgmt</span> <b>(Alias name: file-mgmt)</b>  Enable/disable security fabric daemon file management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">file_mgmt</span> <b>(Alias name: file-mgmt)</b>  Enable/disable security fabric daemon file management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
@@ -160,7 +160,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">forticloud_account_enforcement</span> <b>(Alias name: forticloud-account-enforcement)</b>  Fabric forticloud account unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">forticloud_account_enforcement</span> <b>(Alias name: forticloud-account-enforcement)</b>  Fabric forticloud account unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -178,19 +178,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_unification</span> <b>(Alias name: log-unification)</b>  Enable/disable broadcast of discovery messages for log unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">log_unification</span> <b>(Alias name: log-unification)</b>  Enable/disable broadcast of discovery messages for log unification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">saml_configuration_sync</span> <b>(Alias name: saml-configuration-sync)</b>  Saml setting configuration synchronization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, default]</span>  <span class="li-normal">default: default</span>
+ <li><span class="li-head">saml_configuration_sync</span> <b>(Alias name: saml-configuration-sync)</b>  Saml setting configuration synchronization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local, default]</span> <span class="li-normal">default: default</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable security fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Enable/disable security fabric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -202,13 +202,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Security fabric authorization action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [accept, deny]</span>  <span class="li-normal">default: accept</span>
+ <li><span class="li-head">action</span> Security fabric authorization action. <span class="li-normal">type: str</span> <span class="li-normal">choices: [accept, deny]</span> <span class="li-normal">default: accept</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">authorization_type</span> <b>(Alias name: authorization-type)</b>  Authorization type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [serial, certificate]</span>  <span class="li-normal">default: serial</span>
+ <li><span class="li-head">authorization_type</span> <b>(Alias name: authorization-type)</b>  Authorization type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [serial, certificate]</span> <span class="li-normal">default: serial</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -220,7 +220,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">downstream_authorization</span> <b>(Alias name: downstream-authorization)</b>  Trust authorizations by this node&apos;s administrator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">downstream_authorization</span> <b>(Alias name: downstream-authorization)</b>  Trust authorizations by this node&apos;s administrator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -264,13 +264,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upstream_confirm</span> <b>(Alias name: upstream-confirm)</b>  Upstream authorization confirm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [discover, confirm]</span>  <span class="li-normal">default: discover</span>
+ <li><span class="li-head">upstream_confirm</span> <b>(Alias name: upstream-confirm)</b>  Upstream authorization confirm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [discover, confirm]</span> <span class="li-normal">default: discover</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for upstream and downstream connections. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>
+ <li><span class="li-head">ssl_protocol</span> <b>(Alias name: ssl-protocol)</b>  Set the lowest ssl protocol version for upstream and downstream connections. <span class="li-normal">type: str</span> <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span> <span class="li-normal">default: follow-global-ssl-protocol</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -298,18 +298,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Add this device to a Security Fabric or set up a new Security Fabric on this device.
         fortinet.fortimanager.fmgr_system_csf:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_csf:
             # accept_auth_by_cert: <value in [disable, enable]>
             # authorization_request_type: <value in [certificate, serial]>

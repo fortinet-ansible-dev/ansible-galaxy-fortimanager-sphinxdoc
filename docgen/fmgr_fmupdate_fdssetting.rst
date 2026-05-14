@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -68,25 +68,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fds_clt_ssl_protocol</span> <b>(Alias name: fds-clt-ssl-protocol)</b>  The ssl protocols version for connecting fds server (default = tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: tlsv1.2</span>
+ <li><span class="li-head">fds_clt_ssl_protocol</span> <b>(Alias name: fds-clt-ssl-protocol)</b>  The ssl protocols version for connecting fds server (default = tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span> <span class="li-normal">default: tlsv1.2</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fds_ssl_protocol</span> <b>(Alias name: fds-ssl-protocol)</b>  The ssl protocols version for receiving fgt connection (default = tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: tlsv1.2</span>
+ <li><span class="li-head">fds_ssl_protocol</span> <b>(Alias name: fds-ssl-protocol)</b>  The ssl protocols version for receiving fgt connection (default = tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span> <span class="li-normal">default: tlsv1.2</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fmtr_log</span> <b>(Alias name: fmtr-log)</b>  Fmtr log level <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span>
+ <li><span class="li-head">fmtr_log</span> <b>(Alias name: fmtr-log)</b>  Fmtr log level <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> <span class="li-normal">default: info</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">linkd_log</span> <b>(Alias name: linkd-log)</b>  The linkd log level (default = info). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span>
+ <li><span class="li-head">linkd_log</span> <b>(Alias name: linkd-log)</b>  The linkd log level (default = info). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> <span class="li-normal">default: info</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -122,7 +122,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable push updates for clients (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Enable/disable push updates for clients (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -162,7 +162,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Enable/disable push updates (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Enable/disable push updates (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -170,13 +170,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">send_report</span> Send report/fssi to fds server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">send_report</span> Send report/fssi to fds server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">send_setup</span> Forward setup to fds server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">send_setup</span> Forward setup to fds server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -226,7 +226,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -264,13 +264,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.4.5</code>, <code class="docutils literal notranslate">v7.0.0 -> v7.0.0</code></p>
  </div>
  </li>
- <li><span class="li-head">umsvc_log</span> <b>(Alias name: umsvc-log)</b>  The um_service log level (default = info). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: info</span>
+ <li><span class="li-head">umsvc_log</span> <b>(Alias name: umsvc-log)</b>  The um_service log level (default = info). <span class="li-normal">type: str</span> <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span> <span class="li-normal">default: info</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">unreg_dev_option</span> <b>(Alias name: unreg-dev-option)</b>  Set the option for unregister devices <span class="li-normal">type: str</span> <span class="li-normal">choices: [ignore, svc-only, add-service]</span>  <span class="li-normal">default: add-service</span>
+ <li><span class="li-head">unreg_dev_option</span> <b>(Alias name: unreg-dev-option)</b>  Set the option for unregister devices <span class="li-normal">type: str</span> <span class="li-normal">choices: [ignore, svc-only, add-service]</span> <span class="li-normal">default: add-service</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -282,19 +282,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">day</span> Configure the day the update will occur, if the freqnecy is weekly (sunday - saturday, default = monday). <span class="li-normal">type: str</span> <span class="li-normal">choices: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]</span>  <span class="li-normal">default: Monday</span>
+ <li><span class="li-head">day</span> Configure the day the update will occur, if the freqnecy is weekly (sunday - saturday, default = monday). <span class="li-normal">type: str</span> <span class="li-normal">choices: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]</span> <span class="li-normal">default: Monday</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">frequency</span> Configure update frequency: every - time interval, daily - once a day, weekly - once a week (default = every). <span class="li-normal">type: str</span> <span class="li-normal">choices: [every, daily, weekly]</span>  <span class="li-normal">default: every</span>
+ <li><span class="li-head">frequency</span> Configure update frequency: every - time interval, daily - once a day, weekly - once a week (default = every). <span class="li-normal">type: str</span> <span class="li-normal">choices: [every, daily, weekly]</span> <span class="li-normal">default: every</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable scheduled updates. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">status</span> Enable/disable scheduled updates. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -308,19 +308,19 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">wanip_query_mode</span> <b>(Alias name: wanip-query-mode)</b>  Public ip query mode <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, ipify]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">wanip_query_mode</span> <b>(Alias name: wanip-query-mode)</b>  Public ip query mode <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, ipify]</span> <span class="li-normal">default: disable</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fortiguard_anycast</span> <b>(Alias name: fortiguard-anycast)</b>  Enable/disable use of fortiguards anycast network <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">fortiguard_anycast</span> <b>(Alias name: fortiguard-anycast)</b>  Enable/disable use of fortiguards anycast network <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fortiguard_anycast_source</span> <b>(Alias name: fortiguard-anycast-source)</b>  Configure which of fortinets servers to provide fortiguard services in fortiguards anycast network. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortinet, aws]</span>  <span class="li-normal">default: fortinet</span>
+ <li><span class="li-head">fortiguard_anycast_source</span> <b>(Alias name: fortiguard-anycast-source)</b>  Configure which of fortinets servers to provide fortiguard services in fortiguards anycast network. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortinet, aws]</span> <span class="li-normal">default: fortinet</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
@@ -378,18 +378,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiGuard settings.
         fortinet.fortimanager.fmgr_fmupdate_fdssetting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_fdssetting:
             # User_Agent: <string>
             # fds_clt_ssl_protocol: <value in [sslv3, tlsv1.0, tlsv1.1, ...]>
@@ -416,61 +408,14 @@ Examples
             #       ip: <string>
             #       ip6: <string>
             #       port: <integer>
-            #       service_type: # <list or string>
-            #         - "fds"
-            #         - "fct"
-            #         - "fai"
+            #       service_type: ["fds", "fct", "fai"]
             #   status: <value in [disable, enable]>
-            # system_support_fct:
-            #   - "4.x"
-            #   - "5.0"
-            #   - "5.2"
-            #   - "5.4"
-            #   - "5.6"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "6.4"
-            #   - "7.0"
-            #   - "7.2"
-            #   - "7.4"
-            # system_support_fgt:
-            #   - "5.4"
-            #   - "5.6"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "6.4"
-            #   - "7.0"
-            #   - "7.2"
-            #   - "7.4"
-            #   - "7.6"
-            # system_support_fml:
-            #   - "4.x"
-            #   - "5.x"
-            #   - "6.x"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "6.4"
-            #   - "7.0"
-            #   - "7.2"
-            #   - "7.x"
-            # system_support_fsa:
-            #   - "1.x"
-            #   - "2.x"
-            #   - "3.x"
-            #   - "4.x"
-            #   - "3.0"
-            #   - "3.1"
-            #   - "3.2"
-            #   - "5.x"
-            # system_support_fsw:
-            #   - "5.4"
-            #   - "5.6"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "4.x"
-            #   - "5.0"
-            #   - "5.2"
-            #   - "6.4"
+            # system_support_fct: ["4.x", "5.0", "5.2", "5.4", "5.6", "6.0", "6.2", "6.4", "7.0",
+            #                      "7.2", "7.4"]
+            # system_support_fgt: ["5.4", "5.6", "6.0", "6.2", "6.4", "7.0", "7.2", "7.4", "7.6"]
+            # system_support_fml: ["4.x", "5.x", "6.x", "6.0", "6.2", "6.4", "7.0", "7.2", "7.x"]
+            # system_support_fsa: ["1.x", "2.x", "3.x", "4.x", "3.0", "3.1", "3.2", "5.x"]
+            # system_support_fsw: ["5.4", "5.6", "6.0", "6.2", "4.x", "5.0", "5.2", "6.4"]
             # umsvc_log: <value in [emergency, alert, critical, ...]>
             # unreg_dev_option: <value in [ignore, svc-only, add-service]>
             # update_schedule:
@@ -481,23 +426,11 @@ Examples
             # wanip_query_mode: <value in [disable, ipify]>
             # fortiguard_anycast: <value in [disable, enable]>
             # fortiguard_anycast_source: <value in [fortinet, aws]>
-            # system_support_fdc:
-            #   - "3.x"
-            #   - "4.x"
-            #   - "5.x"
-            #   - "6.x"
-            # system_support_fts:
-            #   - "3.x"
-            #   - "4.x"
-            #   - "7.x"
-            # system_support_faz:
-            #   - "6.x"
-            #   - "7.x"
-            # system_support_fis:
-            #   - "1.x"
-            #   - "2.x"
-            # system_support_fai:
-            #   - "7.x"
+            # system_support_fdc: ["3.x", "4.x", "5.x", "6.x"]
+            # system_support_fts: ["3.x", "4.x", "7.x"]
+            # system_support_faz: ["6.x", "7.x"]
+            # system_support_fis: ["1.x", "2.x"]
+            # system_support_fai: ["7.x"]
 
 
 Return Values

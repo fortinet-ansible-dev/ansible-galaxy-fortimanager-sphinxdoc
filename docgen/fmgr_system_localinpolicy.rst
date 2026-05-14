@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_localinpolicy</span> - IPv4 local in policy configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action performed on traffic matching this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, reject, accept]</span>  <span class="li-normal">default: drop</span>
+ <li><span class="li-head">action</span> Action performed on traffic matching this policy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, reject, accept]</span> <span class="li-normal">default: drop</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -93,7 +93,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Traffic protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tcp, udp, tcp_udp]</span>  <span class="li-normal">default: tcp_udp</span>
+ <li><span class="li-head">protocol</span> Traffic protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [tcp, udp, tcp_udp]</span> <span class="li-normal">default: tcp_udp</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -133,18 +133,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: IPv4 local in policy configuration.
         fortinet.fortimanager.fmgr_system_localinpolicy:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           system_localinpolicy:
             id: 0 # Required variable, integer

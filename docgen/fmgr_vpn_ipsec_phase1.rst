@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -1117,18 +1117,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure VPN remote gateway.
         fortinet.fortimanager.fmgr_vpn_ipsec_phase1:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           vpn_ipsec_phase1:
@@ -1136,125 +1128,20 @@ Examples
             # acct_verify: <value in [disable, enable]>
             # add_gw_route: <value in [disable, enable]>
             # add_route: <value in [disable, enable]>
-            # addke1:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke2:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke3:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke4:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke5:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke6:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke7:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
+            # addke1: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
+            # addke2: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
+            # addke3: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
+            # addke4: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
+            # addke5: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
+            # addke6: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
+            # addke7: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37"]
             # assign_ip: <value in [disable, enable]>
             # assign_ip_from: <value in [range, usrgrp, dhcp, ...]>
             # authmethod: <value in [psk, signature]>
@@ -1282,24 +1169,8 @@ Examples
             # dev_id_notification: <value in [disable, enable]>
             # dhcp_ra_giaddr: <string>
             # dhcp6_ra_linkaddr: <string>
-            # dhgrp:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
-            #   - "32"
+            # dhgrp: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27", "28",
+            #         "29", "30", "31", "32"]
             # digital_signature_auth: <value in [disable, enable]>
             # distance: <integer>
             # dns_mode: <value in [auto, manual]>
@@ -1420,11 +1291,7 @@ Examples
             # save_password: <value in [disable, enable]>
             # send_cert_chain: <value in [disable, enable]>
             # shared_idle_timeout: <value in [disable, enable]>
-            # signature_hash_alg:
-            #   - "sha1"
-            #   - "sha2-256"
-            #   - "sha2-384"
-            #   - "sha2-512"
+            # signature_hash_alg: ["sha1", "sha2-256", "sha2-384", "sha2-512"]
             # split_include_service: <list or string>
             # suite_b: <value in [disable, suite-b-gcm-128, suite-b-gcm-256]>
             # transit_gateway: <value in [disable, enable]>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -80,37 +80,37 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">skip_disk_check</span> <b>(Alias name: skip-disk-check)</b>  Skip disk check when upgrade image. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">skip_disk_check</span> <b>(Alias name: skip-disk-check)</b>  Skip disk check when upgrade image. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">auto_scan_fgt_disk</span> <b>(Alias name: auto-scan-fgt-disk)</b>  Auto scan fgt disk if needed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">auto_scan_fgt_disk</span> <b>(Alias name: auto-scan-fgt-disk)</b>  Auto scan fgt disk if needed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">check_fgt_disk</span> <b>(Alias name: check-fgt-disk)</b>  Check fgt disk before upgrade image. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">check_fgt_disk</span> <b>(Alias name: check-fgt-disk)</b>  Check fgt disk before upgrade image. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fds_failover_fmg</span> <b>(Alias name: fds-failover-fmg)</b>  Using fmg local image file is download from fds fails. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">fds_failover_fmg</span> <b>(Alias name: fds-failover-fmg)</b>  Using fmg local image file is download from fds fails. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">immx_source</span> <b>(Alias name: immx-source)</b>  Configure which of immx file to be used for choosing upgrade pach. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fmg, fgt, cloud]</span>  <span class="li-normal">default: fmg</span>
+ <li><span class="li-head">immx_source</span> <b>(Alias name: immx-source)</b>  Configure which of immx file to be used for choosing upgrade pach. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fmg, fgt, cloud]</span> <span class="li-normal">default: fmg</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log</span> Configure log setting for fwm daemon <span class="li-normal">type: str</span> <span class="li-normal">choices: [fwm, fwm_dm, fwm_dm_json]</span>  <span class="li-normal">default: fwm_dm</span>
+ <li><span class="li-head">log</span> Configure log setting for fwm daemon <span class="li-normal">type: str</span> <span class="li-normal">choices: [fwm, fwm_dm, fwm_dm_json]</span> <span class="li-normal">default: fwm_dm</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -220,7 +220,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">health_check</span> <b>(Alias name: health-check)</b>  Do health check after upgrade <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">health_check</span> <b>(Alias name: health-check)</b>  Do health check after upgrade <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -238,13 +238,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">retrieve</span> Do retrieve after upgrade <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">retrieve</span> Do retrieve after upgrade <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">revision_diff</span> <b>(Alias name: revision-diff)</b>  Calculate diff script after upgrade <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">revision_diff</span> <b>(Alias name: revision-diff)</b>  Calculate diff script after upgrade <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
@@ -278,18 +278,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure firmware management settings.
         fortinet.fortimanager.fmgr_fmupdate_fwmsetting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_fwmsetting:
             # fds_image_timeout: <integer>
             # max_fds_retry: <integer>

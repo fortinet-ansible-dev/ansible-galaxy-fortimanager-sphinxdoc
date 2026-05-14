@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">vap</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vap_dynamicmapping</span> - Configure Virtual Access Points <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">_centmgmt</span> Centmgmt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_centmgmt</span> Centmgmt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -84,13 +84,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_device_identification</span> <b>(Alias name: _intf_device-identification)</b>  Intf device identification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_intf_device_identification</span> <b>(Alias name: _intf_device-identification)</b>  Intf device identification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_device_netscan</span> <b>(Alias name: _intf_device-netscan)</b>  Intf device netscan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_intf_device_netscan</span> <b>(Alias name: _intf_device-netscan)</b>  Intf device netscan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -102,13 +102,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_dhcp_relay_service</span> <b>(Alias name: _intf_dhcp-relay-service)</b>  Intf dhcp relay service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_intf_dhcp_relay_service</span> <b>(Alias name: _intf_dhcp-relay-service)</b>  Intf dhcp relay service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_dhcp_relay_type</span> <b>(Alias name: _intf_dhcp-relay-type)</b>  Intf dhcp relay type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regular, ipsec]</span>  <span class="li-normal">default: regular</span>
+ <li><span class="li-head">_intf_dhcp_relay_type</span> <b>(Alias name: _intf_dhcp-relay-type)</b>  Intf dhcp relay type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regular, ipsec]</span> <span class="li-normal">default: regular</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -120,13 +120,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_dhcp6_relay_service</span> <b>(Alias name: _intf_dhcp6-relay-service)</b>  Intf dhcp6 relay service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_intf_dhcp6_relay_service</span> <b>(Alias name: _intf_dhcp6-relay-service)</b>  Intf dhcp6 relay service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_dhcp6_relay_type</span> <b>(Alias name: _intf_dhcp6-relay-type)</b>  Intf dhcp6 relay type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regular]</span>  <span class="li-normal">default: regular</span>
+ <li><span class="li-head">_intf_dhcp6_relay_type</span> <b>(Alias name: _intf_dhcp6-relay-type)</b>  Intf dhcp6 relay type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [regular]</span> <span class="li-normal">default: regular</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -150,7 +150,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_listen_forticlient_connection</span> <b>(Alias name: _intf_listen-forticlient-connection)</b>  Intf listen forticlient connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_intf_listen_forticlient_connection</span> <b>(Alias name: _intf_listen-forticlient-connection)</b>  Intf listen forticlient connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -1214,7 +1214,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_is_factory_setting</span> Is factory setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ext]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">_is_factory_setting</span> Is factory setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ext]</span> <span class="li-normal">default: disable</span>
  <a id='label382' href="javascript:ContentClick('label383', 'label382');" onmouseover="ContentPreview('label383');" onmouseout="ContentUnpreview('label383');" title="click to collapse or expand..."> more... </a>
  <div id="label383" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
@@ -1292,7 +1292,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_managed_subnetwork_size</span> <b>(Alias name: _intf_managed-subnetwork-size)</b>  Intf managed subnetwork size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]</span>  <span class="li-normal">default: 256</span>
+ <li><span class="li-head">_intf_managed_subnetwork_size</span> <b>(Alias name: _intf_managed-subnetwork-size)</b>  Intf managed subnetwork size. <span class="li-normal">type: str</span> <span class="li-normal">choices: [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]</span> <span class="li-normal">default: 256</span>
  <a id='label408' href="javascript:ContentClick('label409', 'label408');" onmouseover="ContentPreview('label409');" onmouseout="ContentUnpreview('label409');" title="click to collapse or expand..."> more... </a>
  <div id="label409" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -1310,7 +1310,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">_intf_role</span> Intf role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [lan, wan, dmz, undefined]</span>  <span class="li-normal">default: lan</span>
+ <li><span class="li-head">_intf_role</span> Intf role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [lan, wan, dmz, undefined]</span> <span class="li-normal">default: lan</span>
  <a id='label414' href="javascript:ContentClick('label415', 'label414');" onmouseover="ContentPreview('label415');" onmouseout="ContentUnpreview('label415');" title="click to collapse or expand..."> more... </a>
  <div id="label415" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -1430,18 +1430,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Virtual Access Points
         fortinet.fortimanager.fmgr_vap_dynamicmapping:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           vap: <your own value>
           state: present # <value in [present, absent]>
@@ -1451,22 +1443,9 @@ Examples
                 vdom: <string>
             # _centmgmt: <value in [disable, enable]>
             # _dhcp_svr_id: <string>
-            # _intf_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "auto-ipsec"
-            #   - "radius-acct"
-            #   - "probe-response"
-            #   - "capwap"
-            #   - "dnp"
-            #   - "ftm"
-            #   - "fabric"
-            #   - "speed-test"
+            # _intf_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                     "auto-ipsec", "radius-acct", "probe-response", "capwap", "dnp",
+            #                     "ftm", "fabric", "speed-test"]
             # _intf_device_identification: <value in [disable, enable]>
             # _intf_device_netscan: <value in [disable, enable]>
             # _intf_dhcp_relay_ip: <list or string>
@@ -1477,16 +1456,8 @@ Examples
             # _intf_dhcp6_relay_type: <value in [regular]>
             # _intf_ip: <string>
             # _intf_ip6_address: <string>
-            # _intf_ip6_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "any"
-            #   - "fgfm"
-            #   - "capwap"
+            # _intf_ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "any",
+            #                         "fgfm", "capwap"]
             # _intf_listen_forticlient_connection: <value in [disable, enable]>
             # acct_interim_interval: <integer>
             # address_group: <string>
@@ -1494,26 +1465,10 @@ Examples
             # atf_weight: <integer>
             # auth: <value in [PSK, psk, RADIUS, ...]>
             # broadcast_ssid: <value in [disable, enable]>
-            # broadcast_suppression:
-            #   - "dhcp"
-            #   - "arp"
-            #   - "dhcp2"
-            #   - "arp2"
-            #   - "netbios-ns"
-            #   - "netbios-ds"
-            #   - "arp3"
-            #   - "dhcp-up"
-            #   - "dhcp-down"
-            #   - "arp-known"
-            #   - "arp-unknown"
-            #   - "arp-reply"
-            #   - "ipv6"
-            #   - "dhcp-starvation"
-            #   - "arp-poison"
-            #   - "all-other-mc"
-            #   - "all-other-bc"
-            #   - "arp-proxy"
-            #   - "dhcp-ucast"
+            # broadcast_suppression: ["dhcp", "arp", "dhcp2", "arp2", "netbios-ns", "netbios-ds",
+            #                         "arp3", "dhcp-up", "dhcp-down", "arp-known", "arp-unknown",
+            #                         "arp-reply", "ipv6", "dhcp-starvation", "arp-poison",
+            #                         "all-other-mc", "all-other-bc", "arp-proxy", "dhcp-ucast"]
             # captive_portal_ac_name: <string>
             # captive_portal_macauth_radius_secret: <list or string>
             # captive_portal_macauth_radius_server: <string>
@@ -1564,10 +1519,7 @@ Examples
             # multicast_enhance: <value in [disable, enable]>
             # multicast_rate: <value in [0, 6000, 12000, ...]>
             # okc: <value in [disable, enable]>
-            # owe_groups:
-            #   - "19"
-            #   - "20"
-            #   - "21"
+            # owe_groups: ["19", "20", "21"]
             # owe_transition: <value in [disable, enable]>
             # owe_transition_ssid: <string>
             # passphrase: <list or string>
@@ -1589,157 +1541,28 @@ Examples
             # radius_mac_auth_server: <string>
             # radius_mac_auth_usergroups: <list or string>
             # radius_server: <string>
-            # rates_11a:
-            #   - "1"
-            #   - "1-basic"
-            #   - "2"
-            #   - "2-basic"
-            #   - "5.5"
-            #   - "5.5-basic"
-            #   - "6"
-            #   - "6-basic"
-            #   - "9"
-            #   - "9-basic"
-            #   - "12"
-            #   - "12-basic"
-            #   - "18"
-            #   - "18-basic"
-            #   - "24"
-            #   - "24-basic"
-            #   - "36"
-            #   - "36-basic"
-            #   - "48"
-            #   - "48-basic"
-            #   - "54"
-            #   - "54-basic"
-            #   - "11"
-            #   - "11-basic"
-            # rates_11ac_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/1"
-            #   - "mcs9/1"
-            #   - "mcs0/2"
-            #   - "mcs1/2"
-            #   - "mcs2/2"
-            #   - "mcs3/2"
-            #   - "mcs4/2"
-            #   - "mcs5/2"
-            #   - "mcs6/2"
-            #   - "mcs7/2"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/1"
-            #   - "mcs11/1"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            # rates_11ac_ss34:
-            #   - "mcs0/3"
-            #   - "mcs1/3"
-            #   - "mcs2/3"
-            #   - "mcs3/3"
-            #   - "mcs4/3"
-            #   - "mcs5/3"
-            #   - "mcs6/3"
-            #   - "mcs7/3"
-            #   - "mcs8/3"
-            #   - "mcs9/3"
-            #   - "mcs0/4"
-            #   - "mcs1/4"
-            #   - "mcs2/4"
-            #   - "mcs3/4"
-            #   - "mcs4/4"
-            #   - "mcs5/4"
-            #   - "mcs6/4"
-            #   - "mcs7/4"
-            #   - "mcs8/4"
-            #   - "mcs9/4"
-            #   - "mcs10/3"
-            #   - "mcs11/3"
-            #   - "mcs10/4"
-            #   - "mcs11/4"
-            # rates_11bg:
-            #   - "1"
-            #   - "1-basic"
-            #   - "2"
-            #   - "2-basic"
-            #   - "5.5"
-            #   - "5.5-basic"
-            #   - "6"
-            #   - "6-basic"
-            #   - "9"
-            #   - "9-basic"
-            #   - "12"
-            #   - "12-basic"
-            #   - "18"
-            #   - "18-basic"
-            #   - "24"
-            #   - "24-basic"
-            #   - "36"
-            #   - "36-basic"
-            #   - "48"
-            #   - "48-basic"
-            #   - "54"
-            #   - "54-basic"
-            #   - "11"
-            #   - "11-basic"
-            # rates_11n_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            #   - "mcs12/2"
-            #   - "mcs13/2"
-            #   - "mcs14/2"
-            #   - "mcs15/2"
-            # rates_11n_ss34:
-            #   - "mcs16/3"
-            #   - "mcs17/3"
-            #   - "mcs18/3"
-            #   - "mcs19/3"
-            #   - "mcs20/3"
-            #   - "mcs21/3"
-            #   - "mcs22/3"
-            #   - "mcs23/3"
-            #   - "mcs24/4"
-            #   - "mcs25/4"
-            #   - "mcs26/4"
-            #   - "mcs27/4"
-            #   - "mcs28/4"
-            #   - "mcs29/4"
-            #   - "mcs30/4"
-            #   - "mcs31/4"
-            # sae_groups:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
+            # rates_11a: ["1", "1-basic", "2", "2-basic", "5.5", "5.5-basic", "6", "6-basic", "9",
+            #             "9-basic", "12", "12-basic", "18", "18-basic", "24", "24-basic", "36",
+            #             "36-basic", "48", "48-basic", "54", "54-basic", "11", "11-basic"]
+            # rates_11ac_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1",
+            #                   "mcs6/1", "mcs7/1", "mcs8/1", "mcs9/1", "mcs0/2", "mcs1/2",
+            #                   "mcs2/2", "mcs3/2", "mcs4/2", "mcs5/2", "mcs6/2", "mcs7/2",
+            #                   "mcs8/2", "mcs9/2", "mcs10/1", "mcs11/1", "mcs10/2", "mcs11/2"]
+            # rates_11ac_ss34: ["mcs0/3", "mcs1/3", "mcs2/3", "mcs3/3", "mcs4/3", "mcs5/3",
+            #                   "mcs6/3", "mcs7/3", "mcs8/3", "mcs9/3", "mcs0/4", "mcs1/4",
+            #                   "mcs2/4", "mcs3/4", "mcs4/4", "mcs5/4", "mcs6/4", "mcs7/4",
+            #                   "mcs8/4", "mcs9/4", "mcs10/3", "mcs11/3", "mcs10/4", "mcs11/4"]
+            # rates_11bg: ["1", "1-basic", "2", "2-basic", "5.5", "5.5-basic", "6", "6-basic", "9",
+            #              "9-basic", "12", "12-basic", "18", "18-basic", "24", "24-basic", "36",
+            #              "36-basic", "48", "48-basic", "54", "54-basic", "11", "11-basic"]
+            # rates_11n_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1", "mcs6/1",
+            #                  "mcs7/1", "mcs8/2", "mcs9/2", "mcs10/2", "mcs11/2", "mcs12/2",
+            #                  "mcs13/2", "mcs14/2", "mcs15/2"]
+            # rates_11n_ss34: ["mcs16/3", "mcs17/3", "mcs18/3", "mcs19/3", "mcs20/3", "mcs21/3",
+            #                  "mcs22/3", "mcs23/3", "mcs24/4", "mcs25/4", "mcs26/4", "mcs27/4",
+            #                  "mcs28/4", "mcs29/4", "mcs30/4", "mcs31/4"]
+            # sae_groups: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27",
+            #              "28", "29", "30", "31"]
             # sae_password: <list or string>
             # schedule: <list or string>
             # security: <value in [None, WEP64, wep64, ...]>
@@ -1768,16 +1591,9 @@ Examples
             # tunnel_fallback_interval: <integer>
             # access_control_list: <string>
             # captive_portal_auth_timeout: <integer>
-            # ipv6_rules:
-            #   - "drop-icmp6ra"
-            #   - "drop-icmp6rs"
-            #   - "drop-llmnr6"
-            #   - "drop-icmp6mld2"
-            #   - "drop-dhcp6s"
-            #   - "drop-dhcp6c"
-            #   - "ndp-proxy"
-            #   - "drop-ns-dad"
-            #   - "drop-ns-nondad"
+            # ipv6_rules: ["drop-icmp6ra", "drop-icmp6rs", "drop-llmnr6", "drop-icmp6mld2",
+            #              "drop-dhcp6s", "drop-dhcp6c", "ndp-proxy", "drop-ns-dad",
+            #              "drop-ns-nondad"]
             # sticky_client_remove: <value in [disable, enable]>
             # sticky_client_threshold_2g: <string>
             # sticky_client_threshold_5g: <string>
@@ -1788,9 +1604,7 @@ Examples
             # port_macauth: <value in [disable, radius, address-group]>
             # port_macauth_reauth_timeout: <integer>
             # port_macauth_timeout: <integer>
-            # additional_akms:
-            #   - "akm6"
-            #   - "akm24"
+            # additional_akms: ["akm6", "akm24"]
             # bstm_disassociation_imminent: <value in [disable, enable]>
             # bstm_load_balancing_disassoc_timer: <integer>
             # bstm_rssi_disassoc_timer: <integer>
@@ -1814,10 +1628,7 @@ Examples
             # application_report_intv: <integer>
             # auth_cert: <string>
             # auth_portal_addr: <string>
-            # beacon_advertising:
-            #   - "name"
-            #   - "model"
-            #   - "serial-number"
+            # beacon_advertising: ["name", "model", "serial-number"]
             # ips_sensor: <string>
             # l3_roaming: <value in [disable, enable]>
             # local_standalone_dns: <value in [disable, enable]>
@@ -1825,56 +1636,14 @@ Examples
             # osen: <value in [disable, enable]>
             # radius_mac_mpsk_auth: <value in [disable, enable]>
             # radius_mac_mpsk_timeout: <integer>
-            # rates_11ax_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/1"
-            #   - "mcs9/1"
-            #   - "mcs10/1"
-            #   - "mcs11/1"
-            #   - "mcs0/2"
-            #   - "mcs1/2"
-            #   - "mcs2/2"
-            #   - "mcs3/2"
-            #   - "mcs4/2"
-            #   - "mcs5/2"
-            #   - "mcs6/2"
-            #   - "mcs7/2"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            # rates_11ax_ss34:
-            #   - "mcs0/3"
-            #   - "mcs1/3"
-            #   - "mcs2/3"
-            #   - "mcs3/3"
-            #   - "mcs4/3"
-            #   - "mcs5/3"
-            #   - "mcs6/3"
-            #   - "mcs7/3"
-            #   - "mcs8/3"
-            #   - "mcs9/3"
-            #   - "mcs10/3"
-            #   - "mcs11/3"
-            #   - "mcs0/4"
-            #   - "mcs1/4"
-            #   - "mcs2/4"
-            #   - "mcs3/4"
-            #   - "mcs4/4"
-            #   - "mcs5/4"
-            #   - "mcs6/4"
-            #   - "mcs7/4"
-            #   - "mcs8/4"
-            #   - "mcs9/4"
-            #   - "mcs10/4"
-            #   - "mcs11/4"
+            # rates_11ax_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1",
+            #                   "mcs6/1", "mcs7/1", "mcs8/1", "mcs9/1", "mcs10/1", "mcs11/1",
+            #                   "mcs0/2", "mcs1/2", "mcs2/2", "mcs3/2", "mcs4/2", "mcs5/2",
+            #                   "mcs6/2", "mcs7/2", "mcs8/2", "mcs9/2", "mcs10/2", "mcs11/2"]
+            # rates_11ax_ss34: ["mcs0/3", "mcs1/3", "mcs2/3", "mcs3/3", "mcs4/3", "mcs5/3",
+            #                   "mcs6/3", "mcs7/3", "mcs8/3", "mcs9/3", "mcs10/3", "mcs11/3",
+            #                   "mcs0/4", "mcs1/4", "mcs2/4", "mcs3/4", "mcs4/4", "mcs5/4",
+            #                   "mcs6/4", "mcs7/4", "mcs8/4", "mcs9/4", "mcs10/4", "mcs11/4"]
             # scan_botnet_connections: <value in [disable, block, monitor]>
             # utm_log: <value in [disable, enable]>
             # utm_status: <value in [disable, enable]>

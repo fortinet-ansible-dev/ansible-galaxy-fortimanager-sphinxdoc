@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -104,7 +104,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">force_remote_diff</span> <b>(Alias name: force-remote-diff)</b>  Always use remote diff when installing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">force_remote_diff</span> <b>(Alias name: force-remote-diff)</b>  Always use remote diff when installing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -152,7 +152,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">retry</span> Enable/disable configuration install retry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">retry</span> Enable/disable configuration install retry. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -164,7 +164,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rollback_allow_reboot</span> <b>(Alias name: rollback-allow-reboot)</b>  Enable/disable fortigate reboot to rollback when installing script/config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">rollback_allow_reboot</span> <b>(Alias name: rollback-allow-reboot)</b>  Enable/disable fortigate reboot to rollback when installing script/config. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -176,19 +176,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">skip_scep_check</span> <b>(Alias name: skip-scep-check)</b>  Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">skip_scep_check</span> <b>(Alias name: skip-scep-check)</b>  Enable/disable installing scep related objects even if scep url is configured. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">skip_tunnel_fcp_req</span> <b>(Alias name: skip-tunnel-fcp-req)</b>  Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">skip_tunnel_fcp_req</span> <b>(Alias name: skip-tunnel-fcp-req)</b>  Enable/disable skip the fcp request sent from fgfm tunnel <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">verify_install</span> <b>(Alias name: verify-install)</b>  Verify install against remote configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, optimal, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">verify_install</span> <b>(Alias name: verify-install)</b>  Verify install against remote configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, optimal, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -200,13 +200,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">conf_merge_after_script</span> <b>(Alias name: conf-merge-after-script)</b>  Merge config after run script on remote device, instead of full retrieve. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">conf_merge_after_script</span> <b>(Alias name: conf-merge-after-script)</b>  Merge config after run script on remote device, instead of full retrieve. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.7 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_autoupdate</span> <b>(Alias name: log-autoupdate)</b>  Enable/disable autoupdate debug logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">log_autoupdate</span> <b>(Alias name: log-autoupdate)</b>  Enable/disable autoupdate debug logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -224,13 +224,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">handle_nonhasync_config</span> <b>(Alias name: handle-nonhasync-config)</b>  Enable/disable nonhasync config handling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">handle_nonhasync_config</span> <b>(Alias name: handle-nonhasync-config)</b>  Enable/disable nonhasync config handling. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">autoupdate_merge_revision</span> <b>(Alias name: autoupdate-merge-revision)</b>  Autoupdate merge revision. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>
+ <li><span class="li-head">autoupdate_merge_revision</span> <b>(Alias name: autoupdate-merge-revision)</b>  Autoupdate merge revision. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
@@ -258,18 +258,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure dm.
         fortinet.fortimanager.fmgr_system_dm:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_dm:
             # concurrent_install_image_limit: <integer>
             # concurrent_install_limit: <integer>

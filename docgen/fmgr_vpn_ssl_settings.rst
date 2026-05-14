@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -658,18 +658,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure SSL VPN.
         fortinet.fortimanager.fmgr_vpn_ssl_settings:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           vpn_ssl_settings:
@@ -692,25 +684,9 @@ Examples
             #     user_peer: <string>
             #     users: <list or string>
             # auto_tunnel_static_route: <value in [disable, enable]>
-            # banned_cipher:
-            #   - "RSA"
-            #   - "DH"
-            #   - "DHE"
-            #   - "ECDH"
-            #   - "ECDHE"
-            #   - "DSS"
-            #   - "ECDSA"
-            #   - "AES"
-            #   - "AESGCM"
-            #   - "CAMELLIA"
-            #   - "3DES"
-            #   - "SHA1"
-            #   - "SHA256"
-            #   - "SHA384"
-            #   - "STATIC"
-            #   - "CHACHA20"
-            #   - "ARIA"
-            #   - "AESCCM"
+            # banned_cipher: ["RSA", "DH", "DHE", "ECDH", "ECDHE", "DSS", "ECDSA", "AES", "AESGCM",
+            #                 "CAMELLIA", "3DES", "SHA1", "SHA256", "SHA384", "STATIC", "CHACHA20",
+            #                 "ARIA", "AESCCM"]
             # check_referer: <value in [disable, enable]>
             # default_portal: <string>
             # deflate_compression_level: <integer>
@@ -772,12 +748,9 @@ Examples
             # sslv3: <value in [disable, enable]>
             # ssl_big_buffer: <value in [disable, enable]>
             # client_sigalgs: <value in [no-rsa-pss, all]>
-            # ciphersuite:
-            #   - "TLS-AES-128-GCM-SHA256"
-            #   - "TLS-AES-256-GCM-SHA384"
-            #   - "TLS-CHACHA20-POLY1305-SHA256"
-            #   - "TLS-AES-128-CCM-SHA256"
-            #   - "TLS-AES-128-CCM-8-SHA256"
+            # ciphersuite: ["TLS-AES-128-GCM-SHA256", "TLS-AES-256-GCM-SHA384",
+            #               "TLS-CHACHA20-POLY1305-SHA256", "TLS-AES-128-CCM-SHA256",
+            #               "TLS-AES-128-CCM-8-SHA256"]
             # dual_stack_mode: <value in [disable, enable]>
             # tunnel_addr_assigned_method: <value in [first-available, round-robin]>
             # browser_language_detection: <value in [disable, enable]>
@@ -790,23 +763,9 @@ Examples
             # dtls_heartbeat_interval: <integer>
             # server_hostname: <string>
             # remote_https_cert_check: <value in [no-check, warn-on-error, reject-on-error]>
-            # tls_groups:
-            #   - "P-521"
-            #   - "P-384"
-            #   - "P-256"
-            #   - "ML-KEM512"
-            #   - "ML-KEM768"
-            #   - "ML-KEM1024"
-            #   - "P-384-MLKEM1024"
-            #   - "P-256-MLKEM768"
-            #   - "X25519-MLKEM768"
-            #   - "X448"
-            #   - "X25519"
-            #   - "FFDHE2048"
-            #   - "FFDHE3072"
-            #   - "FFDHE4096"
-            #   - "FFDHE6144"
-            #   - "FFDHE8192"
+            # tls_groups: ["P-521", "P-384", "P-256", "ML-KEM512", "ML-KEM768", "ML-KEM1024",
+            #              "P-384-MLKEM1024", "P-256-MLKEM768", "X25519-MLKEM768", "X448", "X25519",
+            #              "FFDHE2048", "FFDHE3072", "FFDHE4096", "FFDHE6144", "FFDHE8192"]
 
 
 Return Values

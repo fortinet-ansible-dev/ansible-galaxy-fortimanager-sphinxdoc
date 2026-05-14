@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,19 +62,19 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_log_ueba</span> - UEBAsettings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip_only_ep</span> <b>(Alias name: ip-only-ep)</b>  Disable/enable ip-only endpoint identification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">ip_only_ep</span> <b>(Alias name: ip-only-ep)</b>  Disable/enable ip-only endpoint identification. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_unique_scope</span> <b>(Alias name: ip-unique-scope)</b>  Set ip-unique-scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [adom, vdom]</span>  <span class="li-normal">default: vdom</span>
+ <li><span class="li-head">ip_unique_scope</span> <b>(Alias name: ip-unique-scope)</b>  Set ip-unique-scope. <span class="li-normal">type: str</span> <span class="li-normal">choices: [adom, vdom]</span> <span class="li-normal">default: vdom</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">hostname_ep_unifier</span> <b>(Alias name: hostname-ep-unifier)</b>  Hostname ep unifier. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">hostname_ep_unifier</span> <b>(Alias name: hostname-ep-unifier)</b>  Hostname ep unifier. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -102,18 +102,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: UEBAsettings.
         fortinet.fortimanager.fmgr_system_log_ueba:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_log_ueba:
             # ip_only_ep: <value in [disable, enable]>
             # ip_unique_scope: <value in [adom, vdom]>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -345,18 +345,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Notification configuration.
         fortinet.fortimanager.fmgr_firewall_mmsprofile_notification:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           mms_profile: <your own value>
           firewall_mmsprofile_notification:
@@ -370,14 +362,8 @@ Examples
             # carrier_endpoint_bwl_int: <integer>
             # carrier_endpoint_bwl_int_mode: <value in [hours, minutes]>
             # carrier_endpoint_bwl_status: <value in [disable, enable]>
-            # days_allowed:
-            #   - "sunday"
-            #   - "monday"
-            #   - "tuesday"
-            #   - "wednesday"
-            #   - "thursday"
-            #   - "friday"
-            #   - "saturday"
+            # days_allowed: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday",
+            #                "saturday"]
             # detect_server: <value in [disable, enable]>
             # dupe_int: <integer>
             # dupe_int_mode: <value in [hours, minutes]>

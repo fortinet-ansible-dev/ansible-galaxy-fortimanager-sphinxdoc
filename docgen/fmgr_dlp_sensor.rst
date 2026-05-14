@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -307,18 +307,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure DLP sensors.
         fortinet.fortimanager.fmgr_dlp_sensor:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           dlp_sensor:
@@ -338,71 +330,22 @@ Examples
             #     id: <integer>
             #     match_percentage: <integer>
             #     name: <string>
-            #     proto:
-            #       - "imap"
-            #       - "smtp"
-            #       - "pop3"
-            #       - "ftp"
-            #       - "nntp"
-            #       - "mm1"
-            #       - "mm3"
-            #       - "mm4"
-            #       - "mm7"
-            #       - "mapi"
-            #       - "aim"
-            #       - "icq"
-            #       - "msn"
-            #       - "yahoo"
-            #       - "http-get"
-            #       - "http-post"
-            #       - "ssh"
-            #       - "cifs"
+            #     proto: ["imap", "smtp", "pop3", "ftp", "nntp", "mm1", "mm3", "mm4", "mm7", "mapi",
+            #             "aim", "icq", "msn", "yahoo", "http-get", "http-post", "ssh", "cifs"]
             #     regexp: <string>
             #     severity: <value in [info, low, medium, ...]>
             #     type: <value in [file, message]>
             #     sensitivity: <list or string>
             # flow_based: <value in [disable, enable]>
-            # full_archive_proto:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "ftp"
-            #   - "nntp"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "mapi"
-            #   - "aim"
-            #   - "icq"
-            #   - "msn"
-            #   - "yahoo"
-            #   - "http-get"
-            #   - "http-post"
-            #   - "ssh"
-            #   - "cifs"
+            # full_archive_proto: ["imap", "smtp", "pop3", "ftp", "nntp", "mm1", "mm3", "mm4",
+            #                      "mm7", "mapi", "aim", "icq", "msn", "yahoo", "http-get",
+            #                      "http-post", "ssh", "cifs"]
             # nac_quar_log: <value in [disable, enable]>
             # options: <value in [strict-file]>
             # replacemsg_group: <string>
-            # summary_proto:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "ftp"
-            #   - "nntp"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "mapi"
-            #   - "aim"
-            #   - "icq"
-            #   - "msn"
-            #   - "yahoo"
-            #   - "http-get"
-            #   - "http-post"
-            #   - "ssh"
-            #   - "cifs"
+            # summary_proto: ["imap", "smtp", "pop3", "ftp", "nntp", "mm1", "mm3", "mm4", "mm7",
+            #                 "mapi", "aim", "icq", "msn", "yahoo", "http-get", "http-post", "ssh",
+            #                 "cifs"]
             # feature_set: <value in [proxy, flow]>
             # entries:
             #   - count: <integer>

@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,13 +62,13 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_report_setting</span> - Report settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aggregate_report</span> <b>(Alias name: aggregate-report)</b>  Enable/disable including a group report along with the per-device reports. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">aggregate_report</span> <b>(Alias name: aggregate-report)</b>  Enable/disable including a group report along with the per-device reports. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">hcache_lossless</span> <b>(Alias name: hcache-lossless)</b>  Usableness of ready-with-loss hcaches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>
+ <li><span class="li-head">hcache_lossless</span> <b>(Alias name: hcache-lossless)</b>  Usableness of ready-with-loss hcaches. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -86,19 +86,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">report_priority</span> <b>(Alias name: report-priority)</b>  Priority of sql report. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, low, auto]</span>  <span class="li-normal">default: auto</span>
+ <li><span class="li-head">report_priority</span> <b>(Alias name: report-priority)</b>  Priority of sql report. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, low, auto]</span> <span class="li-normal">default: auto</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">template_auto_install</span> <b>(Alias name: template-auto-install)</b>  The language used for new adoms (default = default). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, english]</span>  <span class="li-normal">default: default</span>
+ <li><span class="li-head">template_auto_install</span> <b>(Alias name: template-auto-install)</b>  The language used for new adoms (default = default). <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, english]</span> <span class="li-normal">default: default</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">week_start</span> <b>(Alias name: week-start)</b>  Day of the week on which the week starts. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sun, mon]</span>  <span class="li-normal">default: sun</span>
+ <li><span class="li-head">week_start</span> <b>(Alias name: week-start)</b>  Day of the week on which the week starts. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sun, mon]</span> <span class="li-normal">default: sun</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -116,7 +116,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">exclude_capwap</span> <b>(Alias name: exclude-capwap)</b>  Exclude capwap traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, by-port, by-service]</span>  <span class="li-normal">default: by-port</span>
+ <li><span class="li-head">exclude_capwap</span> <b>(Alias name: exclude-capwap)</b>  Exclude capwap traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, by-port, by-service]</span> <span class="li-normal">default: by-port</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
@@ -150,18 +150,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Report settings.
         fortinet.fortimanager.fmgr_system_report_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_report_setting:
             # aggregate_report: <value in [disable, enable]>
             # hcache_lossless: <value in [disable, enable]>

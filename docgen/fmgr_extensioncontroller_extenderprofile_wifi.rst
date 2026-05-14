@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -319,18 +319,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiExtender wifi configuration.
         fortinet.fortimanager.fmgr_extensioncontroller_extenderprofile_wifi:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           extender_profile: <your own value>
           extensioncontroller_extenderprofile_wifi:
@@ -343,18 +335,8 @@ Examples
             #   beacon_interval: <integer>
             #   bss_color: <integer>
             #   bss_color_mode: <value in [auto, static]>
-            #   channel:
-            #     - "CH1"
-            #     - "CH2"
-            #     - "CH3"
-            #     - "CH4"
-            #     - "CH5"
-            #     - "CH6"
-            #     - "CH7"
-            #     - "CH8"
-            #     - "CH9"
-            #     - "CH10"
-            #     - "CH11"
+            #   channel: ["CH1", "CH2", "CH3", "CH4", "CH5", "CH6", "CH7", "CH8", "CH9", "CH10",
+            #             "CH11"]
             #   extension_channel: <value in [auto, higher, lower]>
             #   guard_interval: <value in [auto, 400ns, 800ns]>
             #   lan_ext_vap: <list or string>
@@ -372,32 +354,9 @@ Examples
             #   beacon_interval: <integer>
             #   bss_color: <integer>
             #   bss_color_mode: <value in [auto, static]>
-            #   channel:
-            #     - "CH36"
-            #     - "CH40"
-            #     - "CH44"
-            #     - "CH48"
-            #     - "CH52"
-            #     - "CH56"
-            #     - "CH60"
-            #     - "CH64"
-            #     - "CH100"
-            #     - "CH104"
-            #     - "CH108"
-            #     - "CH112"
-            #     - "CH116"
-            #     - "CH120"
-            #     - "CH124"
-            #     - "CH128"
-            #     - "CH132"
-            #     - "CH136"
-            #     - "CH140"
-            #     - "CH144"
-            #     - "CH149"
-            #     - "CH153"
-            #     - "CH157"
-            #     - "CH161"
-            #     - "CH165"
+            #   channel: ["CH36", "CH40", "CH44", "CH48", "CH52", "CH56", "CH60", "CH64", "CH100",
+            #             "CH104", "CH108", "CH112", "CH116", "CH120", "CH124", "CH128", "CH132",
+            #             "CH136", "CH140", "CH144", "CH149", "CH153", "CH157", "CH161", "CH165"]
             #   extension_channel: <value in [auto, higher, lower]>
             #   guard_interval: <value in [auto, 400ns, 800ns]>
             #   lan_ext_vap: <list or string>

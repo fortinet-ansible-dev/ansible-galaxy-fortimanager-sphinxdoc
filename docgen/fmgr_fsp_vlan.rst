@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -4743,18 +4743,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiSwitch VLAN template.
         fortinet.fortimanager.fmgr_fsp_vlan:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           fsp_vlan:
@@ -4870,12 +4862,7 @@ Examples
             #       ip: <string>
             #       ipv6:
             #         autoconf: <value in [disable, enable]>
-            #         dhcp6_client_options:
-            #           - "rapid"
-            #           - "iapd"
-            #           - "iana"
-            #           - "dns"
-            #           - "dnsname"
+            #         dhcp6_client_options: ["rapid", "iapd", "iana", "dns", "dnsname"]
             #         dhcp6_information_request: <value in [disable, enable]>
             #         dhcp6_prefix_delegation: <value in [disable, enable]>
             #         dhcp6_prefix_hint: <string>
@@ -4887,18 +4874,8 @@ Examples
             #         icmp6_send_redirect: <value in [disable, enable]>
             #         interface_identifier: <string>
             #         ip6_address: <string>
-            #         ip6_allowaccess:
-            #           - "https"
-            #           - "ping"
-            #           - "ssh"
-            #           - "snmp"
-            #           - "http"
-            #           - "telnet"
-            #           - "fgfm"
-            #           - "capwap"
-            #           - "fabric"
-            #           - "scim"
-            #           - "probe-response"
+            #         ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                           "capwap", "fabric", "scim", "probe-response"]
             #         ip6_default_life: <integer>
             #         ip6_delegated_prefix_list:
             #           - autonomous_flag: <value in [disable, enable]>
@@ -4966,28 +4943,10 @@ Examples
             #         ip6_route_pref: <value in [medium, high, low]>
             #       secondary_IP: <value in [disable, enable]>
             #       secondaryip:
-            #         - allowaccess:
-            #             - "https"
-            #             - "ping"
-            #             - "ssh"
-            #             - "snmp"
-            #             - "http"
-            #             - "telnet"
-            #             - "fgfm"
-            #             - "auto-ipsec"
-            #             - "radius-acct"
-            #             - "probe-response"
-            #             - "capwap"
-            #             - "dnp"
-            #             - "ftm"
-            #             - "fabric"
-            #             - "speed-test"
-            #             - "icond"
-            #             - "scim"
-            #           detectprotocol:
-            #             - "ping"
-            #             - "tcp-echo"
-            #             - "udp-echo"
+            #         - allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                         "auto-ipsec", "radius-acct", "probe-response", "capwap",
+            #                         "dnp", "ftm", "fabric", "speed-test", "icond", "scim"]
+            #           detectprotocol: ["ping", "tcp-echo", "udp-echo"]
             #           detectserver: <string>
             #           gwdetect: <value in [disable, enable]>
             #           ha_priority: <integer>
@@ -5015,22 +4974,9 @@ Examples
             #           vrgrp: <integer>
             #           vrid: <integer>
             #           vrip: <string>
-            #       allowaccess:
-            #         - "https"
-            #         - "ping"
-            #         - "ssh"
-            #         - "snmp"
-            #         - "http"
-            #         - "telnet"
-            #         - "fgfm"
-            #         - "radius-acct"
-            #         - "probe-response"
-            #         - "dnp"
-            #         - "ftm"
-            #         - "fabric"
-            #         - "speed-test"
-            #         - "icond"
-            #         - "scim"
+            #       allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                     "radius-acct", "probe-response", "dnp", "ftm", "fabric",
+            #                     "speed-test", "icond", "scim"]
             #       dhcp_relay_request_all_server: <value in [disable, enable]>
             # portal_message_override_group: <string>
             # radius_server: <string>
@@ -5138,22 +5084,9 @@ Examples
             #   aggregate: <string>
             #   algorithm: <value in [L2, L3, L4, ...]>
             #   alias: <string>
-            #   allowaccess:
-            #     - "https"
-            #     - "ping"
-            #     - "ssh"
-            #     - "snmp"
-            #     - "http"
-            #     - "telnet"
-            #     - "fgfm"
-            #     - "auto-ipsec"
-            #     - "radius-acct"
-            #     - "probe-response"
-            #     - "capwap"
-            #     - "dnp"
-            #     - "ftm"
-            #     - "fabric"
-            #     - "speed-test"
+            #   allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                 "auto-ipsec", "radius-acct", "probe-response", "capwap", "dnp", "ftm",
+            #                 "fabric", "speed-test"]
             #   ap_discover: <value in [disable, enable]>
             #   arpforward: <value in [disable, enable]>
             #   atm_protocol: <value in [none, ipoa]>
@@ -5185,10 +5118,7 @@ Examples
             #   defaultgw: <value in [disable, enable]>
             #   description: <string>
             #   detected_peer_mtu: <integer>
-            #   detectprotocol:
-            #     - "ping"
-            #     - "tcp-echo"
-            #     - "udp-echo"
+            #   detectprotocol: ["ping", "tcp-echo", "udp-echo"]
             #   detectserver: <string>
             #   device_access_list: <list or string>
             #   device_identification: <value in [disable, enable]>
@@ -5224,9 +5154,7 @@ Examples
             #   fail_alert_interfaces: <list or string>
             #   fail_alert_method: <value in [link-failed-signal, link-down]>
             #   fail_detect: <value in [disable, enable]>
-            #   fail_detect_option:
-            #     - "detectserver"
-            #     - "link-down"
+            #   fail_detect_option: ["detectserver", "link-down"]
             #   fdp: <value in [disable, enable]>
             #   fortiheartbeat: <value in [disable, enable]>
             #   fortilink: <value in [disable, enable]>
@@ -5236,43 +5164,16 @@ Examples
             #   fortilink_stacking: <value in [disable, enable]>
             #   forward_domain: <integer>
             #   forward_error_correction: <value in [disable, enable, rs-fec, ...]>
-            #   fp_anomaly:
-            #     - "drop_tcp_fin_noack"
-            #     - "pass_winnuke"
-            #     - "pass_tcpland"
-            #     - "pass_udpland"
-            #     - "pass_icmpland"
-            #     - "pass_ipland"
-            #     - "pass_iprr"
-            #     - "pass_ipssrr"
-            #     - "pass_iplsrr"
-            #     - "pass_ipstream"
-            #     - "pass_ipsecurity"
-            #     - "pass_iptimestamp"
-            #     - "pass_ipunknown_option"
-            #     - "pass_ipunknown_prot"
-            #     - "pass_icmp_frag"
-            #     - "pass_tcp_no_flag"
-            #     - "pass_tcp_fin_noack"
-            #     - "drop_winnuke"
-            #     - "drop_tcpland"
-            #     - "drop_udpland"
-            #     - "drop_icmpland"
-            #     - "drop_ipland"
-            #     - "drop_iprr"
-            #     - "drop_ipssrr"
-            #     - "drop_iplsrr"
-            #     - "drop_ipstream"
-            #     - "drop_ipsecurity"
-            #     - "drop_iptimestamp"
-            #     - "drop_ipunknown_option"
-            #     - "drop_ipunknown_prot"
-            #     - "drop_icmp_frag"
-            #     - "drop_tcp_no_flag"
-            #   fp_disable:
-            #     - "all"
-            #     - "ipsec"
-            #     - "none"
+            #   fp_anomaly: ["drop_tcp_fin_noack", "pass_winnuke", "pass_tcpland", "pass_udpland",
+            #                "pass_icmpland", "pass_ipland", "pass_iprr", "pass_ipssrr",
+            #                "pass_iplsrr", "pass_ipstream", "pass_ipsecurity", "pass_iptimestamp",
+            #                "pass_ipunknown_option", "pass_ipunknown_prot", "pass_icmp_frag",
+            #                "pass_tcp_no_flag", "pass_tcp_fin_noack", "drop_winnuke",
+            #                "drop_tcpland", "drop_udpland", "drop_icmpland", "drop_ipland",
+            #                "drop_iprr", "drop_ipssrr", "drop_iplsrr", "drop_ipstream",
+            #                "drop_ipsecurity", "drop_iptimestamp", "drop_ipunknown_option",
+            #                "drop_ipunknown_prot", "drop_icmp_frag", "drop_tcp_no_flag"]
+            #   fp_disable: ["all", "ipsec", "none"]
             #   gateway_address: <string>
             #   gi_gk: <value in [disable, enable]>
             #   gwaddr: <string>
@@ -5298,12 +5199,7 @@ Examples
             #   ipunnumbered: <string>
             #   ipv6:
             #     autoconf: <value in [disable, enable]>
-            #     dhcp6_client_options:
-            #       - "rapid"
-            #       - "iapd"
-            #       - "iana"
-            #       - "dns"
-            #       - "dnsname"
+            #     dhcp6_client_options: ["rapid", "iapd", "iana", "dns", "dnsname"]
             #     dhcp6_information_request: <value in [disable, enable]>
             #     dhcp6_prefix_delegation: <value in [disable, enable]>
             #     dhcp6_prefix_hint: <string>
@@ -5315,16 +5211,8 @@ Examples
             #     icmp6_send_redirect: <value in [disable, enable]>
             #     interface_identifier: <string>
             #     ip6_address: <string>
-            #     ip6_allowaccess:
-            #       - "https"
-            #       - "ping"
-            #       - "ssh"
-            #       - "snmp"
-            #       - "http"
-            #       - "telnet"
-            #       - "fgfm"
-            #       - "capwap"
-            #       - "fabric"
+            #     ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                       "capwap", "fabric"]
             #     ip6_default_life: <integer>
             #     ip6_delegated_prefix_list:
             #       - autonomous_flag: <value in [disable, enable]>
@@ -5458,28 +5346,10 @@ Examples
             #   scan_botnet_connections: <value in [disable, block, monitor]>
             #   secondary_IP: <value in [disable, enable]>
             #   secondaryip:
-            #     - allowaccess:
-            #         - "https"
-            #         - "ping"
-            #         - "ssh"
-            #         - "snmp"
-            #         - "http"
-            #         - "telnet"
-            #         - "fgfm"
-            #         - "auto-ipsec"
-            #         - "radius-acct"
-            #         - "probe-response"
-            #         - "capwap"
-            #         - "dnp"
-            #         - "ftm"
-            #         - "fabric"
-            #         - "speed-test"
-            #         - "icond"
-            #         - "scim"
-            #       detectprotocol:
-            #         - "ping"
-            #         - "tcp-echo"
-            #         - "udp-echo"
+            #     - allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                     "auto-ipsec", "radius-acct", "probe-response", "capwap", "dnp",
+            #                     "ftm", "fabric", "speed-test", "icond", "scim"]
+            #       detectprotocol: ["ping", "tcp-echo", "udp-echo"]
             #       detectserver: <string>
             #       gwdetect: <value in [disable, enable]>
             #       ha_priority: <integer>
@@ -5597,10 +5467,7 @@ Examples
             #   auth_portal_addr: <string>
             #   dhcp_classless_route_addition: <value in [disable, enable]>
             #   dhcp_relay_link_selection: <string>
-            #   dns_server_protocol:
-            #     - "cleartext"
-            #     - "dot"
-            #     - "doh"
+            #   dns_server_protocol: ["cleartext", "dot", "doh"]
             #   eap_ca_cert: <string>
             #   eap_identity: <string>
             #   eap_method: <value in [tls, peap]>
@@ -5662,19 +5529,8 @@ Examples
             #   security_ip_auth_bypass: <value in [disable, enable]>
             #   virtual_mac: <string>
             #   dhcp_relay_vrf_select: <integer>
-            #   exclude_signatures:
-            #     - "iot"
-            #     - "ot"
-            #   profiles:
-            #     - "8a"
-            #     - "8b"
-            #     - "8c"
-            #     - "8d"
-            #     - "12a"
-            #     - "12b"
-            #     - "17a"
-            #     - "30a"
-            #     - "35b"
+            #   exclude_signatures: ["iot", "ot"]
+            #   profiles: ["8a", "8b", "8c", "8d", "12a", "12b", "17a", "30a", "35b"]
             #   telemetry_discover: <value in [disable, enable]>
             #   mrru: <integer>
             #   multilink: <value in [disable, enable]>

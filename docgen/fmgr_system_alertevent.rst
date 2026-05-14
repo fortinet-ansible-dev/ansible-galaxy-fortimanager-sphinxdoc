@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -99,7 +99,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Destination type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mail, snmp, syslog]</span>  <span class="li-normal">default: mail</span>
+ <li><span class="li-head">type</span> Destination type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mail, snmp, syslog]</span> <span class="li-normal">default: mail</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -119,7 +119,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">event_time_period</span> <b>(Alias name: event-time-period)</b>  Time period (hours). <span class="li-normal">type: str</span> <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span>  <span class="li-normal">default: 0.5</span>
+ <li><span class="li-head">event_time_period</span> <b>(Alias name: event-time-period)</b>  Time period (hours). <span class="li-normal">type: str</span> <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span> <span class="li-normal">default: 0.5</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -137,13 +137,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">num_events</span> <b>(Alias name: num-events)</b>  Minimum number of events required within time period. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 5, 10, 50, 100]</span>  <span class="li-normal">default: 1</span>
+ <li><span class="li-head">num_events</span> <b>(Alias name: num-events)</b>  Minimum number of events required within time period. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 5, 10, 50, 100]</span> <span class="li-normal">default: 1</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">severity_filter</span> <b>(Alias name: severity-filter)</b>  Required log severity to trigger alert. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span>  <span class="li-normal">default: high</span>
+ <li><span class="li-head">severity_filter</span> <b>(Alias name: severity-filter)</b>  Required log severity to trigger alert. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span> <span class="li-normal">default: high</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

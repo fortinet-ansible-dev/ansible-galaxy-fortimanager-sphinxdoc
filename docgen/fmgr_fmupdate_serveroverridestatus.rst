@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.16.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">fmupdate_serveroverridestatus</span> - Configure strict/loose server override. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">mode</span> Server override mode (default = loose). <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, loose]</span>  <span class="li-normal">default: loose</span>
+ <li><span class="li-head">mode</span> Server override mode (default = loose). <span class="li-normal">type: str</span> <span class="li-normal">choices: [strict, loose]</span> <span class="li-normal">default: loose</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -90,18 +90,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure strict/loose server override.
         fortinet.fortimanager.fmgr_fmupdate_serveroverridestatus:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_serveroverridestatus:
             # mode: <value in [strict, loose]>
 
