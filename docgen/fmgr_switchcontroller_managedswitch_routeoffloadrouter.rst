@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.6</code></p>
 
 
 
@@ -69,13 +69,13 @@ Parameters
  <li><span class="li-head">router_ip</span> <b>(Alias name: router-ip)</b>  Router ip address. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.6</code></p>
  </div>
  </li>
  <li><span class="li-head">vlan_name</span> <b>(Alias name: vlan-name)</b>  Vlan name. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.6</code></p>
  </div>
  </li>
  </ul>

@@ -86,13 +86,13 @@ Parameters
  <li><span class="li-head">fortinet_bar</span> <b>(Alias name: fortinet-bar)</b>  Enable/disable fortinet bar on html content. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">fortinet_bar_port</span> <b>(Alias name: fortinet-bar-port)</b>  Port for use by fortinet bar (1 - 65535, default = 8011). <span class="li-normal">type: int</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">http_policy</span> <b>(Alias name: http-policy)</b>  Enable/disable http policy check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -278,19 +278,25 @@ Parameters
  <li><span class="li-head">dns_protection</span> <b>(Alias name: dns-protection)</b>  Enable/disable dns protection for http/https traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">encrypted_file</span> <b>(Alias name: encrypted-file)</b>  Encrypted file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, pass, inspect]</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">encrypted_file_log</span> <b>(Alias name: encrypted-file-log)</b>  Encrypted file log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">streaming_content_scan_type</span> <b>(Alias name: streaming-content-scan-type)</b>  Enforce scan on certain streaming content type when streaming-content-bypass is enabled. <span class="li-normal">type: list</span> <span class="li-normal">choices: [flv, octet, dvi, rtmp, mms-framed, msmediaview, pncmd, rtsp-tunnel, audio, audio-accp, audio-mpeg, pn-realaudio, pn-realaudio-plugin, mixed, x-mixed, event-stream, video, video-mp4, video-mpeg, video-xflv, video-xasf]</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -364,6 +370,12 @@ Examples
             # dns_protection: <value in [disable, enable]>
             # encrypted_file: <value in [block, pass, inspect]>
             # encrypted_file_log: <value in [disable, enable]>
+            # streaming_content_scan_type: ["flv", "octet", "dvi", "rtmp", "mms-framed",
+            #                               "msmediaview", "pncmd", "rtsp-tunnel", "audio",
+            #                               "audio-accp", "audio-mpeg", "pn-realaudio",
+            #                               "pn-realaudio-plugin", "mixed", "x-mixed",
+            #                               "event-stream", "video", "video-mp4", "video-mpeg",
+            #                               "video-xflv", "video-xasf"]
 
 
 Return Values

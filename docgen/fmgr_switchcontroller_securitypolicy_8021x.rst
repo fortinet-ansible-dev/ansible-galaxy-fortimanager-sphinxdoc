@@ -215,6 +215,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">allow_mac_move</span> <b>(Alias name: allow-mac-move)</b>  Enable/disable mac move (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">client_limit</span> <b>(Alias name: client-limit)</b>  Configure the maximum number of endpoint devices this fortigate unit will accept while configured in mac mode. <span class="li-normal">type: int</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">eap_egress_tagged</span> <b>(Alias name: eap-egress-tagged)</b>  Enable/disable egress frame tag (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -269,6 +287,9 @@ Examples
             # dacl: <value in [disable, enable]>
             # auth_order: <value in [dot1x-mab, mab-dot1x, mab]>
             # auth_priority: <value in [dot1x-mab, mab-dot1x, legacy]>
+            # allow_mac_move: <value in [disable, enable]>
+            # client_limit: <integer>
+            # eap_egress_tagged: <value in [disable, enable]>
 
 
 Return Values

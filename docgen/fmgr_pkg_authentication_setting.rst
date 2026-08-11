@@ -200,7 +200,19 @@ Parameters
  <li><span class="li-head">log_auth_request</span> <b>(Alias name: log-auth-request)</b>  Log auth request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">max_redirection_url_length</span> <b>(Alias name: max-redirection-url-length)</b>  Max redirection url length. <span class="li-normal">type: int</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ems_root_ca</span> <b>(Alias name: ems-root-ca)</b>  Enable/disable use of the ems root ca for forticlient, ztna, and endpoint authentication (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -255,6 +267,8 @@ Examples
             # persistent_cookie: <value in [disable, enable]>
             # update_time: <string>
             # log_auth_request: <value in [disable, enable]>
+            # max_redirection_url_length: <integer>
+            # ems_root_ca: <value in [disable, enable]>
 
 
 Return Values

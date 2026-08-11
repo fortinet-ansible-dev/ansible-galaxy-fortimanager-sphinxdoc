@@ -101,6 +101,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">private_data_encryption</span> <b>(Alias name: private-data-encryption)</b>  Enable/disable private data encryption for non-admin passwords. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">private_data_encryption_key</span> <b>(Alias name: private-data-encryption-key)</b>  Private data encryption key length (32 hexadecimal numbers). <span class="li-normal">type: list</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -136,6 +148,8 @@ Examples
             # login_passwd_override: <value in [disable, enable]>
             # revision_backup_on_logout: <value in [disable, enable]>
             # revision_backup_on_upgrade: <value in [disable, enable]>
+            # private_data_encryption: <value in [disable, enable]>
+            # private_data_encryption_key: <list or string>
 
 
 Return Values

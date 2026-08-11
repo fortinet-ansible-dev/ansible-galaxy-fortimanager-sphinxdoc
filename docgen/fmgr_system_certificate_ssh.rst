@@ -87,6 +87,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">password</span> Password. <span class="li-normal">type: list</span>
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -119,6 +125,7 @@ Examples
             # certificate: <list or string>
             # comment: <string>
             # private_key: <list or string>
+            # password: <list or string>
 
 
 Return Values

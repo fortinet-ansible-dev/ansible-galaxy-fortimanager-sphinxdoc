@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_proxyaddrgrp6:
 
-fmgr_firewall_proxyaddrgrp6 -- Firewall proxy addrgrp6.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_firewall_proxyaddrgrp6 -- Configure web proxy address group6.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_proxyaddrgrp6</span> - Firewall proxy addrgrp6 <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_proxyaddrgrp6</span> - Configure web proxy address group6. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">color</span> Color. <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -133,6 +133,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">custom_tags</span> <b>(Alias name: custom-tags)</b>  Custom tags. <span class="li-normal">type: list</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">display_with</span> <b>(Alias name: display-with)</b>  Display object with first tag, all tags, or just the icon. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all-tags, first-tag-only, icon-and-color]</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -156,7 +168,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Firewall proxy addrgrp6
+      - name: Configure web proxy address group6.
         fortinet.fortimanager.fmgr_firewall_proxyaddrgrp6:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>
@@ -173,6 +185,8 @@ Examples
             # type: <value in [src, dst]>
             # uuid: <string>
             # logic_type: <value in [or, and]>
+            # custom_tags: <list or string>
+            # display_with: <value in [all-tags, first-tag-only, icon-and-color]>
 
 
 Return Values

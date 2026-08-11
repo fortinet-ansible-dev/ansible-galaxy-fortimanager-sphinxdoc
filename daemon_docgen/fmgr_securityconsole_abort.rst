@@ -67,6 +67,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">preview_taskid</span> Preview taskid. <span class="li-normal">type: int</span>
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -95,6 +101,7 @@ Examples
           # workspace_locking_adom: <global or your adom name>
           securityconsole_abort:
             # adom: <string>
+            # preview_taskid: <integer>
 
 
 Return Values

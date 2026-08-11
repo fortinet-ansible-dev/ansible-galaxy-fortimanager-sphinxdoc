@@ -104,7 +104,7 @@ Parameters
  <li><span class="li-head">drop</span> Drop. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">fortilink</span> Fortilink interface for which this mac policy belongs to. <span class="li-normal">type: list</span>

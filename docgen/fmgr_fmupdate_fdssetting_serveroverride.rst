@@ -92,7 +92,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fds, fct, fai]</span>
+ <li><span class="li-head">service_type</span> <b>(Alias name: service-type)</b>  Override service type. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fds, fct, fai, gip]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -138,7 +138,7 @@ Examples
             #     ip: <string>
             #     ip6: <string>
             #     port: <integer>
-            #     service_type: ["fds", "fct", "fai"]
+            #     service_type: ["fds", "fct", "fai", "gip"]
             # status: <value in [disable, enable]>
 
 

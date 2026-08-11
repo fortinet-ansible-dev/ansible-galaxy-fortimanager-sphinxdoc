@@ -111,7 +111,7 @@ Parameters
  <li><span class="li-head">finger_print_category</span> <b>(Alias name: finger-print-category)</b>  Finger print platform. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, firefox, chrome, safari, edge, ie, android, ios, windows]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

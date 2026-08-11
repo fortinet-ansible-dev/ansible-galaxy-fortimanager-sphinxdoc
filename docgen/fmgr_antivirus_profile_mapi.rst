@@ -92,7 +92,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable mapi antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, quarantine, avquery, avmonitor]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable fortiguard virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>

@@ -72,7 +72,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allowed_methods</span> <b>(Alias name: allowed-methods)</b>  Allowed methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, others, connect]</span>
+ <li><span class="li-head">allowed_methods</span> <b>(Alias name: allowed-methods)</b>  Allowed methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, others, connect, patch, query]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -129,7 +129,7 @@ Examples
             id: 0 # Required variable, integer
             # address: <string>
             # allowed_methods: ["delete", "get", "head", "options", "post", "put", "trace",
-            #                   "others", "connect"]
+            #                   "others", "connect", "patch", "query"]
             # pattern: <string>
             # regex: <value in [disable, enable]>
 

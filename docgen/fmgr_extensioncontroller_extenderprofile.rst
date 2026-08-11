@@ -733,7 +733,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">model</span> Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FX201E, FX211E, FX200F, FXA11F, FXE11F, FXA21F, FXE21F, FXA22F, FXE22F, FX212F, FX311F, FX312F, FX511F, FVG21F, FVA21F, FVG22F, FVA22F, FX04DA, FX04DN, FX04DI, FXR51G, FG, BS10FW, BS20GW, BS20GN, FXN51G, FXW51G, FVG51G, FXE11G, FX211G]</span>
+ <li><span class="li-head">model</span> Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FX201E, FX211E, FX200F, FXA11F, FXE11F, FXA21F, FXE21F, FXA22F, FXE22F, FX212F, FX311F, FX312F, FX511F, FVG21F, FVA21F, FVG22F, FVA22F, FX04DA, FX04DN, FX04DI, FXR51G, FG, BS10FW, BS20GW, BS20GN, FXN51G, FXW51G, FVG51G, FXE11G, FX211G, FWE50G, FWA50G]</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>

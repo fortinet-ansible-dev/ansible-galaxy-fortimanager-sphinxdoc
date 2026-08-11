@@ -120,7 +120,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rat_type</span> <b>(Alias name: rat-type)</b>  Rat type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span>
+ <li><span class="li-head">rat_type</span> <b>(Alias name: rat-type)</b>  Rat type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, wb-eutran-leo, wb-eutran-meo, wb-eutran-geo, wb-eutran-othersat, nbiot-leo, nbiot-meo, nbiot-geo, nbiot-othersat, ltem-leo, ltem-meo, ltem-geo, ltem-othersat]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -173,7 +173,9 @@ Examples
             #            "modify-bearer-res"]
             # msisdn_prefix: <string>
             # rat_type: ["any", "utran", "geran", "wlan", "gan", "hspa", "eutran", "virtual",
-            #            "nbiot", "ltem", "nr"]
+            #            "nbiot", "ltem", "nr", "wb-eutran-leo", "wb-eutran-meo", "wb-eutran-geo",
+            #            "wb-eutran-othersat", "nbiot-leo", "nbiot-meo", "nbiot-geo",
+            #            "nbiot-othersat", "ltem-leo", "ltem-meo", "ltem-geo", "ltem-othersat"]
             # uli: <list or string>
 
 

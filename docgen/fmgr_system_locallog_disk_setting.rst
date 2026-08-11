@@ -194,6 +194,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">log_rate_limit</span> <b>(Alias name: log-rate-limit)</b>  Log rate limit. <span class="li-normal">type: int</span> <span class="li-normal">default: 1000</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log_max_days</span> <b>(Alias name: log-max-days)</b>  Log max days. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -244,6 +256,8 @@ Examples
             # uploadzip: <value in [disable, enable]>
             # log_disk_quota: <integer>
             # max_log_file_num: <integer>
+            # log_rate_limit: <integer>
+            # log_max_days: <integer>
 
 
 Return Values

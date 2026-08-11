@@ -121,7 +121,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb user activity match rule body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb user activity match rule body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json, form]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -173,7 +173,7 @@ Examples
             # methods: <list or string>
             # negate: <value in [disable, enable]>
             # type: <value in [domains, host, path, ...]>
-            # body_type: <value in [json]>
+            # body_type: <value in [json, form]>
             # jq: <string>
 
 

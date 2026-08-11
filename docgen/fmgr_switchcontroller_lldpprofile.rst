@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">802_3_tlvs</span> <b>(Alias name: 802.3-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [max-frame-size, power-negotiation]</span>
+ <li><span class="li-head">802_3_tlvs</span> <b>(Alias name: 802.3-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [max-frame-size, power-negotiation, eee-negotiation]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -294,7 +294,7 @@ Examples
           switchcontroller_lldpprofile:
             name: "your value" # Required variable, string
             # 802_1_tlvs: ["port-vlan-id"]
-            # 802_3_tlvs: ["max-frame-size", "power-negotiation"]
+            # 802_3_tlvs: ["max-frame-size", "power-negotiation", "eee-negotiation"]
             # auto_isl: <value in [disable, enable]>
             # auto_isl_hello_timer: <integer>
             # auto_isl_port_group: <integer>

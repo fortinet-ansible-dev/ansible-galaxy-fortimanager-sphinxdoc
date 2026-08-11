@@ -68,7 +68,7 @@ Parameters
  <li><span class="li-head">log</span> Enable/disable logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">log_all</span> <b>(Alias name: log-all)</b>  Enable/disable logging of all email traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>

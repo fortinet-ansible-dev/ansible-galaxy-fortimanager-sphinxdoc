@@ -255,7 +255,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb user activity match rule body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb user activity match rule body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json, form]</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -287,7 +287,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json, form]</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -339,35 +339,111 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">tenant_session_extraction</span> <b>(Alias name: tenant-session-extraction)</b>  Tenant session extraction. <span class="li-normal">type: dict</span>
+ <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
+ <div id="label89" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">filters</span> Filters. <span class="li-normal">type: list</span>
+ <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
+ <div id="label91" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb content extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json, form]</span>
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cookie_name</span> <b>(Alias name: cookie-name)</b>  Casb content extraction filter cookie name. <span class="li-normal">type: str</span>
+ <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
+ <div id="label95" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">direction</span> Casb content extraction filter direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request, response]</span>
+ <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <div id="label97" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">header_name</span> <b>(Alias name: header-name)</b>  Casb content extraction filter header name. <span class="li-normal">type: str</span>
+ <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
+ <div id="label99" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">id</span> Casb content extraction filter id. <span class="li-normal">type: int</span>
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">place</span> Casb content extraction filter place type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path, body, cookie]</span>
+ <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
+ <div id="label103" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">jq</span> Casb user activity session extraction jq script. <span class="li-normal">type: str</span>
+ <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
+ <div id="label105" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">session_match</span> <b>(Alias name: session-match)</b>  Casb user activity session match name. <span class="li-normal">type: str</span>
+ <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
+ <div id="label107" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">session_source</span> <b>(Alias name: session-source)</b>  Enable/disable casb session extraction source flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
+ <div id="label109" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Enable/disable casb session extraction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">match_strategy</span> <b>(Alias name: match-strategy)</b>  Casb user activity match strategy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [or, and]</span>
- <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
- <div id="label89" style="display:none">
+ <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">name</span> Casb user activity name. <span class="li-normal">type: str</span>
- <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
- <div id="label91" style="display:none">
+ <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
+ <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">type</span> Casb user activity type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [built-in, customized]</span>
- <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
- <div id="label93" style="display:none">
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">uuid</span> Universally unique identifier (uuid; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
- <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
- <div id="label95" style="display:none">
+ <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
+ <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Casb user activity status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
- <div id="label97" style="display:none">
+ <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
+ <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
@@ -389,66 +465,77 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test CASB tenant session extraction
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure CASB user activity.
+      - name: Create the parent CASB user activity
         fortinet.fortimanager.fmgr_casb_useractivity:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           casb_useractivity:
-            name: "your value" # Required variable, string
-            # application: <string>
-            # casb_name: <string>
-            # category: <value in [activity-control, tenant-control, domain-control, ...]>
-            # control_options:
-            #   - name: <string>
-            #     operations:
-            #       - action: <value in [append, prepend, replace, ...]>
-            #         case_sensitive: <value in [disable, enable]>
-            #         direction: <value in [request, response]>
-            #         header_name: <string>
-            #         name: <string>
-            #         search_key: <string>
-            #         search_pattern: <value in [simple, substr, regexp]>
-            #         target: <value in [header, path, body]>
-            #         value_from_input: <value in [disable, enable]>
-            #         values: <list or string>
-            #         value_name_from_input: <string>
-            #     status: <value in [disable, enable]>
-            # description: <string>
-            # match:
-            #   - id: <integer>
-            #     rules:
-            #       - case_sensitive: <value in [disable, enable]>
-            #         domains: <list or string>
-            #         header_name: <string>
-            #         id: <integer>
-            #         match_pattern: <value in [simple, substr, regexp]>
-            #         match_value: <string>
-            #         methods: <list or string>
-            #         negate: <value in [disable, enable]>
-            #         type: <value in [domains, host, path, ...]>
-            #         body_type: <value in [json]>
-            #         jq: <string>
-            #     strategy: <value in [or, and]>
-            #     tenant_extraction:
-            #       filters:
-            #         - body_type: <value in [json]>
-            #           direction: <value in [request, response]>
-            #           header_name: <string>
-            #           id: <integer>
-            #           place: <value in [path, header, body]>
-            #       jq: <string>
-            #       status: <value in [disable, enable]>
-            #       type: <value in [json-query]>
-            # match_strategy: <value in [or, and]>
-            # type: <value in [built-in, customized]>
-            # uuid: <string>
-            # status: <value in [disable, enable]>
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure CASB tenant session extraction
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          casb_useractivity_match_tenantsessionextraction:
+            status: disable
+
+  - name: Test CASB tenant session extraction filters
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent CASB user activity
+        fortinet.fortimanager.fmgr_casb_useractivity:
+          enable_log: true
+          adom: root
+          state: present
+          casb_useractivity:
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure the parent CASB tenant session extraction
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          casb_useractivity_match_tenantsessionextraction:
+            status: enable
+
+      - name: Configure a CASB tenant session extraction filter
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction_filters:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          state: present
+          casb_useractivity_match_tenantsessionextraction_filters:
+            id: 1
 
 
 Return Values

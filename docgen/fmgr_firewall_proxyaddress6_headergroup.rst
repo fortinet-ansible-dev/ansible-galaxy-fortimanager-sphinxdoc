@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_proxyaddress6_headergroup:
 
-fmgr_firewall_proxyaddress6_headergroup -- Firewall proxy address6 header group.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_firewall_proxyaddress6_headergroup -- HTTP header group.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">proxy_address6</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_proxyaddress6_headergroup</span> - Firewall proxy address6 header group <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_proxyaddress6_headergroup</span> - HTTP header group. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">case_sensitivity</span> <b>(Alias name: case-sensitivity)</b>  Case sensitivity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -113,7 +113,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Firewall proxy address6 header group
+      - name: HTTP header group.
         fortinet.fortimanager.fmgr_firewall_proxyaddress6_headergroup:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>

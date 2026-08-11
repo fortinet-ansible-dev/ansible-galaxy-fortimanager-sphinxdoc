@@ -161,6 +161,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">scep_url</span> <b>(Alias name: scep-url)</b>  Scep url. <span class="li-normal">type: str</span>
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -206,6 +212,7 @@ Examples
             # source: <value in [factory, user, bundle]>
             # tmp_cert_file: <string>
             # vendor: <value in [unknown, gch]>
+            # scep_url: <string>
 
 
 Return Values

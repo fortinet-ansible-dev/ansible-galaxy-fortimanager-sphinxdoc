@@ -568,7 +568,7 @@ Parameters
  <li><span class="li-head">skip_check_for_unsupported_browser</span> <b>(Alias name: skip-check-for-unsupported-browser)</b>  Enable to skip host check if browser does not support it. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label164' href="javascript:ContentClick('label165', 'label164');" onmouseover="ContentPreview('label165');" onmouseout="ContentUnpreview('label165');" title="click to collapse or expand..."> more... </a>
  <div id="label165" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">skip_check_for_unsupported_os</span> <b>(Alias name: skip-check-for-unsupported-os)</b>  Enable to skip host check if client os does not support it. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>

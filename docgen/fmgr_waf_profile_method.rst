@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">waf_profile_method</span> - Method restriction. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">default_allowed_methods</span> <b>(Alias name: default-allowed-methods)</b>  Methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, others, connect]</span>
+ <li><span class="li-head">default_allowed_methods</span> <b>(Alias name: default-allowed-methods)</b>  Methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, others, connect, patch, query]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allowed_methods</span> <b>(Alias name: allowed-methods)</b>  Allowed methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, others, connect]</span>
+ <li><span class="li-head">allowed_methods</span> <b>(Alias name: allowed-methods)</b>  Allowed methods. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, others, connect, patch, query]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -157,12 +157,12 @@ Examples
           profile: <your own value>
           waf_profile_method:
             # default_allowed_methods: ["delete", "get", "head", "options", "post", "put", "trace",
-            #                           "others", "connect"]
+            #                           "others", "connect", "patch", "query"]
             # log: <value in [disable, enable]>
             # method_policy:
             #   - address: <string>
             #     allowed_methods: ["delete", "get", "head", "options", "post", "put", "trace",
-            #                       "others", "connect"]
+            #                       "others", "connect", "patch", "query"]
             #     id: <integer>
             #     pattern: <string>
             #     regex: <value in [disable, enable]>

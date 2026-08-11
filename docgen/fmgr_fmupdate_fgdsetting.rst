@@ -354,6 +354,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">delta_ratio</span> <b>(Alias name: delta-ratio)</b>  Delta ratio. <span class="li-normal">type: int</span> <span class="li-normal">default: 120</span>
+ <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <div id="label97" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -429,6 +435,7 @@ Examples
             # wf_dn_cache_max_number: <integer>
             # wf_log: <value in [disable, nourl, all]>
             # wf_preload: <value in [disable, enable]>
+            # delta_ratio: <integer>
 
 
 Return Values

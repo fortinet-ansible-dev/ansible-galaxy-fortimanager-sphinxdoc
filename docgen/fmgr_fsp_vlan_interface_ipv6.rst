@@ -547,6 +547,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">dhcp6_egress_cos</span> <b>(Alias name: dhcp6-egress-cos)</b>  Cos in vlan tag for outgoing dhcpv6 packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [cos0, cos1, cos2, cos3, cos4, cos5, cos6, cos7]</span>
+ <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
+ <div id="label159" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip6_link_local</span> <b>(Alias name: ip6-link-local)</b>  Ipv6 link-local address of interface. <span class="li-normal">type: str</span>
+ <a id='label160' href="javascript:ContentClick('label161', 'label160');" onmouseover="ContentPreview('label161');" onmouseout="ContentUnpreview('label161');" title="click to collapse or expand..."> more... </a>
+ <div id="label161" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip6_mgmt_address</span> <b>(Alias name: ip6-mgmt-address)</b>  High availability in-band management ipv6 address of this interface and should be in the same subnet with primary ipv6 address <span class="li-normal">type: str</span>
+ <a id='label162' href="javascript:ContentClick('label163', 'label162');" onmouseover="ContentPreview('label163');" onmouseout="ContentUnpreview('label163');" title="click to collapse or expand..."> more... </a>
+ <div id="label163" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -656,6 +674,9 @@ Examples
             # dhcp6_relay_source_ip: <string>
             # ip6_adv_rio: <value in [disable, enable]>
             # ip6_route_pref: <value in [medium, high, low]>
+            # dhcp6_egress_cos: <value in [cos0, cos1, cos2, ...]>
+            # ip6_link_local: <string>
+            # ip6_mgmt_address: <string>
 
 
 Return Values

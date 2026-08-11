@@ -70,7 +70,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">icmp_csum_err</span> <b>(Alias name: icmp-csum-err)</b>  Invalid ipv4 icmp packet checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span>
+ <li><span class="li-head">icmp_csum_err</span> <b>(Alias name: icmp-csum-err)</b>  Invalid ipv4 icmp packet checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host, allow]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -148,7 +148,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tcp_csum_err</span> <b>(Alias name: tcp-csum-err)</b>  Invalid ipv4 tcp packet checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span>
+ <li><span class="li-head">tcp_csum_err</span> <b>(Alias name: tcp-csum-err)</b>  Invalid ipv4 tcp packet checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host, allow]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -166,7 +166,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">udp_csum_err</span> <b>(Alias name: udp-csum-err)</b>  Invalid ipv4 udp packet checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host]</span>
+ <li><span class="li-head">udp_csum_err</span> <b>(Alias name: udp-csum-err)</b>  Invalid ipv4 udp packet checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [drop, trap-to-host, allow]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -489,7 +489,7 @@ Examples
           adom: <your own value>
           system_npu_fpanomaly:
             # esp_minlen_err: <value in [drop, trap-to-host]>
-            # icmp_csum_err: <value in [drop, trap-to-host]>
+            # icmp_csum_err: <value in [drop, trap-to-host, allow]>
             # icmp_minlen_err: <value in [drop, trap-to-host]>
             # ipv4_csum_err: <value in [drop, trap-to-host]>
             # ipv4_ihl_err: <value in [drop, trap-to-host]>
@@ -502,10 +502,10 @@ Examples
             # ipv6_ihl_err: <value in [drop, trap-to-host]>
             # ipv6_plen_zero: <value in [drop, trap-to-host]>
             # ipv6_ver_err: <value in [drop, trap-to-host]>
-            # tcp_csum_err: <value in [drop, trap-to-host]>
+            # tcp_csum_err: <value in [drop, trap-to-host, allow]>
             # tcp_hlen_err: <value in [drop, trap-to-host]>
             # tcp_plen_err: <value in [drop, trap-to-host]>
-            # udp_csum_err: <value in [drop, trap-to-host]>
+            # udp_csum_err: <value in [drop, trap-to-host, allow]>
             # udp_hlen_err: <value in [drop, trap-to-host]>
             # udp_len_err: <value in [drop, trap-to-host]>
             # udp_plen_err: <value in [drop, trap-to-host]>

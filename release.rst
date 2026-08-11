@@ -2,6 +2,22 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.15.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.15.0
+
+Minor Changes
+-------------
+
+- Added 19 new modules.
+- Supported FortiManager schemas 7.4.11, 7.6.7, 8.0.0
+- Reduced the overall project size.
+
+
 Release Galaxy 2.14.0
 ~~~~~~~~~~~~~~~~~~~~
 

@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">filefilter_profile_rules</span> - File filter rules. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block]</span>
+ <li><span class="li-head">action</span> Action taken for matched file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log-only, block, warning]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -102,7 +102,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocols to apply rule to. <span class="li-normal">type: list</span> <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, mapi, cifs, ssh]</span>
+ <li><span class="li-head">protocol</span> Protocols to apply rule to. <span class="li-normal">type: list</span> <span class="li-normal">choices: [imap, smtp, pop3, http, ftp, mapi, cifs, ssh, websocket]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
@@ -139,12 +139,12 @@ Examples
           state: present # <value in [present, absent]>
           filefilter_profile_rules:
             name: "your value" # Required variable, string
-            # action: <value in [log-only, block]>
+            # action: <value in [log-only, block, warning]>
             # comment: <string>
             # direction: <value in [any, incoming, outgoing]>
             # file_type: <list or string>
             # password_protected: <value in [any, yes]>
-            # protocol: ["imap", "smtp", "pop3", "http", "ftp", "mapi", "cifs", "ssh"]
+            # protocol: ["imap", "smtp", "pop3", "http", "ftp", "mapi", "cifs", "ssh", "websocket"]
 
 
 Return Values

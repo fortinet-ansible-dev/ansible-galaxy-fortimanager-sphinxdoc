@@ -4,8 +4,8 @@
 
 .. _fmgr_firewall_proxyaddress6:
 
-fmgr_firewall_proxyaddress6 -- Firewall proxy address6.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_firewall_proxyaddress6 -- Configure web proxy address6.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">firewall_proxyaddress6</span> - Firewall proxy address6 <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">firewall_proxyaddress6</span> - Configure web proxy address6. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">application</span> Application. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -151,7 +151,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">method</span> Method. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect]</span>
+ <li><span class="li-head">method</span> Method. <span class="li-normal">type: list</span> <span class="li-normal">choices: [delete, get, head, options, post, put, trace, connect, patch, query, other, update]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -255,6 +255,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">custom_tags</span> <b>(Alias name: custom-tags)</b>  Custom tags. <span class="li-normal">type: list</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">display_with</span> <b>(Alias name: display-with)</b>  Display object with first tag, all tags, or just the icon. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all-tags, first-tag-only, icon-and-color]</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -278,7 +290,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Firewall proxy address6
+      - name: Configure web proxy address6.
         fortinet.fortimanager.fmgr_firewall_proxyaddress6:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>
@@ -299,7 +311,8 @@ Examples
             # header_name: <string>
             # host: <list or string>
             # host_regex: <string>
-            # method: ["delete", "get", "head", "options", "post", "put", "trace", "connect"]
+            # method: ["delete", "get", "head", "options", "post", "put", "trace", "connect",
+            #          "patch", "query", "other", "update"]
             # path: <string>
             # post_arg: <value in [disable, enable]>
             # query: <string>
@@ -315,6 +328,8 @@ Examples
             # url_list: <list or string>
             # uuid: <string>
             # llm_servers: <list or string>
+            # custom_tags: <list or string>
+            # display_with: <value in [all-tags, first-tag-only, icon-and-color]>
 
 
 Return Values

@@ -99,6 +99,12 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only]</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -132,6 +138,9 @@ Examples
             # scope:
             #   - name: <string>
             #     vdom: <string>
+            # flags: ["none", "cp_all_objs", "preview", "generate_rev", "copy_assigned_pkg",
+            #         "unassign", "ifpolicy_only", "no_ifpolicy", "objs_only", "auto_lock_ws",
+            #         "check_pkg_st", "copy_only"]
 
 
 Return Values

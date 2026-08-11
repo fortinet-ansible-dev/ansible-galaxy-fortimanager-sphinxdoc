@@ -68,7 +68,7 @@ Parameters
  <li><span class="li-head">analytics_bl_filetype</span> <b>(Alias name: analytics-bl-filetype)</b>  Only submit files matching this dlp file-pattern to fortisandbox. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">analytics_db</span> <b>(Alias name: analytics-db)</b>  Enable/disable using the fortisandbox signature database to supplement the av signature databases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -86,7 +86,7 @@ Parameters
  <li><span class="li-head">analytics_wl_filetype</span> <b>(Alias name: analytics-wl-filetype)</b>  Do not submit files matching this dlp file-pattern to fortisandbox. <span class="li-normal">type: str</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">av_block_log</span> <b>(Alias name: av-block-log)</b>  Enable/disable logging for antivirus file blocking. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -182,7 +182,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable cifs antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, quarantine, avmonitor]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -390,7 +390,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable ftp antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -476,7 +476,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable http antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor, strict-file]</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -580,7 +580,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable imap antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span>
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -666,7 +666,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable mapi antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, quarantine, avquery, avmonitor]</span>
  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -772,7 +772,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable nntp antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span>
  <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
  <div id="label231" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -828,19 +828,19 @@ Parameters
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Outbreak prevention. <span class="li-normal">type: dict</span>
  <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
  <div id="label249" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">external_blocklist</span> <b>(Alias name: external-blocklist)</b>  Enable/disable external malware blocklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
  <div id="label251" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">ftgd_service</span> <b>(Alias name: ftgd-service)</b>  Enable/disable fortiguard virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
  <div id="label253" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  </ul>
@@ -884,7 +884,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable pop3 antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -976,7 +976,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable smtp antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [scan, file-filter, quarantine, avquery, avmonitor]</span>
  <a id='label296' href="javascript:ContentClick('label297', 'label296');" onmouseover="ContentPreview('label297');" onmouseout="ContentUnpreview('label297');" title="click to collapse or expand..."> more... </a>
  <div id="label297" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -1056,7 +1056,7 @@ Parameters
  <li><span class="li-head">options</span> Enable/disable sftp and scp antivirus scanning, monitoring, and quarantine. <span class="li-normal">type: list</span> <span class="li-normal">choices: [avmonitor, quarantine, scan]</span>
  <a id='label322' href="javascript:ContentClick('label323', 'label322');" onmouseover="ContentPreview('label323');" onmouseout="ContentUnpreview('label323');" title="click to collapse or expand..."> more... </a>
  <div id="label323" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, files, full-archive, disable, block, monitor]</span>
@@ -1243,6 +1243,122 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">websocket</span> Websocket. <span class="li-normal">type: dict</span>
+ <a id='label384' href="javascript:ContentClick('label385', 'label384');" onmouseover="ContentPreview('label385');" onmouseout="ContentUnpreview('label385');" title="click to collapse or expand..."> more... </a>
+ <div id="label385" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">archive_block</span> <b>(Alias name: archive-block)</b>  Select the archive types to block. <span class="li-normal">type: list</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, timeout]</span>
+ <a id='label386' href="javascript:ContentClick('label387', 'label386');" onmouseover="ContentPreview('label387');" onmouseout="ContentUnpreview('label387');" title="click to collapse or expand..."> more... </a>
+ <div id="label387" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">archive_log</span> <b>(Alias name: archive-log)</b>  Select the archive types to log. <span class="li-normal">type: list</span> <span class="li-normal">choices: [encrypted, corrupted, multipart, nested, mailbomb, unhandled, partiallycorrupted, timeout]</span>
+ <a id='label388' href="javascript:ContentClick('label389', 'label388');" onmouseover="ContentPreview('label389');" onmouseout="ContentUnpreview('label389');" title="click to collapse or expand..."> more... </a>
+ <div id="label389" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">av_scan</span> <b>(Alias name: av-scan)</b>  Enable/disable antivirus scan service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, block, monitor]</span>
+ <a id='label390' href="javascript:ContentClick('label391', 'label390');" onmouseover="ContentPreview('label391');" onmouseout="ContentUnpreview('label391');" title="click to collapse or expand..."> more... </a>
+ <div id="label391" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">emulator</span> Enable/disable the virus emulator. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label392' href="javascript:ContentClick('label393', 'label392');" onmouseover="ContentPreview('label393');" onmouseout="ContentUnpreview('label393');" title="click to collapse or expand..."> more... </a>
+ <div id="label393" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">external_blocklist</span> <b>(Alias name: external-blocklist)</b>  Enable/disable external-blocklist. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, block, monitor]</span>
+ <a id='label394' href="javascript:ContentClick('label395', 'label394');" onmouseover="ContentPreview('label395');" onmouseout="ContentUnpreview('label395');" title="click to collapse or expand..."> more... </a>
+ <div id="label395" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortindr</span> Enable/disable scanning of files by fortindr. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, block, monitor]</span>
+ <a id='label396' href="javascript:ContentClick('label397', 'label396');" onmouseover="ContentPreview('label397');" onmouseout="ContentUnpreview('label397');" title="click to collapse or expand..."> more... </a>
+ <div id="label397" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortisandbox</span> Enable/disable scanning of files by fortisandbox. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, block, monitor]</span>
+ <a id='label398' href="javascript:ContentClick('label399', 'label398');" onmouseover="ContentPreview('label399');" onmouseout="ContentUnpreview('label399');" title="click to collapse or expand..."> more... </a>
+ <div id="label399" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">malware_stream</span> <b>(Alias name: malware-stream)</b>  Enable/disable 0-day malware-stream scanning. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, block, monitor]</span>
+ <a id='label400' href="javascript:ContentClick('label401', 'label400');" onmouseover="ContentPreview('label401');" onmouseout="ContentUnpreview('label401');" title="click to collapse or expand..."> more... </a>
+ <div id="label401" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">outbreak_prevention</span> <b>(Alias name: outbreak-prevention)</b>  Enable/disable virus outbreak prevention service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, block, monitor]</span>
+ <a id='label402' href="javascript:ContentClick('label403', 'label402');" onmouseover="ContentPreview('label403');" onmouseout="ContentUnpreview('label403');" title="click to collapse or expand..."> more... </a>
+ <div id="label403" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">quarantine</span> Enable/disable quarantine for infected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label404' href="javascript:ContentClick('label405', 'label404');" onmouseover="ContentPreview('label405');" onmouseout="ContentUnpreview('label405');" title="click to collapse or expand..."> more... </a>
+ <div id="label405" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">analytics_ignore_mpip</span> <b>(Alias name: analytics-ignore-mpip)</b>  Do not submit files matching this dlp label to fortisandbox (post-transfer scan only). <span class="li-normal">type: list</span>
+ <a id='label406' href="javascript:ContentClick('label407', 'label406');" onmouseover="ContentPreview('label407');" onmouseout="ContentUnpreview('label407');" title="click to collapse or expand..."> more... </a>
+ <div id="label407" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_force_sync</span> <b>(Alias name: fabric-force-sync)</b>  Enable/disable forced synchronization of configuration objects from the root fortigate unit to the downstream devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label408' href="javascript:ContentClick('label409', 'label408');" onmouseover="ContentPreview('label409');" onmouseout="ContentUnpreview('label409');" title="click to collapse or expand..."> more... </a>
+ <div id="label409" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_object</span> <b>(Alias name: fabric-object)</b>  Security fabric global object setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label410' href="javascript:ContentClick('label411', 'label410');" onmouseover="ContentPreview('label411');" onmouseout="ContentUnpreview('label411');" title="click to collapse or expand..."> more... </a>
+ <div id="label411" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_object_source</span> <b>(Alias name: fabric-object-source)</b>  Source of truth for fabric object. <span class="li-normal">type: str</span> <span class="li-normal">choices: [member, local, root]</span>
+ <a id='label412' href="javascript:ContentClick('label413', 'label412');" onmouseover="ContentPreview('label413');" onmouseout="ContentUnpreview('label413');" title="click to collapse or expand..."> more... </a>
+ <div id="label413" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortisandbox_destination</span> <b>(Alias name: fortisandbox-destination)</b>  Fortisandbox destination options. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sandbox, sandbox-cloud]</span>
+ <a id='label414' href="javascript:ContentClick('label415', 'label414');" onmouseover="ContentPreview('label415');" onmouseout="ContentUnpreview('label415');" title="click to collapse or expand..."> more... </a>
+ <div id="label415" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">outbreak_prevention_error_action</span> <b>(Alias name: outbreak-prevention-error-action)</b>  Action to take if outbreak-prevention encounters an error <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log-only, ignore]</span>
+ <a id='label416' href="javascript:ContentClick('label417', 'label416');" onmouseover="ContentPreview('label417');" onmouseout="ContentUnpreview('label417');" title="click to collapse or expand..."> more... </a>
+ <div id="label417" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">outbreak_prevention_timeout_action</span> <b>(Alias name: outbreak-prevention-timeout-action)</b>  Action to take if outbreak-prevention encounters a request timeout <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log-only, ignore]</span>
+ <a id='label418' href="javascript:ContentClick('label419', 'label418');" onmouseover="ContentPreview('label419');" onmouseout="ContentUnpreview('label419');" title="click to collapse or expand..."> more... </a>
+ <div id="label419" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uuid</span> Universally unique identifier (uuid; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
+ <a id='label420' href="javascript:ContentClick('label421', 'label420');" onmouseover="ContentPreview('label421');" onmouseout="ContentUnpreview('label421');" title="click to collapse or expand..."> more... </a>
+ <div id="label421" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1260,6 +1376,27 @@ Examples
 --------
 
 .. code-block:: yaml+jinja
+
+  - name: Test antivirus profile WebSocket settings
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent antivirus profile
+        fortinet.fortimanager.fmgr_antivirus_profile:
+          enable_log: true
+          adom: root
+          state: present
+          antivirus_profile:
+            name: test_profile
+
+      - name: Configure antivirus profile WebSocket settings
+        fortinet.fortimanager.fmgr_antivirus_profile_websocket:
+          enable_log: true
+          adom: root
+          profile: test_profile
+          antivirus_profile_websocket:
+            av_scan: disable
 
   - name: Example playbook
     hosts: fortimanagers

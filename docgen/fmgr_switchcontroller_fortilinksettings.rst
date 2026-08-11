@@ -145,6 +145,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">admin_policy</span> <b>(Alias name: admin-policy)</b>  Fortiswitchs admin security-policy applied to all switch on this fortilink interface. <span class="li-normal">type: list</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -187,6 +193,7 @@ Examples
             #   parent_key: <string>
             #   bounce_nac_port: <value in [disable, enable]>
             # access_vlan_mode: <value in [legacy, fail-open, fail-close]>
+            # admin_policy: <list or string>
 
 
 Return Values

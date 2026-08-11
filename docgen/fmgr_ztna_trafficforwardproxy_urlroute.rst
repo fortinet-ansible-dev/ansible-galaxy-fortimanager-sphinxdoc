@@ -4,8 +4,8 @@
 
 .. _fmgr_ztna_trafficforwardproxy_urlroute:
 
-fmgr_ztna_trafficforwardproxy_urlroute -- Ztna traffic forward proxy url route.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_ztna_trafficforwardproxy_urlroute -- Configure URL-based routing rules.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">traffic_forward_proxy</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">ztna_trafficforwardproxy_urlroute</span> - Ztna traffic forward proxy url route <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">ztna_trafficforwardproxy_urlroute</span> - Configure URL-based routing rules. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -107,7 +107,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Ztna traffic forward proxy url route
+      - name: Configure URL-based routing rules.
         fortinet.fortimanager.fmgr_ztna_trafficforwardproxy_urlroute:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>

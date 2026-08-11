@@ -4,8 +4,8 @@
 
 .. _fmgr_ztna_serviceconnector:
 
-fmgr_ztna_serviceconnector -- Ztna service connector.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_ztna_serviceconnector -- Configure ZTNA service connector.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">ztna_serviceconnector</span> - Ztna service connector <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">ztna_serviceconnector</span> - Configure ZTNA service connector. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">certificate</span> Certificate. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -184,7 +184,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Ztna service connector
+      - name: Configure ZTNA service connector.
         fortinet.fortimanager.fmgr_ztna_serviceconnector:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>

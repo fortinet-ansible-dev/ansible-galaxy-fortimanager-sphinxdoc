@@ -191,6 +191,66 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">billing_start_day</span> <b>(Alias name: billing-start-day)</b>  Volume billing start day when this members volume usgage will begin to calculate. <span class="li-normal">type: int</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">duplication_threshold_bandwidth</span> <b>(Alias name: duplication-threshold-bandwidth)</b>  Configure duplication threshold bandwidth interface in the sd-wan. <span class="li-normal">type: str</span> <span class="li-normal">choices: [overlay, underlay]</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">duplication_threshold_bibandwidth</span> <b>(Alias name: duplication-threshold-bibandwidth)</b>  Bandwidth bistream threshold value in kilobytes per second (0 - 4294967295, default = 0). <span class="li-normal">type: int</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">duplication_threshold_dwbandwidth</span> <b>(Alias name: duplication-threshold-dwbandwidth)</b>  Bandwidth downstream threshold value in kilobytes per second (0 - 4294967295, default = 0). <span class="li-normal">type: int</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">duplication_threshold_upbandwidth</span> <b>(Alias name: duplication-threshold-upbandwidth)</b>  Bandwidth upstream threshold value in kilobytes per second (0 - 4294967295, default = 0). <span class="li-normal">type: int</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">overage</span> Enable/disable the volume overage when members volume usage reaches quota-limit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">overage_cost</span> <b>(Alias name: overage-cost)</b>  Cost value for this member when its volume is over quota and overage is enabled(0 - 4294967295, default = 0). <span class="li-normal">type: int</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">overage_volume_ratio</span> <b>(Alias name: overage-volume-ratio)</b>  Volume ratio value for this member when its volume is over quota and overage is enabled(1 - 255, default = 1). <span class="li-normal">type: int</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">overage_weight</span> <b>(Alias name: overage-weight)</b>  Weight value for this member when its volume is over quota and overage is enabled. <span class="li-normal">type: int</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">quota_limit</span> <b>(Alias name: quota-limit)</b>  Volume quota limit assigned to this member in gigabytes (0 - 10485760, default = 0). <span class="li-normal">type: int</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -242,6 +302,16 @@ Examples
             # transport_group: <integer>
             # priority_in_sla: <integer>
             # priority_out_sla: <integer>
+            # billing_start_day: <integer>
+            # duplication_threshold_bandwidth: <value in [overlay, underlay]>
+            # duplication_threshold_bibandwidth: <integer>
+            # duplication_threshold_dwbandwidth: <integer>
+            # duplication_threshold_upbandwidth: <integer>
+            # overage: <value in [disable, enable]>
+            # overage_cost: <integer>
+            # overage_volume_ratio: <integer>
+            # overage_weight: <integer>
+            # quota_limit: <integer>
 
 
 Return Values

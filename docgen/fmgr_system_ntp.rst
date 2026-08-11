@@ -116,17 +116,29 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">key_fmt</span> <b>(Alias name: key-fmt)</b>  Key fmt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ascii, hex]</span> <span class="li-normal">default: ascii</span>
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Key type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [md5, sha256]</span> <span class="li-normal">default: md5</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">status</span> Enable/disable ntp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
- <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
- <div id="label19" style="display:none">
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sync_interval</span> Ntp sync interval (min). <span class="li-normal">type: int</span> <span class="li-normal">default: 60</span>
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.4.7</code>, <code class="docutils literal notranslate">v7.0.0 -> v7.0.2</code></p>
  </div>
  </li>
@@ -166,6 +178,8 @@ Examples
             #     server: <string>
             #     maxpoll: <integer>
             #     minpoll: <integer>
+            #     key_fmt: <value in [ascii, hex]>
+            #     key_type: <value in [md5, sha256]>
             # status: <value in [disable, enable]>
             # sync_interval: <integer>
 

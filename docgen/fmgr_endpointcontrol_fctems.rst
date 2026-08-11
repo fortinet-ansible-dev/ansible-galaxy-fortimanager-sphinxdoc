@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">capabilities</span> List of ems capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, single-vdom-connector, client-avatars, fgt-sysinfo-api, ztna-server-info, used-tags]</span>
+ <li><span class="li-head">capabilities</span> List of ems capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, single-vdom-connector, client-avatars, fgt-sysinfo-api, ztna-server-info, used-tags, crl, tag-def]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -170,13 +170,13 @@ Parameters
  <li><span class="li-head">status_check_interval</span> <b>(Alias name: status-check-interval)</b>  Forticlient ems call timeout in seconds (1 - 120 seconds, default = 5). <span class="li-normal">type: int</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">certificate</span> Forticlient ems certificate. <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">admin_username</span> <b>(Alias name: admin-username)</b>  Forticlient ems admin username. <span class="li-normal">type: str</span>
@@ -303,7 +303,7 @@ Examples
             # capabilities: ["fabric-auth", "silent-approval", "websocket", "websocket-malware",
             #                "push-ca-certs", "common-tags-api", "tenant-id",
             #                "single-vdom-connector", "client-avatars", "fgt-sysinfo-api",
-            #                "ztna-server-info", "used-tags"]
+            #                "ztna-server-info", "used-tags", "crl", "tag-def"]
             # certificate_fingerprint: <string>
             # cloud_server_type: <value in [production, alpha, beta]>
             # fortinetone_cloud_authentication: <value in [disable, enable]>

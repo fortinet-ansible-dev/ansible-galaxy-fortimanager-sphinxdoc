@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">full_archive_proto</span> <b>(Alias name: full-archive-proto)</b>  Protocols to always content archive. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
+ <li><span class="li-head">full_archive_proto</span> <b>(Alias name: full-archive-proto)</b>  Protocols to always content archive. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs, websocket]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -179,7 +179,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
+ <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs, websocket]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -211,7 +211,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">summary_proto</span> <b>(Alias name: summary-proto)</b>  Protocols to always log summary. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
+ <li><span class="li-head">summary_proto</span> <b>(Alias name: summary-proto)</b>  Protocols to always log summary. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs, websocket]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -221,6 +221,36 @@ Parameters
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_force_sync</span> <b>(Alias name: fabric-force-sync)</b>  Enable/disable forced synchronization of configuration objects from the root fortigate unit to the downstream devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_object</span> <b>(Alias name: fabric-object)</b>  Security fabric global object setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fabric_object_source</span> <b>(Alias name: fabric-object-source)</b>  Source of truth for fabric object. <span class="li-normal">type: str</span> <span class="li-normal">choices: [member, local, root]</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortidata_scan_timeout</span> <b>(Alias name: fortidata-scan-timeout)</b>  Fortidata inline scan timeout in seconds (10 - 30, default = 15). <span class="li-normal">type: int</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">uuid</span> Universally unique identifier (uuid; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -258,7 +288,7 @@ Examples
             # extended_log: <value in [disable, enable]>
             # feature_set: <value in [flow, proxy]>
             # full_archive_proto: ["smtp", "pop3", "imap", "http-post", "http-get", "ftp", "nntp",
-            #                      "mapi", "ssh", "cifs"]
+            #                      "mapi", "ssh", "cifs", "websocket"]
             # nac_quar_log: <value in [disable, enable]>
             # replacemsg_group: <string>
             # rule:
@@ -273,14 +303,19 @@ Examples
             #     match_percentage: <integer>
             #     name: <string>
             #     proto: ["smtp", "pop3", "imap", "http-post", "http-get", "ftp", "nntp", "mapi",
-            #             "ssh", "cifs"]
+            #             "ssh", "cifs", "websocket"]
             #     sensitivity: <list or string>
             #     sensor: <list or string>
             #     severity: <value in [info, low, medium, ...]>
             #     type: <value in [file, message]>
             # summary_proto: ["smtp", "pop3", "imap", "http-post", "http-get", "ftp", "nntp",
-            #                 "mapi", "ssh", "cifs"]
+            #                 "mapi", "ssh", "cifs", "websocket"]
             # fortidata_error_action: <value in [block, log-only, ignore]>
+            # fabric_force_sync: <value in [disable, enable]>
+            # fabric_object: <value in [disable, enable]>
+            # fabric_object_source: <value in [member, local, root]>
+            # fortidata_scan_timeout: <integer>
+            # uuid: <string>
 
 
 Return Values

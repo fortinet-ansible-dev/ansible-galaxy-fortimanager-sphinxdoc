@@ -377,7 +377,7 @@ Parameters
  <li><span class="li-head">rtm_max_monitor_by_size</span> <b>(Alias name: rtm-max-monitor-by-size)</b>  Maximum rtm monitor (sdwan, traffic shaping, etc) history by size in mb per device per data type (10 - 200000). <span class="li-normal">type: int</span> <span class="li-normal">default: 1000</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">show_sdwan_manager</span> <b>(Alias name: show-sdwan-manager)</b>  Show sdwan manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
@@ -389,7 +389,25 @@ Parameters
  <li><span class="li-head">admin_scp</span> <b>(Alias name: admin-scp)</b>  Enable/disable admin scp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">admin_httpd_keep_alive_timeout</span> <b>(Alias name: admin-httpd-keep-alive-timeout)</b>  Http keep-alive timeout (5 - 120 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 5</span>
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">custom_session_label</span> <b>(Alias name: custom-session-label)</b>  Custom session label. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
+ <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">custom_session_label_mode</span> <b>(Alias name: custom-session-label-mode)</b>  Custom session label mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [changeable, unique-per-session]</span> <span class="li-normal">default: changeable</span>
+ <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
+ <div id="label115" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -474,6 +492,9 @@ Examples
             # rtm_max_monitor_by_size: <integer>
             # show_sdwan_manager: <value in [disable, enable]>
             # admin_scp: <value in [disable, enable]>
+            # admin_httpd_keep_alive_timeout: <integer>
+            # custom_session_label: <value in [disable, enable]>
+            # custom_session_label_mode: <value in [changeable, unique-per-session]>
 
 
 Return Values

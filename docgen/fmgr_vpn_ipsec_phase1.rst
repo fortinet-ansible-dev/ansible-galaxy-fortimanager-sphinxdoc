@@ -83,43 +83,43 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke1</span> Addke1 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke1</span> Addke1 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke2</span> Addke2 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke2</span> Addke2 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke3</span> Addke3 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke3</span> Addke3 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke4</span> Addke4 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke4</span> Addke4 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke5</span> Addke5 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke5</span> Addke5 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke6</span> Addke6 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke6</span> Addke6 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke7</span> Addke7 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke7</span> Addke7 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -867,7 +867,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proposal</span> Phase1 proposal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [des-md5, des-sha1, 3des-md5, 3des-sha1, aes128-md5, aes128-sha1, aes192-md5, aes192-sha1, aes256-md5, aes256-sha1, des-sha256, 3des-sha256, aes128-sha256, aes192-sha256, aes256-sha256, des-sha384, des-sha512, 3des-sha384, 3des-sha512, aes128-sha384, aes128-sha512, aes192-sha384, aes192-sha512, aes256-sha384, aes256-sha512, aria128-md5, aria128-sha1, aria128-sha256, aria128-sha384, aria128-sha512, aria192-md5, aria192-sha1, aria192-sha256, aria192-sha384, aria192-sha512, aria256-md5, aria256-sha1, aria256-sha256, aria256-sha384, aria256-sha512, seed-md5, seed-sha1, seed-sha256, seed-sha384, seed-sha512, aes128gcm-prfsha1, aes128gcm-prfsha256, aes128gcm-prfsha384, aes128gcm-prfsha512, aes256gcm-prfsha1, aes256gcm-prfsha256, aes256gcm-prfsha384, aes256gcm-prfsha512, chacha20poly1305-prfsha1, chacha20poly1305-prfsha256, chacha20poly1305-prfsha384, chacha20poly1305-prfsha512]</span>
+ <li><span class="li-head">proposal</span> Phase1 proposal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [des-md5, des-sha1, 3des-md5, 3des-sha1, aes128-md5, aes128-sha1, aes192-md5, aes192-sha1, aes256-md5, aes256-sha1, des-sha256, 3des-sha256, aes128-sha256, aes192-sha256, aes256-sha256, des-sha384, des-sha512, 3des-sha384, 3des-sha512, aes128-sha384, aes128-sha512, aes192-sha384, aes192-sha512, aes256-sha384, aes256-sha512, aria128-md5, aria128-sha1, aria128-sha256, aria128-sha384, aria128-sha512, aria192-md5, aria192-sha1, aria192-sha256, aria192-sha384, aria192-sha512, aria256-md5, aria256-sha1, aria256-sha256, aria256-sha384, aria256-sha512, seed-md5, seed-sha1, seed-sha256, seed-sha384, seed-sha512, aes128gcm-prfsha1, aes128gcm-prfsha256, aes128gcm-prfsha384, aes128gcm-prfsha512, aes256gcm-prfsha1, aes256gcm-prfsha256, aes256gcm-prfsha384, aes256gcm-prfsha512, chacha20poly1305-prfsha1, chacha20poly1305-prfsha256, chacha20poly1305-prfsha384, chacha20poly1305-prfsha512, sm4-sm3]</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -1023,7 +1023,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">signature_hash_alg</span> <b>(Alias name: signature-hash-alg)</b>  Digital signature authentication hash algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sha1, sha2-256, sha2-384, sha2-512]</span>
+ <li><span class="li-head">signature_hash_alg</span> <b>(Alias name: signature-hash-alg)</b>  Digital signature authentication hash algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [sha1, sha2-256, sha2-384, sha2-512, identity]</span>
  <a id='label318' href="javascript:ContentClick('label319', 'label318');" onmouseover="ContentPreview('label319');" onmouseout="ContentUnpreview('label319');" title="click to collapse or expand..."> more... </a>
  <div id="label319" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -1071,7 +1071,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">wizard_type</span> <b>(Alias name: wizard-type)</b>  Gui vpn wizard type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [custom, dialup-forticlient, dialup-ios, dialup-android, dialup-cisco, static-fortigate, static-cisco, dialup-windows, dialup-fortigate, dialup-cisco-fw, simplified-static-fortigate, hub-fortigate-auto-discovery, spoke-fortigate-auto-discovery, fabric-overlay-orchestrator]</span>
+ <li><span class="li-head">wizard_type</span> <b>(Alias name: wizard-type)</b>  Gui vpn wizard type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [custom, dialup-forticlient, dialup-ios, dialup-android, dialup-cisco, static-fortigate, static-cisco, dialup-windows, dialup-fortigate, dialup-cisco-fw, simplified-static-fortigate, hub-fortigate-auto-discovery, spoke-fortigate-auto-discovery, fabric-overlay-orchestrator, dialup-ikev2, dialup-l2tp, cloud-sdn-orchestration]</span>
  <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
  <div id="label335" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -1093,6 +1093,18 @@ Parameters
  <a id='label340' href="javascript:ContentClick('label341', 'label340');" onmouseover="ContentPreview('label341');" onmouseout="ContentUnpreview('label341');" title="click to collapse or expand..."> more... </a>
  <div id="label341" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ztna_cert_scim_authorization</span> <b>(Alias name: ztna-cert-scim-authorization)</b>  Enable/disable scim authorization based on the ztna peer certificate identity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user-name, display-name, external-id, email, disable]</span>
+ <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
+ <div id="label343" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fec_separate_redundant_tunnel</span> <b>(Alias name: fec-separate-redundant-tunnel)</b>  Enable/disable forward error correction redundancy on separate tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label344' href="javascript:ContentClick('label345', 'label344');" onmouseover="ContentPreview('label345');" onmouseout="ContentUnpreview('label345');" title="click to collapse or expand..."> more... </a>
+ <div id="label345" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1129,19 +1141,33 @@ Examples
             # add_gw_route: <value in [disable, enable]>
             # add_route: <value in [disable, enable]>
             # addke1: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # addke2: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # addke3: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # addke4: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # addke5: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # addke6: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # addke7: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
-            #          "1092", "1093", "1094", "35", "36", "37"]
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
             # assign_ip: <value in [disable, enable]>
             # assign_ip_from: <value in [range, usrgrp, dhcp, ...]>
             # authmethod: <value in [psk, signature]>
@@ -1291,7 +1317,7 @@ Examples
             # save_password: <value in [disable, enable]>
             # send_cert_chain: <value in [disable, enable]>
             # shared_idle_timeout: <value in [disable, enable]>
-            # signature_hash_alg: ["sha1", "sha2-256", "sha2-384", "sha2-512"]
+            # signature_hash_alg: ["sha1", "sha2-256", "sha2-384", "sha2-512", "identity"]
             # split_include_service: <list or string>
             # suite_b: <value in [disable, suite-b-gcm-128, suite-b-gcm-256]>
             # transit_gateway: <value in [disable, enable]>
@@ -1303,6 +1329,8 @@ Examples
             # xauthtype: <value in [disable, client, pap, ...]>
             # fallback_tcp_threshold: <integer>
             # forticlient_enforcement: <value in [disable, enable]>
+            # ztna_cert_scim_authorization: <value in [user-name, display-name, external-id, ...]>
+            # fec_separate_redundant_tunnel: <value in [disable, enable]>
 
 
 Return Values

@@ -89,7 +89,7 @@ Parameters
           <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">dlp_exactdatamatch_columns</span> - available versions:
-          <span class="li-normal">v7.4.7->v7.4.10</span>,
+          <span class="li-normal">v7.4.7->v7.4.11</span>,
           <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">dlp_filepattern_entries</span> - available versions:
@@ -117,7 +117,7 @@ Parameters
           <span class="li-normal">v7.0.0->latest</span>
         </li>
         <li><span class="li-required">emailfilter_bwl_entries</span> - available versions:
-          <span class="li-normal">v6.2.0->latest</span>
+          <span class="li-normal">v6.2.0->v7.6.7</span>
         </li>
         <li><span class="li-required">emailfilter_bword_entries</span> - available versions:
           <span class="li-normal">v6.2.0->latest</span>
@@ -165,7 +165,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">firewall_profileprotocoloptions_cifs_filefilter_entries</span> - available versions:
-          <span class="li-normal">v6.4.2->latest</span>
+          <span class="li-normal">v6.4.2->v7.6.7</span>
         </li>
         <li><span class="li-required">firewall_service_category</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -174,7 +174,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_classes</span> - available versions:
-          <span class="li-normal">v7.4.8->v7.4.10</span>,
+          <span class="li-normal">v7.4.8->v7.4.11</span>,
           <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_shapingentries</span> - available versions:
@@ -242,13 +242,13 @@ Parameters
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
           <span class="li-normal">v7.2.6->v7.2.12</span>,
-          <span class="li-normal">v7.4.3->latest</span>
+          <span class="li-normal">v7.4.3->v7.6.7</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
           <span class="li-normal">v7.2.6->v7.2.12</span>,
-          <span class="li-normal">v7.4.3->latest</span>
+          <span class="li-normal">v7.4.3->v7.6.7</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.15</span>,
@@ -260,7 +260,7 @@ Parameters
           <span class="li-normal">v6.4.7->v6.4.15</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>,
           <span class="li-normal">v7.2.6->v7.2.12</span>,
-          <span class="li-normal">v7.4.3->latest</span>
+          <span class="li-normal">v7.4.3->v7.6.7</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.2</span>,
@@ -300,7 +300,7 @@ Parameters
           <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_responseshapingpolicy</span> - available versions:
-          <span class="li-normal">v7.4.8->v7.4.10</span>,
+          <span class="li-normal">v7.4.8->v7.4.11</span>,
           <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_securitypolicy</span> - available versions:
@@ -314,6 +314,12 @@ Parameters
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
           <span class="li-normal">v7.0.3->v7.6.2</span>
+        </li>
+        <li><span class="li-required">pm_config_pblock_firewall_localinpolicy</span> - available versions:
+          <span class="li-normal">v8.0.0->latest</span>
+        </li>
+        <li><span class="li-required">pm_config_pblock_firewall_localinpolicy6</span> - available versions:
+          <span class="li-normal">v8.0.0->latest</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_policy</span> - available versions:
           <span class="li-normal">v7.0.3->latest</span>
@@ -329,11 +335,11 @@ Parameters
         </li>
         <li><span class="li-required">spamfilter_bwl_entries</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.1</span>,
-          <span class="li-normal">v7.4.8->v7.4.10</span>
+          <span class="li-normal">v7.4.8->v7.4.11</span>
         </li>
         <li><span class="li-required">spamfilter_bword_entries</span> - available versions:
           <span class="li-normal">v6.0.0->v7.2.1</span>,
-          <span class="li-normal">v7.4.8->v7.4.10</span>
+          <span class="li-normal">v7.4.8->v7.4.11</span>
         </li>
         <li><span class="li-required">sshfilter_profile_filefilter_entries</span> - available versions:
           <span class="li-normal">v6.2.2->v7.6.2</span>
@@ -401,6 +407,9 @@ Parameters
         </li>
         <li><span class="li-required">vpn_ipsec_fec_mappings</span> - available versions:
           <span class="li-normal">v7.2.0->latest</span>
+        </li>
+        <li><span class="li-required">vpn_ipsec_fec_mappings_tos</span> - available versions:
+          <span class="li-normal">v8.0.0->latest</span>
         </li>
         <li><span class="li-required">vpn_kmipserver_serverlist</span> - available versions:
           <span class="li-normal">v7.6.4->latest</span>
@@ -935,6 +944,18 @@ Parameters
             <li><span class="li-normal">pblock</span></li>
             <li><span class="li-normal">policy</span></li>
         </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_localinpolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">local-in-policy</span></li>
+            <li><span class="li-normal">pblock</span></li>
+        </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_localinpolicy6:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">local-in-policy6</span></li>
+            <li><span class="li-normal">pblock</span></li>
+        </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -1102,6 +1123,13 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">fec</span></li>
             <li><span class="li-normal">mappings</span></li>
+        </ul>
+        <li><span class="li-normal">params for vpn_ipsec_fec_mappings_tos:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">fec</span></li>
+            <li><span class="li-normal">mappings</span></li>
+            <li><span class="li-normal">tos</span></li>
         </ul>
         <li><span class="li-normal">params for vpn_kmipserver_serverlist:</span></li>
         <ul class="ul-self">

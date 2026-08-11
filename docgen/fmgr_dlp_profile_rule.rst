@@ -126,7 +126,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs]</span>
+ <li><span class="li-head">proto</span> Check messages or files over one or more of these protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [smtp, pop3, imap, http-post, http-get, ftp, nntp, mapi, ssh, cifs, websocket]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
@@ -197,7 +197,7 @@ Examples
             # match_percentage: <integer>
             # name: <string>
             # proto: ["smtp", "pop3", "imap", "http-post", "http-get", "ftp", "nntp", "mapi", "ssh",
-            #         "cifs"]
+            #         "cifs", "websocket"]
             # sensitivity: <list or string>
             # sensor: <list or string>
             # severity: <value in [info, low, medium, ...]>

@@ -282,13 +282,13 @@ Parameters
  <li><span class="li-head">ie_white_list_v0v1</span> <b>(Alias name: ie-white-list-v0v1)</b>  Ie white list. <span class="li-normal">type: str</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">ie_white_list_v2</span> <b>(Alias name: ie-white-list-v2)</b>  Ie white list. <span class="li-normal">type: str</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">imsi</span> Imsi. <span class="li-normal">type: list</span>
@@ -835,7 +835,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rat_type</span> <b>(Alias name: rat-type)</b>  Rat type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr]</span>
+ <li><span class="li-head">rat_type</span> <b>(Alias name: rat-type)</b>  Rat type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [any, utran, geran, wlan, gan, hspa, eutran, virtual, nbiot, ltem, nr, wb-eutran-leo, wb-eutran-meo, wb-eutran-geo, wb-eutran-othersat, nbiot-leo, nbiot-meo, nbiot-geo, nbiot-othersat, ltem-leo, ltem-meo, ltem-geo, ltem-othersat]</span>
  <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
  <div id="label253" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>

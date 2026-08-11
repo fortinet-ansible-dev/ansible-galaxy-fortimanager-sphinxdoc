@@ -114,13 +114,13 @@ Parameters
  <li><span class="li-head">mig_mr</span> Mig mr. <span class="li-normal">type: int</span> <span class="li-normal">default: 2</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.6</code>, <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mig_os_ver</span> Mig os ver. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]</span> <span class="li-normal">default: 6.0</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.6.6</code>, <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mode</span> Ems - (value no longer used as of 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ems, gms, provider]</span> <span class="li-normal">default: gms</span>
@@ -147,7 +147,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc, fss, sim, fra]</span>
+ <li><span class="li-head">restricted_prds</span> Restricted prds. <span class="li-normal">type: list or str</span> <span class="li-normal">choices: [fos, foc, fml, fch, fwb, log, fct, faz, fsa, fsw, fmg, fdd, fac, fpx, fna, fdc, ffw, fsr, fad, fap, fxt, fts, fai, fwc, fis, fed, fabric, fpa, fca, ftc, fss, sim, fra, fdt]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -297,7 +297,7 @@ Examples
             # restricted_prds: ["fos", "foc", "fml", "fch", "fwb", "log", "fct", "faz", "fsa",
             #                   "fsw", "fmg", "fdd", "fac", "fpx", "fna", "fdc", "ffw", "fsr",
             #                   "fad", "fap", "fxt", "fts", "fai", "fwc", "fis", "fed", "fabric",
-            #                   "fpa", "fca", "ftc", "fss", "sim", "fra"]
+            #                   "fpa", "fca", "ftc", "fss", "sim", "fra", "fdt"]
             # state: <integer>
             # uuid: <string>
             # create_time: <integer>

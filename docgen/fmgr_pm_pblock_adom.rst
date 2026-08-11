@@ -155,28 +155,73 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test policy block IPv4 local-in policies
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Policy block adom
+      - name: Create the parent policy block
         fortinet.fortimanager.fmgr_pm_pblock_adom:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
+          enable_log: true
+          adom: root
           pm_pblock_adom:
-            # name: <string>
-            # oid: <integer>
-            # package_settings:
-            #   central_nat: <value in [disable, enable]>
-            #   consolidated_firewall_mode: <value in [disable, enable]>
-            #   fwpolicy_implicit_log: <value in [disable, enable]>
-            #   fwpolicy6_implicit_log: <value in [disable, enable]>
-            #   inspection_mode: <value in [proxy, flow]>
-            #   ngfw_mode: <value in [profile-based, policy-based]>
-            #   policy_offload_level: <value in [disable, default, dos-offload, ...]>
-            #   ssl_ssh_profile: <string>
-            # type: <value in [pblock]>
+            name: test_policy_block
+            type: pblock
+
+      - name: Create a policy block IPv4 local-in policy
+        fortinet.fortimanager.fmgr_pm_config_pblock_firewall_localinpolicy:
+          enable_log: true
+          adom: root
+          pblock: test_policy_block
+          state: present
+          pm_config_pblock_firewall_localinpolicy:
+            action: accept
+            dstaddr:
+              - all
+            intf:
+              - any
+            policyid: 0
+            schedule:
+              - always
+            service:
+              - ALL
+            srcaddr:
+              - all
+            status: disable
+
+  - name: Test policy block IPv6 local-in policies
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent policy block
+        fortinet.fortimanager.fmgr_pm_pblock_adom:
+          enable_log: true
+          adom: root
+          pm_pblock_adom:
+            name: test_policy_block
+            type: pblock
+
+      - name: Create a policy block IPv6 local-in policy
+        fortinet.fortimanager.fmgr_pm_config_pblock_firewall_localinpolicy6:
+          enable_log: true
+          adom: root
+          pblock: test_policy_block
+          state: present
+          pm_config_pblock_firewall_localinpolicy6:
+            action: accept
+            dstaddr:
+              - all
+            intf:
+              - any
+            policyid: 0
+            schedule:
+              - always
+            service:
+              - ALL
+            srcaddr:
+              - all
+            status: disable
 
 
 Return Values

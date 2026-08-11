@@ -4,8 +4,8 @@
 
 .. _fmgr_user_oidc:
 
-fmgr_user_oidc -- User oidc.
-++++++++++++++++++++++++++++
+fmgr_user_oidc -- OpenID Connect server entry configuration.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">user_oidc</span> - User oidc <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user_oidc</span> - OpenID Connect server entry configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">auth_method</span> <b>(Alias name: auth-method)</b>  Auth method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [client_secret_basic, client_secret_post, private_key_jwt]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -220,7 +220,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: User oidc
+      - name: OpenID Connect server entry configuration.
         fortinet.fortimanager.fmgr_user_oidc:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>

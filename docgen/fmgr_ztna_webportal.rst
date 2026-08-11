@@ -233,6 +233,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ak_manager</span> <b>(Alias name: ak-manager)</b>  Ak manager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -290,6 +296,7 @@ Examples
             # vip6: <list or string>
             # llm_profile: <list or string>
             # llm_proxy: <value in [disable, enable]>
+            # ak_manager: <value in [disable, enable]>
 
 
 Return Values

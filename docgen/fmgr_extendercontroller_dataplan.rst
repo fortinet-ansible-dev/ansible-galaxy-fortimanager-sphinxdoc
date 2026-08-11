@@ -170,7 +170,7 @@ Parameters
  <li><span class="li-head">status</span> Fortiextender dataplan (enable or disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.4 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">type</span> Type preferences configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [carrier, slot, iccid, generic]</span>

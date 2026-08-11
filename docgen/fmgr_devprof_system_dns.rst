@@ -115,7 +115,7 @@ Parameters
  <li><span class="li-head">dns_over_tls</span> <b>(Alias name: dns-over-tls)</b>  Enable/disable/enforce dns over tls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, enforce]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v7.6.5 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">retry</span> Number of times to retry (0 - 5). <span class="li-normal">type: int</span>

@@ -67,7 +67,7 @@ Parameters
  <li><span class="li-head">match</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">casb_useractivity_match_tenantextraction_filters</span> - CASB user activity tenant extraction filters. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json, form]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -129,7 +129,7 @@ Examples
           state: present # <value in [present, absent]>
           casb_useractivity_match_tenantextraction_filters:
             id: 0 # Required variable, integer
-            # body_type: <value in [json]>
+            # body_type: <value in [json, form]>
             # direction: <value in [request, response]>
             # header_name: <string>
             # place: <value in [path, header, body]>

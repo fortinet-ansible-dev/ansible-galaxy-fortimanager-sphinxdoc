@@ -68,7 +68,7 @@ Parameters
  <li><span class="li-head">allow_invalid_server_cert</span> <b>(Alias name: allow-invalid-server-cert)</b>  When enabled, allows ssl sessions whose server certificate validation failed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert_request</span> <b>(Alias name: client-cert-request)</b>  Action based on client certificate request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [bypass, inspect, block]</span>
@@ -92,7 +92,7 @@ Parameters
  <li><span class="li-head">untrusted_cert</span> <b>(Alias name: untrusted-cert)</b>  Allow, ignore, or block the untrusted ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block, ignore]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">invalid_server_cert</span> <b>(Alias name: invalid-server-cert)</b>  Allow or block the invalid ssl session server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, block]</span>

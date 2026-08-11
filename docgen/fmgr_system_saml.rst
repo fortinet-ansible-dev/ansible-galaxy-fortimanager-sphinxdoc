@@ -285,13 +285,37 @@ Parameters
  <li><span class="li-head">logout_request_signed</span> <b>(Alias name: logout-request-signed)</b>  Enable/disable logout request signed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">logout_response_signed</span> <b>(Alias name: logout-response-signed)</b>  Enable/disable logout response signed. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">digest_method</span> <b>(Alias name: digest-method)</b>  Digest method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha256, sha512]</span> <span class="li-normal">default: sha256</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">idp_digest_method</span> <b>(Alias name: idp-digest-method)</b>  Idp digest method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha256, sha512]</span> <span class="li-normal">default: sha256</span>
+ <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
+ <div id="label79" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">idp_signature_algorithm</span> <b>(Alias name: idp-signature-algorithm)</b>  Idp signature algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa-sha256, rsa-sha512]</span> <span class="li-normal">default: rsa-sha256</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">signature_algorithm</span> <b>(Alias name: signature-algorithm)</b>  Signature algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [rsa-sha256, rsa-sha512]</span> <span class="li-normal">default: rsa-sha256</span>
+ <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
+ <div id="label83" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -359,6 +383,10 @@ Examples
             # want_assertions_signed: <value in [disable, enable]>
             # logout_request_signed: <value in [disable, enable]>
             # logout_response_signed: <value in [disable, enable]>
+            # digest_method: <value in [sha256, sha512]>
+            # idp_digest_method: <value in [sha256, sha512]>
+            # idp_signature_algorithm: <value in [rsa-sha256, rsa-sha512]>
+            # signature_algorithm: <value in [rsa-sha256, rsa-sha512]>
 
 
 Return Values

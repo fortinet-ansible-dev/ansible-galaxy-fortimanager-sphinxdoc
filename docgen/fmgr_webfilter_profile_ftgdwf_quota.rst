@@ -111,7 +111,7 @@ Parameters
  <li><span class="li-head">reset_frequency</span> <b>(Alias name: reset-frequency)</b>  Quota reset frequency (default = dayly). <span class="li-normal">type: str</span> <span class="li-normal">choices: [daily, weekly, monthly]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  </ul>

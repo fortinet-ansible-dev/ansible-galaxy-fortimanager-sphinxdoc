@@ -134,6 +134,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">geoip</span> Enable/disable the built-in fortiguard to provide geo-city query (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -173,6 +179,7 @@ Examples
             # query_iot_collection: <value in [disable, enable]>
             # query_iot_vulnerability: <value in [disable, enable]>
             # query_ioc: <value in [disable, enable]>
+            # geoip: <value in [disable, enable]>
 
 
 Return Values

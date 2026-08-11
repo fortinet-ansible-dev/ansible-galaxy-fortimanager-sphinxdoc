@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">method</span> Authentication methods (default = basic). <span class="li-normal">type: list</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, x-auth-user, saml-sp, entra-sso, ztna-relay, oidc]</span>
+ <li><span class="li-head">method</span> Authentication methods (default = basic). <span class="li-normal">type: list</span> <span class="li-normal">choices: [ntlm, basic, digest, form, negotiate, fsso, rsso, ssh-publickey, saml, cert, x-auth-user, saml-sp, entra-sso, ztna-relay, oidc, bearer]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
@@ -170,13 +170,13 @@ Parameters
  <li><span class="li-head">search_all_ldap_databases</span> <b>(Alias name: search-all-ldap-databases)</b>  Search all ldap databases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">saml_idp_portal</span> <b>(Alias name: saml-idp-portal)</b>  External saml-idp authentication portal url. <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">oidc_server</span> <b>(Alias name: oidc-server)</b>  Oidc server. <span class="li-normal">type: list</span>
@@ -200,7 +200,7 @@ Parameters
  <li><span class="li-head">auth_user_header</span> <b>(Alias name: auth-user-header)</b>  Auth user header. <span class="li-normal">type: str</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">captcha</span> Captcha. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -231,6 +231,24 @@ Parameters
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">bearer_format</span> <b>(Alias name: bearer-format)</b>  Bearer format. <span class="li-normal">type: str</span> <span class="li-normal">choices: [standard, raw]</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">bearer_header</span> <b>(Alias name: bearer-header)</b>  Bearer header. <span class="li-normal">type: str</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">bearer_type</span> <b>(Alias name: bearer-type)</b>  Bearer type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [access-token]</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -269,7 +287,7 @@ Examples
             # kerberos_keytab: <string>
             # method: ["ntlm", "basic", "digest", "form", "negotiate", "fsso", "rsso",
             #          "ssh-publickey", "saml", "cert", "x-auth-user", "saml-sp", "entra-sso",
-            #          "ztna-relay", "oidc"]
+            #          "ztna-relay", "oidc", "bearer"]
             # negotiate_ntlm: <value in [disable, enable]>
             # require_tfa: <value in [disable, enable]>
             # ssh_ca: <string>
@@ -292,6 +310,9 @@ Examples
             # captcha_site_key: <string>
             # captcha_vendor: <value in [google-recaptcha-v2-checkbox, google-recaptcha-v2-invisible, google-recaptcha-v3, ...]>
             # cert_http_header: <value in [disable, enable]>
+            # bearer_format: <value in [standard, raw]>
+            # bearer_header: <string>
+            # bearer_type: <value in [access-token]>
 
 
 Return Values
