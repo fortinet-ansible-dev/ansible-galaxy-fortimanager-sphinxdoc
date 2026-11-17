@@ -61,7 +61,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">securityconsole_assign_package</span> - Assign or unassign global policy package to ADOM packages. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, copy_assigned_pkg, unassign]</span>
+ <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, copy_assigned_pkg, unassign, keep_meta]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -97,6 +97,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">global_pkg</span> Optional source global package path and name, override the global package name defined in previous level if differs. <span class="li-normal">type: list</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  </ul>
@@ -126,12 +132,13 @@ Examples
         fortinet.fortimanager.fmgr_securityconsole_assign_package:
           # workspace_locking_adom: <global or your adom name>
           securityconsole_assign_package:
-            # flags: ["none", "cp_all_objs", "copy_assigned_pkg", "unassign"]
+            # flags: ["none", "cp_all_objs", "copy_assigned_pkg", "unassign", "keep_meta"]
             # pkg: <string>
             # target:
             #   - adom: <string>
             #     excluded: <value in [disable, enable]>
             #     pkg: <string>
+            #     global_pkg: <list or string>
 
 
 Return Values

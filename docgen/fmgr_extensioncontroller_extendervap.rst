@@ -161,7 +161,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">security</span> Wi-fi security. <span class="li-normal">type: str</span> <span class="li-normal">choices: [OPEN, WPA2-Personal, WPA-WPA2-Personal, WPA3-SAE, WPA3-SAE-Transition, WPA2-Enterprise, WPA3-Enterprise-only, WPA3-Enterprise-transition, WPA3-Enterprise-192-bit]</span>
+ <li><span class="li-head">security</span> Wi-fi security. <span class="li-normal">type: str</span> <span class="li-normal">choices: [OPEN, WPA2-Personal, WPA-WPA2-Personal, WPA3-SAE, WPA3-SAE-Transition, WPA2-Enterprise, WPA3-Enterprise-only, WPA3-Enterprise-transition, WPA3-Enterprise-192-bit, WPA-Personal, WPA-Enterprise, WPA-WPA2-Enterprise]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -185,7 +185,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Wi-fi vap type local-vap / lan-extension-vap. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local-vap, lan-ext-vap]</span>
+ <li><span class="li-head">type</span> Wi-fi vap type local-vap / lan-extension-vap. <span class="li-normal">type: str</span> <span class="li-normal">choices: [local-vap, lan-ext-vap, wifi-network]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -219,6 +219,18 @@ Parameters
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">identity</span> Wi-fi eap identity. <span class="li-normal">type: list</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">password</span> Wi-fi eap password. <span class="li-normal">type: list</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -270,12 +282,14 @@ Examples
             # ssid: <string>
             # start_ip: <string>
             # target_wake_time: <value in [disable, enable]>
-            # type: <value in [local-vap, lan-ext-vap]>
+            # type: <value in [local-vap, lan-ext-vap, wifi-network]>
             # security_exempt_list: <list or string>
             # security_external_web: <string>
             # security_groups: <list or string>
             # security_mode: <value in [none, captive-portal]>
             # security_redirect_url: <string>
+            # identity: <list or string>
+            # password: <list or string>
 
 
 Return Values

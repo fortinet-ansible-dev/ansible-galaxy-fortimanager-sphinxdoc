@@ -1098,7 +1098,7 @@ Parameters
  <li><span class="li-head">ztna_cert_scim_authorization</span> <b>(Alias name: ztna-cert-scim-authorization)</b>  Enable/disable scim authorization based on the ztna peer certificate identity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [user-name, display-name, external-id, email, disable]</span>
  <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
  <div id="label343" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fec_separate_redundant_tunnel</span> <b>(Alias name: fec-separate-redundant-tunnel)</b>  Enable/disable forward error correction redundancy on separate tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>

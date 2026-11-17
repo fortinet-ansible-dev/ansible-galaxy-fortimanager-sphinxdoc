@@ -574,7 +574,7 @@ Parameters
  <li><span class="li-head">passwd_time</span> <b>(Alias name: passwd-time)</b>  Time of the last password update. <span class="li-normal">type: str</span>
  <a id='label168' href="javascript:ContentClick('label169', 'label168');" onmouseover="ContentPreview('label169');" onmouseout="ContentUnpreview('label169');" title="click to collapse or expand..."> more... </a>
  <div id="label169" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">ppk_identity</span> <b>(Alias name: ppk-identity)</b>  Ikev2 postquantum preshared key identity. <span class="li-normal">type: str</span>
@@ -622,7 +622,7 @@ Parameters
  <li><span class="li-head">sms_provider</span> <b>(Alias name: sms-provider)</b>  Sms provider. <span class="li-normal">type: list</span>
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">sms_server</span> <b>(Alias name: sms-server)</b>  Send sms through fortiguard or other external server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiguard, custom]</span>
@@ -670,7 +670,7 @@ Parameters
  <li><span class="li-head">username_case_insensitivity</span> <b>(Alias name: username-case-insensitivity)</b>  Username case insensitivity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
  <div id="label201" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">username_case_sensitivity</span> <b>(Alias name: username-case-sensitivity)</b>  Username case sensitivity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>

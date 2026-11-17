@@ -4,8 +4,8 @@
 
 .. _fmgr_pkg_central_dnat6:
 
-fmgr_pkg_central_dnat6 -- Policy package central dnat6.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_pkg_central_dnat6 -- Support optional install-on device/vdom scope member.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.1.0
 
@@ -64,13 +64,33 @@ Parameters
  <li><span class="li-head">revision_note</span> - The change note that can be specified when an object is created or updated. <span class="li-normal">type: string</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">pkg_central_dnat6</span> - Policy package central dnat6 <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">pkg_central_dnat6</span> - Support optional install-on device/vdom scope member. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">name</span> Name. <span class="li-normal">type: list or str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
+ </li>
+ <li><span class="li-head">scope_member</span> <b>(Alias name: scope member)</b>  Scope member. <span class="li-normal">type: list</span>
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
+ <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
  </li>
  </ul>
  </ul>
@@ -95,7 +115,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Policy package central dnat6
+      - name: Support optional install-on device/vdom scope member.
         fortinet.fortimanager.fmgr_pkg_central_dnat6:
           # workspace_locking_adom: <global or your adom name>
           adom: <your own value>
@@ -103,6 +123,9 @@ Examples
           state: present # <value in [present, absent]>
           pkg_central_dnat6:
             name: "your value" # Required variable, string
+            # scope_member:
+            #   - name: <string>
+            #     vdom: <string>
 
 
 Return Values

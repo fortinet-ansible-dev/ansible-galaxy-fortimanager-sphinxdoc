@@ -4,8 +4,8 @@
 
 .. _fmgr_fmupdate_fgdsetting:
 
-fmgr_fmupdate_fgdsetting -- Cli fmupdate fgd setting.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_fmupdate_fgdsetting -- Configure FortiGuard fgd parameters.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.10.0
 
@@ -60,7 +60,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">fmupdate_fgdsetting</span> - Cli fmupdate fgd setting <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">fmupdate_fgdsetting</span> - Configure FortiGuard fgd parameters. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">as_cache</span> <b>(Alias name: as-cache)</b>  As cache. <span class="li-normal">type: int</span> <span class="li-normal">default: 300</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -357,7 +357,7 @@ Parameters
  <li><span class="li-head">delta_ratio</span> <b>(Alias name: delta-ratio)</b>  Delta ratio. <span class="li-normal">type: int</span> <span class="li-normal">default: 120</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -383,7 +383,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli fmupdate fgd setting
+      - name: Configure FortiGuard fgd parameters.
         fortinet.fortimanager.fmgr_fmupdate_fgdsetting:
           # workspace_locking_adom: <global or your adom name>
           fmupdate_fgdsetting:

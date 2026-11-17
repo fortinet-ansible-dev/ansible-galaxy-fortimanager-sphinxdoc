@@ -85,6 +85,12 @@ Parameters
         <li><span class="li-required">application_categories</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">application_classification</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">application_classificationscope</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">application_custom</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -215,7 +221,8 @@ Parameters
             <span class="li-normal">v7.4.0->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_excludelist</span> - available versions:
-            <span class="li-normal">v7.0.4->v7.0.16</span>
+            <span class="li-normal">v7.0.4->v7.0.16</span>,
+            <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_freestyle</span> - available versions:
             <span class="li-normal">v7.0.4->v7.0.16</span>,
@@ -349,10 +356,10 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">dvmdb_script</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v8.0.0</span>
         </li>
         <li><span class="li-required">dvmdb_script_scriptschedule</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v8.0.0</span>
         </li>
         <li><span class="li-required">dynamic_address</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1211,6 +1218,9 @@ Parameters
         <li><span class="li-required">isolator_profile_entries</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
         </li>
+        <li><span class="li-required">llm_server</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">log_customfield</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1590,6 +1600,12 @@ Parameters
         <li><span class="li-required">switchcontroller_managedswitch_systeminterface</span> - available versions:
             <span class="li-normal">v7.6.4->v7.6.6</span>
         </li>
+        <li><span class="li-required">switchcontroller_ptp_interfacepolicy</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">switchcontroller_ptp_policy</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">switchcontroller_ptp_profile</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
         </li>
@@ -1731,6 +1747,21 @@ Parameters
         </li>
         <li><span class="li-required">system_dhcp_server_reservedaddress</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_excluderange</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_iprange</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_options</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_reservedaddress</span> - available versions:
+            <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">system_dnsdatabase</span> - available versions:
             <span class="li-normal">v7.6.4->v7.6.4</span>
@@ -2659,6 +2690,16 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">categories</span></li>
+        </ul>
+        <li><span class="li-normal">params for application_classification:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">classification</span></li>
+        </ul>
+        <li><span class="li-normal">params for application_classificationscope:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">classification-scope</span></li>
         </ul>
         <li><span class="li-normal">params for application_custom:</span></li>
         <ul class="ul-self">
@@ -4704,6 +4745,11 @@ Parameters
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">entries</span></li>
         </ul>
+        <li><span class="li-normal">params for llm_server:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">server</span></li>
+        </ul>
         <li><span class="li-normal">params for log_customfield:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5352,6 +5398,16 @@ Parameters
             <li><span class="li-normal">managed-switch</span></li>
             <li><span class="li-normal">system-interface</span></li>
         </ul>
+        <li><span class="li-normal">params for switchcontroller_ptp_interfacepolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">interface-policy</span></li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_ptp_policy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">policy</span></li>
+        </ul>
         <li><span class="li-normal">params for switchcontroller_ptp_profile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5578,6 +5634,35 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">server</span></li>
+            <li><span class="li-normal">reserved-address</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">template</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_excluderange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">template</span></li>
+            <li><span class="li-normal">exclude-range</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_iprange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">template</span></li>
+            <li><span class="li-normal">ip-range</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_options:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">template</span></li>
+            <li><span class="li-normal">options</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_reservedaddress:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">template</span></li>
             <li><span class="li-normal">reserved-address</span></li>
         </ul>
         <li><span class="li-normal">params for system_dnsdatabase:</span></li>
@@ -7140,6 +7225,16 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_application_categories.html#parameters">fmgr_application_categories</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for application_classification:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_application_classification.html#parameters">fmgr_application_classification</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for application_classificationscope:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_application_classificationscope.html#parameters">fmgr_application_classificationscope</a> </span></li>
         </ul>
         <li><span class="li-normal">params for application_custom:</span></li>
         <ul class="ul-self">
@@ -8941,6 +9036,11 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_isolator_profile_entries.html#parameters">fmgr_isolator_profile_entries</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for llm_server:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_llm_server.html#parameters">fmgr_llm_server</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for log_customfield:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
@@ -9506,6 +9606,16 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_systeminterface.html#parameters">fmgr_switchcontroller_managedswitch_systeminterface</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for switchcontroller_ptp_interfacepolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_ptp_interfacepolicy.html#parameters">fmgr_switchcontroller_ptp_interfacepolicy</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_ptp_policy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_ptp_policy.html#parameters">fmgr_switchcontroller_ptp_policy</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for switchcontroller_ptp_profile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
@@ -9740,6 +9850,31 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_dhcp_server_reservedaddress.html#parameters">fmgr_system_dhcp_server_reservedaddress</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_dhcp_template.html#parameters">fmgr_system_dhcp_template</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_excluderange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_dhcp_template_excluderange.html#parameters">fmgr_system_dhcp_template_excluderange</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_iprange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_dhcp_template_iprange.html#parameters">fmgr_system_dhcp_template_iprange</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_options:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_dhcp_template_options.html#parameters">fmgr_system_dhcp_template_options</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_reservedaddress:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_dhcp_template_reservedaddress.html#parameters">fmgr_system_dhcp_template_reservedaddress</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_dnsdatabase:</span></li>
         <ul class="ul-self">

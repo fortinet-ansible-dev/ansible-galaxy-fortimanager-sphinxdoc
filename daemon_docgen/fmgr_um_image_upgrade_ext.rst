@@ -105,6 +105,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">adom</span> Adom. <span class="li-normal">type: list</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -139,6 +145,7 @@ Examples
             # flags: <value in [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, ...]>
             # image: <string>
             # schedule_time: <string>
+            # adom: <list or string>
 
 
 Return Values

@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">provision</span> Provision. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">provision</span> Provision. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, ztp-reset]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
@@ -172,7 +172,7 @@ Examples
             # description: <string>
             # modification_time: <string>
             # script: <string>
-            # provision: <value in [disable, enable]>
+            # provision: <value in [disable, enable, ztp-reset]>
             # type: <value in [cli, jinja]>
             # variables: <list or string>
             # position: <value in [post-vdom-copy, prep-vdom-copy]>

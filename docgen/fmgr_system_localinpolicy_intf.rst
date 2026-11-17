@@ -4,7 +4,7 @@
 
 .. _fmgr_system_localinpolicy_intf:
 
-fmgr_system_localinpolicy_intf -- Cli system local in policy intf.
+fmgr_system_localinpolicy_intf -- List of Incoming interface name.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">local_in_policy</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">system_localinpolicy_intf</span> - Cli system local in policy intf <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_localinpolicy_intf</span> - List of Incoming interface name. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">intf_name</span> <b>(Alias name: intf-name)</b>  Intf name. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -93,7 +93,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system local in policy intf
+      - name: List of Incoming interface name.
         fortinet.fortimanager.fmgr_system_localinpolicy_intf:
           # workspace_locking_adom: <global or your adom name>
           local_in_policy: <your own value>

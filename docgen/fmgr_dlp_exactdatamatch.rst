@@ -133,6 +133,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">type</span> Type of edm source file (default = csv). <span class="li-normal">type: str</span> <span class="li-normal">choices: [csv, hash-db]</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -173,6 +179,7 @@ Examples
             # fabric_object: <value in [disable, enable]>
             # fabric_object_source: <value in [member, local, root]>
             # uuid: <string>
+            # type: <value in [csv, hash-db]>
 
 
 Return Values

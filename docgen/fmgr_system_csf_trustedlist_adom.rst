@@ -4,8 +4,8 @@
 
 .. _fmgr_system_csf_trustedlist_adom:
 
-fmgr_system_csf_trustedlist_adom -- Cli system csf trusted list adom.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_csf_trustedlist_adom -- Admin domain.
++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.15.0
 
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">trusted_list</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">system_csf_trustedlist_adom</span> - Cli system csf trusted list adom <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_csf_trustedlist_adom</span> - Admin domain. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">adom_name</span> <b>(Alias name: adom-name)</b>  Adom name. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>

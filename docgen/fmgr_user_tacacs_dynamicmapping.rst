@@ -170,6 +170,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Source ip interface for communication with the tacacs+ server. <span class="li-normal">type: list</span>
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -217,6 +223,7 @@ Examples
             # interface_select_method: <value in [auto, sdwan, specify]>
             # status_ttl: <integer>
             # vrf_select: <integer>
+            # source_ip_interface: <list or string>
 
 
 Return Values

@@ -539,7 +539,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sam_server_type</span> <b>(Alias name: sam-server-type)</b>  Select sam server type (default = ip). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ip, fqdn]</span>
+ <li><span class="li-head">sam_server_type</span> <b>(Alias name: sam-server-type)</b>  Select sam server type (default = ip). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ip, fqdn, ipv6]</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
@@ -683,6 +683,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">sam_server_ip6</span> <b>(Alias name: sam-server-ip6)</b>  Sam test server ipv6 address. <span class="li-normal">type: str</span>
+ <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -792,7 +798,7 @@ Examples
             # sam_cwp_username: <string>
             # sam_server_fqdn: <string>
             # sam_server_ip: <string>
-            # sam_server_type: <value in [ip, fqdn]>
+            # sam_server_type: <value in [ip, fqdn, ipv6]>
             # d80211d: <value in [disable, enable]>
             # optional_antenna: <value in [none, FANT-04ABGN-0606-O-N, FANT-04ABGN-1414-P-N, ...]>
             # mimo_mode: <value in [default, 1x1, 2x2, ...]>
@@ -816,6 +822,7 @@ Examples
             # vap15: <string>
             # vap16: <string>
             # vap9: <string>
+            # sam_server_ip6: <string>
 
 
 Return Values

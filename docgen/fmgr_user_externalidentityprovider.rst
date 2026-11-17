@@ -143,6 +143,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">pqc_policy</span> <b>(Alias name: pqc-policy)</b>  Enable/disable using post-quantum cryptography for this tls connection (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -185,6 +191,7 @@ Examples
             # user_attr_name: <string>
             # version: <value in [beta, v1.0]>
             # vrf_select: <integer>
+            # pqc_policy: <value in [disable, enable]>
 
 
 Return Values

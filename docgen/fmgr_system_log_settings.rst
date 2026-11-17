@@ -858,6 +858,12 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">FHM_custom_field1</span> <b>(Alias name: FHM-custom-field1)</b>  Name of custom log field to index. <span class="li-normal">type: str</span>
+ <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
+ <div id="label263" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1016,6 +1022,7 @@ Examples
             #       domain: <string>
             #       id: <integer>
             #       type: <value in [certificate, domain]>
+            # FHM_custom_field1: <string>
 
 
 Return Values

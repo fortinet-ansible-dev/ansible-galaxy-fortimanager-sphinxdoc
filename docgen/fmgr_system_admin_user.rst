@@ -659,7 +659,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_theme</span> <b>(Alias name: user-theme)</b>  Color scheme to use for the admin user gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, circuit-board, calla-lily, binary-tunnel, mars, blue-sea, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, mountain, panda, parrot, cave, zebra, contrast-dark, mariner, jade, neutrino, dark-matter, forest, cat, graphite]</span> <span class="li-normal">default: blue</span>
+ <li><span class="li-head">user_theme</span> <b>(Alias name: user-theme)</b>  Color scheme to use for the admin user gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, circuit-board, calla-lily, binary-tunnel, mars, blue-sea, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, mountain, panda, parrot, cave, zebra, contrast-dark, mariner, jade, neutrino, dark-matter, forest, cat, graphite, sec-network-lt, sec-network-dk, sec-operation-lt, sec-operation-dk, dune]</span> <span class="li-normal">default: blue</span>
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -725,6 +725,12 @@ Parameters
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">remote_login_max</span> <b>(Alias name: remote-login-max)</b>  Max login sessions per remote username (wildcard only). <span class="li-normal">type: int</span> <span class="li-normal">default: 256</span>
+ <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
+ <div id="label215" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>

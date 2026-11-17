@@ -538,6 +538,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fortiguard_server_location</span> <b>(Alias name: fortiguard-server-location)</b>  Location from which to receive fortiguard services. <span class="li-normal">type: str</span> <span class="li-normal">choices: [usa, automatic, eu]</span>
+ <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
+ <div id="label159" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -646,6 +652,7 @@ Examples
             # ia_expiration: <integer>
             # ia_license: <integer>
             # proxy_fqdn_host: <value in [disable, enable]>
+            # fortiguard_server_location: <value in [usa, automatic, eu]>
 
 
 Return Values

@@ -81,6 +81,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ip6_serviceaccess</span> <b>(Alias name: ip6-serviceaccess)</b>  Allow service access to interface. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fgtupdates, webfilter-antispam, fclupdates]</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -113,6 +119,7 @@ Examples
             # ip6_allowaccess: ["ping", "https", "ssh", "snmp", "http", "webservice",
             #                   "https-logging", "fabric"]
             # ip6_autoconf: <value in [disable, enable]>
+            # ip6_serviceaccess: ["fgtupdates", "webfilter-antispam", "fclupdates"]
 
 
 Return Values

@@ -460,6 +460,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ipv4_option</span> <b>(Alias name: ipv4-option)</b>  Ipv4 options anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, trap-to-host]</span>
+ <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
+ <div id="label133" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -554,6 +560,7 @@ Examples
             # sctp_clen_err: <value in [drop, trap-to-host]>
             # uesp_minlen_err: <value in [drop, trap-to-host]>
             # sctp_csum_err: <value in [allow, drop, trap-to-host]>
+            # ipv4_option: <value in [allow, trap-to-host]>
 
 
 Return Values

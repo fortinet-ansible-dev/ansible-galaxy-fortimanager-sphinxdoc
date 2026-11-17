@@ -318,6 +318,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">custom_sp_entity_id</span> <b>(Alias name: custom-sp-entity-id)</b>  Enable/disable custom sp entity id (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
+ <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
+ <div id="label85" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -387,6 +393,7 @@ Examples
             # idp_digest_method: <value in [sha256, sha512]>
             # idp_signature_algorithm: <value in [rsa-sha256, rsa-sha512]>
             # signature_algorithm: <value in [rsa-sha256, rsa-sha512]>
+            # custom_sp_entity_id: <value in [disable, enable]>
 
 
 Return Values

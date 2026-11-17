@@ -4,8 +4,8 @@
 
 .. _fmgr_system_localinpolicy_src:
 
-fmgr_system_localinpolicy_src -- Cli system local in policy src.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_localinpolicy_src -- List of Source IP and mask.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">local_in_policy</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">system_localinpolicy_src</span> - Cli system local in policy src <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_localinpolicy_src</span> - List of Source IP and mask. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">src_ip</span> <b>(Alias name: src-ip)</b>  Src ip. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -93,7 +93,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system local in policy src
+      - name: List of Source IP and mask.
         fortinet.fortimanager.fmgr_system_localinpolicy_src:
           # workspace_locking_adom: <global or your adom name>
           local_in_policy: <your own value>

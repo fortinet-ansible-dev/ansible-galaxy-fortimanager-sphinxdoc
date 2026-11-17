@@ -4,8 +4,8 @@
 
 .. _fmgr_system_log_apiratelimit:
 
-fmgr_system_log_apiratelimit -- Cli system log api ratelimit.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_log_apiratelimit -- API rate limit.
++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.13.0
 
@@ -60,7 +60,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">system_log_apiratelimit</span> - Cli system log api ratelimit <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_log_apiratelimit</span> - API rate limit. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">read_limit</span> <b>(Alias name: read-limit)</b>  Read limit. <span class="li-normal">type: int</span> <span class="li-normal">default: 1000</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -97,7 +97,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system log api ratelimit
+      - name: API rate limit.
         fortinet.fortimanager.fmgr_system_log_apiratelimit:
           # workspace_locking_adom: <global or your adom name>
           system_log_apiratelimit:

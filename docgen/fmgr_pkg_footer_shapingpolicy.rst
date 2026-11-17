@@ -176,7 +176,7 @@ Parameters
  <li><span class="li-head">internet_service_id</span> <b>(Alias name: internet-service-id)</b>  Internet service id. <span class="li-normal">type: list or str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">internet_service_src</span> <b>(Alias name: internet-service-src)</b>  Internet service src. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -206,7 +206,7 @@ Parameters
  <li><span class="li-head">internet_service_src_id</span> <b>(Alias name: internet-service-src-id)</b>  Internet service src id. <span class="li-normal">type: list or str</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">ip_version</span> <b>(Alias name: ip-version)</b>  Ip version. <span class="li-normal">type: str</span> <span class="li-normal">choices: [4, 6]</span>
@@ -332,7 +332,7 @@ Parameters
  <li><span class="li-head">uuid_idx</span> <b>(Alias name: uuid-idx)</b>  Uuid idx. <span class="li-normal">type: int</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">cos</span> Vlan cos bit pattern. <span class="li-normal">type: str</span>

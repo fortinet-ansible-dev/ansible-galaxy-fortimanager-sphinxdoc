@@ -95,7 +95,7 @@ Parameters
  <li><span class="li-head">account_key_name</span> <b>(Alias name: account-key-name)</b>  Account key name. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">account_key_processing</span> <b>(Alias name: account-key-processing)</b>  Account key processing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [same, strip]</span>
@@ -125,13 +125,13 @@ Parameters
  <li><span class="li-head">filter</span> Filter. <span class="li-normal">type: str</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">group</span> Group. <span class="li-normal">type: str</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">group_filter</span> <b>(Alias name: group-filter)</b>  Group filter. <span class="li-normal">type: str</span>
@@ -155,7 +155,7 @@ Parameters
  <li><span class="li-head">group_object_search_base</span> <b>(Alias name: group-object-search-base)</b>  Group object search base. <span class="li-normal">type: str</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">group_search_base</span> <b>(Alias name: group-search-base)</b>  Group search base. <span class="li-normal">type: str</span>
@@ -203,7 +203,7 @@ Parameters
  <li><span class="li-head">retrieve_protection_profile</span> <b>(Alias name: retrieve-protection-profile)</b>  Retrieve protection profile. <span class="li-normal">type: str</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">search_type</span> <b>(Alias name: search-type)</b>  Search type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [nested, recursive]</span>
@@ -383,7 +383,7 @@ Parameters
  <li><span class="li-head">validate_server_certificate</span> <b>(Alias name: validate-server-certificate)</b>  Validate server certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">fabric_force_sync</span> <b>(Alias name: fabric-force-sync)</b>  Enable/disable forced synchronization of configuration objects from the root fortigate unit to the downstream devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -408,6 +408,12 @@ Parameters
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pqc_policy</span> <b>(Alias name: pqc-policy)</b>  Enable/disable using post-quantum cryptography for this tls connection (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
+ <div id="label115" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>

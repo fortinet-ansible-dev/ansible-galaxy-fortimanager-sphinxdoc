@@ -67,7 +67,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only]</span>
+ <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only, no_devdb_changes]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -137,7 +137,7 @@ Examples
             # adom: <string>
             # flags: ["none", "cp_all_objs", "preview", "generate_rev", "copy_assigned_pkg",
             #         "unassign", "ifpolicy_only", "no_ifpolicy", "objs_only", "auto_lock_ws",
-            #         "check_pkg_st", "copy_only"]
+            #         "check_pkg_st", "copy_only", "no_devdb_changes"]
             # target:
             #   - pkg: <string>
             #     scope:

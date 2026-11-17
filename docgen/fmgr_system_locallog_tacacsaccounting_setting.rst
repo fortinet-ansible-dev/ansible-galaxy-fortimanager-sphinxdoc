@@ -4,8 +4,8 @@
 
 .. _fmgr_system_locallog_tacacsaccounting_setting:
 
-fmgr_system_locallog_tacacsaccounting_setting -- Cli system locallog tacacs+accounting setting.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_locallog_tacacsaccounting_setting -- Settings for tacacs+ accounting.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.13.0
 
@@ -60,7 +60,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">system_locallog_tacacsaccounting_setting</span> - Cli system locallog tacacs+accounting setting <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_locallog_tacacsaccounting_setting</span> - Settings for tacacs+ accounting. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -103,7 +103,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system locallog tacacs+accounting setting
+      - name: Settings for tacacs+ accounting.
         fortinet.fortimanager.fmgr_system_locallog_tacacsaccounting_setting:
           # workspace_locking_adom: <global or your adom name>
           system_locallog_tacacsaccounting_setting:

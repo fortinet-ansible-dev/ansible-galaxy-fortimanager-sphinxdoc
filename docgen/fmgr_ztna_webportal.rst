@@ -239,6 +239,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">dns_result_preference</span> <b>(Alias name: dns-result-preference)</b>  Configure dns result preference (default = ipv46). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4-only, ipv6-only, ipv46]</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dynamic_bookmarks</span> <b>(Alias name: dynamic-bookmarks)</b>  Dynamic bookmarks. <span class="li-normal">type: list</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -297,6 +309,8 @@ Examples
             # llm_profile: <list or string>
             # llm_proxy: <value in [disable, enable]>
             # ak_manager: <value in [disable, enable]>
+            # dns_result_preference: <value in [ipv4-only, ipv6-only, ipv46]>
+            # dynamic_bookmarks: <list or string>
 
 
 Return Values

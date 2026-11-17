@@ -124,7 +124,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select ntp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [SHA1, SHA256, MD5]</span>
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select ntp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [SHA1, SHA256, MD5, AES128]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -204,6 +204,44 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">keys</span> Keys. <span class="li-normal">type: list</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">key</span> Key for md5(ntpv3)/sha1(ntpv4)/sha256(ntpv4)/aes128(ntpv4) authentication. <span class="li-normal">type: list</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">key_id</span> <b>(Alias name: key-id)</b>  Key id for authentication. <span class="li-normal">type: int</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select ntp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [SHA1, SHA256, MD5, AES128]</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ntpv3</span> Enable to use ntpv3 instead of ntpv4. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Enable to use the authentication key. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
  </ul>
  </ul>
 
@@ -243,7 +281,7 @@ Examples
             #     interface: <string>
             #     interface_select_method: <value in [auto, sdwan, specify]>
             #     ip_type: <value in [IPv6, IPv4, Both]>
-            #     key_type: <value in [SHA1, SHA256, MD5]>
+            #     key_type: <value in [SHA1, SHA256, MD5, ...]>
             #     vrf_select: <integer>
             # ntpsync: <value in [disable, enable]>
             # source_ip6: <string>
@@ -256,6 +294,12 @@ Examples
             # interface: <list or string>
             # server_mode: <value in [disable, enable]>
             # source_ip: <string>
+            # keys:
+            #   - key: <list or string>
+            #     key_id: <integer>
+            #     key_type: <value in [SHA1, SHA256, MD5, ...]>
+            #     ntpv3: <value in [disable, enable]>
+            #     status: <value in [disable, enable]>
 
 
 Return Values

@@ -238,6 +238,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">cert_verify</span> <b>(Alias name: cert-verify)</b>  Enable/disable server certificate verification for dns over tls/https. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ocsp_stapling_request</span> <b>(Alias name: ocsp-stapling-request)</b>  Enable/disable ocsp stapling request in dot/doh tls handshake. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -296,6 +308,8 @@ Examples
             # hostname_ttl: <integer>
             # hostname_limit: <integer>
             # root_servers: <string>
+            # cert_verify: <value in [disable, enable]>
+            # ocsp_stapling_request: <value in [disable, enable]>
 
 
 Return Values

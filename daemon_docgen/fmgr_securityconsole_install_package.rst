@@ -85,7 +85,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only]</span>
+ <li><span class="li-head">flags</span> Cp_all_objs - assign all objects during global policy assignment. <span class="li-normal">type: list</span> <span class="li-normal">choices: [none, cp_all_objs, preview, generate_rev, copy_assigned_pkg, unassign, ifpolicy_only, no_ifpolicy, objs_only, auto_lock_ws, check_pkg_st, copy_only, no_devdb_changes]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

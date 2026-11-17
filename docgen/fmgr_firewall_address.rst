@@ -172,7 +172,7 @@ Parameters
  <li><span class="li-head">end_mac</span> <b>(Alias name: end-mac)</b>  End mac. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">epg_name</span> <b>(Alias name: epg-name)</b>  Epg name. <span class="li-normal">type: str</span>
@@ -244,7 +244,7 @@ Parameters
  <li><span class="li-head">start_mac</span> <b>(Alias name: start-mac)</b>  Start mac. <span class="li-normal">type: str</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">subnet</span> Subnet. <span class="li-normal">type: str</span>
@@ -262,7 +262,7 @@ Parameters
  <li><span class="li-head">tags</span> Tags. <span class="li-normal">type: list or str</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">tenant</span> Tenant. <span class="li-normal">type: str</span>
@@ -280,7 +280,7 @@ Parameters
  <li><span class="li-head">url</span> Url. <span class="li-normal">type: str</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">uuid</span> Uuid. <span class="li-normal">type: str</span>
@@ -292,7 +292,7 @@ Parameters
  <li><span class="li-head">visibility</span> Visibility. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">wildcard</span> Wildcard. <span class="li-normal">type: str</span>
@@ -310,7 +310,7 @@ Parameters
  <li><span class="li-head">_image_base64</span> <b>(Alias name: _image-base64)</b>  Image base64. <span class="li-normal">type: str</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">clearpass_spt</span> <b>(Alias name: clearpass-spt)</b>  Clearpass spt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unknown, healthy, quarantine, checkup, transition, infected, transient]</span>
@@ -334,7 +334,7 @@ Parameters
  <li><span class="li-head">global_object</span> <b>(Alias name: global-object)</b>  Global object. <span class="li-normal">type: int</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">obj_tag</span> <b>(Alias name: obj-tag)</b>  Obj tag. <span class="li-normal">type: str</span>

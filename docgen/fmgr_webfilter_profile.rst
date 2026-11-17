@@ -913,6 +913,88 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ftgd_image_classification</span> <b>(Alias name: ftgd-image-classification)</b>  Ftgd image classification. <span class="li-normal">type: dict</span>
+ <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
+ <div id="label275" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">file_size_maximum</span> <b>(Alias name: file-size-maximum)</b>  File size above which no classification request is performed in kilobytes (1 - 30720, default = 20480). <span class="li-normal">type: int</span>
+ <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
+ <div id="label277" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">file_size_minimum</span> <b>(Alias name: file-size-minimum)</b>  Minimum file size to trigger a classification request in kilobytes (1 - 30720, default = 15). <span class="li-normal">type: int</span>
+ <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
+ <div id="label279" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">file_types</span> <b>(Alias name: file-types)</b>  Select file type. <span class="li-normal">type: list</span>
+ <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
+ <div id="label281" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">http_method</span> <b>(Alias name: http-method)</b>  Select http requests methods that will be scanned. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, all, get, post]</span>
+ <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
+ <div id="label283" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">rating_error_action</span> <b>(Alias name: rating-error-action)</b>  Action to take if fortiguard image classification query fails. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log, allow]</span>
+ <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
+ <div id="label285" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">rating_quota_reached_action</span> <b>(Alias name: rating-quota-reached-action)</b>  Action to take when fortiguard image classification signals the rate limit is reached. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log, allow]</span>
+ <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
+ <div id="label287" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">rating_timeout</span> <b>(Alias name: rating-timeout)</b>  Fortiguard image classification timeout in seconds (10 - 30, default = 25). <span class="li-normal">type: int</span>
+ <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
+ <div id="label289" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">rating_timeout_action</span> <b>(Alias name: rating-timeout-action)</b>  Action to take if fortiguard image classification times out. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, log, allow]</span>
+ <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
+ <div id="label291" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">rules</span> Rules. <span class="li-normal">type: list</span>
+ <a id='label292' href="javascript:ContentClick('label293', 'label292');" onmouseover="ContentPreview('label293');" onmouseout="ContentUnpreview('label293');" title="click to collapse or expand..."> more... </a>
+ <div id="label293" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">block_threshold</span> <b>(Alias name: block-threshold)</b>  Rating above which the image is blocked (0 to disable) <span class="li-normal">type: int</span>
+ <a id='label294' href="javascript:ContentClick('label295', 'label294');" onmouseover="ContentPreview('label295');" onmouseout="ContentUnpreview('label295');" title="click to collapse or expand..."> more... </a>
+ <div id="label295" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">category</span> Category name. <span class="li-normal">type: str</span>
+ <a id='label296' href="javascript:ContentClick('label297', 'label296');" onmouseover="ContentPreview('label297');" onmouseout="ContentUnpreview('label297');" title="click to collapse or expand..."> more... </a>
+ <div id="label297" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">log_threshold</span> <b>(Alias name: log-threshold)</b>  Rating above which the image is logged (0 to disable) <span class="li-normal">type: int</span>
+ <a id='label298' href="javascript:ContentClick('label299', 'label298');" onmouseover="ContentPreview('label299');" onmouseout="ContentUnpreview('label299');" title="click to collapse or expand..."> more... </a>
+ <div id="label299" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ </ul>
+ </li>
  </ul>
  </ul>
 
@@ -1087,6 +1169,19 @@ Examples
             # fabric_object: <value in [disable, enable]>
             # fabric_object_source: <value in [member, local, root]>
             # uuid: <string>
+            # ftgd_image_classification:
+            #   file_size_maximum: <integer>
+            #   file_size_minimum: <integer>
+            #   file_types: <list or string>
+            #   http_method: <value in [disable, all, get, ...]>
+            #   rating_error_action: <value in [block, log, allow]>
+            #   rating_quota_reached_action: <value in [block, log, allow]>
+            #   rating_timeout: <integer>
+            #   rating_timeout_action: <value in [block, log, allow]>
+            #   rules:
+            #     - block_threshold: <integer>
+            #       category: <string>
+            #       log_threshold: <integer>
 
 
 Return Values

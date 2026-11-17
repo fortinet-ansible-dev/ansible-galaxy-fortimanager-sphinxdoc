@@ -140,6 +140,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">meter</span> Enable/disable meter service for meter update (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -180,6 +186,7 @@ Examples
             # query_iot_vulnerability: <value in [disable, enable]>
             # query_ioc: <value in [disable, enable]>
             # geoip: <value in [disable, enable]>
+            # meter: <value in [disable, enable]>
 
 
 Return Values

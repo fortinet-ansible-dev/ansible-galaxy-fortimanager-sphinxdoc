@@ -215,7 +215,7 @@ Parameters
  <li><span class="li-head">enable</span> Enable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">exclude_range</span> <b>(Alias name: exclude-range)</b>  Exclude range. <span class="li-normal">type: list</span>
@@ -447,37 +447,37 @@ Parameters
  <li><span class="li-head">option1</span> Option1. <span class="li-normal">type: list</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">option2</span> Option2. <span class="li-normal">type: list</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">option3</span> Option3. <span class="li-normal">type: list</span>
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">option4</span> Option4. <span class="li-normal">type: str</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">option5</span> Option5. <span class="li-normal">type: str</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">option6</span> Option6. <span class="li-normal">type: str</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">options</span> Options. <span class="li-normal">type: list</span>
@@ -1276,7 +1276,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">allowaccess</span> Management access settings for the secondary ip address. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test, icond, scim, mqtt]</span>
+ <li><span class="li-head">allowaccess</span> Management access settings for the secondary ip address. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test, icond, scim, mqtt, cwmp]</span>
  <a id='label396' href="javascript:ContentClick('label397', 'label396');" onmouseover="ContentPreview('label397');" onmouseout="ContentUnpreview('label397');" title="click to collapse or expand..."> more... </a>
  <div id="label397" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
@@ -1327,7 +1327,7 @@ Parameters
  <li><span class="li-head">seq</span> Seq. <span class="li-normal">type: int</span>
  <a id='label412' href="javascript:ContentClick('label413', 'label412');" onmouseover="ContentPreview('label413');" onmouseout="ContentUnpreview('label413');" title="click to collapse or expand..."> more... </a>
  <div id="label413" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.8 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.5 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">secip_relay_ip</span> <b>(Alias name: secip-relay-ip)</b>  Dhcp relay ip address. <span class="li-normal">type: str</span>
@@ -1456,7 +1456,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">allowaccess</span> Allowaccess. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, radius-acct, probe-response, dnp, ftm, fabric, speed-test, icond, scim, mqtt]</span>
+ <li><span class="li-head">allowaccess</span> Allowaccess. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, radius-acct, probe-response, dnp, ftm, fabric, speed-test, icond, scim, mqtt, cwmp]</span>
  <a id='label454' href="javascript:ContentClick('label455', 'label454');" onmouseover="ContentPreview('label455');" onmouseout="ContentUnpreview('label455');" title="click to collapse or expand..."> more... </a>
  <div id="label455" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -1707,7 +1707,7 @@ Examples
             #   secondaryip:
             #     - allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
             #                     "auto-ipsec", "radius-acct", "probe-response", "capwap", "dnp",
-            #                     "ftm", "fabric", "speed-test", "icond", "scim", "mqtt"]
+            #                     "ftm", "fabric", "speed-test", "icond", "scim", "mqtt", "cwmp"]
             #       detectprotocol: ["ping", "tcp-echo", "udp-echo"]
             #       detectserver: <string>
             #       gwdetect: <value in [disable, enable]>
@@ -1738,7 +1738,7 @@ Examples
             #       vrip: <string>
             #   allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
             #                 "radius-acct", "probe-response", "dnp", "ftm", "fabric", "speed-test",
-            #                 "icond", "scim", "mqtt"]
+            #                 "icond", "scim", "mqtt", "cwmp"]
             #   dhcp_relay_request_all_server: <value in [disable, enable]>
             #   switch_controller_access_vlan: <value in [disable, enable]>
 

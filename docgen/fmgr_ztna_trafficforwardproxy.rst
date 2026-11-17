@@ -517,6 +517,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">dns_result_preference</span> <b>(Alias name: dns-result-preference)</b>  Configure dns result preference (default = ipv46). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4-only, ipv6-only, ipv46]</span>
+ <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
+ <div id="label149" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -620,6 +626,7 @@ Examples
             #     priority: <integer>
             #     versions: ["ssl-3.0", "tls-1.0", "tls-1.1", "tls-1.2", "tls-1.3"]
             # ssl_hpkp_primary: <list or string>
+            # dns_result_preference: <value in [ipv4-only, ipv6-only, ipv46]>
 
 
 Return Values

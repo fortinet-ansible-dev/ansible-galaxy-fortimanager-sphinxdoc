@@ -281,181 +281,231 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fortiextender_link_cost_factor</span> <b>(Alias name: fortiextender-link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [signal-strength, quota-usage]</span>
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">sla_fail_log_period</span> <b>(Alias name: sla-fail-log-period)</b>  Time interval in seconds that sla fail log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span>
- <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
- <div id="label73" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">sla_pass_log_period</span> <b>(Alias name: sla-pass-log-period)</b>  Time interval in seconds that sla pass log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_dns</span> <b>(Alias name: system-dns)</b>  Enable/disable system dns as the probe server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">sla_pass_log_period</span> <b>(Alias name: sla-pass-log-period)</b>  Time interval in seconds that sla pass log messages will be generated (0 - 3600, default = 0). <span class="li-normal">type: int</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">threshold_alert_jitter</span> <b>(Alias name: threshold-alert-jitter)</b>  Alert threshold for jitter (ms, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">system_dns</span> <b>(Alias name: system-dns)</b>  Enable/disable system dns as the probe server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">threshold_alert_latency</span> <b>(Alias name: threshold-alert-latency)</b>  Alert threshold for latency (ms, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_alert_jitter</span> <b>(Alias name: threshold-alert-jitter)</b>  Alert threshold for jitter (ms, default = 0). <span class="li-normal">type: int</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">threshold_alert_packetloss</span> <b>(Alias name: threshold-alert-packetloss)</b>  Alert threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_alert_latency</span> <b>(Alias name: threshold-alert-latency)</b>  Alert threshold for latency (ms, default = 0). <span class="li-normal">type: int</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">threshold_warning_jitter</span> <b>(Alias name: threshold-warning-jitter)</b>  Warning threshold for jitter (ms, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_alert_packetloss</span> <b>(Alias name: threshold-alert-packetloss)</b>  Alert threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">threshold_warning_latency</span> <b>(Alias name: threshold-warning-latency)</b>  Warning threshold for latency (ms, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_warning_jitter</span> <b>(Alias name: threshold-warning-jitter)</b>  Warning threshold for jitter (ms, default = 0). <span class="li-normal">type: int</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">threshold_warning_packetloss</span> <b>(Alias name: threshold-warning-packetloss)</b>  Warning threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">threshold_warning_latency</span> <b>(Alias name: threshold-warning-latency)</b>  Warning threshold for latency (ms, default = 0). <span class="li-normal">type: int</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_cascade_interface</span> <b>(Alias name: update-cascade-interface)</b>  Enable/disable update cascade interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">threshold_warning_packetloss</span> <b>(Alias name: threshold-warning-packetloss)</b>  Warning threshold for packet loss (percentage, default = 0). <span class="li-normal">type: int</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_static_route</span> <b>(Alias name: update-static-route)</b>  Enable/disable updating the static route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">update_cascade_interface</span> <b>(Alias name: update-cascade-interface)</b>  Enable/disable update cascade interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user</span> The user name to access probe server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">update_static_route</span> <b>(Alias name: update-static-route)</b>  Enable/disable updating the static route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">user</span> The user name to access probe server. <span class="li-normal">type: str</span>
+ <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">detect_mode</span> <b>(Alias name: detect-mode)</b>  The mode determining how to detect the server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive, prefer-passive, remote, agent-based]</span>
- <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
- <div id="label97" style="display:none">
+ <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
+ <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">mos_codec</span> <b>(Alias name: mos-codec)</b>  Codec to use for mos calculation (default = g711). <span class="li-normal">type: str</span> <span class="li-normal">choices: [g711, g722, g729]</span>
- <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
- <div id="label99" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">source</span> Source ip address used in the health-check packet to the server. <span class="li-normal">type: str</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vrf</span> Virtual routing forwarding id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">source</span> Source ip address used in the health-check packet to the server. <span class="li-normal">type: str</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">embed_measured_health</span> <b>(Alias name: embed-measured-health)</b>  Enable/disable embedding measured health information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">vrf</span> Virtual routing forwarding id. <span class="li-normal">type: int</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sla_id_redistribute</span> <b>(Alias name: sla-id-redistribute)</b>  Select the id from the sla sub-table. <span class="li-normal">type: int</span>
+ <li><span class="li-head">embed_measured_health</span> <b>(Alias name: embed-measured-health)</b>  Enable/disable embedding measured health information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">class_id</span> <b>(Alias name: class-id)</b>  Traffic class id. <span class="li-normal">type: str</span>
+ <li><span class="li-head">sla_id_redistribute</span> <b>(Alias name: sla-id-redistribute)</b>  Select the id from the sla sub-table. <span class="li-normal">type: int</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source6</span> Source ipv6 addressused in the health-check packet to server. <span class="li-normal">type: str</span>
+ <li><span class="li-head">class_id</span> <b>(Alias name: class-id)</b>  Traffic class id. <span class="li-normal">type: str</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fortiguard</span> Enable/disable use of fortiguard predefined server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">source6</span> Source ipv6 addressused in the health-check packet to server. <span class="li-normal">type: str</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fortiguard_name</span> <b>(Alias name: fortiguard-name)</b>  Predefined health-check target name. <span class="li-normal">type: list</span>
+ <li><span class="li-head">fortiguard</span> Enable/disable use of fortiguard predefined server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">agent_probe_timeout</span> <b>(Alias name: agent-probe-timeout)</b>  Time to wait before a probe packet is considered lost when detect-mode is agent (5000 - 3600*1000 msec, default = 60000). <span class="li-normal">type: int</span>
+ <li><span class="li-head">fortiguard_name</span> <b>(Alias name: fortiguard-name)</b>  Predefined health-check target name. <span class="li-normal">type: list</span>
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">remote_probe_timeout</span> <b>(Alias name: remote-probe-timeout)</b>  Time to wait before a probe packet is considered lost when detect-mode is remote (20 - 3600*1000 msec, default = 5000). <span class="li-normal">type: int</span>
+ <li><span class="li-head">agent_probe_timeout</span> <b>(Alias name: agent-probe-timeout)</b>  Time to wait before a probe packet is considered lost when detect-mode is agent (5000 - 3600*1000 msec, default = 60000). <span class="li-normal">type: int</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bandwidth_weight</span> <b>(Alias name: bandwidth-weight)</b>  Coefficient of reciprocal of available bidirectional bandwidth in the formula of custom-profile-1. <span class="li-normal">type: int</span>
+ <li><span class="li-head">remote_probe_timeout</span> <b>(Alias name: remote-probe-timeout)</b>  Time to wait before a probe packet is considered lost when detect-mode is remote (20 - 3600*1000 msec, default = 5000). <span class="li-normal">type: int</span>
  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">jitter_weight</span> <b>(Alias name: jitter-weight)</b>  Coefficient of jitter in the formula of custom-profile-1. <span class="li-normal">type: int</span>
+ <li><span class="li-head">bandwidth_weight</span> <b>(Alias name: bandwidth-weight)</b>  Coefficient of reciprocal of available bidirectional bandwidth in the formula of custom-profile-1. <span class="li-normal">type: int</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">latency_weight</span> <b>(Alias name: latency-weight)</b>  Coefficient of latency in the formula of custom-profile-1. <span class="li-normal">type: int</span>
+ <li><span class="li-head">jitter_weight</span> <b>(Alias name: jitter-weight)</b>  Coefficient of jitter in the formula of custom-profile-1. <span class="li-normal">type: int</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">packet_loss_weight</span> <b>(Alias name: packet-loss-weight)</b>  Coefficient of packet-loss in the formula of custom-profile-1. <span class="li-normal">type: int</span>
+ <li><span class="li-head">latency_weight</span> <b>(Alias name: latency-weight)</b>  Coefficient of latency in the formula of custom-profile-1. <span class="li-normal">type: int</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_bgp_route</span> <b>(Alias name: update-bgp-route)</b>  Enable/disable updating the bgp route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">packet_loss_weight</span> <b>(Alias name: packet-loss-weight)</b>  Coefficient of packet-loss in the formula of custom-profile-1. <span class="li-normal">type: int</span>
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">update_bgp_route</span> <b>(Alias name: update-bgp-route)</b>  Enable/disable updating the bgp route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
+ <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
+ </li>
+ <li><span class="li-head">extender_interval</span> <b>(Alias name: extender-interval)</b>  Status check interval in milliseconds, or the time between attempting to connect to the fortiextender (30*1000 - 3600*1000 msec, default = 30000). <span class="li-normal">type: int</span>
+ <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
+ <div id="label133" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">extender_probe_timeout</span> <b>(Alias name: extender-probe-timeout)</b>  Time to wait before a probe packet is considered lost (30*1000 - 3600*1000 msec, default = 30000). <span class="li-normal">type: int</span>
+ <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
+ <div id="label135" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortiextender_metric</span> <b>(Alias name: fortiextender-metric)</b>  Enable/disable use of fortiextender metric. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">probe_dont_fragment</span> <b>(Alias name: probe-dont-fragment)</b>  Enable/disable use of the dont fragment flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
+ <div id="label139" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scope_member</span> <b>(Alias name: scope member)</b>  Scope member. <span class="li-normal">type: list</span>
+ <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
+ <div id="label141" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
+ <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
+ <div id="label143" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vdom</span> Vdom. <span class="li-normal">type: str</span>
+ <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
+ <div id="label145" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
  </li>
  </ul>
  </ul>
@@ -524,6 +574,7 @@ Examples
             #     priority_in_sla: <integer>
             #     priority_out_sla: <integer>
             #     custom_profile_threshold: <integer>
+            #     fortiextender_link_cost_factor: ["signal-strength", "quota-usage"]
             # sla_fail_log_period: <integer>
             # sla_pass_log_period: <integer>
             # system_dns: <value in [disable, enable]>
@@ -553,6 +604,13 @@ Examples
             # latency_weight: <integer>
             # packet_loss_weight: <integer>
             # update_bgp_route: <value in [disable, enable]>
+            # extender_interval: <integer>
+            # extender_probe_timeout: <integer>
+            # fortiextender_metric: <value in [disable, enable]>
+            # probe_dont_fragment: <value in [disable, enable]>
+            # scope_member:
+            #   - name: <string>
+            #     vdom: <string>
 
 
 Return Values

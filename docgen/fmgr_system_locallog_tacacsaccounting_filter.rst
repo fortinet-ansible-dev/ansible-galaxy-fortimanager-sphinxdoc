@@ -4,8 +4,8 @@
 
 .. _fmgr_system_locallog_tacacsaccounting_filter:
 
-fmgr_system_locallog_tacacsaccounting_filter -- Cli system locallog tacacs+accounting filter.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_locallog_tacacsaccounting_filter -- Settings for tacacs+ accounting events filter.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.13.0
 
@@ -60,7 +60,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">system_locallog_tacacsaccounting_filter</span> - Cli system locallog tacacs+accounting filter <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_locallog_tacacsaccounting_filter</span> - Settings for tacacs+ accounting events filter. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">cli_cmd_audit</span> <b>(Alias name: cli-cmd-audit)</b>  Cli cmd audit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -103,7 +103,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system locallog tacacs+accounting filter
+      - name: Settings for tacacs+ accounting events filter.
         fortinet.fortimanager.fmgr_system_locallog_tacacsaccounting_filter:
           # workspace_locking_adom: <global or your adom name>
           system_locallog_tacacsaccounting_filter:

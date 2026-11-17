@@ -132,25 +132,25 @@ Parameters
  <li><span class="li-head">oauth2_auth_scope</span> <b>(Alias name: oauth2-auth-scope)</b>  Oauth2 auth scope. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">oauth2_auth_server</span> <b>(Alias name: oauth2-auth-server)</b>  Oauth2 auth server. <span class="li-normal">type: str</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">oauth2_client_id</span> <b>(Alias name: oauth2-client-id)</b>  Oauth2 client id. <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">oauth2_client_secret</span> <b>(Alias name: oauth2-client-secret)</b>  Oauth2 client secret. <span class="li-normal">type: list</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>

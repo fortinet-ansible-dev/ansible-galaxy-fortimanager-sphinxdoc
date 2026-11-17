@@ -729,6 +729,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">dns_result_preference</span> <b>(Alias name: dns-result-preference)</b>  Configure dns result preference (default = ipv46). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4-only, ipv6-only, ipv46]</span>
+ <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
+ <div id="label217" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -866,6 +872,7 @@ Examples
             # svr_pool_ttl: <integer>
             # vip: <list or string>
             # vip6: <list or string>
+            # dns_result_preference: <value in [ipv4-only, ipv6-only, ipv46]>
 
 
 Return Values

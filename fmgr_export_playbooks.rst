@@ -127,6 +127,12 @@ Parameters
         <li><span class="li-required">application_categories</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">application_classification</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">application_classificationscope</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">application_custom</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -308,10 +314,12 @@ Parameters
         <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_excludelist</span> - available versions:
-        <span class="li-normal">v7.0.4->v7.0.16</span>
+        <span class="li-normal">v7.0.4->v7.0.16</span>,
+        <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_excludelist_fields</span> - available versions:
-        <span class="li-normal">v7.0.4->v7.0.16</span>
+        <span class="li-normal">v7.0.4->v7.0.16</span>,
+        <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_freestyle</span> - available versions:
         <span class="li-normal">v7.0.4->v7.0.16</span>,
@@ -359,6 +367,9 @@ Parameters
         <span class="li-normal">v6.0.0->v6.2.5</span>,
         <span class="li-normal">v6.2.7->v6.4.1</span>,
         <span class="li-normal">v6.4.3->latest</span>
+        </li>
+        <li><span class="li-required">devprof_system_ntp_keys</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">devprof_system_ntp_ntpserver</span> - available versions:
         <span class="li-normal">v6.0.0->v6.2.5</span>,
@@ -597,7 +608,7 @@ Parameters
         <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">dvmdb_script</span> - available versions:
-        <span class="li-normal">v6.0.0->latest</span>
+        <span class="li-normal">v6.0.0->v8.0.0</span>
         </li>
         <li><span class="li-required">dvmdb_script_log_latest</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -624,7 +635,7 @@ Parameters
         <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">dvmdb_script_scriptschedule</span> - available versions:
-        <span class="li-normal">v6.0.0->latest</span>
+        <span class="li-normal">v6.0.0->v8.0.0</span>
         </li>
         <li><span class="li-required">dvmdb_workflow</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -2009,6 +2020,9 @@ Parameters
         <li><span class="li-required">isolator_profile_entries</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
         </li>
+        <li><span class="li-required">llm_server</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">log_customfield</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -2598,6 +2612,12 @@ Parameters
         <span class="li-normal">v7.4.2->v7.4.10</span>,
         <span class="li-normal">v7.6.0->v7.6.6</span>
         </li>
+        <li><span class="li-required">switchcontroller_ptp_interfacepolicy</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">switchcontroller_ptp_policy</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">switchcontroller_ptp_profile</span> - available versions:
         <span class="li-normal">v7.4.1->latest</span>
         </li>
@@ -2799,6 +2819,21 @@ Parameters
         </li>
         <li><span class="li-required">system_dhcp_server_reservedaddress</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_excluderange</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_iprange</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_options</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_reservedaddress</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">system_dm</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -3064,6 +3099,9 @@ Parameters
         <li><span class="li-required">system_npu_backgroundssescan</span> - available versions:
         <span class="li-normal">v6.4.8->v6.4.15</span>,
         <span class="li-normal">v7.0.3->latest</span>
+        </li>
+        <li><span class="li-required">system_npu_congestionhandlingmode</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_dosoptions</span> - available versions:
         <span class="li-normal">v6.4.7->v6.4.15</span>,
@@ -4038,6 +4076,12 @@ Parameters
         <li><span class="li-required">webfilter_profile_filefilter_entries</span> - available versions:
         <span class="li-normal">v6.2.0->v7.6.2</span>
         </li>
+        <li><span class="li-required">webfilter_profile_ftgdimageclassification</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
+        <li><span class="li-required">webfilter_profile_ftgdimageclassification_rules</span> - available versions:
+        <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">webfilter_profile_ftgdwf</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -4425,6 +4469,20 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">categories</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for application_classification:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">classification</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for application_classificationscope:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">classification-scope</span>
             </li>
         </ul>
         <li><span class="li-normal">params for application_custom:</span></li>
@@ -5025,6 +5083,15 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">devprof</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for devprof_system_ntp_keys:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">devprof</span>
+            </li>
+            <li><span class="li-normal">keys</span>
             </li>
         </ul>
         <li><span class="li-normal">params for devprof_system_ntp_ntpserver:</span></li>
@@ -9028,6 +9095,13 @@ Parameters
             <li><span class="li-normal">profile</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for llm_server:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">server</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for log_customfield:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -10369,6 +10443,20 @@ Parameters
             <li><span class="li-normal">vlan</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for switchcontroller_ptp_interfacepolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">interface-policy</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_ptp_policy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">policy</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for switchcontroller_ptp_profile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -10766,6 +10854,49 @@ Parameters
             <li><span class="li-normal">server</span>
             </li>
         </ul>
+        <li><span class="li-normal">params for system_dhcp_template:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">template</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_excluderange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">exclude-range</span>
+            </li>
+            <li><span class="li-normal">template</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_iprange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">ip-range</span>
+            </li>
+            <li><span class="li-normal">template</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_options:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">options</span>
+            </li>
+            <li><span class="li-normal">template</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_reservedaddress:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">reserved-address</span>
+            </li>
+            <li><span class="li-normal">template</span>
+            </li>
+        </ul>
         <li><span class="li-normal">params for system_dm:</span></li>
         <ul class="ul-self">
         </ul>
@@ -11149,6 +11280,11 @@ Parameters
             </li>
         </ul>
         <li><span class="li-normal">params for system_npu_backgroundssescan:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_congestionhandlingmode:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
             </li>
@@ -13484,6 +13620,22 @@ Parameters
             <li><span class="li-normal">entries</span>
             </li>
             <li><span class="li-normal">profile</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for webfilter_profile_ftgdimageclassification:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">profile</span>
+            </li>
+        </ul>
+        <li><span class="li-normal">params for webfilter_profile_ftgdimageclassification_rules:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span>
+            </li>
+            <li><span class="li-normal">profile</span>
+            </li>
+            <li><span class="li-normal">rules</span>
             </li>
         </ul>
         <li><span class="li-normal">params for webfilter_profile_ftgdwf:</span></li>

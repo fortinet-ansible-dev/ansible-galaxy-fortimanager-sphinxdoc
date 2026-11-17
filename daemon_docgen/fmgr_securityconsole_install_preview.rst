@@ -108,7 +108,7 @@ Parameters
  <li><span class="li-head">preview_taskid</span> Preview taskid. <span class="li-normal">type: int</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>

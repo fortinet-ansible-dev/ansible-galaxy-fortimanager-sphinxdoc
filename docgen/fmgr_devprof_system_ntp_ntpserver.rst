@@ -119,7 +119,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select ntp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [SHA1, SHA256, MD5]</span>
+ <li><span class="li-head">key_type</span> <b>(Alias name: key-type)</b>  Select ntp authentication type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [SHA1, SHA256, MD5, AES128]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -170,7 +170,7 @@ Examples
             # interface: <string>
             # interface_select_method: <value in [auto, sdwan, specify]>
             # ip_type: <value in [IPv6, IPv4, Both]>
-            # key_type: <value in [SHA1, SHA256, MD5]>
+            # key_type: <value in [SHA1, SHA256, MD5, ...]>
             # vrf_select: <integer>
 
 

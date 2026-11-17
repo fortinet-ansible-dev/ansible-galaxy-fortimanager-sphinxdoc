@@ -173,6 +173,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">tls_handshake_mode</span> <b>(Alias name: tls-handshake-mode)</b>  Proxy-mode tls handshake negotiation behaviour. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sync, dual]</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -220,6 +226,7 @@ Examples
             # unsupported_ssl_negotiation: <value in [allow, block]>
             # min_allowed_ssl_version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             # unsupported_ssl_version: <value in [block, allow, inspect]>
+            # tls_handshake_mode: <value in [sync, dual]>
 
 
 Return Values

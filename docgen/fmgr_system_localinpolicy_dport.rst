@@ -4,8 +4,8 @@
 
 .. _fmgr_system_localinpolicy_dport:
 
-fmgr_system_localinpolicy_dport -- Cli system local in policy dport.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_localinpolicy_dport -- List of Destination port number.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.12.0
 
@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">local_in_policy</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">system_localinpolicy_dport</span> - Cli system local in policy dport <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">system_localinpolicy_dport</span> - List of Destination port number. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">dport_value</span> <b>(Alias name: dport-value)</b>  Dport value. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -93,7 +93,7 @@ Examples
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system local in policy dport
+      - name: List of Destination port number.
         fortinet.fortimanager.fmgr_system_localinpolicy_dport:
           # workspace_locking_adom: <global or your adom name>
           local_in_policy: <your own value>

@@ -377,7 +377,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">services</span> Network protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https]</span>
+ <li><span class="li-head">services</span> Network protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https, quic]</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>

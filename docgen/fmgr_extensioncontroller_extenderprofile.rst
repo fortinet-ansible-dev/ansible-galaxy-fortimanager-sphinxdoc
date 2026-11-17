@@ -569,7 +569,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Fortiextender uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wan, lte1, lte2, port1, port2, port3, port4, port5, sfp]</span>
+ <li><span class="li-head">port</span> Fortiextender uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [wan, lte1, lte2, port1, port2, port3, port4, port5, sfp, asta0, bsta0]</span>
  <a id='label162' href="javascript:ContentClick('label163', 'label162');" onmouseover="ContentPreview('label163');" onmouseout="ContentUnpreview('label163');" title="click to collapse or expand..."> more... </a>
  <div id="label163" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -877,119 +877,149 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">persistence</span> Enable/disable the persistence attribute of the radio profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
+ <div id="label263" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wifi_networks</span> <b>(Alias name: wifi-networks)</b>  Wi-fi networks. <span class="li-normal">type: list</span>
+ <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
+ <div id="label265" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">radio_2</span> <b>(Alias name: radio-2)</b>  Radio 2. <span class="li-normal">type: dict</span>
- <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
- <div id="label263" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">d80211d</span> <b>(Alias name: 80211d)</b>  Enable/disable wi-fi 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
- <div id="label265" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">band</span> Wi-fi band selection 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [5GHz]</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">bandwidth</span> Wi-fi channel bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 20MHz, 40MHz, 80MHz]</span>
+ <ul class="ul-self">
+ <li><span class="li-head">d80211d</span> <b>(Alias name: 80211d)</b>  Enable/disable wi-fi 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
  <div id="label269" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">beacon_interval</span> <b>(Alias name: beacon-interval)</b>  Wi-fi beacon interval in miliseconds (100 - 3500, default = 100). <span class="li-normal">type: int</span>
+ <li><span class="li-head">band</span> Wi-fi band selection 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [5GHz]</span>
  <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
  <div id="label271" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bss_color</span> <b>(Alias name: bss-color)</b>  Wi-fi 802. <span class="li-normal">type: int</span>
+ <li><span class="li-head">bandwidth</span> Wi-fi channel bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 20MHz, 40MHz, 80MHz]</span>
  <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
  <div id="label273" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bss_color_mode</span> <b>(Alias name: bss-color-mode)</b>  Wi-fi 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, static]</span>
+ <li><span class="li-head">beacon_interval</span> <b>(Alias name: beacon-interval)</b>  Wi-fi beacon interval in miliseconds (100 - 3500, default = 100). <span class="li-normal">type: int</span>
  <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
  <div id="label275" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">channel</span> Wi-fi channels. <span class="li-normal">type: list</span> <span class="li-normal">choices: [CH36, CH40, CH44, CH48, CH52, CH56, CH60, CH64, CH100, CH104, CH108, CH112, CH116, CH120, CH124, CH128, CH132, CH136, CH140, CH144, CH149, CH153, CH157, CH161, CH165]</span>
+ <li><span class="li-head">bss_color</span> <b>(Alias name: bss-color)</b>  Wi-fi 802. <span class="li-normal">type: int</span>
  <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
  <div id="label277" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">extension_channel</span> <b>(Alias name: extension-channel)</b>  Wi-fi extension channel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, higher, lower]</span>
+ <li><span class="li-head">bss_color_mode</span> <b>(Alias name: bss-color-mode)</b>  Wi-fi 802. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, static]</span>
  <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
  <div id="label279" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">guard_interval</span> <b>(Alias name: guard-interval)</b>  Wi-fi guard interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 400ns, 800ns]</span>
+ <li><span class="li-head">channel</span> Wi-fi channels. <span class="li-normal">type: list</span> <span class="li-normal">choices: [CH36, CH40, CH44, CH48, CH52, CH56, CH60, CH64, CH100, CH104, CH108, CH112, CH116, CH120, CH124, CH128, CH132, CH136, CH140, CH144, CH149, CH153, CH157, CH161, CH165]</span>
  <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
  <div id="label281" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">lan_ext_vap</span> <b>(Alias name: lan-ext-vap)</b>  Wi-fi lan-extention vap. <span class="li-normal">type: list</span>
+ <li><span class="li-head">extension_channel</span> <b>(Alias name: extension-channel)</b>  Wi-fi extension channel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, higher, lower]</span>
  <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
  <div id="label283" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">local_vaps</span> <b>(Alias name: local-vaps)</b>  Wi-fi local vap. <span class="li-normal">type: list</span>
+ <li><span class="li-head">guard_interval</span> <b>(Alias name: guard-interval)</b>  Wi-fi guard interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 400ns, 800ns]</span>
  <a id='label284' href="javascript:ContentClick('label285', 'label284');" onmouseover="ContentPreview('label285');" onmouseout="ContentUnpreview('label285');" title="click to collapse or expand..."> more... </a>
  <div id="label285" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">max_clients</span> <b>(Alias name: max-clients)</b>  Maximum number of wi-fi radio clients (0 - 512, 0 = unlimited, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">lan_ext_vap</span> <b>(Alias name: lan-ext-vap)</b>  Wi-fi lan-extention vap. <span class="li-normal">type: list</span>
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Wi-fi radio mode ap(lan mode) / client(wan mode). <span class="li-normal">type: str</span> <span class="li-normal">choices: [AP, Client]</span>
+ <li><span class="li-head">local_vaps</span> <b>(Alias name: local-vaps)</b>  Wi-fi local vap. <span class="li-normal">type: list</span>
  <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
  <div id="label289" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">operating_standard</span> <b>(Alias name: operating-standard)</b>  Wi-fi operating standard. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 11A-N-AC-AX, 11A-N-AC, 11A-N, 11A, 11N-AC-AX, 11AC-AX, 11AC, 11N-AC, 11B-G-N-AX, 11B-G-N, 11B-G, 11B, 11G-N-AX, 11N-AX, 11AX, 11G-N, 11N, 11G]</span>
+ <li><span class="li-head">max_clients</span> <b>(Alias name: max-clients)</b>  Maximum number of wi-fi radio clients (0 - 512, 0 = unlimited, default = 0). <span class="li-normal">type: int</span>
  <a id='label290' href="javascript:ContentClick('label291', 'label290');" onmouseover="ContentPreview('label291');" onmouseout="ContentUnpreview('label291');" title="click to collapse or expand..."> more... </a>
  <div id="label291" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">power_level</span> <b>(Alias name: power-level)</b>  Wi-fi power level in percent (0 - 100, 0 = auto, default = 100). <span class="li-normal">type: int</span>
+ <li><span class="li-head">mode</span> Wi-fi radio mode ap(lan mode) / client(wan mode). <span class="li-normal">type: str</span> <span class="li-normal">choices: [AP, Client]</span>
  <a id='label292' href="javascript:ContentClick('label293', 'label292');" onmouseover="ContentPreview('label293');" onmouseout="ContentUnpreview('label293');" title="click to collapse or expand..."> more... </a>
  <div id="label293" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">radio_id</span> <b>(Alias name: radio-id)</b>  Radio id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">operating_standard</span> <b>(Alias name: operating-standard)</b>  Wi-fi operating standard. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 11A-N-AC-AX, 11A-N-AC, 11A-N, 11A, 11N-AC-AX, 11AC-AX, 11AC, 11N-AC, 11B-G-N-AX, 11B-G-N, 11B-G, 11B, 11G-N-AX, 11N-AX, 11AX, 11G-N, 11N, 11G]</span>
  <a id='label294' href="javascript:ContentClick('label295', 'label294');" onmouseover="ContentPreview('label295');" onmouseout="ContentUnpreview('label295');" title="click to collapse or expand..."> more... </a>
  <div id="label295" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable wi-fi radio. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">power_level</span> <b>(Alias name: power-level)</b>  Wi-fi power level in percent (0 - 100, 0 = auto, default = 100). <span class="li-normal">type: int</span>
  <a id='label296' href="javascript:ContentClick('label297', 'label296');" onmouseover="ContentPreview('label297');" onmouseout="ContentUnpreview('label297');" title="click to collapse or expand..."> more... </a>
  <div id="label297" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">radio_id</span> <b>(Alias name: radio-id)</b>  Radio id. <span class="li-normal">type: int</span>
+ <a id='label298' href="javascript:ContentClick('label299', 'label298');" onmouseover="ContentPreview('label299');" onmouseout="ContentUnpreview('label299');" title="click to collapse or expand..."> more... </a>
+ <div id="label299" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Enable/disable wi-fi radio. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label300' href="javascript:ContentClick('label301', 'label300');" onmouseover="ContentPreview('label301');" onmouseout="ContentUnpreview('label301');" title="click to collapse or expand..."> more... </a>
+ <div id="label301" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">persistence</span> Enable/disable the persistence attribute of the radio profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label302' href="javascript:ContentClick('label303', 'label302');" onmouseover="ContentPreview('label303');" onmouseout="ContentUnpreview('label303');" title="click to collapse or expand..."> more... </a>
+ <div id="label303" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wifi_networks</span> <b>(Alias name: wifi-networks)</b>  Wi-fi networks. <span class="li-normal">type: list</span>
+ <a id='label304' href="javascript:ContentClick('label305', 'label304');" onmouseover="ContentPreview('label305');" onmouseout="ContentUnpreview('label305');" title="click to collapse or expand..."> more... </a>
+ <div id="label305" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  </ul>
+ </li>
+ <li><span class="li-head">lanext_always_mode</span> <b>(Alias name: lanext-always-mode)</b>  Enable/disable lan extension always mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
+ <div id="label307" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
  </li>
  </ul>
  </ul>
@@ -1154,6 +1184,8 @@ Examples
             #     power_level: <integer>
             #     radio_id: <integer>
             #     status: <value in [disable, enable]>
+            #     persistence: <value in [disable, enable]>
+            #     wifi_networks: <list or string>
             #   radio_2:
             #     d80211d: <value in [disable, enable]>
             #     band: <value in [5GHz]>
@@ -1174,6 +1206,9 @@ Examples
             #     power_level: <integer>
             #     radio_id: <integer>
             #     status: <value in [disable, enable]>
+            #     persistence: <value in [disable, enable]>
+            #     wifi_networks: <list or string>
+            # lanext_always_mode: <value in [disable, enable]>
 
 
 Return Values

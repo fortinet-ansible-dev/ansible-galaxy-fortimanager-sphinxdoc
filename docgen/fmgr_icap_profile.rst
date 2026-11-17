@@ -401,6 +401,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">icap_log</span> <b>(Alias name: icap-log)</b>  Icap utm traffic log setting (default = disable all). <span class="li-normal">type: list</span> <span class="li-normal">choices: [block, error, oversize, all]</span>
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -486,6 +492,7 @@ Examples
             # fabric_object: <value in [disable, enable]>
             # fabric_object_source: <value in [member, local, root]>
             # uuid: <string>
+            # icap_log: ["block", "error", "oversize", "all"]
 
 
 Return Values

@@ -67,6 +67,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">del_after_read</span> Del after read. <span class="li-normal">type: int</span>
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -95,6 +101,7 @@ Examples
           # workspace_locking_adom: <global or your adom name>
           sys_task_result:
             # taskid: <integer>
+            # del_after_read: <integer>
 
 
 Return Values

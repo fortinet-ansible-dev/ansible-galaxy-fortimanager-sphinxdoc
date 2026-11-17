@@ -120,6 +120,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fortiextender_link_cost_factor</span> <b>(Alias name: fortiextender-link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [signal-strength, quota-usage]</span>
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -161,6 +167,7 @@ Examples
             # priority_in_sla: <integer>
             # priority_out_sla: <integer>
             # custom_profile_threshold: <integer>
+            # fortiextender_link_cost_factor: ["signal-strength", "quota-usage"]
 
 
 Return Values

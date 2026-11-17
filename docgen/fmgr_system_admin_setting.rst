@@ -122,7 +122,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gui_theme</span> <b>(Alias name: gui-theme)</b>  Color scheme to use for the administration gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, space, calla-lily, binary-tunnel, diving, dreamy, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, panda, polar-bear, parrot, cave, mountain, zebra, contrast-dark, circuit-board, mars, blue-sea, mariner, jade, neutrino, dark-matter, forest, cat, graphite]</span> <span class="li-normal">default: blue</span>
+ <li><span class="li-head">gui_theme</span> <b>(Alias name: gui-theme)</b>  Color scheme to use for the administration gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blue, green, red, melongene, spring, summer, autumn, winter, space, calla-lily, binary-tunnel, diving, dreamy, technology, landscape, twilight, canyon, northern-light, astronomy, fish, penguin, panda, polar-bear, parrot, cave, mountain, zebra, contrast-dark, circuit-board, mars, blue-sea, mariner, jade, neutrino, dark-matter, forest, cat, graphite, sec-network-lt, sec-network-dk, sec-operation-lt, sec-operation-dk, dune]</span> <span class="li-normal">default: blue</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -395,7 +395,7 @@ Parameters
  <li><span class="li-head">admin_httpd_keep_alive_timeout</span> <b>(Alias name: admin-httpd-keep-alive-timeout)</b>  Http keep-alive timeout (5 - 120 sec). <span class="li-normal">type: int</span> <span class="li-normal">default: 5</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> v8.0.0</code></p>
  </div>
  </li>
  <li><span class="li-head">custom_session_label</span> <b>(Alias name: custom-session-label)</b>  Custom session label. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
@@ -408,6 +408,18 @@ Parameters
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ext_auth_trusthost_override</span> <b>(Alias name: ext-auth-trusthost-override)</b>  Allow to use the trusthost in profile provided by the remote authentication server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: enable</span>
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">hitcount_monitor</span> <b>(Alias name: hitcount-monitor)</b>  Enable/disable policy hitcount monitor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
+ <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
+ <div id="label119" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -495,6 +507,8 @@ Examples
             # admin_httpd_keep_alive_timeout: <integer>
             # custom_session_label: <value in [disable, enable]>
             # custom_session_label_mode: <value in [changeable, unique-per-session]>
+            # ext_auth_trusthost_override: <value in [disable, enable]>
+            # hitcount_monitor: <value in [disable, enable]>
 
 
 Return Values

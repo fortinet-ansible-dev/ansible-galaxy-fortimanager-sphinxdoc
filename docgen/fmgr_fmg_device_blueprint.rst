@@ -221,6 +221,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">autolink_retrieve</span> <b>(Alias name: autolink-retrieve)</b>  Autolink retrieve. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> <span class="li-normal">default: disable</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -276,6 +282,7 @@ Examples
             # cluster_worker: <list or string>
             # cert_template: <list or string>
             # firmware_template: <string>
+            # autolink_retrieve: <value in [disable, enable]>
 
 
 Return Values

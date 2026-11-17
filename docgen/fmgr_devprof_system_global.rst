@@ -2307,13 +2307,13 @@ Parameters
  <li><span class="li-head">admin_http_login_request_size_limit</span> <b>(Alias name: admin-http-login-request-size-limit)</b>  Admin http login request size limit. <span class="li-normal">type: int</span>
  <a id='label746' href="javascript:ContentClick('label747', 'label746');" onmouseover="ContentPreview('label747');" onmouseout="ContentUnpreview('label747');" title="click to collapse or expand..."> more... </a>
  <div id="label747" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">admin_http_json_request_limit</span> <b>(Alias name: admin-http-json-request-limit)</b>  Admin http json request limit. <span class="li-normal">type: int</span>
  <a id='label748' href="javascript:ContentClick('label749', 'label748');" onmouseover="ContentPreview('label749');" onmouseout="ContentUnpreview('label749');" title="click to collapse or expand..."> more... </a>
  <div id="label749" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code>, <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">admin_http_rate_limit_max_requests</span> <b>(Alias name: admin-http-rate-limit-max-requests)</b>  Maximum number of http requests that are allowed to be made in a second by a single client (0 will disable rate limiting). <span class="li-normal">type: int</span>
@@ -2344,6 +2344,42 @@ Parameters
  <a id='label758' href="javascript:ContentClick('label759', 'label758');" onmouseover="ContentPreview('label759');" onmouseout="ContentUnpreview('label759');" title="click to collapse or expand..."> more... </a>
  <div id="label759" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scanunit_cache_entry_ttl</span> <b>(Alias name: scanunit-cache-entry-ttl)</b>  Maximum lifespan of query results cached in the scanunit daemon in hours (1 - 5000, default = 720). <span class="li-normal">type: int</span>
+ <a id='label760' href="javascript:ContentClick('label761', 'label760');" onmouseover="ContentPreview('label761');" onmouseout="ContentUnpreview('label761');" title="click to collapse or expand..."> more... </a>
+ <div id="label761" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">disk_scan_timeout</span> <b>(Alias name: disk-scan-timeout)</b>  Configure the maximum the number of seconds for execute disk scan. <span class="li-normal">type: int</span>
+ <a id='label762' href="javascript:ContentClick('label763', 'label762');" onmouseover="ContentPreview('label763');" onmouseout="ContentUnpreview('label763');" title="click to collapse or expand..."> more... </a>
+ <div id="label763" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_initial_firewall_policy_setup</span> <b>(Alias name: gui-initial-firewall-policy-setup)</b>  Enable/disable the initial firewall policy setup wizard on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label764' href="javascript:ContentClick('label765', 'label764');" onmouseover="ContentPreview('label765');" onmouseout="ContentUnpreview('label765');" title="click to collapse or expand..."> more... </a>
+ <div id="label765" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_table_menu_style</span> <b>(Alias name: gui-table-menu-style)</b>  Table menu style in the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [inline, bottom, top]</span>
+ <a id='label766' href="javascript:ContentClick('label767', 'label766');" onmouseover="ContentPreview('label767');" onmouseout="ContentUnpreview('label767');" title="click to collapse or expand..."> more... </a>
+ <div id="label767" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">alarm_poll_interval</span> <b>(Alias name: alarm-poll-interval)</b>  Alarm poll interval. <span class="li-normal">type: int</span>
+ <a id='label768' href="javascript:ContentClick('label769', 'label768');" onmouseover="ContentPreview('label769');" onmouseout="ContentUnpreview('label769');" title="click to collapse or expand..."> more... </a>
+ <div id="label769" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">scim_db_fz_limit</span> <b>(Alias name: scim-db-fz-limit)</b>  Limit of each scim database file size in megabytes (16 - 1024, default = 256). <span class="li-normal">type: int</span>
+ <a id='label770' href="javascript:ContentClick('label771', 'label770');" onmouseover="ContentPreview('label771');" onmouseout="ContentUnpreview('label771');" title="click to collapse or expand..."> more... </a>
+ <div id="label771" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -2785,6 +2821,12 @@ Examples
             # gui_restrict_theme_change: <value in [disable, enable]>
             # gui_custom_theme: <list or string>
             # tcp_congestion_control: <value in [cubic, bbr]>
+            # scanunit_cache_entry_ttl: <integer>
+            # disk_scan_timeout: <integer>
+            # gui_initial_firewall_policy_setup: <value in [disable, enable]>
+            # gui_table_menu_style: <value in [inline, bottom, top]>
+            # alarm_poll_interval: <integer>
+            # scim_db_fz_limit: <integer>
 
 
 Return Values

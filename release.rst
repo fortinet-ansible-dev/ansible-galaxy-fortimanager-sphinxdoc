@@ -2,6 +2,20 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.16.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.16.0
+
+Minor Changes
+-------------
+
+- Added 19 new modules.
+- Supported FortiManager schemas 8.0.1 and 8.0.2.
+
 Release Galaxy 2.15.0
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -985,7 +999,7 @@ Features & Bugfix
 - fix enable_log parameter issue for recent ansible release.
 - fix `fmgr_dvm_cmd_add_device.device.os_ver` parameter enum values.
 - fix some sphinx document minor typos.
-- fix readthedoc requirement. 
+- fix readthedoc requirement.
 
 |
 
@@ -996,7 +1010,7 @@ Release Target
 ---------------
 
 FortiManager version: ``v6.0.x``, ``v6.2.x``, ``v6.4.x`` and ``v7.0.0``
- 
+
 Features & Bugfix
 ------------------
 

@@ -195,6 +195,9 @@ Parameters
         <li><span class="li-required">isolator_profile_entries</span> - available versions:
           <span class="li-normal">v7.6.4->latest</span>
         </li>
+        <li><span class="li-required">llm_server</span> - available versions:
+          <span class="li-normal">v8.0.1->latest</span>
+        </li>
         <li><span class="li-required">mpskprofile_mpskgroup</span> - available versions:
           <span class="li-normal">v6.4.2->latest</span>
         </li>
@@ -352,6 +355,9 @@ Parameters
         </li>
         <li><span class="li-required">switchcontroller_managedswitch</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">system_dhcp_template_iprange</span> - available versions:
+          <span class="li-normal">v8.0.1->latest</span>
         </li>
         <li><span class="li-required">system_externalresource</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -744,6 +750,11 @@ Parameters
             <li><span class="li-normal">entries</span></li>
             <li><span class="li-normal">profile</span></li>
         </ul>
+        <li><span class="li-normal">params for llm_server:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">server</span></li>
+        </ul>
         <li><span class="li-normal">params for mpskprofile_mpskgroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -1014,6 +1025,12 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">managed-switch</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_dhcp_template_iprange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">ip-range</span></li>
+            <li><span class="li-normal">template</span></li>
         </ul>
         <li><span class="li-normal">params for system_externalresource:</span></li>
         <ul class="ul-self">

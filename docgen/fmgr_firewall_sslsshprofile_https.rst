@@ -203,6 +203,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">tls_handshake_mode</span> <b>(Alias name: tls-handshake-mode)</b>  Proxy-mode tls handshake negotiation behaviour. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sync, dual]</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -255,6 +261,7 @@ Examples
             # quic: <value in [disable, enable, bypass, ...]>
             # encrypted_client_hello: <value in [block, allow]>
             # udp_not_quic: <value in [block, allow]>
+            # tls_handshake_mode: <value in [sync, dual]>
 
 
 Return Values

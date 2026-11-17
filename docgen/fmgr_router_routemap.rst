@@ -389,6 +389,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">match_largecommunity</span> <b>(Alias name: match-largecommunity)</b>  Match bgp large community list. <span class="li-normal">type: list</span>
+ <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
+ <div id="label109" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">match_largecommunity_exact</span> <b>(Alias name: match-largecommunity-exact)</b>  Enable/disable exact matching of large communities. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">set_largecommunity</span> <b>(Alias name: set-largecommunity)</b>  Large community. <span class="li-normal">type: list</span>
+ <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">set_largecommunity_additive</span> <b>(Alias name: set-largecommunity-additive)</b>  Enable/disable adding set-largecommunity to existing large community. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
+ <div id="label115" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">set_largecommunity_delete</span> <b>(Alias name: set-largecommunity-delete)</b>  Delete communities matching large community list. <span class="li-normal">type: list</span>
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.1 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  </ul>
@@ -474,6 +504,11 @@ Examples
             #     set_vpnv6_nexthop: <string>
             #     set_vpnv6_nexthop_local: <string>
             #     match_suppress: <value in [disable, enable]>
+            #     match_largecommunity: <list or string>
+            #     match_largecommunity_exact: <value in [disable, enable]>
+            #     set_largecommunity: <list or string>
+            #     set_largecommunity_additive: <value in [disable, enable]>
+            #     set_largecommunity_delete: <list or string>
 
 
 Return Values

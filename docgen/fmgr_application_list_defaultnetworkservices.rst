@@ -78,7 +78,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">services</span> Network protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https]</span>
+ <li><span class="li-head">services</span> Network protocols. <span class="li-normal">type: list</span> <span class="li-normal">choices: [http, ssh, telnet, ftp, dns, smtp, pop3, imap, snmp, nntp, https, quic]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> latest</code></p>
@@ -123,7 +123,7 @@ Examples
             id: 0 # Required variable, integer
             # port: <integer>
             # services: ["http", "ssh", "telnet", "ftp", "dns", "smtp", "pop3", "imap", "snmp",
-            #            "nntp", "https"]
+            #            "nntp", "https", "quic"]
             # violation_action: <value in [block, monitor, pass]>
 
 
